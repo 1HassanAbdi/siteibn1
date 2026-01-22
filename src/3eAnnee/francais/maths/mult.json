@@ -1,0 +1,43 @@
+{
+  "niveaux": [
+    {
+      "nom": "Facile",
+      "min": 1,
+      "max": 5,
+      "couleur": "#4CAF50",
+      "questions": [
+        { "a": 2, "b": 3, "resultat": 6 },
+        { "a": 4, "b": 5, "resultat": 20 },
+        { "a": 1, "b": 5, "resultat": 5 },
+        { "a": 3, "b": 2, "resultat": 6 },
+        { "a": 5, "b": 1, "resultat": 5 }
+      ]
+    },
+    {
+      "nom": "Moyen",
+      "min": 1,
+      "max": 10,
+      "couleur": "#2196F3",
+      "questions": [
+        { "a": 7, "b": 8, "resultat": 56 },
+        { "a": 6, "b": 9, "resultat": 54 },
+        { "a": 10, "b": 3, "resultat": 30 },
+        { "a": 4, "b": 7, "resultat": 28 },
+        { "a": 2, "b": 10, "resultat": 20 }
+      ]
+    },
+    {
+      "nom": "Difficile",
+      "min": 1,
+      "max": 15,
+      "couleur": "#9C27B0",
+      "questions": [
+        { "a": 12, "b": 13, "resultat": 156 },
+        { "a": 14, "b": 11, "resultat": 154 },
+        { "a": 9, "b": 15, "resultat": 135 },
+        { "a": 8, "b": 12, "resultat": 96 },
+        { "a": 15, "b": 7, "resultat": 105 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Pour le body */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Prend toute la hauteur de l’écran */
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  background-color: #f0f0f0; /* Couleur de fond (optionnelle) */
+}
+
+/* Conteneur principal */
+#root, .app-container {
+  width: 100%;
+  
+ 
+  box-sizing: border-box;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

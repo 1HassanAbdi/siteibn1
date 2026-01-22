@@ -1,0 +1,149 @@
+{
+  "title": "L'Ambition de Gagner",
+  "level": "4e année",
+  "theme": "Compréhension de texte",
+  "typeTexte": "Texte narratif",
+  "objectifs": [
+    "Comprendre un texte narratif",
+    "Identifier les idées principales",
+    "Développer le vocabulaire",
+    "Maîtriser les temps du passé",
+    "Exprimer une opinion personnelle"
+  ],
+  "text": "Quand j'étais jeune, j'avais l'ambition de devenir avocate. J'ai toujours aimé le sentiment de gagner une bataille avec les mots au lieu des poings. Par-dessus tout, j'aime quand mes adversaires ne réussissent pas à rejeter mes arguments et restent bouche bée.\n\nMême si j'adore argumenter pour me sortir de situations délicates, je demeure raisonnable et je ne blesse personne. Quand j'étais à l'école secondaire, j'ai découvert le pouvoir de la parole lorsqu'elle est bien utilisée. C'est pourquoi j'ai joint le club des débats. Nous avons gagné des tournois à plusieurs reprises et j'ai même été choisie meilleure oratrice trois années consécutives.\n\nChaque personne avait au moins une ambition lorsqu'elle était jeune. C'est la même chose pour moi. Cependant, le succès n'arrive pas du jour au lendemain. C'est seulement en travaillant fort et avec détermination que les rêves se réalisent. J'ai vraiment voulu être avocate, mais je n'ai jamais travaillé assez fort pour le devenir. Il ne faut pas juste avoir les aptitudes pour devenir avocate, on doit aussi connaitre les lois par cœur. C'est difficile pour une personne qui mêle les faits comme moi.\n\nMême si j'ai abandonné l'idée de devenir avocate, j'aime encore engager des débats avec ma famille et mes amis de temps en temps. En plus d'ajouter du plaisir à ma vie, cela m'aide à garder mon rêve vivant.",
+
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "✓/✗ Vrai ou Faux",
+      "type": "boolean",
+      "questions": [
+        { "q": "L'auteur voulait devenir médecin.", "a": false },
+        { "q": "Elle aimait gagner des batailles avec les mots.", "a": true },
+        { "q": "Elle a été choisie meilleure oratrice plusieurs fois.", "a": true },
+        { "q": "Elle a découvert le pouvoir de la parole à l'école.", "a": true },
+        { "q": "Elle continue à aimer débattre.", "a": true }
+      ]
+    },
+
+    {
+      "id": "qcm",
+      "label": "📝 Compréhension",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Pourquoi aimait-elle débattre ?",
+          "options": ["Pour se battre", "Pour convaincre avec des mots", "Pour gagner de l'argent", "Pour jouer"],
+          "a": "Pour convaincre avec des mots"
+        },
+        {
+          "q": "Qu'a-t-elle découvert à l'école ?",
+          "options": ["La musique", "Le pouvoir de la parole", "Les mathématiques", "Le sport"],
+          "a": "Le pouvoir de la parole"
+        },
+        {
+          "q": "Quel club a-t-elle rejoint ?",
+          "options": ["Club de théâtre", "Club de débats", "Club de lecture", "Club sportif"],
+          "a": "Club de débats"
+        },
+        {
+          "q": "Pourquoi n'est-elle pas devenue avocate ?",
+          "options": ["Manque de temps", "Manque de travail", "Manque d'argent", "Manque d'intérêt"],
+          "a": "Manque de travail"
+        },
+        {
+          "q": "Comment continue-t-elle à pratiquer sa passion ?",
+          "options": ["En écrivant", "En débattant avec ses proches", "En enseignant", "En lisant"],
+          "a": "En débattant avec ses proches"
+        }
+      ]
+    },
+
+    {
+      "id": "vocabulaire",
+      "label": "📚 Vocabulaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Que signifie « bouche bée » ?",
+          "options": ["Surpris et silencieux", "En colère", "Fatigué", "Heureux"],
+          "a": "Surpris et silencieux"
+        },
+        {
+          "q": "Que veut dire « ambition » ?",
+          "options": ["Un rêve ou objectif", "Une erreur", "Une peur", "Une obligation"],
+          "a": "Un rêve ou objectif"
+        },
+        {
+          "q": "Que signifie « détermination » ?",
+          "options": ["Persévérance", "Colère", "Fatigue", "Doute"],
+          "a": "Persévérance"
+        },
+        {
+          "q": "Que signifie « aptitudes » ?",
+          "options": ["Compétences", "Objets", "Arguments", "Règles"],
+          "a": "Compétences"
+        }
+      ]
+    },
+
+    {
+      "id": "conjugaison",
+      "label": "🕓 Conjugaison",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Conjugue : Elle (aimer) au passé composé",
+          "options": ["Elle aime", "Elle a aimé", "Elle aimait", "Elle aimera"],
+          "a": "Elle a aimé"
+        },
+        {
+          "q": "Conjugue : Elle (découvrir) au passé composé",
+          "options": ["Elle découvre", "Elle a découvert", "Elle découvrait", "Elle découvrira"],
+          "a": "Elle a découvert"
+        },
+        {
+          "q": "Conjugue : Elle (continuer) au présent",
+          "options": ["Elle continue", "Elle continuait", "Elle continuera", "Elle a continué"],
+          "a": "Elle continue"
+        }
+      ]
+    },
+
+    {
+      "id": "expression",
+      "title": "✍️ Expression écrite",
+      "type": "open",
+      "questions": [
+        "Que ferais-tu à la place de Simon ? (3 phrases)",
+        "Imagine une autre fin à l’histoire."
+      ]
+    }
+  ],
+
+  "finalQuiz": {
+    "title": "🎯 Bilan final",
+    "questions": [
+      {
+        "q": "Pourquoi cette histoire est-elle drôle ?",
+        "options": [
+          "Parce que Simon est malin",
+          "Parce qu'il comprend tout à l'envers",
+          "Parce que la mère est méchante",
+          "Parce que la maison disparaît"
+        ],
+        "a": "Parce qu'il comprend tout à l'envers"
+      }
+    ]
+  },
+
+  "autoEvaluation": {
+    "title": "⭐ Auto-évaluation",
+    "questions": [
+      "J'ai bien compris le texte.",
+      "Je sais répondre aux questions sans aide.",
+      "J'ai appris de nouveaux mots.",
+      "Je peux expliquer l'histoire avec mes propres mots."
+    ]
+  }
+}

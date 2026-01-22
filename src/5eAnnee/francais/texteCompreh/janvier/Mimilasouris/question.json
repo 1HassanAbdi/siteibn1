@@ -1,0 +1,114 @@
+{
+  "title": "Le lion et le lièvre",
+  "grade": 4,
+  "story": {
+    "text": "Un lion a choisi d’être le roi d’une forêt. Les autres animaux avaient peur de lui. Le lion menaçait de les tuer tous s’ils ne lui apportaient pas un animal par jour à manger. Chaque jour, les animaux tiraient au sort pour savoir lequel irait à la tanière et serait mangé.\n\nUn jour, c’était au tour du lièvre d’aller à la tanière du lion. Le lièvre a pensé à un plan pour sauver sa vie. Il a pris son temps et est arrivé très tard à la tanière du lion. Le lion était furieux.\n\n« Pardonnez-moi, mon roi, dit le lièvre pour s’excuser. J’ai été poursuivi par un autre lion. Il était si féroce que j’ai couru et je me suis caché. »\n\n« Quoi ? dit le lion en rugissant. Est-ce qu’il y a un autre lion comme moi dans cette forêt ? Montre-moi où il est et j’irai l’anéantir. »\n\nLe lièvre amena le lion en colère jusqu’à un puits profond.\n\n« Mon roi, le palais de l’autre roi est ici, dit-il. Vous le verrez quand vous regarderez au fond. »\n\nLe lion a regardé au fond et a vu un autre lion qui le fixait. Il a rugi, et l’écho est revenu vers lui cent fois plus fort. En colère, le lion a sauté dans le puits profond et s’est noyé.",
+    "image": "lion_lievre.png",
+    "audio": "lion_lievre.mp3"
+  },
+  "quiz": {
+    "sections": [
+      {
+        "title": "Vrai / Faux",
+        "questions": [
+          { "question": "Le lion voulait être le roi de la forêt.", "answer": true },
+          { "question": "Les animaux adoraient le lion et n’avaient pas peur de lui.", "answer": false },
+          { "question": "Le lièvre est arrivé tôt à la tanière du lion.", "answer": false },
+          { "question": "Le lion est tombé dans le puits à la fin de l’histoire.", "answer": true }
+        ]
+      },
+      {
+        "title": "QCM",
+        "questions": [
+          {
+            "question": "Pourquoi les animaux avaient-ils peur du lion ?",
+            "options": ["Parce qu’il rugissait très fort", "Parce qu’il menaçait de les tuer", "Parce qu’il était malade", "Parce qu’il vivait dans un puits"],
+            "answer": "Parce qu’il menaçait de les tuer"
+          },
+          {
+            "question": "Que faisait le lion chaque jour ?",
+            "options": ["Il dormait toute la journée", "Il demandait aux animaux un repas", "Il chantait dans la forêt", "Il allait chasser seul"],
+            "answer": "Il demandait aux animaux un repas"
+          },
+          {
+            "question": "Pourquoi le lièvre est-il arrivé en retard ?",
+            "options": ["Il dormait profondément", "Il voulait fâcher le lion", "Il a pris son temps pour mettre son plan en place", "Il a oublié la route"],
+            "answer": "Il a pris son temps pour mettre son plan en place"
+          },
+          {
+            "question": "Que voyait le lion dans le puits ?",
+            "options": ["Un autre lion", "Le lièvre", "Son reflet", "De l’eau claire"],
+            "answer": "Son reflet"
+          }
+        ]
+      },
+      {
+        "title": "Vocabulaire",
+        "questions": [
+          {
+            "question": "Que signifie 'tanière' ?",
+            "options": ["Maison d’un animal sauvage", "Une grotte mystérieuse", "Un arbre immense", "Un lac profond"],
+            "answer": "Maison d’un animal sauvage"
+          },
+          {
+            "question": "Que veut dire 'anéantir' ?",
+            "options": ["Rendre plus fort", "Détruire complètement", "Faire peur", "Sauter loin"],
+            "answer": "Détruire complètement"
+          },
+          {
+            "question": "Qu’est-ce qu’un 'écho' ?",
+            "options": ["Un son qui revient après réflexion", "Un cri d’animal", "Une lumière brillante", "Une tempête"],
+            "answer": "Un son qui revient après réflexion"
+          },
+          {
+            "question": "Que signifie 'furieux' ?",
+            "options": ["Très heureux", "Très en colère", "Très fatigué", "Très rapide"],
+            "answer": "Très en colère"
+          }
+        ]
+      },
+      {
+        "title": "Conjugaison",
+        "questions": [
+          {
+            "question": "Le lion (choisir) d’être roi.",
+            "options": ["choisit", "choisis", "choisissent", "choisissait"],
+            "answer": "choisit"
+          },
+          {
+            "question": "Le lièvre (penser) à un plan.",
+            "options": ["pense", "penses", "pensons", "pensait"],
+            "answer": "pense"
+          },
+          {
+            "question": "Le lion (voir) un autre lion dans le puits.",
+            "options": ["voit", "vois", "voyons", "voyait"],
+            "answer": "voit"
+          },
+          {
+            "question": "Les animaux (tirer) au sort chaque jour.",
+            "options": ["tirent", "tire", "tirons", "tiraient"],
+            "answer": "tirent"
+          }
+        ]
+      },
+      {
+        "title": "Réponses courtes",
+        "questions": [
+          { "question": "Quel animal devait aller à la tanière du lion ce jour-là ?", "answer": "Le lièvre" },
+          { "question": "Comment le lièvre a-t-il trompé le lion ?", "answer": "Il a fait croire qu’il y avait un autre lion dans le puits" }
+        ]
+      },
+      {
+        "title": "Réponses longues",
+        "questions": [
+          { "question": "Explique comment le lièvre a utilisé son intelligence pour se sauver.", "answer": "" },
+          { "question": "Quelle leçon de morale peut-on tirer de cette histoire ?", "answer": "" }
+        ]
+      }
+    ]
+  },
+  "finalQuiz": {
+    "message": "Bravo ! Tu as terminé le quiz du lion et du lièvre. As-tu retenu la leçon ? L’intelligence peut triompher de la force !"
+  }
+}

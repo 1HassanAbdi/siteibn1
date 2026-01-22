@@ -1,0 +1,24 @@
+{
+  "title": "Léo le lionceau",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "Léo le lionceau",
+      "text": "Léo le lionceau est malade.\nIl a bu trop de limonade.",
+      "image": "1.png",
+      "audio": "Léo(1).mp3"
+    },
+    {
+      "title": "La maman de Léo",
+      "text": "Léo va voir sa maman Léone.\nLéone est une brave lionne.\nElle lèche son petit et prend bien soin de lui.\nLe papa lion s'appelle Lior.",
+      "image": "2.png",
+      "audio": "Léo(2).mp3"
+    },
+    {
+      "title": "Le conseil de Léone",
+      "text": "Léone dit au petit Léo :\n« La limonade, ce n'est pas pour les lionceaux.\nC'est du bon lait qu'il te faut, mon cher Léo. »",
+      "image": "3.png",
+      "audio": "Léo(3).mp3"
+    }
+  ]
+}

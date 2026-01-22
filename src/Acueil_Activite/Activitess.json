@@ -1,0 +1,24 @@
+{
+  "1re-Annee": {
+    "Mathématiques": {
+      "description": "Découvrez nos leçons de mathématiques adaptées à votre niveau. Addition, soustraction, et plus encore!",
+      "activites": [
+        { "titre": "Addition facile", "type": "interactif", "path": "/1re-Annee/maths/addition" },
+        { "titre": "Soustraction", "type": "interactif", "path": "/1re-Annee/maths/soustraction" }
+      ]
+    },
+    "Français": {
+      "description": "Améliorez votre français avec des exercices de grammaire, conjugaison et lecture adaptée aux débutants.",
+      "activites": [
+        { "titre": "Conjugaison des verbes", "type": "interactif", "path": "/1re-Annee/francais/conjugaison" },
+        { "titre": "Lecture facile", "type": "interactif", "path": "/1re-Annee/francais/lecture" }
+      ]
+    },
+    "Autre": {
+      "description": "Apprenez en vous amusant avec nos jeux éducatifs interactifs et défis amusants!",
+      "activites": [
+        { "titre": "Jeux éducatifs", "type": "jeu", "path": "/1re-Annee/autre/jeux" }
+      ]
+    }
+  }
+}

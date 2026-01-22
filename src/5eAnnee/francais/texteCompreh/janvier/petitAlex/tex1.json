@@ -1,0 +1,24 @@
+{
+  "title": "Le voyage des chats",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "La famille chat",
+      "text": "Voici Papa le chat.\nVoici Maman la chatte.\nVoici les chatons Baba et Nana.\nLes chats font leur valise.",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "Les valises",
+      "text": "Dans sa valise,\nPapa le chat met une cravate\net des bas.\nDans sa valise, Maman la chatte\nmet un savon et un pyjama.\nDans sa valise, Nana met une\nballe et un bâton.",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "Le départ",
+      "text": "Les chats s'en vont en voyage.\nIls voyagent en avion.\nOù s'en vont-ils?",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}

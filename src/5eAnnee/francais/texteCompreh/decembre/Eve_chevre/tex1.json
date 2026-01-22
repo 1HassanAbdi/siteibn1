@@ -1,0 +1,24 @@
+{
+  "title": "ÈVE LA PETITE CHÈVRE",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "ÈVE LA PETITE CHÈVRE - Partie 1",
+      "text": "Ève est une toute petite chèvre.\nC'est une belle bête.\nÈve est l'amie de la fermière.\nLa fermière l'aime beaucoup.",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "ÈVE LA PETITE CHÈVRE - Partie 2",
+      "text": "Chaque jour,\nla fermière visite Ève.\nElle ouvre la barrière\net lui dit : « Viens, Ève.\nViens, ma petite chèvre. »",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "ÈVE LA PETITE CHÈVRE - Partie 3",
+      "text": "La fermière amène Ève\nprès de la rivière,\nlà où pousse le bon trèfle.\nElle lui dit : « Mange, Ève.\nMange le bon trèfle.\nTu me donneras du bon lait et de la crème. »",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}

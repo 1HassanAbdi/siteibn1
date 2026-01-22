@@ -1,0 +1,115 @@
+{
+  "school_year": "2025-2026",
+  "weeks": [
+    {
+      "id": 1,
+      "title": "Semaine 1 : Le son è / ê",
+      "data": [
+        {"article": "une", "word": "barrière", "emoji": "🚧", "category": "objet", "sentence": "Le fermier ferme la ___ du champ.", "scrambled": "eerriràb","exercises":{"1":"barrière","2":"une","3":"barrière","4":"objet","5":"barrière"}},
+        {"article": "une", "word": "mère", "emoji": "👩", "category": "famille", "sentence": "Ma ___ me prépare un bon goûter.", "scrambled": "erèm","exercises":{"1":"mère","2":"une","3":"mère","4":"famille","5":"mère"}},
+        {"article": "des", "word": "bêtes", "emoji": "🐮", "category": "animal", "sentence": "Il y a beaucoup de ___ dans l'étable.", "scrambled": "setêb","exercises":{"1":"bêtes","2":"des","3":"bêtes","4":"animal","5":"bêtes"}},
+        {"article": "une", "word": "pêche", "emoji": "🍑", "category": "fruit", "sentence": "Je mange une ___ bien sucrée.", "scrambled": "ehcêp","exercises":{"1":"pêche","2":"une","3":"pêche","4":"fruit","5":"pêche"}},
+        {"article": "une", "word": "chèvre", "emoji": "🐐", "category": "animal", "sentence": "La ___ grimpe sur le rocher.", "scrambled": "ervèhc","exercises":{"1":"chèvre","2":"une","3":"chèvre","4":"animal","5":"chèvre"}},
+        {"article": "un", "word": "père", "emoji": "👨", "category": "famille", "sentence": "Mon ___ joue au ballon avec moi.", "scrambled": "erèp","exercises":{"1":"père","2":"un","3":"père","4":"famille","5":"père"}},
+        {"article": "une", "word": "crème", "emoji": "🥛", "category": "nourriture", "sentence": "J'ajoute de la ___ sur mes fraises.", "scrambled": "emèrc","exercises":{"1":"crème","2":"de la","3":"crème","4":"nourriture","5":"crème"}},
+        {"article": "une", "word": "règle", "emoji": "📏", "category": "école", "sentence": "Je trace un trait avec ma ___.", "scrambled": "elgèr","exercises":{"1":"règle","2":"une","3":"règle","4":"école","5":"règle"}},
+        {"article": "une", "word": "fermière", "emoji": "👩‍🌾", "category": "métier", "sentence": "La ___ ramasse les œufs.", "scrambled": "erèimref","exercises":{"1":"fermière","2":"une","3":"fermière","4":"métier","5":"fermière"}},
+        {"article": "une", "word": "rivière", "emoji": "🏞️", "category": "nature", "sentence": "L'eau de la ___ coule doucement.", "scrambled": "erèivir","exercises":{"1":"rivière","2":"une","3":"rivière","4":"nature","5":"rivière"}},
+        {"article": "une", "word": "fête", "emoji": "🎉", "category": "événement", "sentence": "C'est ma ___ d'anniversaire demain.", "scrambled": "etêf","exercises":{"1":"fête","2":"une","3":"fête","4":"événement","5":"fête"}},
+        {"article": "une", "word": "sorcière", "emoji": "🧙‍♀️", "category": "imaginaire", "sentence": "La ___ vole sur son balai.", "scrambled": "erèicros","exercises":{"1":"sorcière","2":"une","3":"sorcière","4":"imaginaire","5":"sorcière"}},
+        {"article": "une", "word": "flèche", "emoji": "🏹", "category": "objet", "sentence": "L'archer lance une ___.", "scrambled": "ehcèlf","exercises":{"1":"flèche","2":"une","3":"flèche","4":"objet","5":"flèche"}},
+        {"article": "une", "word": "tête", "emoji": "🙂", "category": "corps", "sentence": "Il porte un chapeau sur la ___.", "scrambled": "etêt","exercises":{"1":"tête","2":"une","3":"tête","4":"corps","5":"tête"}},
+        {"article": "une", "word": "forêt", "emoji": "🌲", "category": "nature", "sentence": "On se promène sous les arbres de la ___.", "scrambled": "têrof","exercises":{"1":"forêt","2":"une","3":"forêt","4":"nature","5":"forêt"}},
+        {"article": "un", "word": "trèfle", "emoji": "🍀", "category": "nature", "sentence": "J'ai trouvé un ___ à quatre feuilles.", "scrambled": "elfèrt","exercises":{"1":"trèfle","2":"un","3":"trèfle","4":"nature","5":"trèfle"}}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Semaine 2 : Le son i / y",
+      "data": [
+        {"article": "une", "word": "bicyclette", "emoji": "🚲", "category": "transport", "sentence": "Je pédale vite sur ma ___.", "scrambled": "ettelyccib","exercises":{"1":"bicyclette","2":"une","3":"bicyclette","4":"transport","5":"bicyclette"}},
+        {"article": "un", "word": "pyjama", "emoji": "👕", "category": "vêtement", "sentence": "Je mets mon ___ avant d'aller au lit.", "scrambled": "amajyp","exercises":{"1":"pyjama","2":"un","3":"pyjama","4":"vêtement","5":"pyjama"}},
+        {"article": "des", "word": "ciseaux", "emoji": "✂️", "category": "outil", "sentence": "Je découpe le papier avec des ___.", "scrambled": "xuaesic","exercises":{"1":"ciseaux","2":"des","3":"ciseaux","4":"outil","5":"ciseaux"}},
+        {"article": "une", "word": "souris", "emoji": "🐭", "category": "animal", "sentence": "Le chat court après la ___.", "scrambled": "siruos","exercises":{"1":"souris","2":"une","3":"souris","4":"animal","5":"souris"}},
+        {"article": "une", "word": "fourmi", "emoji": "🐜", "category": "animal", "sentence": "La petite ___ porte une miette.", "scrambled": "imruof","exercises":{"1":"fourmi","2":"une","3":"fourmi","4":"animal","5":"fourmi"}},
+        {"article": "un", "word": "tapis", "emoji": "🧶", "category": "maison", "sentence": "Je m'assois par terre sur le ___.", "scrambled": "sipat","exercises":{"1":"tapis","2":"un","3":"tapis","4":"maison","5":"tapis"}},
+        {"article": "un", "word": "hibou", "emoji": "🦉", "category": "animal", "sentence": "Le ___ chante pendant la nuit.", "scrambled": "uobih","exercises":{"1":"hibou","2":"un","3":"hibou","4":"animal","5":"hibou"}},
+        {"article": "un", "word": "taxi", "emoji": "🚕", "category": "transport", "sentence": "On prend un ___ pour aller à la gare.", "scrambled": "ixat","exercises":{"1":"taxi","2":"un","3":"taxi","4":"transport","5":"taxi"}},
+        {"article": "une", "word": "île", "emoji": "🏝️", "category": "nature", "sentence": "Le trésor est caché sur l'___.", "scrambled": "elî","exercises":{"1":"île","2":"une","3":"île","4":"nature","5":"île"}},
+        {"article": "une", "word": "toupie", "emoji": "🌀", "category": "jouet", "sentence": "La ___ tourne très vite.", "scrambled": "eipuot","exercises":{"1":"toupie","2":"une","3":"toupie","4":"jouet","5":"toupie"}},
+        {"article": "un", "word": "lit", "emoji": "🛏️", "category": "maison", "sentence": "Je dors dans mon ___.", "scrambled": "til","exercises":{"1":"lit","2":"un","3":"lit","4":"maison","5":"lit"}},
+        {"article": "une", "word": "tulipe", "emoji": "🌷", "category": "fleur", "sentence": "Il y a une jolie ___ rouge.", "scrambled": "epilut","exercises":{"1":"tulipe","2":"une","3":"tulipe","4":"fleur","5":"tulipe"}},
+        {"article": "un", "word": "livre", "emoji": "📖", "category": "école", "sentence": "Je lis une histoire dans mon ___.", "scrambled": "ervil","exercises":{"1":"livre","2":"un","3":"livre","4":"école","5":"livre"}},
+        {"article": "une", "word": "valise", "emoji": "🧳", "category": "voyage", "sentence": "Je prépare ma ___ pour les vacances.", "scrambled": "esilav","exercises":{"1":"valise","2":"une","3":"valise","4":"voyage","5":"valise"}}
+      ]
+    },{
+  
+    
+      "id": 3,
+      "title": "Semaine 3 : Le son ou / u",
+      "data": [
+        {"article": "un", "word": "chou", "emoji": "🥬", "category": "aliment", "sentence": "Je coupe un ___ pour la soupe.", "scrambled": "uhco","exercises":{"1":"chou","2":"un","3":"chou","4":"aliment","5":"chou"}},
+        {"article": "une", "word": "route", "emoji": "🛣️", "category": "transport", "sentence": "La ___ est longue et droite.", "scrambled": "teur","exercises":{"1":"route","2":"une","3":"route","4":"transport","5":"route"}},
+        {"article": "un", "word": "poule", "emoji": "🐔", "category": "animal", "sentence": "La ___ picore des graines.", "scrambled": "eloup","exercises":{"1":"poule","2":"un","3":"poule","4":"animal","5":"poule"}},
+        {"article": "un", "word": "loup", "emoji": "🐺", "category": "animal", "sentence": "Le ___ hurle la nuit.", "scrambled": "uopl","exercises":{"1":"loup","2":"un","3":"loup","4":"animal","5":"loup"}},
+        {"article": "une", "word": "boussole", "emoji": "🧭", "category": "outil", "sentence": "La ___ indique le nord.", "scrambled": "eslosoub","exercises":{"1":"boussole","2":"une","3":"boussole","4":"outil","5":"boussole"}},
+        {"article": "un", "word": "poulain", "emoji": "🐴", "category": "animal", "sentence": "Le ___ court dans le pré.", "scrambled": "nilpoua","exercises":{"1":"poulain","2":"un","3":"poulain","4":"animal","5":"poulain"}},
+        {"article": "un", "word": "souffle", "emoji": "💨", "category": "nature", "sentence": "Le vent a un ___ fort.", "scrambled": "lfseouf","exercises":{"1":"souffle","2":"un","3":"souffle","4":"nature","5":"souffle"}},
+        {"article": "un", "word": "fouet", "emoji": "🥄", "category": "outil", "sentence": "Je bats les œufs avec un ___.", "scrambled": "tefou","exercises":{"1":"fouet","2":"un","3":"fouet","4":"outil","5":"fouet"}},
+        {"article": "un", "word": "nuage", "emoji": "☁️", "category": "nature", "sentence": "Le ___ est blanc et doux.", "scrambled": "aegun","exercises":{"1":"nuage","2":"un","3":"nuage","4":"nature","5":"nuage"}},
+        {"article": "une", "word": "fourche", "emoji": "🔱", "category": "outil", "sentence": "La ___ sert à retourner le foin.", "scrambled": "ecrhfuo","exercises":{"1":"fourche","2":"une","3":"fourche","4":"outil","5":"fourche"}}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Semaine 4 : Le son an / on",
+      "data": [
+        {"article": "un", "word": "champ", "emoji": "🌾", "category": "nature", "sentence": "Le fermier travaille dans le ___.", "scrambled": "phcam","exercises":{"1":"champ","2":"un","3":"champ","4":"nature","5":"champ"}},
+        {"article": "une", "word": "montagne", "emoji": "⛰️", "category": "nature", "sentence": "La ___ est très haute.", "scrambled": "egnamtnao","exercises":{"1":"montagne","2":"une","3":"montagne","4":"nature","5":"montagne"}},
+        {"article": "un", "word": "avion", "emoji": "✈️", "category": "transport", "sentence": "L'___ vole dans le ciel.", "scrambled": "noiva","exercises":{"1":"avion","2":"un","3":"avion","4":"transport","5":"avion"}},
+        {"article": "un", "word": "manteau", "emoji": "🧥", "category": "vêtement", "sentence": "Je mets mon ___ quand il fait froid.", "scrambled": "ouetnam","exercises":{"1":"manteau","2":"un","3":"manteau","4":"vêtement","5":"manteau"}},
+        {"article": "un", "word": "garçon", "emoji": "👦", "category": "personne", "sentence": "Le ___ joue au ballon.", "scrambled": "noçrag","exercises":{"1":"garçon","2":"un","3":"garçon","4":"personne","5":"garçon"}},
+        {"article": "un", "word": "trombone", "emoji": "🎺", "category": "instrument", "sentence": "Je joue du ___ à l'école.", "scrambled": "enobmort","exercises":{"1":"trombone","2":"un","3":"trombone","4":"instrument","5":"trombone"}},
+        {"article": "un", "word": "champignon", "emoji": "🍄", "category": "aliment", "sentence": "Le ___ pousse dans la forêt.", "scrambled": "nonmhipgac","exercises":{"1":"champignon","2":"un","3":"champignon","4":"aliment","5":"champignon"}},
+        {"article": "une", "word": "maison", "emoji": "🏠", "category": "maison", "sentence": "La ___ est très jolie.", "scrambled": "nosiam","exercises":{"1":"maison","2":"une","3":"maison","4":"maison","5":"maison"}},
+        {"article": "un", "word": "canard", "emoji": "🦆", "category": "animal", "sentence": "Le ___ nage sur l'eau.", "scrambled": "dranac","exercises":{"1":"canard","2":"un","3":"canard","4":"animal","5":"canard"}},
+        {"article": "un", "word": "ballon", "emoji": "🎈", "category": "objet", "sentence": "J'envoie le ___ dans le ciel.", "scrambled": "nollab","exercises":{"1":"ballon","2":"un","3":"ballon","4":"objet","5":"ballon"}}
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Semaine 5 : Le son é / er",
+      "data": [
+        {"article": "un", "word": "marché", "emoji": "🛒", "category": "lieu", "sentence": "Je vais au ___ avec ma mère.", "scrambled": "hécarm","exercises":{"1":"marché","2":"un","3":"marché","4":"lieu","5":"marché"}},
+        {"article": "une", "word": "clé", "emoji": "🗝️", "category": "objet", "sentence": "J'ai perdu ma ___.", "scrambled": "élc","exercises":{"1":"clé","2":"une","3":"clé","4":"objet","5":"clé"}},
+        {"article": "un", "word": "boulanger", "emoji": "🥖", "category": "métier", "sentence": "Le ___ vend du pain.", "scrambled": "rgenaloub","exercises":{"1":"boulanger","2":"un","3":"boulanger","4":"métier","5":"boulanger"}},
+        {"article": "un", "word": "cahier", "emoji": "📓", "category": "école", "sentence": "J'écris dans mon ___.", "scrambled": "riehac","exercises":{"1":"cahier","2":"un","3":"cahier","4":"école","5":"cahier"}},
+        {"article": "un", "word": "gâteau", "emoji": "🎂", "category": "nourriture", "sentence": "Le ___ est délicieux.", "scrambled": "êtagau","exercises":{"1":"gâteau","2":"un","3":"gâteau","4":"nourriture","5":"gâteau"}},
+        {"article": "un", "word": "professeur", "emoji": "👩‍🏫", "category": "métier", "sentence": "Le ___ explique la leçon.", "scrambled": "ruesseforp","exercises":{"1":"professeur","2":"un","3":"professeur","4":"métier","5":"professeur"}},
+        {"article": "une", "word": "forêt", "emoji": "🌳", "category": "nature", "sentence": "On se promène dans la ___.", "scrambled": "têrof","exercises":{"1":"forêt","2":"une","3":"forêt","4":"nature","5":"forêt"}},
+        {"article": "une", "word": "pensée", "emoji": "💭", "category": "sentiment", "sentence": "J'ai une ___ pour toi.", "scrambled": "éesnsep","exercises":{"1":"pensée","2":"une","3":"pensée","4":"sentiment","5":"pensée"}},
+        {"article": "une", "word": "fleur", "emoji": "🌸", "category": "nature", "sentence": "La ___ est jolie.", "scrambled": "ruelf","exercises":{"1":"fleur","2":"une","3":"fleur","4":"nature","5":"fleur"}},
+        {"article": "un", "word": "boucher", "emoji": "🔪", "category": "métier", "sentence": "Le ___ prépare la viande.", "scrambled": "rehcub","exercises":{"1":"boucher","2":"un","3":"boucher","4":"métier","5":"boucher"}}
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Semaine 6 : Le son oi / oy",
+      "data": [
+        {"article": "un", "word": "roi", "emoji": "👑", "category": "personne", "sentence": "Le ___ habite dans le château.", "scrambled": "ior","exercises":{"1":"roi","2":"un","3":"roi","4":"personne","5":"roi"}},
+        {"article": "une", "word": "boîte", "emoji": "📦", "category": "objet", "sentence": "Je mets mes jouets dans une ___.", "scrambled": "étibo","exercises":{"1":"boîte","2":"une","3":"boîte","4":"objet","5":"boîte"}},
+        {"article": "un", "word": "loisir", "emoji": "🎨", "category": "activité", "sentence": "Mon ___ préféré est la peinture.", "scrambled": "risilo","exercises":{"1":"loisir","2":"un","3":"loisir","4":"activité","5":"loisir"}},
+        {"article": "une", "word": "joyau", "emoji": "💎", "category": "objet", "sentence": "Le ___ brille dans le coffre.", "scrambled": "uoyaj","exercises":{"1":"joyau","2":"une","3":"joyau","4":"objet","5":"joyau"}},
+        {"article": "un", "word": "noir", "emoji": "⚫", "category": "couleur", "sentence": "Le chat est ___.", "scrambled": "rian","exercises":{"1":"noir","2":"un","3":"noir","4":"couleur","5":"noir"}},
+        {"article": "un", "word": "poids", "emoji": "⚖️", "category": "objet", "sentence": "Je soulève un ___ lourd.", "scrambled": "dsiop","exercises":{"1":"poids","2":"un","3":"poids","4":"objet","5":"poids"}},
+        {"article": "une", "word": "foire", "emoji": "🎡", "category": "événement", "sentence": "La ___ attire beaucoup de monde.", "scrambled": "eriof","exercises":{"1":"foire","2":"une","3":"foire","4":"événement","5":"foire"}},
+        {"article": "un", "word": "coin", "emoji": "📌", "category": "objet", "sentence": "Le chat dort dans le ___.", "scrambled": "nioc","exercises":{"1":"coin","2":"un","3":"coin","4":"objet","5":"coin"}},
+        {"article": "une", "word": "joyeuse", "emoji": "😊", "category": "sentiment", "sentence": "Elle est très ___.", "scrambled": "euesyoj","exercises":{"1":"joyeuse","2":"une","3":"joyeuse","4":"sentiment","5":"joyeuse"}},
+        {"article": "un", "word": "bois", "emoji": "🌳", "category": "nature", "sentence": "Le ___ sert à construire des meubles.", "scrambled": "siob","exercises":{"1":"bois","2":"un","3":"bois","4":"nature","5":"bois"}}
+      ]
+    }
+  ]
+}
+
+  
+

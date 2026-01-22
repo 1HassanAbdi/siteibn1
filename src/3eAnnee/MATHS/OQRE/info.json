@@ -1,0 +1,248 @@
+{
+  "school_year": "2025-2026",
+  "test_info": {
+    "name": "OQRE (EQAO) - Cycle Primaire",
+    "grade": "3e année",
+    "total_operational_questions": 40,
+    "weighting": [
+      { "domain": "B. Nombres & F. Littératie Financière", "percentage": "35%", "questions": 14 },
+      { "domain": "E. Sens de l'espace", "percentage": "25%", "questions": 10 },
+      { "domain": "C. Algèbre & Codage", "percentage": "20%", "questions": 8 },
+      { "domain": "D. Données", "percentage": "20%", "questions": 8 }
+    ]
+  },
+  "letter": {
+    "subject": "Programme de Préparation OQRE 2026 - Mathématiques",
+    "greeting": "Chers parents,",
+    "introduction": "En vue de l'examen de l'OQRE de fin d'année, nous lançons un programme de révision structuré. Ce plan couvre précisément les attentes du Curriculum de Mathématiques de l'Ontario (2020) et les critères d'évaluation officiels du document-cadre de l'OQRE.",
+    "methodology": [
+      {
+        "title": "Conforme aux Exigences",
+        "description": "Chaque semaine cible un domaine officiel (Nombres, Algèbre, Données, etc.) selon la pondération de l'examen pour assurer la maîtrise des compétences prioritaires."
+      },
+      {
+        "title": "Pratique IXL",
+        "description": "Les codes IXL fournis correspondent aux titres exacts des exercices pour faciliter la recherche et renforcer l'autonomie de votre enfant."
+      }
+    ],
+    "footer": "Note : Ce programme est conçu pour bâtir la confiance sans stress. Merci de votre précieuse collaboration !",
+    "signature": "L'équipe enseignante de 3e année"
+  },
+  "guides": [
+    {
+      "id": "A",
+      "title": "Domaine A : Apprentissage Socio-émotionnel",
+      "what": "Gérer son stress et expliquer sa pensée.",
+      "tip": "Encouragez votre enfant à dire : 'Je suis capable d'apprendre'. L'OQRE valorise la persévérance et l'utilisation de différentes stratégies."
+    },
+    {
+      "id": "B",
+      "title": "Domaine B : Nombres (35% du test)",
+      "what": "Valeur de position, +, -, x, ÷ et les fractions.",
+      "tip": "C'est la base du test. Faites lire les prix à l'épicerie ou les pages d'un livre pour pratiquer les nombres jusqu'à 1000."
+    },
+    {
+      "id": "C",
+      "title": "Domaine C : Algèbre & Codage (20% du test)",
+      "what": "Suites (patterns), équations et pensée informatique.",
+      "tip": "Le codage est une nouveauté. Jouez au robot : donnez une suite d'instructions précises à exécuter dans le salon pour pratiquer la logique séquentielle."
+    },
+    {
+      "id": "D",
+      "title": "Domaine D : Données (20% du test)",
+      "what": "Lire des graphiques et comprendre la probabilité.",
+      "tip": "Analysez la météo ou les résultats sportifs ensemble : 'Quel événement est certain, possible ou impossible ?'"
+    },
+    {
+      "id": "E",
+      "title": "Domaine E : Sens de l'Espace (25% du test)",
+      "what": "Géométrie, Mesure (Temps, Aire, Périmètre).",
+      "tip": "Cuisinez ensemble ! C'est le meilleur moyen de comprendre les mesures de masse et de capacité. Cherchez des solides (prismes, cylindres) dans les placards."
+    }
+  ],
+  "schedule": [
+    {
+      "id": "jan-1",
+      "month": "JANVIER",
+      "date": "2026-01-07",
+      "theme": "Domaine B : Valeur de position",
+      "ixl_details": [
+        {"code": "B.1", "title": "Modèles de valeur de position jusqu'aux centaines"},
+        {"code": "B.3", "title": "Noms des valeurs de position jusqu'aux centaines"},
+        {"code": "B.5", "title": "Valeur d'un chiffre : jusqu'aux centaines"}
+      ],
+      "description": "Comprendre les unités, dizaines et centaines (jusqu'à 1000)."
+    },
+    {
+      "id": "jan-2",
+      "month": "JANVIER",
+      "date": "2026-01-14",
+      "theme": "Domaine B : Comparer et Ordonner",
+      "ixl_details": [
+        {"code": "A.21", "title": "Comparer des nombres jusqu'à 1000"},
+        {"code": "A.23", "title": "Choisir le nombre le plus grand/petit"},
+        {"code": "A.25", "title": "Mettre des nombres en ordre jusqu'à 1000"}
+      ],
+      "description": "Utiliser les symboles > et <. Classer les nombres."
+    },
+    {
+      "id": "jan-3",
+      "month": "JANVIER",
+      "date": "2026-01-21",
+      "theme": "Domaine B : L'Addition (3 chiffres)",
+      "ixl_details": [
+        {"code": "C.6", "title": "Utiliser des modèles pour additionner (avec regroupement)"},
+        {"code": "C.7", "title": "Additionner deux nombres jusqu'à trois chiffres"},
+        {"code": "C.9", "title": "Problèmes écrits d'addition (3 chiffres)"}
+      ],
+      "description": "Additionner avec retenue et résoudre des problèmes écrits."
+    },
+    {
+      "id": "jan-4",
+      "month": "JANVIER",
+      "date": "2026-01-28",
+      "theme": "Domaine B & F : Soustraction & Monnaie",
+      "ixl_details": [
+        {"code": "D.5", "title": "Soustraire des nombres jusqu'à trois chiffres"},
+        {"code": "D.7", "title": "Problèmes écrits de soustraction"},
+        {"code": "R.7", "title": "Rendre la monnaie jusqu'à 10$"}
+      ],
+      "description": "Maîtriser la soustraction à colonnes et le calcul de la monnaie."
+    },
+    {
+      "id": "feb-1",
+      "month": "FÉVRIER",
+      "date": "2026-02-04",
+      "theme": "Domaine B : Multiplication (Sens et faits)",
+      "ixl_details": [
+        {"code": "E.1", "title": "Compter des groupes égaux"},
+        {"code": "E.8", "title": "Créer des réseaux pour modéliser la multiplication"},
+        {"code": "G.1", "title": "Faits de multiplication pour 2, 5, 10"}
+      ],
+      "description": "Comprendre les groupes égaux et mémoriser les tables de base."
+    },
+    {
+      "id": "feb-2",
+      "month": "FÉVRIER",
+      "date": "2026-02-11",
+      "theme": "Domaine B : Division",
+      "ixl_details": [
+        {"code": "I.1", "title": "Diviser en comptant des groupes égaux"},
+        {"code": "K.1", "title": "Faits de division pour 2, 5, 10"}
+      ],
+      "description": "Partage équitable et lien inverse avec la multiplication."
+    },
+    {
+      "id": "feb-3",
+      "month": "FÉVRIER",
+      "date": "2026-02-18",
+      "theme": "Domaine C : Les Suites (Algèbre)",
+      "ixl_details": [
+        {"code": "Q.5", "title": "Suites croissantes"},
+        {"code": "Q.8", "title": "Utiliser une règle pour compléter une suite numérique"}
+      ],
+      "description": "Identifier et prolonger des suites logiques."
+    },
+    {
+      "id": "feb-4",
+      "month": "FÉVRIER",
+      "date": "2026-02-25",
+      "theme": "Domaine C : Équations (Algèbre)",
+      "ixl_details": [
+        {"code": "N.1", "title": "Identifier des équations"},
+        {"code": "N.4", "title": "Résoudre pour la variable"}
+      ],
+      "description": "Trouver la valeur manquante dans une égalité mathématique."
+    },
+    {
+      "id": "mar-1",
+      "month": "MARS",
+      "date": "2026-03-04",
+      "theme": "Domaine E : Le Temps",
+      "ixl_details": [
+        {"code": "S.3", "title": "Lire les horloges et écrire les heures"},
+        {"code": "S.6", "title": "Temps écoulé"},
+        {"code": "S.7", "title": "Problèmes écrits sur le temps écoulé"}
+      ],
+      "description": "Lire l'heure analogique/numérique et calculer des durées."
+    },
+    {
+      "id": "mar-2",
+      "month": "MARS",
+      "date": "2026-03-11",
+      "theme": "Domaine E : Périmètre",
+      "ixl_details": [
+        {"code": "W.1", "title": "Périmètre des rectangles"},
+        {"code": "W.2", "title": "Périmètre des polygones"},
+        {"code": "W.6", "title": "Périmètre : problèmes écrits"}
+      ],
+      "description": "Calculer la mesure du contour des formes géométriques."
+    },
+    {
+      "id": "mar-3",
+      "month": "MARS",
+      "date": "2026-03-18",
+      "theme": "Domaine E : Aire",
+      "ixl_details": [
+        {"code": "W.7", "title": "Trouver l'aire de figures avec des carrés unités"},
+        {"code": "W.10", "title": "Recouvrir un rectangle et trouver l'aire"}
+      ],
+      "description": "Mesurer la surface intérieure à l'aide d'unités carrées."
+    },
+    {
+      "id": "mar-4",
+      "month": "MARS",
+      "date": "2026-03-25",
+      "theme": "Domaine E : Formes 3D (Géométrie)",
+      "ixl_details": [
+        {"code": "V.6", "title": "Identifier les formes tridimensionnelles"},
+        {"code": "V.7", "title": "Compter les sommets, arêtes et faces"}
+      ],
+      "description": "Identifier et décrire les propriétés des solides."
+    },
+    {
+      "id": "avr-1",
+      "month": "AVRIL",
+      "date": "2026-04-01",
+      "theme": "Domaine B : Fractions",
+      "ixl_details": [
+        {"code": "X.1", "title": "Identifier des parties égales"},
+        {"code": "X.2", "title": "Identifier demis, tiers et quarts"},
+        {"code": "X.10", "title": "Associer des fractions aux modèles"}
+      ],
+      "description": "Représenter et nommer des parties d'un tout."
+    },
+    {
+      "id": "avr-2",
+      "month": "AVRIL",
+      "date": "2026-04-08",
+      "theme": "Domaine D : Données",
+      "ixl_details": [
+        {"code": "T.9", "title": "Interpréter les diagrammes à bandes"},
+        {"code": "T.11", "title": "Utiliser des diagrammes à bandes pour résoudre des problèmes"}
+      ],
+      "description": "Extraire des informations de graphiques complexes."
+    },
+    {
+      "id": "avr-3",
+      "month": "AVRIL",
+      "date": "2026-04-15",
+      "theme": "Domaine D : Probabilité",
+      "ixl_details": [
+        {"code": "BB.1", "title": "Plus, moins et également probable"},
+        {"code": "BB.2", "title": "Certain, probable, peu probable et impossible"}
+      ],
+      "description": "Utiliser le vocabulaire mathématique de la probabilité."
+    },
+    {
+      "id": "avr-4",
+      "month": "AVRIL",
+      "date": "2026-04-22",
+      "theme": "Domaine C : Codage",
+      "ixl_details": [
+        {"code": "P.3", "title": "Trouver l'ordre"}
+      ],
+      "description": "Développer la pensée logique nécessaire au codage informatique."
+    }
+  ]
+}

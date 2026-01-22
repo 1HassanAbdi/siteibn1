@@ -1,0 +1,221 @@
+{
+  "title": "Devoir de compréhension écrite – L’avènement de la télévision",
+  "level": "6e année",
+  "theme": "Compréhension de texte",
+  "typeTexte": "Texte informatif",
+  "noteTotale": 25,
+
+  "text": "Un téléviseur est désormais un article indispensable dans une maison. Il occupe une place importante dans une salle familiale. Il s’est même aventuré dans les chambres à coucher. La télévision est l’un des meilleurs moyens pour demeurer informés des dernières nouvelles et pour regarder des films.\n\nLe téléviseur n’était pas totalement électronique lorsqu’il a été inventé. Son écran contenait un petit moteur et une petite lampe. Quand le moteur et la lampe étaient allumés, ils produisaient ensemble une image d’un rouge orangé. L’image était floue et avait la grosseur d’une carte professionnelle.\n\nC’est en 1953, en Europe, que plusieurs personnes ont eu leur premier téléviseur. Ils ont acheté cet appareil dans l’intention de regarder le couronnement de la reine Elizabeth II à Londres. Seulement quelques milliers de personnes étaient admises dans l’abbaye de Westminster. Néanmoins, la couverture médiatique en direct a permis à des millions de personnes partout dans le monde d’assister au couronnement.\n\nUn autre évènement significatif a été l’atterrissage d’Apollo 11 sur la Lune, en 1969. Une fois de plus, des millions de personnes dans le monde regardaient le petit écran quand Neil Armstrong a marché sur la Lune et y a planté un drapeau américain en reconnaissance de l’incroyable exploit de l’équipage. Cette fois, l’évènement était transmis en couleurs. L’émission était beaucoup plus réaliste que les précédentes.",
+
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "I. Vrai ou Faux",
+      "type": "boolean",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        { "q": "Le téléviseur est considéré comme un article indispensable.", "a": true },
+        { "q": "Les premiers téléviseurs étaient totalement électroniques.", "a": false },
+        { "q": "L’image produite au début était floue.", "a": true },
+        { "q": "Le couronnement de la reine Elizabeth II a eu lieu en 1969.", "a": false },
+        { "q": "L’évènement d’Apollo 11 a été transmis en couleurs.", "a": true }
+      ]
+    },
+
+    {
+      "id": "qcm",
+      "label": "II. Choix multiples (QCM)",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Pourquoi la télévision est-elle importante selon le texte ?",
+          "options": [
+            "Pour écrire des lettres",
+            "Pour demeurer informés et regarder des films",
+            "Pour écouter la radio",
+            "Pour cuisiner"
+          ],
+          "a": "Pour demeurer informés et regarder des films"
+        },
+        {
+          "q": "Que contenait l’écran des premiers téléviseurs ?",
+          "options": [
+            "Un ordinateur",
+            "Une caméra",
+            "Un petit moteur et une petite lampe",
+            "Une antenne satellite"
+          ],
+          "a": "Un petit moteur et une petite lampe"
+        },
+        {
+          "q": "Quelle était la couleur de la première image télévisée ?",
+          "options": [
+            "Bleue",
+            "Noire et blanche",
+            "Rouge orangé",
+            "Verte"
+          ],
+          "a": "Rouge orangé"
+        },
+        {
+          "q": "Pourquoi les gens ont-ils acheté un téléviseur en 1953 ?",
+          "options": [
+            "Pour regarder un film",
+            "Pour assister au couronnement de la reine Elizabeth II",
+            "Pour voir Apollo 11",
+            "Pour jouer à des jeux"
+          ],
+          "a": "Pour assister au couronnement de la reine Elizabeth II"
+        },
+        {
+          "q": "Quel évènement est associé à l’année 1969 ?",
+          "options": [
+            "Le couronnement de la reine",
+            "L’invention du téléviseur",
+            "L’atterrissage d’Apollo 11",
+            "La première image télévisée"
+          ],
+          "a": "L’atterrissage d’Apollo 11"
+        }
+      ]
+    },
+
+    {
+      "id": "vocabulaire",
+      "label": "III. Vocabulaire",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Que signifie le mot « indispensable » ?",
+          "options": [
+            "Inutile",
+            "Très important",
+            "Rare",
+            "Ancien"
+          ],
+          "a": "Très important"
+        },
+        {
+          "q": "Que veut dire « demeurer informés » ?",
+          "options": [
+            "Rester sans nouvelles",
+            "Recevoir des informations",
+            "Voyager",
+            "Écrire"
+          ],
+          "a": "Recevoir des informations"
+        },
+        {
+          "q": "Que signifie « floue » ?",
+          "options": [
+            "Très claire",
+            "Peu nette",
+            "Colorée",
+            "Grande"
+          ],
+          "a": "Peu nette"
+        },
+        {
+          "q": "Que veut dire « admises » dans le texte ?",
+          "options": [
+            "Invitées",
+            "Acceptées",
+            "Refusées",
+            "Surprises"
+          ],
+          "a": "Acceptées"
+        },
+        {
+          "q": "Que signifie le mot « exploit » ?",
+          "options": [
+            "Un échec",
+            "Un fait ordinaire",
+            "Un acte remarquable",
+            "Une erreur"
+          ],
+          "a": "Un acte remarquable"
+        }
+      ]
+    },
+
+    {
+      "id": "grammaire",
+      "label": "IV. Grammaire",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "« Un téléviseur est désormais un article indispensable dans une maison. » Cette phrase est :",
+          "options": [
+            "Déclarative",
+            "Interrogative",
+            "Impérative",
+            "Exclamative"
+          ],
+          "a": "Déclarative"
+        },
+        {
+          "q": "Dans la phrase « L’image était floue », le mot « floue » est :",
+          "options": [
+            "Un nom",
+            "Un verbe",
+            "Un adjectif qualificatif",
+            "Un adverbe"
+          ],
+          "a": "Un adjectif qualificatif"
+        },
+        {
+          "q": "Quel est le temps du verbe dans « Le téléviseur n’était pas totalement électronique » ?",
+          "options": [
+            "Présent",
+            "Imparfait",
+            "Passé composé",
+            "Futur"
+          ],
+          "a": "Imparfait"
+        },
+        {
+          "q": "Dans la phrase « Des millions de personnes regardaient le petit écran », le mot « personnes » est :",
+          "options": [
+            "Un verbe",
+            "Un nom commun",
+            "Un adjectif",
+            "Un pronom"
+          ],
+          "a": "Un nom commun"
+        },
+        {
+          "q": "Quel est le type de texte écrit par l’auteur ?",
+          "options": [
+            "informatif",
+            "biographique",
+            "narratif",
+            "poétique"
+          ],
+          "a": "informatif"
+        }
+      ]
+    },
+
+    {
+      "id": "lecture",
+      "label": "V. Questions de lecture",
+      "type": "open",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        "Pourquoi le téléviseur est-il devenu un article indispensable ?",
+        "Décris l’image produite par les premiers téléviseurs.",
+        "Explique pourquoi le couronnement de la reine Elizabeth II a été important pour la télévision.",
+        "Explique comment la télévision a permis à des millions de personnes d’assister à des évènements importants.",
+        "Selon toi, pourquoi la télévision a-t-elle eu un grand impact sur le monde ?"
+      ]
+    }
+  ]
+}

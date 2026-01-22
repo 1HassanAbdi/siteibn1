@@ -1,0 +1,127 @@
+{
+  "title": "Planning vocabulaire 2025-2026",
+  "niveau": "Anglais - 2e année",
+  "wordsPerWeek": 15,
+  "weeks": [
+    {
+      "id": 1,
+      "week": "Semaine 1",
+      "evaluation": "2025-09-12",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "cat", "dog", "sun", "moon", "book",
+        "pen", "hat", "red", "blue", "big",
+        "small", "run", "jump", "happy", "sad"
+      ]
+    },
+    {
+      "id": 2,
+      "week": "Semaine 2",
+      "evaluation": "2025-09-19",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "house", "car", "tree", "flower", "bird",
+        "fish", "green", "yellow", "fast", "slow",
+        "walk", "play", "laugh", "cry", "friend"
+      ]
+    },
+    {
+      "id": 3,
+      "week": "Semaine 3",
+      "evaluation": "2025-09-26",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "school", "teacher", "student", "desk", "chair",
+        "paper", "pencil", "read", "write", "listen",
+        "talk", "quiet", "line", "bag", "class"
+      ]
+    },
+    {
+      "id": 4,
+      "week": "Semaine 4",
+      "evaluation": "2025-10-03",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "mom", "dad", "brother", "sister", "baby",
+        "family", "home", "eat", "drink", "sleep",
+        "love", "help", "clean", "cook", "hug"
+      ]
+    },
+    {
+      "id": 5,
+      "week": "Semaine 5",
+      "evaluation": "2025-10-10",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "apple", "banana", "bread", "milk", "water",
+        "cake", "rice", "cheese", "sweet", "good",
+        "hungry", "full", "like", "want", "share"
+      ]
+    },
+    {
+      "id": 6,
+      "week": "Semaine 6",
+      "evaluation": "2025-10-17",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "head", "hand", "foot", "leg", "arm",
+        "eye", "ear", "nose", "mouth", "hair",
+        "face", "body", "hurt", "wash", "healthy"
+      ]
+    },
+    {
+      "id": 7,
+      "week": "Semaine 7",
+      "evaluation": "2025-10-24",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "rain", "snow", "wind", "cloud", "sky",
+        "cold", "hot", "warm", "day", "night",
+        "today", "tomorrow", "weather", "coat", "boots"
+      ]
+    },
+    {
+      "id": 8,
+      "week": "Semaine 8",
+      "evaluation": "2025-10-31",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "ball", "game", "toy", "bike", "park",
+        "run", "throw", "catch", "kick", "fun",
+        "win", "lose", "team", "playground", "smile"
+      ]
+    },
+    {
+      "id": 9,
+      "week": "Semaine 9",
+      "evaluation": "2025-11-07",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "shirt", "pants", "dress", "shoes", "socks",
+        "jacket", "hat", "wear", "new", "old",
+        "clean", "dirty", "buy", "like", "color"
+      ]
+    },
+    {
+      "id": 10,
+      "week": "Semaine 10",
+      "evaluation": "2025-11-14",
+      "echelon": "-",
+      "totalWords": 15,
+      "words": [
+        "yes", "no", "please", "thank you", "sorry",
+        "hello", "goodbye", "help", "stop", "go",
+        "come", "look", "see", "listen", "wait"
+      ]
+    }
+  ]
+}

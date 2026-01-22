@@ -1,0 +1,47 @@
+{
+  "title": "Dictées des 4 semaines",
+  "weeks": [
+    {
+  "id": "lexique1",
+  "title": "Lexique - Un éléphant, ça trompe",
+  "words": [
+    "une araignée",
+    "un bébé",
+    "une cheminée",
+    "une clé",
+    "une école",
+    "un écureuil",
+    "un éléphant",
+    "une étoile",
+    "une fée",
+    "de la fumée",
+    "une fusée",
+    "un métro",
+    "une poupée",
+    "un téléphone",
+    "un téléviseur"
+  ]
+},
+
+    {
+      "id": "semaine1",
+      "title": "Dictée 1",
+      "words": ["maison", "chien", "école", "famille", "livre"]
+    },
+    {
+      "id": "semaine2",
+      "title": "Dictée 2",
+      "words": ["voiture", "jardin", "pomme", "ordinateur", "stylo"]
+    },
+    {
+      "id": "semaine3",
+     "title": "Dictée 3",
+      "words": ["soleil", "lune", "étoile", "nuage", "pluie"]
+    },
+    {
+      "id": "semaine4",
+     "title": "Dictée 4",
+      "words": ["chat", "oiseau", "poisson", "lapin", "tortue"]
+    }
+  ]
+}

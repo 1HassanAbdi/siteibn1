@@ -1,0 +1,259 @@
+{
+  "title": "Le plus fort des félins",
+  "level": "4e – 5e année",
+  "theme": "Compréhension de texte",
+  "typeTexte": "Texte informatif",
+  "objectifs": [
+    "Comprendre un texte informatif",
+    "Comparer des animaux",
+    "Faire des inférences",
+    "Enrichir le vocabulaire",
+    "Organiser l'information dans un tableau"
+  ],
+
+  "text": "Le léopard est un petit animal comparé au lion et au tigre, mais plusieurs personnes croient qu'il est le plus dangereux des grands félins. Par rapport à son poids, le léopard est l'un des félins les plus forts. Il est un excellent grimpeur et peut monter dans un arbre à une vitesse étonnante. Il peut même escalader un arbre en transportant une proie qui pèse deux fois son poids. Il peut faire un bond de plus de trois mètres dans les airs et sauter au sol d'une hauteur de quinze mètres sur sa proie.\n\nLa peau du léopard, d'un gris or avec des taches foncées ou des cercles, lui procure un excellent camouflage au milieu des branches d'un arbre. Bien qu'il arrive qu'on aperçoive un léopard durant la journée, il est plus probable que cela se produise la nuit, car c'est à ce moment qu'il est plus actif.\n\nLe léopard est particulièrement dangereux parce qu'il chasse les chiens près des villes et des villages. Le léopard peut parfois devenir un terrible mangeur d'hommes. Les léopards ont terrorisé de vastes territoires durant des années. Un léopard peut facilement transporter un humain adulte jusque dans la brousse ou au sommet d'un arbre.\n\nLe regretté chasseur Jim Corbett a relaté l'histoire d'un léopard ayant tué quatre-cents personnes avant d'être abattu en 1970. Corbett a écrit que les léopards mangeurs d'hommes sont rares, mais très difficiles à arrêter parce qu'ils sont astucieux et prudents. De tels léopards sont encore aperçus à l'occasion en Inde et dans certains pays d'Afrique. Toutefois, la plupart des léopards n'attaqueront pas les humains, à moins d'être attaqués ou blessés.",
+
+ 
+ 
+  
+
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "✓/✗ Vrai ou Faux (5 pts – 1 pt chacun)",
+      "type": "boolean",
+      "pointsParQuestion": 1,
+      "questions": [
+        { "q": "Le léopard est plus gros que le lion.", "a": false },
+        { "q": "Le léopard est très fort par rapport à son poids.", "a": true },
+        { "q": "Le léopard est surtout actif la nuit.", "a": true },
+        { "q": "Tous les léopards attaquent les humains.", "a": false },
+        { "q": "Le léopard peut grimper avec une proie très lourde.", "a": true }
+      ]
+    },
+
+    {
+      "id": "qcm",
+      "label": "📝 QCM – Repérage d’informations (5 pts – 1 pt chacun)",
+      "type": "multiple",
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Pourquoi le léopard est-il considéré comme dangereux ?",
+          "options": [
+            "Parce qu’il est le plus gros",
+            "Parce qu’il chasse près des humains",
+            "Parce qu’il vit en groupe",
+            "Parce qu’il est bruyant"
+          ],
+          "a": "Parce qu’il chasse près des humains"
+        },
+        {
+          "q": "Que peut faire le léopard avec une proie ?",
+          "options": [
+            "La manger au sol",
+            "La transporter dans un arbre",
+            "La cacher sous terre",
+            "La partager"
+          ],
+          "a": "La transporter dans un arbre"
+        },
+        {
+          "q": "Quand voit-on le plus souvent le léopard ?",
+          "options": [
+            "Le matin",
+            "À midi",
+            "La nuit",
+            "En hiver"
+          ],
+          "a": "La nuit"
+        },
+        {
+          "q": "Où vit principalement le léopard ?",
+          "options": [
+            "Dans les villes",
+            "Dans la brousse et les forêts",
+            "Dans les océans",
+            "Dans les montagnes enneigées"
+          ],
+          "a": "Dans la brousse et les forêts"
+        },
+        {
+          "q": "Qui est Jim Corbett ?",
+          "options": [
+            "Un scientifique",
+            "Un chasseur",
+            "Un explorateur",
+            "Un léopard"
+          ],
+          "a": "Un chasseur"
+        }
+      ]
+    },
+
+    {
+      "id": "vocabulaire",
+      "label": "📚 Vocabulaire (4 pts – 0,8 pt chacun)",
+      "type": "multiple",
+      "pointsParQuestion": 0.8,
+      "questions": [
+        {
+          "q": "Que signifie « camouflage » ?",
+          "options": [
+            "Se cacher dans le décor",
+            "Dormir",
+            "Attaquer",
+            "Être dangereux"
+          ],
+          "a": "Se cacher dans le décor"
+        },
+        {
+          "q": "Que veut dire « proie » ?",
+          "options": [
+            "Un chasseur",
+            "Un animal chassé",
+            "Un danger",
+            "Un abri"
+          ],
+          "a": "Un animal chassé"
+        },
+        {
+          "q": "Que signifie « astucieux » ?",
+          "options": [
+            "Fort",
+            "Intelligent",
+            "Lent",
+            "Bruyant"
+          ],
+          "a": "Intelligent"
+        },
+        {
+          "q": "Que veut dire « vagabonder » ?",
+          "options": [
+            "Rester immobile",
+            "Se déplacer sans but précis",
+            "Dormir",
+            "Attaquer"
+          ],
+          "a": "Se déplacer sans but précis"
+        },
+        {
+          "q": "Que signifie « diurne » ?",
+          "options": [
+            "Actif la nuit",
+            "Actif le jour",
+            "Actif toute l’année",
+            "Actif en hiver"
+          ],
+          "a": "Actif le jour"
+        }
+      ]
+    },
+
+    {
+      "id": "comprehension",
+      "label": "🔍 Compréhension approfondie (4 pts – 0,8 pt chacun)",
+      "type": "multiple",
+      "pointsParQuestion": 0.8,
+      "questions": [
+        {
+          "q": "Pourquoi le camouflage est-il important pour le léopard ?",
+          "options": [
+            "Pour se reposer",
+            "Pour se cacher et chasser",
+            "Pour faire peur",
+            "Pour dormir"
+          ],
+          "a": "Pour se cacher et chasser"
+        },
+        {
+          "q": "Pourquoi le léopard peut-il être plus dangereux que le lion ?",
+          "options": [
+            "Il est plus gros",
+            "Il vit près des humains",
+            "Il est plus lent",
+            "Il vit en groupe"
+          ],
+          "a": "Il vit près des humains"
+        },
+        {
+          "q": "Pourquoi les léopards mangeurs d’hommes sont-ils difficiles à arrêter ?",
+          "options": [
+            "Ils sont rapides",
+            "Ils sont astucieux et prudents",
+            "Ils sont nombreux",
+            "Ils sont bruyants"
+          ],
+          "a": "Ils sont astucieux et prudents"
+        },
+        {
+          "q": "Pourquoi le léopard chasse-t-il surtout la nuit ?",
+          "options": [
+            "Il voit mieux",
+            "Il est plus actif",
+            "Il fait froid",
+            "Les humains dorment"
+          ],
+          "a": "Il est plus actif"
+        },
+        {
+          "q": "Pourquoi le léopard hisse-t-il ses proies dans un arbre ?",
+          "options": [
+            "Pour jouer",
+            "Pour les protéger des autres animaux",
+            "Pour les faire sécher",
+            "Pour les montrer"
+          ],
+          "a": "Pour les protéger des autres animaux"
+        }
+      ]
+    },
+
+    {
+      "id": "grammaire",
+      "label": "🧠 Grammaire (4 pts – 0,8 pt chacun)",
+      "type": "multiple",
+      "pointsParQuestion": 0.8,
+      "questions": [
+        {
+          "q": "Dans la phrase « Le léopard est dangereux », le mot « dangereux » est :",
+          "options": ["Un nom", "Un verbe", "Un adjectif", "Un pronom"],
+          "a": "Un adjectif"
+        },
+        {
+          "q": "Le mot « léopards » est au :",
+          "options": ["Singulier", "Pluriel"],
+          "a": "Pluriel"
+        },
+        {
+          "q": "Dans « Il peut monter », le verbe est :",
+          "options": ["Peut", "Monter", "Peut monter", "Il"],
+          "a": "Peut monter"
+        },
+        {
+          "q": "Le mot « forêt » est :",
+          "options": ["Un verbe", "Un nom", "Un adjectif", "Un pronom"],
+          "a": "Un nom"
+        },
+        {
+          "q": "À quel temps est conjugué le verbe « est » ?",
+          "options": ["Présent", "Passé", "Futur", "Imparfait"],
+          "a": "Présent"
+        }
+      ]
+    },
+
+    {
+      "id": "inferenceReaction",
+      "label": "✍️ Inférence et réaction (2 pts – réponses courtes)",
+      "type": "open",
+      "pointsTotaux": 2,
+      "questions": [
+        "Pourquoi le léopard préfère-t-il vivre loin des humains ?",
+        "Selon toi, pourquoi faut-il respecter les animaux sauvages ?",
+        "Que ferais-tu si tu voyais un léopard dans la nature ?",
+        "Quelle qualité du léopard t’impressionne le plus ? Pourquoi ?"
+      ]
+    }
+  ]
+}

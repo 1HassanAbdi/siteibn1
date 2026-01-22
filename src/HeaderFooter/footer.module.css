@@ -1,0 +1,143 @@
+/* ==============================
+   🌙 FOOTER PRINCIPAL
+   ============================== */
+.footer {
+  background: linear-gradient(180deg, #222, #333);
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 40px; ;
+  text-align: left;
+  border-top: 4px solid #4caf50;
+  font-family: "Segoe UI", sans-serif;
+   
+  width: 100%;
+}
+
+/* ==============================
+   📦 CONTAINER
+   ============================== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   📚 COLONNES
+   ============================== */
+.column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #4caf50;
+  border-bottom: 2px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.list a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list a:hover {
+  color: #4caf50;
+}
+
+/* ==============================
+   🌐 SOCIAL MEDIA
+   ============================== */
+.socialMedia {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.socialMedia h3 {
+  color: #4caf50;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.socialMedia .list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.socialMedia .list li {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.socialMedia button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socialMedia button:hover {
+  color: #4caf50;
+  transform: scale(1.2);
+}
+
+/* ==============================
+   ⚖️ BOTTOM SECTION
+   ============================== */
+.bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbb;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+}
+
+/* ==============================
+   📱 RESPONSIVE
+   ============================== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .list li {
+    justify-content: center;
+  }
+
+  .socialMedia .list {
+    gap: 15px;
+  }
+}

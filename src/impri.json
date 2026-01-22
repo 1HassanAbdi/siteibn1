@@ -1,0 +1,59 @@
+{
+  "title": "Exercice de conjugaison – Temps du verbe",
+  "sections": [
+    {
+      "id": "ex1",
+      "title": "Transformer les phrases",
+      "text": "Transforme chaque phrase au passé composé, au futur simple et à l’imparfait.",
+      "questions": [
+        {
+          "question": "Je mange une pomme.",
+          "answers": {
+            "passe_compose": "J'ai mangé une pomme.",
+            "futur_simple": "Je mangerai une pomme.",
+            "imparfait": "Je mangeais une pomme."
+          }
+        },
+        {
+          "question": "Nous regardons la télévision.",
+          "answers": {
+            "passe_compose": "Nous avons regardé la télévision.",
+            "futur_simple": "Nous regarderons la télévision.",
+            "imparfait": "Nous regardions la télévision."
+          }
+        },
+        {
+          "question": "Il finit ses devoirs.",
+          "answers": {
+            "passe_compose": "Il a fini ses devoirs.",
+            "futur_simple": "Il finira ses devoirs.",
+            "imparfait": "Il finissait ses devoirs."
+          }
+        },
+        {
+          "question": "Vous prenez le bus.",
+          "answers": {
+            "passe_compose": "Vous avez pris le bus.",
+            "futur_simple": "Vous prendrez le bus.",
+            "imparfait": "Vous preniez le bus."
+          }
+        },
+        {
+          "question": "Elles jouent au parc.",
+          "answers": {
+            "passe_compose": "Elles ont joué au parc.",
+            "futur_simple": "Elles joueront au parc.",
+            "imparfait": "Elles jouaient au parc."
+          }
+        }
+      ]
+    },
+    {
+      "id": "redaction",
+      "title": "Transformer un texte au futur",
+      "text": "Réécris le texte suivant au futur simple.",
+      "originalText": "Vous prenez le bus chaque matin pour aller à l’école. Parfois, vous rencontrez vos amis à l’arrêt et vous discutez pendant le trajet. Ensuite, vous arrivez à l’école et commencez votre journée avec le sourire.",
+      "expected": "Vous prendrez le bus chaque matin pour aller à l’école. Parfois, vous rencontrerez vos amis à l’arrêt et vous discuterez pendant le trajet. Ensuite, vous arriverez à l’école et commencerez votre journée avec le sourire."
+    }
+  ]
+}

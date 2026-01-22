@@ -1,0 +1,212 @@
+{
+  "title": "Planning vocabulaire 2025-2026",
+  "niveau":"3e Année",
+  "weeks": [
+    {
+      "id": 1,
+      "week": "Semaine 1",
+      "evaluation": "2026-01-08",
+      "echelon": "1 à 5",
+      "totalWords": 24,
+      "words": [
+        "maison","papa","porte","rue","avec","deux","terre","été","maman",
+        "pipe","pour","table","école","jardin","mal","bébé","carte","cheminée",
+        "livre","nature","rouge","sucre","tête","vache"
+      ]
+    },
+    {
+      "id": 2,
+      "week": "Semaine 2",
+      "evaluation": "2026-01-15",
+      "echelon": "6 et 7",
+      "totalWords": 33,
+      "words": [
+        "achat","barbe","classe","feu","lion","matin","revenir","rive","robe",
+        "soir","tuer","vendredi","vigne","branche","brique","chat","facteur",
+        "femme","fermier","homme","jeudi","lapin","lui","lundi","mars","moulin",
+        "plante","poire","poste","route","soleil","sur"
+      ]
+    },
+    {
+      "id": 3,
+      "week": "Semaine 3",
+      "evaluation": "2026-01-22",
+      "echelon": "8",
+      "totalWords": 33,
+      "words": [
+        "animal","arbre","arme","aube","autour","avenir","bouche","brave","chemin",
+        "cheval","culture","devoir","église","enfant","étude","fête","image","louer",
+        "mardi","même","mort","moustache","niche","ordre","plume","poupée","pouvoir",
+        "propre","retenir","rire","sage","solide","soupe"
+      ]
+    },
+    {
+      "id": 4,
+      "week": "Semaine 4",
+      "evaluation": "2026-01-29",
+      "echelon": "9",
+      "totalWords": 44,
+      "words": [
+        "année","article","aviateur","bonne","café","cage","carton","cave","chaleur",
+        "chambre","chanteur","charme","cœur","costume","couche","croix","devenir",
+        "douleur","droite","écriture","famille","fille","fortune","foudre","journal",
+        "lecture","libre","ligne","lit","maladie","marbre","marche","marque","mère",
+        "midi","morne","octobre","os","pauvre","plus","pomme","premier","proverbe"
+      ]
+    },
+    {
+      "id": 5,
+      "week": "Semaine 5",
+      "evaluation": "2026-02-05",
+      "echelon": "10 (Partie 1)",
+      "totalWords": 35,
+      "words": [
+        "acte","artiste","astre","blé","boire","bois","bon","bord","cabine","chasse",
+        "chasseur","chemise","chercher","chevelure","compagnon","conduite","confiture",
+        "contenir","convenir","coucou","coude","courage","dans","élève","entre","étable",
+        "établir","fabrique","faute","fleuve","fortement","froid","futur","gros"
+      ]
+    },
+    {
+      "id": 6,
+      "week": "Semaine 6",
+      "evaluation": "2026-02-12",
+      "echelon": "10 (Partie 2)",
+      "totalWords": 34,
+      "words": [
+        "journée","juste","malade","mariage","matière","mineur","miracle","moine",
+        "monde","musique","neige","œuf","orange","pénible","personne","peur","prince",
+        "regarder","reste","réunir","ronde","ruche","sec","semaine","sol","sortie",
+        "survenir","tartine","toucher","vie","visage","visite","visiteur","voleur"
+      ]
+    },
+    {
+      "id": 7,
+      "week": "Semaine 7",
+      "evaluation": "2026-02-19",
+      "echelon": "11 (Partie 1)",
+      "totalWords": 37,
+      "words": [
+        "agréable","ardeur","armoire","balle","belge","bonjour","bordure","bouton",
+        "cahier","calcul","chanson","charbon","charge","chien","cloche","coin","comme",
+        "contre","couleur","coupe","crime","cuivre","diable","dictée","directeur",
+        "double","ferme","figure","fromage","grand","jouer","lait","large","lire",
+        "liste","main"
+      ]
+    },
+    {
+      "id": 8,
+      "week": "Semaine 8",
+      "evaluation": "2026-02-26",
+      "echelon": "11 (Partie 2)",
+      "totalWords": 36,
+      "words": [
+        "matinée","meuble","mouton","nuage","oncle","parent","père","perle","piste",
+        "planche","plumier","poche","prison","produire","rage","ramage","reine",
+        "remarque","reproche","revoir","revue","roi","rose","sac","salutation","singe",
+        "sorte","statue","tarte","tous","tout","usage","usine","vapeur","village","ville"
+      ]
+    },
+    {
+      "id": 9,
+      "week": "Semaine 9",
+      "evaluation": "2026-03-05",
+      "echelon": "12 (Partie 1)",
+      "totalWords": 28,
+      "words": [
+        "moderne","mot","moteur","murmure","murmurer","nid","nuisible","odeur","papier",
+        "pardon","parfait","partie","parvenir","patte","perche","pluie","pondre",
+        "porteur","poudre","poule","prendre","proche","profondeur","punir","rare","rat",
+        "redevenir","regard"
+      ]
+    },
+    {
+      "id": 10,
+      "week": "Semaine 10",
+      "evaluation": "2026-03-12",
+      "echelon": "12 (Partie 2)",
+      "totalWords": 28,
+      "words": [
+        "rendre","rien","risque","sabot","sel","signe","singulier","soldat","sueur",
+        "surprise","tenue","timide","toile","tombe","tourner","trois","valeur","vase",
+        "vaste","vente","véritable","victime","victoire","vide","vif","visible","vite",
+        "volume"
+      ]
+    },
+    {
+      "id": 11,
+      "week": "Semaine 11",
+      "evaluation": null,
+      "echelon": "-",
+      "totalWords": null,
+      "words": []
+    },
+    {
+      "id": 12,
+      "week": "Semaine 12",
+      "evaluation": "2026-03-26",
+      "echelon": "13 (Partie 1/5)",
+      "totalWords": 34,
+      "words": [
+        "abeille","amateur","amour","âne","ardoise","avion","avril","bande","barquette",
+        "beau","bien","bise","bondir","botte","boucle","boule","boutique","bras",
+        "brise","canal","canard","carabine","caverne","chant","chaudement","chevalier",
+        "clou","combien","commune","compagne","confrère","corniche"
+      ]
+    },
+    {
+      "id": 13,
+      "week": "Semaine 13",
+      "evaluation": "2026-04-02",
+      "echelon": "13 (Partie 2/5)",
+      "totalWords": 34,
+      "words": [
+        "couper","couverture","crier","décembre","découverte","dimanche","dire",
+        "division","dix","duc","encore","endormir","entrée","épreuve","esclave",
+        "estrade","étalage","faire","fée","feuille","fleurette","fondre","formidable",
+        "foule","fumée","fumer","garçon","gloire","grammaire","grenier","gris","haut",
+        "herbe"
+      ]
+    },
+    {
+      "id": 14,
+      "week": "Semaine 14",
+      "evaluation": "2026-04-09",
+      "echelon": "13 (Partie 3/5)",
+      "totalWords": 34,
+      "words": [
+        "insecte","janvier","jardinier","joie","joli","jouet","joueur","jour","juin",
+        "lampe","laver","légume","lieu","loin","lune","lunette","machine","magnifique",
+        "marcher","mauve","mélange","mémoire","menu","merle","miel","ministre",
+        "minuit","misérable","moudre","mouvoir","multitude","nation","navire"
+      ]
+    },
+    {
+      "id": 15,
+      "week": "Semaine 15",
+      "evaluation": "2026-04-16",
+      "echelon": "13 (Partie 4/5)",
+      "totalWords": 34,
+      "words": [
+        "nez","nom","offre","or","orage","oreille","ouverture","patrie","patron","petit",
+        "pie","pied","place","plage","plumage","poitrine","politique","poulet","pratique",
+        "preuve","prime","problème","procureur","promenade","provenir","récolte",
+        "redoutable","renard","rencontre","reprise","rétablir","rivière","robuste"
+      ]
+    },
+    {
+      "id": 16,
+      "week": "Semaine 16",
+      "evaluation": "2026-04-23",
+      "echelon": "13 (Partie 5/5)",
+      "totalWords": 34,
+      "words": [
+        "rosée","sabre","sacoche","saint","samedi","sauvage","serviteur","siège","sœur",
+        "sombre","sortir","sous","soutenir","spectateur","suivre","superbe","tableau",
+        "tablier","terme","tigre","timbre","tortue","tour","tranche","trouble","tulipe",
+        "valise","vendeur","venir","vent","verdure","verger","vin","vitre","vitrine",
+        "vivre","voisin","voisinage"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "weekId": "jan-1",
+    "questions": [
+      { "id": 101, "text": "Dans le nombre 482, quelle est la valeur du chiffre 8 ?", "options": ["8", "80", "800", "2"], "correctAnswer": "80" },
+      { "id": 102, "text": "Quelle est la forme développée de 305 ?", "options": ["300 + 50", "300 + 5", "30 + 5", "3 + 5"], "correctAnswer": "300 + 5" },
+      { "id": 103, "text": "Comment écrit-on : six cent quarante-deux ?", "options": ["60042", "642", "624", "462"], "correctAnswer": "642" },
+      { "id": 104, "text": "Quel chiffre occupe la position des centaines dans 927 ?", "options": ["7", "2", "9", "0"], "correctAnswer": "9" },
+      { "id": 105, "text": "Le nombre 1000 est composé de combien de dizaines ?", "options": ["10 dizaines", "100 dizaines", "1 dizaine", "1000 dizaines"], "correctAnswer": "100 dizaines" }
+    ]
+  },
+  {
+    "weekId": "jan-2",
+    "questions": [
+      { "id": 201, "text": "Quel symbole convient pour : 150 ___ 105 ?", "options": ["> (plus grand)", "< (plus petit)", "="], "correctAnswer": "> (plus grand)" },
+      { "id": 202, "text": "Range ces nombres du plus petit au plus grand : 201, 199, 300", "options": ["300, 201, 199", "199, 201, 300", "199, 300, 201"], "correctAnswer": "199, 201, 300" },
+      { "id": 203, "text": "Lequel de ces nombres est le plus grand ?", "options": ["899", "901", "910", "199"], "correctAnswer": "910" },
+      { "id": 204, "text": "Quel nombre se situe entre 550 et 560 ?", "options": ["549", "561", "555", "500"], "correctAnswer": "555" },
+      { "id": 205, "text": "Lequel est vrai ?", "options": ["120 < 102", "450 = 405", "888 > 889", "760 > 670"], "correctAnswer": "760 > 670" }
+    ]
+  },
+  {
+    "weekId": "jan-3",
+    "questions": [
+      { "id": 301, "text": "Calcule : 125 + 130", "options": ["250", "255", "355", "205"], "correctAnswer": "255" },
+      { "id": 302, "text": "Il y a 145 pommes rouges et 128 pommes vertes. Combien de pommes en tout ?", "options": ["273", "263", "163", "200"], "correctAnswer": "273" },
+      { "id": 303, "text": "Dans l'addition 48 + 24, le chiffre des unités sera :", "options": ["2", "4", "8", "6"], "correctAnswer": "2" },
+      { "id": 304, "text": "Trouve la somme de 250 + 250 + 50 :", "options": ["500", "550", "600", "450"], "correctAnswer": "550" },
+      { "id": 305, "text": "Si tu additionnes 10 dizaines à 400, tu obtiens :", "options": ["410", "500", "401", "140"], "correctAnswer": "500" }
+    ]
+  },
+  {
+    "weekId": "jan-4",
+    "questions": [
+      { "id": 401, "text": "Tu achètes un bonbon à 80 sous. Tu donnes 1 dollar. Combien on te rend ?", "options": ["10 sous", "20 sous", "30 sous", "80 sous"], "correctAnswer": "20 sous" },
+      { "id": 402, "text": "Calcule : 500 - 150", "options": ["450", "350", "400", "300"], "correctAnswer": "350" },
+      { "id": 403, "text": "Quel ensemble de pièces fait 1$ ?", "options": ["3 de 25 sous", "4 de 25 sous", "10 de 5 sous", "2 de 10 sous"], "correctAnswer": "4 de 25 sous" },
+      { "id": 404, "text": "Julie a 5,00$. Elle achète un jus à 2,00$. Combien lui reste-t-il ?", "options": ["2,00$", "3,00$", "7,00$", "1,00$"], "correctAnswer": "3,00$" },
+      { "id": 405, "text": "Combien de pièces de 10 sous faut-il pour faire 1,00$ ?", "options": ["5", "10", "100", "20"], "correctAnswer": "10" }
+    ]
+  },
+  {
+    "weekId": "feb-1",
+    "questions": [
+      { "id": 501, "text": "Quelle addition répétée représente 3 x 5 ?", "options": ["3 + 3 + 3", "5 + 5 + 5", "5 + 3", "3 + 5"], "correctAnswer": "5 + 5 + 5" },
+      { "id": 502, "text": "Combien font 6 paquets de 2 biscuits ?", "options": ["8", "10", "12", "14"], "correctAnswer": "12" },
+      { "id": 503, "text": "Complète : 10 x 4 =", "options": ["14", "40", "44", "400"], "correctAnswer": "40" },
+      { "id": 504, "text": "Zéro multiplié par n'importe quel nombre égale :", "options": ["Le nombre", "1", "0", "10"], "correctAnswer": "0" },
+      { "id": 505, "text": "Si un chat a 4 pattes, combien de pattes ont 5 chats ?", "options": ["9", "15", "20", "25"], "correctAnswer": "20" }
+    ]
+  },
+  {
+    "weekId": "feb-2",
+    "questions": [
+      { "id": 601, "text": "Tu as 10 bonbons à partager entre 2 amis. Combien chacun en aura-t-il ?", "options": ["2", "5", "8", "10"], "correctAnswer": "5" },
+      { "id": 602, "text": "15 divisé par 5 est égal à :", "options": ["3", "5", "10", "20"], "correctAnswer": "3" },
+      { "id": 603, "text": "Si je partage 20 pommes en 4 sacs égaux, il y a...", "options": ["4 par sac", "5 par sac", "10 par sac", "2 par sac"], "correctAnswer": "5 par sac" },
+      { "id": 604, "text": "Quelle multiplication aide à trouver 12 ÷ 2 ?", "options": ["2 x 5 = 10", "2 x 6 = 12", "2 x 2 = 4", "12 x 1 = 12"], "correctAnswer": "2 x 6 = 12" },
+      { "id": 605, "text": "Partager 18 en 3 groupes égaux donne :", "options": ["6", "5", "9", "3"], "correctAnswer": "6" }
+    ]
+  },
+  {
+    "weekId": "feb-3",
+    "questions": [
+      { "id": 701, "text": "Trouve le prochain nombre : 2, 4, 6, 8, ...", "options": ["9", "10", "12", "11"], "correctAnswer": "10" },
+      { "id": 702, "text": "Quelle est la règle de cette suite : 5, 10, 15, 20 ?", "options": ["Ajouter 2", "Ajouter 5", "Ajouter 10", "Multiplier par 2"], "correctAnswer": "Ajouter 5" },
+      { "id": 703, "text": "Trouve le nombre manquant : 30, 28, 26, ___, 22", "options": ["25", "24", "23", "20"], "correctAnswer": "24" },
+      { "id": 704, "text": "Complète la suite : 100, 200, 300, ___", "options": ["301", "400", "500", "310"], "correctAnswer": "400" },
+      { "id": 705, "text": "Si la règle est 'soustraire 10', que vient après 50 ?", "options": ["60", "40", "30", "45"], "correctAnswer": "40" }
+    ]
+  },
+  {
+    "weekId": "feb-4",
+    "questions": [
+      { "id": 801, "text": "Trouve le nombre manquant : 15 + ? = 25", "options": ["5", "10", "15", "40"], "correctAnswer": "10" },
+      { "id": 802, "text": "Si un carré vaut 5, combien valent 3 carrés ?", "options": ["8", "10", "15", "555"], "correctAnswer": "15" },
+      { "id": 803, "text": "Quel signe complète l'équation : 4 ___ 4 = 8", "options": ["+", "-", "x", "÷"], "correctAnswer": "+" },
+      { "id": 804, "text": "Trouve l'inconnue : 100 - ? = 70", "options": ["20", "30", "40", "170"], "correctAnswer": "30" },
+      { "id": 805, "text": "Vrai ou Faux : 5 + 5 = 2 + 8 ?", "options": ["Vrai", "Faux"], "correctAnswer": "Vrai" }
+    ]
+  },
+  {
+    "weekId": "mar-1",
+    "questions": [
+      { "id": 901, "text": "Le film commence à 14h00 et dure 1 heure. À quelle heure finit-il ?", "options": ["14h30", "15h00", "16h00", "13h00"], "correctAnswer": "15h00" },
+      { "id": 902, "text": "Combien de minutes y a-t-il dans une demi-heure ?", "options": ["15 minutes", "30 minutes", "50 minutes", "60 minutes"], "correctAnswer": "30 minutes" },
+      { "id": 903, "text": "Si la petite aiguille est sur le 6 et la grande sur le 12, il est...", "options": ["6h00", "12h30", "6h12", "12h06"], "correctAnswer": "6h00" },
+      { "id": 904, "text": "Combien d'heures y a-t-il dans une journée complète ?", "options": ["12", "24", "60", "7"], "correctAnswer": "24" },
+      { "id": 905, "text": "Si il est 10h15, dans 15 minutes il sera :", "options": ["10h20", "10h30", "11h00", "10h45"], "correctAnswer": "10h30" }
+    ]
+  },
+  {
+    "weekId": "mar-2",
+    "questions": [
+      { "id": 1001, "text": "Le périmètre, c'est :", "options": ["L'intérieur de la forme", "Le contour de la forme", "La hauteur de la forme"], "correctAnswer": "Le contour de la forme" },
+      { "id": 1002, "text": "Un carré a des côtés de 4 cm. Quel est son périmètre ?", "options": ["8 cm", "12 cm", "16 cm", "4 cm"], "correctAnswer": "16 cm" },
+      { "id": 1003, "text": "Pour une clôture autour d'un jardin, je mesure...", "options": ["Le périmètre", "L'aire", "Le volume"], "correctAnswer": "Le périmètre" },
+      { "id": 1004, "text": "Un triangle a trois côtés de 5 cm. Quel est son périmètre ?", "options": ["10 cm", "15 cm", "20 cm", "5 cm"], "correctAnswer": "15 cm" },
+      { "id": 1005, "text": "Un rectangle mesure 5cm de long et 2cm de large. Périmètre ?", "options": ["7 cm", "10 cm", "14 cm", "20 cm"], "correctAnswer": "14 cm" }
+    ]
+  },
+  {
+    "weekId": "mar-3",
+    "questions": [
+      { "id": 1101, "text": "L'aire, c'est :", "options": ["La distance autour", "La surface à l'intérieur (le tapis)", "La longueur"], "correctAnswer": "La surface à l'intérieur (le tapis)" },
+      { "id": 1102, "text": "Si un rectangle contient 10 carrés de 1cm, son aire est :", "options": ["10 cm", "10 cm carrés", "20 cm", "5 cm"], "correctAnswer": "10 cm carrés" },
+      { "id": 1103, "text": "Pour couvrir un mur de peinture, je dois connaître...", "options": ["Le périmètre", "L'aire", "La hauteur seulement"], "correctAnswer": "L'aire" },
+      { "id": 1104, "text": "Une grille de 3 carrés sur 4 carrés a une aire de :", "options": ["7 carrés", "12 carrés", "14 carrés", "1 carré"], "correctAnswer": "12 carrés" },
+      { "id": 1105, "text": "Un carré de 2cm par 2cm a une aire de :", "options": ["4 cm carrés", "8 cm carrés", "2 cm carrés", "16 cm carrés"], "correctAnswer": "4 cm carrés" }
+    ]
+  },
+  {
+    "weekId": "mar-4",
+    "questions": [
+      { "id": 1201, "text": "Combien de faces a un cube ?", "options": ["4", "6", "8", "12"], "correctAnswer": "6" },
+      { "id": 1202, "text": "Quelle forme ressemble à une boîte de conserve ?", "options": ["Cône", "Cylindre", "Prisme", "Sphère"], "correctAnswer": "Cylindre" },
+      { "id": 1203, "text": "Un sommet, c'est :", "options": ["Un côté plat", "Une ligne", "Un coin pointu"], "correctAnswer": "Un coin pointu" },
+      { "id": 1204, "text": "Quelle forme n'a aucun sommet et aucune arête ?", "options": ["Le cube", "La sphère (ballon)", "Le prisme", "Le cylindre"], "correctAnswer": "La sphère (ballon)" },
+      { "id": 1205, "text": "Combien d'arêtes a un cube ?", "options": ["6", "8", "12", "4"], "correctAnswer": "12" }
+    ]
+  },
+  {
+    "weekId": "avr-1",
+    "questions": [
+      { "id": 1301, "text": "Quelle fraction représente la moitié ?", "options": ["1/4", "1/3", "1/2", "1/10"], "correctAnswer": "1/2" },
+      { "id": 1302, "text": "Si je coupe une pizza en 4 parts égales et que je mange 1 part, j'ai mangé...", "options": ["Un tiers", "Un quart", "Un demi", "Trois quarts"], "correctAnswer": "Un quart" },
+      { "id": 1303, "text": "Qu'est-ce qui est plus grand : 1/2 ou 1/4 ?", "options": ["1/2", "1/4", "C'est pareil", "Impossible"], "correctAnswer": "1/2" },
+      { "id": 1304, "text": "Comment appelle-t-on le chiffre du haut dans une fraction ?", "options": ["Le dénominateur", "Le numérateur", "Le total", "Le reste"], "correctAnswer": "Le numérateur" },
+      { "id": 1305, "text": "Si un sac a 3 billes rouges et 1 bleue, quelle fraction est bleue ?", "options": ["1/3", "1/4", "3/4", "1/2"], "correctAnswer": "1/4" }
+    ]
+  },
+  {
+    "weekId": "avr-2",
+    "questions": [
+      { "id": 1401, "text": "Dans un diagramme à bandes, la bande la plus haute montre...", "options": ["Le plus petit nombre", "Le plus grand nombre", "Le zéro", "Rien"], "correctAnswer": "Le plus grand nombre" },
+      { "id": 1402, "text": "Si 1 bonhomme = 2 personnes. Combien font 3 bonhommes ?", "options": ["3 personnes", "5 personnes", "6 personnes", "2 personnes"], "correctAnswer": "6 personnes" },
+      { "id": 1403, "text": "À quoi sert le titre d'un graphique ?", "options": ["Faire joli", "Dire de quoi parle le graphique", "À rien", "À compter"], "correctAnswer": "Dire de quoi parle le graphique" },
+      { "id": 1404, "text": "Un sondage sert à :", "options": ["Compter les étoiles", "Recueillir des informations", "Dessiner", "Manger"], "correctAnswer": "Recueillir des informations" },
+      { "id": 1405, "text": "Sur l'axe horizontal d'un graphique, on trouve souvent :", "options": ["Les catégories", "Les chiffres", "Le titre", "Les couleurs"], "correctAnswer": "Les catégories" }
+    ]
+  },
+  {
+    "weekId": "avr-3",
+    "questions": [
+      { "id": 1501, "text": "Si je lance un dé normal, obtenir un 7 est :", "options": ["Certain", "Possible", "Impossible"], "correctAnswer": "Impossible" },
+      { "id": 1502, "text": "Demain, le soleil se lèvera. C'est :", "options": ["Certain", "Impossible", "Peu probable"], "correctAnswer": "Certain" },
+      { "id": 1503, "text": "Si j'ai 5 billes rouges et 1 bleue, piger une rouge est :", "options": ["Impossible", "Probable", "Improbable"], "correctAnswer": "Probable" },
+      { "id": 1504, "text": "Si j'ai autant de chances de gagner que de perdre, c'est :", "options": ["Équiprobable (50/50)", "Certain", "Impossible", "Injuste"], "correctAnswer": "Équiprobable (50/50)" },
+      { "id": 1505, "text": "Gagner au loto est :", "options": ["Certain", "Très probable", "Peu probable", "Impossible"], "correctAnswer": "Peu probable" }
+    ]
+  },
+  {
+    "weekId": "avr-4",
+    "questions": [
+      { "id": 1601, "text": "Dans un code, une flèche vers le haut (↑) signifie :", "options": ["Tourner", "Avancer d'une case vers le haut", "Reculer", "Sauter"], "correctAnswer": "Avancer d'une case vers le haut" },
+      { "id": 1602, "text": "Si le code est : ↑, →, →. Le robot fait :", "options": ["Haut, Droite, Droite", "Bas, Gauche, Gauche", "Droite, Droite, Haut", "Haut, Gauche, Gauche"], "correctAnswer": "Haut, Droite, Droite" },
+      { "id": 1603, "text": "Le codage sert à :", "options": ["Donner des instructions précises", "Dessiner n'importe quoi", "Calculer vite"], "correctAnswer": "Donner des instructions précises" },
+      { "id": 1604, "text": "Qu'est-ce qu'une boucle en codage ?", "options": ["Un trou", "Une instruction qui se répète", "Une erreur", "Un bouton"], "correctAnswer": "Une instruction qui se répète" },
+      { "id": 1605, "text": "Si je dis 'Répète 3 fois : Avance', le robot avance de :", "options": ["1 case", "2 cases", "3 cases", "0 case"], "correctAnswer": "3 cases" }
+    ]
+  },
+  {
+    "weekId": "avr-5",
+    "questions": [
+      { "id": 1701, "text": "J'ai 10$. J'achète un stylo à 2$ et un cahier à 3$. Combien me reste-t-il ?", "options": ["5$", "4$", "6$", "1$"], "correctAnswer": "5$" },
+      { "id": 1702, "text": "Il y a 3 boîtes de 4 balles. J'en perds 2. Combien de balles reste-t-il ?", "options": ["10 balles", "12 balles", "14 balles", "2 balles"], "correctAnswer": "10 balles" },
+      { "id": 1703, "text": "Pour résoudre un problème à étapes, je dois :", "options": ["Deviner", "Faire une seule opération", "Faire les opérations dans l'ordre", "Abandonner"], "correctAnswer": "Faire les opérations dans l'ordre" },
+      { "id": 1704, "text": "Étape 1 : 5 + 5 = 10. Étape 2 : 10 x 2 = ?. La réponse finale est :", "options": ["10", "12", "20", "22"], "correctAnswer": "20" },
+      { "id": 1705, "text": "Si j'ai 20 bonbons et que je donne la moitié, puis j'en mange 2, il me reste :", "options": ["10", "8", "12", "18"], "correctAnswer": "8" }
+    ]
+  },
+  {
+    "weekId": "mai-1",
+    "questions": [
+      { "id": 1801, "text": "Estimer, c'est :", "options": ["Trouver la réponse exacte", "Trouver une réponse proche (environ)", "Ne pas calculer"], "correctAnswer": "Trouver une réponse proche (environ)" },
+      { "id": 1802, "text": "49 + 52 est proche de :", "options": ["80", "100", "150", "200"], "correctAnswer": "100" },
+      { "id": 1803, "text": "Si un bonbon coûte 90 sous, avec 2$, je peux en acheter environ :", "options": ["2", "10", "20", "5"], "correctAnswer": "2" },
+      { "id": 1804, "text": "Arrondir 87 à la dizaine la plus proche donne :", "options": ["80", "90", "100", "70"], "correctAnswer": "90" },
+      { "id": 1805, "text": "Une estimation raisonnable pour 198 + 203 est :", "options": ["300", "400", "500", "600"], "correctAnswer": "400" }
+    ]
+  },
+  {
+    "weekId": "mai-2",
+    "questions": [
+      { "id": 1901, "text": "Simulation A - Q1 : Quelle est la somme de 342 et 125 ?", "options": ["467", "400", "500", "367"], "correctAnswer": "467" },
+      { "id": 1902, "text": "Simulation A - Q2 : Combien de sommets a une pyramide à base carrée ?", "options": ["4", "5", "6", "8"], "correctAnswer": "5" },
+      { "id": 1903, "text": "Simulation A - Q3 : Si je pars à 8h30 et arrive à 9h00, le trajet dure...", "options": ["15 min", "30 min", "1 heure", "20 min"], "correctAnswer": "30 min" },
+      { "id": 1904, "text": "Simulation A - Q4 : 5 x 4 est égal à :", "options": ["9", "20", "25", "15"], "correctAnswer": "20" },
+      { "id": 1905, "text": "Simulation A - Q5 : 1/4 est-il plus petit que 3/4 ?", "options": ["Oui", "Non"], "correctAnswer": "Oui" }
+    ]
+  },
+  {
+    "weekId": "mai-3",
+    "questions": [
+      { "id": 2001, "text": "Simulation B - Q1 : Quel nombre manque ? 20, 25, 30, ___", "options": ["32", "35", "40", "50"], "correctAnswer": "35" },
+      { "id": 2002, "text": "Simulation B - Q2 : L'aire d'un rectangle de 3cm sur 2cm est...", "options": ["5 cm carrés", "6 cm carrés", "10 cm carrés", "12 cm carrés"], "correctAnswer": "6 cm carrés" },
+      { "id": 2003, "text": "Simulation B - Q3 : J'ai 3 pièces de 25 sous. J'ai...", "options": ["50 sous", "75 sous", "1 dollar", "100 sous"], "correctAnswer": "75 sous" },
+      { "id": 2004, "text": "Simulation B - Q4 : Quel solide a une base circulaire et une pointe ?", "options": ["Cylindre", "Cône", "Sphère", "Cube"], "correctAnswer": "Cône" },
+      { "id": 2005, "text": "Simulation B - Q5 : 800 - 200 =", "options": ["500", "600", "700", "400"], "correctAnswer": "600" }
+    ]
+  },
+  {
+    "weekId": "mai-4",
+    "questions": [
+      { "id": 2101, "text": "Avant l'examen, il est important de :", "options": ["Ne pas dormir", "Bien dormir et déjeuner", "Stresser", "Ne rien faire"], "correctAnswer": "Bien dormir et déjeuner" },
+      { "id": 2102, "text": "Si je bloque sur une question difficile :", "options": ["Je pleure", "Je passe à la suivante et je reviens plus tard", "Je déchire la feuille"], "correctAnswer": "Je passe à la suivante et je reviens plus tard" },
+      { "id": 2103, "text": "Dans une question à réponse ouverte, je dois :", "options": ["Juste écrire la réponse", "Montrer mes calculs et expliquer", "Faire un dessin sans rapport"], "correctAnswer": "Montrer mes calculs et expliquer" },
+      { "id": 2104, "text": "Est-ce que j'ai le droit d'utiliser des jetons ou une règle ?", "options": ["Oui", "Non"], "correctAnswer": "Oui" },
+      { "id": 2105, "text": "Lire la question deux fois permet de :", "options": ["Perdre du temps", "Mieux comprendre ce qu'on demande", "S'endormir"], "correctAnswer": "Mieux comprendre ce qu'on demande" }
+    ]
+  }
+]

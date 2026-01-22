@@ -1,0 +1,129 @@
+{
+    "title": "Dodo le dromadaire",
+    "sections": [
+      {
+        "title": "Dodo le dromadaire",
+        "text": "Dodo le dromadaire est couché sur le sable doré du désert. \n   Il dort depuis deux jours. \n   Dodo est-il malade?",
+        "questions": [
+          {
+            "question": "Que fait Dodo dans le désert ?",
+            "options": ["Il dort", "Il court", "Il mange"],
+            "correctAnswer": "Il dort"
+          },
+          {
+            "question": "Depuis combien de temps dort Dodo ?",
+            "options": ["Un jour", "Deux jours", "Trois jours"],
+            "correctAnswer": "Deux jours"
+          },
+          {
+            "question": "Quelle est la couleur du sable du désert ?",
+            "options": ["Doré", "Vert", "Bleu"],
+            "correctAnswer": "Doré"
+          },
+          {
+            "question": "Pourquoi Dodo dort-il ?",
+            "options": ["Parce qu'il est fatigué", "Parce qu'il est malade", "Parce qu'il est dans le désert"],
+            "correctAnswer": "Parce qu'il est fatigué"
+          },
+          {
+            "question": "Où se trouve Dodo ?",
+            "options": ["Dans un désert", "Dans une forêt", "Dans une ville"],
+            "correctAnswer": "Dans un désert"
+          }
+        ]
+      },
+      {
+        "title": "La médecin examine Dodo",
+        "text": "La médecin examine Dodo. \n  Elle regarde ses dents et son dos. \n  'Ce dromadaire n'est pas malade, dit-elle, il fait tout simplement dodo.'",
+        "questions": [
+          {
+            "question": "Qui examine Dodo ?",
+            "options": ["Un médecin", "Un fermier", "Un professeur"],
+            "correctAnswer": "Un médecin"
+          },
+          {
+            "question": "Que regarde la médecin ?",
+            "options": ["Ses dents et son dos", "Ses yeux et ses oreilles", "Ses pieds et sa queue"],
+            "correctAnswer": "Ses dents et son dos"
+          },
+          {
+            "question": "Dodo est-il malade ?",
+            "options": ["Non", "Oui", "On ne sait pas"],
+            "correctAnswer": "Non"
+          },
+          {
+            "question": "Pourquoi Dodo ne va-t-il pas chez le médecin ?",
+            "options": ["Parce qu'il fait tout simplement dodo", "Parce qu'il est malade", "Parce qu'il est fatigué"],
+            "correctAnswer": "Parce qu'il fait tout simplement dodo"
+          },
+          {
+            "question": "Que signifie 'faire dodo' ?",
+            "options": ["Dormir", "Courir", "Manger"],
+            "correctAnswer": "Dormir"
+          }
+        ]
+      },
+      {
+        "title": "Dodo se réveille",
+        "text": "Finalement, Dodo s'éveille. \n  'Comme j'ai bien dormi!' dit-il. \n 'Apportez-moi mon déjeuner, des dattes et de la limonade.' \nEt c'est depuis ce jour que le petit dromadaire du désert s'appelle Dodo.",
+        "questions": [
+          {
+            "question": "Que fait Dodo à la fin de l'histoire ?",
+            "options": ["Il se réveille", "Il s'endort", "Il court"],
+            "correctAnswer": "Il se réveille"
+          },
+          {
+            "question": "Qu'est-ce que Dodo dit en se réveillant ?",
+            "options": ["Comme j'ai bien dormi!", "J'ai faim!", "Je suis fatigué!"],
+            "correctAnswer": "Comme j'ai bien dormi!"
+          },
+          {
+            "question": "Qu'est-ce que Dodo demande après son sommeil ?",
+            "options": ["Des dattes et de la limonade", "De l'eau et du pain", "Des fruits et du lait"],
+            "correctAnswer": "Des dattes et de la limonade"
+          },
+          {
+            "question": "Pourquoi Dodo s'appelle-t-il Dodo ?",
+            "options": ["Parce qu'il dormait beaucoup", "Parce qu'il était malade", "Parce qu'il est un dromadaire spécial"],
+            "correctAnswer": "Parce qu'il dormait beaucoup"
+          },
+          {
+            "question": "Que mange Dodo au petit-déjeuner ?",
+            "options": ["Des dattes et de la limonade", "Du pain et du fromage", "Des céréales"],
+            "correctAnswer": "Des dattes et de la limonade"
+          }
+        ]
+      }
+    ],
+    "finalQuiz": {
+      "title": "QCM Final",
+      "questions": [
+        {
+          "question": "Quel est le nom du dromadaire ?",
+          "options": ["Dodo", "Rex", "Bobby"],
+          "correctAnswer": "Dodo"
+        },
+        {
+          "question": "Dodo a-t-il été malade ?",
+          "options": ["Non", "Oui", "Peut-être"],
+          "correctAnswer": "Non"
+        },
+        {
+          "question": "Que veut dire 'faire dodo' ?",
+          "options": ["Dormir", "Courir", "Manger"],
+          "correctAnswer": "Dormir"
+        },
+        {
+          "question": "Qu'aime manger Dodo ?",
+          "options": ["Des dattes et de la limonade", "Du pain et du lait", "Des fruits et du chocolat"],
+          "correctAnswer": "Des dattes et de la limonade"
+        },
+        {
+          "question": "Quel est le lieu où vit Dodo ?",
+          "options": ["Le désert", "La montagne", "La mer"],
+          "correctAnswer": "Le désert"
+        }
+      ]
+    }
+  }
+  

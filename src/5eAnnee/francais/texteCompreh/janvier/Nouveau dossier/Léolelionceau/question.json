@@ -1,0 +1,68 @@
+{
+  "title": "Léo le lionceau",
+  "sections": [
+    {
+      "title": "Léo le lionceau",
+      "text": "Léo le lionceau est malade.\nIl a bu trop de limonade.\nSon ventre lui fait mal.",
+      "questions": [
+        {
+          "question": "Qui est malade ?",
+          "options": ["Léo", "La maman", "Le papa"],
+          "correctAnswer": "Léo"
+        },
+        {
+          "question": "Qu’a bu Léo ?",
+          "options": ["De la limonade", "Du lait", "De l’eau"],
+          "correctAnswer": "De la limonade"
+        },
+        {
+          "question": "Pourquoi Léo est-il malade ?",
+          "options": ["Parce qu’il a trop bu de limonade", "Parce qu’il a froid", "Parce qu’il a couru"],
+          "correctAnswer": "Parce qu’il a trop bu de limonade"
+        }
+      ]
+    },
+    {
+      "title": "La maman et le papa lion",
+      "text": "Léo va voir sa maman Léone.\nLéone est une brave lionne.\nElle lèche son petit et prend bien soin de lui.\nLe papa lion s’appelle Lior. Il veille sur sa famille.",
+      "questions": [
+        {
+          "question": "Comment s’appelle la maman de Léo ?",
+          "options": ["Léone", "Lina", "Luna"],
+          "correctAnswer": "Léone"
+        },
+        {
+          "question": "Que fait Léone pour Léo ?",
+          "options": ["Elle le lèche et le soigne", "Elle joue avec lui", "Elle le gronde"],
+          "correctAnswer": "Elle le lèche et le soigne"
+        },
+        {
+          "question": "Comment s’appelle le papa lion ?",
+          "options": ["Lior", "Léo", "Lino"],
+          "correctAnswer": "Lior"
+        }
+      ]
+    },
+    {
+      "title": "Le conseil de Léone",
+      "text": "Léone dit au petit Léo :\n« La limonade, ce n’est pas pour les lionceaux.\nC’est du bon lait qu’il te faut, mon cher Léo. »",
+      "questions": [
+        {
+          "question": "Que dit Léone à Léo ?",
+          "options": ["De boire du lait", "De boire de la limonade", "De ne rien boire"],
+          "correctAnswer": "De boire du lait"
+        },
+        {
+          "question": "Pourquoi Léo ne doit-il pas boire de limonade ?",
+          "options": ["Parce que ce n’est pas bon pour les lionceaux", "Parce qu’il n’aime pas ça", "Parce qu’il n’y en a plus"],
+          "correctAnswer": "Parce que ce n’est pas bon pour les lionceaux"
+        },
+        {
+          "question": "Qui donne le conseil à Léo ?",
+          "options": ["Sa maman", "Son papa", "Son ami"],
+          "correctAnswer": "Sa maman"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "title": "Un éléphant, ça trompe",
+  "sections": [
+    {
+      "title": "Un éléphant, ça trompe",
+      "text": "Un éléphant, ça trompe.\nDeux écureuils, ça grimpe.\nTrois araignées, ça tisse.\nTrois araignées, ça tisse énormément.",
+      "questions": [
+        {
+          "question": "Combien d'éléphants sont mentionnés ?",
+          "options": ["Un", "Deux", "Trois"],
+          "correctAnswer": "Un"
+        },
+        {
+          "question": "Que font les écureuils ?",
+          "options": ["Ils grimpent", "Ils dorment", "Ils courent"],
+          "correctAnswer": "Ils grimpent"
+        },
+        {
+          "question": "Combien d'araignées y a-t-il ?",
+          "options": ["Deux", "Trois", "Quatre"],
+          "correctAnswer": "Trois"
+        },
+        {
+          "question": "Que font les araignées ?",
+          "options": ["Elles tissent", "Elles sautent", "Elles mangent"],
+          "correctAnswer": "Elles tissent"
+        },
+        {
+          "question": "Les araignées tissent-elles beaucoup ?",
+          "options": ["Oui, énormément", "Non, un peu", "Non, pas du tout"],
+          "correctAnswer": "Oui, énormément"
+        }
+      ]
+    },
+    {
+      "title": "Quatre fusées, ça décolle",
+      "text": "Quatre fusées, ça décolle.\nCinq métros, ça roule.\nSix téléphones, ça sonne.\nSix téléphones, ça sonne énormément.",
+      "questions": [
+        {
+          "question": "Combien de fusées sont mentionnées ?",
+          "options": ["Trois", "Quatre", "Cinq"],
+          "correctAnswer": "Quatre"
+        },
+        {
+          "question": "Que font les fusées ?",
+          "options": ["Elles roulent", "Elles décolle", "Elles flottent"],
+          "correctAnswer": "Elles décolle"
+        },
+        {
+          "question": "Combien de métros y a-t-il ?",
+          "options": ["Quatre", "Cinq", "Six"],
+          "correctAnswer": "Cinq"
+        },
+        {
+          "question": "Que font les téléphones ?",
+          "options": ["Ils sonnent", "Ils volent", "Ils roulent"],
+          "correctAnswer": "Ils sonnent"
+        },
+        {
+          "question": "Les téléphones sonnent-ils beaucoup ?",
+          "options": ["Oui, énormément", "Non, peu", "Non, jamais"],
+          "correctAnswer": "Oui, énormément"
+        }
+      ]
+    },
+    {
+      "title": "Sept étoiles, ça brille",
+      "text": "Sept étoiles, ça brille.\nHuit cheminées, ça fume.\nNeuf bébés, ça pleure.\nDix bébés, ça rit énormément.",
+      "questions": [
+        {
+          "question": "Combien d'étoiles sont mentionnées ?",
+          "options": ["Sept", "Huit", "Neuf"],
+          "correctAnswer": "Sept"
+        },
+        {
+          "question": "Que font les étoiles ?",
+          "options": ["Elles brillent", "Elles fument", "Elles pleurent"],
+          "correctAnswer": "Elles brillent"
+        },
+        {
+          "question": "Combien de bébés pleurent ?",
+          "options": ["Huit", "Neuf", "Dix"],
+          "correctAnswer": "Neuf"
+        },
+        {
+          "question": "Que font les dix bébés ?",
+          "options": ["Ils pleurent", "Ils rient énormément", "Ils dorment"],
+          "correctAnswer": "Ils rient énormément"
+        },
+        {
+          "question": "Combien de cheminées fument ?",
+          "options": ["Sept", "Huit", "Neuf"],
+          "correctAnswer": "Huit"
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "title": "QCM Final",
+    "questions": [
+      {
+        "question": "Que fait un éléphant ?",
+        "options": ["Il trompe", "Il court", "Il dort"],
+        "correctAnswer": "Il trompe"
+      },
+      {
+        "question": "Que font les écureuils ?",
+        "options": ["Ils grimpent", "Ils courent", "Ils dorment"],
+        "correctAnswer": "Ils grimpent"
+      },
+      {
+        "question": "Que font les araignées ?",
+        "options": ["Elles tissent énormément", "Elles courent", "Elles dorment"],
+        "correctAnswer": "Elles tissent énormément"
+      },
+      {
+        "question": "Combien de fusées décolle ?",
+        "options": ["Trois", "Quatre", "Cinq"],
+        "correctAnswer": "Quatre"
+      },
+      {
+        "question": "Que font les dix bébés ?",
+        "options": ["Ils rient énormément", "Ils pleurent", "Ils dorment"],
+        "correctAnswer": "Ils rient énormément"
+      }
+    ]
+  }
+}

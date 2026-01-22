@@ -1,0 +1,221 @@
+{
+  "title": "Devoir de compréhension écrite – Une voiture à deux chevaux",
+  "level": "6e année",
+  "theme": "Récit narratif et humour",
+  "typeTexte": "Texte narratif",
+  "noteTotale": 25,
+
+  "text": "Il y a de cela plusieurs années, un vieil homme possédait une fermette en périphérie d'une petite ville. Il était très pauvre, à tel point que sa ferme était dénuée de tout et inutile. Un beau jour, cependant, le vieil homme découvrit de l'or dans le ruisseau qui traversait sa propriété. Toute sa vie n'avait été que misère, mais cette fortune inattendue fit de lui un homme très riche. En fait, il devint l'homme le plus riche de la ville.\n\nL'une des premières choses que fit l'homme avec sa fortune fut de s'acheter une grosse voiture de luxe. Il s'acheta également un grand chapeau blanc, un costume trois-pièces blanc très cher et compléta sa tenue avec un gros cigare. Chaque jour, il conduisait sa voiture d'un bout à l'autre de la rue à travers la petite ville poussiéreuse. Le vieil homme faisait cela seulement pour montrer sa nouvelle voiture. Il voulait voir tout le monde et être vu de tous. Puisqu'il était un vieil homme très sympathique, lorsqu'il traversait la ville, il tournait à gauche et à droite pour aller parler à tout le monde qu'il voyait. Chose assez surprenante, il n'a jamais heurté quelqu'un ni roulé sur personne. Il n'a jamais causé de blessure physique ni aucun dommage à une propriété. La raison était simple. Juste devant cette belle grosse voiture étaient attachés deux chevaux pour la tirer.\n\nLes mécaniciens du village affirmèrent qu'il n'y avait rien de défectueux avec le moteur de la voiture, mais que le vieil homme n'avait jamais appris à conduire. Il ne savait même pas qu'il devait insérer une clé et actionner le démarreur. Il ne savait pas que lorsque le moteur serait en marche, la voiture serait plus puissante que deux chevaux.",
+
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "I. Vrai ou Faux",
+      "type": "boolean",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        { "q": "La ferme du vieil homme était située au centre-ville.", "a": false },
+        { "q": "L'homme est devenu riche en trouvant du pétrole.", "a": false },
+        { "q": "Le vieil homme s'est acheté un costume blanc et un grand chapeau.", "a": true },
+        { "q": "Le moteur de la voiture était brisé (défectueux).", "a": false },
+        { "q": "La voiture était tirée par deux chevaux.", "a": true }
+      ]
+    },
+
+    {
+      "id": "qcm",
+      "label": "II. Choix multiples (QCM)",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Où le vieil homme a-t-il trouvé de l'or ?",
+          "options": [
+            "Dans une mine abandonnée",
+            "Dans le ruisseau sur sa propriété",
+            "Sous le plancher de sa maison",
+            "Dans la forêt voisine"
+          ],
+          "a": "Dans le ruisseau sur sa propriété"
+        },
+        {
+          "q": "Pourquoi le vieil homme traversait-il la ville tous les jours ?",
+          "options": [
+            "Pour aller travailler",
+            "Pour aller chez le mécanicien",
+            "Pour montrer sa voiture et voir les gens",
+            "Pour acheter de la nourriture pour ses chevaux"
+          ],
+          "a": "Pour montrer sa voiture et voir les gens"
+        },
+        {
+          "q": "Comment le vieil homme conduisait-il sa voiture ?",
+          "options": [
+            "Très vite et dangereusement",
+            "En utilisant le moteur puissant",
+            "En la faisant tirer par des chevaux",
+            "En la poussant lui-même"
+          ],
+          "a": "En la faisant tirer par des chevaux"
+        },
+        {
+          "q": "Pourquoi n'a-t-il jamais causé d'accident ?",
+          "options": [
+            "Parce qu'il était un excellent conducteur",
+            "Parce que la voiture n'allait pas vite (tirée par des chevaux)",
+            "Parce qu'il ne sortait que la nuit",
+            "Parce que les rues étaient vides"
+          ],
+          "a": "Parce que la voiture n'allait pas vite (tirée par des chevaux)"
+        },
+        {
+          "q": "Que pensaient les mécaniciens de la voiture ?",
+          "options": [
+            "Que le moteur était défectueux",
+            "Qu'elle était trop vieille",
+            "Qu'il n'y avait rien de défectueux avec le moteur",
+            "Qu'elle avait besoin d'essence"
+          ],
+          "a": "Qu'il n'y avait rien de défectueux avec le moteur"
+        }
+      ]
+    },
+
+    {
+      "id": "vocabulaire",
+      "label": "III. Vocabulaire",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Que signifie le mot « périphérie » ?",
+          "options": [
+            "Au centre exact",
+            "Dans une zone industrielle",
+            "Aux abords (autour) de la ville",
+            "Sous la terre"
+          ],
+          "a": "Aux abords (autour) de la ville"
+        },
+        {
+          "q": "Que veut dire « dénuée de tout » ?",
+          "options": [
+            "Très riche",
+            "Qui ne possède rien (vide)",
+            "Bien décorée",
+            "Très grande"
+          ],
+          "a": "Qui ne possède rien (vide)"
+        },
+        {
+          "q": "Quel est le synonyme de « inattendue » ?",
+          "options": [
+            "Prévue",
+            "Espérée",
+            "Surprenante / Imprévue",
+            "Méritée"
+          ],
+          "a": "Surprenante / Imprévue"
+        },
+        {
+          "q": "Que signifie le mot « sympathique » ?",
+          "options": [
+            "Méchant",
+            "Agréable et gentil",
+            "Riche",
+            "Vieux"
+          ],
+          "a": "Agréable et gentil"
+        },
+        {
+          "q": "Que signifie « défectueux » ?",
+          "options": [
+            "Qui fonctionne parfaitement",
+            "Qui est neuf",
+            "Qui a un défaut ou est brisé",
+            "Qui est puissant"
+          ],
+          "a": "Qui a un défaut ou est brisé"
+        }
+      ]
+    },
+
+    {
+      "id": "grammaire",
+      "label": "IV. Grammaire",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "« Il devint l'homme le plus riche de la ville. » Quel est le verbe conjugué ?",
+          "options": [
+            "Il",
+            "devint",
+            "homme",
+            "riche"
+          ],
+          "a": "devint"
+        },
+        {
+          "q": "Dans la phrase « une petite ville poussiéreuse », le mot « poussiéreuse » est :",
+          "options": [
+            "Un nom commun",
+            "Un verbe",
+            "Un adjectif qualificatif",
+            "Un déterminant"
+          ],
+          "a": "Un adjectif qualificatif"
+        },
+        {
+          "q": "Quel est le temps du verbe dans « un vieil homme possédait une fermette » ?",
+          "options": [
+            "Présent",
+            "Imparfait",
+            "Futur simple",
+            "Passé composé"
+          ],
+          "a": "Imparfait"
+        },
+        {
+          "q": "Dans la phrase « Il s'acheta également un grand chapeau », le pronom « Il » remplace :",
+          "options": [
+            "Le cheval",
+            "Le mécanicien",
+            "Le vieil homme",
+            "Le chapeau"
+          ],
+          "a": "Le vieil homme"
+        },
+        {
+          "q": "Quel est le type de ce texte ?",
+          "options": [
+            "Informatif",
+            "Narratif",
+            "Argumentatif",
+            "Poétique"
+          ],
+          "a": "Narratif"
+        }
+      ]
+    },
+
+    {
+      "id": "lecture",
+      "label": "V. Questions de lecture",
+      "type": "open",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        "Comment la situation financière du vieil homme a-t-elle changé au début de l'histoire ?",
+        "Décris la tenue vestimentaire que le vieil homme s'est achetée.",
+        "Pourquoi le vieil homme tournait-il à gauche et à droite en traversant la ville ?",
+        "Quelle est la véritable raison pour laquelle le vieil homme utilisait des chevaux pour tirer sa voiture ?",
+        "Quelle leçon peut-on tirer de cette histoire concernant l'apparence et la réalité ?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "title": "Devoir de compréhension écrite – Les inventions récentes",
+  "level": "6e année",
+  "theme": "Compréhension de texte",
+  "typeTexte": "Texte explicatif",
+  "noteTotale": 25,
+
+  "text": "Les gens inventent des choses pour améliorer leur vie. De nos jours, les inventions sont surtout des améliorations des inventions d'hier. À cause de la technologie, les inventions prennent de moins en moins de temps à être fabriquées.\n\nL'une des inventions de ce genre est l'appareil photo. Le temps mis à inventer l'appareil photo au 16e siècle a été long en raison de l'absence de technologies et de connaissances scientifiques. Quand les inventeurs ont pris la première photographie en 1558, l'image ne restait pas sur le papier. C'est seulement en 1837 que les inventeurs sont parvenus à imprimer des photos qui ne s'effaçaient pas.\n\nAvec l'invention de l'appareil photo, d'autres améliorations ont été possibles. Le premier appareil pour la prise de photos sous-marines a été inventé en 1856. Il était scellé dans un contenant hermétique. Cependant, pendant que celui-ci était sous l'eau, le contenant s'est brisé avant que plusieurs photos ne soient prises. C'est seulement dans les années 1980 qu'un appareil photo capable de demeurer longtemps sous l'eau en profondeur sans se briser a été inventé. Moins de vingt années plus tard, les avancées technologiques permettent de prendre des photographies en couleurs sous l'eau et d'aller encore plus en profondeur. Ces appareils photo ressemblent même à des poissons !\n\nAvec l'amélioration de la technologie, les inventions ne cesseront jamais d'évoluer. Les gens seront implacables dans leurs efforts pour apporter des améliorations à leurs inventions.",
+
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "I. Vrai ou Faux",
+      "type": "boolean",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        { "q": "Les inventions servent à améliorer la vie des gens.", "a": true },
+        { "q": "Les inventions d’aujourd’hui sont complètement différentes de celles d’hier.", "a": false },
+        { "q": "La première photographie prise en 1558 restait imprimée sur le papier.", "a": false },
+        { "q": "Un appareil photo sous-marin a été inventé au 19e siècle.", "a": true },
+        { "q": "Les appareils photo sous-marins modernes peuvent prendre des photos en couleurs.", "a": true }
+      ]
+    },
+
+    {
+      "id": "qcm",
+      "label": "II. Choix multiples (QCM)",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Quel est le sujet principal du texte ?",
+          "options": [
+            "L’histoire de la peinture",
+            "L’évolution des inventions",
+            "La vie au 16e siècle",
+            "Les animaux marins"
+          ],
+          "a": "L’évolution des inventions"
+        },
+        {
+          "q": "Pourquoi l’invention de l’appareil photo a-t-elle pris beaucoup de temps au départ ?",
+          "options": [
+            "Les inventeurs n’étaient pas intéressés",
+            "Il manquait de technologies et de connaissances scientifiques",
+            "Les gens refusaient les nouvelles inventions",
+            "Les matériaux coûtaient trop cher"
+          ],
+          "a": "Il manquait de technologies et de connaissances scientifiques"
+        },
+        {
+          "q": "Que se passait-il avec les premières photographies ?",
+          "options": [
+            "Elles étaient en couleurs",
+            "Elles s’effaçaient rapidement",
+            "Elles étaient prises sous l’eau",
+            "Elles étaient très petites"
+          ],
+          "a": "Elles s’effaçaient rapidement"
+        },
+        {
+          "q": "Quel problème avait le premier appareil photo sous-marin ?",
+          "options": [
+            "Il ne prenait pas de photos",
+            "Il ne pouvait pas aller sous l’eau",
+            "Son contenant s’est brisé",
+            "Il était trop lourd"
+          ],
+          "a": "Son contenant s’est brisé"
+        },
+        {
+          "q": "Que permet la technologie récente selon le texte ?",
+          "options": [
+            "D’arrêter les inventions",
+            "De fabriquer plus lentement",
+            "De prendre des photos sous-marines en couleurs",
+            "De revenir aux anciennes inventions"
+          ],
+          "a": "De prendre des photos sous-marines en couleurs"
+        }
+      ]
+    },
+
+    {
+      "id": "vocabulaire",
+      "label": "III. Questions de vocabulaire",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Que signifie le mot « hermétique » dans le texte ?",
+          "options": [
+            "Ouvert",
+            "Qui laisse passer l’eau",
+            "Complètement fermé",
+            "Très ancien"
+          ],
+          "a": "Complètement fermé"
+        },
+        {
+          "q": "Quel mot du texte signifie « progrès techniques » ?",
+          "options": [
+            "Inventions",
+            "Connaissances",
+            "Avancées technologiques",
+            "Efforts"
+          ],
+          "a": "Avancées technologiques"
+        },
+        {
+          "q": "Quel est le contraire du mot « évoluer » ?",
+          "options": [
+            "Changer",
+            "Progresser",
+            "Rester pareil",
+            "Améliorer"
+          ],
+          "a": "Rester pareil"
+        },
+        {
+          "q": "Dans le texte, le mot « implacables » signifie surtout :",
+          "options": [
+            "Paresseux",
+            "Très déterminés",
+            "Indifférents",
+            "Inquiets"
+          ],
+          "a": "Très déterminés"
+        },
+        {
+          "q": "Que signifie « demeurer » dans l’expression « demeurer longtemps sous l’eau » ?",
+          "options": [
+            "Partir",
+            "Rester",
+            "Couler",
+            "Flotter"
+          ],
+          "a": "Rester"
+        }
+      ]
+    },
+
+    {
+      "id": "grammaire",
+      "label": "IV. Grammaire – Types de phrases et de texte",
+      "type": "multiple",
+      "pointsTotaux": 6,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "« Les gens inventent des choses pour améliorer leur vie. » Quel est le type de cette phrase ?",
+          "options": ["Déclarative", "Interrogative", "Impérative", "Exclamative"],
+          "a": "Déclarative"
+        },
+        {
+          "q": "« Ces appareils photo ressemblent même à des poissons ! » est une phrase :",
+          "options": ["Déclarative", "Interrogative", "Impérative", "Exclamative"],
+          "a": "Exclamative"
+        },
+        {
+          "q": "Quelle phrase est de type interrogatif ?",
+          "options": [
+            "Les inventions évoluent avec la technologie.",
+            "Pourquoi les inventions prennent-elles moins de temps à être fabriquées ?",
+            "Les inventeurs améliorent leurs créations.",
+            "Les appareils photo sont très utiles."
+          ],
+          "a": "Pourquoi les inventions prennent-elles moins de temps à être fabriquées ?"
+        },
+        {
+          "q": "Quelle phrase est de type impératif ?",
+          "options": [
+            "Les inventions sont importantes.",
+            "Observe l’évolution de la technologie.",
+            "Les photos sous-marines sont impressionnantes.",
+            "Les inventeurs ont travaillé longtemps."
+          ],
+          "a": "Observe l’évolution de la technologie."
+        },
+        {
+          "q": "Quel type de phrase sert à donner un ordre ou un conseil ?",
+          "options": ["Déclarative", "Interrogative", "Impérative", "Exclamative"],
+          "a": "Impérative"
+        },
+        {
+          "q": "Quel est le type de ce texte ?",
+          "options": [
+            "Texte narratif",
+            "Texte descriptif",
+            "Texte explicatif",
+            "Texte poétique"
+          ],
+          "a": "Texte explicatif"
+        }
+      ]
+    },
+
+    {
+      "id": "questionsOuvertes",
+      "label": "V. Questions à réponse construite",
+      "type": "open",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        "Pourquoi les gens inventent-ils de nouvelles choses ? Écris une phrase complète pour répondre.",
+        "Qu’est-ce qui posait problème avec les premières photographies ? Écris une phrase complète.",
+        "Explique pourquoi les premières inventions prenaient plus de temps à être fabriquées. Écris 2 phrases complètes.",
+        "Explique comment l’appareil photo sous-marin a évolué avec le temps. Écris 3 à 4 phrases complètes en utilisant des informations du texte.",
+        "Selon toi, pourquoi les inventions continueront-elles d’évoluer dans le futur ? Écris 2 à 3 phrases complètes."
+      ]
+    }
+  ]
+}

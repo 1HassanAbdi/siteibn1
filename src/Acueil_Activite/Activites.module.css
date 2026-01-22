@@ -1,0 +1,183 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #15a278 0%, #0d6e52 100%);
+  --white: #ffffff;
+  --light-bg: #f0f4f8;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === HERO (Même style que l'accueil) === */
+.hero {
+  background: var(--primary-gradient);
+ 
+  text-align: center;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  color: var(--white);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  backdrop-filter: blur(4px);
+  text-transform: uppercase;
+}
+
+.mainTitle {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.highlight {
+  color: #fbbf24;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* === SECTION GRILLE === */
+.selectionSection {
+  max-width: 1100px;
+  margin: 50px auto 40px;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  background: var(--white);
+  border-radius: 35px;
+  padding: 30px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: var(--card-shadow);
+  opacity: 0;
+  transform: translateY(30px);
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+}
+
+.cardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Décoration de fond */
+.cardBg {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  opacity: 0.08;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .cardBg {
+  transform: scale(3);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconWrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .iconWrapper {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.levelName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.levelDesc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: auto; /* Pousse le bouton vers le bas */
+}
+
+.actionBtn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.btnText {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card:hover .actionBtn {
+  padding: 12px 35px;
+  box-shadow: 0 10px 20px -5px var(--hover-color);
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .hero {
+    border-radius: 0 0 50px 50px;
+    padding: 50px 20px 80px;
+  }
+  .mainTitle { font-size: 2rem; }
+  .card { min-height: auto; padding: 25px; }
+}

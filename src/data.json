@@ -1,0 +1,94 @@
+{
+  "title": "🧺 Mission Pique-Nique",
+  "main_image_url": "https://images.unsplash.com/photo-1549419137-b6f7f6f7b7f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTc1Mjh8MHwxfHNlYXJjaHwxfHxwaWNuaWN8ZW58MHx8fHwxNjk5MjI3Mzc3fDA&ixlib=rb-4.0.3&q=80&w=1080",
+ 
+  "story": [
+    {"s": "Au", "c": "black"}, {"s": "jour", "c": "#2563EB"}, {"s": "d’hui", "c": "black"}, {"s": ", il fait ", "c": "black"},
+    {"s": "☀️ so", "c": "black"}, {"s": "leil", "c": "#2563EB"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Nous al", "c": "black"}, {"s": "lons", "c": "#2563EB"}, {"s": " pi", "c": "black"},
+    {"s": "que", "c": "#2563EB"}, {"s": "ni", "c": "black"}, {"s": "quer", "c": "#2563EB"},
+    {"s": " au 🌳 parc", "c": "black"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Ma", "c": "black"}, {"s": "man", "c": "#2563EB"}, {"s": " dé", "c": "black"},
+    {"s": "po", "c": "#2563EB"}, {"s": "se des 🥪 sand", "c": "black"},
+    {"s": "wichs", "c": "#2563EB"}, {"s": " dans le panier", "c": "black"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Pa", "c": "black"}, {"s": "pa", "c": "#2563EB"}, {"s": " pla", "c": "black"},
+    {"s": "ce des pe", "c": "black"}, {"s": "tits", "c": "#2563EB"},
+    {"s": " 🍰 gâ", "c": "black"}, {"s": "teaux", "c": "#2563EB"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Ma sœur ap", "c": "black"}, {"s": "por", "c": "#2563EB"},
+    {"s": "te des 🍎 pom", "c": "black"}, {"s": "mes", "c": "#2563EB"},
+    {"s": " rouges", "c": "black"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Moi, É", "c": "black"}, {"s": "mie", "c": "#2563EB"},
+    {"s": ", j’ap", "c": "black"}, {"s": "por", "c": "#2563EB"},
+    {"s": "te le ⚽ bal", "c": "black"}, {"s": "lon", "c": "#2563EB"},
+    {"s": " dans la 🚗 voi", "c": "black"}, {"s": "ture", "c": "#2563EB"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Papa nous a", "c": "black"}, {"s": "mène", "c": "#2563EB"},
+    {"s": " au 🌳 parc en voi", "c": "black"}, {"s": "ture", "c": "#2563EB"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Il ", "c": "black"}, {"s": "joue", "c": "#2563EB"},
+    {"s": " avec nous", "c": "black"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Maman ", "c": "black"}, {"s": "lit", "c": "#2563EB"},
+    {"s": " le journal", "c": "black"}, {"s": ".\n", "c": "black"},
+
+    {"s": "Nous ai", "c": "black"}, {"s": "mons", "c": "#2563EB"},
+    {"s": " les pique-niques au 🌳 parc", "c": "black"}, {"s": ".", "c": "black"}
+  ],
+
+
+  "sections": [
+    {
+      "name": "🟢 MONDE 1 : VRAI OU FAUX ?",
+      "type": "vf",
+      "color": "#4ADE80",
+      "questions": [
+        { "id": "vf1", "q": "Il fait soleil ?", "a": "Vrai" },
+        { "id": "vf2", "q": "Maman oublie le manger ?", "a": "Faux" },
+        { "id": "vf3", "q": "Émie a un ballon ?", "a": "Vrai" },
+        { "id": "vf4", "q": "Ils vont au parc ?", "a": "Vrai" },
+        { "id": "vf5", "q": "Maman joue au ballon ?", "a": "Faux" }
+      ]
+    },
+    {
+      "name": "🔵 MONDE 2 : LE BON MOT",
+      "type": "qcm",
+      "color": "#60A5FA",
+      "questions": [
+        { "id": "qcm1", "q": "Où va la famille ?", "options": ["Au parc", "À la mer", "À l'école"], "a": "Au parc" },
+        { "id": "qcm2", "q": "Qui apporte les pommes ?", "options": ["Papa", "La sœur", "Le chien"], "a": "La sœur" },
+        { "id": "qcm3", "q": "Le ballon est dans...", "options": ["La voiture", "Le sac", "La maison"], "a": "La voiture" },
+        { "id": "qcm4", "q": "Papa apporte des...", "options": ["Gâteaux", "Bananes", "Jouets"], "a": "Gâteaux" },
+        { "id": "qcm5", "q": "Il fait...", "options": ["Soleil", "Pluie", "Vent"], "a": "Soleil" }
+      ]
+    },
+    {
+      "name": "🟠 MONDE 3 : DÉTECTIVE DES MOTS",
+      "type": "qcm",
+      "color": "#FBBF24",
+      "questions": [
+        { "id": "voc1", "q": "Le 'panier' sert à...", "options": ["Porter", "Manger", "Dessiner"], "a": "Porter" },
+        { "id": "voc2", "q": "Des 'sandwichs' sont pour...", "options": ["Manger", "Jouer", "Regarder"], "a": "Manger" },
+        { "id": "voc3", "q": "Le 'soleil' donne de la...", "options": ["Lumière", "Pluie", "Neige"], "a": "Lumière" },
+        { "id": "voc4", "q": "Un 'pique-nique' c'est...", "options": ["Dehors", "Dedans", "Sous l'eau"], "a": "Dehors" },
+        { "id": "voc5", "q": "La 'voiture' sert à...", "options": ["Rouler", "Dormir", "Voler"], "a": "Rouler" }
+      ]
+    },
+    {
+      "name": "🔴 MONDE 4 : PHRASES À COMPLÉTER",
+      "type": "trous",
+      "color": "#F87171",
+      "questions": [
+        { "id": "trou1", "q": "Maman dépose des ...", "options": ["sandwichs", "amis", "fleurs"], "a": "sandwichs" },
+        { "id": "trou2", "q": "Papa place des ...", "options": ["gâteaux", "livres", "pierres"], "a": "gâteaux" },
+        { "id": "trou3", "q": "Les pommes sont ...", "options": ["rouges", "bleues", "vertes"], "a": "rouges" },
+        { "id": "trou4", "q": "On va au parc en ...", "options": ["voiture", "avion", "bateau"], "a": "voiture" },
+        { "id": "trou5", "q": "Moi, Émie, j'ai le ...", "options": ["ballon", "chat", "chien"], "a": "ballon" }
+      ]
+    }
+  ]
+}

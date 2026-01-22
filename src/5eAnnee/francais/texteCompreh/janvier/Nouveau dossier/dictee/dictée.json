@@ -1,0 +1,27 @@
+{
+  "title": "Dictées des 4 semaines",
+  "weeks": [
+    {
+      "id": "semaine1",
+      "title": "Dictée 1",
+      "words": [
+        "un bol",
+        "une limonade",
+        "de la colle",
+        "un lion",
+        "du fil",
+        "un lionceau",
+        "un lac",
+        "une lionne",
+        "du lait",
+        "un lutin",
+        "un lavabo",
+        "une malade",
+        "des légumes",
+        "une mule",
+        "une lime",
+        "un stylo"
+      ]
+    }
+  ]
+}

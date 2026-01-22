@@ -1,0 +1,111 @@
+{
+  "title": "Devoir de compréhension écrite – L’année du rat",
+  "level": "4e – 5e année",
+  "theme": "Compréhension de texte",
+  "typeTexte": "Conte / Texte explicatif",
+  "noteTotale": 20,
+
+  "text": "Les douze années du calendrier chinois sont nommées d'après douze animaux.\nIl y a longtemps, le Bouddha a convoqué tous les animaux pour qu'ils se présentent à lui. Seulement douze animaux sont venus. Le rat était le premier, alors la première année du calendrier chinois est nommée en son nom. La deuxième année est nommée d'après le bœuf.\n\nMais le bœuf était jaloux et désirait la première place. Le rat a dit au bœuf :\n« Marchons ensemble dans la rue et écoutons ce que les gens diront. Celui de nous deux qu'on considérera le plus grand aura la première place. »\n\nLe bœuf accepta, bien entendu. Il savait en effet qu'il était plus gros que le rat. Cependant, tout le monde regardait le rat quand ils marchaient ensemble dans la rue. Personne ne remarquait le bœuf. Après tout, voir des bœufs marcher dans la rue était une chose habituelle, mais voir un rat marcher à côté d'un bœuf était plutôt rare.\n\nLa plupart des personnes ont commencé à crier :\n« Regardez comme c'est un rat gigantesque ! »\n\nLe bœuf était incapable de dire quoi que ce soit.\n\nLe rat avait remporté l'épreuve.",
+
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "I. Vrai ou Faux",
+      "type": "boolean",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        { "q": "Le calendrier chinois comporte douze années, chacune nommée d'après un animal.", "a": true },
+        { "q": "Le Bouddha a convoqué tous les animaux, mais seulement dix sont venus.", "a": false },
+        { "q": "Le rat est arrivé avant le bœuf lors de la rencontre avec le Bouddha.", "a": true },
+        { "q": "Les gens trouvaient plus étrange de voir un bœuf marcher dans la rue qu’un rat.", "a": false },
+        { "q": "Le bœuf a gagné la première place dans le calendrier chinois.", "a": false }
+      ]
+    },
+
+    {
+      "id": "qcm",
+      "label": "II. Choix multiples (QCM)",
+      "type": "multiple",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        {
+          "q": "Pourquoi le Bouddha a-t-il convoqué les animaux ?",
+          "options": [
+            "Pour leur donner à manger",
+            "Pour nommer les années du calendrier",
+            "Pour organiser une course",
+            "Pour les punir"
+          ],
+          "a": "Pour nommer les années du calendrier"
+        },
+        {
+          "q": "Quel animal voulait obtenir la première place dans le calendrier ?",
+          "options": ["Le rat", "Le tigre", "Le bœuf", "Le dragon"],
+          "a": "Le bœuf"
+        },
+        {
+          "q": "Qu'est-ce que le rat a proposé au bœuf pour décider qui serait le premier ?",
+          "options": [
+            "Faire une course",
+            "Écouter l’opinion des gens",
+            "Tirer à pile ou face",
+            "Demander au Bouddha de choisir"
+          ],
+          "a": "Écouter l’opinion des gens"
+        },
+        {
+          "q": "Pourquoi les gens regardaient-ils le rat dans la rue ?",
+          "options": [
+            "Parce qu’il était très petit",
+            "Parce que c’était rare de voir un rat marcher avec un bœuf",
+            "Parce qu’ils avaient peur du rat",
+            "Parce qu’ils cherchaient le Bouddha"
+          ],
+          "a": "Parce que c’était rare de voir un rat marcher avec un bœuf"
+        },
+        {
+          "q": "Comment le bœuf a-t-il réagi après avoir perdu ?",
+          "options": [
+            "Il a crié",
+            "Il a ri",
+            "Il n’a rien pu dire",
+            "Il est parti en courant"
+          ],
+          "a": "Il n’a rien pu dire"
+        }
+      ]
+    },
+
+    {
+      "id": "questionsOuvertes",
+      "label": "III. Questions ouvertes",
+      "type": "open",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        "Quels sont les deux animaux mentionnés dans le texte qui ont participé à la rencontre avec le Bouddha ?",
+        "Comment le rat a-t-il réussi à obtenir la première place ?",
+        "Pourquoi le bœuf pensait-il qu’il gagnerait la première place ?",
+        "Que crient les gens en voyant le rat et le bœuf dans la rue ?",
+        "Que nous apprend cette histoire sur la ruse et la jalousie ?"
+      ]
+    },
+
+    {
+      "id": "reactionInference",
+      "label": "IV. Questions de réaction et d’inférence",
+      "type": "open",
+      "pointsTotaux": 5,
+      "pointsParQuestion": 1,
+      "questions": [
+        "Si tu étais le bœuf, comment te sentirais-tu après cette expérience ? Explique.",
+        "Penses-tu que le rat a agi de façon juste ou non ? Pourquoi ?",
+        "À ton avis, pourquoi le Bouddha a-t-il décidé d’utiliser les animaux pour nommer les années ?",
+        "Selon toi, quelle est la morale de cette histoire ?",
+        "Si tu pouvais choisir un animal pour représenter une année, lequel choisirais-tu et pourquoi ?"
+      ]
+    }
+  ]
+}

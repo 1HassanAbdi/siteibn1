@@ -1,0 +1,50 @@
+[
+  {
+    "niveau": "1re Année",
+    "path": "/1e",
+    "color": "#FF9800",
+    "icon": "📖"
+  },
+  {
+    "niveau": "2e Année",
+    "path": "/2e",
+    "color": "#4CAF50",
+    "icon": "✏️"
+  },
+  {
+    "niveau": "3e Année",
+    "path": "/3e",
+    "color": "#2196F3",
+    "icon": "🌍"
+  },
+  {
+    "niveau": "4e Année",
+    "path": "/4e",
+    "color": "#E91E63",
+    "icon": "📚"
+  },
+  {
+    "niveau": "5e Année",
+    "path": "/5e",
+    "color": "#9C27B0",
+    "icon": "💡"
+  },
+  {
+    "niveau": "6e Année",
+    "path": "/6e",
+    "color": "#FF5722",
+    "icon": "🖊️"
+  },
+  {
+    "niveau": "7e Année",
+    "path": "/7e",
+    "color": "#4CAF50",
+    "icon": "🧠"
+  },
+  {
+    "niveau": "8e Année",
+    "path": "/8e",
+    "color": "#2196F3",
+    "icon": "🏅"
+  }
+]

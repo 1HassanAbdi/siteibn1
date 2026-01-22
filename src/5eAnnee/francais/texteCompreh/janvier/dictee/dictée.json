@@ -1,0 +1,91 @@
+{
+  
+"title": "Dictées des 4 semaines",
+  "weeks": [
+    {
+      "id": "semaine1",
+      "title": "Dictée 1 Titi le petit ouistiti",
+      "words": [
+        "de la confiture",
+        "une tente",
+        "un élastique",
+        "une tête",
+        "une étoile",
+        "un titre",
+        "un ouistiti",
+        "une tomate",
+        "une patte",
+        "une tortue",
+        "une table",
+        "une toupie",
+        "une tartine",
+        "une trapéziste"
+      ]
+    },
+  {
+       "id": "semaine2",
+      "title": "Dictée 2 Léo le lionceau",
+      "words": [
+        "un bol",
+        "une limonade",
+        "de la colle",
+        "un lion",
+        "du fil",
+        "un lionceau",
+        "un lac",
+        "une lionne",
+        "du lait",
+        "un lutin",
+        "un lavabo",
+        "une malade",
+        "des légumes",
+        "une mule",
+        "une lime",
+        "un stylo"
+      ]
+    },{
+      "id": "semaine3",
+      "title": "Dictée 3 Mimi la souris",
+      "words": [
+        "une bicyclette",
+        "un pyjama",
+        "des ciseaux",
+        "une souris",
+        "une fourmi",
+        "un tapis",
+        "un hibou",
+        "un taxi",
+        "une île",
+        "une toupie",
+        "un lit",
+        "une tulipe",
+        "un livre",
+        "une valise"
+      ]
+    },
+    {
+      "id": "semaine4",
+      "title": "Dictée 4 Une histoire de chats",
+      "words": [
+        "un avion",
+        "un chaton",
+        "une balle",
+        "une chatte",
+        "un ballon",
+        "une cravate",
+        "des bananes",
+        "un dragon",
+        "des bas",
+        "une girafe",
+        "un bâton",
+        "un pyjama",
+        "une cage",
+        "un savon",
+        "une carte",
+        "une vache",
+        "un chat",
+        "une valise"
+      ]
+    }
+  ]
+}

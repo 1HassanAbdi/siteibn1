@@ -1,0 +1,172 @@
+{
+  "title": "L'Ambition de Gagner",
+  "text": "Quand j'étais jeune, j'avais l'ambition de devenir avocate. J'ai toujours aimé le sentiment de gagner une bataille avec les mots au lieu des poings. Par-dessus tout, j'aime quand mes adversaires ne réussissent pas à rejeter mes arguments et restent bouche bée.\n\nMême si j'adore argumenter pour me sortir de situations délicates, je demeure raisonnable et je ne blesse personne. Quand j'étais à l'école secondaire, j'ai découvert le pouvoir de la parole lorsqu'elle est bien utilisée. C'est pourquoi j'ai joint le club des débats. Nous avons gagné des tournois à plusieurs reprises et j'ai même été choisie meilleure oratrice trois années consécutives.\n\nChaque personne avait au moins une ambition lorsqu'elle était jeune. C'est la même chose pour moi. Cependant, le succès n'arrive pas du jour au lendemain. C'est seulement en travaillant fort et avec détermination que les rêves se réalisent. J'ai vraiment voulu être avocate, mais je n'ai jamais travaillé assez fort pour le devenir. Il ne faut pas juste avoir les aptitudes pour devenir avocate, on doit aussi connaitre les lois par cœur. C'est difficile pour une personne qui mêle les faits comme moi.\n\nMême si j'ai abandonné l'idée de devenir avocate, j'aime encore engager des débats avec ma famille et mes amis de temps en temps. En plus d'ajouter du plaisir à ma vie, cela m'aide à garder mon rêve vivant.",
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "✓/✗ Vrai/Faux",
+      "type": "boolean",
+      "questions": [
+        { "q": "L'auteur voulait devenir médecin.", "a": false },
+        { "q": "Elle aimait gagner des batailles avec les mots plutôt qu'avec les poings.", "a": true },
+        { "q": "Elle a été choisie meilleure oratrice trois années consécutives.", "a": true },
+        { "q": "Elle a appris le pouvoir de la parole au collège.", "a": false },
+        { "q": "Elle continue à aimer les débats même si elle n'est pas devenue avocate.", "a": true }
+      ]
+    },
+    {
+      "id": "qcm",
+      "label": "📝 QCM",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Pourquoi l'auteur aimait-elle les débats ?",
+          "options": ["Pour se battre physiquement", "Pour convaincre avec des mots", "Pour impressionner ses amis", "Pour apprendre l'histoire"],
+          "a": "Pour convaincre avec des mots"
+        },
+        {
+          "q": "Qu'a découvert l'auteur au lycée ?",
+          "options": ["Le plaisir de jouer au sport", "Le pouvoir de la parole", "L'art de la peinture", "Les sciences naturelles"],
+          "a": "Le pouvoir de la parole"
+        },
+        {
+          "q": "Quel club a-t-elle rejoint ?",
+          "options": ["Club de théâtre", "Club de débats", "Club de sport", "Club de musique"],
+          "a": "Club de débats"
+        },
+        {
+          "q": "Pourquoi n'est-elle pas devenue avocate ?",
+          "options": ["Elle n'avait pas les aptitudes", "Elle n'aimait pas les lois", "Elle n'a jamais travaillé assez fort", "Elle a déménagé"],
+          "a": "Elle n'a jamais travaillé assez fort"
+        },
+        {
+          "q": "Comment continue-t-elle à pratiquer sa passion ?",
+          "options": ["Elle écrit des livres", "Elle fait des débats avec sa famille et ses amis", "Elle regarde des films", "Elle joue à des jeux vidéo"],
+          "a": "Elle fait des débats avec sa famille et ses amis"
+        }
+      ]
+    },
+    {
+      "id": "vocabulaire",
+      "label": "📚 Vocabulaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Que signifie « bouche bée » ?",
+          "options": ["Rire aux éclats", "Surpris et silencieux", "Parler beaucoup", "Se fâcher"],
+          "a": "Surpris et silencieux"
+        },
+        {
+          "q": "Que veut dire « ambition » ?",
+          "options": ["Un rêve ou un objectif à atteindre", "Un jeu", "Une habitude", "Une obligation"],
+          "a": "Un rêve ou un objectif à atteindre"
+        },
+        {
+          "q": "Quel est le synonyme de « détermination » ?",
+          "options": ["Persévérance", "Paresse", "Doute", "Hésitation"],
+          "a": "Persévérance"
+        },
+        {
+          "q": "Que signifie « aptitudes » ?",
+          "options": ["Compétences ou capacités", "Objets personnels", "Connaissances historiques", "Activités sportives"],
+          "a": "Compétences ou capacités"
+        },
+        {
+          "q": "Que veut dire « mêler les faits » ?",
+          "options": ["Confondre ou mélanger les informations", "Inventer des histoires", "Raconter la vérité", "Oublier les détails"],
+          "a": "Confondre ou mélanger les informations"
+        }
+      ]
+    },
+    {
+      "id": "conjugaison",
+      "label": "🕓 Conjugaison",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Conjugue le verbe « aimer » au passé composé (elle) :",
+          "options": ["Elle aime", "Elle a aimé", "Elle aimait", "Elle aimera"],
+          "a": "Elle a aimé"
+        },
+        {
+          "q": "Conjugue « découvrir » au passé composé (elle) :",
+          "options": ["Elle découvre", "Elle a découvert", "Elle découvrait", "Elle découvrira"],
+          "a": "Elle a découvert"
+        },
+        {
+          "q": "Conjugue « rejoindre » au passé composé (elle) :",
+          "options": ["Elle rejoint", "Elle a rejoint", "Elle rejoignait", "Elle rejoindra"],
+          "a": "Elle a rejoint"
+        },
+        {
+          "q": "Conjugue « continuer » au présent (elle) :",
+          "options": ["Elle continue", "Elle a continué", "Elle continuait", "Elle continuera"],
+          "a": "Elle continue"
+        },
+        {
+          "q": "Conjugue « vouloir » au passé composé (elle) :",
+          "options": ["Elle veut", "Elle a voulu", "Elle voulait", "Elle voudra"],
+          "a": "Elle a voulu"
+        }
+      ]
+    },
+   {
+  "id": "grammaire",
+  "label": "✏️ Grammaire",
+  "type": "multiple",
+  "questions": [
+    {
+      "q": "Identifie le sujet de la phrase : « J'ai toujours aimé le sentiment de gagner une bataille. »",
+      "options": ["J'", "le sentiment", "une bataille", "gagner"],
+      "a": "J'"
+    },
+    {
+      "q": "Quel est le type de phrase : « Même si j'ai abandonné l'idée de devenir avocate, j'aime encore engager des débats. » ?",
+      "options": ["Déclarative", "Interrogative", "Impérative", "Exclamative"],
+      "a": "Déclarative"
+    },
+    {
+      "q": "Quel est le temps du verbe dans : « J'ai découvert le pouvoir de la parole » ?",
+      "options": ["Présent", "Passé composé", "Imparfait", "Futur"],
+      "a": "Passé composé"
+    },
+    {
+      "q": "Identifie l'adjectif dans : « C'est difficile pour une personne qui mêle les faits comme moi »",
+      "options": ["difficile", "personne", "mêle", "faits"],
+      "a": "difficile"
+    },
+    {
+      "q": "Quel est le type de phrase : « Aimez-vous débattre avec vos amis ? »",
+      "options": ["Déclarative", "Interrogative", "Impérative", "Exclamative"],
+      "a": "Interrogative"
+    },
+    {
+      "q": "Quel est le temps du verbe dans : « Nous avons gagné des tournois à plusieurs reprises » ?",
+      "options": ["Présent", "Passé composé", "Imparfait", "Futur"],
+      "a": "Passé composé"
+    },
+    {
+      "q": "Identifie le sujet de la phrase : « Chaque personne avait au moins une ambition lorsqu'elle était jeune »",
+      "options": ["Chaque personne", "une ambition", "elle", "jeune"],
+      "a": "Chaque personne"
+    },
+    {
+      "q": "Identifie l'adjectif dans : « C'est seulement en travaillant fort et avec détermination que les rêves se réalisent »",
+      "options": ["fort", "travaillant", "rêves", "déterminer"],
+      "a": "fort"
+    },
+    {
+      "q": "Quel est le type de phrase : « Travaille avec persévérance pour atteindre tes objectifs ! »",
+      "options": ["Déclarative", "Interrogative", "Impérative", "Exclamative"],
+      "a": "Impérative"
+    },
+    {
+      "q": "Quel est le temps du verbe dans : « Elle continue à engager des débats » ?",
+      "options": ["Présent", "Passé composé", "Imparfait", "Futur"],
+      "a": "Présent"
+    }
+  ]
+}
+
+  ]
+}

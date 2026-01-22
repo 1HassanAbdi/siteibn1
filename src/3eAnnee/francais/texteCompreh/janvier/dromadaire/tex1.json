@@ -1,0 +1,24 @@
+{
+    "title": "Dodo le dromadaire",
+      "grade": 2,
+    "sections": [
+        {
+            "title": "Dodo le dromadaire",
+            "text": "Dodo le dromadaire est couché sur le sable doré du désert. \n_Il dort depuis deux jours. \nDodo est-il malade?",
+            "image": "1.png",
+            "audio": "1.mp3"
+        },
+        {
+            "title": "La médecin examine Dodo",
+            "text": "La médecin examine Dodo. \nElle regarde ses dents et son dos. \n_'Ce dromadaire n'est pas malade, dit-elle, il fait tout simplement dodo.'",
+            "image": "2.png",
+            "audio": "2.mp3"
+        },
+        {
+            "title": "Dodo se réveille",
+            "text": "Finalement, Dodo s'éveille. \n'Comme j'ai bien dormi!' dit-il. \n_'Apportez-moi mon déjeuner, des dattes et de la limonade.' \nEt c'est depuis ce jour que le petit dromadaire du désert s'appelle Dodo.",
+            "image": "3.png",
+            "audio": "3.mp3"
+        }
+    ]
+}

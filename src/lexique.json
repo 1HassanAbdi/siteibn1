@@ -1,0 +1,154 @@
+{
+  "title": "Lexique des sons",
+  "weeks": [
+    {
+      "id": "semaine_i",
+      "title": "Le son « i »",
+      "words": [
+        { "word": "une bicyclette", "emoji": "🚲" },
+        { "word": "des ciseaux", "emoji": "✂️" },
+        { "word": "une fourmi", "emoji": "🐜" },
+        { "word": "un hibou", "emoji": "🦉" },
+        { "word": "une île", "emoji": "🏝️" },
+        { "word": "un lit", "emoji": "🛌" },
+        { "word": "un livre", "emoji": "📖" },
+        { "word": "un pyjama", "emoji": "👕" },
+        { "word": "une souris", "emoji": "🐭" },
+        { "word": "un tapis", "emoji": "🧶" },
+        { "word": "un taxi", "emoji": "🚕" },
+        { "word": "une toupie", "emoji": "🌀" },
+        { "word": "une tulipe", "emoji": "🌷" },
+        { "word": "une valise", "emoji": "🧳" }
+      ]
+    },
+    {
+      "id": "semaine_a",
+      "title": "Le son « a »",
+      "words": [
+        { "word": "un avion", "emoji": "✈️" },
+        { "word": "une balle", "emoji": "🎾" },
+        { "word": "un ballon", "emoji": "🎈" },
+        { "word": "des bananes", "emoji": "🍌" },
+        { "word": "des bas", "emoji": "🧦" },
+        { "word": "un bâton", "emoji": "🦯" },
+        { "word": "une cage", "emoji": "⛓️" },
+        { "word": "une carte", "emoji": "🗺️" },
+        { "word": "un chat", "emoji": "🐈‍⬛" },
+        { "word": "un chaton", "emoji": "🐱" },
+        { "word": "une chatte", "emoji": "🐈" },
+        { "word": "une cravate", "emoji": "👔" },
+        { "word": "un dragon", "emoji": "🐉" },
+        { "word": "une girafe", "emoji": "🦒" },
+        { "word": "un pyjama", "emoji": "👕" },
+        { "word": "un savon", "emoji": "🧼" },
+        { "word": "une vache", "emoji": "🐄" },
+        { "word": "une valise", "emoji": "🧳" }
+      ]
+    },
+    {
+      "id": "semaine_e",
+      "title": "Le son « e »",
+      "words": [
+        { "word": "une cerise", "emoji": "🍒" },
+        { "word": "un chemin", "emoji": "🛣️" },
+        { "word": "une chemise", "emoji": "👔" },
+        { "word": "une chenille", "emoji": "🐛" },
+        { "word": "un cheval", "emoji": "🐎" },
+        { "word": "des chevaux", "emoji": "🐎" },
+        { "word": "une cheville", "emoji": "🦵" },
+        { "word": "un genou", "emoji": "🦵" },
+        { "word": "une grenouille", "emoji": "🐸" },
+        { "word": "un melon", "emoji": "🍈" },
+        { "word": "un menu", "emoji": "📜" },
+        { "word": "une pelure", "emoji": "🍌" },
+        { "word": "un renard", "emoji": "🦊" },
+        { "word": "un repas", "emoji": "🍽️" },
+        { "word": "un requin", "emoji": "🦈" }
+      ]
+    },
+    {
+      "id": "semaine_u",
+      "title": "Le son « u »",
+      "words": [
+        { "word": "une bûche", "emoji": "🪵" },
+        { "word": "un cube", "emoji": "🧊" },
+        { "word": "une flûte", "emoji": "🪈" },
+        { "word": "une luge", "emoji": "🛷" },
+        { "word": "la lune", "emoji": "🌙" },
+        { "word": "un mur", "emoji": "🧱" },
+        { "word": "une perruche", "emoji": "🦜" },
+        { "word": "une plume", "emoji": "🪶" },
+        { "word": "une prune", "emoji": "🟣" },
+        { "word": "un pupitre", "emoji": "🏫" },
+        { "word": "une rue", "emoji": "🛣️" },
+        { "word": "une tortue", "emoji": "🐢" },
+        { "word": "un tube", "emoji": "🧪" },
+        { "word": "une tulipe", "emoji": "🌷" },
+        { "word": "une tuque", "emoji": "🧤" }
+      ]
+    },
+    {
+      "id": "semaine_o",
+      "title": "Le son « o »",
+      "words": [
+        { "word": "des bottes", "emoji": "🥾" },
+        { "word": "des carottes", "emoji": "🥕" },
+        { "word": "du chocolat", "emoji": "🍫" },
+        { "word": "un cornet", "emoji": "🍦" },
+        { "word": "du fromage", "emoji": "🧀" },
+        { "word": "des olives", "emoji": "🫒" },
+        { "word": "une orange", "emoji": "🍊" },
+        { "word": "un os", "emoji": "🦴" },
+        { "word": "une poche", "emoji": "👖" },
+        { "word": "une pomme", "emoji": "🍎" },
+        { "word": "des pommes de terre", "emoji": "🥔" },
+        { "word": "des roses", "emoji": "🌹" },
+        { "word": "un rôti", "emoji": "🥩" },
+        { "word": "des tomates", "emoji": "🍅" }
+      ]
+    },
+    {
+      "id": "semaine_é",
+      "title": "Le son « é »",
+      "words": [
+        { "word": "une araignée", "emoji": "🕷️" },
+        { "word": "un bébé", "emoji": "👶" },
+        { "word": "une cheminée", "emoji": "🏠" },
+        { "word": "une clé", "emoji": "🔑" },
+        { "word": "une école", "emoji": "🏫" },
+        { "word": "un écureuil", "emoji": "🐿️" },
+        { "word": "un éléphant", "emoji": "🐘" },
+        { "word": "une étoile", "emoji": "⭐" },
+        { "word": "une fée", "emoji": "🧚" },
+        { "word": "de la fumée", "emoji": "💨" },
+        { "word": "une fuzée", "emoji": "🚀" },
+        { "word": "un métro", "emoji": "🚇" },
+        { "word": "une poupée", "emoji": "🪆" },
+        { "word": "un téléphone", "emoji": "📞" },
+        { "word": "un téléviseur", "emoji": "📺" }
+      ]
+    },
+    {
+      "id": "semaine_è_ê",
+      "title": "Les sons « è » et « ê »",
+      "words": [
+        { "word": "une barrière", "emoji": "🚧" },
+        { "word": "des bêtes", "emoji": "🐄" },
+        { "word": "une chèvre", "emoji": "🐐" },
+        { "word": "de la crème", "emoji": "🍦" },
+        { "word": "une fermière", "emoji": "👩‍🌾" },
+        { "word": "une fête", "emoji": "🥳" },
+        { "word": "une flèche", "emoji": "🏹" },
+        { "word": "une forêt", "emoji": "🌲" },
+        { "word": "une mère", "emoji": "👩" },
+        { "word": "une pêche", "emoji": "🍑" },
+        { "word": "un père", "emoji": "👨" },
+        { "word": "une règle", "emoji": "📏" },
+        { "word": "une rivière", "emoji": "🏞️" },
+        { "word": "une sorcière", "emoji": "🧙‍♀️" },
+        { "word": "une tête", "emoji": "👤" },
+        { "word": "un trèfle", "emoji": "☘️" }
+      ]
+    }
+  ]
+}

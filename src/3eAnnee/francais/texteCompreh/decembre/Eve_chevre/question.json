@@ -1,0 +1,96 @@
+{
+  "title": "ÈVE LA PETITE CHÈVRE",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "ÈVE LA PETITE CHÈVRE - Partie 1",
+      "questions": [
+        {
+          "question": "Qui est Ève ?",
+          "options": ["Une petite chèvre", "Une fermière", "Un chien"],
+          "correctAnswer": "Une petite chèvre"
+        },
+        {
+          "question": "Qui est l'amie d'Ève ?",
+          "options": ["La fermière", "Le chien", "Le chat"],
+          "correctAnswer": "La fermière"
+        },
+        {
+          "question": "Que pense la fermière d’Ève ?",
+          "options": ["Elle l'aime beaucoup", "Elle a peur d’elle", "Elle ne la connaît pas"],
+          "correctAnswer": "Elle l'aime beaucoup"
+        },
+        {
+          "question": "Comment la fermière montre-t-elle son affection ?",
+          "options": ["Elle joue avec Ève", "Elle la nourrit", "Elle l'ignore"],
+          "correctAnswer": "Elle la nourrit"
+        },
+        {
+          "question": "Quel animal est Ève ?",
+          "options": ["Chèvre", "Chat", "Cheval"],
+          "correctAnswer": "Chèvre"
+        }
+      ]
+    },
+    {
+      "title": "ÈVE LA PETITE CHÈVRE - Partie 2",
+      "questions": [
+        {
+          "question": "Que fait la fermière chaque jour ?",
+          "options": ["Elle visite Ève", "Elle part en voyage", "Elle dort"],
+          "correctAnswer": "Elle visite Ève"
+        },
+        {
+          "question": "Que fait la fermière quand elle visite Ève ?",
+          "options": ["Elle ouvre la barrière", "Elle ferme la porte", "Elle peint la grange"],
+          "correctAnswer": "Elle ouvre la barrière"
+        },
+        {
+          "question": "Que dit la fermière à Ève ?",
+          "options": ["Viens, ma petite chèvre", "Va te cacher", "Reste dans la grange"],
+          "correctAnswer": "Viens, ma petite chèvre"
+        },
+        {
+          "question": "Pourquoi la fermière ouvre-t-elle la barrière ?",
+          "options": ["Pour laisser sortir Ève", "Pour ranger la grange", "Pour nourrir les poules"],
+          "correctAnswer": "Pour laisser sortir Ève"
+        },
+        {
+          "question": "Comment Ève réagit-elle quand la fermière l'appelle ?",
+          "options": ["Elle vient", "Elle part", "Elle reste immobile"],
+          "correctAnswer": "Elle vient"
+        }
+      ]
+    },
+    {
+      "title": "ÈVE LA PETITE CHÈVRE - Partie 3",
+      "questions": [
+        {
+          "question": "Où la fermière amène-t-elle Ève ?",
+          "options": ["Près de la rivière", "Dans la maison", "Dans la forêt"],
+          "correctAnswer": "Près de la rivière"
+        },
+        {
+          "question": "Que mange Ève ?",
+          "options": ["Du trèfle", "Du pain", "Des pommes"],
+          "correctAnswer": "Du trèfle"
+        },
+        {
+          "question": "Qu’est-ce qu’Ève donne à la fermière ?",
+          "options": ["Du lait et de la crème", "Des œufs", "Du miel"],
+          "correctAnswer": "Du lait et de la crème"
+        },
+        {
+          "question": "Pourquoi Ève mange-t-elle du trèfle ?",
+          "options": ["Pour se nourrir", "Pour jouer", "Pour dormir"],
+          "correctAnswer": "Pour se nourrir"
+        },
+        {
+          "question": "Comment la fermière utilise-t-elle le lait et la crème d’Ève ?",
+          "options": ["Pour cuisiner", "Pour arroser les fleurs", "Pour nourrir le chat"],
+          "correctAnswer": "Pour cuisiner"
+        }
+      ]
+    }
+  ]
+}

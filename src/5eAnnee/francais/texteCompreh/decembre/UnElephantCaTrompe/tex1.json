@@ -1,0 +1,24 @@
+{
+  "title": "Un éléphant, ça trompe",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "Un éléphant, ça trompe",
+      "text": "Un éléphant, ça trompe.\nDeux écureuils, ça grimpe.\nTrois araignées, ça tisse.\nTrois araignées, ça tisse énormément.",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "Quatre fusées, ça décolle",
+      "text": "Quatre fusées, ça décolle.\nCinq métros, ça roule.\nSix téléphones, ça sonne.\nSix téléphones, ça sonne énormément.",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "Sept étoiles, ça brille",
+      "text": "Sept étoiles, ça brille.\nHuit cheminées, ça fume.\nNeuf bébés, ça pleure.\nDix bébés, ça rit énormément.",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}

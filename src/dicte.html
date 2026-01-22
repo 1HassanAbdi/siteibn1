@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices de Compréhension - La Lente Destruction de la Terre</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 40px; line-height: 1.6; }
+        h1 { color: #2C3E50; border-bottom: 3px solid #3498DB; padding-bottom: 10px; }
+        h2 { color: #34495E; margin-top: 30px; border-bottom: 1px dashed #BDC3C7; padding-bottom: 5px; }
+        .texte { 
+            background-color: #ECF0F1; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        .section-exercice { margin-bottom: 40px; padding: 15px; border: 1px solid #BDC3C7; border-radius: 5px; }
+        .question { font-weight: bold; margin-top: 15px; color: #16A085; }
+        .espace-libre { border: 1px dashed #BDC3C7; min-height: 50px; width: 90%; margin-top: 5px; }
+        .qcm-option, .vrai-faux { margin-left: 20px; }
+        
+        /* Styles pour les boutons et la zone de code */
+        .controls { text-align: center; margin: 30px 0; }
+        .btn-print, .btn-valider { 
+            background-color: #27AE60; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 1.1em;
+            margin: 5px;
+        }
+        .btn-print:hover { background-color: #2ECC71; }
+        .btn-valider { background-color: #3498DB; }
+        .btn-valider:hover { background-color: #5DADE2; }
+
+        /* Styles pour la section de saisie de code */
+        .saisie-code {
+            padding: 15px; 
+            background-color: #F7DC6F; 
+            border: 2px solid #F1C40F; 
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        .saisie-code p { margin: 0; font-weight: bold; }
+        #note-automatique {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #E74C3C;
+            margin-top: 15px;
+            border: 2px solid #E74C3C;
+            padding: 10px;
+            background-color: #FADBD8;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        /* Styles pour le corrigé final (caché par défaut) */
+        .corrigé-final {
+            display: none; 
+            background-color: #D5F5E3; 
+            border: 3px solid #19E6AE; 
+            padding: 25px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        .corrigé-final h2 {
+            color: #19E6AE;
+            border-bottom: 2px solid #19E6AE;
+            margin-top: 0;
+            padding-bottom: 5px;
+        }
+        .reponse-correcte { font-weight: bold; color: #0E6655; }
+
+        /* ************************************************* */
+        /* MEDIA QUERY POUR L'IMPRESSION (Télécharger/Imprimer) */
+        /* ************************************************* */
+        @media print {
+            .controls, .saisie-code, .corrigé-final {
+                display: none !important; /* Masque les contrôles, la zone de code et le corrigé à l'impression */
+            }
+            body { margin: 0; }
+            .texte { background-color: white; border: 1px solid black; }
+        }
+    </style>
+
+    <script>
+        // Définition des réponses correctes (1 point par question)
+        const REPONSES_CORRECTES = {
+            // 2. Vrai ou Faux
+            'vf1': 'f', 
+            'vf2': 'v',
+            'vf3': 'f',
+            'vf4': 'v',
+            'vf5': 'f',
+            // 3. Questions à Choix Multiples (QCM)
+            'qcm1': 'c',
+            'qcm2': 'b',
+            'qcm3': 'b',
+            'qcm4': 'b',
+            'qcm5': 'c',
+            // 6. Vocabulaire
+            'voc1': 'b',
+            'voc2': 'a',
+            'voc3': 'b',
+            'voc4': 'c',
+            'voc5': 'b',
+            // 7. Conjugaison
+            'conj1': 'c',
+            'conj2': 'd',
+            'conj3': 'a',
+            'conj4': 'a',
+            'conj5': 'c'
+        };
+
+        // Fonction pour afficher le corrigé
+        function afficherCorrige() {
+            const codeSaisi = document.getElementById('code-secret').value;
+            const elementCorrige = document.getElementById('corrigé-final');
+            const messageErreur = document.getElementById('message-erreur');
+
+            if (codeSaisi === 'hassan') {
+                elementCorrige.style.display = 'block';
+                messageErreur.textContent = "CORRIGÉ AFFICHÉ. Utilisez le bouton 'Valider' pour votre score.";
+                messageErreur.style.color = '#1ABC9C';
+            } else {
+                messageErreur.textContent = "Code incorrect. Veuillez demander le code à l'enseignant.";
+                messageErreur.style.color = '#E74C3C';
+                elementCorrige.style.display = 'none';
+            }
+        }
+        
+        // Fonction pour valider les réponses automatiques et calculer la note
+        function validerEtCalculerNote() {
+            let score = 0;
+            const questions = Object.keys(REPONSES_CORRECTES);
+            
+            questions.forEach(name => {
+                // Tente de trouver la réponse sélectionnée par l'utilisateur
+                const reponseSelectionnee = document.querySelector(`input[name="${name}"]:checked`);
+                
+                if (reponseSelectionnee && reponseSelectionnee.value === REPONSES_CORRECTES[name]) {
+                    score++;
+                }
+            });
+
+            const totalAutomatique = questions.length; // 20 questions
+            const elementNote = document.getElementById('note-automatique');
+            
+            elementNote.innerHTML = `
+                 Votre score pour les sections automatiques (2, 3, 6, 7) est de 
+                <span style="color: #27AE60;">${score} / ${totalAutomatique}</span>.<br>
+                Veuillez utiliser le corrigé pour évaluer les sections 4 et 5 et compléter votre note sur 35.
+            `;
+            
+            // S'assurer que le corrigé est affiché pour l'étape suivante d'auto-correction (si l'élève a le code)
+            const codeSaisi = document.getElementById('code-secret').value;
+            if (codeSaisi === 'hassan') {
+                 document.getElementById('corrigé-final').style.display = 'block';
+            }
+        }
+
+        // Fonction pour imprimer la page
+        function imprimerPage() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+
+    <h1>🌎 Exercices de Compréhension : La Lente Destruction de la Terre</h1>
+    <p>Nom : _________________________ Date : _________________________</p>
+    
+    <div class="controls">
+        <button class="btn-print" onclick="imprimerPage()">🖨️ Télécharger / Imprimer la Fiche de Questions</button>
+    </div>
+
+    <h2>1. Le Texte</h2>
+    <div class="texte">
+        <p>La découverte que les chlorofluorocarbures (ou CFC) nuisent à l'environnement est déterminante dans nos efforts pour préserver l'environnement. Les CFC sont utilisés pour renforcer les plastiques et améliorer la conservation des aliments, mais ils relâchent des sous-produits dangereux dans l'air.</p>
+
+        <p>L'utilisation des CFC est l'une des raisons de l'effet de serre, car ils sont libérés dans l'atmosphère tous les jours, à n'importe quel moment. Dans leur désir d'une vie plus confortable, les gens contribuent indirectement aux CFC dans l'atmosphère. L'énergie des rayons du Soleil traverse les couches de gaz avant de frapper la surface de la Terre. Le Soleil réchauffe le sol et la mer, et l'énergie de cette chaleur est redirigée dans l'atmosphère. Cette invisible énergie infrarouge est absorbée par les gaz atmosphériques avec, comme conséquence, une augmentation graduelle de la température sur la Terre, au fil des années. Ceci peut avoir des résultats catastrophiques sur l'environnement et pour la vie sur Terre. Les végétaux, incapables de survivre à une chaleur extrême, vont mourir. Les calottes glacières vont fondre et des inondations peuvent survenir à une échelle mondiale.</p>
+
+        <p>Les CFC trouvés dans l'atmosphère détruisent également la couche d'ozone, une couche protectrice qui empêche les rayons ultraviolets dangereux, produits par le Soleil, d'atteindre la Terre. Une exposition excessive au soleil augmente les risques de cancer de la peau. Déjà, des « trous » dans la couche d'ozone sont présents au-dessus de l'Antarctique et de l'Arctique.</p>
+
+        <p>À mesure que notre niveau de vie augmente, nous consommons plus de produits qui ont des effets nuisibles sur l'environnement. Jouir d'un tel style de vie en ce moment mènera à notre perte dans le futur. Réduire l'utilisation des CFC est par conséquent important.</p>
+    </div>
+
+    <div class="section-exercice">
+        <h2>2. Compréhension : Vrai ou Faux</h2>
+        <p>Lisez chaque affirmation et cochez si elle est Vraie (V) ou Fausse (F).</p>
+        
+        <div class="question">1. Les CFC sont uniquement utilisés pour renforcer les plastiques.</div>
+        <div class="vrai-faux"><input type="radio" name="vf1" value="v"> Vrai <input type="radio" name="vf1" value="f"> Faux</div>
+
+        <div class="question">2. L'énergie infrarouge est absorbée par les gaz atmosphériques.</div>
+        <div class="vrai-faux"><input type="radio" name="vf2" value="v"> Vrai <input type="radio" name="vf2" value="f"> Faux</div>
+
+        <div class="question">3. L'un des résultats catastrophiques de l'effet de serre serait la baisse du niveau des mers.</div>
+        <div class="vrai-faux"><input type="radio" name="vf3" value="v"> Vrai <input type="radio" name="vf3" value="f"> Faux</div>
+
+        <div class="question">4. La couche d'ozone arrête les rayons ultraviolets dangereux.</div>
+        <div class="vrai-faux"><input type="radio" name="vf4" value="v"> Vrai <input type="radio" name="vf4" value="f"> Faux</div>
+
+        <div class="question">5. Le texte mentionne des "trous" dans la couche d'ozone uniquement au-dessus de l'Antarctique.</div>
+        <div class="vrai-faux"><input type="radio" name="vf5" value="v"> Vrai <input type="radio" name="vf5" value="f"> Faux</div>
+    </div>
+
+    <div class="section-exercice">
+        <h2>3. Compréhension : Questions à Choix Multiples (QCM)</h2>
+        <p>Encerclez la bonne réponse ou cochez la bonne case.</p>
+
+        <div class="question">1. Quel phénomène mondial le réchauffement climatique pourrait-il provoquer ?</div>
+        <div class="qcm-option"><input type="radio" name="qcm1" value="a"> Une diminution des végétaux.</div>
+        <div class="qcm-option"><input type="radio" name="qcm1" value="b"> Le refroidissement des océans.</div>
+        <div class="qcm-option"><input type="radio" name="qcm1" value="c"> Des inondations à une échelle mondiale.</div>
+        <div class="qcm-option"><input type="radio" name="qcm1" value="d"> La reformation des calottes glacières.</div>
+
+        <div class="question">2. Qu'est-ce qui absorbe l'énergie infrarouge selon le texte ?</div>
+        <div class="qcm-option"><input type="radio" name="qcm2" value="a"> Le sol et la mer.</div>
+        <div class="qcm-option"><input type="radio" name="qcm2" value="b"> Les gaz atmosphériques.</div>
+        <div class="qcm-option"><input type="radio" name="qcm2" value="c"> Les rayons ultraviolets.</div>
+        <div class="qcm-option"><input type="radio" name="qcm2" value="d"> La couche d'ozone.</div>
+
+        <div class="question">3. Quel est l'un des effets des CFC sur la couche d'ozone ?</div>
+        <div class="qcm-option"><input type="radio" name="qcm3" value="a"> Ils la renforcent.</div>
+        <div class="qcm-option"><input type="radio" name="qcm3" value="b"> Ils la détruisent.</div>
+        <div class="qcm-option"><input type="radio" name="qcm3" value="c"> Ils la réparent.</div>
+        <div class="qcm-option"><input type="radio" name="qcm3" value="d"> Ils la réchauffent.</div>
+        
+        <div class="question">4. Quelle est la cause indirecte de la libération de CFC par les gens ?</div>
+        <div class="qcm-option"><input type="radio" name="qcm4" value="a"> La plantation de végétaux.</div>
+        <div class="qcm-option"><input type="radio" name="qcm4" value="b"> Le désir d'une vie plus confortable.</div>
+        <div class="qcm-option"><input type="radio" name="qcm4" value="c"> La réduction de l'utilisation des CFC.</div>
+        <div class="qcm-option"><input type="radio" name="qcm4" value="d"> L'exposition au soleil.</div>
+
+        <div class="question">5. Quel est l'un des usages des CFC mentionné dans le texte ?</div>
+        <div class="qcm-option"><input type="radio" name="qcm5" value="a"> Pour créer de l'énergie infrarouge.</div>
+        <div class="qcm-option"><input type="radio" name="qcm5" value="b"> Pour chauffer le sol et la mer.</div>
+        <div class="qcm-option"><input type="radio" name="qcm5" value="c"> Pour améliorer la conservation des aliments.</div>
+        <div class="qcm-option"><input type="radio" name="qcm5" value="d"> Pour remplacer les gaz atmosphériques.</div>
+    </div>
+
+    <div class="section-exercice">
+        <h2>4. Compréhension : Réponses Courtes</h2>
+        <p>Répondez aux questions en utilisant uniquement le texte. (Maximum deux phrases)</p>
+
+        <div class="question">1. Quel est l'un des risques pour la santé humaine lié à la destruction de la couche d'ozone ?</div>
+        <div class="espace-libre"></div>
+        
+        <div class="question">2. Nommez les deux régions au-dessus desquelles des « trous » dans la couche d’ozone sont déjà présents.</div>
+        <div class="espace-libre"></div>
+
+        <div class="question">3. Décrivez brièvement ce qui arrive à l'énergie du Soleil après qu'elle frappe la surface de la Terre.</div>
+        <div class="espace-libre"></div>
+        
+        <div class="question">4. Citez les deux applications des CFC mentionnées dans le premier paragraphe.</div>
+        <div class="espace-libre"></div>
+
+        <div class="question">5. Quel est le nom scientifique des CFC ?</div>
+        <div class="espace-libre"></div>
+    </div>
+
+    <div class="section-exercice">
+        <h2>5. Réflexion et Opinion</h2>
+        <p>Développez vos réponses. (Minimum trois phrases)</p>
+
+        <div class="question">1. Le texte affirme que "jouir d'un tel style de vie en ce moment mènera à notre perte dans le futur". Expliquez cette affirmation en vous basant sur les actions et conséquences décrites dans le texte.</div>
+        <div class="espace-libre" style="min-height: 100px;"></div>
+        
+        <div class="question">2. Selon vous, que pourrait-on faire pour réduire l'utilisation des CFC et, plus généralement, améliorer la préservation de l'environnement ?</div>
+        <div class="espace-libre" style="min-height: 100px;"></div>
+    </div>
+
+    <div class="section-exercice">
+        <h2>6. Vocabulaire</h2>
+        <p>Choisissez le synonyme ou l'explication qui correspond le mieux au mot souligné dans le contexte du texte.</p>
+
+        <div class="question">1. Le mot "déterminante" (ligne 1) signifie :</div>
+        <div class="qcm-option"><input type="radio" name="voc1" value="a"> Accidentelle</div>
+        <div class="qcm-option"><input type="radio" name="voc1" value="b"> Essentielle</div>
+        <div class="qcm-option"><input type="radio" name="voc1" value="c"> Compliquée</div>
+        <div class="qcm-option"><input type="radio" name="voc1" value="d"> Optionnelle</div>
+
+        <div class="question">2. Le mot "sous-produits" (paragraphe 1) signifie :</div>
+        <div class="qcm-option"><input type="radio" name="voc2" value="a"> Résultats secondaires</div>
+        <div class="qcm-option"><input type="radio" name="voc2" value="b"> Produits principaux</div>
+        <div class="qcm-option"><input type="radio" name="voc2" value="c"> Matières premières</div>
+        <div class="qcm-option"><input type="radio" name="voc2" value="d"> Éléments initiaux</div>
+
+        <div class="question">3. Que signifie le mot "graduelle" dans "augmentation graduelle" (paragraphe 2) ?</div>
+        <div class="qcm-option"><input type="radio" name="voc3" value="a"> Soudaine</div>
+        <div class="qcm-option"><input type="radio" name="voc3" value="b"> Lente et progressive</div>
+        <div class="qcm-option"><input type="radio" name="voc3" value="c"> Aléatoire</div>
+        <div class="qcm-option"><input type="radio" name="voc3" value="d"> Immédiate</div>
+        
+        <div class="question">4. Le mot "nuisibles" (paragraphe 4) signifie :</div>
+        <div class="qcm-option"><input type="radio" name="voc4" value="a"> Utiles</div>
+        <div class="qcm-option"><input type="radio" name="voc4" value="b"> Bénéfiques</div>
+        <div class="qcm-option"><input type="radio" name="voc4" value="c"> Dangereux</div>
+        <div class="qcm-option"><input type="radio" name="voc4" value="d"> Améliorables</div>
+
+        <div class="question">5. Le mot "catastrophiques" (paragraphe 2) est synonyme de :</div>
+        <div class="qcm-option"><input type="radio" name="voc5" value="a"> Légers</div>
+        <div class="qcm-option"><input type="radio" name="voc5" value="b"> Dramatiques</div>
+        <div class="qcm-option"><input type="radio" name="voc5" value="c"> Locaux</div>
+        <div class="qcm-option"><input type="radio" name="voc5" value="d"> Insignifiants</div>
+    </div>
+
+    <div class="section-exercice">
+        <h2>7. Grammaire et Conjugaison</h2>
+        <p>Choisissez la forme verbale qui convient le mieux au contexte de la phrase, en vous basant sur le temps présent/futur du texte.</p>
+
+        <div class="question">1. Les végétaux, incapables de survivre à la chaleur, (mourir, Futur simple) :</div>
+        <div class="qcm-option"><input type="radio" name="conj1" value="a"> vont mourir</div>
+        <div class="qcm-option"><input type="radio" name="conj1" value="b"> mourraient</div>
+        <div class="qcm-option"><input type="radio" name="conj1" value="c"> mourront</div>
+        <div class="qcm-option"><input type="radio" name="conj1" value="d"> meurent</div>
+
+        <div class="question">2. L'énergie des rayons du Soleil (traverser, Présent) les couches de gaz.</div>
+        <div class="qcm-option"><input type="radio" name="conj2" value="a"> traversent</div>
+        <div class="qcm-option"><input type="radio" name="conj2" value="b"> traversera</div>
+        <div class="qcm-option"><input type="radio" name="conj2" value="c"> traversait</div>
+        <div class="qcm-option"><input type="radio" name="conj2" value="d"> traverse</div>
+
+        <div class="question">3. Les calottes glacières (fondre, Futur simple) si la température augmente.</div>
+        <div class="qcm-option"><input type="radio" name="conj3" value="a"> fondront</div>
+        <div class="qcm-option"><input type="radio" name="conj3" value="b"> fondent</div>
+        <div class="qcm-option"><input type="radio" name="conj3" value="c"> fondaient</div>
+        <div class="qcm-option"><input type="radio" name="conj3" value="d"> fondre</div>
+        
+        <div class="question">4. Nous (consommer, Présent) plus de produits nuisibles à mesure que notre niveau de vie augmente.</div>
+        <div class="qcm-option"><input type="radio" name="conj4" value="a"> consommons</div>
+        <div class="qcm-option"><input type="radio" name="conj4" value="b"> consommerons</div>
+        <div class="qcm-option"><input type="radio" name="conj4" value="c"> consumons</div>
+        <div class="qcm-option"><input type="radio" name="conj4" value="d"> consommaient</div>
+
+        <div class="question">5. Le Soleil (réchauffer, Présent) le sol et la mer.</div>
+        <div class="qcm-option"><input type="radio" name="conj5" value="a"> réchauffent</div>
+        <div class="qcm-option"><input type="radio" name="conj5" value="b"> réchauffait</div>
+        <div class="qcm-option"><input type="radio" name="conj5" value="c"> réchauffe</div>
+        <div class="qcm-option"><input type="radio" name="conj5" value="d"> réchauffons</div>
+    </div>
+    
+    <div class="saisie-code">
+        <button class="btn-valider" onclick="validerEtCalculerNote()">✅ Valider et Calculer ma Note (Sections 2, 3, 6, 7)</button>
+        
+        <div id="note-automatique">Votre note sera affichée ici après validation.</div>
+
+        <p style="margin-top: 20px;">Entrez le code secret **-----** pour voir le corrigé et auto-évaluer les questions ouvertes :</p>
+        <input type="text" id="code-secret" placeholder="Code secret : ">
+        <button onclick="afficherCorrige()">Afficher le Corrigé</button>
+        <p id="message-erreur" style="margin-top: 10px;"></p>
+    </div>
+
+    <div class="corrigé-final" id="corrigé-final">
+        <h2>✔️ CORRIGÉ COMPLET ET BARÈME DE NOTATION</h2>
+        
+        <p><strong>Note :</strong> Chaque question QCM/Vrai-Faux/Vocabulaire/Conjugaison vaut 1 point. Total de 20 points pour ces sections.</p>
+
+        <div class="bloc-reponse">
+            <h4>2. Vrai ou Faux (5 points)</h4>
+            <ol>
+                <li>Les CFC sont uniquement utilisés pour renforcer les plastiques. : <span class="reponse-correcte">Faux</span></li>
+                <li>L'énergie infrarouge est absorbée par les gaz atmosphériques. : <span class="reponse-correcte">Vrai</span></li>
+                <li>L'un des résultats catastrophiques de l'effet de serre serait la baisse du niveau des mers. : <span class="reponse-correcte">Faux</span></li>
+                <li>La couche d'ozone arrête les rayons ultraviolets dangereux. : <span class="reponse-correcte">Vrai</span></li>
+                <li>Le texte mentionne des "trous" dans la couche d'ozone uniquement au-dessus de l'Antarctique. : <span class="reponse-correcte">Faux</span></li>
+            </ol>
+        </div>
+
+        <div class="bloc-reponse">
+            <h4>3. Compréhension : Questions à Choix Multiples (5 points)</h4>
+            <ol>
+                <li>Quel phénomène mondial le réchauffement climatique pourrait-il provoquer ? <span class="reponse-correcte">c) Des inondations à une échelle mondiale.</span></li>
+                <li>Qu'est-ce qui absorbe l'énergie infrarouge selon le texte ? <span class="reponse-correcte">b) Les gaz atmosphériques.</span></li>
+                <li>Quel est l'un des effets des CFC sur la couche d'ozone ? <span class="reponse-correcte">b) Ils la détruisent.</span></li>
+                <li>Quelle est la cause indirecte de la libération de CFC par les gens ? <span class="reponse-correcte">b) Le désir d'une vie plus confortable.</span></li>
+                <li>Quel est l'un des usages des CFC mentionné dans le texte ? <span class="reponse-correcte">c) Pour améliorer la conservation des aliments.</span></li>
+            </ol>
+        </div>
+
+        <div class="bloc-reponse">
+            <h4>4. Compréhension : Réponses Courtes (Barème : 1 point par réponse complète)</h4>
+            <ol>
+                <li>Le risque est l'augmentation des risques de cancer de la peau en raison d'une exposition excessive au soleil.</li>
+                <li>Les deux régions sont l'Antarctique et l'Arctique.</li>
+                <li>L'énergie réchauffe le sol et la mer, puis cette chaleur est redirigée dans l'atmosphère sous forme d'énergie infrarouge.</li>
+                <li>Les CFC sont utilisés pour renforcer les plastiques et pour améliorer la conservation des aliments.</li>
+                <li>Le nom scientifique des CFC est chlorofluorocarbures.</li>
+            </ol>
+        </div>
+
+        <div class="bloc-reponse">
+            <h4>5. Réflexion et Opinion (Barème : 5 points par question pour la qualité, la clarté et la pertinence)</h4>
+            <p>**1. Explication de l'affirmation :** *Réponse attendue :* Le mode de vie confortable (consommation de produits utilisant des CFC) mène à la libération de sous-produits dangereux. Ces sous-produits provoquent l'effet de serre (augmentation graduelle de la température) et la destruction de la couche d'ozone. Ces conséquences (inondations mondiales, mort des végétaux, risque de cancer de la peau) représentent la "perte" future causée par le "style de vie" actuel.</p>
+            <p>**2. Suggestions pour l'environnement :** *Réponse attendue :* Suggestion d'actions concrètes basées sur le texte et l'expérience générale : réduire la consommation de produits à base de CFC, chercher des substituts, investir dans les énergies renouvelables pour limiter l'effet de serre, recycler, etc.</p>
+        </div>
+
+        <div class="bloc-reponse">
+            <h4>6. Vocabulaire (5 points)</h4>
+            <ol>
+                <li>Le mot "déterminante" (ligne 1) signifie : <span class="reponse-correcte">b) Essentielle</span></li>
+                <li>Le mot "sous-produits" (paragraphe 1) signifie : <span class="reponse-correcte">a) Résultats secondaires</span></li>
+                <li>Que signifie le mot "graduelle" dans "augmentation graduelle" (paragraphe 2) ? <span class="reponse-correcte">b) Lente et progressive</span></li>
+                <li>Le mot "nuisibles" (paragraphe 4) signifie : <span class="reponse-correcte">c) Dangereux</span></li>
+                <li>Le mot "catastrophiques" (paragraphe 2) est synonyme de : <span class="reponse-correcte">b) Dramatiques</span></li>
+            </ol>
+        </div>
+
+        <div class="bloc-reponse">
+            <h4>7. Grammaire et Conjugaison (5 points)</h4>
+            <ol>
+                <li>Les végétaux, incapables de survivre à la chaleur, (mourir, Futur simple) : <span class="reponse-correcte">c) mourront</span></li>
+                <li>L'énergie des rayons du Soleil (traverser, Présent) les couches de gaz. : <span class="reponse-correcte">d) traverse</span></li>
+                <li>Les calottes glacières (fondre, Futur simple) si la température augmente. : <span class="reponse-correcte">a) fondront</span></li>
+                <li>Nous (consommer, Présent) plus de produits nuisibles à mesure que notre niveau de vie augmente. : <span class="reponse-correcte">a) consommons</span></li>
+                <li>Le Soleil (réchauffer, Présent) le sol et la mer. : <span class="reponse-correcte">c) réchauffe</span></li>
+            </ol>
+        </div>
+        
+        <div class="bloc-reponse">
+            <h3>TOTAL DE LA NOTE (Auto-évaluation) :</h3>
+            <ul>
+                <li>**Score automatique (Sections 2, 3, 6, 7) :** Indiqué ci-dessus / 20 points</li>
+                <li>**Score auto-évalué (Section 4 - Réponses courtes) :** _____ / 5 points</li>
+                <li>**Score auto-évalué (Section 5 - Réflexion/Opinion) :** _____ / 10 points</li>
+                <li>**NOTE TOTALE FINALE :** _____ / 35 points</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

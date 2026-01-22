@@ -1,0 +1,191 @@
+{
+  "title": "La grande sagesse du petit Alex",
+  "level": "4e année",
+  "theme": "Compréhension de texte",
+  "typeTexte": "Récit",
+  "objectifs": [
+    "Lire et comprendre un récit",
+    "Identifier les idées principales",
+    "Comprendre les sentiments des personnages",
+    "Développer le vocabulaire",
+    "Faire des déductions logiques"
+  ],
+
+  "text": "Un jour, Alex et ses copains marchaient le long d'une route de campagne pour aller piqueniquer. Tout en marchant et en bavardant joyeusement, l'un des garçons a aperçu devant eux un énorme pommier rempli de fruits mûrs qui pendaient aux branches. « Regardez ! Des pommes ! » ont crié les garçons avec appétit. « Cueillons-les ! »\n\nTous étaient enchantés de voir tant de pommes et ils se sont précipités jusqu'à l'arbre. Ils ont grimpé dans le pommier et ont cueilli les fruits en riant de bon cœur. Seul le petit Alex ne bougeait pas. Il se tenait là et regardait ses amis sans dire un mot.\n\nLe premier garçon à grimper dans l'arbre avait déjà cueilli quelques pommes et il a crié à Alex : « Viens, Alex, prends des fruits ! »\n\n« Ces pommes sont amères », a répondu Alex calmement, en demeurant où il était. Les autres garçons ont été d'accord avec lui, après avoir goûté les pommes.\n\n« Oh, elles sont amères, terriblement amères ! » ont-ils dit, déçus, en jetant par terre leurs pommes à moitié mangées. « Mais elles ont vraiment l'air mûres et juteuses ! »\n\nL'un des garçons plus âgés a demandé à Alex comment il savait que les pommes étaient amères. « C'est fort simple », a répondu Alex avec son calme habituel. « Il doit bien y avoir des dizaines de personnes qui passent devant cet arbre chaque jour. Si les pommes étaient bonnes à manger, elles auraient été cueillies par les passants il y a bien longtemps, avant même qu'elles ne soient mûres. Mais, au contraire, il y en a en abondance dans l'arbre. Il semble évident que quelque chose ne va pas avec elles. »\n\nAprès avoir écouté attentivement l'explication d'Alex, les autres garçons lui ont donné une tape dans le dos pour le féliciter d'être aussi brillant.",
+
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "✓/✗ Vrai ou Faux",
+      "type": "boolean",
+      "questions": [
+        { "q": "Alex et ses amis marchaient sur une route de campagne.", "a": true },
+        { "q": "Les garçons ont vu le pommier derrière eux.", "a": false },
+        { "q": "Alex a grimpé dans l'arbre avec les autres.", "a": false },
+        { "q": "Les pommes avaient l'air mûres et juteuses.", "a": true },
+        { "q": "Les garçons ont félicité Alex à la fin.", "a": true }
+      ]
+    },
+
+    {
+      "id": "qcm",
+      "label": "📝 Compréhension",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Ce texte est :",
+          "options": [
+            "Une description",
+            "Une autobiographie",
+            "Un récit",
+            "Un portrait"
+          ],
+          "a": "Un récit"
+        },
+        {
+          "q": "Pourquoi Alex ne goûte-t-il pas aux pommes ?",
+          "options": [
+            "Il n'aime pas les fruits",
+            "Il a peur",
+            "Il sait qu'elles sont amères",
+            "Il est fatigué"
+          ],
+          "a": "Il sait qu'elles sont amères"
+        },
+        {
+          "q": "Comment Alex sait-il que les pommes ne sont pas bonnes ?",
+          "options": [
+            "Il les a goûtées",
+            "Il a observé les passants",
+            "Un ami lui a dit",
+            "Il a peur des pommes"
+          ],
+          "a": "Il a observé les passants"
+        }
+      ]
+    },
+
+    {
+      "id": "vocabulaire",
+      "label": "📚 Vocabulaire – comprendre le texte",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Que signifie « amères » ?",
+          "options": [
+            "Très sucrées",
+            "Au goût désagréable",
+            "Très dures",
+            "Pas mûres"
+          ],
+          "a": "Au goût désagréable"
+        },
+        {
+          "q": "Que veut dire « enchantés » ?",
+          "options": [
+            "En colère",
+            "Très contents",
+            "Fatigués",
+            "Inquiets"
+          ],
+          "a": "Très contents"
+        },
+        {
+          "q": "Que signifie « se précipiter » ?",
+          "options": [
+            "Avancer lentement",
+            "Courir rapidement",
+            "S'arrêter",
+            "Regarder"
+          ],
+          "a": "Courir rapidement"
+        },
+        {
+          "q": "Que veut dire « passants » ?",
+          "options": [
+            "Des enfants",
+            "Des amis",
+            "Des personnes qui passent",
+            "Des vendeurs"
+          ],
+          "a": "Des personnes qui passent"
+        },
+        {
+          "q": "Que signifie « en abondance » ?",
+          "options": [
+            "En petite quantité",
+            "En grande quantité",
+            "En cachette",
+            "Rarement"
+          ],
+          "a": "En grande quantité"
+        }
+      ],
+      "ideesPourEleves": [
+        "Observer ce que font les personnages",
+        "Se demander pourquoi Alex agit différemment",
+        "Chercher les indices dans le texte",
+        "Relier les actions aux conséquences"
+      ]
+    },
+
+    {
+      "id": "grammaire",
+      "label": "🧠 Grammaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Dans la phrase « Les garçons ont grimpé dans l'arbre », le verbe est :",
+          "options": [
+            "Garçons",
+            "Arbre",
+            "Ont grimpé",
+            "Dans"
+          ],
+          "a": "Ont grimpé"
+        },
+        {
+          "q": "Le mot « pommier » est :",
+          "options": [
+            "Un verbe",
+            "Un adjectif",
+            "Un nom",
+            "Un pronom"
+          ],
+          "a": "Un nom"
+        },
+        {
+          "q": "À quel temps est conjugué le verbe « marchaient » ?",
+          "options": [
+            "Présent",
+            "Imparfait",
+            "Passé composé",
+            "Futur"
+          ],
+          "a": "Imparfait"
+        }
+      ]
+    },
+
+    {
+      "id": "expression",
+      "label": "✍️ Expression écrite",
+      "type": "open",
+      "questions": [
+        "Pourquoi dit-on qu'Alex est sage ?",
+        "Que ferais-tu à la place des copains d'Alex ?",
+        "Explique la leçon que nous apprend cette histoire."
+      ]
+    }
+  ],
+
+  "autoEvaluation": {
+    "title": "⭐ Auto-évaluation",
+    "questions": [
+      "J'ai compris l'histoire.",
+      "Je sais expliquer le raisonnement d'Alex.",
+      "J'ai appris de nouveaux mots.",
+      "Je peux raconter l'histoire avec mes propres mots."
+    ]
+  }
+}

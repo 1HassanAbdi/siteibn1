@@ -1,0 +1,72 @@
+{
+  "title": "Planning vocabulaire 2025-2026",
+  "niveau": "3e Année",
+  "weeks": [
+    {
+      "id": 1,
+      "week": "Semaine 1",
+      "evaluation": null,
+      "echelon": "Son è / ê",
+      "totalWords": 16,
+      "words": [
+        "barrière","mère","bêtes","pêche","chèvre","père","crème","règle",
+        "fermière","rivière","fête","sorcière","flèche","tête","forêt","trèfle"
+      ]
+    },
+    {
+      "id": 2,
+      "week": "Semaine 2",
+      "evaluation": null,
+      "echelon": "Son i / y",
+      "totalWords": 14,
+      "words": [
+        "bicyclette","pyjama","ciseaux","souris","fourmi","tapis","hibou",
+        "taxi","île","toupie","lit","tulipe","livre","valise"
+      ]
+    },
+    {
+      "id": 3,
+      "week": "Semaine 3",
+      "evaluation": null,
+      "echelon": "Son ou / u",
+      "totalWords": 10,
+      "words": [
+        "chou","route","poule","loup","boussole",
+        "poulain","souffle","fouet","nuage","fourche"
+      ]
+    },
+    {
+      "id": 4,
+      "week": "Semaine 4",
+      "evaluation": null,
+      "echelon": "Son an / on",
+      "totalWords": 10,
+      "words": [
+        "champ","montagne","avion","manteau","garçon",
+        "trombone","champignon","maison","canard","ballon"
+      ]
+    },
+    {
+      "id": 5,
+      "week": "Semaine 5",
+      "evaluation": null,
+      "echelon": "Son é / er",
+      "totalWords": 10,
+      "words": [
+        "marché","clé","boulanger","cahier","gâteau",
+        "professeur","forêt","pensée","fleur","boucher"
+      ]
+    },
+    {
+      "id": 6,
+      "week": "Semaine 6",
+      "evaluation": null,
+      "echelon": "Son oi / oy",
+      "totalWords": 10,
+      "words": [
+        "roi","boîte","loisir","joyau","noir",
+        "poids","foire","coin","joyeuse","bois"
+      ]
+    }
+  ]
+}

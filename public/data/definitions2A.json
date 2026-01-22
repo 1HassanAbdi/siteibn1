@@ -1,0 +1,105 @@
+{
+  "title": "Dictionnaire de la 3e Année",
+  "weeks_definitions": [
+    {
+      "week_id": 1,
+      "words_data": [
+        {"word": "barrière", "definition": "Objet qui empêche de passer ou qui ferme un passage."},
+        {"word": "mère", "definition": "La maman d’un enfant."},
+        {"word": "bêtes", "definition": "Animaux ou personnes peu intelligentes (selon le contexte)."},
+        {"word": "pêche", "definition": "Fruit sucré ou action d’attraper des poissons."},
+        {"word": "chèvre", "definition": "Animal de la ferme qui mange de l’herbe."},
+        {"word": "père", "definition": "Le papa d’un enfant."},
+        {"word": "crème", "definition": "Produit doux fait avec du lait."},
+        {"word": "règle", "definition": "Objet pour tracer des lignes droites ou loi à respecter."},
+        {"word": "fermière", "definition": "Femme qui travaille dans une ferme."},
+        {"word": "rivière", "definition": "Cours d’eau naturel plus petit qu’un fleuve."},
+        {"word": "fête", "definition": "Moment joyeux pour célébrer quelque chose."},
+        {"word": "sorcière", "definition": "Personnage imaginaire qui fait de la magie."},
+        {"word": "flèche", "definition": "Objet pointu que l’on lance ou symbole directionnel."},
+        {"word": "tête", "definition": "Partie du corps où se trouvent les yeux et la bouche."},
+        {"word": "forêt", "definition": "Grand espace rempli d’arbres."},
+        {"word": "trèfle", "definition": "Petite plante verte à trois feuilles."}
+      ]
+    },
+    {
+      "week_id": 2,
+      "words_data": [
+        {"word": "bicyclette", "definition": "Vélo avec deux roues."},
+        {"word": "pyjama", "definition": "Vêtement pour dormir."},
+        {"word": "ciseaux", "definition": "Outil pour couper le papier ou le tissu."},
+        {"word": "souris", "definition": "Petit animal ou objet d’ordinateur."},
+        {"word": "fourmi", "definition": "Petit insecte qui vit en groupe."},
+        {"word": "tapis", "definition": "Tissu posé sur le sol."},
+        {"word": "hibou", "definition": "Oiseau qui vit surtout la nuit."},
+        {"word": "taxi", "definition": "Voiture qui transporte des personnes contre paiement."},
+        {"word": "île", "definition": "Terre entourée d’eau."},
+        {"word": "toupie", "definition": "Jouet qui tourne sur lui-même."},
+        {"word": "lit", "definition": "Meuble pour dormir."},
+        {"word": "tulipe", "definition": "Fleur de printemps colorée."},
+        {"word": "livre", "definition": "Objet avec des pages pour lire."},
+        {"word": "valise", "definition": "Sac rigide pour voyager."}
+      ]
+    },
+    {
+      "week_id": 3,
+      "words_data": [
+        {"word": "chou", "definition": "Légume rond avec des feuilles."},
+        {"word": "route", "definition": "Chemin pour les voitures."},
+        {"word": "poule", "definition": "Animal de la ferme qui pond des œufs."},
+        {"word": "loup", "definition": "Animal sauvage qui vit en forêt."},
+        {"word": "boussole", "definition": "Objet pour trouver le nord."},
+        {"word": "poulain", "definition": "Bébé du cheval."},
+        {"word": "souffle", "definition": "Air que l’on respire ou que l’on envoie."},
+        {"word": "fouet", "definition": "Objet long utilisé pour diriger des animaux."},
+        {"word": "nuage", "definition": "Masse blanche ou grise dans le ciel."},
+        {"word": "fourche", "definition": "Outil de ferme avec plusieurs dents."}
+      ]
+    },
+    {
+      "week_id": 4,
+      "words_data": [
+        {"word": "champ", "definition": "Terrain cultivé à la campagne."},
+        {"word": "montagne", "definition": "Très grande élévation de terre."},
+        {"word": "avion", "definition": "Machine qui vole dans le ciel."},
+        {"word": "manteau", "definition": "Vêtement chaud pour l’hiver."},
+        {"word": "garçon", "definition": "Enfant de sexe masculin."},
+        {"word": "trombone", "definition": "Objet pour attacher des feuilles ou instrument de musique."},
+        {"word": "champignon", "definition": "Plante qui pousse dans la terre ou les forêts."},
+        {"word": "maison", "definition": "Bâtiment où l’on habite."},
+        {"word": "canard", "definition": "Oiseau qui nage et marche."},
+        {"word": "ballon", "definition": "Objet rond pour jouer."}
+      ]
+    },
+    {
+      "week_id": 5,
+      "words_data": [
+        {"word": "marché", "definition": "Lieu où l’on achète des produits."},
+        {"word": "clé", "definition": "Objet pour ouvrir une porte."},
+        {"word": "boulanger", "definition": "Personne qui fait et vend du pain."},
+        {"word": "cahier", "definition": "Livre de feuilles pour écrire."},
+        {"word": "gâteau", "definition": "Dessert sucré."},
+        {"word": "professeur", "definition": "Personne qui enseigne."},
+        {"word": "forêt", "definition": "Endroit avec beaucoup d’arbres."},
+        {"word": "pensée", "definition": "Idée que l’on a dans la tête."},
+        {"word": "fleur", "definition": "Partie colorée d’une plante."},
+        {"word": "boucher", "definition": "Personne qui vend de la viande."}
+      ]
+    },
+    {
+      "week_id": 6,
+      "words_data": [
+        {"word": "roi", "definition": "Homme qui dirige un royaume."},
+        {"word": "boîte", "definition": "Objet pour ranger des choses."},
+        {"word": "loisir", "definition": "Activité faite pour le plaisir."},
+        {"word": "joyau", "definition": "Objet précieux comme un bijou."},
+        {"word": "noir", "definition": "Couleur très sombre."},
+        {"word": "poids", "definition": "Mesure de ce que pèse un objet."},
+        {"word": "foire", "definition": "Grande fête avec des jeux et des stands."},
+        {"word": "coin", "definition": "Angle ou petit endroit."},
+        {"word": "joyeuse", "definition": "Qui est pleine de bonheur."},
+        {"word": "bois", "definition": "Matière des arbres ou petite forêt."}
+      ]
+    }
+  ]
+}

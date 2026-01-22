@@ -1,0 +1,29 @@
+{
+  "title": "Atelier des Syllabes - 3e Année",
+  "weeks_syllables": [
+    {
+      "week_id": 1,
+      "words": [
+        { "word": "maison", "parts": ["mai", "son"] },
+        { "word": "papa", "parts": ["pa", "pa"] },
+       
+        { "word": "vache", "parts": ["va", "che"] }
+      ]
+    },
+    {
+      "week_id": 2,
+      "words": [
+        { "word": "achat", "parts": ["a", "chat"] },
+        { "word": "barbe", "parts": ["bar", "be"] },
+        { "word": "classe", "parts": ["clas", "se"] },
+        { "word": "revenir", "parts": ["re", "ve", "nir"] },
+        { "word": "vendredi", "parts": ["ven", "dre", "di"] },
+        { "word": "branche", "parts": ["bran", "che"] },
+        { "word": "facteur", "parts": ["fac", "teur"] },
+        { "word": "fermier", "parts": ["fer", "mier"] },
+        { "word": "moulin", "parts": ["mou", "lin"] },
+        { "word": "soleil", "parts": ["so", "leil"] }
+      ]
+    }
+  ]
+   }

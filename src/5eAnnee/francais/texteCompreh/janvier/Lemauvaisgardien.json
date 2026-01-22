@@ -1,0 +1,146 @@
+{
+  "title": "Le mauvais gardien",
+  "text": "Un jour, la mère de Simon, un garçon simple d'esprit, devait aller à la rivière pour faire la lessive. Cependant, cela signifiait qu'elle ne pourrait pas s'occuper de la maison durant son absence. Elle a décidé de confier à Simon le soin de la maison. Il réussissait habituellement à faire ce qu'on lui demandait, même s'il était simple d'esprit et un peu lunatique.\n\n« Simon, lui a dit sa mère, je vais à la rivière pour laver nos vêtements et je ne reviendrai pas avant une heure ou deux. S'il te plait, surveille la porte durant mon absence. Un voleur pourrait l'ouvrir et entrer dans notre maison. »\n\n« Oui, maman », a acquiescé le garçon obéissant. Durant la première heure, ou à peu près, Simon s'est contenté de demeurer à l'intérieur ou à l'extérieur de la maison, mais il surveillait constamment la porte. Après la deuxième heure, cependant, il s'est senti fatigué. Il a décidé de descendre à la rivière pour voir ce qui retenait sa mère aussi longtemps.\n\nComme sa mère lui avait dit d'avoir un œil sur la porte, Simon ne pouvait pas la laisser sans surveillance et aller voir sa mère. Il était pris dans un dilemme. Soudain, il a eu une idée. En quelques minutes, il a enlevé la porte de sa charnière, l'a hissée sur son dos et a marché péniblement vers la rivière.\n\nAussitôt que sa mère l'a aperçu, elle s'est écriée : « Simon, qu'est-ce que tu fais ici? Ne t'ai-je pas demandé de surveiller la porte? »\n\n« Oh, ne t'en fais pas, maman », a répondu Simon tout heureux. Je l'ai apportée.",
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "✓/✗ Vrai/Faux",
+      "type": "boolean",
+      "questions": [
+        { "q": "Simon devait surveiller la porte pendant que sa mère était à la rivière.", "a": true },
+        { "q": "Simon est resté deux heures sans quitter la porte des yeux.", "a": true },
+        { "q": "Simon a laissé la porte ouverte quand il est allé voir sa mère.", "a": false },
+        { "q": "Simon a apporté la porte jusqu'à la rivière.", "a": true },
+        { "q": "La mère de Simon était contente de le voir arriver avec la porte.", "a": false }
+      ]
+    },
+    {
+      "id": "qcm",
+      "label": "📝 QCM",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Pourquoi la mère de Simon devait-elle partir ?",
+          "options": ["Chercher de l'eau", "Laver des vêtements", "Aller au marché", "Voir une amie"],
+          "a": "Laver des vêtements"
+        },
+        {
+          "q": "Que devait faire Simon pendant l'absence de sa mère ?",
+          "options": ["Préparer le repas", "Surveiller la porte", "Aller à la rivière", "Dormir"],
+          "a": "Surveiller la porte"
+        },
+        {
+          "q": "Pourquoi Simon a-t-il voulu aller à la rivière ?",
+          "options": ["Il avait faim", "Il voulait jouer", "Il était fatigué d'attendre", "Il cherchait un voleur"],
+          "a": "Il était fatigué d'attendre"
+        },
+        {
+          "q": "Quelle idée a eu Simon ?",
+          "options": ["Fermer la porte à clé", "Appeler un voisin", "Apporter la porte avec lui", "Cacher la porte"],
+          "a": "Apporter la porte avec lui"
+        },
+        {
+          "q": "Comment réagit la mère en voyant Simon ?",
+          "options": ["Elle rit", "Elle ne dit rien", "Elle est surprise et fâchée", "Elle le félicite"],
+          "a": "Elle est surprise et fâchée"
+        }
+      ]
+    },
+    {
+      "id": "vocabulaire",
+      "label": "📚 Vocabulaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Que signifie « simple d'esprit » ?",
+          "options": ["Très intelligent", "Un peu naïf", "Très méchant", "Très rapide"],
+          "a": "Un peu naïf"
+        },
+        {
+          "q": "Quel mot est un synonyme de « surveiller » ?",
+          "options": ["Ignorer", "Observer", "Casser", "Perdre"],
+          "a": "Observer"
+        },
+        {
+          "q": "Que veut dire « hisser » ?",
+          "options": ["Lâcher", "Soulever", "Cacher", "Jeter"],
+          "a": "Soulever"
+        },
+        {
+          "q": "Que signifie « charnière » ?",
+          "options": ["Un outil de jardin", "Une partie d'une porte qui permet de l'ouvrir", "Un vêtement", "Une corde"],
+          "a": "Une partie d'une porte qui permet de l'ouvrir"
+        },
+        {
+          "q": "Quel mot est proche de « péniblement » ?",
+          "options": ["Facilement", "Avec difficulté", "Rapidement", "Heureusement"],
+          "a": "Avec difficulté"
+        }
+      ]
+    },
+    {
+      "id": "conjugaison",
+      "label": "🕓 Conjugaison – Présent (1er et 2e groupe)",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Conjugue « surveiller » (1er groupe) au présent – il :",
+          "options": ["Il surveille", "Il surveil", "Il surveillera", "Il surveillait"],
+          "a": "Il surveille"
+        },
+        {
+          "q": "Conjugue « finir » (2e groupe) au présent – nous :",
+          "options": ["Nous finissions", "Nous finirons", "Nous finissons", "Nous finis"],
+          "a": "Nous finissons"
+        },
+        {
+          "q": "Conjugue « marcher » (1er groupe) au présent – ils :",
+          "options": ["Ils marché", "Ils marchent", "Ils marchaient", "Ils marcheront"],
+          "a": "Ils marchent"
+        },
+        {
+          "q": "Conjugue « choisir » (2e groupe) au présent – tu :",
+          "options": ["Tu choisis", "Tu choisit", "Tu choisiras", "Tu choisissais"],
+          "a": "Tu choisis"
+        },
+        {
+          "q": "Conjugue « apporter » (1er groupe) au présent – je :",
+          "options": ["J'apporte", "Je apporté", "J'apporterai", "J'apportais"],
+          "a": "J'apporte"
+        }
+      ]
+    },
+    {
+      "id": "grammaire",
+      "label": "📘 Grammaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Quelle est la nature de cette phrase : « Simon apporte la porte. » ?",
+          "options": ["Phrase interrogative", "Phrase déclarative", "Phrase impérative", "Phrase exclamative"],
+          "a": "Phrase déclarative"
+        },
+        {
+          "q": "Quelle est la forme de la phrase : « Simon ne laisse pas la porte seule. » ?",
+          "options": ["Positive", "Négative"],
+          "a": "Négative"
+        },
+        {
+          "q": "Trouve la phrase interrogative :",
+          "options": ["Simon surveille la porte.", "Pourquoi apportes-tu la porte ?", "Simon était fatigué.", "Il part à la rivière."],
+          "a": "Pourquoi apportes-tu la porte ?"
+        },
+        {
+          "q": "Transforme en forme positive : « Simon ne comprend pas. »",
+          "options": ["Simon comprend.", "Simon ne comprend.", "Simon ne comprendra pas.", "Simon comprenait."],
+          "a": "Simon comprend."
+        },
+        {
+          "q": "Quel type de phrase exprime une émotion forte ?",
+          "options": ["Déclarative", "Interrogative", "Exclamative", "Impérative"],
+          "a": "Exclamative"
+        }
+      ]
+    }
+  ]
+}
