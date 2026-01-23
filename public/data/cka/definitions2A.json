@@ -1,0 +1,205 @@
+{
+  "title": "2nd Grade Vocabulary Dictionary",
+  "weeks_definitions": [
+    {
+      "week_id": 1,
+      "words_data": [
+        {"word": "cat", "definition": "A small furry animal that says meow."},
+        {"word": "dog", "definition": "A loyal pet that barks and wags its tail."},
+        {"word": "sun", "definition": "The big, bright star that gives us light and heat during the day."},
+        {"word": "moon", "definition": "The round object that shines in the sky at night."},
+        {"word": "book", "definition": "Something you read that has pages and a cover."},
+        {"word": "pen", "definition": "A tool used for writing with ink."},
+        {"word": "hat", "definition": "A piece of clothing you wear on your head."},
+        {"word": "red", "definition": "The color of an apple or a fire truck."},
+        {"word": "blue", "definition": "The color of the sky on a clear day."},
+        {"word": "big", "definition": "Large in size; the opposite of small."},
+        {"word": "small", "definition": "Little in size; the opposite of big."},
+        {"word": "run", "definition": "To move very fast with your legs."},
+        {"word": "jump", "definition": "To push yourself off the ground into the air."},
+        {"word": "happy", "definition": "Feeling good, joyful, or smiling."},
+        {"word": "sad", "definition": "Feeling unhappy or like you want to cry."}
+      ]
+    },
+    {
+      "week_id": 2,
+      "words_data": [
+        {"word": "house", "definition": "A building where people live."},
+        {"word": "car", "definition": "A vehicle with four wheels used for driving on roads."},
+        {"word": "tree", "definition": "A tall plant with a wooden trunk and leaves."},
+        {"word": "flower", "definition": "The colorful and pretty part of a plant."},
+        {"word": "bird", "definition": "An animal with feathers and wings that can fly."},
+        {"word": "fish", "definition": "An animal that lives and swims in the water."},
+        {"word": "green", "definition": "The color of grass and most leaves."},
+        {"word": "yellow", "definition": "The color of a lemon or the sun."},
+        {"word": "fast", "definition": "Moving at high speed."},
+        {"word": "slow", "definition": "Moving at a low speed, like a turtle."},
+        {"word": "walk", "definition": "To move on foot at a normal pace."},
+        {"word": "play", "definition": "To do something for fun and enjoyment."},
+        {"word": "laugh", "definition": "The sound you make when something is funny."},
+        {"word": "cry", "definition": "To shed tears because you are sad or hurt."},
+        {"word": "friend", "definition": "Someone you like and enjoy spending time with."}
+      ]
+    },
+    {
+      "week_id": 3,
+      "words_data": [
+        {"word": "school", "definition": "A place where children go to learn."},
+        {"word": "teacher", "definition": "A person who helps students learn new things."},
+        {"word": "student", "definition": "A person who is studying at school."},
+        {"word": "desk", "definition": "A table where you sit to do your schoolwork."},
+        {"word": "chair", "definition": "A piece of furniture used for sitting."},
+        {"word": "paper", "definition": "Thin material used for writing or drawing."},
+        {"word": "pencil", "definition": "A wooden tool used for writing or drawing."},
+        {"word": "read", "definition": "To look at words and understand what they mean."},
+        {"word": "write", "definition": "To make letters or words on paper with a pen or pencil."},
+        {"word": "listen", "definition": "To pay attention to a sound or someone speaking."},
+        {"word": "talk", "definition": "To say words to someone."},
+        {"word": "quiet", "definition": "Making very little or no noise."},
+        {"word": "line", "definition": "A long, thin mark or a row of people."},
+        {"word": "bag", "definition": "Something used to carry things, like a backpack."},
+        {"word": "class", "definition": "A group of students who learn together."}
+      ]
+    },
+    {
+      "week_id": 4,
+      "words_data": [
+        {"word": "mom", "definition": "A female parent."},
+        {"word": "dad", "definition": "A male parent."},
+        {"word": "brother", "definition": "A boy or man who has the same parents as you."},
+        {"word": "sister", "definition": "A girl or woman who has the same parents as you."},
+        {"word": "baby", "definition": "A very young child."},
+        {"word": "family", "definition": "A group of people who are related to each other."},
+        {"word": "home", "definition": "The place where you live."},
+        {"word": "eat", "definition": "To put food in your mouth and swallow it."},
+        {"word": "drink", "definition": "To swallow a liquid like water or juice."},
+        {"word": "sleep", "definition": "To rest with your eyes closed at night."},
+        {"word": "love", "definition": "To care very deeply for someone."},
+        {"word": "help", "definition": "To do something useful for someone."},
+        {"word": "clean", "definition": "Not dirty; to remove dirt from something."},
+        {"word": "cook", "definition": "To prepare food using heat."},
+        {"word": "hug", "definition": "To put your arms around someone to show love."}
+      ]
+    },
+    {
+      "week_id": 5,
+      "words_data": [
+        {"word": "apple", "definition": "A round fruit that is usually red, green, or yellow."},
+        {"word": "banana", "definition": "A long yellow fruit that you peel."},
+        {"word": "bread", "definition": "A common food made from flour and baked."},
+        {"word": "milk", "definition": "A white liquid that comes from cows."},
+        {"word": "water", "definition": "A clear liquid that we need to drink to stay alive."},
+        {"word": "cake", "definition": "A sweet baked dessert often eaten at birthdays."},
+        {"word": "rice", "definition": "Small white or brown grains eaten as food."},
+        {"word": "cheese", "definition": "A food made from milk that can be hard or soft."},
+        {"word": "sweet", "definition": "A sugary taste like candy."},
+        {"word": "good", "definition": "Nice, high quality, or pleasant."},
+        {"word": "hungry", "definition": "Feeling like you need to eat food."},
+        {"word": "full", "definition": "When you have eaten enough and cannot eat more."},
+        {"word": "like", "definition": "To enjoy something or think it is nice."},
+        {"word": "want", "definition": "To wish for something."},
+        {"word": "share", "definition": "To give some of what you have to others."}
+      ]
+    },
+    {
+      "week_id": 6,
+      "words_data": [
+        {"word": "head", "definition": "The top part of your body where your brain and face are."},
+        {"word": "hand", "definition": "The part of your body at the end of your arm."},
+        {"word": "foot", "definition": "The part of your body at the end of your leg."},
+        {"word": "leg", "definition": "The long part of your body used for standing and walking."},
+        {"word": "arm", "definition": "The part of your body between your shoulder and hand."},
+        {"word": "eye", "definition": "The part of your face that you use to see."},
+        {"word": "ear", "definition": "The part of your head that you use to hear."},
+        {"word": "nose", "definition": "The part of your face used for smelling and breathing."},
+        {"word": "mouth", "definition": "The part of your face used for eating and speaking."},
+        {"word": "hair", "definition": "The thin strands that grow on your head."},
+        {"word": "face", "definition": "The front part of your head."},
+        {"word": "body", "definition": "The whole physical part of a person."},
+        {"word": "hurt", "definition": "To feel pain in your body."},
+        {"word": "wash", "definition": "To clean something with water and soap."},
+        {"word": "healthy", "definition": "Being in good physical condition; not sick."}
+      ]
+    },
+    {
+      "week_id": 7,
+      "words_data": [
+        {"word": "rain", "definition": "Water that falls in drops from the clouds."},
+        {"word": "snow", "definition": "Soft white flakes of frozen water falling from the sky."},
+        {"word": "wind", "definition": "Moving air that you can feel outside."},
+        {"word": "cloud", "definition": "A white or gray mass in the sky made of tiny water drops."},
+        {"word": "sky", "definition": "The space above the Earth where the sun and stars are."},
+        {"word": "cold", "definition": "A low temperature; the opposite of hot."},
+        {"word": "hot", "definition": "A high temperature; the opposite of cold."},
+        {"word": "warm", "definition": "A little bit hot; a pleasant temperature."},
+        {"word": "day", "definition": "The time when it is light outside."},
+        {"word": "night", "definition": "The time when it is dark outside and people sleep."},
+        {"word": "today", "definition": "This present day."},
+        {"word": "tomorrow", "definition": "The day after today."},
+        {"word": "weather", "definition": "What it is like outside (sunny, rainy, windy)."},
+        {"word": "coat", "definition": "A warm piece of clothing worn over other clothes."},
+        {"word": "boots", "definition": "Strong shoes that cover your feet and lower legs."}
+      ]
+    },
+    {
+      "week_id": 8,
+      "words_data": [
+        {"word": "ball", "definition": "A round object used in games and sports."},
+        {"word": "game", "definition": "An activity with rules that people play for fun."},
+        {"word": "toy", "definition": "An object for children to play with."},
+        {"word": "bike", "definition": "A vehicle with two wheels that you pedal."},
+        {"word": "park", "definition": "A public grassy area for playing and relaxing."},
+        {"word": "run", "definition": "To move quickly on your feet."},
+        {"word": "throw", "definition": "To send something through the air with your hand."},
+        {"word": "catch", "definition": "To take hold of something that is moving through the air."},
+        {"word": "kick", "definition": "To hit something with your foot."},
+        {"word": "fun", "definition": "Something that is enjoyable and makes you happy."},
+        {"word": "win", "definition": "To be the best or first in a game or contest."},
+        {"word": "lose", "definition": "To not win a game or to misplace something."},
+        {"word": "team", "definition": "A group of people playing or working together."},
+        {"word": "playground", "definition": "An outdoor area for children to play on equipment."},
+        {"word": "smile", "definition": "To turn up the corners of your mouth because you are happy."}
+      ]
+    },
+    {
+      "week_id": 9,
+      "words_data": [
+        {"word": "shirt", "definition": "A piece of clothing worn on the upper body."},
+        {"word": "pants", "definition": "Clothing that covers the legs."},
+        {"word": "dress", "definition": "A piece of clothing usually worn by girls that covers the body and legs."},
+        {"word": "shoes", "definition": "Something you wear on your feet to protect them."},
+        {"word": "socks", "definition": "Soft clothing worn on the feet inside shoes."},
+        {"word": "jacket", "definition": "A short, light coat."},
+        {"word": "hat", "definition": "Something you wear on your head."},
+        {"word": "wear", "definition": "To have clothing on your body."},
+        {"word": "new", "definition": "Something that has just been made or bought."},
+        {"word": "old", "definition": "Something that has existed for a long time."},
+        {"word": "clean", "definition": "Free from dirt or stains."},
+        {"word": "dirty", "definition": "Covered with dirt or stains."},
+        {"word": "buy", "definition": "To get something by paying money for it."},
+        {"word": "like", "definition": "To think something is nice or pretty."},
+        {"word": "color", "definition": "Red, blue, green, and yellow are examples of this."}
+      ]
+    },
+    {
+      "week_id": 10,
+      "words_data": [
+        {"word": "yes", "definition": "A word used to agree or say 'it is so'."},
+        {"word": "no", "definition": "A word used to disagree or refuse."},
+        {"word": "please", "definition": "A polite word used when asking for something."},
+        {"word": "thank you", "definition": "Polite words used to show you are grateful."},
+        {"word": "sorry", "definition": "A word used to apologize for a mistake."},
+        {"word": "hello", "definition": "A common greeting when you see someone."},
+        {"word": "goodbye", "definition": "What you say when you are leaving."},
+        {"word": "help", "definition": "To give support or assistance."},
+        {"word": "stop", "definition": "To finish moving or doing something."},
+        {"word": "go", "definition": "To move from one place to another."},
+        {"word": "come", "definition": "To move toward the person speaking."},
+        {"word": "look", "definition": "To use your eyes to see something."},
+        {"word": "see", "definition": "To notice or look at something with your eyes."},
+        {"word": "listen", "definition": "To hear and pay attention to sounds."},
+        {"word": "wait", "definition": "To stay in one place until something happens."}
+      ]
+    }
+  ]
+}

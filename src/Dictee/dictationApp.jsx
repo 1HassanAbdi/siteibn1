@@ -7,7 +7,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 // Importation des mini-jeux
-import DefinitionGame from '../DefinitionGame';
+import DefinitionGame from './DefinitionGame';
 import WordMystery from '../WordMystery';
 import WordTypeGame from './WordTypeGame';
 import SyllableGame from './SyllableGame';

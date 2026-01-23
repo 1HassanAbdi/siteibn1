@@ -7,6 +7,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 // Mini-games imports restant
+import DefinitionGame from './DefinitionGame';
 import WordTypeGame from './WordTypeGame';
 import WorkHistory from './WorkHistory';
 
@@ -20,7 +21,7 @@ const DictationAppcka = () => {
   // --- DATE LOGIC (2026 Preparation Week) ---
   const getCurrentWeekId = () => {
     const today = new Date();
-    const startDate = new Date(2026, 0, 9); 
+    const startDate = new Date(2026, 0, 10); 
     const diff = today - startDate;
     const week = Math.ceil((Math.floor(diff / (1000 * 60 * 60 * 24)) + 1) / 7);
     return week > 0 ? week : 1;
@@ -392,6 +393,19 @@ const DictationAppcka = () => {
                           />
                         )}
                         {/* Note: SyllableGame, DefinitionGame and WordMystery components should be imported if they are used here */}
+                         {/* DEFINITION (Correction ici : on retire le -1) */}
+  {mode === 'definition' && (
+  <DefinitionGame 
+    selectedLevel={selectedLevel} 
+    activeWeek={activeWeek} 
+    onCorrect={() => setCorrectCount(c => c + 1)} 
+    onWrong={() => setWrongCount(w => w + 1)} 
+    // On récupère score ET total depuis le composant enfant
+     onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
+    onFinish={(finalScore, finalTotal) => saveExerciseResult(finalScore, finalTotal)} 
+  />
+)}
+
                       </div>
                     )}
                   </AnimatePresence>
