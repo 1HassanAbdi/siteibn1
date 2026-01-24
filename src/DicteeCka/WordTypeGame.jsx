@@ -18,20 +18,21 @@ const WordTypeGame = ({ selectedLevel, activeWeek, onCorrect, onWrong, onFinish,
   const [isCorrectLocal, setIsCorrectLocal] = useState(null);
 
   // Catégories
-  const categories = ["Nom", "Verbe", "Adjectif", "Autres"];
+  // Catégories traduites
+const categories = ["Noun", "Verb", "Adjective", "Others"];
 
   useEffect(() => {
     const loadLevelData = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`/data/wordTypes${selectedLevel}A.json`);
+        const response = await fetch(`/data/cka/wordTypes${selectedLevel}A.json`);
         if (!response.ok) throw new Error("Fichier non trouvé");
         const data = await response.json();
         const dataKey = data.weeks_types || data.weeks_definitions;
         if (!dataKey) throw new Error("Structure JSON incorrecte");
         setWeeksData(dataKey);
       } catch (err) {
-        setError(`Erreur: Vérifiez le fichier /data/wordTypes${selectedLevel}A.json`);
+        setError(`Erreur: Vérifiez le fichier /data/cka/wordTypes${selectedLevel}A.json`);
       } finally {
         setLoading(false);
       }
@@ -95,9 +96,9 @@ const WordTypeGame = ({ selectedLevel, activeWeek, onCorrect, onWrong, onFinish,
     }, 800);
   };
 
-  if (loading) return <div className="p-20 text-center animate-pulse text-blue-600 font-black uppercase tracking-widest">Analyse de la grammaire...</div>;
-  if (error) return <div className="p-20 text-center text-red-500 font-bold bg-white rounded-3xl shadow-lg">{error}</div>;
-
+  
+if (loading) return <div className="p-20 text-center animate-pulse text-blue-600 font-black uppercase tracking-widest">Analyzing grammar...</div>;
+if (error) return <div className="p-20 text-center text-red-500 font-bold bg-white rounded-3xl shadow-lg">{error}</div>;
   return (
     <div className="flex flex-col h-full font-['Poppins']">
       <div className="p-6 flex-1">

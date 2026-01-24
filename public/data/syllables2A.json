@@ -1,0 +1,105 @@
+{
+  "title": "Atelier des Syllabes - 2e Année",
+  "weeks_syllables": [
+    {
+      "week_id": 1,
+      "words": [
+        { "word": "barrière", "parts": ["bar", "riè", "re"] },
+        { "word": "mère", "parts": ["mè", "re"] },
+        { "word": "bêtes", "parts": ["bê", "tes"] },
+        { "word": "pêche", "parts": ["pê", "che"] },
+        { "word": "chèvre", "parts": ["chè", "vre"] },
+        { "word": "père", "parts": ["pè", "re"] },
+        { "word": "crème", "parts": ["crè", "me"] },
+        { "word": "règle", "parts": ["rè", "gle"] },
+        { "word": "fermière", "parts": ["fer", "miè", "re"] },
+        { "word": "rivière", "parts": ["ri", "viè", "re"] },
+        { "word": "fête", "parts": ["fê", "te"] },
+        { "word": "sorcière", "parts": ["sor", "ciè", "re"] },
+        { "word": "flèche", "parts": ["flè", "che"] },
+        { "word": "tête", "parts": ["tê", "te"] },
+        { "word": "forêt", "parts": ["fo", "rêt"] },
+        { "word": "trèfle", "parts": ["trè", "fle"] }
+      ]
+    },
+    {
+      "week_id": 2,
+      "words": [
+        { "word": "bicyclette", "parts": ["bi", "cy", "clet", "te"] },
+        { "word": "pyjama", "parts": ["py", "ja", "ma"] },
+        { "word": "ciseaux", "parts": ["ci", "seaux"] },
+        { "word": "souris", "parts": ["sou", "ris"] },
+        { "word": "fourmi", "parts": ["four", "mi"] },
+        { "word": "tapis", "parts": ["ta", "pis"] },
+        { "word": "hibou", "parts": ["hi", "bou"] },
+        { "word": "taxi", "parts": ["ta", "xi"] },
+        { "word": "île", "parts": ["î", "le"] },
+        { "word": "toupie", "parts": ["tou", "pie"] },
+        { "word": "lit", "parts": ["lit"] },
+        { "word": "tulipe", "parts": ["tu", "li", "pe"] },
+        { "word": "livre", "parts": ["li", "vre"] },
+        { "word": "valise", "parts": ["va", "li", "se"] }
+      ]
+    },
+    {
+      "week_id": 3,
+      "words": [
+        { "word": "chou", "parts": ["chou"] },
+        { "word": "route", "parts": ["rou", "te"] },
+        { "word": "poule", "parts": ["pou", "le"] },
+        { "word": "loup", "parts": ["loup"] },
+        { "word": "boussole", "parts": ["bous", "so", "le"] },
+        { "word": "poulain", "parts": ["pou", "lain"] },
+        { "word": "souffle", "parts": ["sou", "ffle"] },
+        { "word": "fouet", "parts": ["fou", "et"] },
+        { "word": "nuage", "parts": ["nu", "a", "ge"] },
+        { "word": "fourche", "parts": ["four", "che"] }
+      ]
+    },
+    {
+      "week_id": 4,
+      "words": [
+        { "word": "champ", "parts": ["champ"] },
+        { "word": "montagne", "parts": ["mon", "ta", "gne"] },
+        { "word": "avion", "parts": ["a", "vion"] },
+        { "word": "manteau", "parts": ["man", "teau"] },
+        { "word": "garçon", "parts": ["gar", "çon"] },
+        { "word": "trombone", "parts": ["trom", "bo", "ne"] },
+        { "word": "champignon", "parts": ["cham", "pi", "gnon"] },
+        { "word": "maison", "parts": ["mai", "son"] },
+        { "word": "canard", "parts": ["ca", "nard"] },
+        { "word": "ballon", "parts": ["bal", "lon"] }
+      ]
+    },
+    {
+      "week_id": 5,
+      "words": [
+        { "word": "marché", "parts": ["mar", "ché"] },
+        { "word": "clé", "parts": ["clé"] },
+        { "word": "boulanger", "parts": ["bou", "lan", "ger"] },
+        { "word": "cahier", "parts": ["ca", "hier"] },
+        { "word": "gâteau", "parts": ["gâ", "teau"] },
+        { "word": "professeur", "parts": ["pro", "fes", "seur"] },
+        { "word": "forêt", "parts": ["fo", "rêt"] },
+        { "word": "pensée", "parts": ["pen", "sée"] },
+        { "word": "fleur", "parts": ["fleur"] },
+        { "word": "boucher", "parts": ["bou", "cher"] }
+      ]
+    },
+    {
+      "week_id": 6,
+      "words": [
+        { "word": "roi", "parts": ["roi"] },
+        { "word": "boîte", "parts": ["boî", "te"] },
+        { "word": "loisir", "parts": ["loi", "sir"] },
+        { "word": "joyau", "parts": ["joy", "au"] },
+        { "word": "noir", "parts": ["noir"] },
+        { "word": "poids", "parts": ["poids"] },
+        { "word": "foire", "parts": ["foi", "re"] },
+        { "word": "coin", "parts": ["coin"] },
+        { "word": "joyeuse", "parts": ["joy", "eu", "se"] },
+        { "word": "bois", "parts": ["bois"] }
+      ]
+    }
+  ]
+}

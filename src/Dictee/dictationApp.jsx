@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Importation des mini-jeux
 import DefinitionGame from './DefinitionGame';
-import WordMystery from '../WordMystery';
+import WordMystery from './WordMystery';
 import WordTypeGame from './WordTypeGame';
 import SyllableGame from './SyllableGame';
 import WorkHistory from './WorkHistory';
@@ -63,6 +63,18 @@ const DictationApp1 = () => {
     { id: 7, label: '7e Année', color: 'from-purple-500 to-pink-600' },
     { id: 8, label: '8e Année', color: 'from-orange-500 to-red-600' },
   ];
+
+  const accents = ['à', 'â', 'æ', 'ç', 'é', 'è', 'ê', 'ë', 'î', 'ï', 'ô', 'œ', 'ù', 'û', 'ü', '«', '»'];
+  // Fonction pour insérer l'accent à la fin du texte actuel
+const insertAccent = (accent) => {
+  setUserInput(prev => prev + accent);
+  
+  // Optionnel : redonner le focus à l'input après le clic
+  const inputElement = document.querySelector('input[type="text"]');
+  if (inputElement) {
+    inputElement.focus();
+  }
+};
 
   // --- INITIALISATION ---
   useEffect(() => {
@@ -304,9 +316,20 @@ const DictationApp1 = () => {
             /* ZONE DE JEU ACTIVE */
             <motion.div key="game" className="space-y-6">
               <div className="flex justify-between items-center bg-white/80 backdrop-blur-md p-2 rounded-full shadow-lg border border-white">
-                <button onClick={() => setActiveWeek(null)} className="p-3 text-[#0d6e52] hover:bg-slate-100 rounded-full transition-all">
-                  <ArrowLeft size={24} />
-                </button>
+                <button
+  onClick={() => setActiveWeek(null)}
+  className="p-3 text-[#0d6e52] hover:bg-slate-100 rounded-full transition-all flex items-center gap-3"
+>
+  <div className="w-12 h-12 bg-white border-[4px] border-[#0d6e52] rounded-full flex items-center justify-center shadow-sm">
+    <ArrowLeft size={28} className="text-[#0d6e52]" strokeWidth={4} />
+  </div>
+  <span className="text-[#0d6e52] font-black text-xl uppercase tracking-tighter">
+    Retour
+  </span>
+</button>
+
+                
+                       
                 <div className="font-black text-[#0d6e52] text-[11px] uppercase tracking-widest bg-emerald-50 px-6 py-2 rounded-full border border-emerald-100 shadow-inner">
                    {mode} — SEMAINE {activeWeek}
                 </div>
@@ -318,6 +341,7 @@ const DictationApp1 = () => {
                 {/* HUD SCORE & TIMER */}
                 {mode !== 'etude' && !isFinished && (
                   <div className="bg-[#0d6e52] p-4 flex justify-between items-center text-white px-10">
+                    
                     <div className="flex gap-8 font-black text-xs uppercase">
                       <div className="flex items-center gap-2 text-green-300">
                         <CheckCircle size={18}/> <span>Note : {correctCount} / {sessionTotal}</span>
@@ -396,11 +420,34 @@ const DictationApp1 = () => {
                           <input type="text" value={userInput} onChange={(e) => setUserInput(e.target.value)} placeholder="Écris le mot..." autoFocus 
                             disabled={!!feedback}
                             className={`w-full bg-white border-4 rounded-[30px] py-6 px-6 text-center text-4xl font-black outline-none transition-all shadow-inner ${feedback === 'correct' ? 'border-green-400 text-green-600' : feedback === 'incorrect' ? 'border-red-400 text-red-600 shake' : 'border-slate-100'}`} />
+                            {/* --- CLAVIER D'ACCENTS DANS UN CADRE DESIGN --- */}
+<div className="mt-10 p-4 bg-[#f8fafc] rounded-[30px] border-2 border-slate-200 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] max-w-xl mx-auto">
+  <div className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-3">
+    Caractères Spéciaux
+  </div>
+  
+  <div className="flex flex-wrap justify-center gap-2">
+    {accents.map(acc => (
+      <motion.button
+        key={acc}
+        whileHover={{ scale: 1.1, y: -2 }}
+        whileTap={{ scale: 0.95 }}
+        type="button"
+        onClick={() => insertAccent(acc)}
+        className="w-12 h-12 bg-white border-2 border-slate-100 rounded-2xl flex items-center justify-center text-xl font-bold text-blue-600 shadow-sm hover:shadow-md hover:border-blue-200 transition-all"
+      >
+        {acc}
+      </motion.button>
+    ))}
+  </div>
+</div>
                           <p className="mt-8 text-slate-400 font-black uppercase text-[11px] tracking-widest bg-slate-100 py-2 rounded-full inline-block px-6 shadow-sm">
                             Mot {currentWordIndex + 1} sur {sessionTotal}
                           </p>
                         </form>
+                        
                       </motion.div>
+                      
 
                     ) : (
                       /* MINI-JEUX */

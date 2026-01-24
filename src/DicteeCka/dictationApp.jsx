@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Mini-games imports restant
 import DefinitionGame from './DefinitionGame';
+import WordMystery from './WordMystery';
 import WordTypeGame from './WordTypeGame';
 import WorkHistory from './WorkHistory';
 
@@ -405,7 +406,20 @@ const DictationAppcka = () => {
     onFinish={(finalScore, finalTotal) => saveExerciseResult(finalScore, finalTotal)} 
   />
 )}
-
+{/* MYSTERE */}
+  {mode === 'mystere' && (
+    <WordMystery 
+      words={getActiveWords()} 
+      activeWeek={activeWeek} 
+      onCorrect={() => setCorrectCount(c => c + 1)} 
+      onWrong={() => setWrongCount(w => w + 1)} 
+      onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
+     
+    // On s'assure de passer score et total à la fin
+    onFinish={(score, total) => saveExerciseResult(score, total)} 
+   
+    />
+  )}
                       </div>
                     )}
                   </AnimatePresence>

@@ -1,0 +1,205 @@
+{
+  "title": "2nd Year English Dictionary",
+  "weeks_definitions": [
+    {
+      "week_id": 1,
+      "words_data": [
+        {"word": "cat", "type": "noun"},
+        {"word": "dog", "type": "noun"},
+        {"word": "sun", "type": "noun"},
+        {"word": "moon", "type": "noun"},
+        {"word": "book", "type": "noun"},
+        {"word": "pen", "type": "noun"},
+        {"word": "hat", "type": "noun"},
+        {"word": "red", "type": "adjective"},
+        {"word": "blue", "type": "adjective"},
+        {"word": "big", "type": "adjective"},
+        {"word": "small", "type": "adjective"},
+        {"word": "run", "type": "verb"},
+        {"word": "jump", "type": "verb"},
+        {"word": "happy", "type": "adjective"},
+        {"word": "sad", "type": "adjective"}
+      ]
+    },
+    {
+      "week_id": 2,
+      "words_data": [
+        {"word": "house", "type": "noun"},
+        {"word": "car", "type": "noun"},
+        {"word": "tree", "type": "noun"},
+        {"word": "flower", "type": "noun"},
+        {"word": "bird", "type": "noun"},
+        {"word": "fish", "type": "noun"},
+        {"word": "green", "type": "adjective"},
+        {"word": "yellow", "type": "adjective"},
+        {"word": "fast", "type": "adjective"},
+        {"word": "slow", "type": "adjective"},
+        {"word": "walk", "type": "verb"},
+        {"word": "play", "type": "verb"},
+        {"word": "laugh", "type": "verb"},
+        {"word": "cry", "type": "verb"},
+        {"word": "friend", "type": "noun"}
+      ]
+    },
+    {
+      "week_id": 3,
+      "words_data": [
+        {"word": "school", "type": "noun"},
+        {"word": "teacher", "type": "noun"},
+        {"word": "student", "type": "noun"},
+        {"word": "desk", "type": "noun"},
+        {"word": "chair", "type": "noun"},
+        {"word": "paper", "type": "noun"},
+        {"word": "pencil", "type": "noun"},
+        {"word": "read", "type": "verb"},
+        {"word": "write", "type": "verb"},
+        {"word": "listen", "type": "verb"},
+        {"word": "talk", "type": "verb"},
+        {"word": "quiet", "type": "adjective"},
+        {"word": "line", "type": "noun"},
+        {"word": "bag", "type": "noun"},
+        {"word": "class", "type": "noun"}
+      ]
+    },
+    {
+      "week_id": 4,
+      "words_data": [
+        {"word": "mom", "type": "noun"},
+        {"word": "dad", "type": "noun"},
+        {"word": "brother", "type": "noun"},
+        {"word": "sister", "type": "noun"},
+        {"word": "baby", "type": "noun"},
+        {"word": "family", "type": "noun"},
+        {"word": "home", "type": "noun"},
+        {"word": "eat", "type": "verb"},
+        {"word": "drink", "type": "verb"},
+        {"word": "sleep", "type": "verb"},
+        {"word": "love", "type": "verb"},
+        {"word": "help", "type": "verb"},
+        {"word": "clean", "type": "verb"},
+        {"word": "cook", "type": "verb"},
+        {"word": "hug", "type": "verb"}
+      ]
+    },
+    {
+      "week_id": 5,
+      "words_data": [
+        {"word": "apple", "type": "noun"},
+        {"word": "banana", "type": "noun"},
+        {"word": "bread", "type": "noun"},
+        {"word": "milk", "type": "noun"},
+        {"word": "water", "type": "noun"},
+        {"word": "cake", "type": "noun"},
+        {"word": "rice", "type": "noun"},
+        {"word": "cheese", "type": "noun"},
+        {"word": "sweet", "type": "adjective"},
+        {"word": "good", "type": "adjective"},
+        {"word": "hungry", "type": "adjective"},
+        {"word": "full", "type": "adjective"},
+        {"word": "like", "type": "verb"},
+        {"word": "want", "type": "verb"},
+        {"word": "share", "type": "verb"}
+      ]
+    },
+    {
+      "week_id": 6,
+      "words_data": [
+        {"word": "head", "type": "noun"},
+        {"word": "hand", "type": "noun"},
+        {"word": "foot", "type": "noun"},
+        {"word": "leg", "type": "noun"},
+        {"word": "arm", "type": "noun"},
+        {"word": "eye", "type": "noun"},
+        {"word": "ear", "type": "noun"},
+        {"word": "nose", "type": "noun"},
+        {"word": "mouth", "type": "noun"},
+        {"word": "hair", "type": "noun"},
+        {"word": "face", "type": "noun"},
+        {"word": "body", "type": "noun"},
+        {"word": "hurt", "type": "verb"},
+        {"word": "wash", "type": "verb"},
+        {"word": "healthy", "type": "adjective"}
+      ]
+    },
+    {
+      "week_id": 7,
+      "words_data": [
+        {"word": "rain", "type": "noun"},
+        {"word": "snow", "type": "noun"},
+        {"word": "wind", "type": "noun"},
+        {"word": "cloud", "type": "noun"},
+        {"word": "sky", "type": "noun"},
+        {"word": "cold", "type": "adjective"},
+        {"word": "hot", "type": "adjective"},
+        {"word": "warm", "type": "adjective"},
+        {"word": "day", "type": "noun"},
+        {"word": "night", "type": "noun"},
+        {"word": "today", "type": "other"},
+        {"word": "tomorrow", "type": "other"},
+        {"word": "weather", "type": "noun"},
+        {"word": "coat", "type": "noun"},
+        {"word": "boots", "type": "noun"}
+      ]
+    },
+    {
+      "week_id": 8,
+      "words_data": [
+        {"word": "ball", "type": "noun"},
+        {"word": "game", "type": "noun"},
+        {"word": "toy", "type": "noun"},
+        {"word": "bike", "type": "noun"},
+        {"word": "park", "type": "noun"},
+        {"word": "run", "type": "verb"},
+        {"word": "throw", "type": "verb"},
+        {"word": "catch", "type": "verb"},
+        {"word": "kick", "type": "verb"},
+        {"word": "fun", "type": "noun"},
+        {"word": "win", "type": "verb"},
+        {"word": "lose", "type": "verb"},
+        {"word": "team", "type": "noun"},
+        {"word": "playground", "type": "noun"},
+        {"word": "smile", "type": "noun"}
+      ]
+    },
+    {
+      "week_id": 9,
+      "words_data": [
+        {"word": "shirt", "type": "noun"},
+        {"word": "pants", "type": "noun"},
+        {"word": "dress", "type": "noun"},
+        {"word": "shoes", "type": "noun"},
+        {"word": "socks", "type": "noun"},
+        {"word": "jacket", "type": "noun"},
+        {"word": "hat", "type": "noun"},
+        {"word": "wear", "type": "verb"},
+        {"word": "new", "type": "adjective"},
+        {"word": "old", "type": "adjective"},
+        {"word": "clean", "type": "adjective"},
+        {"word": "dirty", "type": "adjective"},
+        {"word": "buy", "type": "verb"},
+        {"word": "like", "type": "verb"},
+        {"word": "color", "type": "noun"}
+      ]
+    },
+    {
+      "week_id": 10,
+      "words_data": [
+        {"word": "yes", "type": "other"},
+        {"word": "no", "type": "other"},
+        {"word": "please", "type": "other"},
+        {"word": "thank you", "type": "other"},
+        {"word": "sorry", "type": "adjective"},
+        {"word": "hello", "type": "other"},
+        {"word": "goodbye", "type": "other"},
+        {"word": "help", "type": "verb"},
+        {"word": "stop", "type": "verb"},
+        {"word": "go", "type": "verb"},
+        {"word": "come", "type": "verb"},
+        {"word": "look", "type": "verb"},
+        {"word": "see", "type": "verb"},
+        {"word": "listen", "type": "verb"},
+        {"word": "wait", "type": "verb"}
+      ]
+    }
+  ]
+}
