@@ -1,0 +1,18 @@
+{
+  "id": "ex2",
+  "title": "Voyage dans l'espace",
+  "sections": [
+    {
+      "id": "partie-a-intro",
+      "label": "Partie A: Introduction",
+      "type": "quiz",
+      "questions": [
+        {
+          "question": "Quelle est la couleur de Mars ?",
+          "options": ["Bleue", "Rouge", "Verte"],
+          "correctAnswer": 1
+        }
+      ]
+    }
+  ]
+}

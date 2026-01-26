@@ -1,0 +1,296 @@
+{
+  "test_info": {
+    "titre": "Test en lecture, écriture et mathématiques, cycle primaire",
+    "niveau": "3e année",
+    "session": "Printemps 2011",
+    "matiere": "Français",
+    "cahier": "2",
+    "organisme": "OQRE (Office de la qualité et de la responsabilité en éducation)"
+  },
+  "parties": [
+    {
+      "id": "Partie C",
+      "type": "Lecture et Écriture",
+      "lecture": {
+        "titre": "Le dernier kilomètre",
+        "texte_integral": [
+          {
+            "paragraphe": 1,
+            "contenu": "L’affiche le montre clairement : Tania vient de parcourir les 7,8 kilomètres d’une des plus grandes patinoires du monde. Depuis longtemps, elle se promettait de patiner sur le canal Rideau, aller-retour, sur toute sa longueur. — Tu viens de réussir la moitié du trajet, lui dit son grand frère Luka qui l’accompagne. Bravo!"
+          },
+          {
+            "paragraphe": 2,
+            "contenu": "Ce matin, près du Centre national des Arts, Tania a lacé ses patins dans l’air frais de ce beau samedi de février. Elle a soigneusement rangé ses bottes sous le banc, elle a ajusté son chapeau de laine, elle a mis ses mitaines, puis elle a patiné d’un bon rythme jusqu’au bout du canal."
+          },
+          {
+            "paragraphe": 3,
+            "contenu": "Le canal Rideau, lieu historique impressionnant, traverse la ville d’Ottawa. Depuis 1970-1971, il se transforme en une longue patinoire, en hiver. On peut chausser ses patins à l’intérieur des chalets ou sur des bancs extérieurs. On peut même se réchauffer près d’un feu."
+          },
+          {
+            "paragraphe": 4,
+            "contenu": "Tania a donc parcouru assez facilement le canal sur toute sa longueur. Maintenant, il faut qu’elle revienne! Elle croise des patineurs de tout âge et aux vêtements de toutes les couleurs. Les uns patinent à vive allure et ils dépassent tout le monde. D’autres ont peine à se tenir debout sur leurs patins."
+          },
+          {
+            "paragraphe": 5,
+            "contenu": "Mais le vent souffle de plus en plus fort. Tania sent monter en elle la fatigue et, en même temps, un doute s’installe. Elle se demande si elle va réussir. Elle a peur de ne pas y arriver. Le vent l’empêche d’avancer et elle a mal aux jambes. Luka l’encourage du mieux qu’il le peut : — Tu es capable, Tania, n’abandonne pas. Chaque pas en avant, chaque coup de patin, lui arrache des douleurs dans les jambes et les épaules. Le son des lames irrite ses oreilles."
+          },
+          {
+            "paragraphe": 6,
+            "contenu": "Enfin! Le dernier kilomètre! Elle voit au loin les tours du Château Laurier et l’arche verte du pont Laurier. Pour se changer les idées et oublier la douleur dans ses muscles, elle s’imagine que ce château est à elle. Elle en est la reine et son peuple l’attend."
+          },
+          {
+            "paragraphe": 7,
+            "contenu": "Un coup de patin… puis, un autre… et un autre…! Toujours cette douleur et toujours ce vent du nord qui lui mord le nez et les joues. Elle ne sent plus ses oreilles, tellement elles sont froides, ni ses mains, ni ses pieds, tellement ils sont gelés. Cela n’est pas grave; un bon feu l’attend au château."
+          },
+          {
+            "paragraphe": 8,
+            "contenu": "Deux coups de patin… puis cinq… puis dix…! Elle aperçoit le dernier chalet. Le château est de plus en plus proche. Tania passe sous l’arche verte du pont. Elle s’imagine que c’est le pont d’Avignon. Pour oublier la douleur, elle chantonne la fameuse chanson. Elle en change les mots : — Sous le pont d’Avignon, on patine, on patine! Sous le pont d’Avignon, on patine tous en rond!"
+          },
+          {
+            "paragraphe": 9,
+            "contenu": "Ça y est! C’est gagné! Elle est de retour au banc sous lequel elle a rangé ses bottes plus tôt. Luka lui dit : — Je suis fier de toi. Tu es très courageuse! Elle s’assoit, elle frappe ses patins l’un contre l’autre et secoue ses mitaines. Elle ferme les yeux d’épuisement. Elle entend les cris des autres patineurs. Elle sourit. Elle est heureuse."
+          }
+        ],
+        "questions": [
+          {
+            "numero": 1,
+            "enonce": "Où Tania a-t-elle placé ses bottes ?",
+            "options": ["près du feu", "sous le banc", "sous un pont", "dans le chalet"],
+            "reponse_correcte": "sous le banc",
+            "points": 1
+          },
+          {
+            "numero": 2,
+            "enonce": "Les jambes de Tania la font souffrir parce qu’elle patine…",
+            "options": ["en rond.", "à reculons.", "depuis plusieurs jours.", "depuis plusieurs heures."],
+            "reponse_correcte": "depuis plusieurs heures.",
+            "points": 1
+          },
+          {
+            "numero": 3,
+            "enonce": "Dans quel but a-t-on écrit ce texte ?",
+            "options": ["pour raconter la réussite de Tania", "pour décrire le canal Rideau en hiver", "pour nous encourager à faire du patinage", "pour nous donner des conseils sur le patinage"],
+            "reponse_correcte": "pour raconter la réussite de Tania",
+            "points": 1
+          },
+          {
+            "numero": 4,
+            "enonce": "On utilise des virgules dans la dernière phrase du 2e paragraphe pour indiquer...",
+            "options": ["le lieu.", "le temps.", "un dialogue.", "une énumération."],
+            "reponse_correcte": "une énumération.",
+            "points": 1
+          },
+          {
+            "numero": 5,
+            "enonce": "Que signifie l’expression « à vive allure » au 4e paragraphe ?",
+            "options": ["poliment", "rapidement", "silencieusement", "dangereusement"],
+            "reponse_correcte": "rapidement",
+            "points": 1
+          },
+          {
+            "numero": 6,
+            "enonce": "Que signifie le mot « croise » au 4e paragraphe ?",
+            "options": ["aider", "saluer", "arrêter", "rencontrer"],
+            "reponse_correcte": "rencontrer",
+            "points": 1
+          },
+          {
+            "numero": 7,
+            "enonce": "Au 5e paragraphe, on utilise le tiret pour indiquer que…",
+            "options": ["Luka est très surpris.", "Luka écoute sa sœur.", "Luka parle à sa sœur.", "Luka pose une question."],
+            "reponse_correcte": "Luka parle à sa sœur.",
+            "points": 1
+          },
+          {
+            "numero": 8,
+            "enonce": "Quel mot peut remplacer « mord » dans la phrase : « Toujours cette douleur et toujours ce vent du nord qui lui mord le nez et les joues » ?",
+            "options": ["pince", "gratte", "frotte", "caresse"],
+            "reponse_correcte": "pince",
+            "points": 1
+          },
+          {
+            "numero": 9,
+            "enonce": "Dans quel paragraphe apprend-on que Tania termine son trajet ?",
+            "options": ["dans le 6e paragraphe", "dans le 7e paragraphe", "dans le 8e paragraphe", "dans le 9e paragraphe"],
+            "reponse_correcte": "dans le 9e paragraphe",
+            "points": 1
+          },
+          {
+            "numero": 10,
+            "enonce": "À quel mot « proche » se rapporte-t-il au 8e paragraphe ?",
+            "options": ["chalet", "château", "arche", "pont"],
+            "reponse_correcte": "château",
+            "points": 1
+          },
+          {
+            "numero": 11,
+            "enonce": "Explique pourquoi Luka a raison de dire à Tania qu’elle est très courageuse. Utilise des exemples du texte pour expliquer ta réponse.",
+            "type": "reponse_ouverte",
+            "instruction": "CETTE PARTIE VA ETRE CORRIGEE PAR L'ENSEIGNANT (selon la grille d'évaluation OQRE).",
+            "points": "A déterminer par l'enseignant"
+          },
+          {
+            "numero": 12,
+            "enonce": "Explique pourquoi tu as le goût ou non de parcourir le canal Rideau en patins comme l’a fait Tania. Utilise des idées du texte et tes propres idées pour appuyer ta réponse.",
+            "type": "reponse_ouverte",
+            "instruction": "CETTE PARTIE VA ETRE CORRIGEE PAR L'ENSEIGNANT (selon la grille d'évaluation OQRE).",
+            "points": "A déterminer par l'enseignant"
+          }
+        ]
+      },
+      "ecriture_choix_multiple_1": {
+        "questions": [
+          {
+            "numero": 13,
+            "enonce": "Quelle phrase n’appartient pas à ce paragraphe ? (1) Le matin, la ville se réveille. (2) Les automobiles roulent dans les rues. (3) Il fait de plus en plus noir. (4) Les piétons se rendent au travail.",
+            "options": ["phrase 1", "phrase 2", "phrase 3", "phrase 4"],
+            "reponse_correcte": "phrase 3",
+            "points": 1
+          },
+          {
+            "numero": 14,
+            "enonce": "Choisis la bonne réponse. Josianne doit apprendre à patiner _______ elle veut jouer au hockey.",
+            "options": ["si", "ou", "mais", "alors"],
+            "reponse_correcte": "si",
+            "points": 1
+          },
+          {
+            "numero": 15,
+            "enonce": "Quelle phrase est écrite correctement ?",
+            "options": ["Le coiffeur utilise une petite brosses blanche.", "Le coiffeur utilise une petite brosse blanche.", "Le coiffeur utilise une petite brosse blanches.", "Le coiffeur utilise une petite brosses blanches."],
+            "reponse_correcte": "Le coiffeur utilise une petite brosse blanche.",
+            "points": 1
+          },
+          {
+            "numero": 16,
+            "enonce": "Choisis la meilleure phrase de conclusion pour ce paragraphe. Nous avons reçu en cadeau un robot géant. Il tranche le pain et coupe les légumes. Il essuie aussi le comptoir et nettoie le plancher. De plus, il met la table et place toujours la vaisselle au bon endroit. _________________",
+            "options": ["Ce robot est très utile.", "Ce robot est en métal.", "Ce robot est en forme.", "Ce robot est très sérieux."],
+            "reponse_correcte": "Ce robot est très utile.",
+            "points": 1
+          }
+        ]
+      },
+      "ecriture_production_1": {
+        "numero": 17,
+        "sujet": "Imagine un nouveau moyen de transport. Écris un court texte dans lequel tu décris ce moyen de transport.",
+        "type": "production_ecrite",
+        "instruction": "CETTE PARTIE VA ETRE CORRIGEE PAR L'ENSEIGNANT. Évaluation basée sur l'orthographe, la ponctuation, les accords et la clarté des idées.",
+        "points": "A déterminer par l'enseignant"
+      }
+    },
+    {
+      "id": "Partie D",
+      "type": "Lecture et Écriture",
+      "lecture": {
+        "titre": "Tout un jeu (Le soccer)",
+        "texte_integral": [
+          {
+            "section": "Introduction et règles",
+            "contenu": "On joue au soccer presque partout dans le monde. Au soccer, il y a deux équipes de 11 joueurs. L’objectif du jeu est d’envoyer le ballon dans le but de l’équipe adverse. Les joueurs peuvent se servir de tout leur corps, sauf de leurs mains et de leurs bras. Seuls les gardiens de but peuvent toucher le ballon des mains."
+          },
+          {
+            "section": "Savais-tu que... (Chronologie)",
+            "evenements": [
+              {"annee": 1904, "fait": "La FIFA (Fédération Internationale de Football Association) est fondée."},
+              {"annee": 1930, "fait": "La première Coupe du monde a lieu en Uruguay."},
+              {"annee": 1986, "fait": "Le Canada participe à la Coupe du monde pour la première fois."},
+              {"annee": 1990, "fait": "Le Brésil remporte la Coupe du monde pour la cinquième fois."},
+              {"annee": 2007, "fait": "Le championnat du monde des moins de 20 ans a lieu au Canada."}
+            ]
+          },
+          {
+            "section": "Quelques faits...",
+            "contenu": "En Europe, on appelle ce sport « football ». Au Canada et aux États-Unis, on le nomme « soccer ». Cela le distingue de l’autre sport qui s’appelle « football ». Jouer au soccer développe la rapidité, l’agilité et la coordination. Les filles aiment jouer au soccer autant que les garçons. De plus en plus de tournois sont organisés entre les écoles."
+          },
+          {
+            "section": "Les accessoires",
+            "contenu": "Même si les accessoires illustrés sont recommandés, il suffit simplement d’un ballon et d’un peu d’imagination pour pratiquer ce sport populaire. Les souliers à crampons permettent de mieux soutenir les pieds et empêchent de glisser. Les protège-tibias absorbent les coups de pied ou de ballon. Le ballon doit être bien gonflé pour rebondir plus facilement."
+          }
+        ],
+        "questions": [
+          {
+            "numero": 18,
+            "enonce": "Pourquoi utilise-t-on une ligne du temps au bas de la page 14 ?",
+            "options": ["pour décrire les règles du jeu", "pour illustrer le ballon de soccer", "pour comparer le soccer au football", "pour présenter des dates importantes"],
+            "reponse_correcte": "pour présenter des dates importantes",
+            "points": 1
+          },
+          {
+            "numero": 19,
+            "enonce": "Pourquoi dit-on que le soccer est un sport mondial ?",
+            "options": ["On y joue avec un ballon.", "On y joue tous les quatre ans.", "On y joue dans beaucoup de pays.", "On y joue contre une équipe adverse."],
+            "reponse_correcte": "On y joue dans beaucoup de pays.",
+            "points": 1
+          },
+          {
+            "numero": 20,
+            "enonce": "Que signifie le mot « distingue » dans la phrase : « Cela le distingue de l’autre sport qui s’appelle “football” » ?",
+            "options": ["illustre", "montre", "annonce", "différencie"],
+            "reponse_correcte": "différencie",
+            "points": 1
+          },
+          {
+            "numero": 21,
+            "enonce": "Pourquoi les joueurs de soccer portent-ils des souliers à crampons ?",
+            "options": ["pour ne pas tomber", "pour frapper le ballon", "pour protéger le terrain", "pour ne pas recevoir de coups"],
+            "reponse_correcte": "pour ne pas tomber",
+            "points": 1
+          },
+          {
+            "numero": 22,
+            "enonce": "Explique pourquoi on dit dans ce texte que le soccer est un sport populaire. Utilise des exemples du texte pour expliquer ta réponse.",
+            "type": "reponse_ouverte",
+            "instruction": "CETTE PARTIE VA ETRE CORRIGEE PAR L'ENSEIGNANT.",
+            "points": "A déterminer par l'enseignant"
+          },
+          {
+            "numero": 23,
+            "enonce": "Explique comment les illustrations dans ce texte t’aident à comprendre le jeu de soccer. Utilise des idées du texte et tes propres idées pour appuyer ta réponse.",
+            "type": "reponse_ouverte",
+            "instruction": "CETTE PARTIE VA ETRE CORRIGEE PAR L'ENSEIGNANT.",
+            "points": "A déterminer par l'enseignant"
+          }
+        ]
+      },
+      "ecriture_production_2": {
+        "numero": 24,
+        "sujet": "Des animaux s’échappent du zoo. Écris un récit dans lequel tu racontes ce qui se passe.",
+        "type": "production_ecrite_recit",
+        "instruction": "CETTE PARTIE VA ETRE CORRIGEE PAR L'ENSEIGNANT (Grille OQRE : Idées, Organisation, Vocabulaire, Ponctuation).",
+        "points": "A déterminer par l'enseignant"
+      },
+      "ecriture_choix_multiple_2": {
+        "questions": [
+          {
+            "numero": 25,
+            "enonce": "Quelle phrase combine le mieux les deux énoncés en caractères gras ? Patrick est heureux. Il a gagné la médaille d’or.",
+            "options": ["Patrick est heureux et il a gagné la médaille d’or.", "Patrick est heureux ou il a gagné la médaille d’or.", "Patrick est heureux, car il a gagné la médaille d’or.", "Patrick est heureux, mais il a gagné la médaille d’or."],
+            "reponse_correcte": "Patrick est heureux, car il a gagné la médaille d’or.",
+            "points": 1
+          },
+          {
+            "numero": 26,
+            "enonce": "Quelle phrase n’appartient pas à ce paragraphe ? (1) Un beau matin ensoleillé, Luc et Julie marchent pour se rendre à l’école. (2) À la maison, ils dégustent une collation. (3) Tout à coup, ils aperçoivent Paul au coin de la rue. (4) Ensemble, ils continuent leur route vers l’école.",
+            "options": ["phrase 1", "phrase 2", "phrase 3", "phrase 4"],
+            "reponse_correcte": "phrase 2",
+            "points": 1
+          },
+          {
+            "numero": 27,
+            "enonce": "Choisis la bonne réponse. Monique a vu le papillon ________.",
+            "options": ["bleu", "bleus", "bleue", "bleues"],
+            "reponse_correcte": "bleu",
+            "points": 1
+          },
+          {
+            "numero": 28,
+            "enonce": "Quelle phrase a la bonne ponctuation ?",
+            "options": ["Félicitations, tu es devenu champion en gymnastique,", "Félicitations, tu es devenu champion en gymnastique!", "Félicitations, tu es devenu champion en gymnastique :", "Félicitations, tu es devenu champion en gymnastique?"],
+            "reponse_correcte": "Félicitations, tu es devenu champion en gymnastique!",
+            "points": 1
+          }
+        ]
+      }
+    }
+  ]
+}

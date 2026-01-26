@@ -11,6 +11,7 @@ import PiqueNiqueApp from "./tex";
 import DictationAppcka from "./DicteeCka/dictationApp";
 import MultiplicationChallengeOK from "./maths/concourMathsOK";
 import EvaluationGame from "./Dictee/EvaluationGame";
+import Exercice63 from "./EXR_6_3/exercice";
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/activites/51e Année/Francais" element={<YearlyNavigator5e />} />
           <Route path="/activites/31e Année/Francais" element={<YearlyNavigator />} />
           <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
+          <Route path="/activites/6e Année/Francais" element={<Exercice63></Exercice63>} />
             
            
             
