@@ -1,10 +1,12 @@
 {
   "title": "Planning vocabulaire niveau 4e et 5e Année",
+   "niveau":"4e Année",
   "weeks": [
     {
       "id": 1,
       "week": "Semaine 1",
       "evaluation": "2026-01-08",
+      
       "echelon": "Échelon 15 (Partie 1/4)",
       "totalWords": 50,
       "words": [

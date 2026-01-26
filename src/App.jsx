@@ -10,6 +10,7 @@ import YearlyNavigator from "./3eAnnee/francais/texteCompreh/WeeklyNavigator";
 import PiqueNiqueApp from "./tex";
 import DictationAppcka from "./DicteeCka/dictationApp";
 import MultiplicationChallengeOK from "./maths/concourMathsOK";
+import EvaluationGame from "./Dictee/EvaluationGame";
 
 
 
@@ -33,6 +34,7 @@ function App() {
 
           <Route path="/activites/51e Année/Francais" element={<YearlyNavigator5e />} />
           <Route path="/activites/31e Année/Francais" element={<YearlyNavigator />} />
+          <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
             
            
             

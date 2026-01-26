@@ -9,8 +9,7 @@
       "echelon": "Son è / ê",
       "totalWords": 16,
       "words": [
-        "barrière","mère","bêtes","pêche","chèvre","père","crème","règle",
-        "fermière","rivière","fête","sorcière","flèche","tête","forêt","trèfle"
+        "barrière","mère","trèfle"
       ]
     },
     {
@@ -20,8 +19,8 @@
       "echelon": "Son i / y",
       "totalWords": 14,
       "words": [
-        "bicyclette","pyjama","ciseaux","souris","fourmi","tapis","hibou",
-        "taxi","île","toupie","lit","tulipe","livre","valise"
+        "ciseaux","souris","fourmi","tapis","hibou",
+        "taxi","île","valise"
       ]
     },
     {
@@ -31,8 +30,7 @@
       "echelon": "Son ou / u",
       "totalWords": 10,
       "words": [
-        "chou","route","poule","loup","boussole",
-        "poulain","souffle","fouet","nuage","fourche"
+        "chou","route"
       ]
     },
     {

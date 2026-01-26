@@ -12,6 +12,7 @@ import WordMystery from './WordMystery';
 import WordTypeGame from './WordTypeGame';
 import SyllableGame from './SyllableGame';
 import WorkHistory from './WorkHistory';
+import ConcoursEvaluator from './ConcoursEvaluator';
 
 const formatTime = (s) => {
   const mins = Math.floor(s / 60);
@@ -38,6 +39,10 @@ const DictationApp1 = () => {
   const [mode, setMode] = useState('etude'); 
   const [isLoading, setIsLoading] = useState(true);
   const [showHistory, setShowHistory] = useState(false);
+
+
+  // -- etets pour concours 3 semaine
+  const [view, setView] = useState('training');
 
   // --- ÉTATS DU JEU & SCORE ---
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -76,6 +81,9 @@ const insertAccent = (accent) => {
   }
 };
 
+//---CONCOURS
+
+
   // --- INITIALISATION ---
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 800);
@@ -93,11 +101,43 @@ const insertAccent = (accent) => {
   }, [isTimerRunning, isFinished, mode]);
 
   // --- LOGIQUE DE DONNÉES ---
-  const getActiveWords = () => {
-    if (!levelData || !activeWeek) return [];
-    const week = levelData.weeks?.find(w => Number(w.id) === Number(activeWeek));
-    return week ? (week.words || []) : [];
-  };
+  // REMPLACE ton ancienne fonction par celle-ci :
+const getActiveWords = () => {
+  if (!levelData) return [];
+  
+  // Cas spécial pour le concours (les mots sont à la racine du JSON)
+  if (activeWeek === 'CONCOURS') {
+    return levelData.words || [];
+  }
+
+  // Cas normal (recherche dans les semaines)
+  const week = levelData.weeks?.find(w => Number(w.id) === Number(activeWeek));
+  return week ? (week.words || []) : [];
+};
+
+//===
+const startConcours = async () => {
+  try {
+    setIsLoading(true);
+    // Assure-toi que le nom du fichier match celui sur ton serveur
+    const res = await fetch(`/data/Concours_${selectedLevel}A_S3.json`);
+    const data = await res.json();
+    
+    setLevelData(data); 
+    setActiveWeek('CONCOURS'); // On définit un ID spécial
+    setMode('concours');       // On active le mode component
+    setCorrectCount(0);
+    setWrongCount(0);
+    setErrors([]);
+    setIsFinished(false);
+    setTotalSeconds(0);
+    setIsTimerRunning(true);
+  } catch (e) {
+    alert("Le fichier du concours n'a pas pu être chargé.");
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   const handleLevelSelect = async (id) => {
     try {
@@ -212,6 +252,15 @@ const insertAccent = (accent) => {
     }
   };
 
+  // Dans le return de DictationApp1 :
+if (view === 'concours') {
+  return <ConcoursEvaluator 
+            trainingData={levelData} 
+            selectedLevel={selectedLevel} 
+            onBack={() => setView('training')} 
+         />;
+}
+
   return (
     <div className="min-h-screen bg-[#dee6e4] font-['Poppins'] pb-12 overflow-x-hidden">
       
@@ -302,6 +351,20 @@ const insertAccent = (accent) => {
                 <div className="bg-slate-900 rounded-[40px] p-8 text-white text-center shadow-2xl flex flex-col justify-center">
                   <Flame size={60} className="text-orange-400 mx-auto mb-4 animate-pulse" />
                   <h3 className="text-xl font-black uppercase mb-4 tracking-tighter">Objectif Mai 2026</h3>
+                  <div className="bg-slate-900 rounded-[40px] p-8 text-white text-center shadow-2xl flex flex-col justify-center">
+  <Flame size={60} className="text-orange-400 mx-auto mb-4 animate-pulse" />
+  <h3 className="text-xl font-black uppercase mb-4 tracking-tighter">Zone Concours</h3>
+  <p className="text-sm text-slate-400 font-medium leading-relaxed mb-8 italic">
+    Prêt pour l'évaluation officielle des 3 semaines ?
+  </p>
+  
+  <button 
+    onClick={() => setView('concours')}
+    className="bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-2xl font-black uppercase transition-all shadow-lg active:scale-95"
+  >
+    🏆 Lancer le Concours
+  </button>
+</div>
                   <p className="text-sm text-slate-400 font-medium leading-relaxed mb-8 italic italic">
                     "Le succès est la somme de petits efforts répétés chaque jour."
                   </p>
@@ -505,6 +568,14 @@ const insertAccent = (accent) => {
    
     />
   )}
+  {mode === 'concours' && (
+  <EvaluationGame 
+    words={getActiveWords()} // Tes 60 mots déjà filtrés
+    onCorrect={() => setCorrectCount(c => c + 1)}
+    onWrong={() => setWrongCount(w => w + 1)}
+    onFinish={(score, total) => saveExerciseResult(score, total)}
+  />
+)}
 </div>
                     )}
                   </AnimatePresence>
