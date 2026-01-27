@@ -1,16 +1,94 @@
 {
-  "id": "ex2",
-  "title": "Voyage dans l'espace",
-  "sections": [
+  "test_info": {
+    "titre": "Test en lecture, écriture et mathématiques, cycle moyen",
+    "niveau": "6e année",
+    "session": "Printemps 2012",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "OQRE"
+  },
+  "parties": [
     {
-      "id": "partie-a-intro",
-      "label": "Partie A: Introduction",
-      "type": "quiz",
-      "questions": [
+      "id": "Partie A",
+      "sections": [
         {
-          "question": "Quelle est la couleur de Mars ?",
-          "options": ["Bleue", "Rouge", "Verte"],
-          "correctAnswer": 1
+          "type": "lecture",
+          "titre": "Grand-maman-marathon",
+          "texte_integral": [
+            { "p": 1, "contenu": "Chaque printemps, ma ville organise des courses à pied. Il y a des courses de différentes distances, dont un marathon. Mais cette distance de 42,195 kilomètres n’est pas pour moi. Pas encore." },
+            { "p": 2, "contenu": "Avec d’autres élèves de l’école, je me suis inscrit à la course de cinq kilomètres. Nous nous entraînons depuis deux mois." },
+            { "p": 3, "contenu": "En mars, pendant les vacances d’hiver, je vais rendre visite à ma grand-mère. Quand je lui parle de la course, elle me pose mille questions sur l’entraînement, la piste, l’inscription… — Je veux courir ces cinq kilomètres! finit-elle par m’annoncer. C’est bien elle! Toujours prête à relever des défis. — Alors, je pourrai t’appeler « grand-maman-marathon »! dis-je en riant. Mais moi, je suis sûr qu’elle n’est pas suffisamment en forme pour participer à une course de cinq kilomètres." },
+            { "p": 4, "contenu": "Or, le matin de la course, j’aperçois ma grand-mère sur la ligne de départ, parmi les autres athlètes. — Bonne chance! me glisse-t-elle à l’oreille quand je la salue. Le signal du départ est donné!" },
+            { "p": 5, "contenu": "Tout au long de la course, je ne suis jamais loin d’elle, parfois devant, parfois derrière. — Lâche pas, mon chou! dit grand-maman chaque fois qu’elle me dépasse. Mais au bout d’une vingtaine de minutes, je la vois quitter la piste. — Ah non! Elle abandonne! me dis-je." },
+            { "p": 6, "contenu": "Je suis déçu pour elle. Mais, à ma grande surprise, elle pose le pied sur la bordure du trottoir, se penche et… renoue ses lacets! — Léger contretemps, me dit-elle, souriante, en reprenant la course." },
+            { "p": 7, "contenu": "Quelques minutes plus tard, voilà que nous franchissons la ligne d’arrivée, côte à côte, sous les applaudissements de nombreux spectateurs. Je regarde fièrement grand-maman : tout le bonheur du monde est dans ses yeux. — Nous avons couru les cinq kilomètres en moins de 30 minutes! Pas si difficile que ça après tout, dit-elle, le souffle saccadé. Puis, s’aspergeant la tête avec une bouteille d’eau froide, elle ajoute :" },
+            { "p": 8, "contenu": "— L’an prochain, je cours dix kilomètres! En m’améliorant ainsi d’année en année, je serai prête pour courir, un jour, le marathon. Alors, je mériterai mon surnom de « grand-maman-marathon ». Et moi, je vais lui cacher qu’un jour j’escaladerai le mont Robson dans les Rocheuses. Cela pourrait lui donner des idées. Grand-maman serait bien capable de m’attendre là-haut avec une grande tasse de chocolat chaud!" }
+          ],
+          "questions": [
+            { "numero": 1, "enonce": "Pourquoi le garçon appelle-t-il sa grand-mère « grand-maman-marathon »? (3e paragraphe)", "options": ["Elle est en forme.", "Elle court un marathon.", "Elle aime courir en groupe.", "Elle désire participer à une course."], "reponse_correcte": "Elle désire participer à une course." },
+            { "numero": 2, "enonce": "Selon quel point de vue raconte-t-on cette histoire?", "options": ["celui de l’enfant", "celui d’un témoin", "celui d’un journaliste", "celui de la grand-mère"], "reponse_correcte": "celui de l’enfant" },
+            { "numero": 3, "enonce": "Le mot « contretemps » signifie un événement… (6e paragraphe)", "options": ["drôle.", "difficile.", "imprévu.", "surprenant."], "reponse_correcte": "imprévu." },
+            { "numero": 4, "enonce": "Que signifie l’expression « le souffle saccadé »? (7e paragraphe)", "options": ["la respiration lente", "la respiration calme", "la respiration douce", "la respiration irrégulière"], "reponse_correcte": "la respiration irrégulière" },
+            { "numero": 5, "enonce": "Explique comment on sait que la grand-mère aime relever des défis. Utilise des renseignements du texte pour appuyer ta réponse.", "type": "reponse_ouverte", "note": "À CORRIGER PAR L'ENSEIGNANT" },
+            { "numero": 6, "enonce": "Selon toi, pourquoi la grand-mère a-t-elle bien fait d’accompagner son petit-fils à la course?", "type": "reponse_ouverte", "note": "À CORRIGER PAR L'ENSEIGNANT" }
+          ]
+        },
+        {
+          "type": "lecture",
+          "titre": "Aux quatre coins de la province",
+          "texte_integral": [
+            { "p": "Strophe 1", "contenu": "Aux quatre coins de la province, les grands espaces s’habillent de vert, de gris et de bleu." },
+            { "p": "Strophe 2", "contenu": "Dans le secret des grands espaces, il y a le vert des arbres et l’eau toute bleue, de la goutte au ruisseau, du ruisseau à la rivière, de la rivière au lac." },
+            { "p": "Strophe 3", "contenu": "Et il y a dans le gris des rochers l’or, le nickel, l’argent et des diamants gros comme ton poing." },
+            { "p": "Strophe 4", "contenu": "Dans le secret des grands espaces, il y a aussi le loup, plus beau que celui de tes contes d’enfant, l’ours noir, l’orignal, le lynx, le castor et ces oiseaux si nombreux dans les feuilles des arbres." },
+            { "p": "Strophe 5", "contenu": "Aux quatre coins de la province, les villes et villages portent des noms autochtones, français ou anglais : Tecumseh, Plantagenet, Hearst, Mississauga, Longlac, Cornwall, Matachewan, Belleville, Welland." },
+            { "p": "Strophe 6", "contenu": "Dans le secret des villes et villages, il y a des rues, des ponts et des édifices qui portent les noms de celles et de ceux qui ont bâti ce pays." },
+            { "p": "Strophe 7", "contenu": "Et il y a tous ces gens bien vivants qui bâtissent leur bonheur, que ce soit au bureau, à la ferme, à l’usine, au magasin ou ailleurs." },
+            { "p": "Strophe 8", "contenu": "Dans le secret des villes et villages, il y a aussi la parenté, les amis et les voisins. Plusieurs sont venus d’un autre continent et d’autres sont nés à deux pas d’ici." },
+            { "p": "Strophe 9", "contenu": "Aux quatre coins de la province, les jours portent au fil des heures tes joies, tes espoirs et tous tes gestes d’enfant." },
+            { "p": "Strophe 10", "contenu": "Dans le secret des jours, il y a ta première dent perdue, ton premier jour d’école, des tournois de hockey, de balle molle et de ringuette. Il y a peut-être la naissance d’une petite sœur ou d’un petit frère." },
+            { "p": "Strophe 11", "contenu": "Et il y a ce bonhomme de neige qui, tu l’espères, sera là pour longtemps." },
+            { "p": "Strophe 12", "contenu": "Dans le secret des jours, il y a surtout ce qui te reste à découvrir et tout ce que tu peux faire quand tu auras grandi." },
+            { "p": "Strophe 13", "contenu": "Aux quatre coins de la province, dans le secret des grands espaces, dans le secret des villes et villages, dans le secret des jours, tout chante la beauté de la vie." }
+          ],
+          "questions": [
+            { "numero": 7, "enonce": "On compare les diamants à un poing pour… (ligne 9)", "options": ["ajouter de l’humour.", "exagérer leur grosseur.", "ajouter de l’expression.", "expliquer leur signification."], "reponse_correcte": "exagérer leur grosseur." },
+            { "numero": 8, "enonce": "Dans ce texte, quel animal est associé aux histoires pour enfants?", "options": ["l’ours", "le loup", "le lynx", "l’orignal"], "reponse_correcte": "le loup" },
+            { "numero": 9, "enonce": "Pourquoi certaines rues de villes et de villages portent-elles le nom de leurs bâtisseurs?", "options": ["pour indiquer la langue parlée", "pour orienter les gens dans la ville", "pour rappeler aux gens leur contribution", "pour faire ressortir les endroits importants"], "reponse_correcte": "pour rappeler aux gens leur contribution" },
+            { "numero": 10, "enonce": "À quoi servent les lignes 44 à 46 dans ce poème?", "options": ["à reprendre les thèmes du poème", "à énumérer les secrets de l’auteur", "à mettre l’accent sur le mot « secret »", "à ajouter un élément mystérieux à la fin du poème"], "reponse_correcte": "à reprendre les thèmes du poème" },
+            { "numero": 11, "enonce": "Comment sait-on que l’auteur connaît bien sa province?", "type": "reponse_ouverte", "note": "À CORRIGER PAR L'ENSEIGNANT" },
+            { "numero": 12, "enonce": "Parmi les thèmes exploités dans ce poème, lequel préfères-tu? Utilise des renseignements du texte et tes propres idées pour appuyer ta réponse.", "type": "reponse_ouverte", "note": "À CORRIGER PAR L'ENSEIGNANT" }
+          ]
+        },
+        {
+          "type": "ecriture",
+          "titre": "Production de texte court",
+          "questions": [
+            { "numero": 13, "enonce": "Rédige un court texte dans lequel tu expliques pourquoi il est important pour les jeunes d’avoir des responsabilités à la maison.", "type": "redaction", "note": "À CORRIGER PAR L'ENSEIGNANT" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Partie B",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "La vie en groupe (Les éléphants)",
+          "texte_integral": [
+            { "section": "Introduction", "contenu": "Les éléphants vivent en petits groupes familiaux dirigés par une vieille femelle, la matriarche. Ces groupes peuvent compter une dizaine d’individus, mais ceux-ci se déplacent parfois en troupeaux plus importants. Le troupeau est formé de sœurs, de filles, de cousines, de tantes et de leurs petits. Il peut réunir jusqu’à quatre générations d’éléphants. Vers l’âge de 10-12 ans, les mâles en sont chassés. Au début, ils restent proches du groupe des femelles, puis ils s’en éloignent définitivement. En vieillissant, les mâles deviennent solitaires." },
+            { "section": "La matriarche", "contenu": "Marchant toujours à la tête, c’est la matriarche qui donne le signal de départ ou d’arrêt du troupeau. Pendant des années, elle a suivi les routes ancestrales qui mènent aux pâturages et aux points d’eau. À son tour, elle transmet à ses filles et à toutes les générations qui suivent ce qu’elles doivent savoir pour survivre. Grâce à sa mémoire et à son expérience, elle est respectée par tous. C’est elle qui conduit la troupe vers les meilleurs pâturages, qui sait trouver les points d’eau à la saison sèche et les endroits encore pourvus d’herbes à manger. Courageuse, elle protège le troupeau si un danger le menace et décide de la conduite à adopter, par exemple charger l’ennemi ou l’éviter. Elle peut risquer sa vie pour sauver le groupe." },
+            { "section": "La collaboration", "contenu": "Si un danger survient, par exemple l’attaque d’un lion ou d’un tigre, toutes les femelles du troupeau encerclent les éléphanteaux, qui n’ont pas encore les puissantes défenses de leurs aînées. Elles forment un mur avec leurs grosses pattes. La matriarche charge pour forcer l’ennemi à battre en retraite. Lorsqu’il faut passer une rivière ou un marais, il arrive que les petits s’enlisent. Heureusement, il y a toujours une maman ou une tante qui leur tend sa trompe pour les aider." },
+            { "section": "Au secours des plus faibles", "contenu": "Si l’un des éléphants du troupeau tombe, sœurs et cousines l’entourent aussitôt et tentent de le relever. Si elles n’y parviennent pas, elles restent près de lui jour et nuit et le protègent contre tous les dangers. Il arrive qu’un membre de la troupe relève, avec sa trompe et ses pattes, un éléphant malade. Il n’y a jamais de conflits au sein du groupe, même quand les éléphants ont du mal à trouver de quoi boire et manger. Les éléphants n’abandonnent jamais l’un des leurs." }
+          ],
+          "questions": [
+            { "numero": 1, "enonce": "Quel sous-titre peut-on donner au 1er paragraphe?", "options": ["L’âge des éléphants", "La composition du troupeau", "Le déplacement du troupeau", "Les caractéristiques des femelles"], "reponse_correcte": "La composition du troupeau" },
+            { "numero": 2, "enonce": "Au 1er paragraphe, que signifie le mot « importants »?", "options": ["grands", "sérieux", "spéciaux", "intéressants"], "reponse_correcte": "grands" },
+            { "numero": 3, "enonce": "Quel groupe est rejeté par le troupeau?", "options": ["les tantes", "les mâles", "les femelles", "les éléphanteaux"], "reponse_correcte": "les mâles" },
+            { "numero": 4, "enonce": "Les illustrations de ce texte servent à montrer comment les éléphants…", "options": ["s’aiment.", "s’entraident.", "se déplacent.", "se ressemblent."], "reponse_correcte": "s’entraident." },
+            { "numero": 5, "enonce": "Pourquoi la matriarche est-elle importante pour le troupeau? Utilise des renseignements du texte pour appuyer ta réponse.", "type": "reponse_ouverte", "note": "À CORRIGER PAR L'ENSEIGNANT" },
+            { "numero": 6, "enonce": "Pour les éléphants, quels sont les avantages de vivre en groupe?", "type": "reponse_ouverte", "note": "À CORRIGER PAR L'ENSEIGNANT" }
+          ]
         }
       ]
     }
