@@ -1,0 +1,29 @@
+{
+  "levels": [
+    {
+      "theme": "Rémi à l'école",
+      "emoji": "🏫",
+      "story": [
+        "Rémi va à l'école.",
+        "Il lit. Il aime lire.",
+        "Il parle avec des amis.",
+        "Il a un pupitre.",
+        "Il rédige des phrases.",
+        "Il joue avec des jeux.",
+        "Il dîne à l'école.",
+        "Rémi aime aller à l'école."
+      ],
+      "items": [
+        { "word": "ÉCOLE", "emoji": "🏫", "syllables": ["É", "CO", "LE"] },
+        { "word": "PUPITRE", "emoji": "🪑", "syllables": ["PU", "PI", "TRE"] },
+        { "word": "PHRASES", "emoji": "✍️", "syllables": ["PHRA", "SES"] },
+        { "word": "AMIS", "emoji": "👫", "syllables": ["A", "MIS"] }
+      ],
+      "quiz": [
+        { "q": "Rémi va-t-il à l'école ?", "options": ["Oui", "Non", "Peut-être"], "a": "Oui" },
+        { "q": "Rémi aime-t-il lire ?", "options": ["Non", "Oui", "Un peu"], "a": "Oui" },
+        { "q": "Où dîne Rémi ?", "options": ["Au parc", "À la maison", "À l'école"], "a": "À l'école" }
+      ]
+    }
+  ]
+}

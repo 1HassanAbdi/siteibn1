@@ -1,0 +1,225 @@
+{
+  "module": 2,
+  "titre": {
+    "fr": "Comprendre de grands nombres",
+    "en": "Understanding Large Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p14-ex1a",
+      "page": 14,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris à la forme symbolique : 7 millions 481 mille 624",
+        "en": "Write in symbolic form: 7 million 481 thousand 624"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "7 481 624", "en": "7,481,624" },
+        { "fr": "70 481 624", "en": "70,481,624" },
+        { "fr": "7 481 064", "en": "7,481,064" },
+        { "fr": "7 000 481 624", "en": "7,000,481,624" }
+      ],
+      "reponse_attendue": { "fr": "7 481 624", "en": "7,481,624" },
+      "aide": {
+        "fr": "Pense à placer les chiffres dans le tableau des valeurs : 7 dans la colonne des unités de millions.",
+        "en": "Place the digits in the value chart: 7 goes in the millions unit column."
+      }
+    },
+    {
+      "id": "p14-ex1b",
+      "page": 14,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Écris à la forme symbolique : 3 000 000 000 + 200 000 000 + 600 000 + 20 000 + 9",
+        "en": "Write in symbolic form: 3,000,000,000 + 200,000,000 + 600,000 + 20,000 + 9"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "3 200 620 009", "en": "3,200,620,009" },
+        { "fr": "3 200 062 009", "en": "3,200,062,009" },
+        { "fr": "3 020 620 009", "en": "3,020,620,009" },
+        { "fr": "3 200 620 900", "en": "3,200,620,900" }
+      ],
+      "reponse_attendue": { "fr": "3 200 620 009", "en": "3,200,620,009" },
+      "aide": {
+        "fr": "Attention aux zéros ! S'il n'y a pas de dizaines de millions ou de centaines, mets un 0.",
+        "en": "Watch out for zeros! If there are no ten-millions or hundreds, put a 0."
+      }
+    },
+    {
+      "id": "p14-ex1c",
+      "page": 14,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Écris à la forme symbolique : quatre millions six cent soixante-deux mille quatre-vingt-deux",
+        "en": "Write in symbolic form: four million six hundred sixty-two thousand eighty-two"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "4 662 082", "en": "4,662,082" },
+        { "fr": "4 662 820", "en": "4,662,820" },
+        { "fr": "4 602 082", "en": "4,602,082" },
+        { "fr": "46 662 082", "en": "46,662,082" }
+      ],
+      "reponse_attendue": { "fr": "4 662 082", "en": "4,662,082" },
+      "aide": {
+        "fr": "'Quatre-vingt-deux' signifie qu'il y a 0 dans la colonne des centaines.",
+        "en": "'Eighty-two' means there is a 0 in the hundreds column."
+      }
+    },
+    {
+      "id": "p14-ex2a",
+      "page": 14,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Quelle est la valeur du chiffre souligné dans 72 348 675 125 ?",
+        "en": "What is the value of the underlined digit in 72,348,675,125?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2 milliards", "en": "2 billion" },
+        { "fr": "2 millions", "en": "2 million" },
+        { "fr": "20 milliards", "en": "20 billion" },
+        { "fr": "200 millions", "en": "200 million" }
+      ],
+      "reponse_attendue": { "fr": "2 milliards", "en": "2 billion" },
+      "aide": {
+        "fr": "Le chiffre souligné est le 2. Il se situe dans la tranche des milliards, à la position des unités.",
+        "en": "The underlined digit is 2. It is in the billions tranche, in the units position."
+      }
+    },
+    {
+      "id": "p14-ex2b",
+      "page": 14,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Quelle est la valeur du chiffre souligné dans 494 434 434 ?",
+        "en": "What is the value of the underlined digit in 494,434,434?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "400 000", "en": "400,000" },
+        { "fr": "4 000 000", "en": "4,000,000" },
+        { "fr": "40 000", "en": "40,000" },
+        { "fr": "400", "en": "400" }
+      ],
+      "reponse_attendue": { "fr": "400 000", "en": "400,000" },
+      "aide": {
+        "fr": "Le chiffre est dans la tranche des milliers, à la position des centaines.",
+        "en": "The digit is in the thousands tranche, in the hundreds position."
+      }
+    },
+    {
+      "id": "p15-ex1-r1",
+      "page": 15,
+      "exercice_num": 1,
+      "sous_question": "Tableau ligne 1",
+      "consigne": {
+        "fr": "Quelle est la forme décomposée de 3 267 417 ?",
+        "en": "What is the expanded form of 3,267,417?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "3 000 000 + 200 000 + 60 000 + 7 000 + 400 + 10 + 7", "en": "3,000,000 + 200,000 + 60,000 + 7,000 + 400 + 10 + 7" },
+        { "fr": "3 000 000 + 267 000 + 417", "en": "3,000,000 + 267,000 + 417" },
+        { "fr": "3 000 000 + 20 000 + 6 000 + 700 + 40 + 1", "en": "3,000,000 + 20,000 + 6,000 + 700 + 40 + 1" },
+        { "fr": "3 200 000 + 67 000 + 400 + 17", "en": "3,200,000 + 67,000 + 400 + 17" }
+      ],
+      "reponse_attendue": { "fr": "3 000 000 + 200 000 + 60 000 + 7 000 + 400 + 10 + 7", "en": "3,000,000 + 200,000 + 60,000 + 7,000 + 400 + 10 + 7" },
+      "aide": {
+        "fr": "Sépare chaque chiffre selon sa valeur (unités, dizaines, centaines, etc.).",
+        "en": "Separate each digit according to its value (units, tens, hundreds, etc.)."
+      }
+    },
+    {
+      "id": "p15-ex1-r2",
+      "page": 15,
+      "exercice_num": 1,
+      "sous_question": "Tableau ligne 2",
+      "consigne": {
+        "fr": "Écris à la forme symbolique : 4 000 000 + 600 000 + 4 000 + 90 + 2",
+        "en": "Write in symbolic form: 4,000,000 + 600,000 + 4,000 + 90 + 2"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "4 604 092", "en": "4,604,092" },
+        { "fr": "4 640 092", "en": "4,640,092" },
+        { "fr": "4 064 902", "en": "4,064,902" },
+        { "fr": "4 600 492", "en": "4,600,492" }
+      ],
+      "reponse_attendue": { "fr": "4 604 092", "en": "4,604,092" },
+      "aide": {
+        "fr": "Il n'y a pas de dizaines de mille (0) ni de centaines (0).",
+        "en": "There are no ten-thousands (0) or hundreds (0)."
+      }
+    },
+    {
+      "id": "p15-ex2a",
+      "page": 15,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris en lettres : 62 430 021",
+        "en": "Write in words: 62,430,021"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "soixante-deux millions quatre cent trente mille vingt et un", "en": "sixty-two million four hundred thirty thousand twenty-one" },
+        { "fr": "soixante-deux mille quatre cent trente millions vingt et un", "en": "sixty-two thousand four hundred thirty million twenty-one" },
+        { "fr": "six cent vingt millions quatre cent trente mille vingt et un", "en": "six hundred twenty million four hundred thirty thousand twenty-one" },
+        { "fr": "soixante-deux millions quatre cent trois mille vingt et un", "en": "sixty-two million four hundred three thousand twenty-one" }
+      ],
+      "reponse_attendue": { "fr": "soixante-deux millions quatre cent trente mille vingt et un", "en": "sixty-two million four hundred thirty thousand twenty-one" },
+      "aide": {
+        "fr": "Lis chaque tranche une par une : 62 (millions), 430 (mille), 021 (unités).",
+        "en": "Read each section one by one: 62 (million), 430 (thousand), 021 (units)."
+      }
+    },
+    {
+      "id": "p15-ex2b",
+      "page": 15,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Écris en lettres : 5 602 347 189",
+        "en": "Write in words: 5,602,347,189"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "cinq milliards six cent deux millions trois cent quarante-sept mille cent quatre-vingt-neuf", "en": "five billion six hundred two million three hundred forty-seven thousand one hundred eighty-nine" },
+        { "fr": "cinq millions six cent deux mille trois cent quarante-sept cent quatre-vingt-neuf", "en": "five million six hundred two thousand three hundred forty-seven one hundred eighty-nine" },
+        { "fr": "cinq milliards six cent vingt millions trois cent mille cent quatre-vingt-neuf", "en": "five billion six hundred twenty million three hundred thousand one hundred eighty-nine" },
+        { "fr": "cinquante milliards six cent deux millions trois cent mille", "en": "fifty billion six hundred two million three hundred thousand" }
+      ],
+      "reponse_attendue": { "fr": "cinq milliards six cent deux millions trois cent quarante-sept mille cent quatre-vingt-neuf", "en": "five billion six hundred two million three hundred forty-seven thousand one hundred eighty-nine" }
+    },
+    {
+      "id": "p15-vaplusloin",
+      "page": 15,
+      "exercice_num": "Va plus loin",
+      "sous_question": null,
+      "consigne": {
+        "fr": "Représente le nombre 1 billion (1 000 milliards) à la forme symbolique :",
+        "en": "Represent the number 1 trillion (1,000 billion) in symbolic form:"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1 000 000 000 000", "en": "1,000,000,000,000" },
+        { "fr": "1 000 000 000", "en": "1,000,000,000" },
+        { "fr": "1 000 000", "en": "1,000,000" },
+        { "fr": "100 000 000 000", "en": "100,000,000,000" }
+      ],
+      "reponse_attendue": { "fr": "1 000 000 000 000", "en": "1,000,000,000,000" },
+      "aide": {
+        "fr": "Un billion est mille fois plus grand qu'un milliard. Il possède 12 zéros.",
+        "en": "A trillion is a thousand times larger than a billion. It has 12 zeros."
+      }
+    }
+  ]
+}

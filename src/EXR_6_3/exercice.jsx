@@ -10,9 +10,12 @@ import {
 // --- CONFIGURATION ---
 import data2011 from './data/oqre_2011.json';
 import data2012 from './data/oqre_2012.json';
+import Au_jardin from './data/Au_jardin.json';
+import marathon from './data/marathon.json';
+import ecole from './data/ecole.json';
 
 const TEACHER_CODE = "FRANCE2011"; 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxb7PcOf63u6jPthy0yF6C42femUYNIzyfjvGJgMrpuNCg5S9uQAtDzsdRZlmKq-D83/exec"; 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxTBjRTgiO0JVqwjCfsnggzP5o1wN_lNMewT-H2ILejDNhKqUcDjz7cX2wfPIk0dX8/exec"; 
 
 export default function PortailOQRE() {
   const [view, setView] = useState('home'); 
@@ -84,15 +87,19 @@ export default function PortailOQRE() {
     });
 
     const payload = {
-      nom: studentInfo.nom,
-      classe: studentInfo.classe,
-      email: studentInfo.email,
-      titre: `${selectedSession.test_info.session} - ${currentPart.id}`,
-      sheetTarget: "OQRE3A",
-      totalScore: score,
-      maxQcm: totalQcm,
-      openAnswers: openAnswers
-    };
+  nom: studentInfo.nom,
+  classe: studentInfo.classe,
+  email: studentInfo.email,
+  titre: `${selectedSession.test_info.session} - ${currentPart.id}`,
+  sheetTarget: "OQRE3A",
+  answers: answers,  // toutes les réponses de l'élève
+  correctAnswers: currentQuestions.reduce((acc, q) => {
+    if (q.options) acc[q.numero] = q.reponse_correcte;
+    return acc;
+  }, {}),
+  openAnswers: openAnswers
+};
+
 
     try {
       await fetch(GOOGLE_SCRIPT_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(payload) });
@@ -241,7 +248,7 @@ function HomeView({ onSelect, studentInfo, setView }) {
     
             <div className="grid md:grid-cols-2 gap-10">
                 <div onClick={() => onSelect(data2011)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
-                    <h3 className="text-3xl font-black italic mb-2 uppercase text-blue-500">Session 2011</h3>
+                    <h3 className="text-3xl font-black italic mb-2 uppercase text-blue-500">Session 2011 </h3>
                     <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Primaire</p>
                     <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-blue-600 transition-colors">COMMENCER</div>
                 </div>
@@ -250,6 +257,22 @@ function HomeView({ onSelect, studentInfo, setView }) {
                     <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Moyen</p>
                     <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-orange-500 transition-colors">COMMENCER</div>
                 </div>
+                <div onClick={() => onSelect(Au_jardin)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
+                    <h3 className="text-3xl font-black italic mb-2 uppercase text-blue-500">Au jardin 3e</h3>
+                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Primaire</p>
+                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-blue-600 transition-colors">COMMENCER</div>
+                </div>
+                 <div onClick={() => onSelect(marathon)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
+                    <h3 className="text-3xl font-black italic mb-2 uppercase text-orange-500">Grand-maman-marathon 6e</h3>
+                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Moyen</p>
+                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-orange-500 transition-colors">COMMENCER</div>
+                </div>
+                <div onClick={() => onSelect(ecole)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
+                    <h3 className="text-3xl font-black italic mb-2 uppercase text-blue-500">La rentrée à l’école 2e</h3>
+                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Primaire</p>
+                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-blue-600 transition-colors">COMMENCER</div>
+                </div>
+                
             </div>
           </section>
         </div>
@@ -281,6 +304,7 @@ function LoginView({ studentInfo, setStudentInfo, handleLogin, onBack }) {
           <div className="relative">
             <select required className="w-full p-4 bg-black border-2 border-slate-800 rounded-xl text-white font-bold outline-none focus:border-blue-500 appearance-none" value={studentInfo.classe} onChange={e => setStudentInfo({...studentInfo, classe: e.target.value})}>
               <option value="" disabled>CHOISIR TA CLASSE</option>
+               <option value="2A">CLASSE 2A</option>
               <option value="3A">CLASSE 3A</option>
               <option value="6A">CLASSE 6A</option>
             </select>

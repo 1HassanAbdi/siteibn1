@@ -12,6 +12,8 @@ import DictationAppcka from "./DicteeCka/dictationApp";
 import MultiplicationChallengeOK from "./maths/concourMathsOK";
 import EvaluationGame from "./Dictee/EvaluationGame";
 import Exercice63 from "./EXR_6_3/exercice";
+import AppSyllabes from "./1eAnnee/AppSyllabes";
+import MathExerciseApp from "./6eAnnee/ex";
 
 
 
@@ -24,7 +26,7 @@ function App() {
         <Header />      
           <Routes>
             <Route path="/" element={<Accueil></Accueil>} />
-            <Route path="/test" element={<PiqueNiqueApp></PiqueNiqueApp>} />
+            <Route path="/test" element={<Exercice63></Exercice63>} />
             <Route path="/Multiplication" element={<MultiplicationChallengeOK></MultiplicationChallengeOK>} />
                     {/* Page des activités pour chaque année */}
 
@@ -34,9 +36,11 @@ function App() {
 
 
           <Route path="/activites/51e Année/Francais" element={<YearlyNavigator5e />} />
+          <Route path="/activites/1re Année/Francais" element={<AppSyllabes></AppSyllabes> } />
           <Route path="/activites/31e Année/Francais" element={<YearlyNavigator />} />
           <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
           <Route path="/activites/6e Année/Francais" element={<Exercice63></Exercice63>} />
+          <Route path="/activites/6e Année/Mathematiques" element={<MathExerciseApp></MathExerciseApp>} />
             
            
             

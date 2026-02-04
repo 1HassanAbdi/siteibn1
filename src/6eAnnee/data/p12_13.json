@@ -1,0 +1,524 @@
+{
+  "module": 2,
+  "titre": {
+    "fr": "À la découverte d'un million",
+    "en": "Discovering One Million"
+  },
+  "exercices": [
+    {
+      "id": "p12-ex1",
+      "page": 12,
+      "exercice_num": 1,
+      "sous_question": null,
+      "consigne": {
+        "fr": "Tu économises 100 $ par mois. Dans combien de mois auras-tu économisé 1 000 000 $ ?",
+        "en": "You save $100 per month. In how many months will you have saved $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1 000", "en": "1,000" },
+        { "fr": "10 000", "en": "10,000" },
+        { "fr": "100 000", "en": "100,000" },
+        { "fr": "5 000", "en": "5,000" }
+      ],
+      "reponse_attendue": { "fr": "10 000", "en": "10,000" },
+      "aide": {
+        "fr": "Pour diviser par 100, on retire deux zéros au nombre : 1 000 000 devient 10 000.",
+        "en": "To divide by 100, remove two zeros from the number: 1,000,000 becomes 10,000."
+      }
+    },
+    {
+      "id": "p12-ex2",
+      "page": 12,
+      "exercice_num": 2,
+      "sous_question": null,
+      "consigne": {
+        "fr": "Une coccinelle mange environ 50 000 pucerons. Combien de coccinelles faut-il pour manger 1 million de pucerons ?",
+        "en": "A ladybug eats about 50,000 aphids. How many ladybugs are needed to eat 1 million?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2", "en": "2" },
+        { "fr": "20", "en": "20" },
+        { "fr": "200", "en": "200" },
+        { "fr": "50", "en": "50" }
+      ],
+      "reponse_attendue": { "fr": "20", "en": "20" },
+      "aide": {
+        "fr": "50 000 + 50 000 = 100 000 (2 coccinelles). Pour 1 000 000, il en faut 10 fois plus.",
+        "en": "50,000 + 50,000 = 100,000 (2 ladybugs). For 1,000,000, you need 10 times more."
+      }
+    },
+    {
+      "id": "p12-ex3",
+      "page": 12,
+      "exercice_num": 3,
+      "sous_question": null,
+      "consigne": {
+        "fr": "Tu marches environ 4 000 m par jour. Combien de jours te faudra-t-il pour parcourir 1 000 000 de mètres ?",
+        "en": "You walk about 4,000 m per day. How many days will it take to travel 1,000,000 meters?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "25", "en": "25" },
+        { "fr": "250", "en": "250" },
+        { "fr": "2 500", "en": "2,500" },
+        { "fr": "400", "en": "400" }
+      ],
+      "reponse_attendue": { "fr": "250", "en": "250" },
+      "aide": {
+        "fr": "1 000 000 ÷ 4 000 est la même chose que 1 000 ÷ 4. Le résultat est 250.",
+        "en": "1,000,000 ÷ 4,000 is the same as 1,000 ÷ 4. The result is 250."
+      }
+    },
+    {
+      "id": "p13-ex1a",
+      "page": 13,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Y a-t-il plus de 1 million ou moins de 1 million de grains de sable sur une plage ?",
+        "en": "Are there more than 1 million or less than 1 million grains of sand on a beach?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Plus de 1 million", "en": "More than 1 million" },
+        { "fr": "Moins de 1 million", "en": "Less than 1 million" },
+        { "fr": "Exactement 1 million", "en": "Exactly 1 million" },
+        { "fr": "On ne peut pas savoir", "en": "We cannot know" }
+      ],
+      "reponse_attendue": { "fr": "Plus de 1 million", "en": "More than 1 million" },
+      "aide": {
+        "fr": "Une plage contient des milliards de grains de sable, bien plus qu'un million !",
+        "en": "A beach contains billions of grains of sand, much more than a million!"
+      }
+    },
+    {
+      "id": "p13-ex1b",
+      "page": 13,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Y a-t-il plus de 1 million ou moins de 1 million de livres dans ta classe ?",
+        "en": "Are there more than 1 million or less than 1 million books in your classroom?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Plus de 1 million", "en": "More than 1 million" },
+        { "fr": "Moins de 1 million", "en": "Less than 1 million" },
+        { "fr": "Exactement 1 million", "en": "Exactly 1 million" },
+        { "fr": "Zéro", "en": "Zero" }
+      ],
+      "reponse_attendue": { "fr": "Moins de 1 million", "en": "Less than 1 million" },
+      "aide": {
+        "fr": "Dans une classe, il y a généralement quelques centaines de livres.",
+        "en": "In a classroom, there are usually a few hundred books."
+      }
+    },
+    {
+      "id": "p13-ex1c",
+      "page": 13,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Y a-t-il plus ou moins de 1 million de brins d'herbe sur un terrain de golf ?",
+        "en": "Are there more or less than 1 million blades of grass on a golf course?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Plus de 1 million", "en": "More than 1 million" },
+        { "fr": "Moins de 1 million", "en": "Less than 1 million" },
+        { "fr": "Exactement 1 million", "en": "Exactly 1 million" },
+        { "fr": "100 brins", "en": "100 blades" }
+      ],
+      "reponse_attendue": { "fr": "Plus de 1 million", "en": "More than 1 million" },
+      "aide": {
+        "fr": "Un terrain de golf est immense, il y a des millions de brins d'herbe.",
+        "en": "A golf course is huge, there are millions of blades of grass."
+      }
+    },
+    {
+      "id": "p13-ex2a",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Combien de billets de 100 $ faut-il pour faire 1 000 000 $ ?",
+        "en": "How many $100 bills are needed to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "100", "en": "100" },
+        { "fr": "1 000", "en": "1,000" },
+        { "fr": "10 000", "en": "10,000" },
+        { "fr": "100 000", "en": "100,000" }
+      ],
+      "reponse_attendue": { "fr": "10 000", "en": "10,000" },
+      "aide": { "fr": "1 000 000 ÷ 100 = 10 000.", "en": "1,000,000 ÷ 100 = 10,000." }
+    },
+    {
+      "id": "p13-ex2b",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Combien de billets de 50 $ faut-il pour faire 1 000 000 $ ?",
+        "en": "How many $50 bills are needed to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2 000", "en": "2,000" },
+        { "fr": "20 000", "en": "20,000" },
+        { "fr": "50 000", "en": "50,000" },
+        { "fr": "5 000", "en": "5,000" }
+      ],
+      "reponse_attendue": { "fr": "20 000", "en": "20,000" },
+      "aide": { "fr": "Comme 50 est la moitié de 100, il en faut deux fois plus.", "en": "Since 50 is half of 100, you need twice as many." }
+    },
+    {
+      "id": "p13-ex2c",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Combien de billets de 20 $ pour faire 1 000 000 $ ?",
+        "en": "How many $20 bills to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "50 000", "en": "50,000" },
+        { "fr": "20 000", "en": "20,000" },
+        { "fr": "500 000", "en": "500,000" },
+        { "fr": "5 000", "en": "5,000" }
+      ],
+      "reponse_attendue": { "fr": "50 000", "en": "50,000" },
+      "aide": { "fr": "1 000 000 ÷ 20 = 50 000.", "en": "1,000,000 ÷ 20 = 50,000." }
+    },
+    {
+      "id": "p13-ex2d",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "d",
+      "consigne": {
+        "fr": "Combien de billets de 10 $ pour faire 1 000 000 $ ?",
+        "en": "How many $10 bills to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "100 000", "en": "100,000" },
+        { "fr": "1 000 000", "en": "1,000,000" },
+        { "fr": "10 000", "en": "10,000" },
+        { "fr": "1 000", "en": "1,000" }
+      ],
+      "reponse_attendue": { "fr": "100 000", "en": "100,000" },
+      "aide": { "fr": "Enlève un seul zéro au million.", "en": "Remove just one zero from the million." }
+    },
+    {
+      "id": "p13-ex2e",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "e",
+      "consigne": {
+        "fr": "Combien de billets de 5 $ pour faire 1 000 000 $ ?",
+        "en": "How many $5 bills to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "200 000", "en": "200,000" },
+        { "fr": "20 000", "en": "20,000" },
+        { "fr": "500 000", "en": "500,000" },
+        { "fr": "50 000", "en": "50,000" }
+      ],
+      "reponse_attendue": { "fr": "200 000", "en": "200,000" },
+      "aide": { "fr": "1 000 000 ÷ 5 = 200 000.", "en": "1,000,000 ÷ 5 = 200,000." }
+    },
+    {
+      "id": "p13-ex2f",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "f",
+      "consigne": {
+        "fr": "Combien de pièces de 2 $ pour faire 1 000 000 $ ?",
+        "en": "How many $2 coins to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "500 000", "en": "500,000" },
+        { "fr": "200 000", "en": "200,000" },
+        { "fr": "1 000 000", "en": "1,000,000" },
+        { "fr": "50 000", "en": "50,000" }
+      ],
+      "reponse_attendue": { "fr": "500 000", "en": "500,000" },
+      "aide": { "fr": "C'est la moitié d'un million.", "en": "It is half of a million." }
+    },
+    {
+      "id": "p13-ex2g",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "g",
+      "consigne": {
+        "fr": "Combien de pièces de 25 ¢ pour faire 1 000 000 $ ?",
+        "en": "How many 25¢ coins to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "400 000", "en": "400,000" },
+        { "fr": "4 000 000", "en": "4,000,000" },
+        { "fr": "40 000 000", "en": "40,000,000" },
+        { "fr": "250 000", "en": "250,000" }
+      ],
+      "reponse_attendue": { "fr": "4 000 000", "en": "4,000,000" },
+      "aide": { "fr": "Il y a 4 pièces de 25¢ dans 1 $. Donc 4 x 1 000 000.", "en": "There are 4 quarters in $1. So 4 x 1,000,000." }
+    },
+    {
+      "id": "p13-ex2h",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "h",
+      "consigne": {
+        "fr": "Combien de pièces de 10 ¢ pour faire 1 000 000 $ ?",
+        "en": "How many 10¢ coins to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1 000 000", "en": "1,000,000" },
+        { "fr": "10 000 000", "en": "10,000,000" },
+        { "fr": "100 000 000", "en": "100,000,000" },
+        { "fr": "100 000", "en": "100,000" }
+      ],
+      "reponse_attendue": { "fr": "10 000 000", "en": "10,000,000" },
+      "aide": { "fr": "Il y a 10 pièces de 10¢ dans 1 $. Donc 10 x 1 000 000.", "en": "There are 10 dimes in $1. So 10 x 1,000,000." }
+    },
+    {
+      "id": "p13-ex2i",
+      "page": 13,
+      "exercice_num": 2,
+      "sous_question": "i",
+      "consigne": {
+        "fr": "Combien de pièces de 5 ¢ pour faire 1 000 000 $ ?",
+        "en": "How many 5¢ coins to make $1,000,000?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "20 000 000", "en": "20,000,000" },
+        { "fr": "2 000 000", "en": "2,000,000" },
+        { "fr": "200 000 000", "en": "200,000,000" },
+        { "fr": "5 000 000", "en": "5,000,000" }
+      ],
+      "reponse_attendue": { "fr": "20 000 000", "en": "20,000,000" },
+      "aide": { "fr": "Il y a 20 pièces de 5¢ dans 1 $. Donc 20 x 1 000 000.", "en": "There are 20 nickels in $1. So 20 x 1,000,000." }
+    },
+    {
+      "id": "p13-ex3",
+      "page": 13,
+      "exercice_num": 3,
+      "sous_question": null,
+      "consigne": {
+        "fr": "Tu lis 1000 pages par mois. Combien de temps pour lire un livre de 1 million de pages ?",
+        "en": "You read 1000 pages per month. How long to read a 1 million page book?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "100 mois", "en": "100 months" },
+        { "fr": "1 000 mois", "en": "1,000 months" },
+        { "fr": "10 000 mois", "en": "10,000 months" },
+        { "fr": "12 mois", "en": "12 months" }
+      ],
+      "reponse_attendue": { "fr": "1 000 mois", "en": "1,000 months" },
+      "aide": { "fr": "1 000 000 ÷ 1 000 = 1 000.", "en": "1,000,000 ÷ 1,000 = 1,000." }
+    },
+    {
+      "id": "p13-ex4a",
+      "page": 13,
+      "exercice_num": 4,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Boîtes de 250 trombones pour obtenir 10 000 trombones :",
+        "en": "Boxes of 250 clips to get 10,000 clips:"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "4", "en": "4" },
+        { "fr": "40", "en": "40" },
+        { "fr": "400", "en": "400" },
+        { "fr": "25", "en": "25" }
+      ],
+      "reponse_attendue": { "fr": "40", "en": "40" },
+      "aide": { "fr": "10 000 ÷ 250 = 40.", "en": "10,000 ÷ 250 = 40." }
+    },
+    {
+      "id": "p13-ex4b",
+      "page": 13,
+      "exercice_num": 4,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Boîtes de 250 trombones pour obtenir 100 000 trombones :",
+        "en": "Boxes of 250 clips to get 100,000 clips:"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "400", "en": "400" },
+        { "fr": "4 000", "en": "4,000" },
+        { "fr": "40", "en": "40" },
+        { "fr": "250", "en": "250" }
+      ],
+      "reponse_attendue": { "fr": "400", "en": "400" },
+      "aide": { "fr": "Si 40 boîtes font 10 000, alors 400 boîtes font 100 000.", "en": "If 40 boxes make 10,000, then 400 boxes make 100,000." }
+    },
+    {
+      "id": "p13-ex4c",
+      "page": 13,
+      "exercice_num": 4,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Boîtes de 250 trombones pour obtenir 500 000 trombones :",
+        "en": "Boxes of 250 clips to get 500,000 clips:"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2 000", "en": "2,000" },
+        { "fr": "20 000", "en": "20,000" },
+        { "fr": "5 000", "en": "5,000" },
+        { "fr": "4 000", "en": "4,000" }
+      ],
+      "reponse_attendue": { "fr": "2 000", "en": "2,000" },
+      "aide": { "fr": "500 000 ÷ 250 = 2 000.", "en": "500,000 ÷ 250 = 2,000." }
+    },
+    {
+      "id": "p13-ex4d",
+      "page": 13,
+      "exercice_num": 4,
+      "sous_question": "d",
+      "consigne": {
+        "fr": "Boîtes de 250 trombones pour obtenir 1 000 000 de trombones :",
+        "en": "Boxes of 250 clips to get 1,000,000 clips:"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "40 000", "en": "40,000" },
+        { "fr": "4 000", "en": "4,000" },
+        { "fr": "400", "en": "400" },
+        { "fr": "10 000", "en": "10,000" }
+      ],
+      "reponse_attendue": { "fr": "4 000", "en": "4,000" },
+      "aide": { "fr": "C'est 100 fois plus que pour 10 000 trombones.", "en": "It is 100 times more than for 10,000 clips." }
+    },
+    {
+      "id": "p13-ex5a",
+      "page": 13,
+      "exercice_num": 5,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Nombre de tiges de 30 cm pour former une ligne de 1 000 000 cm :",
+        "en": "Number of 30 cm stalks to form a 1,000,000 cm line:"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "3 334", "en": "3,334" },
+        { "fr": "33 334", "en": "33,334" },
+        { "fr": "333 334", "en": "333,334" },
+        { "fr": "30 000", "en": "30,000" }
+      ],
+      "reponse_attendue": { "fr": "33 334", "en": "33,334" },
+      "aide": { "fr": "1 000 000 ÷ 30 ≈ 33 333,33. On arrondit à 33 334.", "en": "1,000,000 ÷ 30 ≈ 33,333.33. We round up to 33,334." }
+    },
+    {
+      "id": "p13-ex5b-mm",
+      "page": 13,
+      "exercice_num": 5,
+      "sous_question": "b (mm)",
+      "consigne": {
+        "fr": "Quelle est la longueur de cette ligne (1 000 000 cm) en mm ?",
+        "en": "What is the length of this line (1,000,000 cm) in mm?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "100 000", "en": "100,000" },
+        { "fr": "1 000 000", "en": "1,000,000" },
+        { "fr": "10 000 000", "en": "10,000,000" },
+        { "fr": "100 000 000", "en": "100,000,000" }
+      ],
+      "reponse_attendue": { "fr": "10 000 000", "en": "10,000,000" },
+      "aide": { "fr": "Multiplie par 10 car 1 cm = 10 mm.", "en": "Multiply by 10 because 1 cm = 10 mm." }
+    },
+    {
+      "id": "p13-ex5b-dm",
+      "page": 13,
+      "exercice_num": 5,
+      "sous_question": "b (dm)",
+      "consigne": {
+        "fr": "Quelle est la longueur de cette ligne (1 000 000 cm) en dm ?",
+        "en": "What is the length of this line (1,000,000 cm) in dm?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "10 000", "en": "10,000" },
+        { "fr": "100 000", "en": "100,000" },
+        { "fr": "1 000 000", "en": "1,000,000" },
+        { "fr": "1 000", "en": "1,000" }
+      ],
+      "reponse_attendue": { "fr": "100 000", "en": "100,000" },
+      "aide": { "fr": "Divise par 10 car 10 cm = 1 dm.", "en": "Divide by 10 because 10 cm = 1 dm." }
+    },
+    {
+      "id": "p13-ex5b-m",
+      "page": 13,
+      "exercice_num": 5,
+      "sous_question": "b (m)",
+      "consigne": {
+        "fr": "Quelle est la longueur de cette ligne (1 000 000 cm) en m ?",
+        "en": "What is the length of this line (1,000,000 cm) in m?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1 000", "en": "1,000" },
+        { "fr": "10 000", "en": "10,000" },
+        { "fr": "100 000", "en": "100,000" },
+        { "fr": "100", "en": "100" }
+      ],
+      "reponse_attendue": { "fr": "10 000", "en": "10,000" },
+      "aide": { "fr": "Divise par 100 car 100 cm = 1 m.", "en": "Divide by 100 because 100 cm = 1 m." }
+    },
+    {
+      "id": "p13-ex5b-km",
+      "page": 13,
+      "exercice_num": 5,
+      "sous_question": "b (km)",
+      "consigne": {
+        "fr": "Quelle est la longueur de cette ligne (1 000 000 cm) en km ?",
+        "en": "What is the length of this line (1,000,000 cm) in km?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1", "en": "1" },
+        { "fr": "10", "en": "10" },
+        { "fr": "100", "en": "100" },
+        { "fr": "1 000", "en": "1,000" }
+      ],
+      "reponse_attendue": { "fr": "10", "en": "10" },
+      "aide": { "fr": "Divise par 100 000 car 1 km = 100 000 cm.", "en": "Divide by 100,000 because 1 km = 100,000 cm." }
+    },
+    {
+      "id": "p13-vaplusloin",
+      "page": 13,
+      "exercice_num": "Va plus loin",
+      "sous_question": null,
+      "consigne": {
+        "fr": "Selon toi, est-ce que de nombreuses personnes vivent 1 million d'heures ?",
+        "en": "In your opinion, do many people live for 1 million hours?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Oui, presque tout le monde", "en": "Yes, almost everyone" },
+        { "fr": "Non, c'est très rare", "en": "No, it is very rare" },
+        { "fr": "C'est impossible", "en": "It is impossible" },
+        { "fr": "Seulement les géants", "en": "Only giants" }
+      ],
+      "reponse_attendue": { "fr": "Non, c'est très rare", "en": "No, it is very rare" },
+      "aide": {
+        "fr": "1 000 000 d'heures, c'est environ 114 ans ! Très peu de gens vivent aussi longtemps.",
+        "en": "1,000,000 hours is about 114 years! Very few people reach that age."
+      }
+    }
+  ]
+}

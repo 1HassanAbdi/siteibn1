@@ -1,0 +1,61 @@
+{
+  "test_info": {
+    "titre": "Évaluation de compréhension de lecture et vocabulaire",
+    "niveau": "3e année",
+    "session": "Février 2026",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Auto-Généré"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Au jardin",
+          "texte_integral": [
+            { "p": 1, "contenu": "Il fait soleil. Thomas travaille dans son jardin. Il a aménagé un coin pour les tomates. En ce moment, il arrose ses tournesols." },
+            { "p": 2, "contenu": "Ils sont très grands, plus grands que lui. Chaque tournesol a des pétales d'un jaune vif. Tous les tournesols poussent droit vers le ciel, sauf un. Un des tournesols penche vers le sol. On dirait qu'il parle à Lia, la chienne de Thomas." },
+            { "p": 3, "contenu": "Lia aboie après le tournesol, mais le tournesol ne répond pas. Lia aboie à nouveau et s'assoit. Thomas dépose son arrosoir et ouvre la porte du jardin." },
+            { "p": 4, "contenu": "« Tu vois, Lia, dit-il, les fleurs ne te parleront pas. Moi, je peux le faire. C'est l'heure de s'amuser. » Lia remue joyeusement la queue." }
+          ],
+          "questions": [
+            { "numero": 1, "enonce": "Vrai ou Faux : Thomas est en train d'arroser ses tomates.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 2, "enonce": "Vrai ou Faux : Les tournesols sont plus grands que Thomas.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 3, "enonce": "Vrai ou Faux : Tous les tournesols sans exception poussent vers le ciel.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 4, "enonce": "Vrai ou Faux : Lia est le nom de la chienne de Thomas.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 5, "enonce": "Vrai ou Faux : À la fin de l'histoire, Lia semble triste.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 6, "enonce": "Que fait Thomas au début de l'histoire ?", "options": ["Il dort au soleil.", "Il travaille dans son jardin.", "Il joue avec Lia.", "Il plante des arbres."], "reponse_correcte": "Il travaille dans son jardin." },
+            { "numero": 7, "enonce": "De quelle couleur sont les pétales des fleurs ?", "options": ["Rouge vif", "Vert forêt", "Jaune vif", "Blanc pur"], "reponse_correcte": "Jaune vif" },
+            { "numero": 8, "enonce": "Pourquoi un des tournesols est-il différent des autres ?", "options": ["Il est bleu.", "Il est très petit.", "Il penche vers le sol.", "Il n'a pas de pétales."], "reponse_correcte": "Il penche vers le sol." },
+            { "numero": 9, "enonce": "Qu'est-ce que Thomas dépose avant d'ouvrir la porte ?", "options": ["Ses gants", "Son chapeau", "Ses tomates", "Son arrosoir"], "reponse_correcte": "Son arrosoir" },
+            { "numero": 10, "enonce": "Que fait Lia quand Thomas dit que c'est l'heure de s'amuser ?", "options": ["Elle s'endort.", "Elle remue la queue.", "Elle part en courant.", "Elle continue d'aboyer."], "reponse_correcte": "Elle remue la queue." }
+          ]
+        },
+        {
+          "type": "vocabulaire",
+          "titre": "Étude des mots",
+           "texte_integral": [
+            { "p": 1, "contenu": "Il fait soleil. Thomas travaille dans son jardin. Il a aménagé un coin pour les tomates. En ce moment, il arrose ses tournesols." },
+            { "p": 2, "contenu": "Ils sont très grands, plus grands que lui. Chaque tournesol a des pétales d'un jaune vif. Tous les tournesols poussent droit vers le ciel, sauf un. Un des tournesols penche vers le sol. On dirait qu'il parle à Lia, la chienne de Thomas." },
+            { "p": 3, "contenu": "Lia aboie après le tournesol, mais le tournesol ne répond pas. Lia aboie à nouveau et s'assoit. Thomas dépose son arrosoir et ouvre la porte du jardin." },
+            { "p": 4, "contenu": "« Tu vois, Lia, dit-il, les fleurs ne te parleront pas. Moi, je peux le faire. C'est l'heure de s'amuser. » Lia remue joyeusement la queue." }
+          ],
+          "questions": [
+            { "numero": 11, "enonce": "Vrai ou Faux : Dans le texte, le mot « vif » signifie que la couleur est très éclatante.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 12, "enonce": "Vrai ou Faux : Le verbe « arroser » signifie que l'on enlève les mauvaises herbes.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 13, "enonce": "Vrai ou Faux : Le mot « penche » veut dire qu'il s'incline ou qu'il n'est pas droit.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 14, "enonce": "Vrai ou Faux : Un « arrosoir » est un outil utilisé pour couper les fleurs.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 15, "enonce": "Vrai ou Faux : Le mot « joyeusement » indique que l'action est faite avec bonheur.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 16, "enonce": "Quel est le synonyme du mot « aménagé » dans la phrase : « Il a aménagé un coin » ?", "options": ["Détruit", "Organisé", "Caché", "Vendu"], "reponse_correcte": "Organisé" },
+            { "numero": 17, "enonce": "Que signifie l'expression « droit vers le ciel » ?", "options": ["De manière horizontale", "De travers", "À la verticale", "Vers le bas"], "reponse_correcte": "À la verticale" },
+            { "numero": 18, "enonce": "Dans le texte, qu'est-ce qu'un « pétale » ?", "options": ["Une partie de la fleur", "Une racine", "Un insecte du jardin", "Une sorte de graine"], "reponse_correcte": "Une partie de la fleur" },
+            { "numero": 19, "enonce": "Quel est le contraire du mot « grand » utilisé pour décrire les tournesols ?", "options": ["Énorme", "Petit", "Large", "Haut"], "reponse_correcte": "Petit" },
+            { "numero": 20, "enonce": "Le mot « répond » vient du verbe répondre. Quel est son sens ici ?", "options": ["Crier très fort", "Donner une explication", "Faire une action en retour à une sollicitation", "Partir loin"], "reponse_correcte": "Faire une action en retour à une sollicitation" }
+          ]
+        }
+      ]
+    }
+  ]
+}

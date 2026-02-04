@@ -1,0 +1,52 @@
+{
+  "test_info": {
+    "titre": "Compréhension de lecture et vocabulaire",
+    "niveau": "2e année",
+    "matiere": "Français",
+    "organisme": "Évaluation Primaire"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "La rentrée à l’école",
+          "texte_integral": [
+            { "p": 1, "contenu": "C’est le premier jour d’école. Lina se réveille tôt le matin. Elle met son sac sur son dos et part avec sa maman. Le soleil brille dans le ciel." },
+            { "p": 2, "contenu": "Devant l’école, il y a beaucoup d’enfants. Certains rient, d’autres sont un peu inquiets. La maîtresse s’appelle Madame Nadia. Elle dit bonjour avec un grand sourire." },
+            { "p": 3, "contenu": "Lina trouve sa place dans la classe. Elle est contente de retrouver ses amis." }
+          ],
+          "questions": [
+            { "numero": 1, "enonce": "Vrai ou Faux : L'histoire se passe le dernier jour d'école.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 2, "enonce": "Vrai ou Faux : Lina se réveille tôt le matin.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 3, "enonce": "Vrai ou Faux : Lina part à l'école avec sa maman.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 4, "enonce": "Vrai ou Faux : La maîtresse s'appelle Madame Nadia.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 5, "enonce": "Vrai ou Faux : Lina est fâchée de voir ses amis.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 6, "enonce": "Où Lina met-elle son sac ?", "options": ["Sur sa tête", "Sur son dos", "Dans sa main"], "reponse_correcte": "Sur son dos" },
+            { "numero": 7, "enonce": "Qu'est-ce qui brille dans le ciel ?", "options": ["La lune", "Les nuages", "Le soleil"], "reponse_correcte": "Le soleil" },
+            { "numero": 8, "enonce": "Comment sont certains enfants devant l'école ?", "options": ["Inquiets", "Endormis", "En colère"], "reponse_correcte": "Inquiets" },
+            { "numero": 9, "enonce": "Que fait la maîtresse pour dire bonjour ?", "options": ["Elle chante", "Elle fait un grand sourire", "Elle crie"], "reponse_correcte": "Elle fait un grand sourire" },
+            { "numero": 10, "enonce": "Où Lina s'installe-t-elle ?", "options": ["Dans la cour", "Dans la rue", "Dans la classe"], "reponse_correcte": "Dans la classe" }
+          ]
+        },
+        {
+          "type": "vocabulaire",
+          "titre": "Étude des mots",
+          "questions": [
+            { "numero": 11, "enonce": "Vrai ou Faux : Le mot 'tôt' veut dire 'à la fin de la journée'.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 12, "enonce": "Vrai ou Faux : Le mot 'brille' veut dire 'donne de la lumière'.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 13, "enonce": "Vrai ou Faux : Être 'inquiet' veut dire avoir un peu peur.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 14, "enonce": "Vrai ou Faux : Une 'maîtresse' est une personne qui enseigne aux enfants.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 15, "enonce": "Vrai ou Faux : 'Retrouver' veut dire 'perdre quelque chose'.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 16, "enonce": "Quel est le contraire du mot 'contente' ?", "options": ["Heureuse", "Triste", "Rapide"], "reponse_correcte": "Triste" },
+            { "numero": 17, "enonce": "Le mot 'matin' désigne :", "options": ["Le début de la journée", "Le milieu de la nuit", "Le repas du soir"], "reponse_correcte": "Le début de la journée" },
+            { "numero": 18, "enonce": "Que signifie le mot 'amis' ?", "options": ["Des gens qu'on n'aime pas", "Des copains", "Des maîtres"], "reponse_correcte": "Des copains" },
+            { "numero": 19, "enonce": "Quand on 'rit', cela veut dire que l'on est :", "options": ["Amusé", "Fatigué", "Malade"], "reponse_correcte": "Amusé" },
+            { "numero": 20, "enonce": "Le mot 'sourire' montre :", "options": ["La tristesse", "La peur", "La joie"], "reponse_correcte": "La joie" }
+          ]
+        }
+      ]
+    }
+  ]
+}

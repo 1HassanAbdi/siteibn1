@@ -1,0 +1,65 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "theme": "Rémi à l'école",
+      "steps": [
+        { "id": "reading", "label": "Lecture", "icon": "📖" },
+        { "id": "syllables", "label": "Syllabes", "icon": "🧩" },
+        { "id": "imageSearch", "label": "Mots-Images", "icon": "🖼️" },
+        { "id": "vraiFaux", "label": "Vrai ou Faux", "icon": "⚖️" },
+        { "id": "qcm", "label": "Questions", "icon": "❓" },
+        { "id": "reconstruct", "label": "Construction", "icon": "🏗️" }
+      ],
+      "content": {
+        "story": [
+          { "text": "Rémi va à l'école. 🏫", "color": "text-blue-600" },
+          { "text": "Il lit. 📖 ", "color": "text-red-500" },
+          { "text": "Il aime lire. ❤️", "color": "text-red-600" },
+          { "text": "Il parle avec des amis. 👫", "color": "text-green-700" },
+          { "text": "Il a un pupitre. 🪑", "color": "text-orange-500" },
+          { "text": "Il rédige des phrases. ✍️", "color": "text-purple-600" },
+          { "text": "Il joue avec des jeux. 🧩", "color": "text-pink-500" },
+          { "text": "Il dîne à l'école. 🍎", "color": "text-yellow-600" },
+          { "text": "Rémi aime aller à l'école. ✨", "color": "text-indigo-600" }
+        ],
+        "syllables_tasks": [
+          
+          { "word": "ÉCOLE", "emoji": "🏫", "syllables": ["É", "CO", "LE"] },
+           { "word": "PUPITRE", "emoji": "🖥️", "syllables": ["PU", "PI", "TRE"] },
+          { "word": "PHRASES", "emoji": "✍️", "syllables": ["PHRA", "SES"] },
+          { "word": "AMIS", "emoji": "👫", "syllables": ["A", "MIS"] },
+          { "word": "RÉDIGE", "emoji": "✍️", "syllables": ["RÉ", "DI", "GE"] }
+        ],
+        "image_tasks": [
+          { "img": "🏫", "options": ["MAISON", "ÉCOLE", "PARC"], "a": "ÉCOLE" },
+          { "img": "📖", "options": ["LIVRE", "CAHIER", "JEU"], "a": "LIVRE" },
+          { "img": "👫", "options": ["AMIS", "PARENTS", "CHATS"], "a": "AMIS" },
+          { "img": "🪑", "options": ["TABLE", "CHAISE", "PUPITRE"], "a": "PUPITRE" },
+          { "img": "🧩", "options": ["JEUX", "BONBONS", "STYLO"], "a": "JEUX" }
+        ],
+        "vrai_faux": [
+          { "q": "Rémi est à la plage.", "a": "Faux" },
+          { "q": "Rémi a un pupitre.", "a": "Vrai" },
+          { "q": "Rémi dîne à l'école.", "a": "Vrai" },
+          { "q": "Rémi déteste lire.", "a": "Faux" },
+          { "q": "Il joue avec des jeux.", "a": "Vrai" }
+        ],
+        "qcm": [
+          { "q": "Que fait Rémi ?", "options": ["Il dort", "Il lit", "Il court"], "a": "Il lit" },
+          { "q": "Avec qui parle-t-il ?", "options": ["Son chien", "Des amis", "Sa maman"], "a": "Des amis" },
+          { "q": "Où dîne-t-il ?", "options": ["Au resto", "Au parc", "À l'école"], "a": "À l'école" },
+          { "q": "Qu'est-ce qu'il rédige ?", "options": ["Des phrases", "Des dessins", "Des gâteaux"], "a": "Des phrases" },
+          { "q": "Comment s'appelle le garçon ?", "options": ["Mimi", "Tigris", "Rémi"], "a": "Rémi" }
+        ],
+        "reconstruct": [
+          { "words": ["va", "Rémi", "l'école.", "à"], "correct": "Rémi va à l'école." },
+          { "words": ["aime", "lire.", "Il"], "correct": "Il aime lire." },
+          { "words": ["amis.", "des", "avec", "parle", "Il"], "correct": "Il parle avec des amis." },
+          { "words": ["un", "a", "Il", "pupitre."], "correct": "Il a un pupitre." },
+          { "words": ["phrases.", "des", "rédige", "Il"], "correct": "Il rédige des phrases." }
+        ]
+      }
+    }
+  ]
+}

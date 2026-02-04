@@ -1,0 +1,53 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Cycle moyen",
+    "niveau": "6e année",
+    "session": "Printemps 2012",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "OQRE"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Grand-maman-marathon",
+          "texte_integral": [
+            { "p": 1, "contenu": "Chaque printemps, ma ville organise des courses à pied. Il y a des courses de différentes distances, dont un marathon. Mais cette distance de 42,195 kilomètres n’est pas pour moi. Pas encore." },
+            { "p": 2, "contenu": "Avec d’autres élèves de l’école, je me suis inscrit à la course de cinq kilomètres. Nous nous entraînons depuis deux mois." },
+            { "p": 3, "contenu": "En mars, pendant les vacances d’hiver, je vais rendre visite à ma grand-mère. Quand je lui parle de la course, elle me pose mille questions sur l’entraînement, la piste, l’inscription… — Je veux courir ces cinq kilomètres! finit-elle par m’annoncer. C’est bien elle! Toujours prête à relever des défis. — Alors, je pourrai t’appeler « grand-maman-marathon »! dis-je en riant. Mais moi, je suis sûr qu’elle n’est pas suffisamment en forme pour participer à une course de cinq kilomètres." },
+            { "p": 4, "contenu": "Or, le matin de la course, j’aperçois ma grand-mère sur la ligne de départ, parmi les autres athlètes. — Bonne chance! me glisse-t-elle à l’oreille quand je la salue. Le signal du départ est donné!" },
+            { "p": 5, "contenu": "Tout au long de la course, je ne suis jamais loin d’elle, parfois devant, parfois derrière. — Lâche pas, mon chou! dit grand-maman chaque fois qu’elle me dépasse. Mais au bout d’une vingtaine de minutes, je la vois quitter la piste. — Ah non! Elle abandonne! me dis-je." },
+            { "p": 6, "contenu": "Je suis déçu pour elle. Mais, à ma grande surprise, elle pose le pied sur la bordure du trottoir, se penche et… renoue ses lacets! — Léger contretemps, me dit-elle, souriante, en reprenant la course." },
+            { "p": 7, "contenu": "Quelques minutes plus tard, voilà que nous franchissons la ligne d’arrivée, côte à côte, sous les applaudissements de nombreux spectateurs. Je regarde fièrement grand-maman : tout le bonheur du monde est dans ses yeux. — Nous avons couru les cinq kilomètres en moins de 30 minutes! Pas si difficile que ça après tout, dit-elle, le souffle saccadé. Puis, s’aspergeant la tête avec une bouteille d’eau froide, elle ajoute :— L’an prochain, je cours dix kilomètres! En m’améliorant ainsi d’année en année, je serai prête pour courir, un jour, le marathon. Alors, je mériterai mon surnom de « grand-maman-marathon »." },
+            { "p": 8, "contenu": " Et moi, je vais lui cacher qu’un jour j’escaladerai le mont Robson dans les Rocheuses. Cela pourrait lui donner des idées. Grand-maman serait bien capable de m’attendre là-haut avec une grande tasse de chocolat chaud!" }
+          ],
+          "questions": [
+            { "numero": 1, "enonce": "Vrai ou Faux : Le narrateur s'entraîne pour la course avec des amis de son école.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 2, "enonce": "Vrai ou Faux : La grand-mère annonce son intention de courir pendant le mois de mai.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 3, "enonce": "Vrai ou Faux : Le narrateur pense d'abord que sa grand-mère n'est pas assez en forme pour la course.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 4, "enonce": "Vrai ou Faux : La grand-mère quitte la piste parce qu'elle est trop fatiguée pour continuer.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 5, "enonce": "Vrai ou Faux : Le narrateur a l'intention d'escalader une montagne dans le futur.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
+            { "numero": 6, "enonce": "À quel moment la grand-mère décide-t-elle de participer à la course ?", "options": ["Le matin de la course", "Pendant la visite de son petit-fils en mars", "Après avoir vu une affiche en ville", "Quand elle a fini son entraînement"], "reponse_correcte": "Pendant la visite de son petit-fils en mars" },
+            { "numero": 7, "enonce": "Pourquoi le narrateur est-il surpris au 6e paragraphe ?", "options": ["Parce que sa grand-mère gagne la course", "Parce que sa grand-mère s'arrête seulement pour ses lacets", "Parce qu'il a perdu sa grand-mère de vue", "Parce que la piste est bloquée"], "reponse_correcte": "Parce que sa grand-mère s'arrête seulement pour ses lacets" },
+            { "numero": 8, "enonce": "Comment grand-maman et le narrateur terminent-ils la course ?", "options": ["L'un après l'autre", "Avec beaucoup de retard", "Côte à côte", "En marchant"], "reponse_correcte": "Côte à côte" },
+            { "numero": 9, "enonce": "Quel est l'objectif de la grand-mère pour l'année prochaine ?", "options": ["Courir un marathon complet", "Escalader le mont Robson", "Courir dix kilomètres", "Devenir entraîneuse à l'école"], "reponse_correcte": "Courir dix kilomètres" },
+            { "numero": 10, "enonce": "Quel sentiment le narrateur éprouve-t-il envers sa grand-mère à la fin du texte ?", "options": ["De la honte", "De l'indifférence", "De la fierté", "De la colère"], "reponse_correcte": "De la fierté" },
+            { "numero": 11, "enonce": "Que signifie le mot « défis » au 3e paragraphe ?", "options": ["Des tâches faciles", "Des exercices de mathématiques", "Des épreuves ou buts difficiles à atteindre", "Des types de chaussures"], "reponse_correcte": "Des épreuves ou buts difficiles à atteindre" },
+            { "numero": 12, "enonce": "Dans le 6e paragraphe, que signifie le mot « contretemps » ?", "options": ["Une montre brisée", "Un événement imprévu qui retarde", "Une musique rapide", "Une victoire facile"], "reponse_correcte": "Un événement imprévu qui retarde" },
+            { "numero": 13, "enonce": "Le mot « franchissons » (paragraphe 7) veut dire...", "options": ["Sauter par-dessus", "Passer de l'autre côté d'une limite", "Chercher partout", "S'arrêter brusquement"], "reponse_correcte": "Passer de l'autre côté d'une limite" },
+            { "numero": 14, "enonce": "Que veut dire « le souffle saccadé » au 7e paragraphe ?", "options": ["Une respiration régulière", "Une absence de respiration", "Une respiration rapide et irrégulière", "Un sifflement joyeux"], "reponse_correcte": "Une respiration rapide et irrégulière" },
+            { "numero": 15, "enonce": "Au paragraphe 7, que fait la grand-mère en « s'aspergeant » la tête ?", "options": ["Elle se met un chapeau", "Elle se jette de l'eau", "Elle se gratte la tête", "Elle se coiffe"], "reponse_correcte": "Elle se jette de l'eau" },
+            { "numero": 16, "enonce": "Dans la phrase « ma ville organise des courses », quel est le sujet du verbe ?", "options": ["printemps", "ville", "courses", "organise"], "reponse_correcte": "ville" },
+            { "numero": 17, "enonce": "Dans la phrase « je la vois quitter la piste », le pronom « la » remplace...", "options": ["la ville", "la course", "sa grand-mère", "la bouteille"], "reponse_correcte": "sa grand-mère" },
+            { "numero": 18, "enonce": "Quel est le temps du verbe dans la phrase : « J'escaladerai le mont Robson » ?", "options": ["Présent", "Passé composé", "Imparfait", "Futur simple"], "reponse_correcte": "Futur simple" },
+            { "numero": 19, "enonce": "Dans le texte, à quoi servent les tirets (—) devant les phrases ?", "options": ["À faire une liste", "À indiquer qu'un personnage parle", "À séparer les paragraphes", "À corriger une erreur"], "reponse_correcte": "À indiquer qu'un personnage parle" },
+            { "numero": 20, "enonce": "Choisissez le bon accord : « Les spectateurs étaient ________ de voir l'arrivée. »", "options": ["joyeux", "joyeuse", "joyeuses", "joyeusement"], "reponse_correcte": "joyeux" }
+          ]
+        }
+      ]
+    }
+  ]
+}
