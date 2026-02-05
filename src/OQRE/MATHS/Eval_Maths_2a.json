@@ -1,0 +1,140 @@
+{
+  "test_info": {
+    "session": "Évaluation Mathématiques - 3e Année",
+    "niveau": "3A",
+    "target": "maths_3a",
+    "subject": "maths"
+  },
+  "parties": [
+    {
+      "id": "Module_1",
+      "sections": [
+        {
+          "titre": "Valeur de Position et Suites Numériques",
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Dans le nombre 842, quelle est la valeur du chiffre 8 ?",
+              "options": ["8", "80", "800", "84"],
+              "reponse_correcte": "800"
+            },
+            {
+              "numero": 2,
+              "enonce": "Trouve le nombre manquant dans cette suite : 125, 150, 175, ____, 225",
+              "options": ["180", "190", "200", "210"],
+              "reponse_correcte": "200"
+            },
+            {
+              "numero": 3,
+              "enonce": "Lequel de ces nombres est représenté par l'expression : 500 + 30 + 9 ?",
+              "options": ["5309", "593", "539", "359"],
+              "reponse_correcte": "539"
+            },
+            {
+              "numero": 4,
+              "enonce": "Quelle est la règle de cette suite : 90, 80, 70, 60...",
+              "options": ["Ajouter 10", "Soustraire 10", "Soustraire 5", "Ajouter 1"],
+              "reponse_correcte": "Soustraire 10"
+            },
+            {
+              "numero": 5,
+              "enonce": "Comment écrit-on le nombre 'sept cent quatre' en chiffres ?",
+              "options": ["740", "704", "74", "7004"],
+              "reponse_correcte": "704"
+            },
+            {
+              "numero": 6,
+              "enonce": "Si tu as 2 centaines, 15 dizaines et 3 unités, quel nombre as-tu au total ?",
+              "options": ["2153", "253", "353", "315"],
+              "reponse_correcte": "353"
+            },
+            {
+              "numero": 7,
+              "enonce": "Complète le motif : ▲, ●, ●, ▲, ●, ●, ____",
+              "options": ["▲", "●", "■", "★"],
+              "reponse_correcte": "▲"
+            },
+            {
+              "numero": 8,
+              "enonce": "Arrondis 47 à la dizaine la plus proche.",
+              "options": ["40", "45", "50", "100"],
+              "reponse_correcte": "50"
+            },
+            {
+              "numero": 9,
+              "enonce": "Quel signe complète correctement l'expression : 631 ____ 613",
+              "options": [">", "<", "=", "+"],
+              "reponse_correcte": ">"
+            },
+            {
+              "numero": 10,
+              "enonce": "Dans une table de valeurs, l'entrée est 5 et la sortie est 15. L'entrée est 10 et la sortie est 20. Quelle est la règle ?",
+              "options": ["Ajouter 5", "Ajouter 10", "Multiplier par 3", "Soustraire 10"],
+              "reponse_correcte": "Ajouter 10"
+            },
+            {
+              "numero": 11,
+              "enonce": "Combien de dizaines y a-t-il au TOTAL dans le nombre 200 ?",
+              "options": ["2", "20", "200", "0"],
+              "reponse_correcte": "20"
+            },
+            {
+              "numero": 12,
+              "enonce": "Quel est le prochain nombre dans cette suite : 25, 50, 75, 100, ____",
+              "options": ["105", "110", "125", "150"],
+              "reponse_correcte": "125"
+            },
+            {
+              "numero": 13,
+              "enonce": "Quel est le plus petit nombre que tu peux former avec les chiffres 4, 0 et 9 ?",
+              "options": ["049", "409", "490", "904"],
+              "reponse_correcte": "409"
+            },
+            {
+              "numero": 14,
+              "enonce": "Quelle est la valeur du chiffre 0 dans le nombre 502 ?",
+              "options": ["0", "10", "100", "Aucune"],
+              "reponse_correcte": "0"
+            },
+            {
+              "numero": 15,
+              "enonce": "Trouve le terme manquant : 2, 4, 8, 16, ____",
+              "options": ["20", "24", "32", "18"],
+              "reponse_correcte": "32"
+            },
+            {
+              "numero": 16,
+              "enonce": "Si je compte à rebours par 50 en partant de 500, quel est le nombre suivant ?",
+              "options": ["550", "400", "450", "495"],
+              "reponse_correcte": "450"
+            },
+            {
+              "numero": 17,
+              "enonce": "Lequel de ces nombres possède un 3 à la position des unités ?",
+              "options": ["352", "532", "523", "330"],
+              "reponse_correcte": "523"
+            },
+            {
+              "numero": 18,
+              "enonce": "Arrondis 849 à la centaine la plus proche.",
+              "options": ["800", "850", "900", "1000"],
+              "reponse_correcte": "800"
+            },
+            {
+              "numero": 19,
+              "enonce": "J'ai 10 unités, 10 dizaines et 1 centaine. Qui suis-je ?",
+              "options": ["110", "210", "121", "300"],
+              "reponse_correcte": "210"
+            },
+            {
+              "numero": 20,
+              "enonce": "Dans la suite 1, 3, 6, 10, 15... quel est le prochain nombre ?",
+              "options": ["20", "21", "25", "19"],
+              "reponse_correcte": "21"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
