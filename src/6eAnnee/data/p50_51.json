@@ -1,0 +1,211 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Arrondir les nombres décimaux",
+    "en": "Rounding Decimal Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p50-ex1a",
+      "page": 50,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Arrondis à l'unité près : 3,06", "en": "Round to the nearest unit: 3.06" },
+      "type": "select",
+      "options": [{ "fr": "3", "en": "3" }, { "fr": "4", "en": "4" }],
+      "reponse_attendue": { "fr": "3", "en": "3" },
+      "aide": { "fr": "Regarde le chiffre des dixièmes (0). Comme c'est moins de 5, l'unité reste la même.", "en": "Look at the tenths digit (0). Since it's less than 5, the unit stays the same." }
+    },
+    {
+      "id": "p50-ex1b",
+      "page": 50,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Arrondis à l'unité près : 7,7", "en": "Round to the nearest unit: 7.7" },
+      "type": "select",
+      "options": [{ "fr": "7", "en": "7" }, { "fr": "8", "en": "8" }],
+      "reponse_attendue": { "fr": "8", "en": "8" },
+      "aide": { "fr": "Le chiffre des dixièmes est 7 (5 ou plus), donc on arrondit à l'unité supérieure.", "en": "The tenths digit is 7 (5 or more), so round up to the next unit." }
+    },
+    {
+      "id": "p50-ex1c",
+      "page": 50,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Arrondis à l'unité près : 14,135", "en": "Round to the nearest unit: 14.135" },
+      "type": "select",
+      "options": [{ "fr": "14", "en": "14" }, { "fr": "15", "en": "15" }],
+      "reponse_attendue": { "fr": "14", "en": "14" }
+    },
+    {
+      "id": "p50-ex1d",
+      "page": 50,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Arrondis à l'unité près : 0,973", "en": "Round to the nearest unit: 0.973" },
+      "type": "select",
+      "options": [{ "fr": "0", "en": "0" }, { "fr": "1", "en": "1" }],
+      "reponse_attendue": { "fr": "1", "en": "1" }
+    },
+    {
+      "id": "p50-ex2a",
+      "page": 50,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": { "fr": "Arrondis au dixième près : 2,25", "en": "Round to the nearest tenth: 2.25" },
+      "type": "select",
+      "options": [{ "fr": "2,2", "en": "2.2" }, { "fr": "2,3", "en": "2.3" }],
+      "reponse_attendue": { "fr": "2,3", "en": "2.3" },
+      "aide": { "fr": "Regarde le chiffre des centièmes (5). Comme c'est 5, on arrondit au dixième supérieur.", "en": "Look at the hundredths digit (5). Since it's 5, round up to the next tenth." }
+    },
+    {
+      "id": "p50-ex2b",
+      "page": 50,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": { "fr": "Arrondis au dixième près : 5,862", "en": "Round to the nearest tenth: 5.862" },
+      "type": "select",
+      "options": [{ "fr": "5,8", "en": "5.8" }, { "fr": "5,9", "en": "5.9" }],
+      "reponse_attendue": { "fr": "5,9", "en": "5.9" }
+    },
+    {
+      "id": "p50-ex2c",
+      "page": 50,
+      "exercice_num": 2,
+      "sous_question": "c",
+      "consigne": { "fr": "Arrondis au dixième près : 3,789", "en": "Round to the nearest tenth: 3.789" },
+      "type": "select",
+      "options": [{ "fr": "3,7", "en": "3.7" }, { "fr": "3,8", "en": "3.8" }],
+      "reponse_attendue": { "fr": "3,8", "en": "3.8" }
+    },
+    {
+      "id": "p50-ex2d",
+      "page": 50,
+      "exercice_num": 2,
+      "sous_question": "d",
+      "consigne": { "fr": "Arrondis au dixième près : 1,173", "en": "Round to the nearest tenth: 1.173" },
+      "type": "select",
+      "options": [{ "fr": "1,1", "en": "1.1" }, { "fr": "1,2", "en": "1.2" }],
+      "reponse_attendue": { "fr": "1,2", "en": "1.2" }
+    },
+    {
+      "id": "p50-ex3a",
+      "page": 50,
+      "exercice_num": 3,
+      "sous_question": "a",
+      "consigne": { "fr": "Arrondis au centième près : 0,738", "en": "Round to the nearest hundredth: 0.738" },
+      "type": "select",
+      "options": [{ "fr": "0,73", "en": "0.73" }, { "fr": "0,74", "en": "0.74" }],
+      "reponse_attendue": { "fr": "0,74", "en": "0.74" }
+    },
+    {
+      "id": "p50-ex3b",
+      "page": 50,
+      "exercice_num": 3,
+      "sous_question": "b",
+      "consigne": { "fr": "Arrondis au centième près : 4,159", "en": "Round to the nearest hundredth: 4.159" },
+      "type": "select",
+      "options": [{ "fr": "4,15", "en": "4.15" }, { "fr": "4,16", "en": "4.16" }],
+      "reponse_attendue": { "fr": "4,16", "en": "4.16" }
+    },
+    {
+      "id": "p50-ex3c",
+      "page": 50,
+      "exercice_num": 3,
+      "sous_question": "c",
+      "consigne": { "fr": "Arrondis au centième près : 2,235", "en": "Round to the nearest hundredth: 2.235" },
+      "type": "select",
+      "options": [{ "fr": "2,23", "en": "2.23" }, { "fr": "2,24", "en": "2.24" }],
+      "reponse_attendue": { "fr": "2,24", "en": "2.24" }
+    },
+    {
+      "id": "p50-ex3d",
+      "page": 50,
+      "exercice_num": 3,
+      "sous_question": "d",
+      "consigne": { "fr": "Arrondis au centième près : 9,141", "en": "Round to the nearest hundredth: 9.141" },
+      "type": "select",
+      "options": [{ "fr": "9,14", "en": "9.14" }, { "fr": "9,15", "en": "9.15" }],
+      "reponse_attendue": { "fr": "9,14", "en": "9.14" }
+    },
+    {
+      "id": "p51-ex2a",
+      "page": 51,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": { "fr": "Arrondis 5,678 à l'unité, au dixième et au centième près :", "en": "Round 5.678 to the nearest unit, tenth, and hundredth:" },
+      "type": "select",
+      "options": [
+        { "fr": "6 ; 5,7 ; 5,68", "en": "6; 5.7; 5.68" },
+        { "fr": "5 ; 5,6 ; 5,67", "en": "5; 5.6; 5.67" },
+        { "fr": "6 ; 5,6 ; 5,68", "en": "6; 5.6; 5.68" }
+      ],
+      "reponse_attendue": { "fr": "6 ; 5,7 ; 5,68", "en": "6; 5.7; 5.68" },
+      "aide": { "fr": "Pour le dixième : le 7 fait monter le 6 à 7. Pour le centième : le 8 fait monter le 7 à 8.", "en": "For the tenth: the 7 rounds the 6 up to 7. For the hundredth: the 8 rounds the 7 up to 8." }
+    },
+    {
+      "id": "p51-ex2b",
+      "page": 51,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": { "fr": "Arrondis 0,437 à l'unité, au dixième et au centième près :", "en": "Round 0.437 to the nearest unit, tenth, and hundredth:" },
+      "type": "select",
+      "options": [
+        { "fr": "0 ; 0,4 ; 0,44", "en": "0; 0.4; 0.44" },
+        { "fr": "1 ; 0,4 ; 0,43", "en": "1; 0.4; 0.43" },
+        { "fr": "0 ; 0,5 ; 0,44", "en": "0; 0.5; 0.44" }
+      ],
+      "reponse_attendue": { "fr": "0 ; 0,4 ; 0,44", "en": "0; 0.4; 0.44" }
+    },
+    {
+      "id": "p51-ex2c",
+      "page": 51,
+      "exercice_num": 2,
+      "sous_question": "c",
+      "consigne": { "fr": "Arrondis 2,435 à l'unité, au dixième et au centième près :", "en": "Round 2.435 to the nearest unit, tenth, and hundredth:" },
+      "type": "select",
+      "options": [
+        { "fr": "2 ; 2,4 ; 2,44", "en": "2; 2.4; 2.44" },
+        { "fr": "3 ; 2,5 ; 2,44", "en": "3; 2.5; 2.44" },
+        { "fr": "2 ; 2,4 ; 2,43", "en": "2; 2.4; 2.43" }
+      ],
+      "reponse_attendue": { "fr": "2 ; 2,4 ; 2,44", "en": "2; 2.4; 2.44" }
+    },
+    {
+      "id": "p51-ex2d",
+      "page": 51,
+      "exercice_num": 2,
+      "sous_question": "d",
+      "consigne": { "fr": "Arrondis 7,103 à l'unité, au dixième et au centième près :", "en": "Round 7.103 to the nearest unit, tenth, and hundredth:" },
+      "type": "select",
+      "options": [
+        { "fr": "7 ; 7,1 ; 7,10", "en": "7; 7.1; 7.10" },
+        { "fr": "7 ; 7,2 ; 7,11", "en": "7; 7.2; 7.11" },
+        { "fr": "8 ; 7,1 ; 7,10", "en": "8; 7.1; 7.10" }
+      ],
+      "reponse_attendue": { "fr": "7 ; 7,1 ; 7,10", "en": "7; 7.1; 7.10" }
+    },
+    {
+      "id": "p51-vaplusloin",
+      "page": 51,
+      "exercice_num": "Va plus loin",
+      "sous_question": null,
+      "consigne": {
+        "fr": "Trouve un nombre avec les chiffres 0, 2, 5 et 8 qui s'arrondit vers le HAUT (unité et centième) mais vers le BAS (dixième) :",
+        "en": "Find a number using digits 0, 2, 5, and 8 that rounds UP (unit and hundredth) but rounds DOWN (tenth):"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "0,528", "en": "0.528" },
+        { "fr": "8,520", "en": "8.520" },
+        { "fr": "5,820", "en": "5.820" },
+        { "fr": "2,058", "en": "2.058" }
+      ],
+      "reponse_attendue": { "fr": "0,528", "en": "0.528" },
+      "aide": {
+        "fr": "Pour 0,528 : Unité (0,5 -> 1 UP), Dixième (0,52 -> 0,5 DOWN), Centième (0,528 -> 0,53 UP).",
+        "en": "For 0.528: Unit (0.5 -> 1 UP), Tenth (0.52 -> 0.5 DOWN), Hundredth (0.528 -> 0.53 UP)."
+      }
+    }
+  ]
+}

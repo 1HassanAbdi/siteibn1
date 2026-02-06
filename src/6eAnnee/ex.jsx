@@ -6,12 +6,24 @@ import {
 } from 'lucide-react';
 
 // LISTE DE TOUTES VOS MISSIONS (Ajoute tes 50 fichiers ici au fur et à mesure)
+// LISTE DE TOUTES VOS MISSIONS ORGANISÉE PAR PAGES
 const ALL_MISSIONS = [
   { id: "p12_13", module: 2, title: { fr: "Le Million", en: "The Million" }, pages: "12-13" },
   { id: "p14_15", module: 2, title: { fr: "Grands Nombres", en: "Large Numbers" }, pages: "14-15" },
   { id: "p16_17", module: 2, title: { fr: "Comparer les Nombres", en: "Comparing Numbers" }, pages: "16-17" },
   { id: "p18_19", module: 2, title: { fr: "Les Multiples", en: "Multiples" }, pages: "18-19" },
-  // ... tu peux en ajouter 50 sans que la page ne devienne moche
+  
+  // Sections suivantes (à compléter avec vos prochaines photos)
+  { id: "p20_21", module: 3, title: { fr: "Facteurs et Divisibilité", en: "Factors and Divisibility" }, pages: "20-21" },
+  { id: "p22_23", module: 3, title: { fr: "Nombres Premiers et Composés", en: "Prime and Composite Numbers" }, pages: "22-23" },
+  { id: "p24_25", module: 3, title: { fr: "La Puissance et les Exposants", en: "Power and Exponents" }, pages: "24-25" },
+
+  // Section des nombres décimaux
+  { id: "p46_47", module: 4, title: { fr: "Nombres décimaux et millièmes", en: "Decimal Numbers and Thousandths" }, pages: "46-47" },
+  { id: "p48_49", module: 4, title: { fr: "Comparer et ordonner les décimaux", en: "Comparing and Ordering Decimals" }, pages: "48-49" },
+  { id: "p50_51", module: 4, title: { fr: "Arrondir les nombres décimaux", en: "Rounding Decimal Numbers" }, pages: "50-51" },
+   { id: "p52_53", module: 4, title: { fr: "Estimation de sommes et différences", en: "Estimating Sums and Differences" }, pages: "52-53" },
+  { id: "p54_55", module: 4, title: { fr: "Addition et soustraction de décimaux", en: "Adding and Subtracting Decimals" }, pages: "54-55" }
 ];
 
 const uiTranslations = {

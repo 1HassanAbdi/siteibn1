@@ -1,0 +1,192 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Estimation de sommes et de différences",
+    "en": "Estimating Sums and Differences"
+  },
+  "exercices": [
+    {
+      "id": "p52-ex1a",
+      "page": 52,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Estime la somme : 2,54 + 7,16", "en": "Estimate the sum: 2.54 + 7.16" },
+      "type": "select",
+      "options": [
+        { "fr": "10", "en": "10" },
+        { "fr": "9", "en": "9" },
+        { "fr": "11", "en": "11" },
+        { "fr": "12", "en": "12" }
+      ],
+      "reponse_attendue": { "fr": "10", "en": "10" },
+      "aide": { "fr": "Arrondis à l'unité la plus proche : 3 + 7 = 10.", "en": "Round to the nearest unit: 3 + 7 = 10." }
+    },
+    {
+      "id": "p52-ex1b",
+      "page": 52,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Estime la somme : 4,197 + 3,864", "en": "Estimate the sum: 4.197 + 3.864" },
+      "type": "select",
+      "options": [
+        { "fr": "8", "en": "8" },
+        { "fr": "7", "en": "7" },
+        { "fr": "9", "en": "9" },
+        { "fr": "10", "en": "10" }
+      ],
+      "reponse_attendue": { "fr": "8", "en": "8" },
+      "aide": { "fr": "4 + 4 = 8.", "en": "4 + 4 = 8." }
+    },
+    {
+      "id": "p52-ex1c",
+      "page": 52,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Estime la somme : 0,765 + 1,295", "en": "Estimate the sum: 0.765 + 1.295" },
+      "type": "select",
+      "options": [
+        { "fr": "2", "en": "2" },
+        { "fr": "1", "en": "1" },
+        { "fr": "3", "en": "3" }
+      ],
+      "reponse_attendue": { "fr": "2", "en": "2" },
+      "aide": { "fr": "1 + 1 = 2.", "en": "1 + 1 = 2." }
+    },
+    {
+      "id": "p52-ex1d",
+      "page": 52,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Estime la somme : 5,765 + 3,189", "en": "Estimate the sum: 5.765 + 3.189" },
+      "type": "select",
+      "options": [
+        { "fr": "9", "en": "9" },
+        { "fr": "8", "en": "8" },
+        { "fr": "10", "en": "10" }
+      ],
+      "reponse_attendue": { "fr": "9", "en": "9" },
+      "aide": { "fr": "6 + 3 = 9.", "en": "6 + 3 = 9." }
+    },
+    {
+      "id": "p52-ex1e",
+      "page": 52,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": { "fr": "Estime la somme : 0,473 + 1,697", "en": "Estimate the sum: 0.473 + 1.697" },
+      "type": "select",
+      "options": [
+        { "fr": "2,2", "en": "2.2" },
+        { "fr": "1", "en": "1" },
+        { "fr": "3", "en": "3" }
+      ],
+      "reponse_attendue": { "fr": "2,2", "en": "2.2" },
+      "aide": { "fr": "Utilise des nombres repères : 0,5 + 1,7 = 2,2.", "en": "Use benchmark numbers: 0.5 + 1.7 = 2.2." }
+    },
+    {
+      "id": "p52-ex1f",
+      "page": 52,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": { "fr": "Estime la somme : 2,008 + 3,801", "en": "Estimate the sum: 2.008 + 3.801" },
+      "type": "select",
+      "options": [
+        { "fr": "6", "en": "6" },
+        { "fr": "5", "en": "5" },
+        { "fr": "7", "en": "7" }
+      ],
+      "reponse_attendue": { "fr": "6", "en": "6" }
+    },
+    {
+      "id": "p52-ex2a",
+      "page": 52,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": { "fr": "Estime la différence : 7,546 - 3,518", "en": "Estimate the difference: 7.546 - 3.518" },
+      "type": "select",
+      "options": [
+        { "fr": "4", "en": "4" },
+        { "fr": "3", "en": "3" },
+        { "fr": "5", "en": "5" }
+      ],
+      "reponse_attendue": { "fr": "4", "en": "4" },
+      "aide": { "fr": "8 - 4 = 4.", "en": "8 - 4 = 4." }
+    },
+    {
+      "id": "p52-ex2b",
+      "page": 52,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": { "fr": "Estime la différence : 2,476 - 1,555", "en": "Estimate the difference: 2.476 - 1.555" },
+      "type": "select",
+      "options": [
+        { "fr": "0,9", "en": "0.9" },
+        { "fr": "1", "en": "1" },
+        { "fr": "1,5", "en": "1.5" }
+      ],
+      "reponse_attendue": { "fr": "0,9", "en": "0.9" },
+      "aide": { "fr": "2,4 - 1,5 = 0,9 ou 2,5 - 1,5 = 1.", "en": "2.4 - 1.5 = 0.9 or 2.5 - 1.5 = 1." }
+    },
+    {
+      "id": "p52-ex2f",
+      "page": 52,
+      "exercice_num": 2,
+      "sous_question": "f",
+      "consigne": { "fr": "Estime la différence : 12,094 - 8,259", "en": "Estimate the difference: 12.094 - 8.259" },
+      "type": "select",
+      "options": [
+        { "fr": "4", "en": "4" },
+        { "fr": "3", "en": "3" },
+        { "fr": "5", "en": "5" }
+      ],
+      "reponse_attendue": { "fr": "4", "en": "4" },
+      "aide": { "fr": "12 - 8 = 4.", "en": "12 - 8 = 4." }
+    },
+    {
+      "id": "p53-ex1a",
+      "page": 53,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Estime : 27,6 + 49,23", "en": "Estimate: 27.6 + 49.23" },
+      "type": "select",
+      "options": [
+        { "fr": "77", "en": "77" },
+        { "fr": "80", "en": "80" },
+        { "fr": "70", "en": "70" }
+      ],
+      "reponse_attendue": { "fr": "77", "en": "77" },
+      "aide": { "fr": "28 + 49 = 77.", "en": "28 + 49 = 77." }
+    },
+    {
+      "id": "p53-ex2a",
+      "page": 53,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Joline achète des patins (79,95 $) et un chandail (45,25 $). Estime le total.",
+        "en": "Joline buys skates ($79.95) and a sweater ($45.25). Estimate the total."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "125 $", "en": "$125" },
+        { "fr": "130 $", "en": "$130" },
+        { "fr": "120 $", "en": "$120" }
+      ],
+      "reponse_attendue": { "fr": "125 $", "en": "$125" },
+      "aide": { "fr": "80 + 45 = 125.", "en": "80 + 45 = 125." }
+    },
+    {
+      "id": "p53-ex4a",
+      "page": 53,
+      "exercice_num": 4,
+      "sous_question": "a",
+      "consigne": { "fr": "Meilleure estimation pour 3,549 + 6,831 :", "en": "Best estimation for 3.549 + 6.831:" },
+      "type": "select",
+      "options": [
+        { "fr": "10", "en": "10" },
+        { "fr": "11", "en": "11" }
+      ],
+      "reponse_attendue": { "fr": "11", "en": "11" },
+      "aide": { "fr": "4 + 7 = 11.", "en": "4 + 7 = 11." }
+    }
+  ]
+}

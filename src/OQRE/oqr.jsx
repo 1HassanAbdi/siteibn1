@@ -48,7 +48,7 @@ const OQREHub = () => {
           <div className="bg-blue-600 p-2 rounded-xl text-white shadow-lg rotate-3">
             <GraduationCap size={28} />
           </div>
-          <h1 className="text-2xl font-black italic tracking-tighter text-blue-900">OQRE PORTAL 2024</h1>
+          <h1 className="text-2xl font-black italic tracking-tighter text-blue-900">OQRE PORTAL 2026</h1>
         </div>
         <div className="hidden md:flex gap-4">
             <button onClick={() => setView('hub')} className="text-sm font-bold text-slate-500 hover:text-blue-600">ACCUEIL</button>
@@ -175,7 +175,7 @@ const OQREHub = () => {
           </div>
           <div className="flex gap-4">
              <div className="h-2 w-2 rounded-full bg-green-500"></div>
-             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Système prêt pour 2024-2025</span>
+             <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Système prêt pour 2025-2026</span>
           </div>
         </div>
       </footer>

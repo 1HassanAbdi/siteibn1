@@ -1,0 +1,133 @@
+{
+  "module": 2,
+  "titre": {
+    "fr": "Comparer et ordonner les grands nombres",
+    "en": "Comparing and Ordering Large Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p16-ex1a",
+      "page": 16,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Compare les nombres à l'aide du symbole > ou < : 3 872 423 [ ] 7 001 326",
+        "en": "Compare the numbers using the symbol > or < : 3,872,423 [ ] 7,001,326"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "<", "en": "<" },
+        { "fr": ">", "en": ">" }
+      ],
+      "reponse_attendue": { "fr": "<", "en": "<" },
+      "aide": {
+        "fr": "Regarde le chiffre des millions : 3 est plus petit que 7.",
+        "en": "Look at the millions digit: 3 is smaller than 7."
+      }
+    },
+    {
+      "id": "p16-ex1d",
+      "page": 16,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": {
+        "fr": "Compare les nombres à l'aide du symbole > ou < : 4 673 426 004 [ ] 396 612 808",
+        "en": "Compare the numbers using the symbol > or < : 4,673,426,004 [ ] 396,612,808"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "<", "en": "<" },
+        { "fr": ">", "en": ">" }
+      ],
+      "reponse_attendue": { "fr": ">", "en": ">" },
+      "aide": {
+        "fr": "Compte le nombre de chiffres. Le premier nombre a 10 chiffres (milliards) et le deuxième en a 9 (millions).",
+        "en": "Count the number of digits. The first number has 10 digits (billions) and the second has 9 (millions)."
+      }
+    },
+    {
+      "id": "p16-ex2",
+      "page": 16,
+      "exercice_num": 2,
+      "sous_question": null,
+      "consigne": {
+        "fr": "Place ces nombres par ordre croissant : 1 004 672, 1 365 491, 955 672",
+        "en": "Place these numbers in increasing order: 1,004,672, 1,365,491, 955,672"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "955 672 < 1 004 672 < 1 365 491", "en": "955,672 < 1,004,672 < 1,365,491" },
+        { "fr": "1 365 491 < 1 004 672 < 955 672", "en": "1,365,491 < 1,004,672 < 955,672" },
+        { "fr": "955 672 < 1 365 491 < 1 004 672", "en": "955,672 < 1,365,491 < 1,004,672" }
+      ],
+      "reponse_attendue": { "fr": "955 672 < 1 004 672 < 1 365 491", "en": "955,672 < 1,004,672 < 1,365,491" },
+      "aide": {
+        "fr": "L'ordre croissant va du plus petit au plus grand.",
+        "en": "Increasing order goes from smallest to largest."
+      }
+    },
+    {
+      "id": "p16-ex3",
+      "page": 16,
+      "exercice_num": 3,
+      "sous_question": null,
+      "consigne": {
+        "fr": "Place ces nombres par ordre décroissant : 258 064 371, 258 153 427, 1 285 684 373",
+        "en": "Place these numbers in decreasing order: 258,064,371, 258,153,427, 1,285,684,373"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1 285 684 373 > 258 153 427 > 258 064 371", "en": "1,285,684,373 > 258,153,427 > 258,064,371" },
+        { "fr": "258 064 371 > 258 153 427 > 1 285 684 373", "en": "258,064,371 > 258,153,427 > 1,285,684,373" },
+        { "fr": "1 285 684 373 > 258 064 371 > 258 153 427", "en": "1,285,684,373 > 258,064,371 > 258,153,427" }
+      ],
+      "reponse_attendue": { "fr": "1 285 684 373 > 258 153 427 > 258 064 371", "en": "1,285,684,373 > 258,153,427 > 258,064,371" },
+      "aide": {
+        "fr": "L'ordre décroissant va du plus grand au plus petit.",
+        "en": "Decreasing order goes from largest to smallest."
+      }
+    },
+    {
+      "id": "p17-ex-mediane-b",
+      "page": 17,
+      "exercice_num": "Médiane",
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Quelle est la médiane de cet ensemble : 5 207 704 ; 5 207 405 ; 5 801 409 ?",
+        "en": "What is the median of this set: 5,207,704; 5,207,405; 5,801,409?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "5 207 704", "en": "5,207,704" },
+        { "fr": "5 207 405", "en": "5,207,405" },
+        { "fr": "5 801 409", "en": "5,801,409" }
+      ],
+      "reponse_attendue": { "fr": "5 207 704", "en": "5,207,704" },
+      "aide": {
+        "fr": "Place d'abord les nombres en ordre : 5 207 405 < 5 207 704 < 5 801 409. La médiane est celui du milieu.",
+        "en": "First place the numbers in order: 5,207,405 < 5,207,704 < 5,801,409. The median is the one in the middle."
+      }
+    },
+    {
+      "id": "p17-ex-mediane-c",
+      "page": 17,
+      "exercice_num": "Médiane",
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Quelle est la médiane de cet ensemble : 7 685 391 ; 7 685 283 ; 7 685 299 ?",
+        "en": "What is the median of this set: 7,685,391; 7,685,283; 7,685,299?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "7 685 299", "en": "7,685,299" },
+        { "fr": "7 685 391", "en": "7,685,391" },
+        { "fr": "7 685 283", "en": "7,685,283" }
+      ],
+      "reponse_attendue": { "fr": "7 685 299", "en": "7,685,299" },
+      "aide": {
+        "fr": "Ordonne les nombres du plus petit au plus grand pour trouver la valeur centrale.",
+        "en": "Order the numbers from smallest to largest to find the central value."
+      }
+    }
+  ]
+}

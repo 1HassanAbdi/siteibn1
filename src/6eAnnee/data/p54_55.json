@@ -1,0 +1,81 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Opérations sur les nombres décimaux",
+    "en": "Operations on Decimal Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p54-ex1-a", "page": 54, "exercice_num": 1, "sous_question": "a",
+      "consigne": { "fr": "Calcule : 4,521 + 3,097", "en": "Calculate: 4.521 + 3.097" },
+      "type": "select", "options": [{ "fr": "7,618", "en": "7.618" }, { "fr": "7,518", "en": "7.518" }, { "fr": "7,628", "en": "7.628" }],
+      "reponse_attendue": { "fr": "7,618", "en": "7.618" }
+    },
+    {
+      "id": "p54-ex1-b", "page": 54, "exercice_num": 1, "sous_question": "b",
+      "consigne": { "fr": "Calcule : 2,168 + 0,948", "en": "Calculate: 2.168 + 0.948" },
+      "type": "select", "options": [{ "fr": "3,116", "en": "3.116" }, { "fr": "3,016", "en": "3.016" }, { "fr": "3,126", "en": "3.126" }],
+      "reponse_attendue": { "fr": "3,116", "en": "3.116" }
+    },
+    {
+      "id": "p54-ex1-c", "page": 54, "exercice_num": 1, "sous_question": "c",
+      "consigne": { "fr": "Calcule : 7,169 + 8,473", "en": "Calculate: 7.169 + 8.473" },
+      "type": "select", "options": [{ "fr": "15,642", "en": "15.642" }, { "fr": "15,542", "en": "15.542" }, { "fr": "16,642", "en": "16.642" }],
+      "reponse_attendue": { "fr": "15,642", "en": "15.642" }
+    },
+    {
+      "id": "p54-ex1-d", "page": 54, "exercice_num": 1, "sous_question": "d",
+      "consigne": { "fr": "Calcule : 6,704 + 0,491", "en": "Calculate: 6.704 + 0.491" },
+      "type": "select", "options": [{ "fr": "7,195", "en": "7.195" }, { "fr": "7,295", "en": "7.295" }, { "fr": "6,195", "en": "6.195" }],
+      "reponse_attendue": { "fr": "7,195", "en": "7.195" }
+    },
+    {
+      "id": "p54-ex2-a", "page": 54, "exercice_num": 2, "sous_question": "a",
+      "consigne": { "fr": "Calcule : 9,732 - 0,489", "en": "Calculate: 9.732 - 0.489" },
+      "type": "select", "options": [{ "fr": "9,243", "en": "9.243" }, { "fr": "9,343", "en": "9.343" }, { "fr": "8,243", "en": "8.243" }],
+      "reponse_attendue": { "fr": "9,243", "en": "9.243" }
+    },
+    {
+      "id": "p54-ex2-b", "page": 54, "exercice_num": 2, "sous_question": "b",
+      "consigne": { "fr": "Calcule : 6,371 - 1,098", "en": "Calculate: 6.371 - 1.098" },
+      "type": "select", "options": [{ "fr": "5,273", "en": "5.273" }, { "fr": "5,373", "en": "5.373" }, { "fr": "4,273", "en": "4.273" }],
+      "reponse_attendue": { "fr": "5,273", "en": "5.273" }
+    },
+    {
+      "id": "p54-ex2-c", "page": 54, "exercice_num": 2, "sous_question": "c",
+      "consigne": { "fr": "Calcule : 4,152 - 4,097", "en": "Calculate: 4.152 - 4.097" },
+      "type": "select", "options": [{ "fr": "0,055", "en": "0.055" }, { "fr": "0,55", "en": "0.55" }, { "fr": "0,065", "en": "0.065" }],
+      "reponse_attendue": { "fr": "0,055", "en": "0.055" }
+    },
+    {
+      "id": "p54-ex2-d", "page": 54, "exercice_num": 2, "sous_question": "d",
+      "consigne": { "fr": "Calcule : 3,652 - 1,984", "en": "Calculate: 3.652 - 1.984" },
+      "type": "select", "options": [{ "fr": "1,668", "en": "1.668" }, { "fr": "1,568", "en": "1.568" }, { "fr": "2,668", "en": "2.668" }],
+      "reponse_attendue": { "fr": "1,668", "en": "1.668" }
+    },
+    {
+      "id": "p55-ex1-a", "page": 55, "exercice_num": 1, "sous_question": "a",
+      "consigne": { "fr": "Effectue : 4,157 + 6,346", "en": "Calculate: 4.157 + 6.346" },
+      "type": "select", "options": [{ "fr": "10,503", "en": "10.503" }, { "fr": "10,403", "en": "10.403" }],
+      "reponse_attendue": { "fr": "10,503", "en": "10.503" }
+    },
+    {
+      "id": "p55-ex2-a", "page": 55, "exercice_num": 2, "sous_question": "a",
+      "consigne": { "fr": "Effectue : 7,243 - 2,807", "en": "Calculate: 7.243 - 2.807" },
+      "type": "select", "options": [{ "fr": "4,436", "en": "4.436" }, { "fr": "5,436", "en": "5.436" }],
+      "reponse_attendue": { "fr": "4,436", "en": "4.436" }
+    },
+    {
+      "id": "p55-ex4-a", "page": 55, "exercice_num": 4, "sous_question": "a",
+      "consigne": { "fr": "Distance totale de Salvatore (2,457 km + 3,169 km) :", "en": "Salvatore's total distance (2.457 km + 3.169 km):" },
+      "type": "select", "options": [{ "fr": "5,626 km", "en": "5.626 km" }, { "fr": "5,526 km", "en": "5.526 km" }],
+      "reponse_attendue": { "fr": "5,626 km", "en": "5.626 km" }
+    },
+    {
+      "id": "p55-ex4-b", "page": 55, "exercice_num": 4, "sous_question": "b",
+      "consigne": { "fr": "Différence de distance (3,169 km - 2,457 km) :", "en": "Distance difference (3.169 km - 2.457 km):" },
+      "type": "select", "options": [{ "fr": "0,712 km", "en": "0.712 km" }, { "fr": "0,612 km", "en": "0.612 km" }],
+      "reponse_attendue": { "fr": "0,712 km", "en": "0.712 km" }
+    }
+  ]
+}

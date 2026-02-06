@@ -1,0 +1,114 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Comparer et ordonner les décimaux",
+    "en": "Comparing and Ordering Decimals"
+  },
+  "exercices": [
+    {
+      "id": "p48-ex1a",
+      "page": 48,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Rends l'énoncé vrai. Utilise >, < ou = : 0,457 ___ 0,406",
+        "en": "Make the statement true. Use >, < or = : 0.457 ___ 0.406"
+      },
+      "type": "select",
+      "options": [
+        { "fr": ">", "en": ">" },
+        { "fr": "<", "en": "<" },
+        { "fr": "=", "en": "=" }
+      ],
+      "reponse_attendue": { "fr": ">", "en": ">" },
+      "aide": {
+        "fr": "Compare les chiffres position par position. Au centièmes, 5 est plus grand que 0.",
+        "en": "Compare the digits position by position. In the hundredths, 5 is greater than 0."
+      }
+    },
+    {
+      "id": "p48-ex1b",
+      "page": 48,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Rends l'énoncé vrai. Utilise >, < ou = : 17,63 ___ 17,630",
+        "en": "Make the statement true. Use >, < or = : 17.63 ___ 17.630"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "=", "en": "=" },
+        { "fr": ">", "en": ">" },
+        { "fr": "<", "en": "<" }
+      ],
+      "reponse_attendue": { "fr": "=", "en": "=" },
+      "aide": {
+        "fr": "L'ajout d'un zéro à la fin d'un nombre décimal ne modifie pas sa valeur.",
+        "en": "Adding a zero at the end of a decimal number does not change its value."
+      }
+    },
+    {
+      "id": "p48-ex1c",
+      "page": 48,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Rends l'énoncé vrai. Utilise >, < ou = : 5,976 ___ 6,0",
+        "en": "Make the statement true. Use >, < or = : 5.976 ___ 6.0"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "<", "en": "<" },
+        { "fr": ">", "en": ">" },
+        { "fr": "=", "en": "=" }
+      ],
+      "reponse_attendue": { "fr": "<", "en": "<" },
+      "aide": {
+        "fr": "Regarde d'abord la partie entière. 5 unités est plus petit que 6 unités.",
+        "en": "First look at the whole number part. 5 units is smaller than 6 units."
+      }
+    },
+    {
+      "id": "p48-ex2a",
+      "page": 48,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Place ces nombres par ordre décroissant : 0,36 ; 0,371 ; 0,329",
+        "en": "Place these numbers in decreasing order: 0.36; 0.371; 0.329"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "0,371 ; 0,36 ; 0,329", "en": "0.371; 0.36; 0.329" },
+        { "fr": "0,329 ; 0,36 ; 0,371", "en": "0.329; 0.36; 0.371" },
+        { "fr": "0,371 ; 0,329 ; 0,36", "en": "0.371; 0.329; 0.36" }
+      ],
+      "reponse_attendue": { "fr": "0,371 ; 0,36 ; 0,329", "en": "0.371; 0.36; 0.329" },
+      "aide": {
+        "fr": "Ajoute des zéros imaginaires pour avoir le même nombre de chiffres : 0,360 ; 0,371 ; 0,329.",
+        "en": "Add imaginary zeros to have the same number of digits: 0.360; 0.371; 0.329."
+      }
+    },
+    {
+      "id": "p48-ex2b",
+      "page": 48,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Place ces nombres par ordre décroissant : 2,76 ; 5,3 ; 2,485",
+        "en": "Place these numbers in decreasing order: 2.76; 5.3; 2.485"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "5,3 ; 2,76 ; 2,485", "en": "5.3; 2.76; 2.485" },
+        { "fr": "5,3 ; 2,485 ; 2,76", "en": "5.3; 2.485; 2.76" },
+        { "fr": "2,76 ; 5,3 ; 2,485", "en": "2.76; 5.3; 2.485" }
+      ],
+      "reponse_attendue": { "fr": "5,3 ; 2,76 ; 2,485", "en": "5.3; 2.76; 2.485" },
+      "aide": {
+        "fr": "Le plus grand nombre est celui qui a la plus grande partie entière (5,3).",
+        "en": "The largest number is the one with the largest whole part (5.3)."
+      }
+    }
+  ]
+}

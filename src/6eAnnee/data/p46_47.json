@@ -1,0 +1,141 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Les nombres décimaux et les millièmes",
+    "en": "Decimal Numbers and Thousandths"
+  },
+  "exercices": [
+    {
+      "id": "p46-ex1a",
+      "page": 46,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris le nombre sous forme décimale : 7/100",
+        "en": "Write the number in decimal form: 7/100"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "0,07", "en": "0.07" },
+        { "fr": "0,7", "en": "0.7" },
+        { "fr": "0,007", "en": "0.007" },
+        { "fr": "7,00", "en": "7.00" }
+      ],
+      "reponse_attendue": { "fr": "0,07", "en": "0.07" },
+      "aide": {
+        "fr": "Le dénominateur 100 signifie 'centièmes'. Il doit y avoir deux chiffres après la virgule.",
+        "en": "The denominator 100 means 'hundredths'. There must be two digits after the decimal point."
+      }
+    },
+    {
+      "id": "p46-ex1b",
+      "page": 46,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Écris le nombre sous forme décimale : 2 et 14/1000",
+        "en": "Write the number in decimal form: 2 and 14/1000"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2,014", "en": "2.014" },
+        { "fr": "2,14", "en": "2.14" },
+        { "fr": "2,0014", "en": "2.0014" },
+        { "fr": "214,000", "en": "214,000" }
+      ],
+      "reponse_attendue": { "fr": "2,014", "en": "2.014" },
+      "aide": {
+        "fr": "1000 signifie 'millièmes' (3 chiffres après la virgule). Place le 14 tout à droite.",
+        "en": "1000 means 'thousandths' (3 digits after the decimal point). Place the 14 at the far right."
+      }
+    },
+    {
+      "id": "p46-ex2a",
+      "page": 46,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Quelle est la forme décomposée de 0,405 ?",
+        "en": "What is the expanded form of 0.405?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "0,4 + 0,005", "en": "0.4 + 0.005" },
+        { "fr": "0,4 + 0,05", "en": "0.4 + 0.05" },
+        { "fr": "0,04 + 0,005", "en": "0.04 + 0.005" },
+        { "fr": "0,4 + 0,5", "en": "0.4 + 0.5" }
+      ],
+      "reponse_attendue": { "fr": "0,4 + 0,005", "en": "0.4 + 0.005" },
+      "aide": {
+        "fr": "Décompose selon la position : 4 dixièmes et 5 millièmes.",
+        "en": "Break it down by position: 4 tenths and 5 thousandths."
+      }
+    },
+    {
+      "id": "p47-ex1a",
+      "page": 47,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Comment s'écrit '76 millièmes' en nombre décimal ?",
+        "en": "How is '76 thousandths' written as a decimal number?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "0,076", "en": "0.076" },
+        { "fr": "0,76", "en": "0.76" },
+        { "fr": "76,000", "en": "76.000" },
+        { "fr": "0,0076", "en": "0.0076" }
+      ],
+      "reponse_attendue": { "fr": "0,076", "en": "0.076" },
+      "aide": {
+        "fr": "Dans millièmes, il y a 3 positions après la virgule. Place 76 à la fin.",
+        "en": "In thousandths, there are 3 positions after the decimal point. Place 76 at the end."
+      }
+    },
+    {
+      "id": "p47-ex2a",
+      "page": 47,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris 3,047 sous forme de nombre fractionnaire :",
+        "en": "Write 3.047 as a mixed number:"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "3 et 47/1000", "en": "3 and 47/1000" },
+        { "fr": "3 et 47/100", "en": "3 and 47/100" },
+        { "fr": "3 et 4/1000", "en": "3 and 4/1000" },
+        { "fr": "3047/100", "en": "3047/100" }
+      ],
+      "reponse_attendue": { "fr": "3 et 47/1000", "en": "3 and 47/1000" },
+      "aide": {
+        "fr": "Le 3 est le nombre entier. Les 3 chiffres après la virgule indiquent des millièmes (sur 1000).",
+        "en": "The 3 is the whole number. The 3 digits after the decimal point indicate thousandths (over 1000)."
+      }
+    },
+    {
+      "id": "p47-vaplusloin",
+      "page": 47,
+      "exercice_num": "Va plus loin",
+      "sous_question": null,
+      "consigne": {
+        "fr": "En utilisant les chiffres 0, 2, 3 et 6, quel nombre est plus grand que 1 mais plus petit que 4 ?",
+        "en": "Using the digits 0, 2, 3, and 6, which number is larger than 1 but smaller than 4?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2,036", "en": "2.036" },
+        { "fr": "0,236", "en": "0.236" },
+        { "fr": "6,320", "en": "6.320" },
+        { "fr": "23,06", "en": "23.06" }
+      ],
+      "reponse_attendue": { "fr": "2,036", "en": "2.036" },
+      "aide": {
+        "fr": "Le chiffre avant la virgule (les unités) doit être 2 ou 3 pour être entre 1 et 4.",
+        "en": "The digit before the decimal point (units) must be 2 or 3 to be between 1 and 4."
+      }
+    }
+  ]
+}
