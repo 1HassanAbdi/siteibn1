@@ -1,0 +1,185 @@
+{
+  "module": 1,
+  "titre": {
+    "fr": "À la découverte des nombres entiers",
+    "en": "Discovering Integers"
+  },
+  "exercices": [
+    {
+      "id": "p10-ex1a",
+      "page": 10,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris un nombre entier pour représenter la situation : Violette a gagné 75 $ la semaine dernière.",
+        "en": "Write an integer to represent the situation: Violette earned $75 last week."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "+75", "en": "+75" },
+        { "fr": "-75", "en": "-75" },
+        { "fr": "0", "en": "0" },
+        { "fr": "+75 $", "en": "$75" }
+      ],
+      "reponse_attendue": { "fr": "+75", "en": "+75" },
+      "aide": {
+        "fr": "Un gain d'argent est une quantité supérieure à zéro, donc positive (+).",
+        "en": "Earning money is an amount greater than zero, so it is positive (+)."
+      }
+    },
+    {
+      "id": "p10-ex1b",
+      "page": 10,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Écris un nombre entier pour représenter la situation : Il fait quatorze degrés sous zéro.",
+        "en": "Write an integer to represent the situation: It is fourteen degrees below zero."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "+14", "en": "+14" },
+        { "fr": "-14", "en": "-14" },
+        { "fr": "0", "en": "0" },
+        { "fr": "-4", "en": "-4" }
+      ],
+      "reponse_attendue": { "fr": "-14", "en": "-14" },
+      "aide": {
+        "fr": "Une température inférieure à 0 °C est négative et s'écrit avec le signe (-).",
+        "en": "A temperature lower than 0 °C is negative and is written with the (-) sign."
+      }
+    },
+    {
+      "id": "p10-ex1c",
+      "page": 10,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Écris un nombre entier pour représenter la situation : Le garçon effrayé a fait 2 pas en arrière.",
+        "en": "Write an integer to represent the situation: The frightened boy took 2 steps back."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "+2", "en": "+2" },
+        { "fr": "-2", "en": "-2" },
+        { "fr": "2", "en": "2" },
+        { "fr": "-22", "en": "-22" }
+      ],
+      "reponse_attendue": { "fr": "-2", "en": "-2" },
+      "aide": {
+        "fr": "Reculer ou aller vers l'arrière est représenté par un nombre négatif.",
+        "en": "Moving backward is represented by a negative number."
+      }
+    },
+    {
+      "id": "p10-ex1d",
+      "page": 10,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": {
+        "fr": "Écris un nombre entier pour représenter la situation : L'hélicoptère s'élève à une altitude de 1500 m.",
+        "en": "Write an integer to represent the situation: The helicopter rises to an altitude of 1500 m."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "-1500", "en": "-1500" },
+        { "fr": "+1500", "en": "+1500" },
+        { "fr": "1500", "en": "1500" },
+        { "fr": "+150", "en": "+150" }
+      ],
+      "reponse_attendue": { "fr": "+1500", "en": "+1500" },
+      "aide": {
+        "fr": "S'élever ou monter au-dessus du sol est une situation positive (+).",
+        "en": "Rising or going above ground level is a positive situation (+)."
+      }
+    },
+    {
+      "id": "p11-ex1a",
+      "page": 11,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris un nombre entier pour représenter la situation : L'éthanol gèle à moins 114 °C.",
+        "en": "Write an integer to represent the situation: Ethanol freezes at minus 114 °C."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "-114", "en": "-114" },
+        { "fr": "+114", "en": "+114" },
+        { "fr": "114", "en": "114" },
+        { "fr": "0", "en": "0" }
+      ],
+      "reponse_attendue": { "fr": "-114", "en": "-114" },
+      "aide": {
+        "fr": "Le mot 'moins' indique clairement un nombre négatif.",
+        "en": "The word 'minus' clearly indicates a negative number."
+      }
+    },
+    {
+      "id": "p11-ex3a",
+      "page": 11,
+      "exercice_num": 3,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Si +7 représente 7 étages plus haut, qu'est-ce que moins 3 représente ?",
+        "en": "If +7 represents 7 floors higher, what does minus 3 represent?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "3 étages plus haut", "en": "3 floors higher" },
+        { "fr": "3 étages plus bas", "en": "3 floors lower" },
+        { "fr": "Sous-sol 7", "en": "Basement 7" },
+        { "fr": "3 marches", "en": "3 steps" }
+      ],
+      "reponse_attendue": { "fr": "3 étages plus bas", "en": "3 floors lower" },
+      "aide": {
+        "fr": "Le signe (-) représente la direction opposée au signe (+).",
+        "en": "The (-) sign represents the opposite direction to the (+) sign."
+      }
+    },
+    {
+      "id": "p11-ex3b",
+      "page": 11,
+      "exercice_num": 3,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Si -400 représente 400 m sous le niveau de la mer, qu'est-ce que +3000 représente ?",
+        "en": "If -400 represents 400 m below sea level, what does +3000 represent?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "3000 m sous l'eau", "en": "3000 m underwater" },
+        { "fr": "3000 m au-dessus du niveau de la mer", "en": "3000 m above sea level" },
+        { "fr": "Le fond marin", "en": "The seabed" },
+        { "fr": "3000 m de profondeur", "en": "3000 m deep" }
+      ],
+      "reponse_attendue": { "fr": "3000 m au-dessus du niveau de la mer", "en": "3000 m above sea level" },
+      "aide": {
+        "fr": "Le niveau de la mer est le point zéro. Le signe (+) indique une altitude.",
+        "en": "Sea level is the zero point. The (+) sign indicates an altitude."
+      }
+    },
+    {
+      "id": "p11-ex3c",
+      "page": 11,
+      "exercice_num": 3,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Si +14 représente 14 pas en avant, qu'est-ce que -8 représente ?",
+        "en": "If +14 represents 14 steps forward, what does -8 represent?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "8 pas en avant", "en": "8 steps forward" },
+        { "fr": "8 pas en arrière", "en": "8 steps back" },
+        { "fr": "8 pas de côté", "en": "8 steps sideways" },
+        { "fr": "Zéro pas", "en": "Zero steps" }
+      ],
+      "reponse_attendue": { "fr": "8 pas en arrière", "en": "8 steps back" },
+      "aide": {
+        "fr": "L'opposé de 'en avant' (+) est 'en arrière' (-).",
+        "en": "The opposite of 'forward' (+) is 'back' (-)."
+      }
+    }
+  ]
+}
