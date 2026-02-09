@@ -11,6 +11,7 @@ import DefinitionGame from './DefinitionGame';
 import WordMystery from './WordMystery';
 import WordTypeGame from './WordTypeGame';
 import WorkHistory from './WorkHistory';
+import EvaluationGame from "./EvaluationGameSem"; // Ajoutez cet import
 
 const formatTime = (s) => {
   const mins = Math.floor(s / 60);
@@ -261,19 +262,53 @@ const DictationAppcka = () => {
                       { id: 'nature', title: "4. Grammar", desc: "Find the word category.", icon: <Brain className="text-pink-500"/> },
                       { id: 'mystere', title: "5. Mystery Game", desc: "Guess the hidden word.", icon: <Sparkles className="text-amber-500"/> },
                       { id: 'test', title: "6. The Dictation", desc: "Final test, zero mistakes!", icon: <Pencil className="text-red-500"/> },
-                    ].map((step) => (
-                      <button 
-                        key={step.id} 
-                        onClick={() => startSession(currentWeekId, step.id)}
-                        className="flex items-center gap-4 p-5 rounded-[25px] bg-slate-50 hover:bg-emerald-50 border-2 border-transparent hover:border-emerald-200 transition-all text-left group"
-                      >
-                        <div className="bg-white p-3 rounded-xl shadow-sm group-hover:scale-110 transition-transform">{step.icon}</div>
-                        <div>
-                          <h4 className="font-black text-slate-800 text-sm uppercase">{step.title}</h4>
-                          <p className="text-[10px] text-slate-400 font-bold">{step.desc}</p>
-                        </div>
-                      </button>
-                    ))}
+                     { id: 'evaluation', title: "7. ÉVALUATION", desc: "Test final noté par le prof.", icon: <Trophy className="text-white"/> },
+                      ].map((step) => {
+                        const isEval = step.id === 'evaluation';
+                        return (
+                          <button 
+                            key={step.id} 
+                            onClick={() => {
+                              if (isEval) {
+                                setActiveWeek(currentWeekId);
+                                setMode('evaluation'); // Ouvre le composant Indigo
+                              } else {
+                                startSession(currentWeekId, step.id);
+                              }
+                            }}
+                            className={`flex items-center gap-4 p-5 rounded-[25px] transition-all text-left group border-2 relative overflow-hidden
+                              ${isEval 
+                                ? 'bg-[#1e1b4b] border-amber-400 shadow-[0_10px_20px_rgba(30,27,75,0.4)] hover:scale-[1.03]' 
+                                : 'bg-slate-50 border-transparent hover:bg-emerald-50 hover:border-emerald-200'
+                              }`}
+                          >
+                            {/* Effet de brillance pour l'évaluation */}
+                            {isEval && (
+                              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_2s_infinite]" />
+                            )}
+                    
+                            <div className={`p-3 rounded-xl shadow-sm group-hover:scale-110 transition-transform 
+                              ${isEval ? 'bg-gradient-to-br from-amber-400 to-orange-600' : 'bg-white'}`}>
+                              {step.icon}
+                            </div>
+                            
+                            <div>
+                              <h4 className={`font-black text-sm uppercase tracking-tight ${isEval ? 'text-amber-400' : 'text-slate-800'}`}>
+                                {step.title}
+                              </h4>
+                              <p className={`text-[10px] font-bold ${isEval ? 'text-indigo-200' : 'text-slate-400'}`}>
+                                {step.desc}
+                              </p>
+                            </div>
+                    
+                            {isEval && (
+                              <div className="ml-auto">
+                                <span className="bg-amber-500 text-[#1e1b4b] text-[8px] font-black px-2 py-1 rounded-md shadow-sm">OFFICIEL</span>
+                              </div>
+                            )}
+                          </button>
+                        );
+                      })}
                   </div>
                 </div>
 
@@ -420,6 +455,19 @@ const DictationAppcka = () => {
    
     />
   )}
+  {/* AJOUTER CECI PARMI LES AUTRES MODES (syllabe, definition, etc.) */}
+{mode === 'evaluation' && (
+  <EvaluationGame 
+    words={getActiveWords()} 
+    selectedLevel={selectedLevel} 
+    activeWeek={activeWeek}
+    onBack={() => {
+      setActiveWeek(null);
+      setMode('etude');
+    }}
+    onFinish={(score, total) => saveExerciseResult(score, total)}
+  />
+)}
                       </div>
                     )}
                   </AnimatePresence>
