@@ -1,0 +1,11 @@
+[
+  { "id": "p10_11", "module": 1, "title": { "fr": "Les nombres entiers", "en": "Integers" }, "pages": "10-11" },
+  { "id": "p12_13", "module": 2, "title": { "fr": "Le Million", "en": "The Million" }, "pages": "12-13" },
+  { "id": "p14_15", "module": 2, "title": { "fr": "Grands Nombres", "en": "Large Numbers" }, "pages": "14-15" },
+  { "id": "p16_17", "module": 2, "title": { "fr": "Comparer les Nombres", "en": "Comparing Numbers" }, "pages": "16-17" },
+  { "id": "p18_19", "module": 2, "title": { "fr": "Les Multiples", "en": "Multiples" }, "pages": "18-19" },
+  { "id": "p22_23", "module": 2, "title": { "fr": "Calcul mental", "en": "Mental Math" }, "pages": "22-23" },
+  { "id": "p46_47", "module": 4, "title": { "fr": "Millièmes", "en": "Thousandths" }, "pages": "46-47" },
+  { "id": "p54_55", "module": 4, "title": { "fr": "Addition décimaux", "en": "Adding Decimals" }, "pages": "54-55" },
+  { "id": "p120_125", "module": 8, "title": { "fr": "Pourcentages", "en": "Percents" }, "pages": "120-125" }
+]

@@ -22,7 +22,7 @@ const DictationAppcka = () => {
   // --- DATE LOGIC (2026 Preparation Week) ---
   const getCurrentWeekId = () => {
     const today = new Date();
-    const startDate = new Date(2026, 0, 13); 
+    const startDate = new Date(2026, 0, 9); 
     const diff = today - startDate;
     const week = Math.ceil((Math.floor(diff / (1000 * 60 * 60 * 24)) + 1) / 7);
     return week > 0 ? week : 1;

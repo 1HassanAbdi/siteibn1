@@ -16,6 +16,7 @@ import AppSyllabes from "./1eAnnee/AppSyllabes";
 import MathExerciseApp from "./6eAnnee/ex";
 import MathEvaluator from "./OQRE/MATHS/MathEvaluator";
 import OQREHub from "./OQRE/oqr";
+import MainApp from "./6eAnnee/MainApp";
 
 
 
@@ -43,7 +44,7 @@ function App() {
           <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
           <Route path="/activites/3e Année/Mathematiques" element={<MathEvaluator></MathEvaluator> } />
           <Route path="/activites/6e Année/Francais" element={<Exercice63></Exercice63>} />
-          <Route path="/activites/6e Année/Mathematiques" element={<MathExerciseApp></MathExerciseApp>} />
+          <Route path="/activites/6e Année/Mathematiques" element={<MainApp></MainApp>} />
             
            
             

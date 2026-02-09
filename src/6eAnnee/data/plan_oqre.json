@@ -1,0 +1,199 @@
+{
+  "titre": {
+    "fr": "Programme de Réussite OQRE - Mathématiques 6e année",
+    "en": "EQAO Success Program - Grade 6 Mathematics"
+  },
+  "description": {
+    "fr": "Suivi hebdomadaire dynamique. Transition chaque vendredi vers le nouveau module.",
+    "en": "Dynamic weekly tracking. Transition every Friday to the next module."
+  },
+  "parties_terminees": [
+    {
+      "domaine": { "fr": "Géométrie et Mesure (Sens de l'espace)", "en": "Geometry and Measurement (Spatial Sense)" },
+      "pages_livre": "34-43, 86-91, 132-145",
+      "ixl": "AA, DD",
+      "description": { 
+        "fr": "Maîtrise des angles, classification des polygones, calcul des aires et volumes.", 
+        "en": "Mastery of angles, polygon classification, area and volume calculations." 
+      },
+      "attentes": "E1.1, E2.2, E2.4, E2.6"
+    },
+    {
+      "domaine": { "fr": "Algèbre (Équations et Inégalités)", "en": "Algebra (Equations and Inequalities)" },
+      "pages_livre": "8-9 + Supplément",
+      "ixl": "W, X, Y",
+      "description": { 
+        "fr": "Résolution d'équations à une variable et représentation des inégalités.", 
+        "en": "Solving one-variable equations and representing inequalities." 
+      },
+      "attentes": "C2.1, C2.3, C2.4"
+    }
+  ],
+  "calendrier": [
+    {
+      "id": "sem_1_fev",
+      "dates": "30 Jan - 5 Feb",
+      "domaine": { "fr": "Sens du Nombre", "en": "Number Sense" },
+      "attente_code": "B1.1 & B1.4",
+      "objectif": { "fr": "Nombres jusqu'au million et décimaux jusqu'au millième.", "en": "Numbers to one million and decimals to thousandths." },
+      "livre": "12-15, 44-47",
+      "ixl": "A.1, A.3, B.1, B.2, B.6",
+      "parent_note": { "fr": "Bilan final ce jeudi. Vérifiez la compréhension des grands nombres.", "en": "Final review this Thursday. Check understanding of large numbers." },
+      "status": "completed"
+    },
+    {
+      "id": "sem_2_fev",
+      "dates": "6 Feb - 12 Feb",
+      "domaine": { "fr": "Nombres et Entiers", "en": "Integers and Numbers" },
+      "attente_code": "B1.2 & B1.3",
+      "objectif": { "fr": "Comprendre les nombres négatifs et arrondir les décimaux.", "en": "Understand negative numbers and rounding decimals." },
+      "livre": "10-11, 48-51",
+      "ixl": "B.8, B.12, C.2, C.4",
+      "parent_note": { "fr": "Semaine actuelle. Utilisez un thermomètre pour expliquer les négatifs.", "en": "Current week. Use a thermometer to explain negatives." },
+      "status": "current"
+    },
+    {
+      "id": "sem_3_fev",
+      "dates": "13 Feb - 19 Feb",
+      "domaine": { "fr": "Propriétés des nombres", "en": "Number Properties" },
+      "attente_code": "B2.2 & B2.6",
+      "objectif": { "fr": "Critères de divisibilité, nombres premiers et multiples.", "en": "Divisibility rules, prime numbers, and multiples." },
+      "livre": "6-7, 18-21",
+      "ixl": "F.1, I.1, I.3, I.6",
+      "parent_note": { "fr": "Débute le vendredi 13. Pratiquez les tables de multiplication.", "en": "Starts Friday 13th. Practice multiplication tables." },
+      "status": "next"
+    },
+    {
+      "id": "sem_4_fev",
+      "dates": "20 Feb - 26 Feb",
+      "domaine": { "fr": "Calcul et Priorité", "en": "Operations and Priority" },
+      "attente_code": "B2.1 & B2.3",
+      "objectif": { "fr": "Priorité des opérations (PEDMAS) et exposants.", "en": "Order of operations (BEDMAS) and exponents." },
+      "livre": "22-25",
+      "ixl": "M.3, M.6, H.1, H.2",
+      "parent_note": { "fr": "Débute le vendredi 20. Vérifiez l'ordre (Parenthèses, Exposants...).", "en": "Starts Friday 20th. Check the order (Brackets, Exponents...)." },
+      "status": "next"
+    },
+    {
+      "id": "sem_1_mars",
+      "dates": "27 Feb - 5 Mar",
+      "domaine": { "fr": "Décimaux (+ / -)", "en": "Decimals (+ / -)" },
+      "attente_code": "B2.4",
+      "objectif": { "fr": "Addition et soustraction précises de nombres à virgule.", "en": "Precise addition and subtraction of decimal numbers." },
+      "livre": "52-55",
+      "ixl": "D.6, D.7, D.8",
+      "parent_note": { "fr": "L'alignement de la virgule est crucial.", "en": "Aligning the decimal point is crucial." },
+      "status": "next"
+    },
+    {
+      "id": "sem_2_mars",
+      "dates": "6 Mar - 12 Mar",
+      "domaine": { "fr": "Décimaux (x / ÷)", "en": "Decimals (x / ÷)" },
+      "attente_code": "B2.7 & B2.11",
+      "objectif": { "fr": "Multiplier et diviser des décimaux par des nombres entiers.", "en": "Multiply and divide decimals by whole numbers." },
+      "livre": "60-67",
+      "ixl": "G.1, G.5, G.18, G.21",
+      "parent_note": { "fr": "Utilisez des contextes de prix (argent).", "en": "Use price contexts (money)." },
+      "status": "next"
+    },
+    {
+      "id": "sem_3_mars",
+      "dates": "13 Mar - 19 Mar",
+      "domaine": { "fr": "Fractions", "en": "Fractions" },
+      "attente_code": "B1.6",
+      "objectif": { "fr": "Fractions équivalentes et comparaison.", "en": "Equivalent fractions and comparison." },
+      "livre": "110-115",
+      "ixl": "J.3, J.13, J.14",
+      "parent_note": { "fr": "Visualisez avec des dessins de pizzas.", "en": "Visualize with pizza drawings." },
+      "status": "next"
+    },
+    {
+      "id": "sem_4_mars",
+      "dates": "20 Mar - 26 Mar",
+      "domaine": { "fr": "Calcul de Fractions", "en": "Fraction Operations" },
+      "attente_code": "B2.5",
+      "objectif": { "fr": "Addition et soustraction (dénominateurs différents).", "en": "Addition and subtraction (different denominators)." },
+      "livre": "116-119",
+      "ixl": "K.6, K.9, K.10",
+      "parent_note": { "fr": "Encouragez la persévérance.", "en": "Encourage perseverance." },
+      "status": "next"
+    },
+    {
+      "id": "sem_1_avr",
+      "dates": "27 Mar - 2 Apr",
+      "domaine": { "fr": "Algèbre : Codage", "en": "Algebra: Coding" },
+      "attente_code": "C3.1 & C3.2",
+      "objectif": { "fr": "Littératie informatique et logique algorithmique.", "en": "Computer literacy and algorithmic logic." },
+      "livre": "2-5",
+      "ixl": "M.7, V.8, Z.4",
+      "parent_note": { "fr": "Prédire le résultat d'un code.", "en": "Predict the result of a code." },
+      "status": "next"
+    },
+    {
+      "id": "sem_2_avr",
+      "dates": "3 Apr - 9 Apr",
+      "domaine": { "fr": "Rapports et %", "en": "Ratios and %" },
+      "attente_code": "B2.12",
+      "objectif": { "fr": "Comprendre les rapports, les taux et les pourcentages.", "en": "Understand ratios, rates, and percentages." },
+      "livre": "120-131",
+      "ixl": "P.1, P.9, Q.4, Q.11",
+      "parent_note": { "fr": "Cherchez des taux (km/h) dans la vie réelle.", "en": "Look for rates (km/h) in real life." },
+      "status": "next"
+    },
+    {
+      "id": "sem_3_avr",
+      "dates": "10 Apr - 16 Apr",
+      "domaine": { "fr": "Espace et Transfo.", "en": "Space and Transfo." },
+      "attente_code": "E1.3 & E1.4",
+      "objectif": { "fr": "Plan cartésien et transformations (réflexion, rotation).", "en": "Cartesian plane and transformations (reflection, rotation)." },
+      "livre": "74-75, 96-107",
+      "ixl": "V.3, V.4, BB.1, BB.2",
+      "parent_note": { "fr": "Identifiez bien les axes X et Y.", "en": "Clearly identify the X and Y axes." },
+      "status": "next"
+    },
+    {
+      "id": "sem_4_avr",
+      "dates": "17 Apr - 23 Apr",
+      "domaine": { "fr": "Données et Moyenne", "en": "Data and Mean" },
+      "attente_code": "D1.3 & D1.5",
+      "objectif": { "fr": "Interpréter des graphiques et calculer la moyenne.", "en": "Interpret graphs and calculate the mean." },
+      "livre": "68-73, 76-79",
+      "ixl": "EE.9, FF.1, FF.4",
+      "parent_note": { "fr": "Calculez la moyenne des points d'un jeu.", "en": "Calculate the average score of a game." },
+      "status": "next"
+    },
+    {
+      "id": "sem_1_mai",
+      "dates": "24 Apr - 30 Apr",
+      "domaine": { "fr": "Probabilités", "en": "Probability" },
+      "attente_code": "D2.1",
+      "objectif": { "fr": "Probabilité théorique et expérimentale.", "en": "Theoretical and experimental probability." },
+      "livre": "156-163",
+      "ixl": "GG.2, GG.3, GG.6",
+      "parent_note": { "fr": "Utilisez une pièce de monnaie.", "en": "Use a coin." },
+      "status": "next"
+    },
+    {
+      "id": "sem_2_mai",
+      "dates": "1 May - 7 May",
+      "domaine": { "fr": "Littératie Financière", "en": "Financial Literacy" },
+      "attente_code": "F1.2 & F1.4",
+      "objectif": { "fr": "Taxes (13%), rabais et gestion d'un budget.", "en": "Taxes (13%), discounts, and budgeting." },
+      "livre": "84-85",
+      "ixl": "T.1, T.5, HH.4",
+      "parent_note": { "fr": "Estimez le prix avec taxes lors d'achats.", "en": "Estimate the price with taxes while shopping." },
+      "status": "next"
+    },
+    {
+      "id": "revision_finale",
+      "dates": "8 May - Exam",
+      "domaine": { "fr": "Révision Finale", "en": "Final Review" },
+      "attente_code": "Toutes / All",
+      "objectif": { "fr": "Simulations intensives de formats d'examen OQRE.", "en": "Intensive simulations of EQAO exam formats." },
+      "livre": "Récapitulation",
+      "ixl": "Key sections",
+      "parent_note": { "fr": "Phase finale. Favorisez le sommeil.", "en": "Final phase. Prioritize sleep." },
+      "status": "next"
+    }
+  ]
+}

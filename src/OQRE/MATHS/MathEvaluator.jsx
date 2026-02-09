@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Calculator, Send, Lock, Trophy, Loader2, Ruler, Volume2, User, GraduationCap, CheckCircle, XCircle } from 'lucide-react';
+import { Calculator, Lock, Trophy, Volume2, CheckCircle, XCircle, Loader2 } from 'lucide-react';
 
 // Imports des fichiers JSON
 import Eval_Maths_2a from './Eval_Maths_2a.json';
@@ -18,7 +18,6 @@ export default function PortailMaths() {
   const currentQuestions = useMemo(() => selectedSession?.parties[0].sections.flatMap(s => s.questions) || [], [selectedSession]);
   const q = currentQuestions[currentQuestionIdx];
 
-  // --- CALCUL DES RÉSULTATS POUR L'ÉLÈVE ---
   const resultsSummary = useMemo(() => {
     if (view !== 'finished') return null;
     const details = currentQuestions.map(q => ({
@@ -32,7 +31,6 @@ export default function PortailMaths() {
     return { details, score, total: currentQuestions.length };
   }, [view, currentQuestions, answers]);
 
-  // --- FONCTION AUDIO ---
   const speak = (text) => {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
@@ -60,26 +58,24 @@ export default function PortailMaths() {
     try {
       await fetch(GOOGLE_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(payload) });
     } catch (e) { console.error("Erreur d'envoi", e); }
-    
+
     setView('finished');
     setIsSubmitting(false);
   };
 
-  // --- VUE FINALE AVEC CORRECTION ---
+  // --- VUE TERMINÉE ---
   if (view === 'finished') return (
     <div className="min-h-screen bg-slate-900 flex flex-col items-center p-4 md:p-8 border-[12px] border-black">
       <div className="w-full max-w-2xl bg-white rounded-[3rem] shadow-2xl overflow-hidden border-8 border-black">
-        {/* En-tête du score */}
         <div className="bg-blue-600 p-8 text-center text-white border-b-8 border-black">
           <Trophy size={64} className="mx-auto mb-4 text-yellow-300" />
-          <h2 className="text-4xl font-black uppercase italic italic">Résultats</h2>
+          <h2 className="text-4xl font-black uppercase italic">Résultats</h2>
           <div className="text-6xl font-black mt-2 bg-black/20 inline-block px-6 py-2 rounded-full">
             {resultsSummary.score} / {resultsSummary.total}
           </div>
           <p className="mt-4 font-bold text-lg uppercase tracking-widest">{studentInfo.nom}</p>
         </div>
 
-        {/* Détail des erreurs et corrections */}
         <div className="p-6 max-h-[500px] overflow-y-auto bg-slate-50">
           <h3 className="font-black text-xl mb-6 uppercase italic border-b-4 border-slate-200 pb-2">Détail de tes réponses</h3>
           <div className="space-y-4">
@@ -91,9 +87,7 @@ export default function PortailMaths() {
                     <p className="font-bold text-sm text-slate-700 mb-2">Q{res.numero}. {res.enonce}</p>
                     <div className="flex flex-wrap gap-4 text-xs uppercase font-black">
                       <p>Ton choix: <span className={res.estCorrect ? 'text-green-600' : 'text-red-600'}>{res.reponseEleve || "Pas de réponse"}</span></p>
-                      {!res.estCorrect && (
-                        <p className="text-blue-600">Correction: <span>{res.reponseCorrecte}</span></p>
-                      )}
+                      {!res.estCorrect && <p className="text-blue-600">Correction: <span>{res.reponseCorrecte}</span></p>}
                     </div>
                   </div>
                 </div>
@@ -102,7 +96,6 @@ export default function PortailMaths() {
           </div>
         </div>
 
-        {/* Bouton retour */}
         <div className="p-6 bg-white border-t-8 border-black">
           <button onClick={() => window.location.reload()} className="w-full bg-black text-white py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform uppercase italic">
             Terminer la révision
@@ -112,7 +105,7 @@ export default function PortailMaths() {
     </div>
   );
 
-  // --- VUES HOME ET LOGIN ---
+  // --- VUE HOME ---
   if (view === 'home') return (
     <div className="h-screen bg-slate-950 text-white flex flex-col items-center justify-center p-10 border-[10px] border-black">
       <Calculator size={60} className="text-blue-500 mb-4" />
@@ -130,6 +123,7 @@ export default function PortailMaths() {
     </div>
   );
 
+  // --- LOGIN ---
   if (view === 'login') return (
     <div className="h-screen bg-black flex items-center justify-center p-6">
       <form onSubmit={(e) => { e.preventDefault(); setView('quiz'); }} className="bg-slate-900 p-8 rounded-[2.5rem] border-4 border-blue-600 w-full max-w-sm shadow-2xl">
@@ -151,9 +145,10 @@ export default function PortailMaths() {
     </div>
   );
 
-  // --- VUE QUIZ ---
+  // --- QUIZ ---
   return (
     <div className="h-screen bg-slate-950 flex flex-col border-[8px] md:border-[12px] border-black overflow-hidden">
+      {/* Header */}
       <header className="h-16 bg-black flex items-center justify-between px-6 border-b-2 border-blue-900 text-white">
         <div className="flex items-center gap-6">
           <div className="flex flex-col">
@@ -167,46 +162,61 @@ export default function PortailMaths() {
         </div>
       </header>
 
-      <div className="flex-1 bg-slate-900 flex flex-col items-center justify-center p-4">
+      {/* Contenu principal scrollable */}
+      <div className="flex-1 overflow-y-auto flex flex-col items-center justify-start p-4 relative">
         {isSubmitting && (
           <div className="absolute inset-0 z-50 bg-black/90 flex flex-col items-center justify-center text-white font-black italic uppercase">
             <Loader2 className="animate-spin text-blue-500 mb-4" size={48} />
             Transmission au serveur...
           </div>
         )}
-        
+
         <div className="w-full max-w-xl bg-slate-800 p-8 pt-12 rounded-[2.5rem] border-4 border-black shadow-2xl relative">
-           <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-blue-600 border-4 border-black text-white px-8 py-2 rounded-2xl font-black text-sm shadow-xl z-10 uppercase italic">
-              Question {currentQuestionIdx + 1} / {currentQuestions.length}
-           </div>
+          {/* Compteur question */}
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-blue-600 border-4 border-black text-white px-8 py-2 rounded-2xl font-black text-sm shadow-xl z-10 uppercase italic">
+            Question {currentQuestionIdx + 1} / {currentQuestions.length}
+          </div>
 
-           <div className="flex justify-center mb-6">
-              <button onClick={() => speak(q.enonce)} className="bg-orange-500 hover:bg-orange-600 text-white p-4 rounded-full shadow-lg border-4 border-slate-800"><Volume2 size={28} /></button>
-           </div>
+          {/* Bouton audio */}
+          <div className="flex justify-center mb-6">
+            <button onClick={() => speak(q.enonce)} className="bg-orange-500 hover:bg-orange-600 text-white p-4 rounded-full shadow-lg border-4 border-slate-800"><Volume2 size={28} /></button>
+          </div>
 
-           <h3 className="text-white font-bold text-xl mb-8 leading-tight text-center px-2">{q.enonce}</h3>
-           
-           <div className="grid gap-3">
-             {q.options.map((opt, i) => (
-               <button 
-                 key={i} 
-                 onClick={() => setAnswers({...answers, [q.numero]: opt})} 
-                 className={`w-full p-4 rounded-xl text-left font-black border-4 transition-all ${answers[q.numero] === opt ? "bg-blue-600 border-white text-white translate-x-1 shadow-[4px_4px_0_rgba(0,0,0,1)]" : "bg-slate-700 border-black text-slate-400 hover:bg-slate-600"}`}
-               >
-                 <span className="mr-3 opacity-30 italic text-sm">{i + 1}.</span> {opt}
-               </button>
-             ))}
-           </div>
+          <h3 className="text-white font-bold text-xl mb-8 leading-tight text-center px-2">{q.enonce}</h3>
+
+          {/* Options */}
+          <div className="grid gap-3 mb-24">
+            {q.options.map((opt, i) => (
+              <button 
+                key={i} 
+                onClick={() => setAnswers({...answers, [q.numero]: opt})} 
+                className={`w-full p-4 rounded-xl text-left font-black border-4 transition-all ${answers[q.numero] === opt ? "bg-blue-600 border-white text-white translate-x-1 shadow-[4px_4px_0_rgba(0,0,0,1)]" : "bg-slate-700 border-black text-slate-400 hover:bg-slate-600"}`}
+              >
+                <span className="mr-3 opacity-30 italic text-sm">{i + 1}.</span> {opt}
+              </button>
+            ))}
+          </div>
         </div>
-
-        <footer className="w-full max-w-xl mt-8 flex gap-4">
-          <button onClick={() => { window.speechSynthesis.cancel(); setCurrentQuestionIdx(i => Math.max(0, i-1)); }} disabled={currentQuestionIdx === 0} className="flex-1 py-4 bg-slate-800 text-white rounded-2xl font-black uppercase italic disabled:opacity-30 border-b-4 border-black">Précédent</button>
-          {currentQuestionIdx === currentQuestions.length - 1 ? 
-            <button onClick={submitToGoogle} className="flex-[2] py-4 bg-green-600 hover:bg-green-700 text-white rounded-2xl font-black uppercase italic border-b-4 border-green-900 shadow-lg">Terminer le test</button> :
-            <button onClick={() => { window.speechSynthesis.cancel(); setCurrentQuestionIdx(i => i + 1); }} className="flex-[2] py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black uppercase italic border-b-4 border-blue-900 shadow-lg">Suivant</button>
-          }
-        </footer>
       </div>
+
+      {/* Footer */}
+      <footer className="w-full max-w-xl mx-auto flex gap-4 p-4 sticky bottom-0 bg-slate-950 z-10">
+        <button 
+          onClick={() => { window.speechSynthesis.cancel(); setCurrentQuestionIdx(i => Math.max(0, i-1)); }} 
+          disabled={currentQuestionIdx === 0} 
+          className="flex-1 py-4 bg-slate-800 text-white rounded-2xl font-black uppercase italic disabled:opacity-30 border-b-4 border-black"
+        >
+          Précédent
+        </button>
+        {currentQuestionIdx === currentQuestions.length - 1 ? 
+          <button onClick={submitToGoogle} className="flex-[2] py-4 bg-green-600 hover:bg-green-700 text-white rounded-2xl font-black uppercase italic border-b-4 border-green-900 shadow-lg">
+            Terminer le test
+          </button> :
+          <button onClick={() => { window.speechSynthesis.cancel(); setCurrentQuestionIdx(i => i + 1); }} className="flex-[2] py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black uppercase italic border-b-4 border-blue-900 shadow-lg">
+            Suivant
+          </button>
+        }
+      </footer>
     </div>
   );
 }
