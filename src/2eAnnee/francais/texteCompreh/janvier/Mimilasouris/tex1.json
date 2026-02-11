@@ -1,0 +1,24 @@
+{
+  "title": "Mimi la souris",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "Une petite souris grise",
+      "text": "Mimi est une petite souris grise.\nMimi se cache sous le tapis\nprès du petit lit.\nElle fait i i i.",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "Mimi a peur",
+      "text": "Mimi la petite souris fait i i i.\nMimi la petite souris\na peur du chat Tigris.\nOù est Tigris?\nTigris est sur le",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "L'appel de Lili",
+      "text": "Tigris est sur le lit.\nLili, la petite fille, appelle son chat Tigris :\n«Tigris, Tigris, viens ici.»\nQu'arrivera-t-il à Mimi la souris?",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "title": "Mimi la souris",
+  "sections": [
+    {
+      "title": "Mimi la petite souris grise",
+      "text": "Mimi est une petite souris grise. \n Mimi se cache sous le tapis près du petit lit. \n Elle fait i i i.",
+      "questions": [
+        {
+          "question": "Qui est Mimi ?",
+          "options": ["Une souris", "Une chatte", "Une petite fille"],
+          "correctAnswer": "Une souris"
+        },
+        {
+          "question": "Quelle est la couleur de Mimi ?",
+          "options": ["Blanche", "Grise", "Noire"],
+          "correctAnswer": "Grise"
+        },
+        {
+          "question": "Où se cache Mimi ?",
+          "options": ["Sous le tapis", "Dans le lit", "Derrière la porte"],
+          "correctAnswer": "Sous le tapis"
+        },
+        {
+          "question": "Près de quel meuble se trouve le tapis ?",
+          "options": ["Le petit lit", "Une grande table", "Une armoire"],
+          "correctAnswer": "Le petit lit"
+        },
+        {
+          "question": "Quel petit cri fait Mimi ?",
+          "options": ["i i i", "couic couic", "piou piou"],
+          "correctAnswer": "i i i"
+        }
+      ]
+    },
+    {
+      "title": "Mimi a peur de Tigris",
+      "text": "Mimi la petite souris fait i i i. \n Mimi la petite souris a peur du chat Tigris. \n Où est Tigris? Tigris est sur le...",
+      "questions": [
+        {
+          "question": "De qui Mimi a-t-elle peur ?",
+          "options": ["Du chat Tigris", "De la petite fille", "Du tapis"],
+          "correctAnswer": "Du chat Tigris"
+        },
+        {
+          "question": "Comment s'appelle le chat ?",
+          "options": ["Tigris", "Mimi", "Dodo"],
+          "correctAnswer": "Tigris"
+        },
+        {
+          "question": "Que fait la souris quand elle a peur ?",
+          "options": ["Elle fait i i i", "Elle dort", "Elle court"],
+          "correctAnswer": "Elle fait i i i"
+        },
+        {
+          "question": "Où se trouve Tigris dans cette partie ?",
+          "options": ["Sur le lit", "Sous le tapis", "Dans le jardin"],
+          "correctAnswer": "Sur le lit"
+        },
+        {
+          "question": "Pourquoi Mimi se cache-t-elle ?",
+          "options": ["Parce qu'elle a peur", "Parce qu'elle joue", "Parce qu'elle a sommeil"],
+          "correctAnswer": "Parce qu'elle a peur"
+        }
+      ]
+    },
+    {
+      "title": "L'appel de Lili",
+      "text": "Tigris est sur le lit. \n Lili, la petite fille, appelle son chat Tigris : \n «Tigris, Tigris, viens ici.» \n Qu'arrivera-t-il à Mimi la souris?",
+      "questions": [
+        {
+          "question": "Qui est Lili ?",
+          "options": ["La petite fille", "La maman", "La souris"],
+          "correctAnswer": "La petite fille"
+        },
+        {
+          "question": "Qui Lili appelle-t-elle ?",
+          "options": ["Son chat Tigris", "La souris Mimi", "Son papa"],
+          "correctAnswer": "Son chat Tigris"
+        },
+        {
+          "question": "Que dit Lili à son chat ?",
+          "options": ["Viens ici", "Va dehors", "Dors encore"],
+          "correctAnswer": "Viens ici"
+        },
+        {
+          "question": "Où est Tigris quand Lili l'appelle ?",
+          "options": ["Sur le lit", "Sous le tapis", "Dans la cuisine"],
+          "correctAnswer": "Sur le lit"
+        },
+        {
+          "question": "Si Tigris va vers Lili, que fera probablement Mimi ?",
+          "options": ["Elle pourra sortir sans danger", "Elle va attraper le chat", "Elle va pleurer"],
+          "correctAnswer": "Elle pourra sortir sans danger"
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "title": "QCM Final : Mimi la souris",
+    "questions": [
+      {
+        "question": "Quel est le nom de la petite souris ?",
+        "options": ["Mimi", "Lili", "Tigris"],
+        "correctAnswer": "Mimi"
+      },
+      {
+        "question": "De quel animal Mimi a-t-elle peur ?",
+        "options": ["Un chat", "Un chien", "Un lion"],
+        "correctAnswer": "Un chat"
+      },
+      {
+        "question": "Où se cache la souris ?",
+        "options": ["Sous le tapis", "Sur le lit", "Dans une boîte"],
+        "correctAnswer": "Sous le tapis"
+      },
+      {
+        "question": "Comment s'appelle la petite fille ?",
+        "options": ["Lili", "Mimi", "Titi"],
+        "correctAnswer": "Lili"
+      },
+      {
+        "question": "Quel est le cri de la souris dans l'histoire ?",
+        "options": ["i i i", "miaou", "ouistiti"],
+        "correctAnswer": "i i i"
+      }
+    ]
+  }
+}

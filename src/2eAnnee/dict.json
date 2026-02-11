@@ -1,0 +1,213 @@
+{
+  "title": "Planning vocabulaire niveau 4e et 5e Année",
+  "weeks": [
+    {
+      "id": 1,
+      "week": "Semaine 1",
+      "evaluation": "2026-01-01",
+      "echelon": "Échelon 15 (Partie 1/4)",
+      "totalWords": 40,
+      "words": [
+        "affaiblir","agent","aile","air","armée","bain","balcon","besogne","billet","blanc",
+        "bonheur","bouquet","bourse","brochure","brusque","bureau","calculer","camion","capitaine","car",
+        "carnet","charité","chose","cinq","cirque","commun","compagnie","comparer","confondre","contribuer",
+        "coq","corbeau","corne","course","coutume","croire","cuire","demi","dépenser","depuis"
+      ]
+    },
+    {
+      "id": 2,
+      "week": "Semaine 2",
+      "evaluation": "2026-01-08",
+      "echelon": "Échelon 15 (Partie 2/4)",
+      "totalWords": 40,
+      "words": [
+        "destination","devant","dieu","directement","domestique","douloureux","doux","échapper","échelle","éclat",
+        "écluse","encrier","enfin","ensuite","entreprendre","entrevoir","esprit","éternel","étoile","étrange",
+        "fauvette","faveur","fontaine","forge","four","fournir","franc","frère","fuite","gamin",
+        "gardien","gare","garnir","gibier","grandeur","gras","grenouille","heure","ici","indigne"
+      ]
+    },
+    {
+      "id": 3,
+      "week": "Semaine 3",
+      "evaluation": "2026-01-15",
+      "echelon": "Échelon 15 (Partie 3/4)",
+      "totalWords": 40,
+      "words": [
+        "inscrire","instrument","jambe","journalier","juge","jusque","justement","langue","lever","liberté",
+        "ligue","livrer","locomotive","lot","lumière","lutte","mademoiselle","mai","mais","mer",
+        "merveille","métier","miette","migrateur","mine","minute","mirer","moineau","moment","montagne",
+        "montre","mortel","mouche","mouchoir","munir","mur","nappe","noble","nul","objet"
+      ]
+    },
+    {
+      "id": 4,
+      "week": "Semaine 4",
+      "evaluation": "2026-01-22",
+      "echelon": "Échelon 15 (Partie 4/4)",
+      "totalWords": 40,
+      "words": [
+        "obliger","oiseau","ombrage","onde","oui","panier","parcourir","parole","partout","pendant",
+        "pendre","perdre","périr","pierre","piété","pitié","plaisir","poésie","point","poisson",
+        "pompe","postal","pot","pourquoi","pourvoir","produit","proposition","proprement","puis","puisque",
+        "pupitre","quelque","racine","raison","rarement","religion","rentrer","repas","répondre","réponse"
+      ]
+    },
+    {
+      "id": 5,
+      "week": "Semaine 5",
+      "evaluation": "2026-01-29",
+      "echelon": "Échelon 16 (Partie 1/6)",
+      "totalWords": 40,
+      "words": [
+        "réunion","revivre","rocher","sacré","saison","salle","salon","sapin","satin","série",
+        "soie","sot","suave","sud","surtout","tabac","taille","tante","tenir","toit",
+        "tombeau","tomber","tram","tramway","traverser","trésor","aboutir","admirable","âge","aimer",
+        "aliment","allée","ami","amusement","avaler","avenue","avouer","bas","basse","bêche"
+      ]
+    },
+    {
+      "id": 6,
+      "week": "Semaine 6",
+      "evaluation": "2026-02-05",
+      "echelon": "Échelon 16 (Partie 2/6)",
+      "totalWords": 40,
+      "words": [
+        "bénédiction","berger","bœuf","boisson","bonté","bouteille","cabane","cacher","cadeau","caisse",
+        "calme","canif","cantique","capable","cause","chameau","changement","chaud","chaumière","choisir",
+        "clairon","comment","continuer","cortège","côté","cou","couler","coureur","courir","crise",
+        "cultivateur","curé","dangereux","découvrir","demoiselle","désireux","désordre","dévouement","digne","divin"
+      ]
+    },
+    {
+      "id": 7,
+      "week": "Semaine 7",
+      "evaluation": "2026-02-12",
+      "echelon": "Échelon 16 (Partie 3/6)",
+      "totalWords": 40,
+      "words": [
+        "dos","drapeau","également","électrique","émouvoir","enfermer","envie","épaule","époque","espoir",
+        "étage","étendue","étudiant","explication","farouche","faucheur","fixe","foire","fonction","garniture",
+        "gelée","glace","gorge","gratitude","grue","guide","hirondelle","huit","inférieur","infirme",
+        "infirmier","injure","intime","invitation","jamais","jardinage","jeunesse","jugement","lécher","lèvre"
+      ]
+    },
+    {
+      "id": 8,
+      "week": "Semaine 8",
+      "evaluation": "2026-02-19",
+      "echelon": "Échelon 16 (Partie 4/6)",
+      "totalWords": 40,
+      "words": [
+        "lilas","local","loi","marchand","marchandise","marché","marteau","méchant","mélodie","ménage",
+        "ménager","mentir","menuisier","merci","mesure","minuscule","misère","modèle","modeste","mont",
+        "monter","morceau","mordre","mousse","muscle","musée","net","neuf","note","nouveau",
+        "ornement","ours","ouvrir","panache","pantalon","paquet","parfaitement","parfum","parler","part"
+      ]
+    },
+    {
+      "id": 9,
+      "week": "Semaine 9",
+      "evaluation": "2026-02-26",
+      "echelon": "Échelon 16 (Partie 5/6)",
+      "totalWords": 40,
+      "words": [
+        "particulier","passé","pêcher","peine","pendule","péniblement","pensée","perfection","pièce","plaie",
+        "porc","port","possible","poursuite","poutre","préparation","prévenir","prise","prix","prochain",
+        "promeneur","promesse","quarante","quoi","raisin","rapide","rapidement","récréation","reculer","réfléchir",
+        "refuge","relativement","remettre","renouveau","représentation","réserve","retrouver","rigole","romain","ronger"
+      ]
+    },
+    {
+      "id": 10,
+      "week": "Semaine 10",
+      "evaluation": "2026-03-05",
+      "echelon": "Échelon 16 (Partie 6/6)",
+      "totalWords": 40,
+      "words": [
+        "rougir","rustique","sagement","sauver","secourir","septembre","servir","s’évanouir","silence","simple",
+        "soif","soirée","somme","songer","sonner","sonore","souper","spectacle","suivant","sujet",
+        "surface","tapage","tapis","tel","tendrement","tente","travail","travailler","travailleur","trimestre",
+        "vague","veston","viande","voile","voler","voltiger","voyage","yeux"
+      ]
+    },
+    {
+      "id": 11,
+      "week": "Semaine 11",
+      "evaluation": "2026-03-12",
+      "echelon": "Échelon 17 (Partie 1/6)",
+      "totalWords": 40,
+      "words": [
+        "acheter","actif","adieu","agréablement","aide","ajouter","aller","approcher","après","aucun",
+        "auteur","averse","avis","bavarder","bête","beurre","bientôt","bonbon","bougie","brebis",
+        "bref","briser","bruit","brun","brutal","capital","carré","cartable","centime","cercle",
+        "chagrin","chaise","chanter","charmer","chaume","cher","chute","client","clocher"
+      ]
+    },
+    {
+      "id": 12,
+      "week": "Semaine 12",
+      "evaluation": "2026-03-19",
+      "echelon": "Échelon 17 (Partie 2/6)",
+      "totalWords": 40,
+      "words": [
+        "colorer","comprendre","consolation","construction","conte","continuellement","conversation","copier","coucher","courageusement",
+        "crépuscule","cristal","danger","d’après","début","dedans","démarche","dépendre","déplaire","désigner",
+        "détester","détruire","dette","dévouer","direction","distribution","diviser","domicile","dont","drap",
+        "droit","duvet","écouter","encourir","énergie","enfance","entendre","équipage","escalader","estime"
+      ]
+    },
+    {
+      "id": 13,
+      "week": "Semaine 13",
+      "evaluation": "2026-03-26",
+      "echelon": "Échelon 17 (Partie 3/6)",
+      "totalWords": 40,
+      "words": [
+        "étoffe","étudier","fabriquer","fatiguer","fendre","fourneau","fourniture","fureur","fusil","géographie",
+        "gosse","grain","gravement","gravure","griffe","grossir","guerre","habitation","haie","hauteur",
+        "heureusement","horloge","huile","illustre","ingratitude","insigne","instruction","introduction","inutile","ivre",
+        "joyeux","jurer","laitier","largement","lendemain","lier","conformément","conseil","construire","contraire"
+      ]
+    },
+    {
+      "id": 14,
+      "week": "Semaine 14",
+      "evaluation": "2026-04-02",
+      "echelon": "Échelon 17 (Partie 4/6)",
+      "totalWords": 40,
+      "words": [
+        "coquet","couloir","courber","couvert","crayon","culotte","décider","défaut","défendre","degré",
+        "demeure","démolir","déplacer","dérober","désobéir","détail","deviner","disposer","distinction","distraire",
+        "distribuer","docile","doigt","dominer","donner","doucement","douzaine","drôle","durer","écrit",
+        "éducation","empereur","emplir","enrichir","enseigner","épée","équilibre","équipe","étendre","éteindre"
+      ]
+    },
+    {
+      "id": 15,
+      "week": "Semaine 15",
+      "evaluation": "2026-04-09",
+      "echelon": "Échelon 17 (Partie 5/6)",
+      "totalWords": 40,
+      "words": [
+        "expirer","facilement","façon","farce","fermer","feuillage","février","fier","filet","flacon",
+        "flaque","foi","fossé","fouet","fragile","franchement","franchise","fruitier","gaz","gendarme",
+        "gens","glissant","griffer","grotte","hâte","humain","humeur","humide","important","instant",
+        "instruire","intérieur","introduire","ivresse","jeter","juger","labourer","lamentable","lent","lentement"
+      ]
+    },
+    {
+      "id": 16,
+      "week": "Semaine 16",
+      "evaluation": "2026-04-16",
+      "echelon": "Échelon 17 (Partie 6/6)",
+      "totalWords": 40,
+      "words": [
+        "libérer","lien","localité","loger","loisir","luisant","lutte","magasin","malgré","manche",
+        "manteau","manuel","marin","ménagère","mendiant","milieu","mission","montant","mou","mourir",
+        "nombreux","nourriture","office","offrir","onduler","par","parure","passage","pêche","peupler",
+        "pic","pigeon","piquer","poirier","pommier","porte-plume","poser","pousser","poussin","préparer"
+      ]
+    }
+  ]
+}

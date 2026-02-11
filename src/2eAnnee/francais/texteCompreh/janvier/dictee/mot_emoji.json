@@ -1,0 +1,91 @@
+{
+  "title": "Dictées des 4 semaines",
+  "weeks": [
+    {
+      "id": "semaine1",
+      "title": "Dictée 1 Titi le petit ouistiti",
+      "words": [
+        { "word": "de la confiture", "emoji": "🍯" },
+        { "word": "une tente", "emoji": "⛺" },
+        { "word": "un élastique", "emoji": "➰" },
+        { "word": "une tête", "emoji": "👤" },
+        { "word": "une étoile", "emoji": "⭐" },
+        { "word": "un titre", "emoji": "📄" },
+        { "word": "un ouistiti", "emoji": "🐒" },
+        { "word": "une tomate", "emoji": "🍅" },
+        { "word": "une patte", "emoji": "🐾" },
+        { "word": "une tortue", "emoji": "🐢" },
+        { "word": "une table", "emoji": "table" },
+        { "word": "une toupie", "emoji": "🌀" },
+        { "word": "une tartine", "emoji": "🍞" },
+        { "word": "une trapéziste", "emoji": "🎪" }
+      ]
+    },
+    {
+      "id": "semaine2",
+      "title": "Dictée 2 Léo le lionceau",
+      "words": [
+        { "word": "un bol", "emoji": "🥣" },
+        { "word": "une limonade", "emoji": "🥤" },
+        { "word": "de la colle", "emoji": "🧪" },
+        { "word": "un lion", "emoji": "🦁" },
+        { "word": "du fil", "emoji": "🧵" },
+        { "word": "un lionceau", "emoji": "🐈" },
+        { "word": "un lac", "emoji": "🏞️" },
+        { "word": "une lionne", "emoji": "🦁" },
+        { "word": "du lait", "emoji": "🥛" },
+        { "word": "un lutin", "emoji": "🧝" },
+        { "word": "un lavabo", "emoji": "🚰" },
+        { "word": "une malade", "emoji": "🤒" },
+        { "word": "des légumes", "emoji": "🥦" },
+        { "word": "une mule", "emoji": "🫏" },
+        { "word": "une lime", "emoji": "💅" },
+        { "word": "un stylo", "emoji": "🖊️" }
+      ]
+    },
+    {
+      "id": "semaine3",
+      "title": "Dictée 3 Mimi la souris",
+      "words": [
+        { "word": "une bicyclette", "emoji": "🚲" },
+        { "word": "un pyjama", "emoji": " pajamas" },
+        { "word": "des ciseaux", "emoji": "✂️" },
+        { "word": "une souris", "emoji": "🐭" },
+        { "word": "une fourmi", "emoji": "🐜" },
+        { "word": "un tapis", "emoji": "🧶" },
+        { "word": "un hibou", "emoji": "🦉" },
+        { "word": "un taxi", "emoji": "🚕" },
+        { "word": "une île", "emoji": "🏝️" },
+        { "word": "une toupie", "emoji": "🌀" },
+        { "word": "un lit", "emoji": "🛌" },
+        { "word": "une tulipe", "emoji": "🌷" },
+        { "word": "un livre", "emoji": "📖" },
+        { "word": "une valise", "emoji": "🧳" }
+      ]
+    },
+    {
+      "id": "semaine4",
+      "title": "Dictée 4 Une histoire de chats",
+      "words": [
+        { "word": "un avion", "emoji": "✈️" },
+        { "word": "un chaton", "emoji": "🐱" },
+        { "word": "une balle", "emoji": "🎾" },
+        { "word": "une chatte", "emoji": "🐈" },
+        { "word": "un ballon", "emoji": "🎈" },
+        { "word": "une cravate", "emoji": "👔" },
+        { "word": "des bananes", "emoji": "🍌" },
+        { "word": "un dragon", "emoji": "🐉" },
+        { "word": "des bas", "emoji": "🧦" },
+        { "word": "une girafe", "emoji": "🦒" },
+        { "word": "un bâton", "emoji": "🦯" },
+        { "word": "un pyjama", "emoji": "pajamas" },
+        { "word": "une cage", "emoji": "⛓️" },
+        { "word": "un savon", "emoji": "🧼" },
+        { "word": "une carte", "emoji": "🗺️" },
+        { "word": "une vache", "emoji": "🐄" },
+        { "word": "un chat", "emoji": "🐈‍⬛" },
+        { "word": "une valise", "emoji": "🧳" }
+      ]
+    }
+  ]
+}

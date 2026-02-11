@@ -122,7 +122,89 @@
     {
       "id": "fevrier",
       "label": "Février",
-      "categories": []
+      "categories": [
+         {
+      "id": "lecture_janv",
+      "label": "Lecture compréhension",
+      "children": [
+        {
+          "id": "LAmbitiondeGagner",
+          "label": "L'Ambition de Gagner",
+          "folderName": "LAmbitiondeGagner",
+         
+          "quizJsonPath": "./janvier/LAmbitiondeGagner/question.json"
+        },{
+          "id": "petitAlex",
+          "label": "petit Alex",
+          "folderName": "petitAlex",
+         
+          "quizJsonPath": "./janvier/petitAlex/question.json"
+        },{
+          "id": "Lnnéedurat",
+          "label": "L’année du rat",
+          "folderName": "L’annéedurat",
+         
+          "quizJsonPath": "./fevrier/L’annéedurat/question.json"
+        },{
+          "id": "Accidentdeballon",
+          "label": "L'accident de ballon",
+          "folderName": "Accidentdeballon",
+         
+          "quizJsonPath": "./janvier/Accidentdeballon/question.json"
+        },{
+  "id": "Lesinventionsrecentes",
+  "label": "Les inventions récentes",
+  "folderName": "Lesinventionsrecentes",
+  "quizJsonPath": "./janvier/Lesinventionsrecentes/question.json"
+},{
+  "id": "Unevoituredeuxchevaux",
+  "label": "Unevoiture à deuxchevaux",
+  "folderName": "Unevoituredeuxchevaux",
+  "quizJsonPath": "./janvier/Unevoituredeuxchevaux/question.json"
+},
+
+        
+        
+        
+        {
+          "id": "Lemauvaisgardien",
+          "label": "Le mauvais gardien",
+          "folderName": "Lemauvaisgardien",
+          
+          "quizJsonPath": "./janvier/Lemauvaisgardien/question.json"
+        },
+        
+        {
+          "id": "Leplusfortdesfélins",
+          "label": "Le plus fort des félins",
+          "folderName": "Leplusfortdesfélins",
+          
+          "quizJsonPath": "./janvier/Leplusfortdesfélins/question.json"
+        },{
+  "id": "Avènementdelatélévision",
+  "label": "L’avènement de la télévision",
+  "folderName": "Avènementdelatélévision",
+  "quizJsonPath": "./janvier/Avènementdelatélévision/question.json"
+} 
+       
+        
+       
+      ]
+    },{
+      "id": "histoire_dec",
+      "label": "Histoire du mois",
+      "children": [
+     
+     ]
+    },
+    {
+      "id": "dictee_janv",
+      "label": "Dictées du mois",
+      "children": [
+        
+      ]
+    }
+      ]
     },
     {
       "id": "mars",

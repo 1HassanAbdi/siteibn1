@@ -2,7 +2,7 @@
   "test_info": {
     "titre": "Test en lecture et grammaire - Cycle moyen",
     "niveau": "6e année",
-    "session": "Printemps 2012",
+    "session": "Grand-maman-marathon",
     "matiere": "Français",
     "cahier": "1",
     "organisme": "OQRE"
@@ -26,7 +26,7 @@
           ],
           "questions": [
             { "numero": 1, "enonce": "Vrai ou Faux : Le narrateur s'entraîne pour la course avec des amis de son école.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
-            { "numero": 2, "enonce": "Vrai ou Faux : La grand-mère annonce son intention de courir pendant le mois de mai.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
+            { "numero": 2, "enonce": "Vrai ou Faux : La grand-mère annonce son intention de courir pendant le mois de mai.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
             { "numero": 3, "enonce": "Vrai ou Faux : Le narrateur pense d'abord que sa grand-mère n'est pas assez en forme pour la course.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },
             { "numero": 4, "enonce": "Vrai ou Faux : La grand-mère quitte la piste parce qu'elle est trop fatiguée pour continuer.", "options": ["Vrai", "Faux"], "reponse_correcte": "Faux" },
             { "numero": 5, "enonce": "Vrai ou Faux : Le narrateur a l'intention d'escalader une montagne dans le futur.", "options": ["Vrai", "Faux"], "reponse_correcte": "Vrai" },

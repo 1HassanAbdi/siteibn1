@@ -1,0 +1,79 @@
+{
+  "title": "Le voyage des chats",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "La famille chat",
+      "text": "Voici Papa le chat.\nVoici Maman la chatte.\nVoici les chatons Baba et Nana.\nLes chats font leur valise.",
+      "questions": [
+        {
+          "question": "Qui sont les chatons ?",
+          "options": ["Baba et Nana", "Mimi et Titi", "Tigris et Lili"],
+          "correctAnswer": "Baba et Nana"
+        },
+        {
+          "question": "Que font les chats ?",
+          "options": ["Ils font leur valise", "Ils dorment", "Ils mangent"],
+          "correctAnswer": "Ils font leur valise"
+        }
+      ]
+    },
+    {
+      "title": "Les valises",
+      "text": "Dans sa valise, Papa le chat met une cravate et des bas.\nDans sa valise, Maman la chatte met un savon et un pyjama.\nDans sa valise, Nana met une balle et un bâton.",
+      "questions": [
+        {
+          "question": "Que met Papa le chat dans sa valise ?",
+          "options": ["Une cravate et des bas", "Un savon et un pyjama", "Une balle et un bâton"],
+          "correctAnswer": "Une cravate et des bas"
+        },
+        {
+          "question": "Qui met un savon et un pyjama dans sa valise ?",
+          "options": ["Maman la chatte", "Nana", "Papa le chat"],
+          "correctAnswer": "Maman la chatte"
+        },
+        {
+          "question": "Quels objets Nana a-t-elle choisis ?",
+          "options": ["Une balle et un bâton", "Une cravate", "Un savon"],
+          "correctAnswer": "Une balle et un bâton"
+        }
+      ]
+    },
+    {
+      "title": "Le départ",
+      "text": "Les chats s'en vont en voyage.\nIls voyagent en avion.\nOù s'en vont-ils?",
+      "questions": [
+        {
+          "question": "Comment les chats voyagent-ils ?",
+          "options": ["En avion", "En voiture", "En train"],
+          "correctAnswer": "En avion"
+        },
+        {
+          "question": "Où partent les chats ?",
+          "options": ["En voyage", "À l'école", "Au parc"],
+          "correctAnswer": "En voyage"
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "title": "QCM Final : Le voyage des chats",
+    "questions": [
+      {
+        "question": "Comment s'appelle le papa ?",
+        "options": ["Papa le chat", "Baba", "Tigris"],
+        "correctAnswer": "Papa le chat"
+      },
+      {
+        "question": "Quel moyen de transport utilisent-ils ?",
+        "options": ["L'avion", "Le tapis", "Le lit"],
+        "correctAnswer": "L'avion"
+      },
+      {
+        "question": "Qu'est-ce que Maman a mis dans sa valise ?",
+        "options": ["Un savon et un pyjama", "Des bas", "Une balle"],
+        "correctAnswer": "Un savon et un pyjama"
+      }
+    ]
+  }
+}

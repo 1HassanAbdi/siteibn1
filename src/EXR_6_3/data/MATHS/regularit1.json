@@ -1,0 +1,140 @@
+{
+  "test_info": {
+    "session": "Mathématiques_ regularité",
+    "niveau": "3A",
+    "target": "maths_3a_oqre",
+    "subject": "maths"
+  },
+  "parties": [
+    {
+      "id": "Module_1",
+      "sections": [
+        {
+          "titre": "Régularité en Addition et Soustraction",
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Complète la suite : 10, 20, 30, ____, 50",
+              "options": ["35", "40", "45", "60"],
+              "reponse_correcte": "40"
+            },
+            {
+              "numero": 2,
+              "enonce": "Quelle est la règle de la suite : 5, 10, 15, 20 ?",
+              "options": ["Ajouter 2", "Ajouter 5", "Soustraire 5", "Ajouter 10"],
+              "reponse_correcte": "Ajouter 5"
+            },
+            {
+              "numero": 3,
+              "enonce": "Trouve le nombre manquant : 50, 45, 40, ____, 30",
+              "options": ["38", "35", "25", "20"],
+              "reponse_correcte": "35"
+            },
+            {
+              "numero": 4,
+              "enonce": "Dans cette suite, que fait-on à chaque étape : 100, 90, 80, 70 ?",
+              "options": ["Ajouter 10", "Soustraire 5", "Soustraire 10", "Ajouter 20"],
+              "reponse_correcte": "Soustraire 10"
+            },
+            {
+              "numero": 5,
+              "enonce": "Complète : 2, 4, 6, ____, 10",
+              "options": ["7", "8", "9", "12"],
+              "reponse_correcte": "8"
+            },
+            {
+              "numero": 6,
+              "enonce": "Quelle est la règle de la suite : 30, 25, 20, 15 ?",
+              "options": ["Ajouter 5", "Soustraire 5", "Ajouter 10", "Soustraire 10"],
+              "reponse_correcte": "Soustraire 5"
+            },
+            {
+              "numero": 7,
+              "enonce": "Trouve le nombre manquant : 1, 3, 5, ____, 9",
+              "options": ["6", "7", "8", "10"],
+              "reponse_correcte": "7"
+            },
+            {
+              "numero": 8,
+              "enonce": "Complète la suite : 40, 50, 60, ____, 80",
+              "options": ["65", "70", "75", "90"],
+              "reponse_correcte": "70"
+            },
+            {
+              "numero": 9,
+              "enonce": "Quelle opération permet de passer de 12 à 15 ?",
+              "options": ["Soustraire 3", "Ajouter 3", "Ajouter 5", "Soustraire 5"],
+              "reponse_correcte": "Ajouter 3"
+            },
+            {
+              "numero": 10,
+              "enonce": "Trouve la règle : 90, 85, 80, 75",
+              "options": ["Ajouter 5", "Soustraire 5", "Soustraire 10", "Ajouter 10"],
+              "reponse_correcte": "Soustraire 5"
+            },
+            {
+              "numero": 11,
+              "enonce": "Complète : 0, 10, 20, ____, 40",
+              "options": ["25", "30", "35", "50"],
+              "reponse_correcte": "30"
+            },
+            {
+              "numero": 12,
+              "enonce": "Trouve le nombre manquant : 70, 60, ____, 40",
+              "options": ["55", "50", "45", "30"],
+              "reponse_correcte": "50"
+            },
+            {
+              "numero": 13,
+              "enonce": "Quelle est la règle de la suite : 4, 8, 12, 16 ?",
+              "options": ["Ajouter 2", "Ajouter 4", "Soustraire 4", "Ajouter 6"],
+              "reponse_correcte": "Ajouter 4"
+            },
+            {
+              "numero": 14,
+              "enonce": "Complète la suite : 100, 95, ____, 85",
+              "options": ["92", "90", "88", "80"],
+              "reponse_correcte": "90"
+            },
+            {
+              "numero": 15,
+              "enonce": "Quel nombre vient après 27 si on ajoute toujours 3 ?",
+              "options": ["29", "30", "31", "33"],
+              "reponse_correcte": "30"
+            },
+            {
+              "numero": 16,
+              "enonce": "Trouve la règle : 60, 50, 40, 30",
+              "options": ["Soustraire 5", "Ajouter 10", "Soustraire 10", "Ajouter 5"],
+              "reponse_correcte": "Soustraire 10"
+            },
+            {
+              "numero": 17,
+              "enonce": "Complète : 5, 15, 25, ____, 45",
+              "options": ["30", "35", "40", "50"],
+              "reponse_correcte": "35"
+            },
+            {
+              "numero": 18,
+              "enonce": "Quelle est la règle de la suite : 2, 5, 8, 11 ?",
+              "options": ["Ajouter 2", "Ajouter 3", "Soustraire 3", "Ajouter 5"],
+              "reponse_correcte": "Ajouter 3"
+            },
+            {
+              "numero": 19,
+              "enonce": "Trouve le nombre manquant : 45, 40, 35, ____, 25",
+              "options": ["30", "28", "20", "15"],
+              "reponse_correcte": "30"
+            },
+            {
+              "numero": 20,
+              "enonce": "Complète la suite : 10, 15, 20, 25, ____",
+              "options": ["28", "30", "35", "40"],
+              "reponse_correcte": "30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

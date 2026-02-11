@@ -1,0 +1,24 @@
+{
+  "title": "Titi le petit ouistiti",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "Titi le petit ouistiti",
+      "text": "Titi le petit ouistiti est un drôle de ouistiti.\nIl se balance la tête en bas.\nOn dirait un trapéziste.",
+      "image": "1.png",
+      "audio": "titi(1).mp3"
+    },
+    {
+      "title": "Titi fait le clown",
+      "text": "Titi le petit ouistiti saute et tourne comme une toupie.\nSur une patte, sur deux pattes.\nOn dirait un acrobate.",
+      "image": "2.png",
+      "audio": "titi(2).mp3"
+    },
+    {
+      "title": "Titi le danseur",
+      "text": "Titi s'imagine sous la tente.\nIl danse et s'étire comme un élastique.\nLe voici danseur étoile du cirque.",
+      "image": "3.png",
+      "audio": "titi(3).mp3"
+    }
+  ]
+}

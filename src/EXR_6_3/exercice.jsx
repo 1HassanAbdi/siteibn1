@@ -1,219 +1,258 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Lock, Send, ChevronRight, ChevronLeft, Layout, 
-  Trophy, Loader2, CheckCircle2, ArrowRight, 
-  RefreshCcw, LogOut, ShieldCheck, Mail, BookOpen, 
-  Edit3, Info, CheckSquare, GraduationCap, ChevronDown, AlertCircle
+  Lock, Send, ChevronRight, ChevronLeft, Trophy, Loader2, 
+  CheckCircle2, BookOpen, Volume2, Square, GraduationCap, 
+  ChevronDown, AlertCircle, Calculator, Calendar, ShieldCheck, Mail, VolumeX 
 } from 'lucide-react';
 
-// --- CONFIGURATION ---
-import data2011 from './data/oqre_2011.json';
-import data2012 from './data/oqre_2012.json';
-import Au_jardin from './data/Au_jardin.json';
-import marathon from './data/marathon.json';
-import ecole from './data/ecole.json';
-
-const TEACHER_CODE = "FRANCE2011"; 
+// --- CONFIGURATION DYNAMIQUE ---
+import configExercices from './data/config_exercices.json'; 
+const allModules = import.meta.glob('./data/**/*.json');
+const TEACHER_CODE = "2025"; 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxTBjRTgiO0JVqwjCfsnggzP5o1wN_lNMewT-H2ILejDNhKqUcDjz7cX2wfPIk0dX8/exec"; 
 
-export default function PortailOQRE() {
-  const [view, setView] = useState('home'); 
+export default function PortailOQRE({ exerciseSlug, level, onBack }) {
+  // États de base
+  const [view, setView] = useState('login');
   const [selectedSession, setSelectedSession] = useState(null);
   const [activePartIdx, setActivePartIdx] = useState(0);
-  const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0); 
-  const [studentInfo, setStudentInfo] = useState({ nom: '', classe: '', email: '', code: '' });
+  const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
+  const [studentInfo, setStudentInfo] = useState({ 
+    nom: '', 
+    classe: level === 6 ? '6A' : '3A', // Si level est 6 -> 6A, sinon 3A
+    email: '', 
+    code: '' 
+  });
+  
   const [answers, setAnswers] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [lastPartScore, setLastPartScore] = useState({ score: 0, total: 0 });
+  const [currentlyReadingId, setCurrentlyReadingId] = useState(null);
 
+  // --- 1. SÉCURITÉ CLASSE : Force la classe selon le niveau du Hub ---
+  // Sécurité : Si le niveau change dynamiquement (optionnel)
+  useEffect(() => {
+    if (level) {
+      setStudentInfo(prev => ({ 
+        ...prev, 
+        classe: level === 6 ? '6A' : '3A' 
+      }));
+    }
+  }, [level]);
+
+  
+
+  // --- 2. CHARGEMENT DYNAMIQUE DU JSON ---
+  useEffect(() => {
+    const loadData = async () => {
+      const info = configExercices.find(ex => ex.slug === exerciseSlug);
+      if (info) {
+        try {
+          const importFunc = allModules[info.chemin];
+          const module = await importFunc();
+          setSelectedSession(module.default);
+        } catch (e) {
+          alert("Erreur de chargement du fichier JSON.");
+        }
+      }
+    };
+    loadData();
+  }, [exerciseSlug]);
+
+  // --- 3. MÉLANGE DES OPTIONS (SHUFFLE ARRAY) ---
+  const shuffleArray = (array) => {
+    const newArr = [...array];
+    for (let i = newArr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+    }
+    return newArr;
+  };
+
+  // --- 4. LOGIQUE AUDIO (TOGGLE & ARRÊT) ---
+  const toggleSpeak = (text, id) => {
+    if (currentlyReadingId === id) {
+      window.speechSynthesis.cancel();
+      setCurrentlyReadingId(null);
+    } else {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      
+      // Chercher une voix française de qualité
+      const voices = window.speechSynthesis.getVoices();
+      const preferredVoice = voices.find(v => v.lang.includes('fr-CA') || v.lang.includes('fr-FR'));
+      if (preferredVoice) utterance.voice = preferredVoice;
+      
+      utterance.lang = 'fr-FR'; 
+      utterance.rate = 0.95;
+      utterance.onend = () => setCurrentlyReadingId(null);
+      window.speechSynthesis.speak(utterance);
+      setCurrentlyReadingId(id);
+    }
+  };
+
+  const stopAllAudio = () => {
+    window.speechSynthesis.cancel();
+    setCurrentlyReadingId(null);
+  };
+
+  // Arrêt automatique si on change de page ou ferme le composant
+  useEffect(() => {
+    return () => window.speechSynthesis.cancel();
+  }, [currentQuestionIdx, view]);
+
+  // --- 5. CALCUL DES QUESTIONS AVEC MÉLANGE ---
   const currentPart = selectedSession?.parties[activePartIdx];
-  const currentQuestions = useMemo(() => currentPart?.sections.flatMap(s => s.questions) || [], [activePartIdx, selectedSession]);
-  const currentQuestion = currentQuestions[currentQuestionIdx];
-  const activeSection = useMemo(() => {
-    if (!currentPart || !currentQuestion) return null;
-    return currentPart.sections.find(s => s.questions.some(q => q.numero === currentQuestion.numero));
-  }, [activePartIdx, currentQuestion, selectedSession]);
+  
+  const currentQuestions = useMemo(() => {
+    const questions = currentPart?.sections.flatMap(s => s.questions) || [];
+    // On mélange les options pour chaque question unique
+    return questions.map(q => ({
+      ...q,
+      options: q.options ? shuffleArray(q.options) : null
+    }));
+  }, [currentPart, selectedSession]);
 
-  // --- NOUVELLE CONDITION : TOUTES LES QUESTIONS RÉPONDUES ---
+  const currentQuestion = currentQuestions[currentQuestionIdx];
+
   const isPartComplete = useMemo(() => {
     if (currentQuestions.length === 0) return false;
     return currentQuestions.every(q => {
-      const answer = answers[q.numero];
-      if (q.options) {
-        // Pour les QCM : l'entrée doit exister
-        return !!answer;
-      } else {
-        // Pour les textes : doit être une chaîne non vide (sans compter les espaces)
-        return typeof answer === 'string' && answer.trim().length > 0;
-      }
+      const a = answers[q.numero];
+      return q.options ? !!a : (typeof a === 'string' && a.trim().length > 0);
     });
   }, [currentQuestions, answers]);
 
-  const partProgress = Math.round(((currentQuestionIdx + 1) / (currentQuestions.length || 1)) * 100);
+  const progress = Math.round(((currentQuestionIdx + 1) / (currentQuestions.length || 1)) * 100);
 
   // --- ACTIONS ---
-
-  const handleSelectTest = (data) => {
-    setSelectedSession(data);
-    setView(studentInfo.nom ? 'quiz' : 'login');
-    setActivePartIdx(0);
-    setCurrentQuestionIdx(0);
-  };
-
   const handleLogin = (e) => {
     e.preventDefault();
     if (studentInfo.code === TEACHER_CODE && studentInfo.nom.trim().length >= 3) setView('quiz');
-    else alert("Erreur : Nom trop court ou Code Secret incorrect.");
+    else alert("Erreur d'identification ou code secret incorrect.");
   };
 
   const submitPart = async () => {
-    if (!isPartComplete) {
-      alert("Attention : Tu dois répondre à toutes les questions avant d'envoyer !");
-      return;
-    }
+    stopAllAudio();
     setIsSubmitting(true);
-    let score = 0;
-    let totalQcm = 0;
+    let score = 0, totalQcm = 0;
     const openAnswers = {};
+    const correctAnswersMap = {};
 
     currentQuestions.forEach(q => {
       if (q.options) {
         totalQcm++;
+        correctAnswersMap[q.numero] = q.reponse_correcte;
         if (answers[q.numero] === q.reponse_correcte) score++;
       } else {
         openAnswers[q.numero] = answers[q.numero] || "";
       }
     });
 
-    const payload = {
-  nom: studentInfo.nom,
-  classe: studentInfo.classe,
-  email: studentInfo.email,
-  titre: `${selectedSession.test_info.session} - ${currentPart.id}`,
-  sheetTarget: "OQRE3A",
-  answers: answers,  // toutes les réponses de l'élève
-  correctAnswers: currentQuestions.reduce((acc, q) => {
-    if (q.options) acc[q.numero] = q.reponse_correcte;
-    return acc;
-  }, {}),
-  openAnswers: openAnswers
-};
-
+    const payload = { 
+      nom: studentInfo.nom, 
+      classe: studentInfo.classe, 
+      email: studentInfo.email, 
+      titre: `${selectedSession.test_info.session} - ${currentPart.id}`,
+      sheetTarget: studentInfo.classe === '3A' ? "OQRE_3A" : "OQRE_6A",
+      answers: answers,
+      correctAnswers: correctAnswersMap,
+      openAnswers: openAnswers
+    };
 
     try {
       await fetch(GOOGLE_SCRIPT_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(payload) });
-      setTimeout(() => {
-        setLastPartScore({ score, total: totalQcm });
-        setView('part-summary');
-        setIsSubmitting(false);
-      }, 1500);
-    } catch (e) {
-      alert("Erreur réseau");
-      setIsSubmitting(false);
-    }
+      setLastPartScore({ score, total: totalQcm });
+      setView('summary');
+    } catch (e) { alert("Erreur lors de l'envoi."); }
+    setIsSubmitting(false);
   };
 
-  // --- RENDU (Moteur de Quiz Modifié) ---
-
-  if (view === 'home') return <HomeView onSelect={handleSelectTest} studentInfo={studentInfo} setView={setView} />;
-  if (view === 'login') return <LoginView studentInfo={studentInfo} setStudentInfo={setStudentInfo} handleLogin={handleLogin} onBack={() => setView('home')} />;
-  if (view === 'part-summary') return <PartTransitionView partId={currentPart.id} score={lastPartScore.score} total={lastPartScore.total} isLast={activePartIdx === selectedSession.parties.length - 1} onNext={() => { if(activePartIdx < selectedSession.parties.length - 1) { setActivePartIdx(activePartIdx + 1); setCurrentQuestionIdx(0); setView('quiz'); } else setView('finished'); }} onRefaire={() => { setView('quiz'); setCurrentQuestionIdx(0); }} onStop={() => setView('home')} />;
-  if (view === 'finished') return <FinishView nom={studentInfo.nom} onHome={() => setView('home')} />;
+  // --- VUES ---
+  if (view === 'login') return <LoginView studentInfo={studentInfo} setStudentInfo={setStudentInfo} handleLogin={handleLogin} onBack={onBack} />;
+  if (view === 'summary') return <SummaryView score={lastPartScore} part={currentPart} isLast={activePartIdx === selectedSession.parties.length - 1} onNext={() => { if(activePartIdx < selectedSession.parties.length - 1) { setActivePartIdx(activePartIdx + 1); setCurrentQuestionIdx(0); setView('quiz'); } else setView('finished'); }} onStop={onBack} />;
+  if (view === 'finished') return <FinishView nom={studentInfo.nom} onHome={onBack} />;
 
   return (
-    <div className="h-screen w-screen bg-slate-950 flex flex-col overflow-hidden border-[6px] md:border-[10px] border-black">
-      <header className="h-12 bg-black flex items-center justify-between px-6 border-b border-slate-900">
+    <div className="h-screen w-screen bg-slate-950 flex flex-col overflow-hidden border-[10px] border-black">
+      <header className="h-14 bg-black flex items-center justify-between px-8 border-b border-slate-900">
         <div className="flex flex-col">
-          <span className="text-white font-black text-[10px] uppercase leading-none">{studentInfo.nom}</span>
-          <span className="text-slate-500 text-[8px] uppercase">{studentInfo.email}</span>
+            <span className="text-white font-black text-[10px] uppercase leading-none">{studentInfo.nom} | {studentInfo.classe}</span>
+            <span className="text-slate-500 text-[8px] uppercase tracking-tighter">{selectedSession?.test_info?.session}</span>
         </div>
-        <div className="bg-blue-600 px-3 py-1 rounded text-white font-black text-[10px] italic">{currentPart.id}</div>
+        <div className="flex items-center gap-4">
+            {currentlyReadingId && (
+                <button onClick={stopAllAudio} className="flex items-center gap-2 bg-red-600/20 text-red-500 px-3 py-1 rounded text-[10px] font-black border border-red-600/30 animate-pulse">
+                    <VolumeX size={12}/> STOP AUDIO
+                </button>
+            )}
+            <div className="bg-indigo-600 px-4 py-1 rounded text-white font-black text-[10px] italic">{currentPart?.id}</div>
+        </div>
       </header>
 
       <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
-        {/* TEXTE INTEGRAL */}
-        <div className="w-full lg:w-1/2 bg-slate-900 p-6 overflow-y-auto custom-scrollbar border-r border-black">
-          {activeSection?.texte_integral ? (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-              <h2 className="text-blue-400 font-black text-xl mb-6 uppercase italic border-b border-slate-800 pb-2">{activeSection.titre}</h2>
-              {activeSection.texte_integral.map((t, i) => (
-                <p key={i} className="text-slate-300 mb-4 text-sm md:text-lg leading-relaxed">
-                  <span className="text-blue-600 font-black mr-2 bg-black px-1 rounded">{t.p || t.section || "•"}</span>{t.contenu}
+        {/* TEXTE */}
+        <div className="w-full lg:w-1/2 bg-slate-900 p-8 overflow-y-auto border-r border-black custom-scrollbar">
+          <h2 className="text-indigo-400 font-black text-2xl uppercase italic border-b border-slate-800 pb-4 mb-6">{currentPart?.sections[0]?.titre}</h2>
+          {currentPart?.sections[0]?.texte_integral?.map((t, i) => {
+            const pid = `para-${i}`;
+            return (
+              <div key={i} className="group relative bg-slate-900/50 hover:bg-slate-800/30 p-4 rounded-xl transition-all mb-4">
+                <p className="text-slate-300 text-lg leading-relaxed pr-10">
+                    <span className="text-indigo-500 font-bold mr-3 text-xs">[{t.p || i+1}]</span>
+                    {t.contenu}
                 </p>
-              ))}
-            </motion.div>
-          ) : <div className="text-slate-800 font-black text-center mt-20 text-4xl opacity-10 uppercase -rotate-12 italic">Travaillez sur la question</div>}
+                <button onClick={() => toggleSpeak(t.contenu, pid)}
+                  className={`absolute top-4 right-4 p-2 rounded-full transition-all ${currentlyReadingId === pid ? 'bg-red-600 text-white' : 'bg-slate-800 text-slate-400 opacity-0 group-hover:opacity-100 hover:bg-indigo-600 hover:text-white'}`}>
+                  {currentlyReadingId === pid ? <Square size={16} fill="currentColor"/> : <Volume2 size={16}/>}
+                </button>
+              </div>
+            );
+          })}
         </div>
 
-        {/* QUIZ PANEL */}
+        {/* QUIZ */}
         <div className="w-full lg:w-1/2 bg-slate-800 flex flex-col relative">
-          {isSubmitting && (
-            <div className="absolute inset-0 z-50 bg-black/95 flex flex-col items-center justify-center text-center p-6">
-              <Loader2 size={40} className="animate-spin text-blue-500 mb-4" />
-              <p className="text-white font-black uppercase italic animate-pulse">Transmission des résultats à l'enseignant...</p>
-            </div>
-          )}
-
-          <div className="flex-1 p-4 md:p-8 overflow-y-auto flex items-center justify-center">
+          <div className="flex-1 p-8 flex items-center justify-center">
             <AnimatePresence mode="wait">
-              <motion.div key={currentQuestion.numero} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="w-full max-w-xl">
-                <div className="bg-slate-900 p-6 md:p-10 rounded-[2.5rem] border-4 border-black shadow-2xl relative">
-                  <div className="absolute -top-4 -left-4 bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded-xl font-black border-4 border-black">{currentQuestion.numero}</div>
-                  <h3 className="text-white font-bold text-lg mb-8 leading-tight">{currentQuestion.enonce}</h3>
-
-                  {currentQuestion.options ? (
-                    <div className="grid gap-3">
-                      {currentQuestion.options.map((opt, i) => (
-                        <button key={i} onClick={() => setAnswers({...answers, [currentQuestion.numero]: opt})}
-                          className={`w-full p-4 rounded-xl text-left font-bold border-2 transition-all ${answers[currentQuestion.numero] === opt ? "bg-blue-600 border-white text-white translate-x-1" : "bg-slate-800 border-black text-slate-400 hover:bg-slate-700"}`}>
-                          {opt}
-                        </button>
-                      ))}
-                    </div>
-                  ) : (
-                    <textarea value={answers[currentQuestion.numero] || ""} onChange={(e) => setAnswers({...answers, [currentQuestion.numero]: e.target.value})}
-                      placeholder="Écris ta réponse ici..." className="w-full h-44 bg-black text-white p-5 rounded-2xl border-2 border-slate-800 outline-none focus:border-blue-500 font-medium" />
-                  )}
+              <motion.div key={currentQuestion?.numero} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} className="w-full max-w-xl bg-slate-900 p-10 rounded-[3rem] border-4 border-black relative shadow-2xl">
+                <div className="absolute -top-5 -left-5 bg-indigo-600 text-white w-12 h-12 flex items-center justify-center rounded-2xl font-black border-4 border-black text-xl">{currentQuestion?.numero}</div>
+                <div className="flex justify-between items-start gap-4 mb-10">
+                    <h3 className="text-white font-bold text-xl leading-tight">{currentQuestion?.enonce}</h3>
+                    <button onClick={() => toggleSpeak(currentQuestion?.enonce, `q-${currentQuestion?.numero}`)}
+                        className={`p-3 rounded-2xl shrink-0 transition-all ${currentlyReadingId === `q-${currentQuestion?.numero}` ? 'bg-red-600 text-white' : 'bg-slate-800 text-slate-400 hover:bg-indigo-600 hover:text-white'}`}>
+                        {currentlyReadingId === `q-${currentQuestion?.numero}` ? <Square size={20} fill="currentColor"/> : <Volume2 size={20}/>}
+                    </button>
                 </div>
+                {currentQuestion?.options ? (
+                    <div className="grid gap-3">
+                        {currentQuestion.options.map((opt, i) => (
+                            <button key={i} onClick={() => setAnswers({...answers, [currentQuestion.numero]: opt})} className={`w-full p-5 rounded-2xl text-left font-bold border-2 transition-all ${answers[currentQuestion.numero] === opt ? "bg-indigo-600 border-white text-white translate-x-2" : "bg-slate-800 border-black text-slate-400 hover:bg-slate-700"}`}>{opt}</button>
+                        ))}
+                    </div>
+                ) : (
+                    <textarea value={answers[currentQuestion?.numero] || ""} onChange={e => setAnswers({...answers, [currentQuestion.numero]: e.target.value})} className="w-full h-48 bg-black text-white p-5 rounded-3xl outline-none border-2 border-slate-800 focus:border-indigo-600" placeholder="Tape ta réponse ici..." />
+                )}
               </motion.div>
             </AnimatePresence>
           </div>
 
-          {/* BARRE DE NAVIGATION MODIFIÉE */}
-          <div className="p-4 bg-black flex items-center gap-4">
-            <button onClick={() => setCurrentQuestionIdx(i => Math.max(0, i-1))} disabled={currentQuestionIdx === 0} 
-              className="flex-1 py-4 bg-slate-900 text-slate-500 rounded-xl font-black text-xs disabled:opacity-0">RETOUR</button>
-            
-            {/* CERCLE DE PROGRESSION */}
-            <div className="relative w-12 h-12 flex items-center justify-center">
+          <div className="p-6 bg-black flex items-center gap-6">
+            <button disabled={currentQuestionIdx === 0} onClick={() => setCurrentQuestionIdx(i => i-1)} className="flex-1 py-4 bg-slate-900 text-slate-500 rounded-2xl font-black uppercase text-xs">Retour</button>
+            <div className="relative w-14 h-14 flex items-center justify-center">
                 <svg className="w-full h-full transform -rotate-90">
-                    <circle cx="24" cy="24" r="18" stroke="#1e293b" strokeWidth="4" fill="transparent" />
-                    <circle cx="24" cy="24" r="18" stroke="#3b82f6" strokeWidth="4" fill="transparent" strokeDasharray={113} strokeDashoffset={113 - (partProgress/100)*113} strokeLinecap="round" className="transition-all duration-500" />
+                    <circle cx="28" cy="28" r="22" stroke="#1e293b" strokeWidth="4" fill="transparent" />
+                    <circle cx="28" cy="28" r="22" stroke="#4f46e5" strokeWidth="4" fill="transparent" strokeDasharray={138} strokeDashoffset={138 - (progress/100)*138} strokeLinecap="round" className="transition-all duration-500" />
                 </svg>
-                <span className="absolute text-[9px] font-black text-white">{partProgress}%</span>
+                <span className="absolute text-[10px] font-black text-white">{progress}%</span>
             </div>
-
             {currentQuestionIdx === currentQuestions.length - 1 ? (
-              <button 
-                onClick={submitPart} 
-                disabled={!isPartComplete || isSubmitting}
-                className={`flex-[2] py-4 rounded-xl font-black text-xs flex items-center justify-center gap-2 transition-all ${
-                    isPartComplete 
-                    ? "bg-green-600 text-white shadow-lg shadow-green-900/40" 
-                    : "bg-slate-800 text-slate-600 cursor-not-allowed opacity-50"
-                }`}
-              >
-                {!isPartComplete ? (
-                    <><AlertCircle size={16}/> INCOMPLET</>
-                ) : (
-                    <><Send size={16}/> ENVOYER LA {currentPart.id}</>
-                )}
+              <button onClick={submitPart} disabled={!isPartComplete || isSubmitting} className={`flex-[2] py-4 rounded-2xl font-black text-xs uppercase flex items-center justify-center gap-2 transition-all ${isPartComplete ? 'bg-emerald-600 text-white shadow-lg' : 'bg-slate-800 text-slate-600 cursor-not-allowed'}`}>
+                {isSubmitting ? <Loader2 className="animate-spin"/> : isPartComplete ? <><Send size={16}/> Envoyer</> : <><AlertCircle size={16}/> Incomplet</>}
               </button>
             ) : (
-              <button onClick={() => setCurrentQuestionIdx(i => i + 1)} className="flex-[2] py-4 bg-blue-600 text-white rounded-xl font-black text-xs">
-                SUIVANT <ChevronRight size={16} className="inline ml-1"/>
-              </button>
+              <button onClick={() => setCurrentQuestionIdx(i => i+1)} className="flex-[2] py-4 bg-indigo-600 text-white rounded-2xl font-black uppercase text-xs">Suivant</button>
             )}
           </div>
         </div>
@@ -222,135 +261,61 @@ export default function PortailOQRE() {
   );
 }
 
-// --- VUES ACCESSOIRES (Home, Login, etc. restent identiques à la version précédente) ---
-function HomeView({ onSelect, studentInfo, setView }) {
-    return (
-        <div className="min-h-screen bg-slate-950 text-white font-sans border-[10px] border-black overflow-x-hidden">
-          <nav className="h-20 bg-black border-b-4 border-slate-900 flex items-center justify-between px-8 sticky top-0 z-50">
-            <div className="flex items-center gap-3">
-              <div className="bg-blue-600 p-2 rounded-lg rotate-3 shadow-lg">
-                <GraduationCap size={24} className="text-white" />
-              </div>
-              <span className="text-xl font-black italic tracking-tighter">OQRE PORTAL</span>
-            </div>
-            <button onClick={() => setView('login')} className="bg-white text-black px-6 py-2 rounded-full font-black text-xs hover:scale-105 transition-transform">
-              {studentInfo.nom ? studentInfo.nom : "S'IDENTIFIER"}
-            </button>
-          </nav>
-    
-          <section className="py-20 px-6 max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h1 className="text-5xl md:text-7xl font-black mb-6 italic leading-none">VÉRIFIE TES COMPÉTENCES.</h1>
-              <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">
-                Accède aux exercices officiels des sessions OQRE passées pour te préparer au mieux.
-              </p>
-            </div>
-    
-            <div className="grid md:grid-cols-2 gap-10">
-                <div onClick={() => onSelect(data2011)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
-                    <h3 className="text-3xl font-black italic mb-2 uppercase text-blue-500">Session 2011 </h3>
-                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Primaire</p>
-                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-blue-600 transition-colors">COMMENCER</div>
-                </div>
-                <div onClick={() => onSelect(data2012)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
-                    <h3 className="text-3xl font-black italic mb-2 uppercase text-orange-500">Session 2012</h3>
-                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Moyen</p>
-                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-orange-500 transition-colors">COMMENCER</div>
-                </div>
-                <div onClick={() => onSelect(Au_jardin)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
-                    <h3 className="text-3xl font-black italic mb-2 uppercase text-blue-500">Au jardin 3e</h3>
-                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Primaire</p>
-                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-blue-600 transition-colors">COMMENCER</div>
-                </div>
-                 <div onClick={() => onSelect(marathon)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
-                    <h3 className="text-3xl font-black italic mb-2 uppercase text-orange-500">Grand-maman-marathon 6e</h3>
-                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Moyen</p>
-                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-orange-500 transition-colors">COMMENCER</div>
-                </div>
-                <div onClick={() => onSelect(ecole)} className="cursor-pointer group bg-slate-900 p-10 rounded-[3rem] border-4 border-black hover:border-blue-600 transition-all shadow-xl">
-                    <h3 className="text-3xl font-black italic mb-2 uppercase text-blue-500">La rentrée à l’école 2e</h3>
-                    <p className="text-slate-400 font-bold uppercase text-xs tracking-widest">Lecture & Écriture • Primaire</p>
-                    <div className="mt-8 bg-black w-fit px-4 py-2 rounded-full text-[10px] font-black group-hover:bg-blue-600 transition-colors">COMMENCER</div>
-                </div>
-                
-            </div>
-          </section>
-        </div>
-      );
-}
-
-// Les composants LoginView, PartTransitionView, FinishView sont les mêmes que précédemment...
-
+// --- VUE LOGIN (DYNAMIQUE) ---
 function LoginView({ studentInfo, setStudentInfo, handleLogin, onBack }) {
-  const [nameError, setNameError] = useState(false);
-
-  const preSubmit = (e) => {
-    e.preventDefault();
-    if (studentInfo.nom.trim().length < 3) setNameError(true);
-    else handleLogin(e);
-  };
-
   return (
-    <div className="h-screen bg-black flex items-center justify-center p-4 border-[10px] border-slate-900">
-      <motion.form initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} onSubmit={preSubmit} className="bg-slate-900 p-8 rounded-[2.5rem] border-4 border-black max-w-sm w-full shadow-2xl">
-        <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center text-white mx-auto mb-6 border-4 border-black rotate-3 shadow-xl"><Lock size={30}/></div>
-        <h1 className="text-xl font-black text-white text-center mb-8 uppercase italic">OQRE — Identification</h1>
+    <div className="h-screen bg-black flex items-center justify-center p-4 border-[10px] border-slate-900 font-sans">
+      <motion.form initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} onSubmit={handleLogin} className="bg-slate-900 p-10 rounded-[3rem] border-4 border-black max-w-sm w-full shadow-2xl">
+        <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center text-white mx-auto mb-8 border-4 border-black rotate-3 shadow-xl"><Lock size={30}/></div>
+        <h1 className="text-xl font-black text-white text-center mb-8 uppercase italic tracking-tight text-indigo-400">Identification élève</h1>
         <div className="space-y-4">
-          <div className="relative">
-            <input required placeholder="NOM ET PRÉNOM" className={`w-full p-4 bg-black border-2 rounded-xl text-white font-bold uppercase outline-none focus:border-blue-500 ${nameError ? "border-red-500" : "border-slate-800"}`} onChange={e => {setStudentInfo({...studentInfo, nom: e.target.value.toUpperCase()}); setNameError(false);}} />
-            {nameError && <p className="text-red-500 text-[9px] font-black mt-1 ml-1">⚠️ ÉCRIT BIEN TON NOM (MIN. 3 LETTRES)</p>}
-          </div>
+          <input required placeholder="NOM ET PRÉNOM" className="w-full p-4 bg-black border-2 border-slate-800 rounded-xl text-white font-bold uppercase outline-none focus:border-blue-500" onChange={e => setStudentInfo({...studentInfo, nom: e.target.value.toUpperCase()})} />
+          <input required type="email" placeholder="EMAIL ÉLÈVE" className="w-full p-4 bg-black border-2 border-slate-800 rounded-xl text-white font-bold outline-none focus:border-blue-500" onChange={e => setStudentInfo({...studentInfo, email: e.target.value})} />
           
           <div className="relative">
             <select required className="w-full p-4 bg-black border-2 border-slate-800 rounded-xl text-white font-bold outline-none focus:border-blue-500 appearance-none" value={studentInfo.classe} onChange={e => setStudentInfo({...studentInfo, classe: e.target.value})}>
-              <option value="" disabled>CHOISIR TA CLASSE</option>
-               <option value="2A">CLASSE 2A</option>
-              <option value="3A">CLASSE 3A</option>
-              <option value="6A">CLASSE 6A</option>
+                <option value="3A">CLASSE 3A</option>
+                <option value="6A">CLASSE 6A</option>
             </select>
-            <ChevronDown size={18} className="absolute right-4 top-5 text-slate-500" />
+            <ChevronDown size={18} className="absolute right-4 top-5 text-slate-500 pointer-events-none" />
           </div>
 
-          <input required type="email" placeholder="TON EMAIL ÉLÈVE" className="w-full p-4 bg-black border-2 border-slate-800 rounded-xl text-white font-bold outline-none focus:border-blue-500" onChange={e => setStudentInfo({...studentInfo, email: e.target.value})} />
-          <input required type="password" placeholder="CODE SECRET" className="w-full p-4 bg-black border-2 border-slate-800 rounded-xl text-white font-bold text-center tracking-widest outline-none focus:border-blue-500" onChange={e => setStudentInfo({...studentInfo, code: e.target.value})} />
+          <input required type="password" placeholder="CODE SECRET " className="w-full p-4 bg-black border-2 border-slate-800 rounded-xl text-white font-bold text-center outline-none focus:border-blue-500" onChange={e => setStudentInfo({...studentInfo, code: e.target.value})} />
           
-          <button className="w-full bg-blue-600 text-white py-5 rounded-2xl font-black uppercase italic shadow-lg border-b-4 border-blue-900 active:border-b-0 transition-all">ENTRER DANS L'ESPACE</button>
-          <button type="button" onClick={onBack} className="w-full text-slate-500 font-black text-[10px] uppercase mt-2">Retour à l'accueil</button>
+          <button className="w-full bg-blue-600 text-white py-5 rounded-2xl font-black uppercase italic shadow-lg active:scale-95 transition-all">Accéder au test</button>
+          <button type="button" onClick={onBack} className="w-full text-slate-600 font-bold text-[10px] uppercase mt-2">Annuler</button>
         </div>
       </motion.form>
     </div>
   );
 }
 
-function PartTransitionView({ partId, score, total, onNext, onRefaire, onStop, isLast }) {
-  return (
-    <div className="h-screen bg-slate-950 flex items-center justify-center p-6 text-center border-[10px] border-black">
-      <div className="bg-slate-900 p-10 rounded-[3rem] border-4 border-black max-w-sm w-full shadow-2xl">
-        <ShieldCheck size={60} className="text-green-500 mx-auto mb-4" />
-        <h2 className="text-white font-black text-2xl uppercase mb-6 italic">{partId} Validée</h2>
-        <div className="bg-black p-8 rounded-3xl border-2 border-slate-800 mb-8">
-          <p className="text-5xl font-black text-white">{score} <span className="text-xl text-slate-700">/ {total}</span></p>
-          <p className="text-[10px] text-slate-500 uppercase mt-2 font-black tracking-widest">Score QCM Automatique</p>
-        </div>
-        <button onClick={onNext} className="w-full bg-blue-600 text-white py-5 rounded-2xl font-black text-lg mb-4 shadow-lg">{isLast ? "TERMINER LE TEST" : "PARTIE SUIVANTE"}</button>
-        <div className="flex gap-2">
-          <button onClick={onRefaire} className="flex-1 bg-slate-800 text-slate-400 py-3 rounded-xl font-black text-xs hover:text-white">REFAIRE</button>
-          <button onClick={onStop} className="flex-1 bg-red-900/20 text-red-500 py-3 rounded-xl font-black text-xs border border-red-900/50">QUITTER</button>
+// VUES RÉSUMÉ ET FIN
+function SummaryView({ score, part, onNext, onStop, isLast }) {
+    return (
+      <div className="h-screen bg-slate-950 flex items-center justify-center p-6 text-center border-[10px] border-black">
+        <div className="bg-slate-900 p-12 rounded-[3.5rem] border-4 border-black max-w-sm w-full shadow-2xl">
+          <ShieldCheck size={70} className="text-emerald-500 mx-auto mb-6" />
+          <h2 className="text-white font-black text-2xl uppercase mb-8 italic tracking-tighter">{part?.id} Validée</h2>
+          <div className="bg-black p-8 rounded-[2.5rem] border-2 border-slate-800 mb-10 text-white text-6xl font-black">
+            {score.score}<span className="text-xl text-slate-700">/{score.total}</span>
+          </div>
+          <button onClick={onNext} className="w-full bg-blue-600 text-white py-5 rounded-2xl font-black uppercase mb-4 active:scale-95 transition-all">{isLast ? "Terminer" : "Suivant"}</button>
+          <button onClick={onStop} className="w-full text-slate-500 font-black text-[10px] uppercase">Retour Accueil</button>
         </div>
       </div>
-    </div>
-  );
+    );
 }
 
 function FinishView({ nom, onHome }) {
-  return (
-    <div className="h-screen bg-blue-600 flex items-center justify-center p-6 text-center border-[12px] border-black">
-      <div className="bg-white p-12 rounded-[3.5rem] border-8 border-black max-w-sm w-full shadow-[20px_20px_0_rgba(0,0,0,1)]">
-        <Trophy size={60} className="text-orange-500 mx-auto mb-6" />
-        <h2 className="text-2xl font-black text-black uppercase italic">Félicitations !</h2>
-        <p className="font-bold text-slate-600 mt-4 leading-relaxed italic">Bravo {nom}. Tes réponses ont été transmises avec succès. Ton enseignant pourra consulter tes résultats.</p>
-        <button onClick={onHome} className="mt-8 bg-black text-white px-8 py-3 rounded-xl font-black text-xs uppercase italic">Retour à l'accueil</button>
+    return (
+      <div className="h-screen bg-blue-600 flex flex-col items-center justify-center p-6 text-center border-[12px] border-black text-white">
+        <Trophy size={100} className="mb-8 text-white/20" />
+        <div className="bg-white p-12 rounded-[4rem] border-8 border-black max-w-md w-full shadow-[25px_25px_0_rgba(0,0,0,1)] text-black">
+          <h2 className="text-4xl font-black uppercase italic mb-6">Félicitations {nom} !</h2>
+          <p className="font-bold text-slate-600 mb-10 italic">Tes résultats sont enregistrés et prêts pour ton enseignant.</p>
+          <button onClick={onHome} className="bg-black text-white px-12 py-5 rounded-2xl font-black text-xs uppercase italic active:scale-95 transition-all">Retour à l'accueil</button>
+        </div>
       </div>
-    </div>
-  );
+    );
 }

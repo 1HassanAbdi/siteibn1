@@ -17,6 +17,7 @@ import MathExerciseApp from "./6eAnnee/ex";
 import MathEvaluator from "./OQRE/MATHS/MathEvaluator";
 import OQREHub from "./OQRE/oqr";
 import MainApp from "./6eAnnee/MainApp";
+import YearlyNavigator2e from "./2eAnnee/francais/texteCompreh/WeeklyNavigator";
 
 
 
@@ -42,6 +43,8 @@ function App() {
           <Route path="/activites/1re Année/Francais" element={<AppSyllabes></AppSyllabes> } />
           <Route path="/activites/31e Année/Francais" element={<YearlyNavigator />} />
           <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
+          <Route path="/activites/2e Année/Francais" element={<YearlyNavigator2e />} />
+
           <Route path="/activites/3e Année/Mathematiques" element={<MathEvaluator></MathEvaluator> } />
           <Route path="/activites/6e Année/Francais" element={<Exercice63></Exercice63>} />
           <Route path="/activites/6e Année/Mathematiques" element={<MainApp></MainApp>} />

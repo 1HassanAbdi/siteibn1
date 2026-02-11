@@ -1,0 +1,74 @@
+{
+  "title": "Pipo l'hippopotame",
+  "grade": 1,
+  "sections": [
+    {
+      "title": "Pipo se repose",
+      "text": "Hip! Hip!\nJe suis Pipo l'hippopotame.\nJe paresse au soleil,\nLes paupières à demi closes.\nSur la plage, je me repose.",
+      "questions": [
+        {
+          "question": "Qui est Pipo ?",
+          "options": ["Un hippopotame", "Un éléphant", "Un crocodile"],
+          "correctAnswer": "Un hippopotame"
+        },
+        {
+          "question": "Que fait Pipo sur la plage ?",
+          "options": ["Il se repose", "Il court", "Il nage"],
+          "correctAnswer": "Il se repose"
+        }
+      ]
+    },
+    {
+      "title": "Pipo dans l'eau",
+      "text": "Hip! Hip!\nJe suis Pipo l'hippopotame.\nJe plonge au fond de l'eau,\nEt sur la pointe des pieds,\nJe fais de petits sauts.",
+      "questions": [
+        {
+          "question": "Où plonge Pipo ?",
+          "options": ["Au fond de l'eau", "Dans le sable", "Sur la plage"],
+          "correctAnswer": "Au fond de l'eau"
+        },
+        {
+          "question": "Que fait Pipo dans l'eau ?",
+          "options": ["De petits sauts", "Il dort", "Il mange"],
+          "correctAnswer": "De petits sauts"
+        }
+      ]
+    },
+    {
+      "title": "Pipo a faim",
+      "text": "Hip! Hip!\nJe suis Pipo l'hippopotame.\nJ'ai un très gros appétit.\nJ'aime les plantes et les pousses tendres.\nJe mange le jour, mais surtout la nuit.\nHip! Hip!\nJe suis Pipo le petit hippo.",
+      "questions": [
+        {
+          "question": "Quel est l'appétit de Pipo ?",
+          "options": ["Très gros", "Tout petit", "Moyen"],
+          "correctAnswer": "Très gros"
+        },
+        {
+          "question": "Quand Pipo mange-t-il surtout ?",
+          "options": ["La nuit", "Le matin", "Seulement le jour"],
+          "correctAnswer": "La nuit"
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "title": "QCM Final : Pipo l'hippopotame",
+    "questions": [
+      {
+        "question": "Comment s'appelle l'hippopotame ?",
+        "options": ["Pipo", "Titi", "Mimi"],
+        "correctAnswer": "Pipo"
+      },
+      {
+        "question": "Où Pipo se repose-t-il ?",
+        "options": ["Sur la plage", "Dans la forêt", "Dans la montagne"],
+        "correctAnswer": "Sur la plage"
+      },
+      {
+        "question": "Que mange Pipo ?",
+        "options": ["Des plantes et des pousses tendres", "De la viande", "Des gâteaux"],
+        "correctAnswer": "Des plantes et des pousses tendres"
+      }
+    ]
+  }
+}

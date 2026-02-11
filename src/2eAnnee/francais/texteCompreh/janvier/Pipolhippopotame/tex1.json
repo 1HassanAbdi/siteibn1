@@ -1,0 +1,24 @@
+{
+  "title": "Pipo l'hippopotame",
+  "grade": "",
+  "sections": [
+    {
+      "title": "Pipo se repose",
+      "text": "Hip! Hip!\nJe suis Pipo l'hippopotame.\nJe paresse au soleil,\nLes paupières à demi closes.\nSur la plage, je me repose.",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "Pipo dans l'eau",
+      "text": "Hip! Hip!\nJe suis Pipo l'hippopotame.\nJe plonge au fond de l'eau,\nEt sur la pointe des pieds,\nJe fais de petits sauts.",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "Pipo a faim",
+      "text": "Hip! Hip!\nJe suis Pipo l'hippopotame.\nJ'ai un très gros appétit.\nJ'aime les plantes et les pousses tendres.\nJe mange le jour, mais surtout la nuit.\nHip! Hip!\nJe suis Pipo le petit hippo.",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}

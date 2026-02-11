@@ -1,0 +1,24 @@
+{
+    "title": "Au clair de la lune",
+    "grade": 1,
+    "sections": [
+        {
+            "title": "Mon amie tortue",
+            "text": "Air : Au clair de la lune\nAu clair de la lune\nMon amie tortue\nPrête-moi ta luge\nPour aller glisser.",
+            "image": "1.png",
+            "audio": "1.mp3"
+        },
+        {
+            "title": "La glisse sur le dos",
+            "text": "Je n'ai pas de luge\nJe glisse sur mon dos\nVa chez la perruche\nElle a une luge.",
+            "image": "2.png",
+            "audio": "2.mp3"
+        },
+        {
+            "title": "La perruche et sa luge",
+            "text": "Au clair de la lune\nLa perruche dit :\n«Oui, j'ai une luge\nUne belle tuque aussi\nMa luge, la voici\nVa vite, mon ami\nCar sur la colline\nOn a du plaisir.»",
+            "image": "3.png",
+            "audio": "3.mp3"
+        }
+    ]
+}

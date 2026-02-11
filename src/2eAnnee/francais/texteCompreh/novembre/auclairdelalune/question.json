@@ -1,0 +1,93 @@
+{
+  "title": "Au clair de la lune",
+  "sections": [
+    {
+      "title": "Mon amie tortue",
+      "text": "Au clair de la lune\nMon amie tortue\nPrête-moi ta luge\nPour aller glisser.",
+      "questions": [
+        {
+          "question": "Qui est l’amie ?",
+          "options": ["La tortue", "La perruche", "Le chat"],
+          "correctAnswer": "La tortue"
+        },
+        {
+          "question": "Que demande le garçon ?",
+          "options": ["Une luge", "Une balle", "Un chapeau"],
+          "correctAnswer": "Une luge"
+        },
+        {
+          "question": "Pourquoi veut-il la luge ?",
+          "options": ["Pour glisser", "Pour manger", "Pour dormir"],
+          "correctAnswer": "Pour glisser"
+        }
+      ]
+    },
+    {
+      "title": "La tortue répond",
+      "text": "Je n'ai pas de luge\nJe glisse sur mon dos\nVa chez la perruche\nElle a une luge.",
+      "questions": [
+        {
+          "question": "La tortue a-t-elle une luge ?",
+          "options": ["Non", "Oui", "On ne sait pas"],
+          "correctAnswer": "Non"
+        },
+        {
+          "question": "Comment glisse la tortue ?",
+          "options": ["Sur son dos", "Sur ses pieds", "Sur la neige"],
+          "correctAnswer": "Sur son dos"
+        },
+        {
+          "question": "Chez qui faut-il aller ?",
+          "options": ["La perruche", "Le chien", "Le chat"],
+          "correctAnswer": "La perruche"
+        }
+      ]
+    },
+    {
+      "title": "La perruche",
+      "text": "Au clair de la lune\nLa perruche dit :\nOui, j’ai une luge\nUne belle tuque aussi\nMa luge, la voici\nVa vite, mon ami\nCar sur la colline\nOn a du plaisir.",
+      "questions": [
+        {
+          "question": "Qui a une luge ?",
+          "options": ["La perruche", "La tortue", "Le lapin"],
+          "correctAnswer": "La perruche"
+        },
+        {
+          "question": "Que porte la perruche ?",
+          "options": ["Une tuque", "Un manteau", "Des bottes"],
+          "correctAnswer": "Une tuque"
+        },
+        {
+          "question": "Où vont-ils jouer ?",
+          "options": ["Sur la colline", "À la maison", "À l’école"],
+          "correctAnswer": "Sur la colline"
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "title": "Petit quiz",
+    "questions": [
+      {
+        "question": "Qui est l’amie du début ?",
+        "options": ["La tortue", "La perruche", "Le chat"],
+        "correctAnswer": "La tortue"
+      },
+      {
+        "question": "Qui a une luge ?",
+        "options": ["La perruche", "La tortue", "Le chien"],
+        "correctAnswer": "La perruche"
+      },
+      {
+        "question": "Que veut faire le garçon ?",
+        "options": ["Glisser", "Dormir", "Manger"],
+        "correctAnswer": "Glisser"
+      },
+      {
+        "question": "Où vont-ils jouer ?",
+        "options": ["Sur la colline", "À l’école", "À la maison"],
+        "correctAnswer": "Sur la colline"
+      }
+    ]
+  }
+}

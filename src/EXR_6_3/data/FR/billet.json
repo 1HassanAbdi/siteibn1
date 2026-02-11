@@ -1,0 +1,148 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Le billet de cent dollars",
+    "niveau": "2e année",
+    "session": "Le billet de cent dollars",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Le billet de cent dollars",
+          "texte_integral": [
+            { "p": 1, "contenu": "Un jour, en revenant à la maison, Arnaud a été surpris de ce qu’il a vu par terre. Il y avait un billet de cent dollars sur le sol! Arnaud était hésitant à le ramasser. Finalement, aveuglé par son avarice, il a décidé de garder le billet pour lui. Il savait de toute façon qu’il n’existait pas de moyen de retrouver son propriétaire." },
+            { "p": 2, "contenu": "Cette nuit-là, Arnaud a rêvé qu’un policier le mettait derrière les barreaux. Il s’est réveillé en sursaut. Il a décidé de faire quelque chose avec l’argent qui ne lui appartenait pas." },
+            { "p": 3, "contenu": "Dès le lendemain matin, il est allé au centre communautaire. Il a fait don du billet de cent dollars à une œuvre de charité. Il s’est senti beaucoup mieux. Il s’est dit que la personne qui avait perdu l’argent avait ainsi réalisé une bonne action. Arnaud est rentré à la maison le sourire aux lèvres." }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Où Arnaud a-t-il trouvé le billet de cent dollars ?",
+              "options": ["Dans sa boîte aux lettres", "Sur le sol, par terre", "Dans son porte-monnaie", "Au centre communautaire"],
+              "reponse_correcte": "Sur le sol, par terre"
+            },
+            {
+              "numero": 2,
+              "enonce": "Quelle a été la première réaction d'Arnaud en voyant le billet ?",
+              "options": ["Il l'a ramassé immédiatement", "Il était hésitant", "Il a appelé la police", "Il a commencé à courir"],
+              "reponse_correcte": "Il était hésitant"
+            },
+            {
+              "numero": 3,
+              "enonce": "Pourquoi Arnaud a-t-il d'abord décidé de garder le billet ?",
+              "options": ["Parce qu'il en avait besoin pour l'école", "À cause de son avarice", "Parce qu'il pensait que c'était le sien", "Sur le conseil d'un ami"],
+              "reponse_correcte": "À cause de son avarice"
+            },
+            {
+              "numero": 4,
+              "enonce": "Que pensait Arnaud au début à propos du propriétaire du billet ?",
+              "options": ["Qu'il allait le retrouver facilement", "Qu'il n'y avait aucun moyen de le retrouver", "Qu'il s'agissait d'un policier", "Qu'il n'en avait pas besoin"],
+              "reponse_correcte": "Qu'il n'y avait aucun moyen de le retrouver"
+            },
+            {
+              "numero": 5,
+              "enonce": "De quoi Arnaud a-t-il rêvé durant la nuit ?",
+              "options": ["Qu'il achetait une nouvelle voiture", "Qu'un policier l'emprisonnait", "Qu'il trouvait d'autres billets", "Qu'il devenait riche"],
+              "reponse_correcte": "Qu'un policier l'emprisonnait"
+            },
+            {
+              "numero": 6,
+              "enonce": "Comment Arnaud s'est-il réveillé après son rêve ?",
+              "options": ["En riant", "En pleurant", "En sursaut", "Très tard"],
+              "reponse_correcte": "En sursaut"
+            },
+            {
+              "numero": 7,
+              "enonce": "Quelle décision Arnaud prend-il après son cauchemar ?",
+              "options": ["De cacher l'argent", "De faire quelque chose avec l'argent", "D'aller voir un policier", "D'acheter un cadeau"],
+              "reponse_correcte": "De faire quelque chose avec l'argent"
+            },
+            {
+              "numero": 8,
+              "enonce": "Où Arnaud se rend-il le lendemain matin ?",
+              "options": ["À la banque", "À la station de police", "Au centre communautaire", "Au magasin"],
+              "reponse_correcte": "Au centre communautaire"
+            },
+            {
+              "numero": 9,
+              "enonce": "Qu'a fait Arnaud avec le billet de cent dollars ?",
+              "options": ["Il l'a déposé à la banque", "Il en a fait don à une œuvre de charité", "Il a acheté de la nourriture", "Il l'a rendu au propriétaire"],
+              "reponse_correcte": "Il en a fait don à une œuvre de charité"
+            },
+            {
+              "numero": 10,
+              "enonce": "Comment Arnaud se sentait-il après son don ?",
+              "options": ["Il se sentait coupable", "Il se sentait beaucoup mieux", "Il était triste d'avoir perdu l'argent", "Il avait encore peur du policier"],
+              "reponse_correcte": "Il se sentait beaucoup mieux"
+            },
+            {
+              "numero": 11,
+              "enonce": "Au paragraphe 1, que signifie le mot « avarice » ?",
+              "options": ["La grande générosité", "Le désir excessif d'argent", "La peur de l'avenir", "La joie de vivre"],
+              "reponse_correcte": "Le désir excessif d'argent"
+            },
+            {
+              "numero": 12,
+              "enonce": "Que signifie l'expression « en sursaut » au paragraphe 2 ?",
+              "options": ["Très lentement", "En faisant un saut en l'air", "Brusquement sous l'effet d'une émotion", "En criant très fort"],
+              "reponse_correcte": "Brusquement sous l'effet d'une émotion"
+            },
+            {
+              "numero": 13,
+              "enonce": "Qu'est-ce qu'une « œuvre de charité » ?",
+              "options": ["Une banque privée", "Une organisation qui aide les gens", "Un poste de police", "Un magasin de luxe"],
+              "reponse_correcte": "Une organisation qui aide les gens"
+            },
+            {
+              "numero": 14,
+              "enonce": "Que signifie l'expression « le sourire aux lèvres » à la fin du texte ?",
+              "options": ["Avoir mal aux dents", "Être très content ou satisfait", "Se moquer de quelqu'un", "Être très fatigué"],
+              "reponse_correcte": "Être très content ou satisfait"
+            },
+            {
+              "numero": 15,
+              "enonce": "Dans le texte, qu'est-ce qu'une « bonne action » ?",
+              "options": ["Un travail difficile", "Un geste généreux et honnête", "Une course rapide", "Un rêve effrayant"],
+              "reponse_correcte": "Un geste généreux et honnête"
+            },
+            {
+              "numero": 16,
+              "enonce": "Dans la phrase « Arnaud était hésitant », quel est le sujet du verbe ?",
+              "options": ["hésitant", "était", "Arnaud", "billet"],
+              "reponse_correcte": "Arnaud"
+            },
+            {
+              "numero": 17,
+              "enonce": "Dans la phrase « il a décidé de le ramasser », que remplace le pronom « le » ?",
+              "options": ["Arnaud", "le sol", "le billet", "le propriétaire"],
+              "reponse_correcte": "le billet"
+            },
+            {
+              "numero": 18,
+              "enonce": "Quel est le temps du verbe dans la phrase : « Arnaud est rentré à la maison » ?",
+              "options": ["Présent", "Futur simple", "Passé composé", "Imparfait"],
+              "reponse_correcte": "Passé composé"
+            },
+            {
+              "numero": 19,
+              "enonce": "Trouvez l'adjectif dans la phrase : « Il a fait une bonne action. »",
+              "options": ["fait", "bonne", "action", "une"],
+              "reponse_correcte": "bonne"
+            },
+            {
+              "numero": 20,
+              "enonce": "Choisissez le bon accord : « Les billets ________ par terre. »",
+              "options": ["était", "étaient", "est", "suis"],
+              "reponse_correcte": "étaient"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

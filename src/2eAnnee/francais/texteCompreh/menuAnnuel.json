@@ -1,0 +1,306 @@
+{
+  "title": "Activités de l'année scolaire",
+  "sections": [
+    {
+      "id": "septembre",
+      "label": "Septembre",
+      "categories": [
+        {
+          "id": "lecture_sept",
+          "label": "Lecture compréhension",
+          "children": [
+           
+          ]
+        },
+        {
+          "id": "histoire_sept",
+          "label": "Histoire du mois",
+          "children": [
+            {
+              "id": "histoireInteractive_sept",
+              "label": "Histoire : La rentrée",
+              "component": "HistoireSemaine"
+            }
+          ]
+        },
+        {
+          "id": "dictee_sept",
+          "label": "Dictées du mois",
+          "children": [
+            {
+              "id": "dictee1_sept",
+              "label": "Dictée 1",
+               "componentJson": "./janvier/dictee/dictée.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "octobre",
+      "label": "Octobre",
+      "categories": [
+        {
+          "id": "lecture_oct",
+          "label": "Lecture compréhension",
+          "children": [
+            {
+              "id": "UnElephantCaTrompe",
+              "label": "Un éléphant, ça trompe",
+              "folderName": "UnElephantCaTrompe",
+              "componentJson": "./UnElephantCaTrompe/tex1.json",
+              "quizJsonPath": "./UnElephantCaTrompe/question.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "novembre",
+      "label": "Novembre",
+      "categories": [
+        {
+          "id": "lecture_oct",
+          "label": "Lecture compréhension",
+          "children": [
+
+        {
+              "id": "UneOrangePourSolane",
+              "label": "Une Orange Pour Solane",
+              "folderName": "UneOrangePourSolane",
+              "componentJson": "./novembre/UneOrangePourSolane/tex1.json",
+              "quizJsonPath": "./novembre/UneOrangePourSolane/question.json"
+            }
+      ]
+    },
+    {
+          "id": "histoire_sept",
+          "label": "Histoire du mois",
+          "children": [
+            {
+              "id": "histoireInteractive_sept",
+              "label": "Histoire : La rentrée",
+              "component": "HistoireSemaine"
+            }
+          ]
+        },
+        {
+          "id": "dictee_sept",
+          "label": "Dictées du mois",
+          "children": [
+            {
+              "id": "dictee1_sept",
+              "label": "Dictée 1",
+              "component": "DicteeInteractive"
+            }
+          ]
+        }
+        ]
+    },
+    {
+      "id": "decembre",
+      "label": "Décembre",
+      "categories": [
+         {
+          "id": "lecture_dec",
+          "label": "Lecture compréhension",
+          "children": [
+         {
+              "id": "dromadaire",
+              "label": "Le dromadaire",
+              "folderName": "dromadaire",
+              "componentJson": "./decembre/dromadaire/tex4.json",
+              "quizJsonPath": "./decembre/dromadaire/question.json"
+            },{
+              "id": "UnElephantCaTrompe",
+              "label": "Un éléphant, ça trompe",
+              "folderName": "UnElephantCaTrompe",
+              "componentJson": "./decembre/UnElephantCaTrompe/tex1.json",
+              "quizJsonPath": "./decembre/UnElephantCaTrompe/question.json"
+            },{
+              "id": "Eve_chevre",
+              "label": "Ève la petite chèvre",
+              "folderName": "Eve_chevre",
+              "componentJson": "./decembre/Eve_chevre/tex1.json",
+              "quizJsonPath": "./decembre/Eve_chevre/question.json"
+            }
+            
+      ]
+       },{
+      "id": "histoire_dec",
+      "label": "Histoire du mois",
+      "children": [
+        {
+          "id": "histoire_dec_1",
+          "label": "La rentrée de Décembre",
+          "component": "histoire",
+          "videoUrl": "https://drive.google.com/file/d/1140LTNptqx0ZOyWfeuAoj_W7sQCIm7yK/preview"
+        }
+      ]
+    },
+    {
+      "id": "dictee_dec",
+      "label": "Dictées du mois",
+      "children": [
+        {
+          "id": "dictee1_dec",
+          "label": "Dictées",
+          "componentJson": "./decembre/dictee/dictée.json"
+        }
+      ]
+    }
+      ]
+    },
+       
+  
+    
+  
+          {
+
+    "id": "janvier",
+    "label": "Janvier",
+    "categories": [
+      {
+        "id": "lecture_janv",
+        "label": "Lecture compréhension",
+        "children": [
+          {
+            "id": "Léolelionceau",
+            "label": "Léo le lionceau",
+            "folderName": "Léolelionceau",
+            "componentJson": "./janvier/Léolelionceau/tex2.json",
+            "quizJsonPath": "./janvier/Léolelionceau/question.json"
+          },
+          {
+            "id": "Titiouistiti",
+            "label": "Titi le petit ouistiti",
+            "folderName": "Titiouistiti",
+            "componentJson": "",
+            "quizJsonPath": "./janvier/Titiouistiti/question.json"
+          },
+          {
+            "id": "Mimilasouris",
+            "label": "Mimi la souris",
+            "folderName": "Mimilasouris",
+            "componentJson": "./janvier/Mimilasouris/tex1.json",
+            "quizJsonPath": "./janvier/Mimilasouris/question.json"
+          },
+          {
+            "id": "Unehistoiredechats",
+            "label": "Une histoire de chats",
+            "folderName": "Unehistoiredechats",
+            "componentJson": "./janvier/Unehistoiredechats/tex1.json",
+            "quizJsonPath": "./janvier/Unehistoiredechats/question.json"
+          },
+          {
+            "id": "Pipolhippopotame",
+            "label": "Pipo l'hippopotame",
+            "folderName": "Pipolhippopotame",
+            "componentJson": "./janvier/Pipolhippopotame/tex1.json",
+            "quizJsonPath": "./janvier/Pipolhippopotame/question.json"
+          }
+        ]
+      },
+      {
+        "id": "histoire_dec",
+        "label": "Histoire du mois",
+        "children": [
+          {
+            "id": "histoire_janv_1",
+            "label": "La rentrée de janvier",
+            "component": "histoire",
+            "videoUrl": "https://drive.google.com/file/d/1140LTNptqx0ZOyWfeuAoj_W7sQCIm7yK/preview"
+          }
+        ]
+      },
+      {
+        "id": "dictee_janv",
+        "label": "Dictées du mois",
+        "children": [
+          {
+            "id": "dictee1_janv",
+            "label": "Dictées",
+            "componentJson": "./janvier/dictee/dictée.json"
+          }
+        ]
+      }
+    ]
+  },
+
+      
+    
+    {
+      "id": "fevrier",
+      "label": "Février",
+      "categories": [{
+        "id": "lecture_janv",
+        "label": "Lecture compréhension",
+        "children": [
+          {
+            "id": "Léolelionceau",
+            "label": "Léo le lionceau",
+            "folderName": "Léolelionceau",
+            "componentJson": "./janvier/Léolelionceau/tex2.json",
+            "quizJsonPath": "./janvier/Léolelionceau/question.json"
+          },
+          {
+            "id": "Titiouistiti",
+            "label": "Titi le petit ouistiti",
+            "folderName": "Titiouistiti",
+            "componentJson": "",
+            "quizJsonPath": "./janvier/Titiouistiti/question.json"
+          },
+          {
+            "id": "Mimilasouris",
+            "label": "Mimi la souris",
+            "folderName": "Mimilasouris",
+            "componentJson": "./janvier/Mimilasouris/tex1.json",
+            "quizJsonPath": "./janvier/Mimilasouris/question.json"
+          },
+          {
+            "id": "Unehistoiredechats",
+            "label": "Une histoire de chats",
+            "folderName": "Unehistoiredechats",
+            "componentJson": "./janvier/Unehistoiredechats/tex1.json",
+            "quizJsonPath": "./janvier/Unehistoiredechats/question.json"
+          },
+          {
+            "id": "Pipolhippopotame",
+            "label": "Pipo l'hippopotame",
+            "folderName": "Pipolhippopotame",
+            "componentJson": "./janvier/Pipolhippopotame/tex1.json",
+            "quizJsonPath": "./janvier/Pipolhippopotame/question.json"
+          }
+        ]
+      },
+      {
+        "id": "histoire_dec",
+        "label": "Histoire du mois",
+        "children": [
+          
+        ]
+      }
+      ]
+    },
+    {
+      "id": "mars",
+      "label": "Mars",
+      "categories": []
+    },
+    {
+      "id": "avril",
+      "label": "Avril",
+      "categories": []
+    },
+    {
+      "id": "mai",
+      "label": "Mai",
+      "categories": []
+    },
+    {
+      "id": "juin",
+      "label": "Juin",
+      "categories": []
+    }
+  ]
+}

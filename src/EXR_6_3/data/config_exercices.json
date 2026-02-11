@@ -1,0 +1,28 @@
+[
+  { 
+    "slug": "billet", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "Le billet de cent dollars", 
+    "chemin": "./data/FR/billet.json" 
+  },
+  { 
+    "slug": "pieuvre", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": "La Pieuvre", 
+    "chemin": "./data/FR/Lapieuvre.json" 
+  },{ 
+    "slug": ".....", 
+    "niveau": 6, 
+    "matiere": "MATHS", 
+    "titre": "...........", 
+    "chemin": "./data/FMATHS/....." 
+    },{ 
+    "slug": "regularité", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "regularité", 
+    "chemin": "./data/MATHS/regularit1.json" 
+    }
+]

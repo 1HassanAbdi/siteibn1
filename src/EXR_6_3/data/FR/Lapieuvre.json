@@ -1,0 +1,152 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - La pieuvre",
+    "niveau": "6e année",
+    "session": "La pieuvre",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "La pieuvre",
+          "texte_integral": [
+            { "p": 1, "contenu": "La pieuvre, aussi appelée « poulpe », est un peu la superhéroïne du monde marin. C'est un animal invertébré de la famille des mollusques. Comme la pieuvre n'a pas de dos, elle change facilement de forme. Elle est aussi capable de se déguiser en changeant de couleur pour se confondre avec son environnement. Si cette astuce ne fonctionne pas, la pieuvre peut dérouter son ennemi en projetant un nuage d'encre avant de s'échapper!" },
+            { "p": 2, "contenu": "La pieuvre appartient à un groupe d'animaux appelés céphalopodes, ce qui signifie tête-pieds. En effet, la tête de la pieuvre est attachée directement à ses pieds, appelés tentacules." },
+            { "p": 3, "contenu": "Vu la taille de son cerveau, on peut s'attendre à ce que la pieuvre soit un animal intelligent. Et c'est bien le cas! Elle peut apprendre rapidement à trouver son chemin dans un labyrinthe. Elle est même capable de dévisser un bocal pour accéder à la nourriture qui s'y trouve." },
+            { "p": 4, "contenu": "La pieuvre possède un autre talent étonnant. Pour se déplacer, elle aspire de l'eau, qu'elle expulse ensuite violemment. L'eau part dans une direction et la pieuvre est propulsée dans l'autre… comme une fusée!" },
+            { "p": 5, "contenu": "Savais-tu que le sang de la pieuvre n'est pas rouge, mais bleu? Et qu'une pieuvre ne possède pas qu'un seul cœur, mais trois? Deux petits cœurs envoient le sang dans les branchies, tandis que le cœur principal le fait circuler dans le reste du corps!" },
+            { "p": 6, "contenu": "On trouve des pieuvres dans tous les océans du monde. La plus grande est la pieuvre géante du Pacifique. Elle peut mesurer jusqu'à 7,5 mètres de long, d'un bout à l'autre de ses bras déployés. C'est presque la hauteur d'une maison à deux étages." },
+            { "p": 7, "contenu": "Cet animal marin commence sa vie sous la forme d'un œuf minuscule. La pieuvre femelle pond des milliers d'œufs dans une crevasse rocheuse. Elle les suspend aux parois et les nettoie en les aspergeant d'eau. Quand les œufs éclosent, les pieuvres sont si minuscules que la plupart d'entre elles se trouvent happées au passage par des poissons. Celles qui survivent continuent à grossir jusqu'à ce qu'elles deviennent plus grosses que ces poissons." }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "À quelle famille d'animaux appartient la pieuvre ?",
+              "options": ["Les mammifères", "Les mollusques", "Les reptiles", "Les oiseaux"],
+              "reponse_correcte": "Les mollusques"
+            },
+            {
+              "numero": 2,
+              "enonce": "Pourquoi la pieuvre peut-elle changer de forme très facilement ?",
+              "options": ["Parce qu'elle a des os très souples", "Parce qu'elle n'a pas de dos (invertébrée)", "Parce qu'elle vit dans l'eau froide", "Parce qu'elle a trois cœurs"],
+              "reponse_correcte": "Parce qu'elle n'a pas de dos (invertébrée)"
+            },
+            {
+              "numero": 3,
+              "enonce": "Quelle est l'utilité du nuage d'encre pour la pieuvre ?",
+              "options": ["Pour attirer ses proies", "Pour nettoyer son environnement", "Pour dérouter son ennemi", "Pour colorer les coraux"],
+              "reponse_correcte": "Pour dérouter son ennemi"
+            },
+            {
+              "numero": 4,
+              "enonce": "Que signifie littéralement le mot « céphalopode » ?",
+              "options": ["Gros bras", "Dos mou", "Tête-pieds", "Petit cerveau"],
+              "reponse_correcte": "Tête-pieds"
+            },
+            {
+              "numero": 5,
+              "enonce": "Qu'est-ce qui prouve l'intelligence de la pieuvre dans le texte ?",
+              "options": ["Elle sait compter les poissons", "Elle peut dévisser un bocal", "Elle parle avec les autres pieuvres", "Elle construit des maisons en pierre"],
+              "reponse_correcte": "Elle peut dévisser un bocal"
+            },
+            {
+              "numero": 6,
+              "enonce": "Comment la pieuvre fait-elle pour se déplacer « comme une fusée » ?",
+              "options": ["En battant ses tentacules rapidement", "En sautant hors de l'eau", "En expulsant violemment de l'eau", "En se laissant porter par le courant"],
+              "reponse_correcte": "En expulsant violemment de l'eau"
+            },
+            {
+              "numero": 7,
+              "enonce": "De quelle couleur est le sang de la pieuvre ?",
+              "options": ["Rouge", "Vert", "Bleu", "Transparent"],
+              "reponse_correcte": "Bleu"
+            },
+            {
+              "numero": 8,
+              "enonce": "Combien de cœurs possède une pieuvre au total ?",
+              "options": ["Un seul", "Deux", "Trois", "Huit"],
+              "reponse_correcte": "Trois"
+            },
+            {
+              "numero": 9,
+              "enonce": "Quelle est la longueur maximale de la pieuvre géante du Pacifique ?",
+              "options": ["2 mètres", "5,5 mètres", "7,5 mètres", "12 mètres"],
+              "reponse_correcte": "7,5 mètres"
+            },
+            {
+              "numero": 10,
+              "enonce": "Où la femelle pond-elle ses milliers d'œufs ?",
+              "options": ["Dans le sable", "Dans une crevasse rocheuse", "À la surface de l'eau", "Dans le ventre d'un poisson"],
+              "reponse_correcte": "Dans une crevasse rocheuse"
+            },
+            {
+              "numero": 11,
+              "enonce": "Au paragraphe 1, le mot « se confondre » signifie...",
+              "options": ["Se tromper de chemin", "Se disputer avec un autre", "Se cacher en ressemblant au décor", "Avoir très peur"],
+              "reponse_correcte": "Se cacher en ressemblant au décor"
+            },
+            {
+              "numero": 12,
+              "enonce": "Au paragraphe 4, le mot « propulsée » veut dire...",
+              "options": ["Poussée avec force", "Endormie", "Attrapée", "Cachée"],
+              "reponse_correcte": "Poussée avec force"
+            },
+            {
+              "numero": 13,
+              "enonce": "Que signifie le mot « déployés » au paragraphe 6 ?",
+              "options": ["Cachés", "Coupés", "Étendus ou ouverts", "Mouillés"],
+              "reponse_correcte": "Étendus ou ouverts"
+            },
+            {
+              "numero": 14,
+              "enonce": "Au paragraphe 7, le mot « happées » signifie que les petites pieuvres sont...",
+              "options": ["Saluées par les poissons", "Attrapées brusquement", "Aidées par leur mère", "Transformées en poissons"],
+              "reponse_correcte": "Attrapées brusquement"
+            },
+            {
+              "numero": 15,
+              "enonce": "Que fait la femelle pour nettoyer ses œufs ?",
+              "options": ["Elle les frotte avec ses pieds", "Elle les déplace au soleil", "Elle les asperge d'eau", "Elle utilise du sable"],
+              "reponse_correcte": "Elle les asperge d'eau"
+            },
+            {
+              "numero": 16,
+              "enonce": "Dans la phrase « La pieuvre appartient à un groupe », quel est le sujet ?",
+              "options": ["groupe", "appartient", "La pieuvre", "animaux"],
+              "reponse_correcte": "La pieuvre"
+            },
+            {
+              "numero": 17,
+              "enonce": "Dans la phrase « Elle les suspend aux parois », le pronom « les » remplace...",
+              "options": ["les parois", "les crevasses", "les poissons", "les œufs"],
+              "reponse_correcte": "les œufs"
+            },
+            {
+              "numero": 18,
+              "enonce": "Quel est l'adjectif dans la phrase « La pieuvre possède un talent étonnant » ?",
+              "options": ["pieuvre", "possède", "talent", "étonnant"],
+              "reponse_correcte": "étonnant"
+            },
+            {
+              "numero": 19,
+              "enonce": "Choisissez la bonne forme : « Les bras de la pieuvre ________ très longs. »",
+              "options": ["est", "sont", "ont", "son"],
+              "reponse_correcte": "sont"
+            },
+            {
+              "numero": 20,
+              "enonce": "Quel est le temps du verbe dans : « Elle apprendra à sortir du labyrinthe » ?",
+              "options": ["Présent", "Passé composé", "Futur simple", "Imparfait"],
+              "reponse_correcte": "Futur simple"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
