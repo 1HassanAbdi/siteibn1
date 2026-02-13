@@ -25,13 +25,13 @@ const [localScore, setLocalScore] = useState(0);
       .replace(/[’']/g, "")
       .replace(/\s+/g, "_");
 
-    const audioPath = `/audio/${selectedLevel}A/semaine${activeWeek}/${cleanWord}.mp3`;
+    const audioPath = `/audio/cka/${selectedLevel}A/Semaine_${activeWeek}/${cleanWord}.mp3`;
     const audio = new Audio(audioPath);
 
     audio.play().catch(() => {
       // Fallback si le fichier MP3 n'existe pas
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'fr-FR';
+      utterance.lang = 'en-EN';
       utterance.rate = 0.8;
       window.speechSynthesis.speak(utterance);
     });
@@ -41,7 +41,7 @@ const [localScore, setLocalScore] = useState(0);
   useEffect(() => {
     const loadSyllables = async () => {
       try {
-        const response = await fetch(`/data/syllables${selectedLevel}A.json`);
+        const response = await fetch(`/data/cka/syllables${selectedLevel}A.json`);
         const data = await response.json();
         const weekData = data.weeks_syllables.find(w => w.week_id === activeWeek);
         if (weekData) {

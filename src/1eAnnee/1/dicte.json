@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "page": 1,
+    "title": "L'école",
+    "icon": "🏫",
+    "color": "bg-blue-100 border-blue-400 text-blue-800",
+    "words": [
+      "aller", "dîner", "école", "jeux", "amis", "pupitre", "rédiger"
+    ]
+  },
+  {
+    "id": 2,
+    "page": 2,
+    "title": "Le repas",
+    "icon": "🥗",
+    "color": "bg-green-100 border-green-400 text-green-800",
+    "words": [
+      "laitue", "légumes", "mange", "monde", "nappe", "plat", "rôti", "table", "tomates"
+    ]
+  },
+  {
+    "id": 3,
+    "page": 3,
+    "title": "La chambre",
+    "icon": "🛏️",
+    "color": "bg-purple-100 border-purple-400 text-purple-800",
+    "words": [
+      "bureau", "chambre", "chat", "cube", "grande", "jeux", "lit", "propre", "ranger", "terre"
+    ]
+  },
+  {
+    "id": 4,
+    "page": 4,
+    "title": "La lecture",
+    "icon": "🚀",
+    "color": "bg-indigo-100 border-indigo-400 text-indigo-800",
+    "words": [
+      "aventure", "fusée", "lecture", "livre", "lire", "planète", "soir"
+    ]
+  },
+  {
+    "id": 5,
+    "page": 5,
+    "title": "Boubou",
+    "icon": "🐦",
+    "color": "bg-yellow-100 border-yellow-400 text-yellow-800",
+    "words": [
+      "cage", "canari", "chanter", "des grains", "entendre", "jaune", "sortir"
+    ]
+  },
+  {
+    "id": 6,
+    "page": 6,
+    "title": "Mon chien",
+    "icon": "🐶",
+    "color": "bg-orange-100 border-orange-400 text-orange-800",
+    "words": [
+      "blanche", "cacher", "chien", "nourriture", "panier"
+    ]
+  }
+]

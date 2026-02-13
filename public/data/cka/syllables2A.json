@@ -1,0 +1,205 @@
+{
+  "title": "Atelier des Syllabes - Anglais 2e Année",
+  "weeks_syllables": [
+    {
+      "week_id": 1,
+      "words": [
+        { "word": "cat", "parts": ["cat"] },
+        { "word": "dog", "parts": ["dog"] },
+        { "word": "sun", "parts": ["sun"] },
+        { "word": "moon", "parts": ["moon"] },
+        { "word": "book", "parts": ["book"] },
+        { "word": "pen", "parts": ["pen"] },
+        { "word": "hat", "parts": ["hat"] },
+        { "word": "red", "parts": ["red"] },
+        { "word": "blue", "parts": ["blue"] },
+        { "word": "big", "parts": ["big"] },
+        { "word": "small", "parts": ["small"] },
+        { "word": "run", "parts": ["run"] },
+        { "word": "jump", "parts": ["jump"] },
+        { "word": "happy", "parts": ["hap", "py"] },
+        { "word": "sad", "parts": ["sad"] }
+      ]
+    },
+    {
+      "week_id": 2,
+      "words": [
+        { "word": "house", "parts": ["house"] },
+        { "word": "car", "parts": ["car"] },
+        { "word": "tree", "parts": ["tree"] },
+        { "word": "flower", "parts": ["flow", "er"] },
+        { "word": "bird", "parts": ["bird"] },
+        { "word": "fish", "parts": ["fish"] },
+        { "word": "green", "parts": ["green"] },
+        { "word": "yellow", "parts": ["yel", "low"] },
+        { "word": "fast", "parts": ["fast"] },
+        { "word": "slow", "parts": ["slow"] },
+        { "word": "walk", "parts": ["walk"] },
+        { "word": "play", "parts": ["play"] },
+        { "word": "laugh", "parts": ["laugh"] },
+        { "word": "cry", "parts": ["cry"] },
+        { "word": "friend", "parts": ["friend"] }
+      ]
+    },
+    {
+      "week_id": 3,
+      "words": [
+        { "word": "school", "parts": ["school"] },
+        { "word": "teacher", "parts": ["teach", "er"] },
+        { "word": "student", "parts": ["stu", "dent"] },
+        { "word": "desk", "parts": ["desk"] },
+        { "word": "chair", "parts": ["chair"] },
+        { "word": "paper", "parts": ["pa", "per"] },
+        { "word": "pencil", "parts": ["pen", "cil"] },
+        { "word": "read", "parts": ["read"] },
+        { "word": "write", "parts": ["write"] },
+        { "word": "listen", "parts": ["lis", "ten"] },
+        { "word": "talk", "parts": ["talk"] },
+        { "word": "quiet", "parts": ["qui", "et"] },
+        { "word": "line", "parts": ["line"] },
+        { "word": "bag", "parts": ["bag"] },
+        { "word": "class", "parts": ["class"] }
+      ]
+    },
+    {
+      "week_id": 4,
+      "words": [
+        { "word": "mom", "parts": ["mom"] },
+        { "word": "dad", "parts": ["dad"] },
+        { "word": "brother", "parts": ["broth", "er"] },
+        { "word": "sister", "parts": ["sis", "ter"] },
+        { "word": "baby", "parts": ["ba", "by"] },
+        { "word": "family", "parts": ["fam", "i", "ly"] },
+        { "word": "home", "parts": ["home"] },
+        { "word": "eat", "parts": ["eat"] },
+        { "word": "drink", "parts": ["drink"] },
+        { "word": "sleep", "parts": ["sleep"] },
+        { "word": "love", "parts": ["love"] },
+        { "word": "help", "parts": ["help"] },
+        { "word": "clean", "parts": ["clean"] },
+        { "word": "cook", "parts": ["cook"] },
+        { "word": "hug", "parts": ["hug"] }
+      ]
+    },
+    {
+      "week_id": 5,
+      "words": [
+        { "word": "apple", "parts": ["ap", "ple"] },
+        { "word": "banana", "parts": ["ba", "nan", "a"] },
+        { "word": "bread", "parts": ["bread"] },
+        { "word": "milk", "parts": ["milk"] },
+        { "word": "water", "parts": ["wa", "ter"] },
+        { "word": "cake", "parts": ["cake"] },
+        { "word": "rice", "parts": ["rice"] },
+        { "word": "cheese", "parts": ["cheese"] },
+        { "word": "sweet", "parts": ["sweet"] },
+        { "word": "good", "parts": ["good"] },
+        { "word": "hungry", "parts": ["hun", "gry"] },
+        { "word": "full", "parts": ["full"] },
+        { "word": "like", "parts": ["like"] },
+        { "word": "want", "parts": ["want"] },
+        { "word": "share", "parts": ["share"] }
+      ]
+    },
+    {
+      "week_id": 6,
+      "words": [
+        { "word": "head", "parts": ["head"] },
+        { "word": "hand", "parts": ["hand"] },
+        { "word": "foot", "parts": ["foot"] },
+        { "word": "leg", "parts": ["leg"] },
+        { "word": "arm", "parts": ["arm"] },
+        { "word": "eye", "parts": ["eye"] },
+        { "word": "ear", "parts": ["ear"] },
+        { "word": "nose", "parts": ["nose"] },
+        { "word": "mouth", "parts": ["mouth"] },
+        { "word": "hair", "parts": ["hair"] },
+        { "word": "face", "parts": ["face"] },
+        { "word": "body", "parts": ["bod", "y"] },
+        { "word": "hurt", "parts": ["hurt"] },
+        { "word": "wash", "parts": ["wash"] },
+        { "word": "healthy", "parts": ["health", "y"] }
+      ]
+    },
+    {
+      "week_id": 7,
+      "words": [
+        { "word": "rain", "parts": ["rain"] },
+        { "word": "snow", "parts": ["snow"] },
+        { "word": "wind", "parts": ["wind"] },
+        { "word": "cloud", "parts": ["cloud"] },
+        { "word": "sky", "parts": ["sky"] },
+        { "word": "cold", "parts": ["cold"] },
+        { "word": "hot", "parts": ["hot"] },
+        { "word": "warm", "parts": ["warm"] },
+        { "word": "day", "parts": ["day"] },
+        { "word": "night", "parts": ["night"] },
+        { "word": "today", "parts": ["to", "day"] },
+        { "word": "tomorrow", "parts": ["to", "mor", "row"] },
+        { "word": "weather", "parts": ["weath", "er"] },
+        { "word": "coat", "parts": ["coat"] },
+        { "word": "boots", "parts": ["boots"] }
+      ]
+    },
+    {
+      "week_id": 8,
+      "words": [
+        { "word": "ball", "parts": ["ball"] },
+        { "word": "game", "parts": ["game"] },
+        { "word": "toy", "parts": ["toy"] },
+        { "word": "bike", "parts": ["bike"] },
+        { "word": "park", "parts": ["park"] },
+        { "word": "run", "parts": ["run"] },
+        { "word": "throw", "parts": ["throw"] },
+        { "word": "catch", "parts": ["catch"] },
+        { "word": "kick", "parts": ["kick"] },
+        { "word": "fun", "parts": ["fun"] },
+        { "word": "win", "parts": ["win"] },
+        { "word": "lose", "parts": ["lose"] },
+        { "word": "team", "parts": ["team"] },
+        { "word": "playground", "parts": ["play", "ground"] },
+        { "word": "smile", "parts": ["smile"] }
+      ]
+    },
+    {
+      "week_id": 9,
+      "words": [
+        { "word": "shirt", "parts": ["shirt"] },
+        { "word": "pants", "parts": ["pants"] },
+        { "word": "dress", "parts": ["dress"] },
+        { "word": "shoes", "parts": ["shoes"] },
+        { "word": "socks", "parts": ["socks"] },
+        { "word": "jacket", "parts": ["jack", "et"] },
+        { "word": "hat", "parts": ["hat"] },
+        { "word": "wear", "parts": ["wear"] },
+        { "word": "new", "parts": ["new"] },
+        { "word": "old", "parts": ["old"] },
+        { "word": "clean", "parts": ["clean"] },
+        { "word": "dirty", "parts": ["dir", "ty"] },
+        { "word": "buy", "parts": ["buy"] },
+        { "word": "like", "parts": ["like"] },
+        { "word": "color", "parts": ["col", "or"] }
+      ]
+    },
+    {
+      "week_id": 10,
+      "words": [
+        { "word": "yes", "parts": ["yes"] },
+        { "word": "no", "parts": ["no"] },
+        { "word": "please", "parts": ["please"] },
+        { "word": "thank you", "parts": ["thank", "you"] },
+        { "word": "sorry", "parts": ["sor", "ry"] },
+        { "word": "hello", "parts": ["hel", "lo"] },
+        { "word": "goodbye", "parts": ["good", "bye"] },
+        { "word": "help", "parts": ["help"] },
+        { "word": "stop", "parts": ["stop"] },
+        { "word": "go", "parts": ["go"] },
+        { "word": "come", "parts": ["come"] },
+        { "word": "look", "parts": ["look"] },
+        { "word": "see", "parts": ["see"] },
+        { "word": "listen", "parts": ["lis", "ten"] },
+        { "word": "wait", "parts": ["wait"] }
+      ]
+    }
+  ]
+}

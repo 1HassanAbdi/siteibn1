@@ -1,0 +1,41 @@
+{
+  "titre": "Mon Atelier de Lecture",
+  "niveaux": [
+    {
+      "id": 1,
+      "nom": "Les Voyelles",
+      "description": "Apprends le son des lettres de base",
+      "items": [
+        { "texte": "a", "exemple": "avion", "emoji": "✈️" },
+        { "texte": "e", "exemple": "cheval", "emoji": "🐎" },
+        { "texte": "i", "exemple": "île", "emoji": "🏝️" },
+        { "texte": "o", "exemple": "orange", "emoji": "🍊" },
+        { "texte": "u", "exemple": "usine", "emoji": "🏭" }
+      ]
+    },
+    {
+      "id": 2,
+      "nom": "Syllabes Simples",
+      "description": "Mélange les lettres pour chanter",
+      "items": [
+        { "texte": "ma", "exemple": "maman", "emoji": "👩" },
+        { "texte": "pa", "exemple": "papa", "emoji": "👨" },
+        { "texte": "li", "exemple": "lit", "emoji": "🛏️" },
+        { "texte": "to", "exemple": "moto", "emoji": "🏍️" },
+        { "texte": "vu", "exemple": "vue", "emoji": "👓" }
+      ]
+    },
+    {
+      "id": 3,
+      "nom": "Sons Complexes",
+      "description": "Deux lettres qui font un nouveau son",
+      "items": [
+        { "texte": "ou", "exemple": "loup", "emoji": "🐺" },
+        { "texte": "oi", "exemple": "roi", "emoji": "👑" },
+        { "texte": "ch", "exemple": "chat", "emoji": "🐱" },
+        { "texte": "an", "exemple": "maman", "emoji": "👩" },
+        { "texte": "au", "exemple": "auto", "emoji": "🚗" }
+      ]
+    }
+  ]
+}

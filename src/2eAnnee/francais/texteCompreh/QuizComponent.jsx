@@ -8,7 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw22HOAUsxV7vBkpi_X8gl-69Xlnvbuc1WIYTPHWPRRDEFC7EQ_-rdlPoQHG-XTuT3wLQ/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz3eDXPgjugiyKg3XtHhkHxrz51c70S8pJXA-vvQgClG-bntEMaDqImgdrUfL8jIo0sWg/exec";
 
 // 🚀 VITE : Charger tous les fichiers question.json
 const allQuizzes = import.meta.glob("./**/question.json", { eager: true });

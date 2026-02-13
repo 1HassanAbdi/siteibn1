@@ -13,11 +13,11 @@
     "titre": "La Pieuvre", 
     "chemin": "./data/FR/Lapieuvre.json" 
   },{ 
-    "slug": ".....", 
+    "slug": "Mathématiques_decimaux_entiers_recherche", 
     "niveau": 6, 
     "matiere": "MATHS", 
-    "titre": "...........", 
-    "chemin": "./data/FMATHS/....." 
+    "titre": "Mathématiques_decimaux_entiers_recherche", 
+    "chemin": "./data/MATHS/dec_ent.json" 
     },{ 
     "slug": "regularité", 
     "niveau": 3, 

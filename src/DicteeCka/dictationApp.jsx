@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import DefinitionGame from './DefinitionGame';
 import WordMystery from './WordMystery';
 import WordTypeGame from './WordTypeGame';
+import SyllableGame from './SyllableGame';
 import WorkHistory from './WorkHistory';
 import EvaluationGame from "./EvaluationGameSem"; // Ajoutez cet import
 
@@ -456,6 +457,17 @@ const DictationAppcka = () => {
     />
   )}
   {/* AJOUTER CECI PARMI LES AUTRES MODES (syllabe, definition, etc.) */}
+   {/* SYLLABE */}
+  {mode === 'syllabe' && (
+    <SyllableGame 
+      selectedLevel={selectedLevel} 
+      activeWeek={activeWeek} 
+      onCorrect={() => setCorrectCount(c => c + 1)} 
+      onWrong={() => setWrongCount(w => w + 1)} 
+       onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
+    onFinish={(finalScore, finalTotal) => saveExerciseResult(finalScore, finalTotal)} 
+    />
+  )}
 {mode === 'evaluation' && (
   <EvaluationGame 
     words={getActiveWords()} 

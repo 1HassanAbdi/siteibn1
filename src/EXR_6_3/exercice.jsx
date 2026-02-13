@@ -81,7 +81,7 @@ export default function PortailOQRE({ exerciseSlug, level, onBack }) {
       
       // Chercher une voix française de qualité
       const voices = window.speechSynthesis.getVoices();
-      const preferredVoice = voices.find(v => v.lang.includes('fr-CA') || v.lang.includes('fr-FR'));
+      const preferredVoice = voices.find(v => v.lang.includes('fr-fr') || v.lang.includes('fr-FR'));
       if (preferredVoice) utterance.voice = preferredVoice;
       
       utterance.lang = 'fr-FR'; 

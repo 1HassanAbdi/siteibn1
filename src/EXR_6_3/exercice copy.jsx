@@ -7,7 +7,14 @@ import {
   Edit3, Info, CheckSquare, GraduationCap, ChevronDown, AlertCircle
 } from 'lucide-react';
 
-
+// --- CONFIGURATION ---
+//import data2011 from './data/oqre_2011.json';
+//import data2012 from './data/oqre_2012.json';
+//import Au_jardin from './data/Au_jardin.json';
+//import marathon from './data/marathon.json';
+//import ecole from './data/ecole.json';
+import Lapieuvre from './data/Lapieuvre.json';
+import billet from './data/billet.json';
 
 const TEACHER_CODE = "2011"; 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxTBjRTgiO0JVqwjCfsnggzP5o1wN_lNMewT-H2ILejDNhKqUcDjz7cX2wfPIk0dX8/exec"; 

@@ -1,0 +1,161 @@
+{
+  "test_info": {
+    "session": "Mathématiques_decimaux_entiers_recherche",
+    "niveau": "6E",
+    "target": "maths_6e_oqre_recherche",
+    "subject": "maths",
+    "difficulte": "recherche"
+  },
+  "parties": [
+    {
+      "id": "Module_1",
+      "sections": [
+        {
+          "titre": "Décimaux et Entiers – Raisonnement et Recherche",
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Quel nombre, arrondi à l’unité, donne 8 ?",
+              "options": ["7,49", "7,5", "8,51", "9,1"],
+              "reponse_correcte": "7,5"
+            },
+            {
+              "numero": 2,
+              "enonce": "Quel nombre NE s’arrondit PAS à 10 lorsqu'on l'arrondit à l'unité ?",
+              "options": ["9,51", "10,4", "10,49", "10,51"],
+              "reponse_correcte": "10,51"
+            },
+            {
+              "numero": 3,
+              "enonce": "Un nombre décimal est plus grand que 4,2 mais plus petit que 4,3. Lequel est possible ?",
+              "options": ["4,18", "4,21", "4,31", "4,35"],
+              "reponse_correcte": "4,21"
+            },
+            {
+              "numero": 4,
+              "enonce": "Quel nombre est égal à 6,50 ?",
+              "options": ["6,5", "6,05", "6,5001", "6,55"],
+              "reponse_correcte": "6,5"
+            },
+            {
+              "numero": 5,
+              "enonce": "Quel nombre est le plus proche de 5 ?",
+              "options": ["4,49", "5,6", "5,01", "4,3"],
+              "reponse_correcte": "5,01"
+            },
+            {
+              "numero": 6,
+              "enonce": "Quel nombre est le PLUS GRAND ?",
+              "options": ["3,099", "3,9", "3,10", "3,01"],
+              "reponse_correcte": "3,9"
+            },
+            {
+              "numero": 7,
+              "enonce": "Quel nombre est compris entre -3 et -1 ?",
+              "options": ["-4", "-2", "0", "1"],
+              "reponse_correcte": "-2"
+            },
+            {
+              "numero": 8,
+              "enonce": "Sur une droite numérique, quel nombre est le plus éloigné de 0 ?",
+              "options": ["-3", "2", "-5", "4"],
+              "reponse_correcte": "-5"
+            },
+            {
+              "numero": 9,
+              "enonce": "Quel entier est le PLUS PETIT ?",
+              "options": ["-1", "-10", "0", "5"],
+              "reponse_correcte": "-10"
+            },
+            {
+              "numero": 10,
+              "enonce": "Quel nombre est entre -2,5 et -2 ?",
+              "options": ["-2,7", "-2,3", "-1,9", "-3"],
+              "reponse_correcte": "-2,3"
+            },
+            {
+              "numero": 11,
+              "enonce": "Quel énoncé est VRAI ?",
+              "options": [
+                "-4 est plus grand que -2",
+                "-1 est plus proche de 0 que -3",
+                "-5 est plus grand que 0",
+                "-2 est plus petit que -6"
+              ],
+              "reponse_correcte": "-1 est plus proche de 0 que -3"
+            },
+            {
+              "numero": 12,
+              "enonce": "Quel nombre complète correctement : -6 < ___ < -3 ?",
+              "options": ["-7", "-5", "-2", "0"],
+              "reponse_correcte": "-5"
+            },
+            {
+              "numero": 13,
+              "enonce": "Si 4,630 et 4,63 sont comparés, quelle affirmation est correcte ?",
+              "options": [
+                "4,630 > 4,63",
+                "4,630 < 4,63",
+                "4,630 = 4,63",
+                "Impossible à comparer"
+              ],
+              "reponse_correcte": "4,630 = 4,63"
+            },
+            {
+              "numero": 14,
+              "enonce": "Quel nombre a la même valeur que 0,40 ?",
+              "options": ["0,4", "0,04", "0,4001", "4,0"],
+              "reponse_correcte": "0,4"
+            },
+            {
+              "numero": 15,
+              "enonce": "Quel nombre est le PLUS PROCHE de 0 ?",
+              "options": ["-1", "0,3", "-0,1", "0,5"],
+              "reponse_correcte": "-0,1"
+            },
+            {
+              "numero": 16,
+              "enonce": "Quel ordre est correct du plus petit au plus grand ?",
+              "options": [
+                "-3, -1, 0, 2",
+                "0, -1, -3, 2",
+                "-1, -3, 0, 2",
+                "-3, 0, -1, 2"
+              ],
+              "reponse_correcte": "-3, -1, 0, 2"
+            },
+            {
+              "numero": 17,
+              "enonce": "Quel nombre NE PEUT PAS être arrondi à 7 à l'unité près ?",
+              "options": ["6,5", "7,4", "7,49", "7,51"],
+              "reponse_correcte": "7,51"
+            },
+            {
+              "numero": 18,
+              "enonce": "Un nombre est plus grand que -1 mais plus petit que 0. Lequel est possible ?",
+              "options": ["-1,2", "-0,5", "0,2", "1"],
+              "reponse_correcte": "-0,5"
+            },
+            {
+              "numero": 19,
+              "enonce": "Quel nombre est le plus éloigné de zéro sur une droite numérique ?",
+              "options": ["-2", "3", "-5", "4"],
+              "reponse_correcte": "-5"
+            },
+            {
+              "numero": 20,
+              "enonce": "Quel raisonnement est correct ?",
+              "options": [
+                "Tous les nombres négatifs sont plus grands que 0",
+                "Plus un nombre est à droite sur la droite numérique, plus il est grand",
+                "Les décimaux ne peuvent pas être négatifs",
+                "0 est le plus petit nombre"
+              ],
+              "reponse_correcte": "Plus un nombre est à droite sur la droite numérique, plus il est grand"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
