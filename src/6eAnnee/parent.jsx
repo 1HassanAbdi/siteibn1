@@ -50,22 +50,52 @@ const ParentPlan = ({ data, lang = 'fr' }) => {
     }
   }[lang];
 
-  const { currentMission, nextThursday, isEvaluationDay } = useMemo(() => {
+  // Fonction pour parser "6 Feb - 12 Feb" en date JS
+  const parseDateRange = (str) => {
+    const [startStr, endStr] = str.split(' - ');
+    const currentYear = new Date().getFullYear();
+    const start = new Date(`${startStr} ${currentYear}`);
+    const end = new Date(`${endStr} ${currentYear}`);
+    return { start, end };
+  };
+
+  // Calcul dynamique du module actuel, next et completed
+  const { currentMission, updatedCalendrier, nextFriday, isEvaluationDay } = useMemo(() => {
     const today = new Date();
-    const current = data.calendrier.find(m => m.status === "current") || data.calendrier[0];
-    const dayOfWeek = today.getDay(); 
-    const daysUntilThursday = (4 - dayOfWeek + 7) % 7;
-    const thursdayDate = new Date(today);
-    thursdayDate.setDate(today.getDate() + (daysUntilThursday === 0 ? 7 : daysUntilThursday));
     
-    const formattedThursday = thursdayDate.toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-US', { day: 'numeric', month: 'long' });
-    return { currentMission: current, nextThursday: formattedThursday, isEvaluationDay: dayOfWeek === 4 };
+    // 1. Déterminer la prochaine date de transition (vendredi)
+    let dayOfWeek = today.getDay(); // 0 = dim, 5 = ven
+    let daysUntilFriday = (4 - dayOfWeek + 7) % 7;
+    if (daysUntilFriday === 0) daysUntilFriday = 7; // si aujourd'hui vendredi, prochain vendredi
+    const nextFridayDate = new Date(today);
+    nextFridayDate.setDate(today.getDate() + daysUntilFriday);
+    const formattedNextFriday = nextFridayDate.toLocaleDateString(
+      lang === 'fr' ? 'fr-FR' : 'en-US',
+      { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }
+    );
+
+    // 2. Parcourir le calendrier et mettre à jour les status
+    const updated = data.calendrier.map((m) => {
+      const { start, end } = parseDateRange(m.dates);
+      if (today >= start && today <= end) return { ...m, status: 'current' };
+      if (today < start) return { ...m, status: 'next' };
+      return { ...m, status: 'completed' };
+    });
+
+    const current = updated.find(m => m.status === 'current') || updated.find(m => m.status === 'next');
+
+    return { 
+      currentMission: current,
+      updatedCalendrier: updated,
+      nextFriday: formattedNextFriday,
+      isEvaluationDay: today.getDay() === 4 // jeudi
+    };
   }, [data, lang]);
 
   return (
     <div className="animate-in fade-in duration-700 pb-20 p-6 space-y-8 bg-slate-50">
       
-      {/* 1. HEADER COACHING */}
+      {/* HEADER COACHING */}
       <div 
         className="rounded-[40px] p-8 text-white relative overflow-hidden shadow-2xl"
         style={{ backgroundColor: isEvaluationDay ? brandOrange : brandGreen }}
@@ -88,7 +118,7 @@ const ParentPlan = ({ data, lang = 'fr' }) => {
           
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-[30px] border border-white/20 text-center min-w-[200px]">
             <p className="text-[10px] font-black opacity-80 uppercase tracking-widest mb-1">{ui.evalPlan}</p>
-            <p className="text-2xl font-black">{isEvaluationDay ? ui.today : nextThursday}</p>
+            <p className="text-2xl font-black">{isEvaluationDay ? ui.today : nextFriday}</p>
           </div>
         </div>
         <Flag className="absolute bottom-[-30px] right-[-20px] text-white/10 w-64 h-64 -rotate-12" />
@@ -126,11 +156,12 @@ const ParentPlan = ({ data, lang = 'fr' }) => {
           {/* LISTE DU CALENDRIER */}
           <div className="space-y-4">
             <h3 className="text-xl font-black text-slate-900 uppercase px-4">{ui.roadmap}</h3>
-            {data.calendrier.map((m) => (
+            {updatedCalendrier.map((m) => (
               <div key={m.id} className={`p-5 rounded-[28px] border-2 flex items-center justify-between gap-4 ${m.status === 'current' ? 'bg-white border-slate-900 shadow-xl' : 'bg-white/50 border-slate-100 opacity-60'}`}>
                 <div className="flex gap-4 items-center">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-black ${m.status === 'current' ? 'bg-green-600 text-white' : 'bg-slate-100 text-slate-400'}`}>
-                    {m.status === 'completed' ? <CheckCircle size={18} /> : "6"}
+                   {m.status === 'current' ? "🟢" : m.status === 'next' ? "⏳" : <CheckCircle size={18} />}
+
                   </div>
                   <div>
                     <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{m.dates}</span>
