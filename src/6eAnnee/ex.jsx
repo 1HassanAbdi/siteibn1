@@ -2,17 +2,18 @@ import React, { useState, useMemo } from 'react';
 import { 
   CheckCircle, XCircle, ChevronRight, Trophy, UserCircle2, 
   Sparkles, Languages, BookOpen, Target, ArrowLeft, Loader2,
-  Search, Grid2X2, Zap
+  Search, Grid2X2, Zap, Move
 } from 'lucide-react';
 
-// LISTE DE TOUTES VOS MISSIONS
+// --- 1. LISTE DES MISSIONS (COMPLÈTE) ---
 const ALL_MISSIONS = [
+  { id: "p6_7", module: 1, title: { fr: "Les régularités de la division", en: "Patterns in Division" }, pages: "6-7" },
   { id: "p10_11", module: 1, title: { fr: "À la découverte des nombres entiers", en: "Discovering Integers" }, pages: "10-11" },
   { id: "p12_13", module: 2, title: { fr: "Le Million", en: "The Million" }, pages: "12-13" },
   { id: "p14_15", module: 2, title: { fr: "Grands Nombres", en: "Large Numbers" }, pages: "14-15" },
   { id: "p16_17", module: 2, title: { fr: "Comparer les Nombres", en: "Comparing Numbers" }, pages: "16-17" },
   { id: "p18_19", module: 2, title: { fr: "Les Multiples", en: "Multiples" }, pages: "18-19" },
-  { id: "p20_21", module: 2, title: { fr: "Nombres premiers et composés", en: "Prime and Composite Numbers" }, pages: "20-21" },
+  { id: "p18_21", module: 2, title: { fr: "Nombres premiers et composés", en: "Prime and Composite Numbers" }, pages: "18-21" },
   { id: "p22_23", module: 2, title: { fr: "Utiliser le calcul mental", en: "Using Mental Math" }, pages: "22-23" },
   { id: "p24_25", module: 2, title: { fr: "La priorité des opérations", en: "Order of Operations" }, pages: "24-25" },
   { id: "p46_47", module: 4, title: { fr: "Nombres décimaux et millièmes", en: "Decimal Numbers and Thousandths" }, pages: "46-47" },
@@ -22,20 +23,23 @@ const ALL_MISSIONS = [
   { id: "p54_55", module: 4, title: { fr: "Addition et soustraction de décimaux", en: "Adding and Subtracting Decimals" }, pages: "54-55" }
 ];
 
+// --- 2. TRADUCTIONS (DÉFINIES AVANT LE COMPOSANT) ---
 const uiTranslations = {
   fr: {
     teacherName: "Professeur Chenelière", welcome: "Quelle page allons-nous faire ?",
     search: "Cherche une page ou un titre...",
     score: "Réussites", errors: "Erreurs", check: "VÉRIFIER", continue: "CONTINUER",
     page: "Page", ex: "Exercice", explanation: "L'explication du prof :",
-    finished: "Félicitations !", loading: "Chargement...", back: "Menu"
+    finished: "Félicitations !", loading: "Chargement...", back: "Menu",
+    dragHint: "Glisse TOUS les nombres pour pouvoir valider"
   },
   en: {
     teacherName: "Professor Cheneliere", welcome: "Which page shall we do today?",
     search: "Search page or title...",
     score: "Success", errors: "Mistakes", check: "CHECK", continue: "CONTINUE",
     page: "Page", ex: "Exercise", explanation: "Teacher's explanation:",
-    finished: "Well done!", loading: "Loading...", back: "Menu"
+    finished: "Well done!", loading: "Loading...", back: "Menu",
+    dragHint: "Drag ALL numbers to be able to check"
   }
 };
 
@@ -49,6 +53,7 @@ const MathExerciseApp = () => {
   const [score, setScore] = useState(0);
   const [errors, setErrors] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
+  const [draggedItems, setDraggedItems] = useState({}); 
 
   const brandGreen = "#108565";
   const brandOrange = "#F59E0B";
@@ -61,28 +66,53 @@ const MathExerciseApp = () => {
     );
   }, [searchTerm]);
 
-  const loadMission = async (fileName) => {
+  const loadMission = async (id) => {
     setLoading(true);
     try {
-      const module = await import(`./data/${fileName}.json`);
+      const module = await import(`./data/${id}.json`);
       setCurrentMission(module.default);
-      setCurrentIndex(0); setScore(0); setErrors(0);
-      setUserInput(''); setHasAnswered(false);
+      resetState();
     } catch (e) {
-      alert("Erreur de chargement");
+      console.error("Erreur de chargement:", e);
+      alert("Erreur lors du chargement de la mission.");
     } finally {
       setLoading(false);
     }
   };
 
+  const resetState = () => {
+    setCurrentIndex(0); setScore(0); setErrors(0);
+    setUserInput(''); setHasAnswered(false); setDraggedItems({});
+  };
+
   const getTxt = (field) => field?.[lang] || field?.['fr'] || field || "";
 
-  // --- ECRAN MENU ---
+  const handleCheck = () => {
+    const currentEx = currentMission.exercices[currentIndex];
+    let isCorrect = false;
+
+    if (currentEx.type === 'select') {
+      isCorrect = (userInput === getTxt(currentEx.reponse_attendue));
+    } else if (currentEx.type === 'drag_and_drop') {
+      isCorrect = currentEx.zones_depot.every(zone => {
+        const itemsInZone = Object.entries(draggedItems)
+          .filter(([_, zid]) => zid === zone.id)
+          .map(([itemId]) => itemId);
+        
+        const hasAllRequired = zone.reponses_attendues.every(req => itemsInZone.includes(req));
+        const hasNoExtras = itemsInZone.every(item => zone.reponses_attendues.includes(item));
+        return hasAllRequired && hasNoExtras;
+      });
+    }
+
+    if (isCorrect) setScore(s => s + 1); else setErrors(e => e + 1);
+    setHasAnswered(true);
+  };
+
   if (!currentMission && !loading) {
     return (
       <div className="max-w-5xl mx-auto my-6 px-4 animate-in fade-in duration-700">
         <div className="bg-white rounded-[40px] shadow-2xl overflow-hidden border-4 border-slate-100">
-          
           <div style={{ backgroundColor: brandGreen }} className="p-10 text-white text-center relative overflow-hidden">
             <div className="absolute top-4 right-4">
                <button onClick={() => setLang(lang === 'fr' ? 'en' : 'fr')} className="bg-black/20 hover:bg-black/40 px-4 py-2 rounded-full font-black text-xs flex items-center gap-2 transition-all">
@@ -103,9 +133,7 @@ const MathExerciseApp = () => {
             <div className="relative max-w-md mx-auto mb-10">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={20} />
               <input 
-                type="text" 
-                placeholder={t.search}
-                value={searchTerm}
+                type="text" placeholder={t.search} value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 rounded-2xl border-4 border-slate-200 focus:border-green-600 outline-none shadow-sm font-black transition-all"
               />
@@ -115,8 +143,7 @@ const MathExerciseApp = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredMissions.map((mission) => (
                   <button 
-                    key={mission.id}
-                    onClick={() => loadMission(mission.id)}
+                    key={mission.id} onClick={() => loadMission(mission.id)}
                     className="bg-white p-6 rounded-[30px] border-4 border-transparent hover:border-orange-400 hover:shadow-2xl transition-all group text-left relative"
                   >
                     <div className="flex items-start justify-between mb-4">
@@ -145,13 +172,11 @@ const MathExerciseApp = () => {
     </div>
   );
 
-  // --- ECRAN EXERCICE ---
   const currentEx = currentMission.exercices[currentIndex];
 
   return (
     <div className="max-w-4xl mx-auto my-8 px-4 animate-in slide-in-from-bottom-4 duration-500">
       
-      {/* HEADER EXERCICE */}
       <div className="bg-white rounded-[35px] shadow-xl border-b-8 border-slate-200 overflow-hidden mb-8">
         <div style={{ backgroundColor: brandGreen }} className="p-6 text-white flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-4">
@@ -174,7 +199,6 @@ const MathExerciseApp = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* CARTE QUESTION */}
         <div className="lg:col-span-8 bg-white rounded-[40px] p-10 shadow-2xl border-4 border-white relative overflow-hidden">
           <div className="flex items-center justify-between mb-8">
             <span style={{ color: brandGreen }} className="bg-green-50 px-4 py-2 rounded-2xl text-xs font-black uppercase tracking-widest border border-green-100">
@@ -182,40 +206,100 @@ const MathExerciseApp = () => {
             </span>
           </div>
 
-          <h2 className="text-3xl font-black text-slate-900 leading-tight mb-12 italic">
+          <h2 className="text-2xl font-black text-slate-900 leading-tight mb-8 italic">
             {getTxt(currentEx.consigne)}
           </h2>
           
-          <div className="relative mb-8">
-            <select 
-              disabled={hasAnswered} 
-              value={userInput} 
-              onChange={(e) => setUserInput(e.target.value)}
-              className={`w-full p-6 text-xl font-black rounded-[25px] border-4 outline-none transition-all appearance-none cursor-pointer ${
-                hasAnswered 
-                ? (userInput === getTxt(currentEx.reponse_attendue) ? 'border-green-500 bg-green-50 text-green-700' : 'border-red-500 bg-red-50 text-red-700') 
-                : 'border-slate-100 bg-slate-50 text-slate-900 focus:border-green-600'
-              }`}
-            >
-              <option value="" disabled>Choisis ta réponse...</option>
-              {currentEx.options.map((opt, idx) => (
-                <option key={idx} value={getTxt(opt)}>{getTxt(opt)}</option>
-              ))}
-            </select>
-            <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none opacity-20">
-                <ChevronRight size={30} className="rotate-90" />
+          {currentEx.type === 'select' && (
+            <div className="relative mb-8">
+                <select 
+                disabled={hasAnswered} value={userInput} 
+                onChange={(e) => setUserInput(e.target.value)}
+                className={`w-full p-6 text-xl font-black rounded-[25px] border-4 outline-none transition-all appearance-none cursor-pointer ${
+                    hasAnswered 
+                    ? (userInput === getTxt(currentEx.reponse_attendue) ? 'border-green-500 bg-green-50 text-green-700' : 'border-red-500 bg-red-50 text-red-700') 
+                    : 'border-slate-100 bg-slate-50 text-slate-900 focus:border-green-600'
+                }`}
+                >
+                <option value="" disabled>Choisis ta réponse...</option>
+                {currentEx.options?.map((opt, idx) => (
+                    <option key={idx} value={getTxt(opt)}>{getTxt(opt)}</option>
+                ))}
+                </select>
+                <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none opacity-20">
+                    <ChevronRight size={30} className="rotate-90" />
+                </div>
             </div>
-          </div>
+          )}
+
+          {currentEx.type === 'drag_and_drop' && (
+            <div className="space-y-6 mb-8">
+              {/* BAC DE DÉPART : On peut y redéposer des éléments pour les enlever des zones */}
+              <div 
+                className="flex flex-wrap gap-2 p-4 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-200 min-h-[80px]"
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={(e) => {
+                  const item = e.dataTransfer.getData("text");
+                  if (!hasAnswered) {
+                    const newDragged = { ...draggedItems };
+                    delete newDragged[item];
+                    setDraggedItems(newDragged);
+                  }
+                }}
+              >
+                {currentEx.elements_a_glisser.map(item => !draggedItems[item] && (
+                  <div 
+                    key={item} draggable onDragStart={(e) => e.dataTransfer.setData("text", item)}
+                    className="px-4 py-2 bg-white border-2 border-slate-200 rounded-xl font-black cursor-grab shadow-sm active:scale-95 transition-all hover:border-green-500"
+                  >
+                    {item}
+                  </div>
+                ))}
+                {currentEx.elements_a_glisser.every(item => draggedItems[item]) && (
+                  <p className="text-[10px] font-bold text-green-600 uppercase italic">Tous les nombres sont placés !</p>
+                )}
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {currentEx.zones_depot.map(zone => (
+                  <div 
+                    key={zone.id} onDragOver={e => e.preventDefault()}
+                    onDrop={e => {
+                        const item = e.dataTransfer.getData("text");
+                        if (!hasAnswered) setDraggedItems({...draggedItems, [item]: zone.id});
+                    }}
+                    className={`p-4 rounded-3xl border-4 min-h-[110px] transition-all ${hasAnswered ? 'bg-slate-50 border-slate-100' : 'bg-white border-slate-100 border-dashed hover:border-green-400'}`}
+                  >
+                    <h4 className="text-[10px] font-black uppercase tracking-widest opacity-40 mb-2">{getTxt(zone.label)}</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {Object.entries(draggedItems).filter(([_, zid]) => zid === zone.id).map(([id]) => (
+                        <span 
+                          key={id} 
+                          draggable={!hasAnswered}
+                          onDragStart={(e) => e.dataTransfer.setData("text", id)}
+                          className={`px-3 py-1 rounded-lg font-bold text-sm shadow-sm cursor-grab ${hasAnswered ? (zone.reponses_attendues.includes(id) ? 'bg-green-500 text-white' : 'bg-red-500 text-white animate-shake') : 'bg-orange-100 text-orange-700 hover:bg-orange-200'}`}
+                        >
+                          {id}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {!hasAnswered && <p className="text-[10px] font-bold text-slate-400 text-center uppercase italic">{t.dragHint}</p>}
+            </div>
+          )}
 
           {!hasAnswered ? (
             <button 
-              disabled={!userInput}
-              onClick={() => {
-                if(userInput === getTxt(currentEx.reponse_attendue)) setScore(s => s+1); else setErrors(e => e+1);
-                setHasAnswered(true);
-              }} 
+              disabled={
+                currentEx.type === 'select' 
+                ? !userInput 
+                : Object.keys(draggedItems).length < currentEx.elements_a_glisser.length
+              }
+              onClick={handleCheck} 
               style={{ backgroundColor: brandGreen }}
-              className="w-full py-6 rounded-[25px] text-white font-black text-2xl shadow-xl hover:brightness-110 transition-all uppercase italic border-b-8 border-black/20 disabled:opacity-50"
+              className="w-full py-6 rounded-[25px] text-white font-black text-2xl shadow-xl hover:brightness-110 transition-all uppercase italic border-b-8 border-black/20 disabled:opacity-30 disabled:grayscale"
             >
               {t.check}
             </button>
@@ -223,7 +307,7 @@ const MathExerciseApp = () => {
             <button 
               onClick={() => {
                 if (currentIndex < currentMission.exercices.length - 1) {
-                  setCurrentIndex(currentIndex + 1); setUserInput(''); setHasAnswered(false);
+                  setCurrentIndex(currentIndex + 1); setUserInput(''); setHasAnswered(false); setDraggedItems({});
                 } else {
                   alert(t.finished); setCurrentMission(null);
                 }
@@ -236,20 +320,19 @@ const MathExerciseApp = () => {
           )}
         </div>
 
-        {/* AI HELPER / PROF */}
         <div className="lg:col-span-4 h-full">
-           <div 
+            <div 
              className={`p-8 rounded-[40px] shadow-2xl border-4 h-full transition-all duration-700 relative overflow-hidden ${
                hasAnswered ? 'bg-white border-green-600' : 'bg-slate-100 border-transparent opacity-50'
              }`}
-           >
-              <h3 className="font-black uppercase text-xs mb-6 flex items-center gap-2" style={{ color: brandGreen }}>
-                <Sparkles size={20} style={{ color: brandOrange }} /> {t.explanation}
+            >
+              <h3 className="font-black uppercase text-[10px] mb-6 flex items-center gap-2" style={{ color: brandGreen }}>
+                <Sparkles size={16} style={{ color: brandOrange }} /> {t.explanation}
               </h3>
               
               {hasAnswered ? (
                 <div className="animate-in fade-in slide-in-from-top-2">
-                    <p className="text-slate-900 font-bold italic text-xl leading-relaxed">
+                    <p className="text-slate-900 font-bold italic text-lg leading-relaxed">
                         "{getTxt(currentEx.aide)}"
                     </p>
                     <div className="mt-8 flex justify-end">
@@ -262,7 +345,7 @@ const MathExerciseApp = () => {
                     <p className="text-[10px] font-black text-slate-400 mt-4 uppercase tracking-widest">En attente...</p>
                 </div>
               )}
-           </div>
+            </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "text": "Le repas",
+    "type": "title",
+    "image": "0.png",
+    "audio": "repas_titre.mp3"
+  },
+  {
+    "id": 2,
+    "text": "Maman lave les tomates.",
+    "focusWords": ["Maman", "lave", "tomates"],
+    "image": "1.png",
+    "audio": "1.mp3"
+  },
+  {
+    "id": 3,
+    "text": "Mario lave la laitue et les légumes.",
+    "focusWords": ["Mario", "laitue", "légumes"],
+    "image": "2.png",
+    "audio": "2.mp3"
+  },
+  {
+    "id": 4,
+    "text": "Maman coupe les tomates et les légumes.",
+    "focusWords": ["coupe"],
+    "image": "3.png",
+    "audio": "3.mp3"
+  },
+  {
+    "id": 5,
+    "text": "Papa coupe le rôti.",
+    "focusWords": ["Papa", "rôti"],
+    "image": "4.png",
+    "audio": "4.mp3"
+  },
+  {
+    "id": 6,
+    "text": "Valérie met la nappe et les plats sur la table.",
+    "focusWords": ["Valérie", "nappe", "table"],
+    "image": "5.png",
+    "audio": "5.mp3"
+  },
+  {
+    "id": 7,
+    "text": "Tout le monde mange.",
+    "focusWords": ["monde", "mange"],
+    "image": "6.png",
+    "audio": "6.mp3"
+  },
+  {
+    "id": 8,
+    "text": "C'est bon !",
+    "type": "celebration",
+    "image": "7.png",
+    "audio": "7.mp3"
+  }
+]

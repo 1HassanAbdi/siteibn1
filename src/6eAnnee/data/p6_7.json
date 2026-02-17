@@ -1,0 +1,332 @@
+{
+  "module": 1,
+  "titre": {
+    "fr": "Les régularités de la division",
+    "en": "Patterns in Division"
+  },
+  "exercices": [
+    {
+      "id": "p6-ex1a",
+      "page": 6,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Examine les nombres du tableau. Lequel de ces nombres est divisible par 10 ?",
+        "en": "Look at the numbers in the table. Which of these numbers is divisible by 10 ?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "738", "en": "738" },
+        { "fr": "2710", "en": "2710" },
+        { "fr": "425", "en": "425" },
+        { "fr": "38", "en": "38" }
+      ],
+      "reponse_attendue": { "fr": "2710", "en": "2710" },
+      "aide": {
+        "fr": "Un nombre naturel est divisible par 10 si le chiffre des unités est 0.",
+        "en": "A natural number is divisible by 10 if the last digit is 0."
+      }
+    },
+    {
+      "id": "p6-ex1b",
+      "page": 6,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Examine les nombres du tableau. Lequel de ces nombres est divisible par 9 ?",
+        "en": "Look at the numbers in the table. Which of these numbers is divisible by 9 ?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "738", "en": "738" },
+        { "fr": "580", "en": "580" },
+        { "fr": "865", "en": "865" },
+        { "fr": "142", "en": "142" }
+      ],
+      "reponse_attendue": { "fr": "738", "en": "738" },
+      "aide": {
+        "fr": "Un nombre naturel est divisible par 9 si la somme des chiffres est divisible par 9.",
+        "en": "A natural number is divisible by 9 if the sum of its digits is divisible by 9."
+      }
+    },
+    {
+      "id": "p6-ex1c",
+      "page": 6,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Examine les nombres du tableau. Lequel de ces nombres est divisible par 3 ?",
+        "en": "Look at the numbers in the table. Which of these numbers is divisible by 3 ?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2710", "en": "2710" },
+        { "fr": "2823", "en": "2823" },
+        { "fr": "425", "en": "425" },
+        { "fr": "38", "en": "38" }
+      ],
+      "reponse_attendue": { "fr": "2823", "en": "2823" },
+      "aide": {
+        "fr": "Un nombre naturel est divisible par 3 si la somme des chiffres est divisible par 3.",
+        "en": "A natural number is divisible by 3 if the sum of its digits is divisible by 3."
+      }
+    },
+    {
+      "id": "p6-ex1d",
+      "page": 6,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": {
+        "fr": "Examine les nombres du tableau. Lequel de ces nombres est divisible par 5 ?",
+        "en": "Look at the numbers in the table. Which of these numbers is divisible by 5 ?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "738", "en": "738" },
+        { "fr": "2823", "en": "2823" },
+        { "fr": "142", "en": "142" },
+        { "fr": "865", "en": "865" }
+      ],
+      "reponse_attendue": { "fr": "865", "en": "865" },
+      "aide": {
+        "fr": "Un nombre naturel est divisible par 5 si le chiffre des unités est 0 ou 5.",
+        "en": "A natural number is divisible by 5 if the last digit is 0 or 5."
+      }
+    },
+    {
+      "id": "p6-ex1e",
+      "page": 6,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": {
+        "fr": "Examine les nombres du tableau. Lequel de ces nombres est divisible par 4 ?",
+        "en": "Look at the numbers in the table. Which of these numbers is divisible by 4 ?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "4328", "en": "4328" },
+        { "fr": "738", "en": "738" },
+        { "fr": "865", "en": "865" },
+        { "fr": "38", "en": "38" }
+      ],
+      "reponse_attendue": { "fr": "4328", "en": "4328" },
+      "aide": {
+        "fr": "Un nombre naturel est divisible par 4 si le nombre formé par les deux derniers chiffres est divisible par 4.",
+        "en": "A natural number is divisible by 4 if the number formed by the last two digits is divisible by 4."
+      }
+    },
+    {
+      "id": "p6-ex1f",
+      "page": 6,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": {
+        "fr": "Examine les nombres du tableau. Lequel de ces nombres est divisible par 8 ?",
+        "en": "Look at the numbers in the table. Which of these numbers is divisible by 8 ?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "640", "en": "640" },
+        { "fr": "580", "en": "580" },
+        { "fr": "425", "en": "425" },
+        { "fr": "7317", "en": "7317" }
+      ],
+      "reponse_attendue": { "fr": "640", "en": "640" },
+      "aide": {
+        "fr": "Un nombre naturel est divisible par 8 si le nombre formé par les trois derniers chiffres est divisible par 8.",
+        "en": "A natural number is divisible by 8 if the number formed by the last three digits is divisible by 8."
+      }
+    },{
+      "id": "p7-ex1-drag",
+      "page": 7,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Classe ces nombres dans le diagramme de Venn selon leur divisibilité par 2 et par 3.",
+        "en": "Classify these numbers in the Venn diagram according to their divisibility by 2 and 3."
+      },
+      "type": "drag_and_drop",
+      "zones_depot": [
+        {
+          "id": "zone-2-uniquement",
+          "label": { "fr": "Divisibles par 2 uniquement", "en": "Divisible by 2 only" },
+          "reponses_attendues": ["2486", "644", "9638"]
+        },
+        {
+          "id": "zone-3-uniquement",
+          "label": { "fr": "Divisibles par 3 uniquement", "en": "Divisible by 3 only" },
+          "reponses_attendues": ["7293", "981", "765"]
+        },
+        {
+          "id": "zone-intersection",
+          "label": { "fr": "Divisibles par 2 ET 3", "en": "Divisible by 2 AND 3" },
+          "reponses_attendues": ["576", "840", "3234"]
+        },
+        {
+          "id": "zone-exterieure",
+          "label": { "fr": "Ni par 2, ni par 3", "en": "Neither by 2 nor 3" },
+          "reponses_attendues": ["371"]
+        }
+      ],
+      "elements_a_glisser": [
+        "7293", "2486", "576", "981", "765", "840", "644", "3234", "9638", "371"
+      ],
+      "aide": {
+        "fr": "Un nombre est divisible par 2 s'il est pair et par 3 si la somme de ses chiffres est divisible par 3.",
+        "en": "A number is divisible by 2 if it is even and by 3 if the sum of its digits is divisible by 3."
+      }
+    },
+    {
+      "id": "p7-ex2b",
+      "page": 7,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Lequel de ces nombres à 4 chiffres est divisible par 4 ?",
+        "en": "Which of these 4-digit numbers is divisible by 4 ?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1021", "en": "1021" },
+        { "fr": "1022", "en": "1022" },
+        { "fr": "1024", "en": "1024" },
+        { "fr": "1025", "en": "1025" }
+      ],
+      "reponse_attendue": { "fr": "1024", "en": "1024" },
+      "aide": {
+        "fr": "Un nombre est divisible par 4 si le nombre formé par ses deux derniers chiffres l'est (ex: 24).",
+        "en": "A number is divisible by 4 if the number formed by its last two digits is (e.g., 24)."
+      }
+    },{
+      "id": "p7-ex3-6434",
+      "page": 7,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Par quels nombres de 2 à 10 le nombre 6434 est-il divisible ?",
+        "en": "By which numbers from 2 to 10 is the number 6434 divisible?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2 uniquement", "en": "2 only" },
+        { "fr": "2 et 4", "en": "2 and 4" },
+        { "fr": "3 et 6", "en": "3 and 6" },
+        { "fr": "Divisible par aucun", "en": "Divisible by none" }
+      ],
+      "reponse_attendue": { "fr": "2 uniquement", "en": "2 only" },
+      "aide": {
+        "fr": "6434 est pair (fini par 4), donc divisible par 2. La somme de ses chiffres est 17 (pas divisible par 3 ou 9) et 34 n'est pas divisible par 4.",
+        "en": "6434 is even (ends in 4), so it's divisible by 2. The sum of its digits is 17 (not divisible by 3 or 9) and 34 is not divisible by 4."
+      }
+    },
+    {
+      "id": "p7-ex3-1345",
+      "page": 7,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Par quels nombres de 2 à 10 le nombre 1345 est-il divisible ?",
+        "en": "By which numbers from 2 to 10 is the number 1345 divisible?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2 et 10", "en": "2 and 10" },
+        { "fr": "3 et 9", "en": "3 and 9" },
+        { "fr": "5 uniquement", "en": "5 only" },
+        { "fr": "4 et 8", "en": "4 and 8" }
+      ],
+      "reponse_attendue": { "fr": "5 uniquement", "en": "5 only" },
+      "aide": {
+        "fr": "Le chiffre des unités est 5, ce qui signifie qu'il est divisible par 5, mais pas par 10 ou par un nombre pair.",
+        "en": "The last digit is 5, which means it is divisible by 5, but not by 10 or any even number."
+      }
+    },
+    {
+      "id": "p7-ex3-3116",
+      "page": 7,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Par quels nombres de 2 à 10 le nombre 3116 est-il divisible ?",
+        "en": "By which numbers from 2 to 10 is the number 3116 divisible?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2 et 3", "en": "2 and 3" },
+        { "fr": "2 et 4", "en": "2 and 4" },
+        { "fr": "5 et 10", "en": "5 and 10" },
+        { "fr": "8 uniquement", "en": "8 only" }
+      ],
+      "reponse_attendue": { "fr": "2 et 4", "en": "2 and 4" },
+      "aide": {
+        "fr": "Il est pair (divisible par 2) et les deux derniers chiffres (16) sont divisibles par 4.",
+        "en": "It is even (divisible by 2) and the last two digits (16) are divisible by 4."
+      }
+    },
+    {
+      "id": "p7-ex3-2241",
+      "page": 7,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Par quels nombres de 2 à 10 le nombre 2241 est-il divisible ?",
+        "en": "By which numbers from 2 to 10 is the number 2241 divisible?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "2, 4 et 8", "en": "2, 4 and 8" },
+        { "fr": "5 et 10", "en": "5 and 10" },
+        { "fr": "3 et 9", "en": "3 and 9" },
+        { "fr": "6 uniquement", "en": "6 only" }
+      ],
+      "reponse_attendue": { "fr": "3 et 9", "en": "3 and 9" },
+      "aide": {
+        "fr": "La somme des chiffres est 9 (2+2+4+1), ce qui rend le nombre divisible par 3 et par 9.",
+        "en": "The sum of the digits is 9 (2+2+4+1), making the number divisible by 3 and 9."
+      }
+    },
+    {
+      "id": "p7-ex3-5613",
+      "page": 7,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Par quels nombres de 2 à 10 le nombre 5613 est-il divisible ?",
+        "en": "By which numbers from 2 to 10 is the number 5613 divisible?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "3 uniquement", "en": "3 only" },
+        { "fr": "3 et 9", "en": "3 and 9" },
+        { "fr": "2 et 6", "en": "2 and 6" },
+        { "fr": "Aucun", "en": "None" }
+      ],
+      "reponse_attendue": { "fr": "3 uniquement", "en": "3 only" },
+      "aide": {
+        "fr": "La somme des chiffres est 15 (5+6+1+3), ce qui est divisible par 3 mais pas par 9.",
+        "en": "The sum of the digits is 15 (5+6+1+3), which is divisible by 3 but not by 9."
+      }
+    },
+    {
+      "id": "p7-vpl",
+      "page": 7,
+      "exercice_num": 4,
+      "sous_question": "Va plus loin",
+      "consigne": {
+        "fr": "Trouve un nombre à 4 chiffres divisible par 2, 3, 4, 9 et 10.",
+        "en": "Find a 4-digit number divisible by 2, 3, 4, 9 and 10."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1080", "en": "1080" },
+        { "fr": "2000", "en": "2000" },
+        { "fr": "3333", "en": "3333" },
+        { "fr": "4505", "en": "4505" }
+      ],
+      "reponse_attendue": { "fr": "1080", "en": "1080" },
+      "aide": {
+        "fr": "Vérifie les règles : il doit finir par 0, être pair, et la somme de ses chiffres doit être divisible par 9.",
+        "en": "Check the rules: it must end in 0, be even, and the sum of its digits must be divisible by 9."
+      }
+    }
+  ]
+}
+
+
+
+  

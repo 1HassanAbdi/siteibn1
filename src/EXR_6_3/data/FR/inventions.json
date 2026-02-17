@@ -1,0 +1,261 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Les inventions récentes",
+    "niveau": "6e année",
+    "session": "Les inventions récentes",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Les inventions récentes",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "Les gens inventent des choses pour améliorer leur vie. De nos jours, les inventions sont surtout des améliorations des inventions d’hier. À cause de la technologie, les inventions prennent de moins en moins de temps à être fabriquées."
+            },
+            {
+              "p": 2,
+              "contenu": "L’une des inventions de ce genre est l’appareil photo. Le temps mis à inventer l’appareil photo au 16e siècle a été long en raison de l’absence de technologies et de connaissances scientifiques. Quand les inventeurs ont pris la première photographie en 1558, l’image ne restait pas sur le papier. C’est seulement en 1837 que les inventeurs sont parvenus à imprimer des photos qui ne s’effaçaient pas."
+            },
+            {
+              "p": 3,
+              "contenu": "Avec l’invention de l’appareil photo, d’autres améliorations ont été possibles. Le premier appareil pour la prise de photos sous-marines a été inventé en 1856. Il était scellé dans un contenant hermétique. Cependant, pendant que celui-ci était sous l’eau, le contenant s’est brisé avant que plusieurs photos ne soient prises. C’est seulement dans les années 1980 qu’un appareil photo capable de demeurer longtemps sous l’eau en profondeur sans se briser a été inventé. Moins de vingt années plus tard, les avancées technologiques permettent de prendre des photographies en couleurs sous l’eau et d’aller encore plus en profondeur. Ces appareils photo ressemblent même à des poissons !"
+            },
+            {
+              "p": 4,
+              "contenu": "Avec l’amélioration de la technologie, les inventions ne cesseront jamais d’évoluer. Les gens seront implacables dans leurs efforts pour apporter des améliorations à leurs inventions."
+            }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Pourquoi les gens inventent-ils des choses selon le texte ?",
+              "options": [
+                "Pour devenir célèbres",
+                "Pour améliorer leur vie",
+                "Pour gagner de l'argent",
+                "Pour s'amuser"
+              ],
+              "reponse_correcte": "Pour améliorer leur vie"
+            },
+            {
+              "numero": 2,
+              "enonce": "Pourquoi l'invention de l'appareil photo a-t-elle été longue au 16e siècle ?",
+              "options": [
+                "Les inventeurs étaient paresseux",
+                "À cause du manque de papier",
+                "En raison de l'absence de technologies et de connaissances scientifiques",
+                "Parce qu'il pleuvait trop souvent"
+              ],
+              "reponse_correcte": "En raison de l'absence de technologies et de connaissances scientifiques"
+            },
+            {
+              "numero": 3,
+              "enonce": "En quelle année la première photographie a-t-elle été prise ?",
+              "options": [
+                "1837",
+                "1558",
+                "1856",
+                "1980"
+              ],
+              "reponse_correcte": "1558"
+            },
+            {
+              "numero": 4,
+              "enonce": "Quel était le problème des premières photos prises en 1558 ?",
+              "options": [
+                "Elles étaient trop petites",
+                "Elles étaient en noir et blanc",
+                "L'image ne restait pas sur le papier",
+                "Elles coûtaient trop cher"
+              ],
+              "reponse_correcte": "L'image ne restait pas sur le papier"
+            },
+            {
+              "numero": 5,
+              "enonce": "En quelle année a-t-on réussi à imprimer des photos qui ne s'effaçaient pas ?",
+              "options": [
+                "1558",
+                "1600",
+                "1837",
+                "1856"
+              ],
+              "reponse_correcte": "1837"
+            },
+            {
+              "numero": 6,
+              "enonce": "Quand le premier appareil photo sous-marin a-t-il été inventé ?",
+              "options": [
+                "1856",
+                "1980",
+                "2000",
+                "1837"
+              ],
+              "reponse_correcte": "1856"
+            },
+            {
+              "numero": 7,
+              "enonce": "Pourquoi le premier appareil photo sous-marin n'a-t-il pas bien fonctionné ?",
+              "options": [
+                "Il n'avait plus de batterie",
+                "Le contenant hermétique s'est brisé sous l'eau",
+                "Les poissons l'ont mangé",
+                "L'eau était trop trouble"
+              ],
+              "reponse_correcte": "Le contenant hermétique s'est brisé sous l'eau"
+            },
+            {
+              "numero": 8,
+              "enonce": "Durant quelle décennie a-t-on inventé un appareil capable de rester longtemps sous l'eau en profondeur ?",
+              "options": [
+                "Les années 1950",
+                "Les années 1960",
+                "Les années 1980",
+                "Les années 2010"
+              ],
+              "reponse_correcte": "Les années 1980"
+            },
+            {
+              "numero": 9,
+              "enonce": "À quoi ressemblent certains appareils photo sous-marins modernes ?",
+              "options": [
+                "À des oiseaux",
+                "À des poissons",
+                "À des bateaux",
+                "À des algues"
+              ],
+              "reponse_correcte": "À des poissons"
+            },
+            {
+              "numero": 10,
+              "enonce": "Selon le paragraphe 4, les gens seront « implacables » dans leurs efforts. Que signifie ce mot ?",
+              "options": [
+                "Qui se décourage vite",
+                "Qui ne s'arrête jamais, très déterminé",
+                "Qui est très fatigué",
+                "Qui n'a pas d'idées"
+              ],
+              "reponse_correcte": "Qui ne s'arrête jamais, très déterminé"
+            },
+            {
+              "numero": 11,
+              "enonce": "Au paragraphe 3, le mot « hermétique » signifie...",
+              "options": [
+                "Parfaitement fermé pour que l'air ou l'eau ne passe pas",
+                "Qui est très coloré",
+                "Fabriqué en métal précieux",
+                "Qui peut flotter facilement"
+              ],
+              "reponse_correcte": "Parfaitement fermé pour que l'air ou l'eau ne passe pas"
+            },
+            {
+              "numero": 12,
+              "enonce": "Dans la phrase « Les gens inventent des choses », quelle est la classe du mot « inventent » ?",
+              "options": [
+                "Nom commun",
+                "Adjectif",
+                "Verbe",
+                "Pronom"
+              ],
+              "reponse_correcte": "Verbe"
+            },
+            {
+              "numero": 13,
+              "enonce": "Dans la phrase « C’est seulement en 1837 que les inventeurs sont parvenus à imprimer des photos », quel est le sujet du verbe « sont parvenus » ?",
+              "options": [
+                "1837",
+                "les inventeurs",
+                "imprimer",
+                "des photos"
+              ],
+              "reponse_correcte": "les inventeurs"
+            },
+            {
+              "numero": 14,
+              "enonce": "Trouve l'adjectif dans cette phrase : « Il était scellé dans un contenant hermétique. »",
+              "options": [
+                "scellé",
+                "contenant",
+                "hermétique",
+                "Les deux options A et C"
+              ],
+              "reponse_correcte": "Les deux options A et C"
+            },
+            {
+              "numero": 15,
+              "enonce": "Quel est le synonyme du mot « évoluer » à la fin du texte ?",
+              "options": [
+                "Reculer",
+                "Changer et progresser",
+                "S'arrêter",
+                "Disparaître"
+              ],
+              "reponse_correcte": "Changer et progresser"
+            },
+            {
+              "numero": 16,
+              "enonce": "Mettez cette phrase au futur simple : « Les inventions prennent du temps. »",
+              "options": [
+                "Les inventions prenaient du temps.",
+                "Les inventions ont pris du temps.",
+                "Les inventions prendront du temps.",
+                "Les inventions prendraient du temps."
+              ],
+              "reponse_correcte": "Les inventions prendront du temps."
+            },
+            {
+              "numero": 17,
+              "enonce": "Dans la phrase « Les images ne restaient pas sur le papier », à quel temps est le verbe ?",
+              "options": [
+                "Présent",
+                "Imparfait",
+                "Futur",
+                "Passé composé"
+              ],
+              "reponse_correcte": "Imparfait"
+            },
+            {
+              "numero": 18,
+              "enonce": "Comment écrit-on correctement au pluriel : « Un appareil photo » ?",
+              "options": [
+                "Des appareils photos",
+                "Des appareils photo",
+                "Des appareilles photo",
+                "Des appareille photos"
+              ],
+              "reponse_correcte": "Des appareils photo"
+            },
+            {
+              "numero": 19,
+              "enonce": "Dans l'expression « des photographies en couleurs », le mot « couleurs » est au pluriel car...",
+              "options": [
+                "C'est un nom toujours pluriel",
+                "Il y a plusieurs couleurs possibles dans les photos modernes",
+                "C'est une erreur dans le texte",
+                "L'adjectif devant est au pluriel"
+              ],
+              "reponse_correcte": "Il y a plusieurs couleurs possibles dans les photos modernes"
+            },
+            {
+              "numero": 20,
+              "enonce": "Quel est le but principal de ce texte ?",
+              "options": [
+                "Raconter une histoire imaginaire sur les poissons",
+                "Informer sur l'évolution des inventions, particulièrement l'appareil photo",
+                "Expliquer comment réparer un appareil photo",
+                "Vendre des appareils photo sous-marins"
+              ],
+              "reponse_correcte": "Informer sur l'évolution des inventions, particulièrement l'appareil photo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

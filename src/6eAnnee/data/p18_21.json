@@ -1,0 +1,460 @@
+{
+  "module": 2,
+  "titre": {
+    "fr": "À la découverte des multiples et des nombres premiers",
+    "en": "Discovering Multiples and Prime Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p18-ex1a",
+      "page": 18,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris les 6 premiers multiples de : 4",
+        "en": "Write the first 6 multiples of: 4"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "4, 8, 12, 16, 20, 24", "en": "4, 8, 12, 16, 20, 24" },
+        { "fr": "4, 6, 8, 10, 12, 14", "en": "4, 6, 8, 10, 12, 14" },
+        { "fr": "1, 2, 4, 8, 12, 16", "en": "1, 2, 4, 8, 12, 16" },
+        { "fr": "4, 14, 24, 34, 44, 54", "en": "4, 14, 24, 34, 44, 54" }
+      ],
+      "reponse_attendue": {
+        "fr": "4, 8, 12, 16, 20, 24",
+        "en": "4, 8, 12, 16, 20, 24"
+      },
+      "aide": {
+        "fr": "Fais des bonds de 4 en partant de 4 (4, 4+4, 8+4...).",
+        "en": "Skip count by 4 starting at 4 (4, 4+4, 8+4...)."
+      }
+    },
+    {
+      "id": "p18-ex1b",
+      "page": 18,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": {
+        "fr": "Écris les 6 premiers multiples de : 9",
+        "en": "Write the first 6 multiples of: 9"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "9, 18, 27, 36, 45, 54", "en": "9, 18, 27, 36, 45, 54" },
+        { "fr": "9, 19, 29, 39, 49, 59", "en": "9, 19, 29, 39, 49, 59" },
+        { "fr": "1, 3, 9, 18, 27, 36", "en": "1, 3, 9, 18, 27, 36" },
+        { "fr": "9, 12, 15, 18, 21, 24", "en": "9, 12, 15, 18, 21, 24" }
+      ],
+      "reponse_attendue": {
+        "fr": "9, 18, 27, 36, 45, 54",
+        "en": "9, 18, 27, 36, 45, 54"
+      },
+      "aide": {
+        "fr": "Multiplie 9 par 1, puis par 2, puis par 3, etc.",
+        "en": "Multiply 9 by 1, then by 2, then by 3, etc."
+      }
+    },
+    {
+      "id": "p18-ex1c",
+      "page": 18,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": {
+        "fr": "Écris les 6 premiers multiples de : 25",
+        "en": "Write the first 6 multiples of: 25"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "25, 50, 75, 100, 125, 150", "en": "25, 50, 75, 100, 125, 150" },
+        { "fr": "25, 30, 35, 40, 45, 50", "en": "25, 30, 35, 40, 45, 50" },
+        { "fr": "5, 10, 15, 20, 25, 30", "en": "5, 10, 15, 20, 25, 30" },
+        { "fr": "25, 35, 45, 55, 65, 75", "en": "25, 35, 45, 55, 65, 75" }
+      ],
+      "reponse_attendue": {
+        "fr": "25, 50, 75, 100, 125, 150",
+        "en": "25, 50, 75, 100, 125, 150"
+      },
+      "aide": {
+        "fr": "Pense à de l'argent : 1 pièce de 25, 2 pièces de 25...",
+        "en": "Think of money: 1 quarter (25), 2 quarters..."
+      }
+    },
+    {
+      "id": "p18-ex2",
+      "page": 18,
+      "exercice_num": 2,
+      "consigne": {
+        "fr": "Quels sont les multiples communs de 7 et de 3 dans la grille de 100 ?",
+        "en": "What are the common multiples of 7 and 3 in the 100 grid?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "21, 42, 63, 84", "en": "21, 42, 63, 84" },
+        { "fr": "7, 14, 21, 28, 35", "en": "7, 14, 21, 28, 35" },
+        { "fr": "3, 6, 9, 12, 15", "en": "3, 6, 9, 12, 15" },
+        { "fr": "10, 20, 30, 40", "en": "10, 20, 30, 40" }
+      ],
+      "reponse_attendue": {
+        "fr": "21, 42, 63, 84",
+        "en": "21, 42, 63, 84"
+      },
+      "aide": {
+        "fr": "Le premier multiple commun est 3 x 7 = 21. Trouve les multiples de 21.",
+        "en": "The first common multiple is 3 x 7 = 21. Find multiples of 21."
+      }
+    },
+    {
+      "id": "p19-ex1",
+      "page": 19,
+      "exercice_num": 1,
+      "consigne": {
+        "fr": "Trouve les multiples communs de 6 et 8 parmi leurs 10 premiers multiples.",
+        "en": "Find the common multiples of 6 and 8 among their first 10 multiples."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "24 et 48", "en": "24 and 48" },
+        { "fr": "12 et 24", "en": "12 and 24" },
+        { "fr": "6 et 8", "en": "6 and 8" },
+        { "fr": "36 et 40", "en": "36 and 40" }
+      ],
+      "reponse_attendue": {
+        "fr": "24 et 48",
+        "en": "24 and 48"
+      },
+      "aide": {
+        "fr": "Liste les multiples de 8 (8, 16, 24...) et regarde s'ils sont dans la table du 6.",
+        "en": "List multiples of 8 (8, 16, 24...) and check if they are in the 6 times table."
+      }
+    },
+    {
+      "id": "p19-ex3",
+      "page": 19,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Quels sont les multiples communs de 8 et 12 inférieurs à 100 ?",
+        "en": "What are the common multiples of 8 and 12 less than 100?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "24, 48, 72, 96", "en": "24, 48, 72, 96" },
+        { "fr": "8, 12, 24, 48", "en": "8, 12, 24, 48" },
+        { "fr": "12, 24, 36, 48", "en": "12, 24, 36, 48" },
+        { "fr": "96, 100, 108", "en": "96, 100, 108" }
+      ],
+      "reponse_attendue": {
+        "fr": "24, 48, 72, 96",
+        "en": "24, 48, 72, 96"
+      },
+      "aide": {
+        "fr": "Le PPCM de 8 et 12 est 24. Compte par bonds de 24.",
+        "en": "The LCM of 8 and 12 is 24. Skip count by 24."
+      }
+    },
+    {
+      "id": "p19-ex4",
+      "page": 19,
+      "exercice_num": 4,
+      "consigne": {
+        "fr": "Trouve les 3 premiers multiples communs de {4, 5, 10}.",
+        "en": "Find the first 3 common multiples of {4, 5, 10}."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "20, 40, 60", "en": "20, 40, 60" },
+        { "fr": "10, 20, 30", "en": "10, 20, 30" },
+        { "fr": "5, 10, 15", "en": "5, 10, 15" },
+        { "fr": "40, 50, 60", "en": "40, 50, 60" }
+      ],
+      "reponse_attendue": {
+        "fr": "20, 40, 60",
+        "en": "20, 40, 60"
+      },
+      "aide": {
+        "fr": "Le nombre doit finir par 0 (multiple de 10) et être divisible par 4.",
+        "en": "The number must end in 0 (multiple of 10) and be divisible by 4."
+      }
+    },
+    {
+      "id": "p19-ex5",
+      "page": 19,
+      "exercice_num": 5,
+      "consigne": {
+        "fr": "Quel est le premier multiple commun de 16 et 18 ?",
+        "en": "What is the first common multiple of 16 and 18?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "144", "en": "144" },
+        { "fr": "288", "en": "288" },
+        { "fr": "180", "en": "180" },
+        { "fr": "34", "en": "34" }
+      ],
+      "reponse_attendue": {
+        "fr": "144",
+        "en": "144"
+      },
+      "aide": {
+        "fr": "Essaie les multiples de 18 (18, 36, 54...) jusqu'à ce que l'un d'eux se divise par 16.",
+        "en": "Try multiples of 18 (18, 36, 54...) until one is divisible by 16."
+      }
+    },
+    {
+      "id": "p19-vpl",
+      "page": 19,
+      "exercice_num": "Va plus loin",
+      "consigne": {
+        "fr": "Bethany porte un jean tous les 2 jours et des espadrilles tous les 3 jours. Si elle porte les deux le 1er mai, quelles sont les 3 prochaines dates ?",
+        "en": "Bethany wears jeans every 2 days and sneakers every 3 days. If she wears both on May 1st, what are the next 3 dates?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "7, 13 et 19 mai", "en": "May 7, 13, and 19" },
+        { "fr": "3, 5 et 7 mai", "en": "May 3, 5, and 7" },
+        { "fr": "2, 3 et 6 mai", "en": "May 2, 3, and 6" },
+        { "fr": "6, 12 et 18 mai", "en": "May 6, 12, and 18" }
+      ],
+      "reponse_attendue": {
+        "fr": "7, 13 et 19 mai",
+        "en": "May 7, 13, and 19"
+      },
+      "aide": {
+        "fr": "Cherche le multiple commun de 2 et 3. Cela arrive tous les 6 jours.",
+        "en": "Find the common multiple of 2 and 3. It happens every 6 days."
+      }
+    },
+    {
+      "id": "p20-ex1a",
+      "page": 20,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Écris tous les facteurs de : 15",
+        "en": "Write all the factors of: 15"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1, 3, 5, 15", "en": "1, 3, 5, 15" },
+        { "fr": "1, 15", "en": "1, 15" },
+        { "fr": "3, 5", "en": "3, 5" },
+        { "fr": "1, 3, 5, 10, 15", "en": "1, 3, 5, 10, 15" }
+      ],
+      "reponse_attendue": {
+        "fr": "1, 3, 5, 15",
+        "en": "1, 3, 5, 15"
+      },
+      "aide": {
+        "fr": "Quels nombres peux-tu multiplier pour obtenir 15 ?",
+        "en": "What numbers can you multiply to get 15?"
+      }
+    },
+    {
+      "id": "p20-ex1f",
+      "page": 20,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": {
+        "fr": "Écris tous les facteurs de : 5",
+        "en": "Write all the factors of: 5"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "1, 5", "en": "1, 5" },
+        { "fr": "1, 2, 5", "en": "1, 2, 5" },
+        { "fr": "5", "en": "5" },
+        { "fr": "1, 5, 10", "en": "1, 5, 10" }
+      ],
+      "reponse_attendue": {
+        "fr": "1, 5",
+        "en": "1, 5"
+      },
+      "aide": {
+        "fr": "5 est un nombre premier, il a seulement 2 facteurs.",
+        "en": "5 is a prime number, it has only 2 factors."
+      }
+    },
+    {
+      "id": "p20-ex2a",
+      "page": 20,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": {
+        "fr": "Indique si le nombre 15 est premier ou composé.",
+        "en": "Indicate if the number 15 is prime or composite."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Composé", "en": "Composite" },
+        { "fr": "Premier", "en": "Prime" },
+        { "fr": "Ni premier ni composé", "en": "Neither prime nor composite" },
+        { "fr": "Pair", "en": "Even" }
+      ],
+      "reponse_attendue": {
+        "fr": "Composé",
+        "en": "Composite"
+      },
+      "aide": {
+        "fr": "Il a plus que deux diviseurs (1, 3, 5, 15).",
+        "en": "It has more than two divisors (1, 3, 5, 15)."
+      }
+    },
+    {
+      "id": "p20-ex2f",
+      "page": 20,
+      "exercice_num": 2,
+      "sous_question": "f",
+      "consigne": {
+        "fr": "Indique si le nombre 5 est premier ou composé.",
+        "en": "Indicate if the number 5 is prime or composite."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Premier", "en": "Prime" },
+        { "fr": "Composé", "en": "Composite" },
+        { "fr": "Nombre carré", "en": "Square number" },
+        { "fr": "Pair", "en": "Even" }
+      ],
+      "reponse_attendue": {
+        "fr": "Premier",
+        "en": "Prime"
+      },
+      "aide": {
+        "fr": "Il ne se divise que par 1 et lui-même.",
+        "en": "It is only divisible by 1 and itself."
+      }
+    },
+    {
+      "id": "p20-ex3",
+      "page": 20,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Lequel de ces nombres possède exactement 3 facteurs ?",
+        "en": "Which of these numbers has exactly 3 factors?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "4", "en": "4" },
+        { "fr": "7", "en": "7" },
+        { "fr": "6", "en": "6" },
+        { "fr": "8", "en": "8" }
+      ],
+      "reponse_attendue": {
+        "fr": "4",
+        "en": "4"
+      },
+      "aide": {
+        "fr": "Les facteurs de 4 sont 1, 2 et 4.",
+        "en": "The factors of 4 are 1, 2, and 4."
+      }
+    },
+    {
+      "id": "p21-ex2",
+      "page": 21,
+      "exercice_num": 2,
+      "consigne": {
+        "fr": "Quels sont les 3 nombres premiers entre 80 et 100 ?",
+        "en": "What are the 3 prime numbers between 80 and 100?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "83, 89, 97", "en": "83, 89, 97" },
+        { "fr": "81, 87, 93", "en": "81, 87, 93" },
+        { "fr": "83, 87, 99", "en": "83, 87, 99" },
+        { "fr": "80, 90, 100", "en": "80, 90, 100" }
+      ],
+      "reponse_attendue": {
+        "fr": "83, 89, 97",
+        "en": "83, 89, 97"
+      },
+      "aide": {
+        "fr": "Élimine les nombres pairs et ceux divisibles par 3 (comme 81 et 87).",
+        "en": "Eliminate even numbers and those divisible by 3 (like 81 and 87)."
+      }
+    },
+    {
+      "id": "p21-ex3",
+      "page": 21,
+      "exercice_num": 3,
+      "consigne": {
+        "fr": "Quels sont les 8 nombres composés entre 31 et 41 ?",
+        "en": "What are the 8 composite numbers between 31 and 41?"
+      },
+      "type": "select",
+      "options": [
+        {
+          "fr": "32, 33, 34, 35, 36, 38, 39, 40",
+          "en": "32, 33, 34, 35, 36, 38, 39, 40"
+        },
+        {
+          "fr": "31, 32, 33, 34, 35, 37, 39, 41",
+          "en": "31, 32, 33, 34, 35, 37, 39, 41"
+        },
+        {
+          "fr": "32, 34, 36, 38, 40, 42, 44, 46",
+          "en": "32, 34, 36, 38, 40, 42, 44, 46"
+        },
+        {
+          "fr": "30, 31, 32, 33, 34, 35, 36, 37",
+          "en": "30, 31, 32, 33, 34, 35, 36, 37"
+        }
+      ],
+      "reponse_attendue": {
+        "fr": "32, 33, 34, 35, 36, 38, 39, 40",
+        "en": "32, 33, 34, 35, 36, 38, 39, 40"
+      },
+      "aide": {
+        "fr": "Tu dois exclure les nombres premiers (31, 37, 41).",
+        "en": "You must exclude the prime numbers (31, 37, 41)."
+      }
+    },
+    {
+      "id": "p21-ex4",
+      "page": 21,
+      "exercice_num": 4,
+      "consigne": {
+        "fr": "Comment classerais-tu le nombre 37 ?",
+        "en": "How would you classify the number 37?"
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Premier et impair", "en": "Prime and odd" },
+        { "fr": "Composé et pair", "en": "Composite and even" },
+        { "fr": "Composé et impair", "en": "Composite and odd" },
+        { "fr": "Premier et pair", "en": "Prime and even" }
+      ],
+      "reponse_attendue": {
+        "fr": "Premier et impair",
+        "en": "Prime and odd"
+      },
+      "aide": {
+        "fr": "37 ne se divise par rien d'autre que 1 et 37, et il ne finit pas par 0,2,4,6,8.",
+        "en": "37 is divisible by nothing but 1 and 37, and it doesn't end in 0,2,4,6,8."
+      }
+    },
+    {
+      "id": "p21-vpl",
+      "page": 21,
+      "exercice_num": "Va plus loin",
+      "consigne": {
+        "fr": "Indique si l'âge d'une personne de 49 ans est premier ou composé.",
+        "en": "Indicate if a 49-year-old person's age is prime or composite."
+      },
+      "type": "select",
+      "options": [
+        { "fr": "Composé (1, 7, 49)", "en": "Composite (1, 7, 49)" },
+        { "fr": "Premier", "en": "Prime" },
+        { "fr": "Composé (1, 3, 49)", "en": "Composite (1, 3, 49)" },
+        { "fr": "Pair", "en": "Even" }
+      ],
+      "reponse_attendue": {
+        "fr": "Composé (1, 7, 49)",
+        "en": "Composite (1, 7, 49)"
+      },
+      "aide": {
+        "fr": "49 est dans la table du 7 (7 x 7).",
+        "en": "49 is in the 7 times table (7 x 7)."
+      }
+    }
+  ]
+}

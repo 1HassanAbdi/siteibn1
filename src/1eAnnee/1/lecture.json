@@ -1,0 +1,31 @@
+{
+  "histoires": [
+    {
+      "id": 1,
+      "titre": "L'école",
+      "lignes": [
+        { "texte": "Rémi va à l'école.", "emoji": "🎒" },
+        { "texte": "Il lit.", "emoji": "📖" },
+        { "texte": "Il aime lire.", "emoji": "❤️📚" },
+        { "texte": "Il parle avec des amis.", "emoji": "🗣️" },
+        { "texte": "Il a un pupitre.", "emoji": "🪑" },
+        { "texte": "Il rédige des phrases.", "emoji": "✍️" },
+        { "texte": "Il joue avec des jeux.", "emoji": "🧩" },
+        { "texte": "Il dîne à l'école.", "emoji": "🍱" },
+        { "texte": "Rémi aime aller à l'école.", "emoji": "😊" }
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Le repas",
+      "lignes": [
+        { "texte": "Maman lave les tomates.", "emoji": "🍅" },
+        { "texte": "Mario lave la laitue et les légumes.", "emoji": "🥬" },
+        { "texte": "Maman coupe les tomates et les légumes.", "emoji": "🔪" },
+        { "texte": "Papa coupe le rôti.", "emoji": "🍖" },
+        { "texte": "Valérie met la nappe et les plats.", "emoji": "🍽️" },
+        { "texte": "Tout le monde mange.", "emoji": "😋" }
+      ]
+    }
+  ]
+}

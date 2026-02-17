@@ -13,6 +13,13 @@
     "titre": "La Pieuvre", 
     "chemin": "./data/FR/Lapieuvre.json" 
   },{ 
+    "slug": "inventions", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": "les inventions recentes", 
+    "chemin": "./data/FR/inventions.json" 
+  }
+  ,{ 
     "slug": "Mathématiques_decimaux_entiers_recherche", 
     "niveau": 6, 
     "matiere": "MATHS", 
