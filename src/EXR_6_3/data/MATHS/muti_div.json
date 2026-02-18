@@ -1,0 +1,140 @@
+{
+  "test_info": {
+    "session": "Mathématiques_ multiplication_division",
+    "niveau": "3A",
+    "target": "maths_3a_oqre",
+    "subject": "maths"
+  },
+  "parties": [
+    {
+      "id": "Module_2",
+      "sections": [
+        {
+          "titre": "Multiplication, Division et Régularité",
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Calcule : 3 x 4 =",
+              "options": ["7", "10", "12", "15"],
+              "reponse_correcte": "12"
+            },
+            {
+              "numero": 2,
+              "enonce": "Complète la suite : 2, 4, 8, ____, 32",
+              "options": ["12", "16", "20", "24"],
+              "reponse_correcte": "16"
+            },
+            {
+              "numero": 3,
+              "enonce": "Si tu partages 20 bonbons entre 5 amis, combien en ont-ils chacun ?",
+              "options": ["2", "4", "5", "10"],
+              "reponse_correcte": "4"
+            },
+            {
+              "numero": 4,
+              "enonce": "Quelle est la règle de la suite : 3, 9, 27 ?",
+              "options": ["Ajouter 6", "Multiplier par 3", "Multiplier par 2", "Ajouter 18"],
+              "reponse_correcte": "Multiplier par 3"
+            },
+            {
+              "numero": 5,
+              "enonce": "Calcule : 10 x 5 =",
+              "options": ["15", "50", "100", "5"],
+              "reponse_correcte": "50"
+            },
+            {
+              "numero": 6,
+              "enonce": "Trouve le nombre manquant : 40, 20, 10, ____",
+              "options": ["0", "2", "5", "8"],
+              "reponse_correcte": "5"
+            },
+            {
+              "numero": 7,
+              "enonce": "Calcule : 18 ÷ 2 =",
+              "options": ["7", "8", "9", "10"],
+              "reponse_correcte": "9"
+            },
+            {
+              "numero": 8,
+              "enonce": "Quelle opération permet de passer de 5 à 25 ?",
+              "options": ["Ajouter 10", "Multiplier par 5", "Diviser par 5", "Multiplier par 4"],
+              "reponse_correcte": "Multiplier par 5"
+            },
+            {
+              "numero": 9,
+              "enonce": "Complète la suite : 1, 10, 100, ____",
+              "options": ["110", "200", "500", "1000"],
+              "reponse_correcte": "1000"
+            },
+            {
+              "numero": 10,
+              "enonce": "Calcule : 24 ÷ 3 =",
+              "options": ["6", "7", "8", "9"],
+              "reponse_correcte": "8"
+            },
+            {
+              "numero": 11,
+              "enonce": "Trouve la règle : 100, 50, 25",
+              "options": ["Soustraire 50", "Diviser par 2", "Diviser par 5", "Soustraire 25"],
+              "reponse_correcte": "Diviser par 2"
+            },
+            {
+              "numero": 12,
+              "enonce": "Si 4 x 5 = 20, combien font 4 x 6 ?",
+              "options": ["21", "24", "25", "26"],
+              "reponse_correcte": "24"
+            },
+            {
+              "numero": 13,
+              "enonce": "Complète : 5, 15, 45, ____",
+              "options": ["60", "90", "135", "100"],
+              "reponse_correcte": "135"
+            },
+            {
+              "numero": 14,
+              "enonce": "Trouve le résultat : 35 ÷ 5 =",
+              "options": ["5", "6", "7", "8"],
+              "reponse_correcte": "7"
+            },
+            {
+              "numero": 15,
+              "enonce": "Quel nombre vient après 16 dans une suite où on multiplie par 2 ?",
+              "options": ["18", "24", "32", "40"],
+              "reponse_correcte": "32"
+            },
+            {
+              "numero": 16,
+              "enonce": "Calcule : 7 x 2 =",
+              "options": ["9", "14", "16", "21"],
+              "reponse_correcte": "14"
+            },
+            {
+              "numero": 17,
+              "enonce": "Trouve le nombre manquant : 81, 27, 9, ____",
+              "options": ["1", "3", "6", "0"],
+              "reponse_correcte": "3"
+            },
+            {
+              "numero": 18,
+              "enonce": "Si on divise par 10 la suite : 500, 50, ____ ?",
+              "options": ["40", "25", "5", "0"],
+              "reponse_correcte": "5"
+            },
+            {
+              "numero": 19,
+              "enonce": "Calcule : 6 x 3 =",
+              "options": ["9", "12", "18", "24"],
+              "reponse_correcte": "18"
+            },
+            {
+              "numero": 20,
+              "enonce": "Partage 16 pommes en 4 groupes égaux. Combien y a-t-il de pommes par groupe ?",
+              "options": ["2", "4", "6", "8"],
+              "reponse_correcte": "4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

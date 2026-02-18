@@ -31,5 +31,21 @@
     "matiere": "MATHS", 
     "titre": "regularité", 
     "chemin": "./data/MATHS/regularit1.json" 
+    },{ 
+    "slug": "muti_div", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Multiplication, Division et Régularité", 
+    "chemin": "./data/MATHS/muti_div.json" 
+    },{ 
+    "slug": "Ungoutsale", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "Un goût salé", 
+    "chemin": "./data/FR/Ungoutsale.json" 
     }
+    
+
+    
+
 ]

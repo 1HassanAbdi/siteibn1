@@ -1,0 +1,154 @@
+
+{
+  "test_info": {
+    "titre": "Test de lecture et grammaire - Un goût salé",
+    "niveau": "3e année",
+    "session": "L'eau de la mer",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Un goût salé",
+          "texte_integral": [
+            { "p": 1, "contenu": "As-tu déjà goûté à l’eau de la mer ? Nous savons tous que l’eau de la mer est salée. Quand la pluie tombe sur le sol, l’eau se répand sur la terre. L’eau de pluie coule par-dessus les roches. Lentement, le sel contenu dans les roches se dissout. Le sel est alors transporté à partir des cours d’eau jusqu’à la mer. Depuis des milliers d’années, le sel est transporté vers la mer et ne la quitte jamais. C’est pourquoi l’eau de la mer est salée, mais pas l’eau des ruisseaux." },
+            { "p": 2, "contenu": "Le jour, la chaleur du Soleil « aspire » seulement l’eau douce de la mer pour fabriquer les nuages dans le ciel. Cela s’appelle l’évaporation. Ces nuages se remplissent de gouttelettes. Bientôt, cette eau tombe sous forme de pluie. L’évaporation de l’eau et les averses de pluie ou de neige continuent sans cesse. Ainsi, les rivières et les ruisseaux transportent chaque jour vers la mer un peu plus de sel arraché aux roches et à la terre." }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "D'où provient le sel qui se trouve dans la mer ?",
+              "options": ["Des nuages", "Des roches et de la terre", "Des poissons", "Des bateaux"],
+              "reponse_correcte": "Des roches et de la terre"
+            },
+            {
+              "numero": 2,
+              "enonce": "Que fait l'eau de pluie lorsqu'elle tombe sur le sol ?",
+              "options": ["Elle se répand sur la terre et coule sur les roches", "Elle devient immédiatement salée", "Elle s'arrête de couler", "Elle monte vers le soleil"],
+              "reponse_correcte": "Elle se répand sur la terre et coule sur les roches"
+            },
+            {
+              "numero": 3,
+              "enonce": "Que signifie le mot « dissout » dans le texte ?",
+              "options": ["Qui devient solide", "Qui se mélange à l'eau jusqu'à disparaître", "Qui change de couleur", "Qui s'envole dans l'air"],
+              "reponse_correcte": "Qui se mélange à l'eau jusqu'à disparaître"
+            },
+            {
+              "numero": 4,
+              "enonce": "Comment le sel arrive-t-il jusqu'à la mer ?",
+              "options": ["Par le vent", "Par les camions", "Par les cours d'eau", "Par les vagues"],
+              "reponse_correcte": "Par les cours d'eau"
+            },
+            {
+              "numero": 5,
+              "enonce": "Pourquoi l'eau des ruisseaux n'est-elle pas salée ?",
+              "options": ["Il n'y a pas de sel", "Le sel ne fait que passer vers la mer", "L'eau est trop froide", "Les poissons mangent le sel"],
+              "reponse_correcte": "Le sel ne fait que passer vers la mer"
+            },
+            {
+              "numero": 6,
+              "enonce": "Depuis combien de temps le sel est-il transporté vers la mer ?",
+              "options": ["Cent ans", "L'hiver dernier", "Des milliers d'années", "Depuis ce matin"],
+              "reponse_correcte": "Des milliers d'années"
+            },
+            {
+              "numero": 7,
+              "enonce": "Que fait la chaleur du Soleil le jour ?",
+              "options": ["Elle aspire l'eau douce", "Elle fait bouillir la mer", "Elle refroidit les nuages", "Elle aspire le sel"],
+              "reponse_correcte": "Elle aspire l'eau douce"
+            },
+            {
+              "numero": 8,
+              "enonce": "Comment appelle-t-on le moment où l'eau est aspirée pour faire des nuages ?",
+              "options": ["La pluie", "L'évaporation", "La neige", "La dissolution"],
+              "reponse_correcte": "L'évaporation"
+            },
+            {
+              "numero": 9,
+              "enonce": "Qu'est-ce que le Soleil laisse dans la mer lorsqu'il aspire l'eau ?",
+              "options": ["Les poissons", "L'eau douce", "Le sel", "Les nuages"],
+              "reponse_correcte": "Le sel"
+            },
+            {
+              "numero": 10,
+              "enonce": "De quoi se remplissent les nuages ?",
+              "options": ["De sel", "De gouttelettes d'eau", "De fumée", "De roches"],
+              "reponse_correcte": "De gouttelettes d'eau"
+            },
+            {
+              "numero": 11,
+              "enonce": "Sous quelles formes l'eau tombe-t-elle des nuages ?",
+              "options": ["Uniquement pluie", "Pluie ou neige", "Vapeur", "Cailloux"],
+              "reponse_correcte": "Pluie ou neige"
+            },
+            {
+              "numero": 12,
+              "enonce": "Dans le texte, le mot « averses » veut dire :",
+              "options": ["De la glace", "Des pluies fortes", "Des rayons de soleil", "Des vagues"],
+              "reponse_correcte": "Des pluies fortes"
+            },
+            {
+              "numero": 13,
+              "enonce": "Dans la phrase « La pluie tombe sur le sol », quel est le verbe ?",
+              "options": ["pluie", "tombe", "sol", "sur"],
+              "reponse_correcte": "tombe"
+            },
+            {
+              "numero": 14,
+              "enonce": "Dans la phrase « L'eau de la mer est salée », quel est l'adjectif ?",
+              "options": ["mer", "eau", "salée", "est"],
+              "reponse_correcte": "salée"
+            },
+            {
+              "numero": 15,
+              "enonce": "Quel est le sujet dans « Ces nuages se remplissent » ?",
+              "options": ["remplissent", "Ces nuages", "se", "nuage"],
+              "reponse_correcte": "Ces nuages"
+            },
+            {
+              "numero": 16,
+  "enonce": "Si on écrit « La pluie est tombée sur le sol », à quel temps est le verbe « est tombée » ?",
+  "options": [
+    "Présent",
+    "Futur",
+    "Passé composé",
+    "Imparfait"
+  ],
+  "reponse_correcte": "Passé composé"
+},
+            
+            {
+              "numero": 17,
+              "enonce": "Quel est le contraire de « l'eau douce » ?",
+              "options": ["L'eau froide", "L'eau salée", "L'eau propre", "L'eau bleue"],
+              "reponse_correcte": "L'eau salée"
+            },
+            {
+              "numero": 18,
+              "enonce": "Pourquoi le sel ne quitte-t-il jamais la mer ?",
+              "options": ["Il est trop lourd", "Le soleil aspire l'eau mais pas le sel", "Les poissons le gardent", "Il colle au fond"],
+              "reponse_correcte": "Le soleil aspire l'eau mais pas le sel"
+            },
+            {
+              "numero": 19,
+              "enonce": "À quel temps est écrit le texte ?",
+              "options": ["Présent", "Passé composé", "Futur", "Imparfait"],
+              "reponse_correcte": "Présent"
+            },
+            {
+              "numero": 20,
+              "enonce": "Quel est le but principal de ce texte ?",
+              "options": ["Raconter une blague", "Expliquer pourquoi la mer est salée", "Apprendre à faire du sel", "Parler des bateaux"],
+              "reponse_correcte": "Expliquer pourquoi la mer est salée"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
