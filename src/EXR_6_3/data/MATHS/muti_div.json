@@ -98,7 +98,7 @@
             },
             {
               "numero": 15,
-              "enonce": "Quel nombre vient après 16 dans une suite où on multiplie par 2 ?",
+              "enonce": "Quel nombre obtient-on si on multiplie 16 par 2 ?",
               "options": ["18", "24", "32", "40"],
               "reponse_correcte": "32"
             },
@@ -116,7 +116,7 @@
             },
             {
               "numero": 18,
-              "enonce": "Si on divise par 10 la suite : 500, 50, ____ ?",
+              "enonce": "Complète la suite : 500, 50, ____ ?",
               "options": ["40", "25", "5", "0"],
               "reponse_correcte": "5"
             },
