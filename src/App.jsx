@@ -23,6 +23,7 @@ import DictationApp from "./1eAnnee/1/dictations";
 import LecteurInteractif from "./1eAnnee/1/lecture";
 import ReadingApp from "./1eAnnee/repas";
 import ReadingAppee from "./1eAnnee/Lecture/app";
+import SentenceBuilder from "./Cahier/SentenceBuilder";
 
 
 
@@ -56,6 +57,7 @@ function App() {
           <Route path="/activites/31e Année/Francais" element={<YearlyNavigator />} />
           <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
           <Route path="/activites/2e Année/Francais" element={<YearlyNavigator2e />} />
+          <Route path="/activites/7e Année/Francais" element={<SentenceBuilder></SentenceBuilder>} />
 
           <Route path="/activites/3e Année/Mathematiques" element={<MathEvaluator></MathEvaluator> } />
           <Route path="/activites/6e Année/Francais" element={<Exercice63></Exercice63>} />

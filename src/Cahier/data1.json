@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "titre": "L'aventure du chat",
+    "phrases": [
+      "Le petit chat se réveille.",
+      "Il boit son lait chaud.",
+      "Ensuite il part chasser la souris."
+    ]
+  },
+  {
+    "id": "2",
+    "titre": "Découverte de React",
+    "phrases": [
+      "React est une bibliothèque JavaScript.",
+      "Nous créons des composants réutilisables.",
+      "Le développement devient beaucoup plus rapide."
+    ]
+  },
+  {
+    "id": "3",
+    "titre": "La météo d'aujourd'hui",
+    "phrases": [
+      "Le soleil brille très fort.",
+      "Il n'y a pas un seul nuage.",
+      "C'est une belle journée d'été."
+    ]
+  }
+]

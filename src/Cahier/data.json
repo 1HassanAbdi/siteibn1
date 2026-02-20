@@ -1,0 +1,34 @@
+{
+  "config_globale": {
+    "langue_lecture": "fr-FR",
+    "emoji_succes": "🌟",
+    "emoji_erreur": "❌",
+    "emoji_bravo": "🎉",
+    "couleur_sujet": "#3498db",
+    "couleur_verbe": "#e74c3c",
+    "couleur_complement": "#2ecc71",
+    "labels": {
+      "sujet": "Qui ?",
+      "verbe": "Fait quoi ?",
+      "complement": "Où / Comment ?",
+      "bouton_verifier": "VÉRIFIER MA PHRASE",
+      "bouton_retour": "⬅ Retour aux exercices"
+    }
+  },
+  "exercices": [
+    {
+      "id": "exo1_eau",
+      "titre": "Le Cycle de l'Eau 💧",
+      "sujets": ["La chaleur du Soleil", "Le sel des roches", "Les cours d'eau", "Les nuages", "La pluie"],
+      "verbes": ["aspire", "se dissout", "transportent", "se remplissent", "tombe"],
+      "complements": ["l'eau douce de la mer.", "lentement avec la pluie.", "le sel jusqu'à la mer.", "de gouttelettes d'eau.", "sur le sol et la terre."],
+      "solutions": [
+        "La chaleur du Soleil aspire l'eau douce de la mer.",
+        "Le sel des roches se dissout lentement avec la pluie.",
+        "Les cours d'eau transportent le sel jusqu'à la mer.",
+        "Les nuages se remplissent de gouttelettes d'eau.",
+        "La pluie tombe sur le sol et la terre."
+      ]
+    }
+  ]
+}
