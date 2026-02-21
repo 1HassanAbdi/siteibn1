@@ -19,8 +19,8 @@ const EvaluationGame = ({ words, selectedLevel, activeWeek, onBack }) => {
   // --- CONFIGURATION DES CODES ---
   const codesSecrets = {
     "1": "1000", "2": "2000", "5": "5000",
-    "6": "2024", "7": "2024", "8": "2024", "9": "2024", "10": "2024",
-    "11": "2024", "12": "2024", "13": "2024", "14": "2024", "15": "2024",
+    "6": "2024", "7": "2026eib", "8": "20ibn", "9": "cka", "10": "2030",
+    "11": "ibncka", "12": "2026", "13": "20", "14": "2ibn", "15": "4cka",
     "16": "2024", "17": "2024", "18": "8888",
   };
   const weekKey = activeWeek.toString();
