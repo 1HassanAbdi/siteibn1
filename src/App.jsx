@@ -24,10 +24,7 @@ import LecteurInteractif from "./1eAnnee/1/lecture";
 import ReadingApp from "./1eAnnee/repas";
 import ReadingAppee from "./1eAnnee/Lecture/app";
 import SentenceBuilder from "./Cahier/SentenceBuilder";
-
-
-
-
+import TeacherDashboard from "./Dictee/TeacherDashboard";
 
 
 function App() {
@@ -39,6 +36,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Accueil></Accueil>} />
             <Route path="/test" element={<OQREHub></OQREHub>} />
+            <Route path="/ens" element={<TeacherDashboard/> }/>
+          
+            
             <Route path="/Multiplication" element={<MultiplicationChallengeOK></MultiplicationChallengeOK>} />
                     {/* Page des activités pour chaque année */}
 

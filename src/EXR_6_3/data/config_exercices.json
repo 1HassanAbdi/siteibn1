@@ -18,14 +18,23 @@
     "matiere": "FR", 
     "titre": "les inventions recentes", 
     "chemin": "./data/FR/inventions.json" 
+  },{ 
+    "slug": "Protéger-les-rhinocéros", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": "Protéger les rhinocéros", 
+    "chemin": "./data/FR/Protéger-les-rhinocéros.json" 
   }
+  
   ,{ 
     "slug": "Mathématiques_decimaux_entiers_recherche", 
     "niveau": 6, 
     "matiere": "MATHS", 
     "titre": "Mathématiques_decimaux_entiers_recherche", 
     "chemin": "./data/MATHS/dec_ent.json" 
-    },{ 
+    },
+    
+    { 
     "slug": "regularité", 
     "niveau": 3, 
     "matiere": "MATHS", 

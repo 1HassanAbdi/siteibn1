@@ -1,0 +1,241 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Cycle moyen",
+    "niveau": "6ᵉ année",
+    "session": "Protéger-les-rhinocéros",
+    "matière": "Français",
+    "cahier": "1",
+    "organisme": "OQRE"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Protéger les rhinocéros",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "Colby était différent des autres membres de la tribu. Tout ce qu’ils faisaient, c’était de parler et de chanter toute la journée. Ils se moquaient du dévouement de Colby à défendre une cause. Néanmoins, Colby avait choisi de les ignorer complètement, même lorsqu’ils faisaient des remarques cyniques à son sujet. Si les membres de la tribu sortaient chasser, ils allaient parfois là où Colby se trouvait. Ils voulaient voir si Colby serait assez agacé par leur présence pour les arrêter."
+            },
+            {
+              "p": 2,
+              "contenu": "Colby travaillait pour une organisation internationale chargée de la protection des rhinocéros dans les prairies d’Afrique. Sa tâche principale était de les observer à distance. S’ils rencontraient un problème, il devait le signaler au vétérinaire."
+            },
+            {
+              "p": 3,
+              "contenu": "Un jour, Colby a trouvé un rhinocéros dont le corps était envahi d’asticots à cause d’une plaie ouverte. C’était un animal difficile, du genre qui fuyait toujours les contacts humains. Même avec ses mouvements entravés par les asticots, il bougeait violemment, essayant de se libérer de l’emprise de Colby et du vétérinaire. Finalement, après avoir reçu une injection de tranquillisant, il a été possible d’utiliser des instruments pour enlever les asticots de son corps. C’était une tâche pénible qui a pris presque toute la journée."
+            },
+            {
+              "p": 4,
+              "contenu": "La satisfaction d’aider un rhinocéros était un sentiment que la tribu de Colby ne comprendrait jamais. Cependant, ils ne l’ont jamais empêché de travailler, car il leur procurait le luxe qu’ils désiraient."
+            }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Vrai ou Faux : Les membres de la tribu soutenaient le travail de Colby.",
+              "options": ["Vrai", "Faux"],
+              "reponse_correcte": "Faux"
+            },
+            {
+              "numero": 2,
+              "enonce": "Vrai ou Faux : Colby travaillait pour protéger les rhinocéros en Afrique.",
+              "options": ["Vrai", "Faux"],
+              "reponse_correcte": "Vrai"
+            },
+            {
+              "numero": 3,
+              "enonce": "Vrai ou Faux : Le rhinocéros blessé aimait les contacts humains.",
+              "options": ["Vrai", "Faux"],
+              "reponse_correcte": "Faux"
+            },
+            {
+              "numero": 4,
+              "enonce": "Vrai ou Faux : Colby devait signaler les problèmes au vétérinaire.",
+              "options": ["Vrai", "Faux"],
+              "reponse_correcte": "Vrai"
+            },
+            {
+              "numero": 5,
+              "enonce": "Pourquoi les membres de la tribu allaient-ils parfois voir Colby ?",
+              "options": [
+                "Pour l’aider",
+                "Pour se moquer de lui",
+                "Pour apprendre son travail",
+                "Pour protéger les rhinocéros"
+              ],
+              "reponse_correcte": "Pour se moquer de lui"
+            },
+            {
+              "numero": 6,
+              "enonce": "Quelle était la tâche principale de Colby ?",
+              "options": [
+                "Chasser les animaux",
+                "Observer les rhinocéros",
+                "Donner des injections",
+                "Nettoyer les prairies"
+              ],
+              "reponse_correcte": "Observer les rhinocéros"
+            },
+            {
+              "numero": 7,
+              "enonce": "Quel problème avait le rhinocéros trouvé par Colby ?",
+              "options": [
+                "Une jambe cassée",
+                "Une infection avec des asticots",
+                "Une blessure légère",
+                "Il était perdu"
+              ],
+              "reponse_correcte": "Une infection avec des asticots"
+            },
+            {
+              "numero": 8,
+              "enonce": "Pourquoi a-t-on utilisé un tranquillisant ?",
+              "options": [
+                "Pour nourrir le rhinocéros",
+                "Pour le calmer",
+                "Pour le faire courir",
+                "Pour l’endormir définitivement"
+              ],
+              "reponse_correcte": "Pour le calmer"
+            },
+            {
+              "numero": 9,
+              "enonce": "Combien de temps a duré l’intervention ?",
+              "options": [
+                "Quelques minutes",
+                "Toute la matinée",
+                "Presque toute la journée",
+                "Plusieurs jours"
+              ],
+              "reponse_correcte": "Presque toute la journée"
+            },
+            {
+              "numero": 10,
+              "enonce": "Quel sentiment Colby ressentait-il en aidant les rhinocéros ?",
+              "options": [
+                "De la colère",
+                "De la peur",
+                "De la satisfaction",
+                "De la honte"
+              ],
+              "reponse_correcte": "De la satisfaction"
+            },
+            {
+              "numero": 11,
+              "enonce": "Que signifie le mot « dévouement » au premier paragraphe ?",
+              "options": [
+                "Indifférence",
+                "Engagement profond",
+                "Colère",
+                "Paix"
+              ],
+              "reponse_correcte": "Engagement profond"
+            },
+            {
+              "numero": 12,
+              "enonce": "Dans le texte, que signifie « cyniques » ?",
+              "options": [
+                "Gentilles",
+                "Moqueuses",
+                "Courageuses",
+                "Silencieuses"
+              ],
+              "reponse_correcte": "Moqueuses"
+            },
+            {
+              "numero": 13,
+              "enonce": "Le mot « entravés » signifie...",
+              "options": [
+                "Libérés",
+                "Empêchés de bouger librement",
+                "Blessés légèrement",
+                "Ignorés"
+              ],
+              "reponse_correcte": "Empêchés de bouger librement"
+            },
+            {
+              "numero": 14,
+              "enonce": "Dans la phrase « il devait le signaler au vétérinaire », que remplace « le » ?",
+              "options": [
+                "Le rhinocéros",
+                "Le problème",
+                "Le vétérinaire",
+                "Le tranquillisant"
+              ],
+              "reponse_correcte": "Le problème"
+            },
+            {
+              "numero": 15,
+              "enonce": "Quel est le temps du verbe dans « Colby travaillait » ?",
+              "options": [
+                "Présent",
+                "Passé composé",
+                "Imparfait",
+                "Futur simple"
+              ],
+              "reponse_correcte": "Imparfait"
+            },
+            {
+              "numero": 16,
+              "enonce": "Dans la phrase « Ils se moquaient du dévouement de Colby », quel est le sujet du verbe ?",
+              "options": [
+                "Colby",
+                "Le dévouement",
+                "Ils",
+                "La tribu"
+              ],
+              "reponse_correcte": "Ils"
+            },
+            {
+              "numero": 17,
+              "enonce": "Choisissez le bon accord : « Les rhinocéros étaient ________ dans les prairies. »",
+              "options": [
+                "protégé",
+                "protégés",
+                "protégée",
+                "protéger"
+              ],
+              "reponse_correcte": "protégés"
+            },
+            {
+              "numero": 18,
+              "enonce": "Quel est le rôle du vétérinaire dans le texte ?",
+              "options": [
+                "Chasser les animaux",
+                "Soigner les rhinocéros",
+                "Diriger la tribu",
+                "Observer à distance"
+              ],
+              "reponse_correcte": "Soigner les rhinocéros"
+            },
+            {
+              "numero": 19,
+              "enonce": "Pourquoi la tribu ne l’empêchait-elle pas de travailler ?",
+              "options": [
+                "Parce qu’ils l’admiraient",
+                "Parce qu’il leur procurait du luxe",
+                "Parce qu’ils avaient peur",
+                "Parce qu’ils travaillaient avec lui"
+              ],
+              "reponse_correcte": "Parce qu’il leur procurait du luxe"
+            },
+            {
+              "numero": 20,
+              "enonce": "Quel est le thème principal du texte ?",
+              "options": [
+                "La chasse",
+                "La protection des animaux",
+                "La vie en tribu",
+                "La musique traditionnelle"
+              ],
+              "reponse_correcte": "La protection des animaux"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

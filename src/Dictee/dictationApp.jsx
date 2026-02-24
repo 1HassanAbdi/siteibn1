@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
   Play, Volume2, ArrowLeft, Trophy, BookOpen, GraduationCap, 
   CheckCircle, XCircle, Sparkles, Timer, RefreshCw, Clock, Brain, Search, Pencil, 
-  AlertCircle, Lightbulb, Target, Flame, ChevronRight, Scissors 
+  AlertCircle, Lightbulb, Target, Flame, ChevronRight, Scissors, TrendingUp 
 } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -13,7 +13,9 @@ import WordTypeGame from './WordTypeGame';
 import SyllableGame from './SyllableGame';
 import WorkHistory from './WorkHistory';
 import ConcoursEvaluator from './ConcoursEvaluator';
-import EvaluationGame from './EvaluationGameSem'; // Ajoutez cet import
+import EvaluationGame from './EvaluationGameSem'; 
+import Evolution from "./TeacherDashboard";
+
 
 const formatTime = (s) => {
   const mins = Math.floor(s / 60);
@@ -22,10 +24,10 @@ const formatTime = (s) => {
 };
 
 const DictationApp1 = () => {
-  // --- LOGIQUE DE DATE (Semaine de préparation 2026) ---
+  // --- LOGIQUE DE DATE ---
   const getCurrentWeekId = () => {
     const today = new Date();
-    const startDate = new Date(2026, 0, 10); 
+    const startDate = new Date(2026, 0, 9); 
     const diff = today - startDate;
     const week = Math.ceil((Math.floor(diff / (1000 * 60 * 60 * 24)) + 1) / 7);
     return week > 0 ? week : 1;
@@ -40,9 +42,7 @@ const DictationApp1 = () => {
   const [mode, setMode] = useState('etude'); 
   const [isLoading, setIsLoading] = useState(true);
   const [showHistory, setShowHistory] = useState(false);
-
-
-  // -- etets pour concours 3 semaine
+  const [showEvolution, setShowEvolution] = useState(false);
   const [view, setView] = useState('training');
 
   // --- ÉTATS DU JEU & SCORE ---
@@ -71,19 +71,12 @@ const DictationApp1 = () => {
   ];
 
   const accents = ['à', 'â', 'æ', 'ç', 'é', 'è', 'ê', 'ë', 'î', 'ï', 'ô', 'œ', 'ù', 'û', 'ü', '«', '»'];
-  // Fonction pour insérer l'accent à la fin du texte actuel
-const insertAccent = (accent) => {
-  setUserInput(prev => prev + accent);
-  
-  // Optionnel : redonner le focus à l'input après le clic
-  const inputElement = document.querySelector('input[type="text"]');
-  if (inputElement) {
-    inputElement.focus();
-  }
-};
 
-//---CONCOURS
-
+  const insertAccent = (accent) => {
+    setUserInput(prev => prev + accent);
+    const inputElement = document.querySelector('input[type="text"]');
+    if (inputElement) inputElement.focus();
+  };
 
   // --- INITIALISATION ---
   useEffect(() => {
@@ -91,7 +84,6 @@ const insertAccent = (accent) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // --- GESTION DU TIMER ---
   useEffect(() => {
     if (isTimerRunning && !isFinished && mode !== 'etude') {
       timerRef.current = setInterval(() => setTotalSeconds(p => p + 1), 1000);
@@ -101,44 +93,12 @@ const insertAccent = (accent) => {
     return () => clearInterval(timerRef.current);
   }, [isTimerRunning, isFinished, mode]);
 
-  // --- LOGIQUE DE DONNÉES ---
-  // REMPLACE ton ancienne fonction par celle-ci :
-const getActiveWords = () => {
-  if (!levelData) return [];
-  
-  // Cas spécial pour le concours (les mots sont à la racine du JSON)
-  if (activeWeek === 'CONCOURS') {
-    return levelData.words || [];
-  }
-
-  // Cas normal (recherche dans les semaines)
-  const week = levelData.weeks?.find(w => Number(w.id) === Number(activeWeek));
-  return week ? (week.words || []) : [];
-};
-
-//===
-const startConcours = async () => {
-  try {
-    setIsLoading(true);
-    // Assure-toi que le nom du fichier match celui sur ton serveur
-    const res = await fetch(`/data/Concours_${selectedLevel}A_S3.json`);
-    const data = await res.json();
-    
-    setLevelData(data); 
-    setActiveWeek('CONCOURS'); // On définit un ID spécial
-    setMode('concours');       // On active le mode component
-    setCorrectCount(0);
-    setWrongCount(0);
-    setErrors([]);
-    setIsFinished(false);
-    setTotalSeconds(0);
-    setIsTimerRunning(true);
-  } catch (e) {
-    alert("Le fichier du concours n'a pas pu être chargé.");
-  } finally {
-    setIsLoading(false);
-  }
-};
+  const getActiveWords = () => {
+    if (!levelData) return [];
+    if (activeWeek === 'CONCOURS') return levelData.words || [];
+    const week = levelData.weeks?.find(w => Number(w.id) === Number(activeWeek));
+    return week ? (week.words || []) : [];
+  };
 
   const handleLevelSelect = async (id) => {
     try {
@@ -155,13 +115,7 @@ const startConcours = async () => {
     }
   };
 
-  const startSession = (weekId, chosenMode) => {
-    const weekObj = levelData.weeks?.find(w => Number(w.id) === Number(weekId));
-    const words = weekObj?.words || [];
-    
-    // Reset critique pour éviter les bugs de score
-    setActiveWeek(Number(weekId));
-    setMode(chosenMode);
+  const resetStats = () => {
     setCurrentWordIndex(0);
     setUserInput('');
     setFeedback(null);
@@ -170,37 +124,38 @@ const startConcours = async () => {
     setErrors([]);
     setIsFinished(false);
     setTotalSeconds(0);
-    setSessionTotal(words.length); // Verrouille le nombre de mots exact
+  };
+
+  const startSession = (weekId, chosenMode) => {
+    const weekObj = levelData.weeks?.find(w => Number(w.id) === Number(weekId));
+    const words = weekObj?.words || [];
+    resetStats();
+    setActiveWeek(Number(weekId));
+    setMode(chosenMode);
+    setSessionTotal(words.length);
     setIsTimerRunning(true);
   };
 
   const saveExerciseResult = (finalScore, finalTotal) => {
-  setIsFinished(true);
-  setIsTimerRunning(false);
-  
-  // On utilise le score passé par le jeu, s'il n'existe pas on prend l'état React
-  const scoreAEnregistrer = typeof finalScore === 'number' ? finalScore : correctCount;
-  const totalAEnregistrer = typeof finalTotal === 'number' ? finalTotal : sessionTotal;
+    setIsFinished(true);
+    setIsTimerRunning(false);
+    
+    const scoreAEnregistrer = typeof finalScore === 'number' ? finalScore : correctCount;
+    const totalAEnregistrer = typeof finalTotal === 'number' ? finalTotal : sessionTotal;
 
-   ;
-
-  const history = JSON.parse(localStorage.getItem('eleve_history') || '[]');
-  const newEntry = {
-    type: mode.toUpperCase(), // Sera "DEFINITION", "SYLLABE", etc.
-    score: scoreAEnregistrer,
-    total: totalAEnregistrer,
-    week: activeWeek,
-    level: selectedLevel,
-    date: new Date().toISOString(),
-    duration: totalSeconds 
+    const history = JSON.parse(localStorage.getItem('eleve_history') || '[]');
+    const newEntry = {
+      type: mode.toUpperCase(),
+      score: scoreAEnregistrer,
+      total: totalAEnregistrer,
+      week: activeWeek,
+      level: selectedLevel,
+      date: new Date().toISOString(),
+      duration: totalSeconds 
+    };
+    
+    localStorage.setItem('eleve_history', JSON.stringify([newEntry, ...history].slice(0, 50)));
   };
-  
-  localStorage.setItem('eleve_history', JSON.stringify([newEntry, ...history].slice(0, 50)));
-};
-
-  
-  
-
 
   const handleSpeak = (word) => {
     const text = word || getActiveWords()[currentWordIndex];
@@ -226,7 +181,6 @@ const startConcours = async () => {
       setFeedback('correct');
       const newScore = correctCount + 1;
       setCorrectCount(newScore);
-      
       setTimeout(() => {
         if (currentWordIndex < words.length - 1) {
           setCurrentWordIndex(i => i + 1);
@@ -240,7 +194,6 @@ const startConcours = async () => {
       setFeedback('incorrect');
       setWrongCount(w => w + 1);
       setErrors(p => [...p, { correct, typed: userInput }]);
-      
       setTimeout(() => {
         if (currentWordIndex < words.length - 1) {
           setCurrentWordIndex(i => i + 1);
@@ -253,14 +206,9 @@ const startConcours = async () => {
     }
   };
 
-  // Dans le return de DictationApp1 :
-if (view === 'concours') {
-  return <ConcoursEvaluator 
-            trainingData={levelData} 
-            selectedLevel={selectedLevel} 
-            onBack={() => setView('training')} 
-         />;
-}
+  if (view === 'concours') {
+    return <ConcoursEvaluator trainingData={levelData} selectedLevel={selectedLevel} onBack={() => setView('training')} />;
+  }
 
   return (
     <div className="min-h-screen bg-[#dee6e4] font-['Poppins'] pb-12 overflow-x-hidden">
@@ -271,7 +219,11 @@ if (view === 'concours') {
            <button onClick={() => setShowHistory(true)} className="bg-white/20 p-3 rounded-full hover:bg-white/30 font-black text-xs flex items-center gap-2">
              <Clock size={18}/> <span className="hidden md:inline">MON HISTORIQUE</span>
            </button>
+           <button onClick={() => setShowEvolution(true)} className="bg-amber-500 p-3 rounded-full hover:bg-amber-600 font-black text-xs flex items-center gap-2 text-white shadow-lg">
+             <TrendingUp size={18}/> <span className="hidden md:inline">EVOLUTION</span>
+           </button>
         </div>
+
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-3xl md:text-5xl font-black mb-2 flex items-center justify-center gap-3 tracking-tighter uppercase text-white">
              <Target className="text-yellow-300 w-10 h-10" /> Mission Concours 2026
@@ -298,8 +250,14 @@ if (view === 'concours') {
                <h2 className="text-2xl font-black mb-6 text-slate-800 uppercase tracking-tighter">Mes derniers exploits</h2>
                <WorkHistory />
             </motion.div>
+          ): showEvolution ? (
+            <motion.div key="evolution" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white rounded-[40px] p-8 shadow-2xl">
+                <button onClick={() => setShowEvolution(false)} className="mb-6 flex items-center gap-2 text-[#0d6e52] font-black uppercase text-sm">
+                    <ArrowLeft size={20}/> Retour
+                </button>
+                <Evolution />
+            </motion.div>
           ) : !selectedLevel ? (
-            /* ÉCRAN : CHOIX DU NIVEAU */
             <motion.div key="levels" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
               {levels.map((lvl) => (
                 <button key={lvl.id} onClick={() => handleLevelSelect(lvl.id)}
@@ -313,7 +271,6 @@ if (view === 'concours') {
               ))}
             </motion.div>
           ) : !activeWeek ? (
-            /* ÉCRAN : ROADMAP SEMAINE EN COURS */
             <motion.div key="roadmap" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="space-y-6">
               <button onClick={() => setSelectedLevel(null)} className="flex items-center gap-2 bg-white/60 px-6 py-3 rounded-full font-bold text-[#0d6e52] hover:bg-white transition-all shadow-sm">
                 <ArrowLeft size={18} /> Changer de classe
@@ -326,84 +283,65 @@ if (view === 'concours') {
                   <p className="text-slate-500 font-bold mb-8 italic">Complète chaque étape pour devenir champion !</p>
                   
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-  {[
-    { id: 'etude', title: "1. Découvrir", desc: "Mémorise et écoute les mots.", icon: <BookOpen className="text-blue-500"/> },
-    { id: 'syllabe', title: "2. Syllabes", desc: "Découpe pour bien écrire.", icon: <Scissors className="text-emerald-500"/> },
-    { id: 'definition', title: "3. Sens", desc: "Comprends ce que tu écris.", icon: <Search className="text-purple-500"/> },
-    { id: 'nature', title: "4. Grammaire", desc: "Trouve la classe des mots.", icon: <Brain className="text-pink-500"/> },
-    { id: 'mystere', title: "5. Jeu Mystère", desc: "Devine le mot caché.", icon: <Sparkles className="text-amber-500"/> },
-    { id: 'test', title: "6. La Dictée", desc: "Test final sans faute !", icon: <Pencil className="text-red-500"/> },
-    // BOUTON SPÉCIAL ÉVALUATION
-    { id: 'evaluation', title: "7. ÉVALUATION", desc: "Test final noté par le prof.", icon: <Trophy className="text-white"/> },
-  ].map((step) => {
-    const isEval = step.id === 'evaluation';
-    return (
-      <button 
-        key={step.id} 
-        onClick={() => {
-          if (isEval) {
-            setActiveWeek(currentWeekId);
-            setMode('evaluation'); // Ouvre le composant Indigo
-          } else {
-            startSession(currentWeekId, step.id);
-          }
-        }}
-        className={`flex items-center gap-4 p-5 rounded-[25px] transition-all text-left group border-2 relative overflow-hidden
-          ${isEval 
-            ? 'bg-[#1e1b4b] border-amber-400 shadow-[0_10px_20px_rgba(30,27,75,0.4)] hover:scale-[1.03]' 
-            : 'bg-slate-50 border-transparent hover:bg-emerald-50 hover:border-emerald-200'
-          }`}
-      >
-        {/* Effet de brillance pour l'évaluation */}
-        {isEval && (
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_2s_infinite]" />
-        )}
-
-        <div className={`p-3 rounded-xl shadow-sm group-hover:scale-110 transition-transform 
-          ${isEval ? 'bg-gradient-to-br from-amber-400 to-orange-600' : 'bg-white'}`}>
-          {step.icon}
-        </div>
-        
-        <div>
-          <h4 className={`font-black text-sm uppercase tracking-tight ${isEval ? 'text-amber-400' : 'text-slate-800'}`}>
-            {step.title}
-          </h4>
-          <p className={`text-[10px] font-bold ${isEval ? 'text-indigo-200' : 'text-slate-400'}`}>
-            {step.desc}
-          </p>
-        </div>
-
-        {isEval && (
-          <div className="ml-auto">
-            <span className="bg-amber-500 text-[#1e1b4b] text-[8px] font-black px-2 py-1 rounded-md shadow-sm">OFFICIEL</span>
-          </div>
-        )}
-      </button>
-    );
-  })}
-</div>
+                  {[
+                    { id: 'etude', title: "1. Découvrir", desc: "Mémorise et écoute les mots.", icon: <BookOpen className="text-blue-500"/> },
+                    { id: 'syllabe', title: "2. Syllabes", desc: "Découpe pour bien écrire.", icon: <Scissors className="text-emerald-500"/> },
+                    { id: 'definition', title: "3. Sens", desc: "Comprends ce que tu écris.", icon: <Search className="text-purple-500"/> },
+                    { id: 'nature', title: "4. Grammaire", desc: "Trouve la classe des mots.", icon: <Brain className="text-pink-500"/> },
+                    { id: 'mystere', title: "5. Jeu Mystère", desc: "Devine le mot caché.", icon: <Sparkles className="text-amber-500"/> },
+                    { id: 'test', title: "6. La Dictée", desc: "Test final sans faute !", icon: <Pencil className="text-red-500"/> },
+                    { id: 'evaluation', title: "7. ÉVALUATION", desc: "Test final noté par le prof.", icon: <Trophy className="text-white"/> },
+                  ].map((step) => {
+                    const isEval = step.id === 'evaluation';
+                    return (
+                      <button 
+                        key={step.id} 
+                        onClick={() => {
+                          if (isEval) {
+                            setActiveWeek(currentWeekId);
+                            setMode('evaluation');
+                          } else {
+                            startSession(currentWeekId, step.id);
+                          }
+                        }}
+                        className={`flex items-center gap-4 p-5 rounded-[25px] transition-all text-left group border-2 relative overflow-hidden
+                          ${isEval 
+                            ? 'bg-[#1e1b4b] border-amber-400 shadow-lg hover:scale-[1.03]' 
+                            : 'bg-slate-50 border-transparent hover:bg-emerald-50 hover:border-emerald-200'
+                          }`}
+                      >
+                        <div className={`p-3 rounded-xl shadow-sm group-hover:scale-110 transition-transform 
+                          ${isEval ? 'bg-gradient-to-br from-amber-400 to-orange-600' : 'bg-white'}`}>
+                          {step.icon}
+                        </div>
+                        <div>
+                          <h4 className={`font-black text-sm uppercase tracking-tight ${isEval ? 'text-amber-400' : 'text-slate-800'}`}>
+                            {step.title}
+                          </h4>
+                          <p className={`text-[10px] font-bold ${isEval ? 'text-indigo-200' : 'text-slate-400'}`}>
+                            {step.desc}
+                          </p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
                 </div>
 
                 <div className="bg-slate-900 rounded-[40px] p-8 text-white text-center shadow-2xl flex flex-col justify-center">
                   <Flame size={60} className="text-orange-400 mx-auto mb-4 animate-pulse" />
-                  <h3 className="text-xl font-black uppercase mb-4 tracking-tighter">Objectif Mai 2026</h3>
-                  <div className="bg-slate-900 rounded-[40px] p-8 text-white text-center shadow-2xl flex flex-col justify-center">
-  <Flame size={60} className="text-orange-400 mx-auto mb-4 animate-pulse" />
-  <h3 className="text-xl font-black uppercase mb-4 tracking-tighter">Zone Concours</h3>
-  <p className="text-sm text-slate-400 font-medium leading-relaxed mb-8 italic">
-    Prêt pour l'évaluation officielle des 3 semaines ?
-  </p>
-  
-  <button 
-    onClick={() => setView('concours')}
-    className="bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-2xl font-black uppercase transition-all shadow-lg active:scale-95"
-  >
-    🏆 Lancer le Concours
-  </button>
-</div>
-                  <p className="text-sm text-slate-400 font-medium leading-relaxed mb-8 italic italic">
-                    "Le succès est la somme de petits efforts répétés chaque jour."
+                  <h3 className="text-xl font-black uppercase mb-4 tracking-tighter">Zone Concours</h3>
+                  <p className="text-sm text-slate-400 font-medium leading-relaxed mb-8 italic">
+                    Prêt pour l'évaluation officielle des 3 semaines ?
                   </p>
+                  
+                  <button 
+                    onClick={() => setView('concours')}
+                    className="bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-2xl font-black uppercase transition-all shadow-lg active:scale-95 mb-6"
+                  >
+                    🏆 Lancer le Concours
+                  </button>
+
                   <div className="bg-white/10 p-6 rounded-3xl border border-white/10">
                     <span className="text-4xl font-black text-emerald-400 italic">#{currentWeekId}</span>
                     <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mt-1">Séquence en cours</p>
@@ -412,24 +350,18 @@ if (view === 'concours') {
               </div>
             </motion.div>
           ) : (
-            /* ZONE DE JEU ACTIVE */
             <motion.div key="game" className="space-y-6">
               <div className="flex justify-between items-center bg-white/80 backdrop-blur-md p-2 rounded-full shadow-lg border border-white">
                 <button
-  onClick={() => setActiveWeek(null)}
-  className="p-3 text-[#0d6e52] hover:bg-slate-100 rounded-full transition-all flex items-center gap-3"
->
-  <div className="w-12 h-12 bg-white border-[4px] border-[#0d6e52] rounded-full flex items-center justify-center shadow-sm">
-    <ArrowLeft size={28} className="text-[#0d6e52]" strokeWidth={4} />
-  </div>
-  <span className="text-[#0d6e52] font-black text-xl uppercase tracking-tighter">
-    Retour
-  </span>
-</button>
-
-                
-                       
-                <div className="font-black text-[#0d6e52] text-[11px] uppercase tracking-widest bg-emerald-50 px-6 py-2 rounded-full border border-emerald-100 shadow-inner">
+                  onClick={() => { setActiveWeek(null); resetStats(); }}
+                  className="p-3 text-[#0d6e52] hover:bg-slate-100 rounded-full transition-all flex items-center gap-3"
+                >
+                  <div className="w-12 h-12 bg-white border-[4px] border-[#0d6e52] rounded-full flex items-center justify-center shadow-sm">
+                    <ArrowLeft size={28} className="text-[#0d6e52]" strokeWidth={4} />
+                  </div>
+                  <span className="text-[#0d6e52] font-black text-xl uppercase tracking-tighter">Retour</span>
+                </button>
+                <div className="font-black text-[#0d6e52] text-[11px] uppercase tracking-widest bg-emerald-50 px-6 py-2 rounded-full border border-emerald-100">
                    {mode} — SEMAINE {activeWeek}
                 </div>
                 <div className="w-10"></div>
@@ -437,10 +369,8 @@ if (view === 'concours') {
 
               <div className="bg-[#fdfcf0] rounded-[40px] shadow-2xl min-h-[550px] flex flex-col relative overflow-hidden border-4 border-white">
                 
-                {/* HUD SCORE & TIMER */}
                 {mode !== 'etude' && !isFinished && (
                   <div className="bg-[#0d6e52] p-4 flex justify-between items-center text-white px-10">
-                    
                     <div className="flex gap-8 font-black text-xs uppercase">
                       <div className="flex items-center gap-2 text-green-300">
                         <CheckCircle size={18}/> <span>Note : {correctCount} / {sessionTotal}</span>
@@ -449,7 +379,7 @@ if (view === 'concours') {
                         <XCircle size={18}/> <span>Erreurs : {wrongCount}</span>
                       </div>
                     </div>
-                    <div className="bg-black/20 px-4 py-1 rounded-lg font-mono text-lg font-black text-emerald-300 border border-white/10">
+                    <div className="bg-black/20 px-4 py-1 rounded-lg font-mono text-lg font-black text-emerald-300">
                       {formatTime(totalSeconds)}
                     </div>
                   </div>
@@ -458,7 +388,6 @@ if (view === 'concours') {
                 <div className="flex-1 flex flex-col justify-center">
                   <AnimatePresence mode="wait">
                     
-                    {/* ÉCRAN DE FIN (BILAN EXACT) */}
                     {isFinished ? (
                       <motion.div key="finished" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="p-10 text-center max-h-[550px] overflow-y-auto">
                         <Trophy size={80} className="text-yellow-500 mx-auto mb-4 drop-shadow-lg" />
@@ -470,11 +399,11 @@ if (view === 'concours') {
                         <div className="max-w-xl mx-auto space-y-6">
                           {errors.length > 0 && (
                             <div className="bg-red-50 p-6 rounded-3xl border-2 border-red-100 text-left">
-                              <h4 className="text-red-600 font-black uppercase text-xs mb-4 flex items-center gap-2"><AlertCircle size={16}/> Analyse des erreurs :</h4>
+                              <h4 className="text-red-600 font-black uppercase text-xs mb-4 flex items-center gap-2"><AlertCircle size={16}/> Analyse :</h4>
                               {errors.map((err, i) => (
-                                <div key={i} className="flex justify-between items-center bg-white p-3 rounded-xl mb-2 shadow-sm border border-red-50">
-                                  <span className="text-red-400 line-through font-bold text-lg">{err.typed || "(vide)"}</span>
-                                  <span className="text-emerald-600 font-black text-xl uppercase tracking-tighter">{err.correct}</span>
+                                <div key={i} className="flex justify-between items-center bg-white p-3 rounded-xl mb-2 shadow-sm">
+                                  <span className="text-red-400 line-through font-bold">{err.typed || "(vide)"}</span>
+                                  <span className="text-emerald-600 font-black text-xl">{err.correct}</span>
                                 </div>
                               ))}
                             </div>
@@ -483,15 +412,14 @@ if (view === 'concours') {
                             <button onClick={() => startSession(activeWeek, mode)} className="flex-1 bg-slate-900 text-white py-5 rounded-3xl font-black uppercase shadow-xl hover:bg-black transition-all flex items-center justify-center gap-2">
                               <RefreshCw size={20} /> Recommencer
                             </button>
-                            <button onClick={() => setActiveWeek(null)} className="flex-1 bg-emerald-600 text-white py-5 rounded-3xl font-black uppercase shadow-xl hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
-                              Menu Mission <ChevronRight size={20}/>
+                            <button onClick={() => { setActiveWeek(null); resetStats(); }} className="flex-1 bg-emerald-600 text-white py-5 rounded-3xl font-black uppercase shadow-xl hover:bg-emerald-700 transition-all">
+                              Menu Mission
                             </button>
                           </div>
                         </div>
                       </motion.div>
 
                     ) : mode === 'etude' ? (
-                      /* MODE ÉTUDE */
                       <motion.div key="etude" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="p-10 text-center">
                         <h3 className="text-3xl font-black text-[#0d6e52] mb-10 uppercase italic">Atelier des mots</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
@@ -504,13 +432,12 @@ if (view === 'concours') {
                             </div>
                           ))}
                         </div>
-                        <button onClick={() => { setMode('syllabe'); resetGame(); }} className="mt-12 bg-[#0d6e52] text-white px-12 py-5 rounded-3xl font-black uppercase shadow-xl hover:scale-105 transition-all">
+                        <button onClick={() => { setMode('syllabe'); resetStats(); }} className="mt-12 bg-[#0d6e52] text-white px-12 py-5 rounded-3xl font-black uppercase shadow-xl hover:scale-105 transition-all">
                           Prêt pour l'entraînement !
                         </button>
                       </motion.div>
 
                     ) : mode === 'test' ? (
-                      /* DICTÉE FINALE */
                       <motion.div key="test" className="p-12 text-center flex flex-col items-center">
                         <button onClick={() => handleSpeak()} className="bg-[#15a278] w-28 h-28 rounded-full text-white shadow-2xl flex items-center justify-center mb-10 group">
                           <Volume2 size={50} className="group-hover:scale-110 transition-transform" />
@@ -519,113 +446,32 @@ if (view === 'concours') {
                           <input type="text" value={userInput} onChange={(e) => setUserInput(e.target.value)} placeholder="Écris le mot..." autoFocus 
                             disabled={!!feedback}
                             className={`w-full bg-white border-4 rounded-[30px] py-6 px-6 text-center text-4xl font-black outline-none transition-all shadow-inner ${feedback === 'correct' ? 'border-green-400 text-green-600' : feedback === 'incorrect' ? 'border-red-400 text-red-600 shake' : 'border-slate-100'}`} />
-                            {/* --- CLAVIER D'ACCENTS DANS UN CADRE DESIGN --- */}
-<div className="mt-10 p-4 bg-[#f8fafc] rounded-[30px] border-2 border-slate-200 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1)] max-w-xl mx-auto">
-  <div className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-3">
-    Caractères Spéciaux
-  </div>
-  
-  <div className="flex flex-wrap justify-center gap-2">
-    {accents.map(acc => (
-      <motion.button
-        key={acc}
-        whileHover={{ scale: 1.1, y: -2 }}
-        whileTap={{ scale: 0.95 }}
-        type="button"
-        onClick={() => insertAccent(acc)}
-        className="w-12 h-12 bg-white border-2 border-slate-100 rounded-2xl flex items-center justify-center text-xl font-bold text-blue-600 shadow-sm hover:shadow-md hover:border-blue-200 transition-all"
-      >
-        {acc}
-      </motion.button>
-    ))}
-  </div>
-</div>
-                          <p className="mt-8 text-slate-400 font-black uppercase text-[11px] tracking-widest bg-slate-100 py-2 rounded-full inline-block px-6 shadow-sm">
+                          
+                          <div className="mt-10 p-4 bg-[#f8fafc] rounded-[30px] border-2 border-slate-200 shadow-sm max-w-xl mx-auto">
+                            <div className="flex flex-wrap justify-center gap-2">
+                              {accents.map(acc => (
+                                <motion.button key={acc} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} type="button" onClick={() => insertAccent(acc)}
+                                  className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center font-bold text-blue-600 shadow-sm"
+                                >
+                                  {acc}
+                                </motion.button>
+                              ))}
+                            </div>
+                          </div>
+                          <p className="mt-8 text-slate-400 font-black uppercase text-[11px] tracking-widest bg-slate-100 py-2 rounded-full inline-block px-6">
                             Mot {currentWordIndex + 1} sur {sessionTotal}
                           </p>
                         </form>
-                        
                       </motion.div>
-                      
 
                     ) : (
-                      /* MINI-JEUX */
                       <div className="p-4 md:p-8 flex-1 overflow-y-auto">
-  {/* SYLLABE */}
-  {mode === 'syllabe' && (
-    <SyllableGame 
-      selectedLevel={selectedLevel} 
-      activeWeek={activeWeek} 
-      onCorrect={() => setCorrectCount(c => c + 1)} 
-      onWrong={() => setWrongCount(w => w + 1)} 
-       onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
-    onFinish={(finalScore, finalTotal) => saveExerciseResult(finalScore, finalTotal)} 
-    />
-  )}
-
-  {/* DEFINITION (Correction ici : on retire le -1) */}
-  {mode === 'definition' && (
-  <DefinitionGame 
-    selectedLevel={selectedLevel} 
-    activeWeek={activeWeek} 
-    onCorrect={() => setCorrectCount(c => c + 1)} 
-    onWrong={() => setWrongCount(w => w + 1)} 
-    // On récupère score ET total depuis le composant enfant
-     onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
-    onFinish={(finalScore, finalTotal) => saveExerciseResult(finalScore, finalTotal)} 
-  />
-)}
-
-  {/* NATURE */}
-  {mode === 'nature' && (
-    <WordTypeGame 
-      selectedLevel={selectedLevel} 
-      activeWeek={activeWeek} 
-      onCorrect={() => setCorrectCount(c => c + 1)} 
-      onWrong={() => setWrongCount(w => w + 1)} 
-    
-    
-     onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTER
-    onFinish={(score, total) => saveExerciseResult(score, total)} // <--- MODIFIER 
-    />
-  )}
-
-  {/* MYSTERE */}
-  {mode === 'mystere' && (
-    <WordMystery 
-      words={getActiveWords()} 
-      activeWeek={activeWeek} 
-      onCorrect={() => setCorrectCount(c => c + 1)} 
-      onWrong={() => setWrongCount(w => w + 1)} 
-      onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
-     
-    // On s'assure de passer score et total à la fin
-    onFinish={(score, total) => saveExerciseResult(score, total)} 
-   
-    />
-  )}
-  {mode === 'concours' && (
-  <EvaluationGame 
-    words={getActiveWords()} // Tes 60 mots déjà filtrés
-    onCorrect={() => setCorrectCount(c => c + 1)}
-    onWrong={() => setWrongCount(w => w + 1)}
-    onFinish={(score, total) => saveExerciseResult(score, total)}
-  />
-)}
-{/* AJOUTER CECI PARMI LES AUTRES MODES (syllabe, definition, etc.) */}
-{mode === 'evaluation' && (
-  <EvaluationGame 
-    words={getActiveWords()} 
-    selectedLevel={selectedLevel} 
-    activeWeek={activeWeek}
-    onBack={() => {
-      setActiveWeek(null);
-      setMode('etude');
-    }}
-    onFinish={(score, total) => saveExerciseResult(score, total)}
-  />
-)}
-</div>
+                        {mode === 'syllabe' && <SyllableGame selectedLevel={selectedLevel} activeWeek={activeWeek} onCorrect={() => setCorrectCount(c => c + 1)} onWrong={() => setWrongCount(w => w + 1)} onSetTotal={setSessionTotal} onFinish={saveExerciseResult} />}
+                        {mode === 'definition' && <DefinitionGame selectedLevel={selectedLevel} activeWeek={activeWeek} onCorrect={() => setCorrectCount(c => c + 1)} onWrong={() => setWrongCount(w => w + 1)} onSetTotal={setSessionTotal} onFinish={saveExerciseResult} />}
+                        {mode === 'nature' && <WordTypeGame selectedLevel={selectedLevel} activeWeek={activeWeek} onCorrect={() => setCorrectCount(c => c + 1)} onWrong={() => setWrongCount(w => w + 1)} onSetTotal={setSessionTotal} onFinish={saveExerciseResult} />}
+                        {mode === 'mystere' && <WordMystery words={getActiveWords()} activeWeek={activeWeek} onCorrect={() => setCorrectCount(c => c + 1)} onWrong={() => setWrongCount(w => w + 1)} onSetTotal={setSessionTotal} onFinish={saveExerciseResult} />}
+                        {(mode === 'evaluation' || mode === 'concours') && <EvaluationGame words={getActiveWords()} selectedLevel={selectedLevel} activeWeek={activeWeek} onBack={() => { setActiveWeek(null); setMode('etude'); }} onFinish={saveExerciseResult} />}
+                      </div>
                     )}
                   </AnimatePresence>
                 </div>

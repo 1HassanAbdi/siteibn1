@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Volume2, Eye, EyeOff, BookOpen, Star } from 'lucide-react';
+import DictationExercise from './dicté1a';
 
 // Importation des données JSON (simulée ici)
 const dictations = [
@@ -25,12 +26,27 @@ export default function DictationApp() {
   const [hiddenWords, setHiddenWords] = useState({});
 
   // Fonction pour lire le mot (Synthèse vocale)
-  const speakWord = (word) => {
+  // Fonction pour lire le mot (Audio prioritaire, sinon synthèse vocale)
+const speakWord = (word) => {
+  const audioPath = `/audio1a/${word}.mp3`;
+  const audio = new Audio(audioPath);
+
+  // Si le fichier audio existe et fonctionne
+  audio.oncanplaythrough = () => {
+    audio.play();
+  };
+
+  // Si le fichier n'existe pas ou erreur → synthèse vocale
+  audio.onerror = () => {
     const utterance = new SpeechSynthesisUtterance(word);
     utterance.lang = 'fr-FR';
     utterance.rate = 0.9; // Un peu plus lent pour les enfants
     window.speechSynthesis.speak(utterance);
   };
+
+  // On tente de charger l’audio
+  audio.load();
+};
 
   // Basculer la visibilité d'un mot
   const toggleVisibility = (word) => {
@@ -118,6 +134,7 @@ export default function DictationApp() {
               </div>
             ))}
           </div>
+          <DictationExercise></DictationExercise>
 
           <div className="mt-8 p-4 bg-blue-50 rounded-xl flex items-start gap-3 text-blue-800 text-sm">
             <Star className="w-5 h-5 text-blue-500 flex-shrink-0" />

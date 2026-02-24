@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
   Play, Volume2, ArrowLeft, Trophy, BookOpen, GraduationCap, 
   CheckCircle, XCircle, Sparkles, Timer, RefreshCw, Clock, Brain, Search, Pencil, 
-  AlertCircle, Target, Flame, ChevronRight, Scissors 
+  AlertCircle, Target, Flame, ChevronRight, Scissors, TrendingUp 
 } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -13,6 +13,7 @@ import WordTypeGame from './WordTypeGame';
 import SyllableGame from './SyllableGame';
 import WorkHistory from './WorkHistory';
 import EvaluationGame from "./EvaluationGameSem"; // Ajoutez cet import
+import Evolution from "./TeacherDashboard";
 
 const formatTime = (s) => {
   const mins = Math.floor(s / 60);
@@ -39,6 +40,7 @@ const DictationAppcka = () => {
   const [mode, setMode] = useState('study'); 
   const [isLoading, setIsLoading] = useState(true);
   const [showHistory, setShowHistory] = useState(false);
+  const [showEvolution, setShowEvolution] = useState(false);
 
   // --- GAME & SCORE STATES ---
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -203,6 +205,10 @@ const DictationAppcka = () => {
            <button onClick={() => setShowHistory(true)} className="bg-white/20 p-3 rounded-full hover:bg-white/30 font-black text-xs flex items-center gap-2">
              <Clock size={18}/> <span className="hidden md:inline">MY HISTORY</span>
            </button>
+           <button onClick={() => setShowEvolution(true)} className="bg-amber-500 p-3 rounded-full hover:bg-amber-600 font-black text-xs flex items-center gap-2 text-white shadow-lg">
+             <TrendingUp size={18}/> <span className="hidden md:inline">EVOLUTION</span>
+           </button>
+           
         </div>
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-3xl md:text-5xl font-black mb-2 flex items-center justify-center gap-3 tracking-tighter uppercase text-white">
@@ -230,7 +236,14 @@ const DictationAppcka = () => {
                <h2 className="text-2xl font-black mb-6 text-slate-800 uppercase tracking-tighter">My Recent Achievements</h2>
                <WorkHistory />
             </motion.div>
-          ) : !selectedLevel ? (
+          ) : showEvolution ? (
+            <motion.div key="evolution" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white rounded-[40px] p-8 shadow-2xl">
+                <button onClick={() => setShowEvolution(false)} className="mb-6 flex items-center gap-2 text-[#0d6e52] font-black uppercase text-sm">
+                    <ArrowLeft size={20}/> Back
+                </button>
+                <Evolution /> 
+            </motion.div>
+          ): !selectedLevel ? (
             <motion.div key="levels" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
               {levels.map((lvl) => (
                 <button key={lvl.id} onClick={() => handleLevelSelect(lvl.id)}
@@ -429,7 +442,6 @@ const DictationAppcka = () => {
                             onFinish={(score, total) => saveExerciseResult(score, total)} 
                           />
                         )}
-                        {/* Note: SyllableGame, DefinitionGame and WordMystery components should be imported if they are used here */}
                          {/* DEFINITION (Correction ici : on retire le -1) */}
   {mode === 'definition' && (
   <DefinitionGame 
@@ -437,8 +449,7 @@ const DictationAppcka = () => {
     activeWeek={activeWeek} 
     onCorrect={() => setCorrectCount(c => c + 1)} 
     onWrong={() => setWrongCount(w => w + 1)} 
-    // On récupère score ET total depuis le composant enfant
-     onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
+     onSetTotal={(num) => setSessionTotal(num)} 
     onFinish={(finalScore, finalTotal) => saveExerciseResult(finalScore, finalTotal)} 
   />
 )}
@@ -449,14 +460,10 @@ const DictationAppcka = () => {
       activeWeek={activeWeek} 
       onCorrect={() => setCorrectCount(c => c + 1)} 
       onWrong={() => setWrongCount(w => w + 1)} 
-      onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
-     
-    // On s'assure de passer score et total à la fin
+      onSetTotal={(num) => setSessionTotal(num)} 
     onFinish={(score, total) => saveExerciseResult(score, total)} 
-   
     />
   )}
-  {/* AJOUTER CECI PARMI LES AUTRES MODES (syllabe, definition, etc.) */}
    {/* SYLLABE */}
   {mode === 'syllabe' && (
     <SyllableGame 
@@ -464,7 +471,7 @@ const DictationAppcka = () => {
       activeWeek={activeWeek} 
       onCorrect={() => setCorrectCount(c => c + 1)} 
       onWrong={() => setWrongCount(w => w + 1)} 
-       onSetTotal={(num) => setSessionTotal(num)} // <--- AJOUTEZ CETTE LIGNE
+       onSetTotal={(num) => setSessionTotal(num)} 
     onFinish={(finalScore, finalTotal) => saveExerciseResult(finalScore, finalTotal)} 
     />
   )}
