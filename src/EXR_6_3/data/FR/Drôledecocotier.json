@@ -1,0 +1,161 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Drôle de cocotier",
+    "niveau": "2e année",
+    "session": "Drôle de cocotier",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Drôle de cocotier",
+          "texte_integral": [
+            { "p": 1, "contenu": "En Thaïlande, il y avait un cocotier unique avec quatre branches. Il avait environ cinquante ans." },
+            { "p": 2, "contenu": "Rien de particulier n'est arrivé au cocotier durant les deux premières décennies de sa vie. Ensuite, son tronc a commencé à se diviser en deux au sommet." },
+            { "p": 3, "contenu": "À mesure que l'arbre grandissait, les deux branches devenaient de plus en plus distinctes." },
+            { "p": 4, "contenu": "Vingt ans plus tard, les deux branches ont commencé à se diviser encore. Chaque branche était maintenant divisée en deux." },
+            { "p": 5, "contenu": "Finalement, le cocotier avait quatre branches. Le propriétaire n'a pas vendu les noix de coco de cet arbre. Il croyait qu'un esprit vivait dans le cocotier." },
+            { "p": 6, "contenu": "Quand les quatre branches du cocotier ont commencé à donner des fruits, le propriétaire a gagné un grand prix à la loterie. La nouvelle de cet arbre spécial s'est vite répandue dans tout le pays. Des gens de partout en Thaïlande et d'ailleurs dans le monde ont fait des voyages spéciaux pour voir cet arbre." }
+          ],
+       
+          "questions": [
+            
+         
+            {
+              "numero": 1,
+              "enonce": "Dans quel pays se trouve le cocotier ?",
+              "options": ["En Chine", "En Thaïlande", "En Inde", "Au Japon"],
+              "reponse_correcte": "En Thaïlande"
+            },
+            {
+              "numero": 2,
+              "enonce": "Quel âge avait le cocotier ?",
+              "options": ["20 ans", "30 ans", "50 ans", "80 ans"],
+              "reponse_correcte": "50 ans"
+            },
+            {
+              "numero": 3,
+              "enonce": "Que s’est-il passé pendant les 20 premières années ?",
+              "options": ["Il a grandi normalement", "Il est tombé", "Il a donné beaucoup de fruits", "Il a brûlé"],
+              "reponse_correcte": "Il a grandi normalement"
+            },
+            {
+              "numero": 4,
+              "enonce": "Que s’est-il passé au sommet du tronc ?",
+              "options": ["Il a disparu", "Il s’est divisé en deux", "Il est devenu rouge", "Il est tombé"],
+              "reponse_correcte": "Il s’est divisé en deux"
+            },
+            {
+              "numero": 5,
+              "enonce": "Combien de branches avait-il après la première division ?",
+              "options": ["1", "2", "3", "4"],
+              "reponse_correcte": "2"
+            },
+            {
+              "numero": 6,
+              "enonce": "Combien de branches avait-il à la fin ?",
+              "options": ["2", "3", "4", "5"],
+              "reponse_correcte": "4"
+            },
+            {
+              "numero": 7,
+              "enonce": "Pourquoi le propriétaire ne vendait-il pas les noix de coco ?",
+              "options": ["Elles étaient mauvaises", "Il croyait qu’un esprit vivait dans l’arbre", "Il n’aimait pas l’argent", "Il était absent"],
+              "reponse_correcte": "Il croyait qu’un esprit vivait dans l’arbre"
+            },
+            {
+              "numero": 8,
+              "enonce": "Qu’est-ce que les branches du cocotier ont commencé à produire ?",
+              "options": ["Des fleurs", "Des fruits", "Des feuilles", "Des racines"],
+              "reponse_correcte": "Des fruits"
+            },
+            {
+              "numero": 9,
+              "enonce": "Qu’est-ce que le propriétaire a gagné ? ",
+              "options": ["Une voiture", "Une maison", "Un grand prix à la loterie", "Un voyage"],
+              "reponse_correcte": "Un grand prix à la loterie"
+            },
+            {
+              "numero": 10,
+              "enonce": "Qui est venu voir l’arbre ?",
+              "options": ["Seulement ses voisins", "Des gens du monde entier", "Seulement sa famille", "Personne"],
+              "reponse_correcte": "Des gens du monde entier"
+            },
+
+        
+
+            {
+              "numero": 11,
+              "enonce": "Que signifie le mot « unique » ?",
+              "options": ["Ordinaire", "Spécial", "Petit", "Vieux"],
+              "reponse_correcte": "Spécial"
+            },
+            {
+              "numero": 12,
+              "enonce": "Que signifie « se diviser » ?",
+              "options": ["Se couper en deux", "Grandir vite", "Tomber", "Sécher"],
+              "reponse_correcte": "Se couper en deux"
+            },
+            {
+              "numero": 13,
+              "enonce": "Que signifie « distinctes » ?",
+              "options": ["Pareilles", "Différentes", "Petites", "Cassées"],
+              "reponse_correcte": "Différentes"
+            },
+            {
+              "numero": 14,
+              "enonce": "Que signifie « se répandre » ?",
+              "options": ["Se cacher", "Se propager", "Se casser", "Se fermer"],
+              "reponse_correcte": "Se propager"
+            },
+            {
+              "numero": 15,
+              "enonce": "Que signifie « décennies » ?",
+              "options": ["10 ans", "20 ans", "5 ans", "50 ans"],
+              "reponse_correcte": "10 ans"
+            },
+
+            
+
+            {
+              "numero": 16,
+              "enonce": "Dans la phrase « Le cocotier grandissait. », quel est le sujet ?",
+              "options": ["grandissait", "Le cocotier", "cocotier", "Le"],
+              "reponse_correcte": "Le cocotier"
+            },
+            {
+              "numero": 17,
+              "enonce": "Dans la phrase « un arbre spécial », quel est l’adjectif ?",
+              "options": ["arbre", "un", "spécial", "est"],
+              "reponse_correcte": "spécial"
+            },
+            {
+              "numero": 18,
+              "enonce": "Dans la phrase « Il a gagné un prix. », trouve le verbe.",
+              "options": ["Il", "a gagné", "prix", "un"],
+              "reponse_correcte": "a gagné"
+            },
+            {
+              "numero": 19,
+              "enonce": "Dans la phrase « Il croyait à un esprit. », trouve le verbe.",
+              "options": ["Il", "croyait", "esprit", "à"],
+              "reponse_correcte": "croyait"
+            },
+            {
+              "numero": 20,
+              "enonce": "Le verbe « grandissait » est au :",
+              "options": ["Présent", "Imparfait", "Passé composé", "Futur"],
+              "reponse_correcte": "Imparfait"
+            }
+
+          ]
+        }
+      ]
+    }
+  ]
+}

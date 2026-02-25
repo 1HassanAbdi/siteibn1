@@ -40,20 +40,36 @@
     "matiere": "MATHS", 
     "titre": "regularité", 
     "chemin": "./data/MATHS/regularit1.json" 
-    },{ 
+    },
+    
+    { 
     "slug": "muti_div", 
     "niveau": 3, 
     "matiere": "MATHS", 
     "titre": "Multiplication, Division et Régularité", 
     "chemin": "./data/MATHS/muti_div.json" 
     },{ 
+    "slug": "Monnaie_Mesure", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Monnaie et Mesure", 
+    "chemin": "./data/MATHS/Monnaie_Mesure.json" 
+    },
+    
+    { 
     "slug": "Ungoutsale", 
     "niveau": 3, 
     "matiere": "FR", 
     "titre": "Un goût salé", 
     "chemin": "./data/FR/Ungoutsale.json" 
+    },{ 
+    "slug": "Drôledecocotier", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "Drôle de cocotier", 
+    "chemin": "./data/FR/Drôledecocotier.json" 
     }
-    
+     
 
     
 

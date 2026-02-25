@@ -1,0 +1,140 @@
+{
+  "test_info": {
+    "session": "Mathématiques_Monnaie_Mesure_OQRE",
+    "niveau": "3A",
+    "target": "maths_3a_oqre",
+    "subject": "maths"
+  },
+  "parties": [
+    {
+      "id": "Module_OQRE",
+      "sections": [
+        {
+          "titre": "Monnaie et Mesure",
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Emma achète un cahier à 6 $ et un stylo à 4 $. Combien paie-t-elle en tout ?",
+              "options": ["9 $", "10 $", "11 $", "12 $"],
+              "reponse_correcte": "10 $"
+            },
+            {
+              "numero": 2,
+              "enonce": "Un jouet coûte 8 $. Tu paies avec 15 $. Combien reçois-tu ?",
+              "options": ["5 $", "6 $", "7 $", "8 $"],
+              "reponse_correcte": "7 $"
+            },
+            {
+              "numero": 3,
+              "enonce": "Quelle combinaison donne exactement 1 $ ?",
+              "options": ["4 pièces de 25 ¢", "3 pièces de 25 ¢", "2 pièces de 10 ¢", "10 pièces de 5 ¢"],
+              "reponse_correcte": "4 pièces de 25 ¢"
+            },
+            {
+              "numero": 4,
+              "enonce": "Combien y a-t-il de centimètres dans 4 mètres ?",
+              "options": ["40", "100", "200", "400"],
+              "reponse_correcte": "400"
+            },
+            {
+              "numero": 5,
+              "enonce": "Quelle unité est la plus appropriée pour mesurer la longueur d’un autobus ?",
+              "options": ["centimètre", "mètre", "litre", "kilogramme"],
+              "reponse_correcte": "mètre"
+            },
+            {
+              "numero": 6,
+              "enonce": "Un sac pèse 5 kg. Deux sacs pèsent combien ?",
+              "options": ["8 kg", "9 kg", "10 kg", "12 kg"],
+              "reponse_correcte": "10 kg"
+            },
+            {
+              "numero": 7,
+              "enonce": "Combien y a-t-il de minutes dans 3 heures ?",
+              "options": ["90", "120", "150", "180"],
+              "reponse_correcte": "180"
+            },
+            {
+              "numero": 8,
+              "enonce": "Tu achètes 4 objets à 3 $ chacun. Combien paies-tu ?",
+              "options": ["7 $", "10 $", "12 $", "14 $"],
+              "reponse_correcte": "12 $"
+            },
+            {
+              "numero": 9,
+              "enonce": "Une bouteille contient 2 L. Combien de litres y a-t-il dans 3 bouteilles ?",
+              "options": ["4 L", "5 L", "6 L", "8 L"],
+              "reponse_correcte": "6 L"
+            },
+            {
+              "numero": 10,
+              "enonce": "Tu as 10 $. Tu dépenses 6 $. Combien te reste-t-il ?",
+              "options": ["2 $", "3 $", "4 $", "5 $"],
+              "reponse_correcte": "4 $"
+            },
+            {
+              "numero": 11,
+              "enonce": "Quel outil utiliserais-tu pour mesurer la longueur d’une porte ?",
+              "options": ["Une balance", "Un ruban à mesurer", "Un thermomètre", "Une horloge"],
+              "reponse_correcte": "Un ruban à mesurer"
+            },
+            {
+              "numero": 12,
+              "enonce": "Un carton pèse 9 kg. Si on enlève 3 kg, combien pèse-t-il ?",
+              "options": ["5 kg", "6 kg", "7 kg", "8 kg"],
+              "reponse_correcte": "6 kg"
+            },
+            {
+              "numero": 13,
+              "enonce": "Quelle est la meilleure unité pour mesurer la capacité d’un verre de lait ?",
+              "options": ["mètre", "kilogramme", "litre", "minute"],
+              "reponse_correcte": "litre"
+            },
+            {
+              "numero": 14,
+              "enonce": "Combien y a-t-il de centimètres dans 2 mètres ?",
+              "options": ["20", "100", "200", "2000"],
+              "reponse_correcte": "200"
+            },
+            {
+              "numero": 15,
+              "enonce": "Tu paies 20 $ pour un objet qui coûte 17 $. Combien reçois-tu ?",
+              "options": ["1 $", "2 $", "3 $", "4 $"],
+              "reponse_correcte": "3 $"
+            },
+            {
+              "numero": 16,
+              "enonce": "Sofia a 25 $. Elle achète un sac à 9 $ et un livre à 8 $. Combien lui reste-t-il ?",
+              "options": ["6 $", "7 $", "8 $", "9 $"],
+              "reponse_correcte": "8 $"
+            },
+            {
+              "numero": 17,
+              "enonce": "Combien y a-t-il de centimètres dans 6 mètres ?",
+              "options": ["60", "300", "600", "6000"],
+              "reponse_correcte": "600"
+            },
+            {
+              "numero": 18,
+              "enonce": "Un élève court 40 minutes le matin et 35 minutes l’après-midi. Combien de temps court-il en tout ?",
+              "options": ["65 min", "70 min", "75 min", "80 min"],
+              "reponse_correcte": "75 min"
+            },
+            {
+              "numero": 19,
+              "enonce": "Tu veux acheter 4 jeux à 5 $ chacun. Combien dois-tu payer ?",
+              "options": ["15 $", "18 $", "20 $", "25 $"],
+              "reponse_correcte": "20 $"
+            },
+            {
+              "numero": 20,
+              "enonce": "Un réservoir contient 3 litres d’eau. On ajoute 2 litres. Combien y a-t-il maintenant ?",
+              "options": ["4 L", "5 L", "6 L", "7 L"],
+              "reponse_correcte": "5 L"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
