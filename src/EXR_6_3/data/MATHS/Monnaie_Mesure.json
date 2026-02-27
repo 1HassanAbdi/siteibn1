@@ -32,9 +32,9 @@
             },
             {
               "numero": 4,
-              "enonce": "Combien y a-t-il de centimètres dans 4 mètres ?",
-              "options": ["40", "100", "200", "400"],
-              "reponse_correcte": "400"
+              "enonce": "À quelle température l'eau se transforme-t-elle en glace (gèle-t-elle) ?",
+              "options": ["0 °C", "10 °C", "50 °C", "100 °C"],
+              "reponse_correcte": "0 °C"
             },
             {
               "numero": 5,
@@ -62,9 +62,9 @@
             },
             {
               "numero": 9,
-              "enonce": "Une bouteille contient 2 L. Combien de litres y a-t-il dans 3 bouteilles ?",
-              "options": ["4 L", "5 L", "6 L", "8 L"],
-              "reponse_correcte": "6 L"
+              "enonce": "C'est une journée très chaude d'été. Quelle température fait-il probablement à l'extérieur ?",
+              "options": ["-5 °C", "10 °C", "30 °C", "100 °C"],
+              "reponse_correcte": "30 °C"
             },
             {
               "numero": 10,
@@ -86,15 +86,15 @@
             },
             {
               "numero": 13,
-              "enonce": "Quelle est la meilleure unité pour mesurer la capacité d’un verre de lait ?",
-              "options": ["mètre", "kilogramme", "litre", "minute"],
-              "reponse_correcte": "litre"
+              "enonce": "L'eau bout à quelle température ?",
+              "options": ["0 °C", "50 °C", "100 °C", "150 °C"],
+              "reponse_correcte": "100 °C"
             },
             {
               "numero": 14,
-              "enonce": "Combien y a-t-il de centimètres dans 2 mètres ?",
-              "options": ["20", "100", "200", "2000"],
-              "reponse_correcte": "200"
+              "enonce": "Ce matin, le thermomètre indiquait 12 °C. Cet après-midi, la température a augmenté de 5 °C. Quelle est la température maintenant ?",
+              "options": ["7 °C", "15 °C", "17 °C", "20 °C"],
+              "reponse_correcte": "17 °C"
             },
             {
               "numero": 15,
@@ -110,9 +110,9 @@
             },
             {
               "numero": 17,
-              "enonce": "Combien y a-t-il de centimètres dans 6 mètres ?",
-              "options": ["60", "300", "600", "6000"],
-              "reponse_correcte": "600"
+              "enonce": "Quel outil utilises-tu pour mesurer la température ?",
+              "options": ["Une balance", "Un ruban à mesurer", "Un thermomètre", "Une horloge"],
+              "reponse_correcte": "Un thermomètre"
             },
             {
               "numero": 18,
@@ -128,9 +128,9 @@
             },
             {
               "numero": 20,
-              "enonce": "Un réservoir contient 3 litres d’eau. On ajoute 2 litres. Combien y a-t-il maintenant ?",
-              "options": ["4 L", "5 L", "6 L", "7 L"],
-              "reponse_correcte": "5 L"
+              "enonce": "La température passe de 15 °C à 8 °C. De combien de degrés la température a-t-elle baissé ?",
+              "options": ["5 °C", "6 °C", "7 °C", "8 °C"],
+              "reponse_correcte": "7 °C"
             }
           ]
         }
