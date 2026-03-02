@@ -3,8 +3,8 @@
   "niveau": "3e Année",
   "weeks": [
     {
-      "id": 1,
-      "week": "Semaine 1",
+      "id": 8,
+      "week": "Semaine 8",
       "evaluation": null,
       "echelon": "Son è / ê",
       "totalWords": 16,
@@ -14,8 +14,8 @@
       ]
     },
     {
-      "id": 2,
-      "week": "Semaine 2",
+      "id": 9,
+      "week": "Semaine 9",
       "evaluation": null,
       "echelon": "Son i / y",
       "totalWords": 14,
@@ -25,8 +25,8 @@
       ]
     },
     {
-      "id": 3,
-      "week": "Semaine 3",
+      "id": 10,
+      "week": "Semaine 10",
       "evaluation": null,
       "echelon": "Son ou / u",
       "totalWords": 10,
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "id": 4,
-      "week": "Semaine 4",
+      "id": 11,
+      "week": "Semaine 11",
       "evaluation": null,
       "echelon": "Son an / on",
       "totalWords": 10,
@@ -47,8 +47,8 @@
       ]
     },
     {
-      "id": 5,
-      "week": "Semaine 5",
+      "id": 12,
+      "week": "Semaine 12",
       "evaluation": null,
       "echelon": "Son é / er",
       "totalWords": 10,
@@ -58,8 +58,8 @@
       ]
     },
     {
-      "id": 7,
-      "week": "Semaine 6",
+      "id": 13,
+      "week": "Semaine 13",
       "evaluation": null,
       "echelon": "Son oi / oy",
       "totalWords": 10,

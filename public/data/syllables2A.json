@@ -2,7 +2,7 @@
   "title": "Atelier des Syllabes - 2e Année",
   "weeks_syllables": [
     {
-      "week_id": 1,
+      "week_id": 8,
       "words": [
         { "word": "barrière", "parts": ["bar", "riè", "re"] },
         { "word": "mère", "parts": ["mè", "re"] },
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "week_id": 2,
+      "week_id": 9,
       "words": [
         { "word": "bicyclette", "parts": ["bi", "cy", "clet", "te"] },
         { "word": "pyjama", "parts": ["py", "ja", "ma"] },
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "week_id": 3,
+      "week_id": 10,
       "words": [
         { "word": "chou", "parts": ["chou"] },
         { "word": "route", "parts": ["rou", "te"] },
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "week_id": 4,
+      "week_id": 11,
       "words": [
         { "word": "champ", "parts": ["champ"] },
         { "word": "montagne", "parts": ["mon", "ta", "gne"] },
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "week_id": 5,
+      "week_id": 12,
       "words": [
         { "word": "marché", "parts": ["mar", "ché"] },
         { "word": "clé", "parts": ["clé"] },
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "week_id": 7,
+      "week_id": 13,
       "words": [
         { "word": "roi", "parts": ["roi"] },
         { "word": "boîte", "parts": ["boî", "te"] },

@@ -2,11 +2,11 @@
   "title": "Dictionnaire de la 3e Année",
   "weeks_definitions": [
     {
-      "week_id": 1,
+      "week_id": 8,
       "words_data": [
         {"word": "barrière", "definition": "Objet qui empêche de passer ou qui ferme un passage."},
         {"word": "mère", "definition": "La maman d’un enfant."},
-        {"word": "bêtes", "definition": "Animaux ou personnes peu intelligentes (selon le contexte)."},
+       { "word": "bêtes",  "definition": "Animaux. Par exemple : le lion, le chien, la vache sont des bêtes."},
         {"word": "pêche", "definition": "Fruit sucré ou action d’attraper des poissons."},
         {"word": "chèvre", "definition": "Animal de la ferme qui mange de l’herbe."},
         {"word": "père", "definition": "Le papa d’un enfant."},
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "week_id": 2,
+      "week_id": 9,
       "words_data": [
         {"word": "bicyclette", "definition": "Vélo avec deux roues."},
         {"word": "pyjama", "definition": "Vêtement pour dormir."},
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "week_id": 3,
+      "week_id": 10,
       "words_data": [
         {"word": "chou", "definition": "Légume rond avec des feuilles."},
         {"word": "route", "definition": "Chemin pour les voitures."},
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "week_id": 4,
+      "week_id": 11,
       "words_data": [
         {"word": "champ", "definition": "Terrain cultivé à la campagne."},
         {"word": "montagne", "definition": "Très grande élévation de terre."},
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "week_id": 5,
+      "week_id": 12,
       "words_data": [
         {"word": "marché", "definition": "Lieu où l’on achète des produits."},
         {"word": "clé", "definition": "Objet pour ouvrir une porte."},
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "week_id": 7,
+      "week_id": 13,
       "words_data": [
         {"word": "roi", "definition": "Homme qui dirige un royaume."},
         {"word": "boîte", "definition": "Objet pour ranger des choses."},

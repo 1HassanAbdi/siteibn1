@@ -36,8 +36,8 @@ const EvaluationGame = ({ words, selectedLevel, activeWeek, onBack }) => {
   const hasSentCheatRef = useRef(false);
 
   // --- URLS GOOGLE SCRIPTS ---
-  const URL_SAVE_SCORE = "https://script.google.com/macros/s/AKfycbxP7ayRJ1ULlHjpxlc576U_rvKyUUHjinS7x3o-i_kxq4aFkm3iqCVZ00-I9O_ZKenT3g/exec";
-  const URL_FETCH_DASHBOARD = "https://script.google.com/macros/s/AKfycbxP7ayRJ1ULlHjpxlc576U_rvKyUUHjinS7x3o-i_kxq4aFkm3iqCVZ00-I9O_ZKenT3g/exec";
+  const URL_SAVE_SCORE = "https://script.google.com/macros/s/AKfycbxUc0Ud9VTpZ6FrjdCx-MjFC8pMjgpgkpaDm0_2qWBHK3xffPb27D26rQZh3VpO_nbfGA/exec";
+  const URL_FETCH_DASHBOARD = "https://script.google.com/macros/s/AKfycbxUc0Ud9VTpZ6FrjdCx-MjFC8pMjgpgkpaDm0_2qWBHK3xffPb27D26rQZh3VpO_nbfGA/exec";
 
   // --- CONFIGURATION DES CODES ---
   const codesSecrets = {

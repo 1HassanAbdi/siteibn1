@@ -3,305 +3,654 @@ import {
   Container, Typography, Box, Select, MenuItem, FormControl, InputLabel,
   Card, CardContent, Grid, Table, TableBody, TableCell, TableContainer,
   TableHead, TableRow, Paper, Chip, CircularProgress, Alert, TextField, Button,
-  LinearProgress, Divider, Avatar
+  LinearProgress
 } from "@mui/material";
 import {
-  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  AreaChart, Area, LineChart, Line
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+  AreaChart, Area
 } from "recharts";
-
 import LogoutIcon from '@mui/icons-material/Logout';
 import SchoolIcon from '@mui/icons-material/School';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
-// 🔗 CONFIGURATION
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzwAH1y1_MLuSnBQ_LrbcYSWA5K45dicER-fj0qlAkGYDLnng-vJM2D9MAwoXSNdm64Og/exec";
-const TEACHER_PASSWORD = "prof2024";
+// 🔗 Google Apps Script API URL
+const API_URL = "https://script.google.com/macros/s/AKfycbzhHFJWIYbbZByThBjxINGysDtNl9xqhSxrkS83DoA0Cn5RujhK3Gm2T_Vp1J3xjqRAUQ/exec";
 
-// --- DYNAMIC THEME COLORS ---
-const getStatusTheme = (score) => {
-  if (score >= 80) return { main: '#2e7d32', bg: '#e8f5e9', label: 'Excellent' }; // Green
-  if (score >= 60) return { main: '#ed6c02', bg: '#fff3e0', label: 'Good' };      // Orange
-  return { main: '#d32f2f', bg: '#ffebee', label: 'At Risk' };  // Red
-};
+// 🛠️ 100% reliable function: Calculates the score from the fraction (e.g., "8 / 10")
+const getScoreSafely = (noteStr, pourcentageRaw) => {
+  if (typeof noteStr === "string" && noteStr.includes("/")) {
+    const parts = noteStr.split("/");
+    const score = parseFloat(parts[0].trim());
+    const total = parseFloat(parts[1].trim());
+    
+    if (!isNaN(score) && !isNaN(total) && total > 0) {
+      return Math.round((score / total) * 100);
+    }
+  }
 
-const parseScore = (val) => {
-  if (val === undefined || val === null || val === "") return 0;
-  let s = val.toString().replace('%', '').replace(',', '.').trim();
-  let num = parseFloat(s);
-  if (num <= 1 && num > 0) return Math.round(num * 100);
-  return Math.round(num) || 0;
+  if (pourcentageRaw === undefined || pourcentageRaw === null || pourcentageRaw === "") return 0;
+  
+  if (typeof pourcentageRaw === "number") {
+    if (pourcentageRaw > 0 && pourcentageRaw <= 1) return Math.round(pourcentageRaw * 100);
+    return Math.round(pourcentageRaw);
+  }
+
+  const strVal = String(pourcentageRaw).trim();
+  if (strVal.includes("%")) {
+    return Math.round(parseFloat(strVal.replace("%", "").replace(",", ".")) || 0);
+  }
+
+  const numVal = parseFloat(strVal);
+  if (!isNaN(numVal)) {
+    if (numVal > 0 && numVal <= 1) return Math.round(numVal * 100);
+    return Math.round(numVal);
+  }
+
+  return 0;
 };
 
 export default function UnifiedDashboard() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  // Connection states
   const [loginInput, setLoginInput] = useState("");
   const [loginError, setLoginError] = useState("");
-  const [role, setRole] = useState(null);
+  const [role, setRole] = useState(null); // 'TEACHER', 'STUDENT', or null
+  const [activeStudent, setActiveStudent] = useState(null);
 
+  // 🔹 Global data processing for Teacher
   const { elevesArray, niveaux } = useMemo(() => {
-    if (!Array.isArray(data) || data.length === 0) return { elevesArray: [], niveaux: [] };
+    if (!data || data.length === 0) return { elevesArray: [], niveaux: [] };
+
     const eleves = {};
     const niveauxSet = new Set();
 
     data.forEach((item) => {
-      const email = item.email?.toLowerCase().trim();
-      if (!email || !item.niveau) return;
-      niveauxSet.add(item.niveau);
-      if (!eleves[email]) eleves[email] = { nom: item.nom, niveau: item.niveau, email, scores: [] };
-      const weekNum = parseInt(item.semaine?.replace(/\D/g, "")) || 0;
-      eleves[email].scores.push({ semaine: `Week ${weekNum}`, weekNum, score: parseScore(item.pourcentage) });
+      if (!item.email) return;
+      if (item.niveau) niveauxSet.add(item.niveau);
+
+      if (!eleves[item.email]) {
+        eleves[item.email] = {
+          nom: item.nom || "Unknown",
+          niveau: item.niveau || "",
+          scores: [],
+          total: 0,
+          somme: 0,
+        };
+      }
+
+      const score = getScoreSafely(item.note, item.pourcentage);
+
+      eleves[item.email].scores.push({
+        semaine: item.semaine || "-",
+        note: item.note || "-",
+        score,
+      });
+
+      eleves[item.email].total++;
+      eleves[item.email].somme += score;
     });
 
-    const formatArray = Object.keys(eleves).map(email => {
-      const e = eleves[email];
-      const sorted = e.scores.sort((a, b) => a.weekNum - b.weekNum);
-      const average = Math.round(sorted.reduce((acc, s) => acc + s.score, 0) / sorted.length);
-      const trend = sorted.length >= 2 ? sorted[sorted.length - 1].score - sorted[sorted.length - 2].score : 0;
-      return { ...e, average, scores: sorted, maxScore: Math.max(...sorted.map(s => s.score)), trend };
+    const formatArray = Object.keys(eleves).map((email) => {
+      const scoresTries = eleves[email].scores.sort((a, b) =>
+        a.semaine.localeCompare(b.semaine, undefined, { numeric: true })
+      );
+
+      let tendance = 0;
+      if (scoresTries.length >= 2) {
+        tendance = scoresTries[scoresTries.length - 1].score - scoresTries[scoresTries.length - 2].score;
+      }
+
+      return {
+        email: email.toLowerCase().trim(),
+        nom: eleves[email].nom,
+        niveau: eleves[email].niveau,
+        moyenne: eleves[email].total > 0 ? Math.round(eleves[email].somme / eleves[email].total) : 0,
+        scores: scoresTries,
+        tendance,
+        maxScore: Math.max(...scoresTries.map((s) => s.score)),
+      };
     });
 
-    return { elevesArray: formatArray, niveaux: [...niveauxSet] };
+    return { elevesArray: formatArray, niveaux: [...niveauxSet].filter(Boolean) };
   }, [data]);
 
+  // 🔹 Login Handler
   const handleLogin = async (e) => {
     e.preventDefault();
-    setLoginError(""); setLoading(true);
+
+    if (!loginInput.trim()) {
+      setLoginError("Please enter your email or password.");
+      return;
+    }
+
+    setLoginError("");
+    setLoading(true);
+    setError(null);
+
     try {
-      const url = `${GOOGLE_SCRIPT_URL}?user=${encodeURIComponent(loginInput.trim())}`;
+      const url = `${API_URL}?user=${encodeURIComponent(loginInput)}`;
       const res = await fetch(url);
-      const result = await res.json();
-      if (result.error) setLoginError("Access Denied: ID not found.");
-      else { 
-        setData(result); 
-        setRole(loginInput.toLowerCase() === TEACHER_PASSWORD ? "TEACHER" : "STUDENT"); 
+      
+      if (!res.ok) throw new Error("Cannot reach the server.");
+
+      const textResponse = await res.text();
+      let result;
+      try {
+        result = JSON.parse(textResponse);
+      } catch (err) {
+        throw new Error("Invalid response from server.");
       }
-    } catch (err) { setLoginError("Connection Error."); }
-    setLoading(false);
+
+      if (result && result.error) {
+        setLoginError("Access denied or user not found.");
+        setLoading(false);
+        return;
+      }
+
+      if (!Array.isArray(result) || result.length === 0) {
+        setLoginError("User not found. Check your email.");
+        setLoading(false);
+        return;
+      }
+
+      // 🚨 SÉCURITÉ : On vérifie dynamiquement si l'entrée est l'email d'un élève.
+      // Le mot de passe du prof n'est plus écrit nulle part dans ce fichier !
+      const isStudentEmail = result.some(
+        (r) => r.email && r.email.toLowerCase().trim() === loginInput.toLowerCase().trim()
+      );
+
+      // 👨‍🏫 TEACHER (Si ce n'est pas un email d'élève, c'est que Google a validé le mot de passe prof)
+      if (!isStudentEmail) {
+        setData(result);
+        setRole("TEACHER");
+        setLoading(false);
+        return;
+      }
+
+      // 🎓 STUDENT
+      const scores = result.map((r) => ({
+        semaine: r.semaine,
+        score: getScoreSafely(r.note, r.pourcentage), 
+      }));
+
+      const moyenne = scores.length > 0 
+        ? Math.round(scores.reduce((acc, s) => acc + s.score, 0) / scores.length) 
+        : 0;
+
+      const tendance = scores.length >= 2
+        ? scores[scores.length - 1].score - scores[scores.length - 2].score
+        : 0;
+
+      const maxScore = scores.length > 0 ? Math.max(...scores.map((s) => s.score)) : 0;
+
+      setActiveStudent({
+        nom: result[0].nom || "Student",
+        email: result[0].email,
+        moyenne,
+        scores,
+        tendance,
+        maxScore,
+      });
+
+      setRole("STUDENT");
+    } catch (err) {
+      console.error(err);
+      setLoginError("Error connecting to server.");
+    } finally {
+      setLoading(false);
+    }
   };
 
+  const handleLogout = () => {
+    setRole(null);
+    setActiveStudent(null);
+    setData([]);
+    setLoginInput("");
+  };
+
+  if (error) return <Container sx={{ mt: 5 }}><Alert severity="error">{error}</Alert></Container>;
+
+  // ==========================================
+  // 🔓 LOGIN SCREEN
+  // ==========================================
   if (!role) {
     return (
-      <Box sx={{ minHeight: '100vh', display: 'flex', bgcolor: '#f4f6f9', alignItems: 'center', justifyContent: 'center', p: 2 }}>
-        <Card sx={{ maxWidth: 420, width: '100%', p: 5, borderRadius: 5, boxShadow: '0 10px 40px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <Avatar sx={{ bgcolor: '#1976d2', width: 80, height: 80, mx: 'auto', mb: 2 }}>
-            <SchoolIcon sx={{ fontSize: 45 }} />
-          </Avatar>
-          <Typography variant="h4" fontWeight="900" color="#1a237e" gutterBottom>Portal Login</Typography>
-          <Typography color="text.secondary" mb={4}>Access your results in real-time</Typography>
+      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" bgcolor="#f4f6f8" p={2}>
+        <Card elevation={6} sx={{ maxWidth: 400, width: "100%", p: 4, borderRadius: 4, textAlign: "center" }}>
+          <Box display="flex" justifyContent="center" mb={2}>
+            <Box bgcolor="#e3f2fd" p={2} borderRadius="50%">
+              <SchoolIcon color="primary" fontSize="large" />
+            </Box>
+          </Box>
+          <Typography variant="h5" fontWeight="bold" gutterBottom>School Portal</Typography>
+          <Typography variant="body2" color="text.secondary" mb={4}>
+            <strong>Students:</strong> Enter your email address.<br/>
+           
+          </Typography>
+
           <form onSubmit={handleLogin}>
-            <TextField fullWidth label="Email or Staff ID" variant="outlined" value={loginInput} onChange={(e) => setLoginInput(e.target.value)} sx={{ mb: 3 }} />
-            <Button fullWidth type="submit" variant="contained" size="large" disabled={loading} sx={{ py: 2, borderRadius: 3, fontWeight: 'bold', fontSize: '1.1rem' }}>
-              {loading ? <CircularProgress size={26} color="inherit" /> : "Sign In"}
+            <TextField 
+              fullWidth 
+              label="Email " 
+              variant="outlined" 
+              value={loginInput} 
+              onChange={(e) => setLoginInput(e.target.value)} 
+              error={!!loginError} 
+              helperText={loginError} 
+              sx={{ mb: 3 }} 
+              disabled={loading}
+            />
+            <Button 
+              fullWidth 
+              type="submit" 
+              variant="contained" 
+              color="primary" 
+              size="large" 
+              sx={{ py: 1.5, borderRadius: 2, fontWeight: "bold" }}
+              disabled={loading}
+            >
+              {loading ? <CircularProgress size={24} color="inherit" /> : "Login"}
             </Button>
-            {loginError && <Alert severity="error" sx={{ mt: 2, borderRadius: 2 }}>{loginError}</Alert>}
           </form>
         </Card>
       </Box>
     );
   }
 
+  // ==========================================
+  // VIEW ROUTING (LOGGED IN)
+  // ==========================================
   return (
-    <Box sx={{ bgcolor: '#f0f2f5', minHeight: '100vh', pb: 8 }}>
-      <Box sx={{ bgcolor: 'white', px: 4, py: 1.5, display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4, borderBottom: '1px solid #ddd' }}>
-        <Typography variant="h5" fontWeight="900" color="primary">SCOLAR-ANALYTICS</Typography>
-        <Button onClick={() => window.location.reload()} color="error" variant="outlined" startIcon={<LogoutIcon />} sx={{ fontWeight: 'bold' }}>Sign Out</Button>
-      </Box>
-      <Container maxWidth="xl">
-        {role === "TEACHER" ? <TeacherView eleves={elevesArray} niveaux={niveaux} /> : <StudentView student={elevesArray[0]} />}
-      </Container>
-    </Box>
-  );
-}
-
-// =====================================================================
-// 👨‍🏫 TEACHER VIEW (ENGLISH + BIG NUMBERS)
-// =====================================================================
-function TeacherView({ eleves, niveaux }) {
-  const [filter, setFilter] = useState(niveaux[0] || "");
-  const filtered = eleves.filter(e => e.niveau === filter);
-
-  const stats = useMemo(() => {
-    if (!filtered.length) return { moy: 0, reu: 0, dif: 0, top: 0 };
-    const moy = Math.round(filtered.reduce((acc, e) => acc + e.average, 0) / filtered.length);
-    const dif = filtered.filter(e => e.average < 60).length;
-    const reu = Math.round(((filtered.length - dif) / filtered.length) * 100);
-    const top = Math.max(...filtered.map(e => e.average));
-    return { moy, reu, dif, top };
-  }, [filtered]);
-
-  return (
-    <Box sx={{ textAlign: 'center' }}>
-      <Typography variant="h3" fontWeight="900" color="#1a237e" gutterBottom>Analytical Dashboard</Typography>
-      <Typography variant="h6" color="text.secondary" mb={4}>Class Overview & Individual Performance Tracking</Typography>
-      
-      <FormControl sx={{ minWidth: 300, mb: 6, bgcolor: 'white' }}>
-        <InputLabel>Select Grade Level</InputLabel>
-        <Select value={filter} label="Select Grade Level" onChange={(e) => setFilter(e.target.value)} sx={{ borderRadius: 3 }}>
-          {niveaux.map(n => <MenuItem key={n} value={n}>{n}</MenuItem>)}
-        </Select>
-      </FormControl>
-
-      {/* KPI TOP CARDS */}
-      <Grid container spacing={3} justifyContent="center" sx={{ mb: 6 }}>
-        <KPICard title="Global Average" value={`${stats.moy}%`} sub="-2.4% 📉 vs last week" color="#1976d2" />
-        <KPICard title="Success Rate" value={`${stats.reu}%`} sub="Students ≥ 60%" color="#2e7d32" />
-        <KPICard title="At Risk" value={stats.dif} sub="Students < 60%" color="#d32f2f" />
-        <KPICard title="Top Score" value={`${stats.top}%`} sub="Class Record" color="#ed6c02" isTrophy />
-      </Grid>
-
-      {/* MAIN CHART */}
-      <Paper sx={{ p: 4, borderRadius: 5, mb: 8, boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
-        <Typography variant="h5" fontWeight="900" color="primary" align="left" mb={4}>📈 General Performance Evolution ({filter})</Typography>
-        <Box sx={{ height: 350 }}>
-          <ResponsiveContainer width="100%" height="100%">
-            <AreaChart data={filtered[0]?.scores || []}>
-              <defs><linearGradient id="colMoy" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="#1976d2" stopOpacity={0.3}/><stop offset="95%" stopColor="#1976d2" stopOpacity={0}/></linearGradient></defs>
-              <CartesianGrid strokeDasharray="3 3" vertical={false} opacity={0.2} />
-              <XAxis dataKey="semaine" tick={{fontSize: 14}} />
-              <YAxis domain={[0, 100]} tick={{fontSize: 14}} />
-              <Tooltip />
-              <Area type="monotone" dataKey="score" stroke="#1976d2" fill="url(#colMoy)" strokeWidth={4} />
-            </AreaChart>
-          </ResponsiveContainer>
-        </Box>
-      </Paper>
-
-      <Typography variant="h4" fontWeight="900" align="left" sx={{ mb: 5 }}>🧑‍🎓 Individual Student Analysis</Typography>
-      
-      <Grid container spacing={4}>
-        {filtered.map((eleve, i) => {
-          const theme = getStatusTheme(eleve.average);
-          return (
-            <Grid item xs={12} md={6} lg={6} key={i}>
-              <Card sx={{ borderRadius: 5, borderTop: `10px solid ${theme.main}`, boxShadow: '0 6px 18px rgba(0,0,0,0.08)', transition: '0.3s', '&:hover': { transform: 'translateY(-5px)' } }}>
-                <CardContent sx={{ p: 4 }}>
-                  <Typography variant="h4" fontWeight="900" textTransform="capitalize">{eleve.nom}</Typography>
-                  <Typography variant="body2" color="text.secondary" mb={3}>{eleve.email}</Typography>
-                  
-                  <Box sx={{ display: 'flex', gap: 1.5, justifyContent: 'center', mb: 4 }}>
-                    <Chip label={`Avg: ${eleve.average}%`} sx={{ bgcolor: theme.main, color: 'white', fontWeight: 'bold', fontSize: '1rem', py: 2.5, px: 1 }} />
-                    <Chip label={`Trend: ${eleve.trend >= 0 ? '+'+eleve.trend : eleve.trend} pts`} variant="outlined" sx={{ fontWeight: 'bold', fontSize: '0.9rem' }} color={eleve.trend >= 0 ? "success" : "error"} />
-                    <Chip label={`Record: ${eleve.maxScore}%`} variant="outlined" sx={{ fontWeight: 'bold', fontSize: '0.9rem' }} />
-                  </Box>
-
-                  <Divider sx={{ my: 3 }} />
-
-                  <Grid container spacing={3}>
-                    {/* Grade History Table */}
-                    <Grid item xs={5}>
-                      <Typography variant="subtitle1" fontWeight="900" display="block" mb={2} color="text.secondary" textAlign="left">Grade History</Typography>
-                      <TableContainer>
-                        <Table size="small">
-                          <TableHead><TableRow><TableCell sx={{fontWeight:'bold'}}>Week</TableCell><TableCell align="right" sx={{fontWeight:'bold'}}>Score</TableCell></TableRow></TableHead>
-                          <TableBody>
-                            {eleve.scores.slice(-4).reverse().map((s, idx) => (
-                              <TableRow key={idx}>
-                                <TableCell sx={{fontSize: 13}}>{s.semaine}</TableCell>
-                                <TableCell align="right" sx={{fontSize: 14, fontWeight:'bold', color: getStatusTheme(s.score).main}}>{s.score}%</TableCell>
-                              </TableRow>
-                            ))}
-                          </TableBody>
-                        </Table>
-                      </TableContainer>
-                    </Grid>
-
-                    {/* Progress Chart */}
-                    <Grid item xs={7}>
-                      <Typography variant="subtitle1" fontWeight="900" display="block" mb={2} color="text.secondary">Progress Curve</Typography>
-                      <Box sx={{ height: 160 }}>
-                        <ResponsiveContainer>
-                          <LineChart data={eleve.scores}>
-                            <CartesianGrid strokeDasharray="3 3" vertical={false} opacity={0.3} />
-                            <XAxis dataKey="semaine" hide />
-                            <YAxis domain={[0, 100]} hide />
-                            <Tooltip />
-                            <Line type="monotone" dataKey="score" stroke={theme.main} strokeWidth={4} dot={{ r: 6, fill: theme.main, strokeWidth: 2, stroke: '#fff' }} />
-                          </LineChart>
-                        </ResponsiveContainer>
-                      </Box>
-                    </Grid>
-                  </Grid>
-                </CardContent>
-              </Card>
-            </Grid>
-          );
-        })}
-      </Grid>
-    </Box>
-  );
-}
-
-// =====================================================================
-// 🎓 STUDENT VIEW (ENGLISH + MOTIVATIONAL)
-// =====================================================================
-function StudentView({ student }) {
-  if (!student) return <Box textAlign="center" mt={10}><CircularProgress /></Box>;
-  const theme = getStatusTheme(student.average);
-
-  return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Card sx={{ width: '100%', borderRadius: 6, background: `linear-gradient(135deg, ${theme.main} 0%, #1a237e 100%)`, color: 'white', p: 6, mb: 6, textAlign: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.15)' }}>
-        <Typography variant="h2" fontWeight="900" gutterBottom>
-           {student.average >= 80 ? '🏆 Amazing Work,' : '🔥 Keep Growing,'} {student.nom}!
+    <Box sx={{ background: "#f4f6f8", minHeight: "100vh" }}>
+      <Box bgcolor="white" px={4} py={2} display="flex" justifyContent="space-between" alignItems="center" borderBottom="1px solid #e0e0e0" mb={4}>
+        <Typography variant="h6" fontWeight="bold" color="primary">
+          {role === "TEACHER" ? "👨‍🏫 Teacher Dashboard" : "🎓 My School Portal"}
         </Typography>
-        <Typography variant="h5" sx={{ opacity: 0.9, mb: 5 }}>Current Performance Level: {student.average}%</Typography>
-        <Box sx={{ maxWidth: 500, mx: 'auto' }}>
-          <Box display="flex" justifyContent="space-between" mb={1}>
-            <Typography variant="h6" fontWeight="bold">Success Progress</Typography>
-            <Typography variant="h6" fontWeight="bold">{student.average}%</Typography>
-          </Box>
-          <LinearProgress variant="determinate" value={student.average} sx={{ height: 16, borderRadius: 8, bgcolor: 'rgba(255,255,255,0.2)', '& .MuiLinearProgress-bar': { bgcolor: 'white' } }} />
-        </Box>
-      </Card>
+        <Button variant="outlined" color="error" startIcon={<LogoutIcon />} onClick={handleLogout} size="small" sx={{ borderRadius: 2 }}>
+          Logout
+        </Button>
+      </Box>
 
-      <Grid container spacing={4} justifyContent="center" maxWidth={1100}>
-        <Grid item xs={12} md={4}>
-          <Card sx={{ p: 4, borderRadius: 5, textAlign: 'center', boxShadow: '0 8px 25px rgba(0,0,0,0.05)', height: '100%', borderBottom: `8px solid ${COLORS_MAP.warning}` }}>
-            <EmojiEventsIcon sx={{ fontSize: 60, color: '#fb8c00', mb: 2 }} />
-            <Typography variant="h6" fontWeight="bold" color="text.secondary">Personal Record</Typography>
-            <Typography variant="h2" fontWeight="900" color="#ed6c02">{student.maxScore}%</Typography>
+      {role === "TEACHER" ? (
+        <TeacherDashboardView elevesArray={elevesArray} niveaux={niveaux} />
+      ) : (
+        <StudentDashboardView student={activeStudent} />
+      )}
+    </Box>
+  );
+}
+
+// =====================================================================
+// 👨‍🏫 TEACHER VIEW (ALL CHARTS & DATA)
+// =====================================================================
+function TeacherDashboardView({ elevesArray, niveaux }) {
+  const [niveauFilter, setNiveauFilter] = useState(niveaux.length > 0 ? niveaux[0] : "");
+
+  const elevesDuNiveau = useMemo(() => 
+    elevesArray.filter((e) => e.niveau === niveauFilter).sort((a, b) => b.moyenne - a.moyenne), 
+  [elevesArray, niveauFilter]);
+
+  const evolutionClasse = useMemo(() => {
+    const statsSemaine = {};
+    elevesDuNiveau.forEach((eleve) => {
+      eleve.scores.forEach((s) => {
+        if (!statsSemaine[s.semaine]) statsSemaine[s.semaine] = { semaine: s.semaine, total: 0, count: 0 };
+        statsSemaine[s.semaine].total += s.score;
+        statsSemaine[s.semaine].count += 1;
+      });
+    });
+    return Object.values(statsSemaine)
+      .map((s) => ({ semaine: s.semaine, moyenneClasse: Math.round(s.total / s.count) }))
+      .sort((a, b) => a.semaine.localeCompare(b.semaine, undefined, { numeric: true }));
+  }, [elevesDuNiveau]);
+
+  const statsNiveau = useMemo(() => {
+    const totalEleves = elevesDuNiveau.length;
+    if (totalEleves === 0) return { moyenne: 0, reussite: 0, difficulte: 0, top: 0, tendanceClasse: 0 };
+    
+    const moyenne = Math.round(elevesDuNiveau.reduce((acc, e) => acc + e.moyenne, 0) / totalEleves);
+    const difficulte = elevesDuNiveau.filter((e) => e.moyenne < 60).length;
+    const reussite = Math.round(((totalEleves - difficulte) / totalEleves) * 100);
+    const top = Math.max(...elevesDuNiveau.map((e) => e.moyenne));
+    
+    let tendanceClasse = 0;
+    if (evolutionClasse.length >= 2) {
+      tendanceClasse = evolutionClasse[evolutionClasse.length - 1].moyenneClasse - evolutionClasse[evolutionClasse.length - 2].moyenneClasse;
+    }
+    
+    return { moyenne, reussite, difficulte, top, tendanceClasse };
+  }, [elevesDuNiveau, evolutionClasse]);
+
+  const getColor = (score) => score < 60 ? "error" : score < 80 ? "warning" : "success";
+
+  return (
+    <Container maxWidth="xl" sx={{ pb: 6 }}>
+      <Box textAlign="center" mb={5}>
+        <Typography variant="h3" fontWeight="bold" color="primary" gutterBottom>
+          📊 Overall Dashboard
+        </Typography>
+        <Typography variant="subtitle1" color="text.secondary">
+          Class overview and individual progress tracking
+        </Typography>
+
+        <Box display="flex" justifyContent="center" mt={3}>
+          <Paper elevation={2} sx={{ p: 2, minWidth: 300, borderRadius: 3 }}>
+            <FormControl fullWidth>
+              <InputLabel>Analyze Class</InputLabel>
+              <Select value={niveauFilter} label="Analyze Class" onChange={(e) => setNiveauFilter(e.target.value)} sx={{ textAlign: "center" }}>
+                {niveaux.map((niv, index) => (<MenuItem key={index} value={niv}>{niv}</MenuItem>))}
+              </Select>
+            </FormControl>
+          </Paper>
+        </Box>
+      </Box>
+
+      <Grid container spacing={3} sx={{ mb: 5 }} justifyContent="center">
+        <Grid item xs={12} sm={6} md={3}>
+          <Card elevation={3} sx={{ textAlign: "center", p: 2, borderRadius: 3 }}>
+            <Typography color="text.secondary" variant="subtitle2">Overall Average</Typography>
+            <Typography variant="h4" fontWeight="bold" color="primary">{statsNiveau.moyenne}%</Typography>
+            <Typography variant="body2" color={statsNiveau.tendanceClasse >= 0 ? "success.main" : "error.main"}>
+              {statsNiveau.tendanceClasse >= 0 ? `+${statsNiveau.tendanceClasse} 📈` : `${statsNiveau.tendanceClasse} 📉`} vs last week
+            </Typography>
           </Card>
         </Grid>
-        
-        <Grid item xs={12} md={8}>
-          <Paper sx={{ p: 5, borderRadius: 5, height: 450, boxShadow: '0 8px 25px rgba(0,0,0,0.05)' }}>
-            <Typography variant="h5" fontWeight="900" mb={4}>📈 My Learning Journey</Typography>
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={student.scores}>
-                <defs><linearGradient id="studGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor={theme.main} stopOpacity={0.4}/><stop offset="95%" stopColor={theme.main} stopOpacity={0}/></linearGradient></defs>
-                <CartesianGrid strokeDasharray="3 3" opacity={0.1} />
-                <XAxis dataKey="semaine" />
-                <YAxis domain={[0, 100]} />
-                <Tooltip />
-                <Area type="monotone" dataKey="score" stroke={theme.main} strokeWidth={5} fill="url(#studGrad)" />
-              </AreaChart>
-            </ResponsiveContainer>
-          </Paper>
+        <Grid item xs={12} sm={6} md={3}>
+          <Card elevation={3} sx={{ textAlign: "center", p: 2, borderRadius: 3 }}>
+            <Typography color="text.secondary" variant="subtitle2">Success Rate</Typography>
+            <Typography variant="h4" fontWeight="bold" color={statsNiveau.reussite >= 60 ? "success.main" : "error.main"}>
+              {statsNiveau.reussite}%
+            </Typography>
+            <Typography variant="body2" color="text.secondary">Students ≥ 60%</Typography>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <Card elevation={3} sx={{ textAlign: "center", p: 2, borderRadius: 3 }}>
+            <Typography color="text.secondary" variant="subtitle2">At Risk</Typography>
+            <Typography variant="h4" fontWeight="bold" color="error">{statsNiveau.difficulte}</Typography>
+            <Typography variant="body2" color="text.secondary">Students &lt; 60%</Typography>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <Card elevation={3} sx={{ textAlign: "center", p: 2, borderRadius: 3 }}>
+            <Typography color="text.secondary" variant="subtitle2">Highest Average</Typography>
+            <Typography variant="h4" fontWeight="bold" color="#f39c12">🏆 {statsNiveau.top}%</Typography>
+            <Typography variant="body2" color="text.secondary">Class top score</Typography>
+          </Card>
         </Grid>
       </Grid>
-    </Box>
+
+      <Box display="flex" justifyContent="center" mb={6}>
+        <Paper elevation={3} sx={{ p: 4, width: "100%", maxWidth: 1000, borderRadius: 3 }}>
+          <Typography variant="h6" align="center" gutterBottom color="primary" fontWeight="bold">
+            📈 Overall Progress ({niveauFilter})
+          </Typography>
+          <Box sx={{ height: 300, mt: 2 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart data={evolutionClasse} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                <defs>
+                  <linearGradient id="colorMoyenne" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#1976d2" stopOpacity={0.6} />
+                    <stop offset="95%" stopColor="#1976d2" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                <XAxis dataKey="semaine" tick={{ fontSize: 12 }} />
+                <YAxis domain={[0, 100]} />
+                <Tooltip formatter={(value) => [`${value}%`, "Class Average"]} />
+                <Area type="monotone" dataKey="moyenneClasse" stroke="#1976d2" fill="url(#colorMoyenne)" strokeWidth={3} />
+              </AreaChart>
+            </ResponsiveContainer>
+          </Box>
+        </Paper>
+      </Box>
+
+      <Typography variant="h4" align="center" sx={{ mb: 4, fontWeight: "bold", color: "#333" }}>
+        🧑‍🎓 Individual Analysis
+      </Typography>
+
+      <Grid container spacing={4} justifyContent="center">
+        {elevesDuNiveau.map((eleve, index) => (
+          <Grid item xs={12} md={10} lg={8} key={index}>
+            <Card elevation={4} sx={{ borderRadius: 3, borderTop: `6px solid ${eleve.moyenne < 60 ? "#e53935" : eleve.moyenne < 80 ? "#fb8c00" : "#43a047"}` }}>
+              <Box sx={{ p: 3, display: "flex", flexDirection: "column", alignItems: "center", borderBottom: "1px solid #eee", bgcolor: "#fafafa" }}>
+                <Typography variant="h5" fontWeight="bold">{eleve.nom}</Typography>
+                <Typography variant="body2" color="text.secondary" mb={2}>{eleve.email}</Typography>
+                
+                <Box display="flex" gap={2} flexWrap="wrap" justifyContent="center">
+                  <Chip label={`Average: ${eleve.moyenne}%`} color={getColor(eleve.moyenne)} sx={{ fontWeight: "bold", fontSize: "1rem" }} />
+                  <Chip label={eleve.tendance > 0 ? `+${eleve.tendance} pts (Increase)` : eleve.tendance < 0 ? `${eleve.tendance} pts (Decrease)` : "Stable"} color={eleve.tendance > 0 ? "success" : eleve.tendance < 0 ? "error" : "default"} variant="outlined" />
+                  <Chip label={`Best Score: ${eleve.maxScore}%`} variant="outlined" />
+                </Box>
+              </Box>
+
+              <CardContent sx={{ p: 4 }}>
+                <Grid container spacing={4} alignItems="center">
+                  <Grid item xs={12} sm={5}>
+                    <Typography variant="subtitle1" align="center" color="text.secondary" gutterBottom>
+                      Score History
+                    </Typography>
+                    <TableContainer component={Paper} variant="outlined" sx={{ maxHeight: 250, overflowY: "auto" }}>
+                      <Table size="small" stickyHeader>
+                        <TableHead>
+                          <TableRow>
+                            <TableCell align="center">Week</TableCell>
+                            <TableCell align="center">Score</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {eleve.scores.map((item, idx) => (
+                            <TableRow key={idx}>
+                              <TableCell align="center">{item.semaine}</TableCell>
+                              <TableCell align="center">
+                                <Typography fontWeight="bold" color={item.score < 60 ? "error.main" : item.score < 80 ? "warning.main" : "success.main"}>
+                                  {item.score}%
+                                </Typography>
+                              </TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </TableContainer>
+                  </Grid>
+
+                  <Grid item xs={12} sm={7}>
+                    <Typography variant="subtitle1" align="center" color="text.secondary" gutterBottom>
+                      Progress Chart
+                    </Typography>
+                    <Box sx={{ height: 250, width: "100%" }}>
+                      <ResponsiveContainer width="100%" height="100%">
+                        <LineChart data={eleve.scores} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                          <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                          <XAxis dataKey="semaine" tick={{ fontSize: 12 }} />
+                          <YAxis domain={[0, 100]} tick={{ fontSize: 12 }} />
+                          <Tooltip formatter={(value) => [`${value}%`, "Score"]} />
+                          <Line type="monotone" dataKey="score" stroke={eleve.moyenne < 60 ? "#e53935" : eleve.moyenne < 80 ? "#fb8c00" : "#43a047"} strokeWidth={3} dot={{ r: 5 }} activeDot={{ r: 7 }} />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </Box>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
   );
 }
 
-// --- SUB-COMPONENTS ---
-const COLORS_MAP = { primary: '#1976d2', success: '#2e7d32', error: '#d32f2f', warning: '#ed6c02' };
+// =====================================================================
+// 🎓 STUDENT VIEW (ATTRACTIVE & COLORFUL 🎨)
+// =====================================================================
+function StudentDashboardView({ student }) {
 
-function KPICard({ title, value, sub, color, isTrophy }) {
+  const getFeedbackTheme = (score) => {
+    if (score >= 80) return { 
+      gradient: "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
+      chartColor: "#27ae60",
+      message: "Excellent work! Keep up the great momentum! 🌟",
+      emoji: "🏆"
+    };
+    if (score >= 60) return { 
+      gradient: "linear-gradient(135deg, #f2994a 0%, #f2c94c 100%)",
+      chartColor: "#f39c12",
+      message: "Good job! Just a little more effort to reach excellence! 🚀",
+      emoji: "🔥"
+    };
+    return { 
+      gradient: "linear-gradient(135deg, #eb3349 0%, #f45c43 100%)",
+      chartColor: "#e74c3c",
+      message: "Don't get discouraged! Review your mistakes and you will succeed! 💪",
+      emoji: "💡"
+    };
+  };
+
+  const theme = getFeedbackTheme(student.moyenne);
+  const getColor = (score) => score < 60 ? "error" : score < 80 ? "warning" : "success";
+
   return (
-    <Grid item xs={12} sm={6} md={3}>
-      <Card sx={{ p: 4, borderRadius: 4, textAlign: 'center', height: '100%', border: '1px solid #f0f0f0', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-        <Typography variant="subtitle2" color="text.secondary" fontWeight="900" textTransform="uppercase" letterSpacing={1}>{title}</Typography>
-        <Typography variant="h2" fontWeight="900" sx={{ color: color, my: 1.5 }}>
-           {isTrophy && "🏆 "}{value}
-        </Typography>
-        <Typography variant="body2" fontWeight="bold" color={sub.includes('📉') ? 'error.main' : 'success.main'}>
-          {sub}
-        </Typography>
+    <Container maxWidth="md" sx={{ pb: 6 }}>
+      <Card elevation={6} sx={{ borderRadius: 4, mb: 4, background: theme.gradient, color: "white" }}>
+        <CardContent sx={{ p: 4, textAlign: "center" }}>
+          <Typography variant="h3" fontWeight="bold" gutterBottom>
+            {theme.emoji} Hello, {student.nom}!
+          </Typography>
+
+          <Typography variant="h6" sx={{ opacity: 0.9, mb: 3 }}>
+            {theme.message}
+          </Typography>
+
+          <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 2 }}>
+            <Box sx={{ width: "100%", maxWidth: 400 }}>
+              <Box display="flex" justifyContent="space-between" mb={1}>
+                <Typography variant="body2" fontWeight="bold">Progress towards 100%</Typography>
+                <Typography variant="body2" fontWeight="bold">{student.moyenne}%</Typography>
+              </Box>
+
+              <LinearProgress 
+                variant="determinate" 
+                value={student.moyenne} 
+                sx={{ 
+                  height: 10, 
+                  borderRadius: 5, 
+                  backgroundColor: "rgba(255,255,255,0.3)", 
+                  "& .MuiLinearProgress-bar": { backgroundColor: "white" } 
+                }}
+              />
+            </Box>
+          </Box>
+        </CardContent>
       </Card>
-    </Grid>
+
+      <Grid container spacing={3} mb={4}>
+        <Grid item xs={12} sm={4}>
+          <Card elevation={4} sx={{ borderRadius: 3, textAlign: "center", p: 3, borderBottom: `6px solid ${theme.chartColor}` }}>
+            <SchoolIcon sx={{ fontSize: 40, color: theme.chartColor, mb: 1 }} />
+            <Typography color="text.secondary" variant="subtitle2" textTransform="uppercase">My Average</Typography>
+            <Typography variant="h3" fontWeight="bold" sx={{ color: theme.chartColor }}>{student.moyenne}%</Typography>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={4}>
+          <Card elevation={4} sx={{ borderRadius: 3, textAlign: "center", p: 3, borderBottom: `6px solid ${student.tendance >= 0 ? "#27ae60" : "#e74c3c"}` }}>
+            {student.tendance >= 0 ? 
+              <TrendingUpIcon sx={{ fontSize: 40, color: "#27ae60", mb: 1 }} /> : 
+              <TrendingDownIcon sx={{ fontSize: 40, color: "#e74c3c", mb: 1 }} />
+            }
+            <Typography color="text.secondary" variant="subtitle2" textTransform="uppercase">Trend</Typography>
+            <Typography variant="h4" fontWeight="bold" sx={{ color: student.tendance >= 0 ? "#27ae60" : "#e74c3c" }} mt={1}>
+              {student.tendance > 0 ? "+" : ""}{student.tendance} pts
+            </Typography>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={4}>
+          <Card elevation={4} sx={{ borderRadius: 3, textAlign: "center", p: 3, borderBottom: "6px solid #f39c12" }}>
+            <EmojiEventsIcon sx={{ fontSize: 40, color: "#f39c12", mb: 1 }} />
+            <Typography color="text.secondary" variant="subtitle2" textTransform="uppercase">Personal Best</Typography>
+            <Typography variant="h3" fontWeight="bold" color="#f39c12">{student.maxScore}%</Typography>
+          </Card>
+        </Grid>
+      </Grid>
+
+      <Card elevation={5} sx={{ borderRadius: 4, overflow: "hidden" }}>
+        <CardContent sx={{ p: 0 }}>
+          <Grid container>
+            <Grid item xs={12} md={5} sx={{ borderRight: { md: "1px solid #eee" }, p: 3 }}>
+              <Typography variant="h6" fontWeight="bold" gutterBottom align="center">
+                📝 All My Weekly Scores
+              </Typography>
+
+              <TableContainer sx={{ maxHeight: 350, overflowY: "auto", mt: 2 }}>
+                <Table size="small" stickyHeader>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell align="center" sx={{ bgcolor: "#f4f6f8" }}><strong>Week</strong></TableCell>
+                      <TableCell align="center" sx={{ bgcolor: "#f4f6f8" }}><strong>Result</strong></TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {student.scores && student.scores.length > 0 ? (
+                      student.scores.map((item, idx) => (
+                        <TableRow key={idx} hover>
+                          <TableCell align="center" sx={{ fontWeight: '500' }}>
+                            {item.semaine}
+                          </TableCell>
+                          <TableCell align="center">
+                            <Chip 
+                              label={`${item.score}%`} 
+                              color={getColor(item.score)} 
+                              sx={{ fontWeight: "bold", fontSize: "0.9rem", px: 1 }}
+                              variant={item.score < 60 ? "filled" : "outlined"} 
+                            />
+                          </TableCell>
+                        </TableRow>
+                      ))
+                    ) : (
+                      <TableRow>
+                        <TableCell colSpan={2} align="center" sx={{ py: 4, color: "text.secondary" }}>
+                          No scores recorded yet.
+                        </TableCell>
+                      </TableRow>
+                    )}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </Grid>
+
+            <Grid item xs={12} md={7} sx={{ p: 4, bgcolor: "#fcfcfc", display: "flex", flexDirection: "column" }}>
+              <Typography variant="h6" fontWeight="bold" gutterBottom align="center">
+                🚀 My Visual Progress
+              </Typography>
+
+              <Box sx={{ flexGrow: 1, minHeight: 300, width: "100%", mt: 2 }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <AreaChart data={student.scores} margin={{ top: 10, right: 10, left: -25, bottom: 0 }}>
+                    <defs>
+                      <linearGradient id="colorStudentScore" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor={theme.chartColor} stopOpacity={0.5} />
+                        <stop offset="95%" stopColor={theme.chartColor} stopOpacity={0} />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} opacity={0.5} />
+                    <XAxis dataKey="semaine" tick={{ fontSize: 12 }} />
+                    <YAxis domain={[0, 100]} tick={{ fontSize: 12 }} />
+                    <Tooltip contentStyle={{ borderRadius: '10px', fontWeight: 'bold' }} formatter={(value) => [`${value}%`, "Score"]} />
+                    <Area type="monotone" dataKey="score" stroke={theme.chartColor} fill="url(#colorStudentScore)" strokeWidth={4} activeDot={{ r: 8, strokeWidth: 2, stroke: "#fff" }} />
+                  </AreaChart>
+                </ResponsiveContainer>
+              </Box>
+            </Grid>
+
+          </Grid>
+        </CardContent>
+      </Card>
+    </Container>
   );
 }
