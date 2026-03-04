@@ -8,17 +8,16 @@
       "evaluation": null,
       "echelon": "Son è / ê",
       "totalWords": 16,
-      "words": [
-        "barrière","mère","bêtes","pêche","chèvre","père","crème","règle",
-        "fermière","rivière","fête","sorcière","flèche","tête","forêt","trèfle"
-      ]
+      "words":  ["une jambe", "des jujubes", "un jambon",    "des jumeaux",    "un jardin",
+    "des jumelles",    "un jeu",    "une jument",    "une joue",  "une jupe",  "un jouet",
+    "du jus", "un journal", "un pyjama"  ]
     },
     {
       "id": 9,
-      "week": "Semaine 9",
+      "week": "Semaine 8",
       "evaluation": null,
       "echelon": "Son i / y",
-      "totalWords": 14,
+      "totalWords": 8,
       "words": [
         "bicyclette","pyjama","ciseaux","souris","fourmi","tapis","hibou",
         "taxi","île","toupie","lit","tulipe","livre","valise"
@@ -67,6 +66,17 @@
         "roi","boîte","loisir","joyau","noir",
         "poids","foire","coin","joyeuse","bois"
       ]
-    }
+    },{
+  "id": 14,
+  "week": "Semaine 14",
+  "evaluation": null,
+   "echelon": "Son è / ê",
+  
+  "totalWords": 14,
+  "words":[
+        "barrière","mère","bêtes","pêche","chèvre","père","crème","règle",
+        "fermière","rivière","fête","sorcière","flèche","tête","forêt","trèfle"
+      ]
+}
   ]
 }

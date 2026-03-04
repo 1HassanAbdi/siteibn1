@@ -12,7 +12,9 @@
     "matiere": "FR", 
     "titre": "La Pieuvre", 
     "chemin": "./data/FR/Lapieuvre.json" 
-  },{ 
+  },
+  
+  { 
     "slug": "inventions", 
     "niveau": 6, 
     "matiere": "FR", 
@@ -24,7 +26,14 @@
     "matiere": "FR", 
     "titre": "Protéger les rhinocéros", 
     "chemin": "./data/FR/Protéger-les-rhinocéros.json" 
+  },{ 
+    "slug": " Une_promenade_inoubliable", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": " Une promenade inoubliable", 
+    "chemin": "./data/FR/promenade.json" 
   }
+ 
   
   ,{ 
     "slug": "Mathématiques_decimaux_entiers_recherche", 
@@ -68,9 +77,22 @@
     "matiere": "FR", 
     "titre": "Drôle de cocotier", 
     "chemin": "./data/FR/Drôledecocotier.json" 
+    },{ 
+    "slug": "Drôledecocotier", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "Drôle de cocotier", 
+    "chemin": "./data/FR/Drôledecocotier.json" 
+    },{ 
+    "slug": "Lepremierpas", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "Le premier pas", 
+    "chemin": "./data/FR/Lepremierpas.json" 
     }
      
 
     
 
+    
 ]

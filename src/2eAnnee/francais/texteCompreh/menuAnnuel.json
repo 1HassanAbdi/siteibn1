@@ -285,7 +285,62 @@
     {
       "id": "mars",
       "label": "Mars",
-      "categories": []
+      "categories": [
+         {
+        "id": "lecture_janv",
+        "label": "Lecture compréhension",
+        "children": [
+          {
+            "id": "casepeutpas",
+            "label": "Ça se peut pas",
+            "folderName": "casepeutpas",
+            "componentJson": "./mars/casepeutpas/tex2.json",
+            "quizJsonPath": "./mars/casepeutpas/question.json"
+          },
+          
+          {
+            "id": "Titiouistiti",
+            "label": "Titi le petit ouistiti",
+            "folderName": "Titiouistiti",
+            "componentJson": "",
+            "quizJsonPath": "./janvier/Titiouistiti/question.json"
+          },
+          {
+            "id": "Mimilasouris",
+            "label": "Mimi la souris",
+            "folderName": "Mimilasouris",
+            "componentJson": "./janvier/Mimilasouris/tex1.json",
+            "quizJsonPath": "./janvier/Mimilasouris/question.json"
+          },
+          {
+            "id": "Unehistoiredechats",
+            "label": "Une histoire de chats",
+            "folderName": "Unehistoiredechats",
+            "componentJson": "./janvier/Unehistoiredechats/tex1.json",
+            "quizJsonPath": "./janvier/Unehistoiredechats/question.json"
+          },
+          {
+            "id": "Pipolhippopotame",
+            "label": "Pipo l'hippopotame",
+            "folderName": "Pipolhippopotame",
+            "componentJson": "./janvier/Pipolhippopotame/tex1.json",
+            "quizJsonPath": "./janvier/Pipolhippopotame/question.json"
+          }
+        ]
+      },
+      
+      {
+        "id": "dictee_janv",
+        "label": "Dictées du mois",
+        "children": [
+          {
+            "id": "dictee1_janv",
+            "label": "Dictées",
+            "componentJson": "./janvier/dictee/dictée.json"
+          }
+        ]
+      }
+      ]
     },
     {
       "id": "avril",

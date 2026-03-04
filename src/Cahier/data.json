@@ -10,24 +10,50 @@
     "labels": {
       "sujet": "Qui ?",
       "verbe": "Fait quoi ?",
-      "complement": "Où / Comment ?",
-      "bouton_verifier": "VÉRIFIER MA PHRASE",
-      "bouton_retour": "⬅ Retour aux exercices"
+      "complement": "Où ? / Quoi ?",
+      "bouton_verifier": "VÉRIFIER",
+      "bouton_retour": "⬅ Retour"
     }
   },
   "exercices": [
     {
-      "id": "exo1_eau",
-      "titre": "Le Cycle de l'Eau 💧",
-      "sujets": ["La chaleur du Soleil", "Le sel des roches", "Les cours d'eau", "Les nuages", "La pluie"],
-      "verbes": ["aspire", "se dissout", "transportent", "se remplissent", "tombe"],
-      "complements": ["l'eau douce de la mer.", "lentement avec la pluie.", "le sel jusqu'à la mer.", "de gouttelettes d'eau.", "sur le sol et la terre."],
+      "id": "exo1_animaux",
+      "titre": "Les animaux 🐶",
+      "sujets": ["Le chat", "Le chien", "La poule", "Le lapin", "Le bébé"],
+      "verbes": ["mange", "court", "pond", "saute", "dort"],
+      "complements": [
+        "une souris.",
+        "dans le jardin.",
+        "un œuf.",
+        "dans l'herbe.",
+        "dans son lit."
+      ],
       "solutions": [
-        "La chaleur du Soleil aspire l'eau douce de la mer.",
-        "Le sel des roches se dissout lentement avec la pluie.",
-        "Les cours d'eau transportent le sel jusqu'à la mer.",
-        "Les nuages se remplissent de gouttelettes d'eau.",
-        "La pluie tombe sur le sol et la terre."
+        "Le chat mange une souris.",
+        "Le chien court dans le jardin.",
+        "La poule pond un œuf.",
+        "Le lapin saute dans l'herbe.",
+        "Le bébé dort dans son lit."
+      ]
+    },
+    {
+      "id": "exo2_ecole",
+      "titre": "À l'école 🏫",
+      "sujets": ["Léo", "La maîtresse", "Les élèves", "Emma", "Le garçon"],
+      "verbes": ["écrit", "parle", "écoutent", "lit", "dessine"],
+      "complements": [
+        "une phrase.",
+        "à la classe.",
+        "la leçon.",
+        "un livre.",
+        "un soleil."
+      ],
+      "solutions": [
+        "Léo écrit une phrase.",
+        "La maîtresse parle à la classe.",
+        "Les élèves écoutent la leçon.",
+        "Emma lit un livre.",
+        "Le garçon dessine un soleil."
       ]
     }
   ]

@@ -1,0 +1,128 @@
+{
+  "title": "Ça se peut pas !",
+  "sections": [
+    {
+      "title": "Dans la cuisine",
+      "text": "Du jus et des jujubes dans la cuisine,\nça se peut.\nUne jument dans la cuisine,\nça se peut pas !",
+      "questions": [
+        {
+          "question": "Qu’est-ce qu’on peut trouver dans la cuisine ?",
+          "options": ["Du jus et des jujubes", "Une jument", "Un jaguar"],
+          "correctAnswer": "Du jus et des jujubes"
+        },
+        {
+          "question": "Qu’est-ce qui ne se peut pas dans la cuisine ?",
+          "options": ["Une jument", "Du jus", "Des jujubes"],
+          "correctAnswer": "Une jument"
+        },
+        {
+          "question": "Où se passe cette scène ?",
+          "options": ["Dans la cuisine", "Dans le jardin", "Dans la chambre"],
+          "correctAnswer": "Dans la cuisine"
+        },
+        {
+          "question": "Quel est le son travaillé dans cette histoire ?",
+          "options": ["Le son j", "Le son m", "Le son s"],
+          "correctAnswer": "Le son j"
+        },
+        {
+          "question": "Le jus dans la cuisine, est-ce possible ?",
+          "options": ["Oui", "Non", "On ne sait pas"],
+          "correctAnswer": "Oui"
+        }
+      ]
+    },
+    {
+      "title": "Dans le jardin",
+      "text": "Des jonquilles et des jacinthes dans le jardin,\nça se peut.\nUn jambon dans le jardin,\nça se peut pas !",
+      "questions": [
+        {
+          "question": "Qu’est-ce qu’on peut trouver dans le jardin ?",
+          "options": ["Des jonquilles et des jacinthes", "Un jambon", "Des pyjamas"],
+          "correctAnswer": "Des jonquilles et des jacinthes"
+        },
+        {
+          "question": "Qu’est-ce qui ne se peut pas dans le jardin ?",
+          "options": ["Un jambon", "Des fleurs", "Des arbres"],
+          "correctAnswer": "Un jambon"
+        },
+        {
+          "question": "De quoi parle ce passage ?",
+          "options": ["Du jardin", "De la cuisine", "De la chambre"],
+          "correctAnswer": "Du jardin"
+        },
+        {
+          "question": "Les jonquilles sont-elles des fleurs ?",
+          "options": ["Oui", "Non", "On ne sait pas"],
+          "correctAnswer": "Oui"
+        },
+        {
+          "question": "Le jambon pousse-t-il dans le jardin ?",
+          "options": ["Non", "Oui", "Parfois"],
+          "correctAnswer": "Non"
+        }
+      ]
+    },
+    {
+      "title": "Dans la chambre",
+      "text": "Des pyjamas et des jupes dans ma chambre,\nça se peut.\nUn jaguar dans ma chambre,\nça se peut pas !",
+      "questions": [
+        {
+          "question": "Qu’est-ce qu’on peut trouver dans la chambre ?",
+          "options": ["Des pyjamas et des jupes", "Un jaguar", "Un jambon"],
+          "correctAnswer": "Des pyjamas et des jupes"
+        },
+        {
+          "question": "Qu’est-ce qui ne se peut pas dans la chambre ?",
+          "options": ["Un jaguar", "Une jupe", "Un pyjama"],
+          "correctAnswer": "Un jaguar"
+        },
+        {
+          "question": "Dans quelle pièce se passe cette scène ?",
+          "options": ["Dans la chambre", "Dans le jardin", "Dans la cuisine"],
+          "correctAnswer": "Dans la chambre"
+        },
+        {
+          "question": "Un jaguar est-il un animal sauvage ?",
+          "options": ["Oui", "Non", "On ne sait pas"],
+          "correctAnswer": "Oui"
+        },
+        {
+          "question": "Les vêtements se trouvent-ils dans la chambre ?",
+          "options": ["Oui", "Non", "Parfois"],
+          "correctAnswer": "Oui"
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "title": "QCM Final",
+    "questions": [
+      {
+        "question": "Quel son est travaillé dans cette histoire ?",
+        "options": ["Le son j", "Le son l", "Le son p"],
+        "correctAnswer": "Le son j"
+      },
+      {
+        "question": "Que peut-on trouver dans la cuisine ?",
+        "options": ["Du jus", "Un jaguar", "Un jambon dans le jardin"],
+        "correctAnswer": "Du jus"
+      },
+      {
+        "question": "Que ne peut-on pas trouver dans le jardin ?",
+        "options": ["Un jambon", "Des fleurs", "Des arbres"],
+        "correctAnswer": "Un jambon"
+      },
+      {
+        "question": "Que ne peut-on pas trouver dans la chambre ?",
+        "options": ["Un jaguar", "Un pyjama", "Une jupe"],
+        "correctAnswer": "Un jaguar"
+      },
+      {
+        "question": "Les jujubes commencent-ils par la lettre j ?",
+        "options": ["Oui", "Non", "Peut-être"],
+        "correctAnswer": "Oui"
+      }
+    ]
+  }
+}

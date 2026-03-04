@@ -195,6 +195,9 @@ export default function PortailOQRE({ exerciseSlug, level, onBack }) {
         {/* TEXTE */}
         <div className="w-full lg:w-1/2 bg-slate-900 p-8 overflow-y-auto border-r border-black custom-scrollbar">
           <h2 className="text-indigo-400 font-black text-2xl uppercase italic border-b border-slate-800 pb-4 mb-6">{currentPart?.sections[0]?.titre}</h2>
+          {currentPart?.sections[0]?.image && (
+  <img src={currentPart.sections[0].image} className="w-full h-auto rounded-xl mb-6 border-4 border-black" alt="Illustration" />
+)}
           {currentPart?.sections[0]?.texte_integral?.map((t, i) => {
             const pid = `para-${i}`;
             return (

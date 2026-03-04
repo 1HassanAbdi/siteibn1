@@ -2,7 +2,7 @@
   "title": "Atelier des Syllabes - 2e Année",
   "weeks_syllables": [
     {
-      "week_id": 8,
+      "week_id": 2,
       "words": [
         { "word": "barrière", "parts": ["bar", "riè", "re"] },
         { "word": "mère", "parts": ["mè", "re"] },
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "week_id": 9,
+      "week_id": 3,
       "words": [
         { "word": "bicyclette", "parts": ["bi", "cy", "clet", "te"] },
         { "word": "pyjama", "parts": ["py", "ja", "ma"] },
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "week_id": 10,
+      "week_id": 4,
       "words": [
         { "word": "chou", "parts": ["chou"] },
         { "word": "route", "parts": ["rou", "te"] },
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "week_id": 11,
+      "week_id": 5,
       "words": [
         { "word": "champ", "parts": ["champ"] },
         { "word": "montagne", "parts": ["mon", "ta", "gne"] },
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "week_id": 12,
+      "week_id": 6,
       "words": [
         { "word": "marché", "parts": ["mar", "ché"] },
         { "word": "clé", "parts": ["clé"] },
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "week_id": 13,
+      "week_id": 7,
       "words": [
         { "word": "roi", "parts": ["roi"] },
         { "word": "boîte", "parts": ["boî", "te"] },
@@ -100,6 +100,26 @@
         { "word": "joyeuse", "parts": ["joy", "eu", "se"] },
         { "word": "bois", "parts": ["bois"] }
       ]
-    }
+    },{
+  
+      "week_id": 8,
+      "words": [
+  { "word": "une jambe", "parts": ["une", "jam", "be"] },
+  { "word": "des jujubes", "parts": ["des", "ju", "ju", "bes"] },
+  { "word": "un jambon", "parts": ["un", "jam", "bon"] },
+  { "word": "des jumeaux", "parts": ["des", "ju", "meaux"] },
+  { "word": "un jardin", "parts": ["un", "jar", "din"] },
+  { "word": "des jumelles", "parts": ["des", "ju", "mel", "les"] },
+  { "word": "un jeu", "parts": ["un", "jeu"] },
+  { "word": "une jument", "parts": ["une", "ju", "ment"] },
+  { "word": "une joue", "parts": ["une", "joue"] },
+  { "word": "une jupe", "parts": ["une", "ju", "pe"] },
+  { "word": "un jouet", "parts": ["un", "jou", "et"] },
+  { "word": "du jus", "parts": ["du", "jus"] },
+  { "word": "un journal", "parts": ["un", "jour", "nal"] },
+  { "word": "un pyjama", "parts": ["un", "py", "ja", "ma"] }
+]
+    } 
+
   ]
 }

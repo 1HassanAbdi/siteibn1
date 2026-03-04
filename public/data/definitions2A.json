@@ -2,7 +2,7 @@
   "title": "Dictionnaire de la 3e Année",
   "weeks_definitions": [
     {
-      "week_id": 8,
+      "week_id": 2,
       "words_data": [
         {"word": "barrière", "definition": "Objet qui empêche de passer ou qui ferme un passage."},
         {"word": "mère", "definition": "La maman d’un enfant."},
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "week_id": 9,
+      "week_id": 3,
       "words_data": [
         {"word": "bicyclette", "definition": "Vélo avec deux roues."},
         {"word": "pyjama", "definition": "Vêtement pour dormir."},
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "week_id": 10,
+      "week_id": 4,
       "words_data": [
         {"word": "chou", "definition": "Légume rond avec des feuilles."},
         {"word": "route", "definition": "Chemin pour les voitures."},
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "week_id": 11,
+      "week_id": 5,
       "words_data": [
         {"word": "champ", "definition": "Terrain cultivé à la campagne."},
         {"word": "montagne", "definition": "Très grande élévation de terre."},
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "week_id": 12,
+      "week_id": 6,
       "words_data": [
         {"word": "marché", "definition": "Lieu où l’on achète des produits."},
         {"word": "clé", "definition": "Objet pour ouvrir une porte."},
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "week_id": 13,
+      "week_id": 7,
       "words_data": [
         {"word": "roi", "definition": "Homme qui dirige un royaume."},
         {"word": "boîte", "definition": "Objet pour ranger des choses."},
@@ -100,6 +100,24 @@
         {"word": "joyeuse", "definition": "Qui est pleine de bonheur."},
         {"word": "bois", "definition": "Matière des arbres ou petite forêt."}
       ]
-    }
+    },{
+  "week_id": 8,
+  "words_data": [
+    {"word": "jambe", "definition": "Partie du corps qui permet de marcher et de courir."},
+    {"word": "jujubes", "definition": "Petits bonbons sucrés et colorés."},
+    {"word": "jambon", "definition": "Viande préparée à partir du porc, souvent mangée en sandwich."},
+    {"word": "jumeaux", "definition": "Deux enfants nés en même temps de la même maman."},
+    {"word": "jardin", "definition": "Endroit où l’on plante des fleurs, des fruits ou des légumes."},
+    {"word": "jumelles", "definition": "Instrument avec deux lunettes pour voir les choses de loin."},
+    {"word": "jeu", "definition": "Activité amusante pour se divertir."},
+    {"word": "jument", "definition": "Femelle du cheval."},
+    {"word": "joue", "definition": "Partie du visage entre l’œil et la bouche."},
+    {"word": "jupe", "definition": "Vêtement porté autour de la taille."},
+    {"word": "jouet", "definition": "Objet avec lequel les enfants jouent."},
+    {"word": "jus", "definition": "Boisson faite avec des fruits."},
+    {"word": "journal", "definition": "Feuilles imprimées ou site qui donne des nouvelles."},
+    {"word": "pyjama", "definition": "Vêtement que l’on porte pour dormir."}
+  ]
+}
   ]
 }

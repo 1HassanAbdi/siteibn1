@@ -1,0 +1,24 @@
+{
+  "title": "Ça se peut pas !",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "Dans la cuisine",
+      "text": "Du jus et des jujubes dans la cuisine,\nça se peut.\n\nUne jument dans la cuisine,\nça se peut pas !",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "Dans le jardin",
+      "text": "Des jonquilles et des jacinthes dans le jardin,\nça se peut.\n\nUn jambon dans le jardin,\nça se peut pas !",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "Dans la chambre",
+      "text": "Des pyjamas et des jupes dans ma chambre,\nça se peut.\n\nUn jaguar dans ma chambre,\nça se peut pas !",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}

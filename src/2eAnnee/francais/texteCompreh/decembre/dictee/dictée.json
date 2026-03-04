@@ -42,6 +42,13 @@
       "id": "semaine4",
      "title": "Dictée 4",
       "words": ["chat", "oiseau", "poisson", "lapin", "tortue"]
+    },{
+      "id": "semaine5",
+     "title": "Dictée 5",
+      "words": ["une jambe", "des jujubes", "un jambon",    "des jumeaux",    "un jardin",
+    "des jumelles",    "un jeu",    "une jument",    "une joue",  "une jupe",  "un jouet",
+    "du jus", "un journal", "un pyjama"]
     }
   ]
 }
+ 

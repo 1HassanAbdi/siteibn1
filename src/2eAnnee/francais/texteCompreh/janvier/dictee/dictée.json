@@ -86,6 +86,12 @@
         "un chat",
         "une valise"
       ]
+    },{
+      "id": "semaine5",
+     "title": "Dictée 5 Ça se peut pas !",
+      "words": ["une jambe", "des jujubes", "un jambon",    "des jumeaux",    "un jardin",
+    "des jumelles",    "un jeu",    "une jument",    "une joue",  "une jupe",  "un jouet",
+    "du jus", "un journal", "un pyjama"]
     }
   ]
 }

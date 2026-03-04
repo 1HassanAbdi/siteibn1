@@ -1,0 +1,250 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Une promenade inoubliable",
+    "niveau": "6e année",
+    "session": "Une promenade inoubliable",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Une promenade inoubliable",
+           "image": "/imageoqre/promenade.jpg",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "C’est l’automne et les arbres revêtent leurs plus belles couleurs : des jaunes resplendissants, des rouges à couper le souffle et des orangés qui contrastent de manière spectaculaire avec le bleu du ciel. Afin de profiter de cette journée magnifique, mon père et moi décidons de faire une promenade en forêt."
+            },
+            {
+              "p": 2,
+              "contenu": "Nous marchons depuis déjà un moment, en silence, quand mon père s’arrête brusquement et me fait presque trébucher. — Aïe ! Attention ! Je suis derrière toi ! — Chut ! Regarde, m’ordonne mon père."
+            },
+            {
+              "p": 3,
+              "contenu": "Je suis son regard et là, à quelques mètres de nous, un chevreuil majestueux nous observe. Je n’en crois pas mes yeux ! On dirait que le prince de la forêt lui-même est venu nous accueillir."
+            },
+            {
+              "p": 4,
+              "contenu": "Nous restons figés sur place, aussi immobiles que les arbres qui nous entourent. Malgré cela, le chevreuil lève calmement la tête et s’éloigne de nous, sans se presser. Mon père se tourne vers moi : — Veux-tu le suivre ? Je le regarde d’un air incrédule : — On ne va pas lui faire peur ? — Il faut simplement être très discrets."
+            },
+            {
+              "p": 5,
+              "contenu": "Ainsi, nous suivons le chevreuil dans la forêt. Mon cœur bat très vite : je n’ai jamais vu un tel animal de si près. Il semble nous inviter à le suivre ! Il disparaît parfois parmi les arbres, mais on le retrouve toujours, grâce à la tache blanche près de sa queue. Arrivé au bord d’une clairière, il se tourne vers nous et incline ses bois vers le sol, comme pour nous signaler d’attendre là."
+            },
+            {
+              "p": 6,
+              "contenu": "Mon père me chuchote à l’oreille que les chevreuils perdent leurs bois à la mi-automne et que nous avons de la chance de voir celui-ci dans toute sa majesté. Pendant ce temps, le chevreuil entre dans la clairière et pousse un cri semblable à l’aboiement d’un chien. En réponse à cet appel, la clairière se remplit de chevreuils. Curieusement, aucun d’entre eux ne semble se préoccuper de notre présence ; par contre, dès que nous osons avancer d’un pas, un ou deux mâles baissent la tête, menaçants."
+            },
+            {
+              "p": 7,
+              "contenu": "Nous passons donc le reste de l’après-midi immobiles, à admirer ces nobles animaux, regrettant de ne pas avoir apporté notre appareil photo. Malheureusement, il faut bien quitter la clairière avant la noirceur, mais je n’oublierai jamais ce moment magique où j’ai eu la chance d’observer la nature dans toute sa splendeur."
+            }
+          ],
+          "questions": [
+
+          
+
+            {
+              "numero": 1,
+              "partie": "Compréhension littérale",
+              "enonce": "De quel genre de texte s’agit-il ?",
+              "options": [
+                "d’un dépliant au sujet d’un parc provincial",
+                "d’un conte au sujet d’une clairière enchantée",
+                "d’un poème au sujet d’une promenade en forêt",
+                "d’un récit au sujet d’une aventure dans les bois"
+              ],
+              "reponse_correcte": "d’un récit au sujet d’une aventure dans les bois"
+            },
+            {
+              "numero": 2,
+              "partie": "Compréhension littérale",
+              "enonce": "À quelle saison se déroule l’histoire ?",
+              "options": ["En hiver", "Au printemps", "En automne", "En été"],
+              "reponse_correcte": "En automne"
+            },
+            {
+              "numero": 3,
+              "partie": "Compréhension littérale",
+              "enonce": "Avec qui le narrateur part-il en forêt ?",
+              "options": ["Son ami", "Son père", "Son frère", "Sa mère"],
+              "reponse_correcte": "Son père"
+            },
+            {
+              "numero": 4,
+              "partie": "Compréhension littérale",
+              "enonce": "Où le chevreuil les conduit-il ?",
+              "options": ["Dans une grotte", "Dans une clairière", "Près d’une rivière", "Dans un village"],
+              "reponse_correcte": "Dans une clairière"
+            },
+            {
+              "numero": 5,
+              "partie": "Compréhension littérale",
+              "enonce": "Pourquoi doivent-ils quitter la clairière ?",
+              "options": ["Il pleut", "La nuit arrive", "Ils ont faim", "Les chevreuils partent"],
+              "reponse_correcte": "La nuit arrive"
+            },
+
+         
+
+            {
+              "numero": 6,
+              "partie": "Vocabulaire et expressions",
+              "enonce": "Par quel mot pourrait-on remplacer « étrangement » ?",
+              "options": ["évidemment", "curieusement", "paisiblement", "tranquillement"],
+              "reponse_correcte": "curieusement"
+            },
+            {
+              "numero": 7,
+              "partie": "Vocabulaire et expressions",
+              "enonce": "Pourquoi dit-on que le chevreuil est « le prince de la forêt » ?",
+              "options": ["Il est discret.", "Il est patient.", "Il est orgueilleux.", "Il est impressionnant."],
+              "reponse_correcte": "Il est impressionnant."
+            },
+            {
+              "numero": 8,
+              "partie": "Vocabulaire et expressions",
+              "enonce": "Que signifie « je n’en crois pas mes yeux » ?",
+              "options": ["Je ferme les yeux.", "Je suis très surpris.", "Je suis fatigué.", "Je suis en colère."],
+              "reponse_correcte": "Je suis très surpris."
+            },
+            {
+              "numero": 9,
+              "partie": "Vocabulaire et expressions",
+              "enonce": "Quel est le synonyme du mot « majestueux » ?",
+              "options": ["Petit", "Impressionnant", "Rapide", "Caché"],
+              "reponse_correcte": "Impressionnant"
+            },
+            {
+              "numero": 10,
+              "partie": "Vocabulaire et expressions",
+              "enonce": "Quel est l’antonyme du mot « silence » ?",
+              "options": ["calme", "bruit", "forêt", "regard"],
+              "reponse_correcte": "bruit"
+            },
+
+       
+
+            {
+              "numero": 11,
+              "partie": "Grammaire de base",
+              "enonce": "Dans « Nous marchons en silence », quel est le verbe ?",
+              "options": ["Nous", "marchons", "silence", "en"],
+              "reponse_correcte": "marchons"
+            },
+            {
+              "numero": 12,
+              "partie": "Grammaire de base",
+              "enonce": "« belles » est :",
+              "options": ["un nom", "un verbe", "un adjectif", "un pronom"],
+              "reponse_correcte": "un adjectif"
+            },
+            {
+              "numero": 13,
+              "partie": "Grammaire de base",
+              "enonce": "« clairière » est :",
+              "options": ["un adjectif", "un nom féminin", "un verbe", "un adverbe"],
+              "reponse_correcte": "un nom féminin"
+            },
+            {
+              "numero": 14,
+              "partie": "Grammaire de base",
+              "enonce": "« calmement » est :",
+              "options": ["un adjectif", "un nom", "un adverbe", "un pronom"],
+              "reponse_correcte": "un adverbe"
+            },
+            {
+              "numero": 15,
+              "partie": "Grammaire de base",
+              "enonce": "« forêt » est :",
+              "options": ["masculin", "féminin", "pluriel", "un verbe"],
+              "reponse_correcte": "féminin"
+            },
+
+           
+
+            {
+              "numero": 16,
+              "partie": "Grammaire avancée",
+              "enonce": "Quel est le sujet dans « Le chevreuil nous observe » ?",
+              "options": ["observe", "nous", "chevreuil", "Le chevreuil"],
+              "reponse_correcte": "Le chevreuil"
+            },
+            {
+              "numero": 17,
+              "partie": "Grammaire avancée",
+              "enonce": "« Nous restons figés » est conjugué :",
+              "options": ["au futur", "au passé composé", "au présent", "à l’imparfait"],
+              "reponse_correcte": "au présent"
+            },
+            {
+              "numero": 18,
+              "partie": "Grammaire avancée",
+              "enonce": "Dans « un chevreuil majestueux », l’adjectif est :",
+              "options": ["Attribut", "Complément", "Épithète", "Adverbe"],
+              "reponse_correcte": "Épithète"
+            },
+            {
+              "numero": 19,
+              "partie": "Grammaire avancée",
+              "enonce": "« venu » est :",
+              "options": ["adjectif", "participe passé", "nom", "adverbe"],
+              "reponse_correcte": "participe passé"
+            },
+            {
+              "numero": 20,
+              "partie": "Grammaire avancée",
+              "enonce": "L’adverbe formé à partir de « brusque » est :",
+              "options": ["Brusquement", "Brusqueusement", "Brusquament", "Brusquemant"],
+              "reponse_correcte": "Brusquement"
+            },
+
+           
+
+            {
+              "numero": 21,
+              "partie": "Structure de phrase",
+              "enonce": "Ils restent immobiles pour éviter :",
+              "options": ["de se fatiguer", "de se faire voir", "d’effrayer les chevreuils", "de blesser les chevreuils"],
+              "reponse_correcte": "d’effrayer les chevreuils"
+            },
+            {
+              "numero": 22,
+              "partie": "Structure de phrase",
+              "enonce": "Que fait le père ?",
+              "options": ["Il crie", "Il court", "Il s’arrête brusquement", "Il prend une photo"],
+              "reponse_correcte": "Il s’arrête brusquement"
+            },
+            {
+              "numero": 23,
+              "partie": "Structure de phrase",
+              "enonce": "À l’imparfait, « Nous marchons » devient :",
+              "options": ["Nous avons marché", "Nous marchions", "Nous marcheriez", "Nous allons marcher"],
+              "reponse_correcte": "Nous marchions"
+            },
+            {
+              "numero": 24,
+              "partie": "Structure de phrase",
+              "enonce": "« Je le regarde d’un air incrédule » est :",
+              "options": ["Phrase simple", "Juxtaposition", "Coordination", "Subordination"],
+              "reponse_correcte": "Phrase simple"
+            },
+            {
+              "numero": 25,
+              "partie": "Structure de phrase",
+              "enonce": "Le lien entre « lève la tête » et « s’éloigne » est une :",
+              "options": ["Juxtaposition", "Coordination (avec 'et')", "Subordination", "Nominalisation"],
+              "reponse_correcte": "Coordination (avec 'et')"
+            }
+
+          ]
+        }
+      ]
+    }
+  ]
+}

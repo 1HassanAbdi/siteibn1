@@ -1,0 +1,158 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Le premier pas",
+    "niveau": "2e année",
+    "session": "Le premier pas",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Le premier pas",
+          "image": "/imageoqre/neil_armstrong.jpg",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "C’est le 20 juillet 1969. Neil Armstrong marche sur la Lune. Il a voyagé trois jours pour s’y rendre. Il porte une combinaison spatiale, car il n’y a pas d’air sur la Lune. Il n’y a pas d’eau non plus. Personne n’est encore allé sur la Lune. Neil est le premier homme sur la Lune."
+            },
+            {
+              "p": 2,
+              "contenu": "Neil fait quelque chose. Il le fait tout de suite. Il le fait dès qu’il sort. Que fait-il ? Il prend du sol lunaire. Le sol lunaire, c’est de la terre qui provient de la Lune. Le sol lunaire est rocheux. Il est poussiéreux. Neil met le sol lunaire dans un sac. Il met le sac dans une poche spéciale. Elle est dans sa combinaison spatiale. Elle est faite spécialement pour le sol lunaire."
+            },
+            {
+              "p": 3,
+              "contenu": "Pourquoi Neil prend-il du sol lunaire ? Personne ne s’est rendu sur la Lune avant lui. Neil devra peut-être quitter la Lune rapidement. Il devra peut-être partir avant d’avoir trouvé des choses pour les scientifiques. C’est pour cela que Neil commence par prendre du sol lunaire. Il le fait pour éviter de revenir les mains vides. Les scientifiques pourront regarder les roches. Ils pourront les étudier et apprendre des choses au sujet de la Lune."
+            }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Qui est le premier homme à marcher sur la Lune ?",
+              "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
+              "reponse_correcte": "Neil Armstrong"
+            },
+            {
+              "numero": 2,
+              "enonce": "Quand Neil Armstrong a-t-il marché sur la Lune ?",
+              "options": ["20 juillet 1969", "21 juillet 1969", "20 juillet 1970", "21 juillet 1970"],
+              "reponse_correcte": "20 juillet 1969"
+            },
+            {
+              "numero": 3,
+              "enonce": "Combien de jours Neil a-t-il voyagé pour atteindre la Lune ?",
+              "options": ["1 jour", "2 jours", "3 jours", "5 jours"],
+              "reponse_correcte": "3 jours"
+            },
+            {
+              "numero": 4,
+              "enonce": "Pourquoi Neil porte-t-il une combinaison spatiale ?",
+              "options": ["Pour faire joli", "Parce qu'il fait froid", "Parce qu'il n’y a pas d’air sur la Lune", "Pour transporter le sol lunaire"],
+              "reponse_correcte": "Parce qu'il n’y a pas d’air sur la Lune"
+            },
+            {
+              "numero": 5,
+              "enonce": "Qu’est-ce que Neil prend tout de suite en sortant ?",
+              "options": ["Une roche terrestre", "Du sol lunaire", "Une pierre de Mars", "De l’eau"],
+              "reponse_correcte": "Du sol lunaire"
+            },
+            {
+              "numero": 6,
+              "enonce": "Comment est le sol lunaire ?",
+              "options": ["Rocheux et poussiéreux", "Liquide et boueux", "Mou et humide", "Sec et glacé"],
+              "reponse_correcte": "Rocheux et poussiéreux"
+            },
+            {
+              "numero": 7,
+              "enonce": "Où Neil met-il le sol lunaire qu’il prend ?",
+              "options": ["Dans sa main", "Dans un sac spécial", "Dans sa navette spatiale", "Sur le sol"],
+              "reponse_correcte": "Dans un sac spécial"
+            },
+            {
+              "numero": 8,
+              "enonce": "Pourquoi Neil prend-il le sol lunaire avant de faire autre chose ?",
+              "options": ["Pour le goûter", "Pour les scientifiques", "Pour décorer la Lune", "Pour le montrer aux enfants"],
+              "reponse_correcte": "Pour les scientifiques"
+            },
+            {
+              "numero": 9,
+              "enonce": "Que pourront faire les scientifiques avec le sol lunaire ?",
+              "options": ["Le manger", "L’étudier et apprendre des choses sur la Lune", "Le lancer dans l’espace", "Le vendre"],
+              "reponse_correcte": "L’étudier et apprendre des choses sur la Lune"
+            },
+            {
+              "numero": 10,
+              "enonce": "Personne n’était allé sur la Lune avant Neil. Vrai ou faux ?",
+              "options": ["Vrai", "Faux"],
+              "reponse_correcte": "Vrai"
+            },
+            {
+              "numero": 11,
+              "enonce": "Pourquoi Neil doit-il peut-être partir rapidement de la Lune ?",
+              "options": ["Parce qu’il a peur", "Parce que le temps est limité", "Parce qu’il n’aime pas la Lune", "Parce qu’il doit manger"],
+              "reponse_correcte": "Parce que le temps est limité"
+            },
+            {
+              "numero": 12,
+              "enonce": "Comment s’appelle la poche spéciale pour le sol lunaire ?",
+              "options": ["Une poche normale", "Une poche spatiale", "Une poche spéciale intégrée à la combinaison", "Une poche de transport"],
+              "reponse_correcte": "Une poche spéciale intégrée à la combinaison"
+            },
+            {
+              "numero": 13,
+              "enonce": "Que signifie le mot « combinaison » dans le texte ?",
+              "options": ["Une tenue spéciale pour l’espace", "Une danse", "Un jeu", "Une collection de pierres"],
+              "reponse_correcte": "Une tenue spéciale pour l’espace"
+            },
+            {
+              "numero": 14,
+              "enonce": "Que veut dire « poussiéreux » ?",
+              "options": ["Avec beaucoup de poussière", "Mouillé", "Glissant", "Rocheux"],
+              "reponse_correcte": "Avec beaucoup de poussière"
+            },
+            {
+              "numero": 15,
+              "enonce": "Pourquoi Neil met-il le sol dans un sac plutôt que dans sa main ?",
+              "options": ["Pour ne pas le perdre", "Pour le manger", "Pour le jeter", "Pour le montrer à la Lune"],
+              "reponse_correcte": "Pour ne pas le perdre"
+            },
+            {
+              "numero": 16,
+              "enonce": "Que signifie « revenir les mains vides » ?",
+              "options": ["Revenir sans rien avoir apporté", "Revenir avec des cadeaux", "Revenir en courant", "Revenir en chantant"],
+              "reponse_correcte": "Revenir sans rien avoir apporté"
+            },
+            {
+              "numero": 17,
+              "enonce": "Dans le texte, qui sont les personnes qui vont étudier le sol lunaire ?",
+              "options": ["Les enseignants", "Les scientifiques", "Les astronautes", "Les enfants"],
+              "reponse_correcte": "Les scientifiques"
+            },
+            {
+              "numero": 18,
+              "enonce": "Que signifie « rocheux » ?",
+              "options": ["Avec beaucoup de pierres", "Mou et doux", "Liquide", "Poussiéreux"],
+              "reponse_correcte": "Avec beaucoup de pierres"
+            },
+            {
+              "numero": 19,
+              "enonce": "Neil prend-il de l’eau sur la Lune ?",
+              "options": ["Oui", "Non"],
+              "reponse_correcte": "Non"
+            },
+            {
+              "numero": 20,
+              "enonce": "Pourquoi Neil est-il important dans l’histoire ?",
+              "options": ["Parce qu’il a voyagé dans l’espace", "Parce qu’il est le premier homme sur la Lune", "Parce qu’il a trouvé de l’eau", "Parce qu’il est scientifique"],
+              "reponse_correcte": "Parce qu’il est le premier homme sur la Lune"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

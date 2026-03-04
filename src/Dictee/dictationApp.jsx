@@ -162,6 +162,7 @@ const DictationApp1 = () => {
     if (!text) return;
     const cleanWord = text.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, "").replace(/\s+/g, "_");
     const audioPath = `/audio/${selectedLevel}A/semaine${activeWeek}/${cleanWord}.mp3`;
+    console.log("le chemin",audioPath )
     const audio = new Audio(audioPath);
     audio.play().catch(() => {
       const utterance = new SpeechSynthesisUtterance(text);
