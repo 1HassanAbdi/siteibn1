@@ -1,0 +1,140 @@
+{
+  "test_info": {
+    "session": "Mathématiques mesures 🧮",
+    "niveau": "3A",
+    "target": "maths_3a_mesures",
+    "subject": "maths"
+  },
+  "parties": [
+    {
+      "id": "Module_2",
+      "sections": [
+        {
+          "titre": "Mesures : longueur et température 📏🌡️",
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Quelle unité est la plus adéquate pour mesurer la longueur d'un autobus 🚌 ?",
+              "options": ["m", "dm", "cm", "mm"],
+              "reponse_correcte": "m"
+            },
+            {
+              "numero": 2,
+              "enonce": "Quelle unité est la plus adéquate pour mesurer la longueur d'un crayon ✏️ ?",
+              "options": ["m", "dm", "cm", "mm"],
+              "reponse_correcte": "cm"
+            },
+           {
+  "numero": 3,
+  "enonce": "Quelle unité est la plus adéquate pour mesurer la taille d'une fourmi 🐜 ?",
+  "options": ["m", "dm", "cm", "mm"],
+  "reponse_correcte": "mm"
+},
+            {
+              "numero": 4,
+              "enonce": "Quel outil est utilisé pour mesurer la température 🌡️ ?",
+              "options": ["règle", "thermomètre", "balance", "chronomètre"],
+              "reponse_correcte": "thermomètre"
+            },
+            {
+              "numero": 5,
+              "enonce": "Quelle température correspond à une journée chaude d'été ☀️ ?",
+              "options": ["30 °C", "-5 °C", "0 °C", "5 °C"],
+              "reponse_correcte": "30 °C"
+            },
+            {
+              "numero": 6,
+              "enonce": "Combien de millimètres y a-t-il dans 3 cm 📏 ?",
+              "options": ["3 mm", "30 mm", "300 mm", "3000 mm"],
+              "reponse_correcte": "30 mm"
+            },
+            {
+              "numero": 7,
+              "enonce": "Combien de centimètres y a-t-il dans 2 dm 📏 ?",
+              "options": ["2 cm", "20 cm", "200 cm", "2000 cm"],
+              "reponse_correcte": "20 cm"
+            },
+            {
+              "numero": 8,
+              "enonce": "Combien de centimètres y a-t-il dans 1 m 📏 ?",
+              "options": ["10 cm", "50 cm", "100 cm", "1000 cm"],
+              "reponse_correcte": "100 cm"
+            },
+            {
+              "numero": 9,
+              "enonce": "Combien de millimètres y a-t-il dans 5 cm 📏 ?",
+              "options": ["5 mm", "50 mm", "500 mm", "5000 mm"],
+              "reponse_correcte": "50 mm"
+            },
+            {
+              "numero": 10,
+              "enonce": "Combien de décimètres y a-t-il dans 1 m 📏 ?",
+              "options": ["1 dm", "5 dm", "10 dm", "100 dm"],
+              "reponse_correcte": "10 dm"
+            },
+            {
+              "numero": 11,
+              "enonce": "Compare : 5 dm 📏 ____ 40 cm 📏",
+              "options": [">", "<", "=", "aucune de ces réponses"],
+              "reponse_correcte": ">"
+            },
+            {
+              "numero": 12,
+              "enonce": "Compare : 1 m 📏 ____ 90 cm 📏",
+              "options": [">", "<", "=", "aucune de ces réponses"],
+              "reponse_correcte": ">"
+            },
+            {
+              "numero": 13,
+              "enonce": "Compare : 30 mm 📏 ____ 3 cm 📏",
+              "options": [">", "<", "=", "aucune de ces réponses"],
+              "reponse_correcte": "="
+            },
+            {
+              "numero": 14,
+              "enonce": "Compare : 8 dm 📏 ____ 1 m 📏",
+              "options": [">", "<", "=", "aucune de ces réponses"],
+              "reponse_correcte": "<"
+            },
+            {
+              "numero": 15,
+              "enonce": "Compare : 100 cm 📏 ____ 1 m 📏",
+              "options": [">", "<", "=", "aucune de ces réponses"],
+              "reponse_correcte": "="
+            },
+            {
+              "numero": 16,
+              "enonce": "Quelle température est la plus froide ❄️ ?",
+              "options": ["10 °C", "0 °C", "-5 °C", "5 °C"],
+              "reponse_correcte": "-5 °C"
+            },
+            {
+              "numero": 17,
+              "enonce": "Quelle température correspond au point de congélation de l'eau 💧 ?",
+              "options": ["0 °C", "10 °C", "20 °C", "30 °C"],
+              "reponse_correcte": "0 °C"
+            },
+            {
+              "numero": 18,
+              "enonce": "Quelle mesure est la plus longue 📏 ?",
+              "options": ["5 cm", "50 cm", "4 dm", "500 mm"],
+              "reponse_correcte": "4 dm"
+            },
+            {
+              "numero": 19,
+              "enonce": "Une règle mesure 30 cm 📏. Quelle est sa longueur en millimètres ?",
+              "options": ["30 mm", "300 mm", "3000 mm", "3 mm"],
+              "reponse_correcte": "300 mm"
+            },
+            {
+              "numero": 20,
+              "enonce": "Un bâton mesure 2 m 📏. Quelle est sa longueur en centimètres ?",
+              "options": ["20 cm", "200 cm", "2000 cm", "2 cm"],
+              "reponse_correcte": "200 cm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

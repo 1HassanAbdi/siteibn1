@@ -63,8 +63,13 @@
     "matiere": "MATHS", 
     "titre": "Monnaie et Mesure", 
     "chemin": "./data/MATHS/Monnaie_Mesure.json" 
-    },
-    
+    },{ 
+    "slug": "Mathématiqueslongueursperimetres", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Mathématiques longueursper imetres", 
+    "chemin": "./data/MATHS/Mathématiqueslongueursperimetres.json"
+  },
     { 
     "slug": "Ungoutsale", 
     "niveau": 3, 
@@ -90,8 +95,7 @@
     "titre": "Le premier pas", 
     "chemin": "./data/FR/Lepremierpas.json" 
     }
-     
-
+    
     
 
     
