@@ -117,8 +117,8 @@
             {
               "numero": 18,
               "enonce": "Quelle mesure est la plus longue 📏 ?",
-              "options": ["5 cm", "50 cm", "4 dm", "500 mm"],
-              "reponse_correcte": "4 dm"
+              "options": ["5 cm", "50 cm", "4 dm", "5000 mm"],
+              "reponse_correcte": "50 dm"
             },
             {
               "numero": 19,

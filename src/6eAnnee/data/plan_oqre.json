@@ -31,7 +31,7 @@
   ],
   "calendrier": [
     {
-      "id": "1",
+      "id": "sem_1_fev",
       "dates": "30 Jan - 5 Feb",
       "domaine": { "fr": "Sens du Nombre", "en": "Number Sense" },
       "attente_code": "B1.1 & B1.4",
@@ -42,7 +42,7 @@
       "status": "completed"
     },
     {
-      "id": "2",
+      "id": "sem_2_fev",
       "dates": "6 Feb - 12 Feb",
       "domaine": { "fr": "Nombres et Entiers", "en": "Integers and Numbers" },
       "attente_code": "B1.2 & B1.3",
@@ -53,7 +53,7 @@
       "status": "current"
     },
     {
-      "id": "3",
+      "id": "sem_3_fev",
       "dates": "13 Feb - 19 Feb",
       "domaine": { "fr": "Propriétés des nombres", "en": "Number Properties" },
       "attente_code": "B2.2 & B2.6",
@@ -64,7 +64,7 @@
       "status": "next"
     },
     {
-      "id": "4",
+      "id": "sem_4_fev",
       "dates": "20 Feb - 26 Feb",
       "domaine": { "fr": "Calcul et Priorité", "en": "Operations and Priority" },
       "attente_code": "B2.1 & B2.3",
