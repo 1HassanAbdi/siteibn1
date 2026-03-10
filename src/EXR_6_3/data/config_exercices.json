@@ -7,96 +7,88 @@
     "chemin": "./data/FR/billet.json" 
   },
   { 
-    "slug": "pieuvre", 
-    "niveau": 6, 
-    "matiere": "FR", 
-    "titre": "La Pieuvre", 
-    "chemin": "./data/FR/Lapieuvre.json" 
-  },
-  
-  { 
-    "slug": "inventions", 
-    "niveau": 6, 
-    "matiere": "FR", 
-    "titre": "les inventions recentes", 
-    "chemin": "./data/FR/inventions.json" 
-  },{ 
-    "slug": "Protéger-les-rhinocéros", 
-    "niveau": 6, 
-    "matiere": "FR", 
-    "titre": "Protéger les rhinocéros", 
-    "chemin": "./data/FR/Protéger-les-rhinocéros.json" 
-  },{ 
-    "slug": " Une_promenade_inoubliable", 
-    "niveau": 6, 
-    "matiere": "FR", 
-    "titre": " Une promenade inoubliable", 
-    "chemin": "./data/FR/promenade.json" 
-  }
- 
-  
-  ,{ 
-    "slug": "Mathématiques_decimaux_entiers_recherche", 
-    "niveau": 6, 
-    "matiere": "MATHS", 
-    "titre": "Mathématiques_decimaux_entiers_recherche", 
-    "chemin": "./data/MATHS/dec_ent.json" 
-    },
-    
-    { 
-    "slug": "regularité", 
-    "niveau": 3, 
-    "matiere": "MATHS", 
-    "titre": "regularité", 
-    "chemin": "./data/MATHS/regularit1.json" 
-    },
-    
-    { 
-    "slug": "muti_div", 
-    "niveau": 3, 
-    "matiere": "MATHS", 
-    "titre": "Multiplication, Division et Régularité", 
-    "chemin": "./data/MATHS/muti_div.json" 
-    },{ 
-    "slug": "Monnaie_Mesure", 
-    "niveau": 3, 
-    "matiere": "MATHS", 
-    "titre": "Monnaie et Mesure", 
-    "chemin": "./data/MATHS/Monnaie_Mesure.json" 
-    },{ 
-    "slug": "Mathématiqueslongueursperimetres", 
-    "niveau": 3, 
-    "matiere": "MATHS", 
-    "titre": "Mathématiques longueursper imetres", 
-    "chemin": "./data/MATHS/Mathématiqueslongueursperimetres.json"
-  },
-    { 
     "slug": "Ungoutsale", 
     "niveau": 3, 
     "matiere": "FR", 
     "titre": "Un goût salé", 
     "chemin": "./data/FR/Ungoutsale.json" 
-    },{ 
+  },
+  { 
     "slug": "Drôledecocotier", 
     "niveau": 3, 
     "matiere": "FR", 
     "titre": "Drôle de cocotier", 
     "chemin": "./data/FR/Drôledecocotier.json" 
-    },{ 
-    "slug": "Drôledecocotier", 
-    "niveau": 3, 
-    "matiere": "FR", 
-    "titre": "Drôle de cocotier", 
-    "chemin": "./data/FR/Drôledecocotier.json" 
-    },{ 
+  },
+  { 
     "slug": "Lepremierpas", 
     "niveau": 3, 
     "matiere": "FR", 
     "titre": "Le premier pas", 
     "chemin": "./data/FR/Lepremierpas.json" 
-    }
-    
-    
+  },
+  { 
+    "slug": "pieuvre", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": "La pieuvre", 
+    "chemin": "./data/FR/Lapieuvre.json" 
+  },
+  { 
+    "slug": "inventions", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": "Les inventions récentes", 
+    "chemin": "./data/FR/inventions.json" 
+  },
+  { 
+    "slug": "Protéger-les-rhinocéros", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": "Protéger les rhinocéros", 
+    "chemin": "./data/FR/Protéger-les-rhinocéros.json" 
+  },
+  { 
+    "slug": "Une_promenade_inoubliable", 
+    "niveau": 6, 
+    "matiere": "FR", 
+    "titre": "Une promenade inoubliable", 
+    "chemin": "./data/FR/promenade.json" 
+  },
 
-    
+  { 
+    "slug": "regularité", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Régularité", 
+    "chemin": "./data/MATHS/regularit1.json" 
+  },
+  { 
+    "slug": "muti_div", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Multiplication, division et régularité", 
+    "chemin": "./data/MATHS/muti_div.json" 
+  },
+  { 
+    "slug": "Monnaie_Mesure", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Monnaie et mesure", 
+    "chemin": "./data/MATHS/Monnaie_Mesure.json" 
+  },
+  { 
+    "slug": "Mathématiqueslongueursperimetres", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Mathématiques : longueurs et périmètres", 
+    "chemin": "./data/MATHS/Mathématiqueslongueursperimetres.json"
+  },
+  { 
+    "slug": "Mathématiques_decimaux_entiers_recherche", 
+    "niveau": 6, 
+    "matiere": "MATHS", 
+    "titre": "Mathématiques : décimaux et entiers (recherche)", 
+    "chemin": "./data/MATHS/dec_ent.json" 
+  }
 ]

@@ -20,7 +20,12 @@ const ALL_MISSIONS = [
   { id: "p48_49", module: 4, title: { fr: "Comparer et ordonner les décimaux", en: "Comparing and Ordering Decimals" }, pages: "48-49" },
   { id: "p50_51", module: 4, title: { fr: "Arrondir les nombres décimaux", en: "Rounding Decimal Numbers" }, pages: "50-51" },
   { id: "p52_53", module: 4, title: { fr: "Estimation de sommes et différences", en: "Estimating Sums and Differences" }, pages: "52-53" },
-  { id: "p54_55", module: 4, title: { fr: "Addition et soustraction de décimaux", en: "Adding and Subtracting Decimals" }, pages: "54-55" }
+  { id: "p54_55", module: 4, title: { fr: "Addition et soustraction de décimaux", en: "Adding and Subtracting Decimals" }, pages: "54-55" },
+   { id: "p60_61", module: 4, title: { fr: "Multiplier par 0,1, 0,01 et 0,001", en: "Multiplying by 0.1, 0.01, and 0.001" }, pages: "60-61" },
+  { id: "p62_63", module: 4, title: { fr: "Multiplier des décimaux par un naturel à 1 chiffre", en: "Multiplying Decimals by a 1-digit Whole Number" }, pages: "62-63" },
+  { id: "p64_65", module: 4, title: { fr: "Diviser des décimaux par un naturel à 1 chiffre", en: "Dividing Decimals by a 1-digit Whole Number" }, pages: "64-65" },
+  { id: "p66_67", module: 4, title: { fr: "Diviser des nombres décimaux", en: "Dividing Decimal Numbers" }, pages: "66-67" }
+
 ];
 
 // --- 2. TRADUCTIONS (DÉFINIES AVANT LE COMPOSANT) ---

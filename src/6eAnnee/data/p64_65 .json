@@ -1,0 +1,196 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Les nombres décimaux",
+    "en": "Decimal Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p64-ex1a",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Calcule : 3,896 ÷ 4", "en": "Calculate: 3.896 ÷ 4" },
+      "type": "select",
+      "options": [{ "fr": "0,974", "en": "0.974" }, { "fr": "9,74", "en": "9.74" }],
+      "reponse_attendue": { "fr": "0,974", "en": "0.974" }
+    },
+    {
+      "id": "p64-ex1b",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Calcule : 5,138 ÷ 2", "en": "Calculate: 5.138 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "2,569", "en": "2.569" }, { "fr": "2,069", "en": "2.069" }],
+      "reponse_attendue": { "fr": "2,569", "en": "2.569" }
+    },
+    {
+      "id": "p64-ex1c",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Calcule : 3,045 ÷ 5", "en": "Calculate: 3.045 ÷ 5" },
+      "type": "select",
+      "options": [{ "fr": "0,609", "en": "0.609" }, { "fr": "0,69", "en": "0.69" }],
+      "reponse_attendue": { "fr": "0,609", "en": "0.609" }
+    },
+    {
+      "id": "p64-ex1d",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Calcule : 0,948 ÷ 2", "en": "Calculate: 0.948 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "0,474", "en": "0.474" }, { "fr": "0,424", "en": "0.424" }],
+      "reponse_attendue": { "fr": "0,474", "en": "0.474" }
+    },
+    {
+      "id": "p64-ex1e",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": { "fr": "Calcule : 0,924 ÷ 3", "en": "Calculate: 0.924 ÷ 3" },
+      "type": "select",
+      "options": [{ "fr": "0,308", "en": "0.308" }, { "fr": "0,38", "en": "0.38" }],
+      "reponse_attendue": { "fr": "0,308", "en": "0.308" }
+    },
+    {
+      "id": "p64-ex1f",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": { "fr": "Calcule : 7,896 ÷ 4", "en": "Calculate: 7.896 ÷ 4" },
+      "type": "select",
+      "options": [{ "fr": "1,974", "en": "1.974" }, { "fr": "1,874", "en": "1.874" }],
+      "reponse_attendue": { "fr": "1,974", "en": "1.974" }
+    },
+    {
+      "id": "p64-ex1g",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "g",
+      "consigne": { "fr": "Calcule : 1,268 ÷ 2", "en": "Calculate: 1.268 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "0,634", "en": "0.634" }, { "fr": "0,617", "en": "0.617" }],
+      "reponse_attendue": { "fr": "0,634", "en": "0.634" }
+    },
+    {
+      "id": "p64-ex1h",
+      "page": 64,
+      "exercice_num": 1,
+      "sous_question": "h",
+      "consigne": { "fr": "Calcule : 3,762 ÷ 6", "en": "Calculate: 3.762 ÷ 6" },
+      "type": "select",
+      "options": [{ "fr": "0,627", "en": "0.627" }, { "fr": "0,612", "en": "0.612" }],
+      "reponse_attendue": { "fr": "0,627", "en": "0.627" }
+    },
+    {
+      "id": "p65-ex1a",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Calcule : 5,335 ÷ 5", "en": "Calculate: 5.335 ÷ 5" },
+      "type": "select",
+      "options": [{ "fr": "1,067", "en": "1.067" }, { "fr": "1,67", "en": "1.67" }],
+      "reponse_attendue": { "fr": "1,067", "en": "1.067" }
+    },
+    {
+      "id": "p65-ex1b",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Calcule : 6,148 ÷ 4", "en": "Calculate: 6.148 ÷ 4" },
+      "type": "select",
+      "options": [{ "fr": "1,537", "en": "1.537" }, { "fr": "1,527", "en": "1.527" }],
+      "reponse_attendue": { "fr": "1,537", "en": "1.537" }
+    },
+    {
+      "id": "p65-ex1c",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Calcule : 0,315 ÷ 7", "en": "Calculate: 0.315 ÷ 7" },
+      "type": "select",
+      "options": [{ "fr": "0,045", "en": "0.045" }, { "fr": "0,45", "en": "0.45" }],
+      "reponse_attendue": { "fr": "0,045", "en": "0.045" }
+    },
+    {
+      "id": "p65-ex1d",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Calcule : 4,738 ÷ 2", "en": "Calculate: 4.738 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "2,369", "en": "2.369" }, { "fr": "2,359", "en": "2.359" }],
+      "reponse_attendue": { "fr": "2,369", "en": "2.369" }
+    },
+    {
+      "id": "p65-ex1e",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": { "fr": "Calcule : 0,363 ÷ 3", "en": "Calculate: 0.363 ÷ 3" },
+      "type": "select",
+      "options": [{ "fr": "0,121", "en": "0.121" }, { "fr": "0,111", "en": "0.111" }],
+      "reponse_attendue": { "fr": "0,121", "en": "0.121" }
+    },
+    {
+      "id": "p65-ex1f",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": { "fr": "Calcule : 1,144 ÷ 8", "en": "Calculate: 1.144 ÷ 8" },
+      "type": "select",
+      "options": [{ "fr": "0,143", "en": "0.143" }, { "fr": "0,133", "en": "0.133" }],
+      "reponse_attendue": { "fr": "0,143", "en": "0.143" }
+    },
+    {
+      "id": "p65-ex1g",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "g",
+      "consigne": { "fr": "Calcule : 7,542 ÷ 6", "en": "Calculate: 7.542 ÷ 6" },
+      "type": "select",
+      "options": [{ "fr": "1,257", "en": "1.257" }, { "fr": "1,247", "en": "1.247" }],
+      "reponse_attendue": { "fr": "1,257", "en": "1.257" }
+    },
+    {
+      "id": "p65-ex1h",
+      "page": 65,
+      "exercice_num": 1,
+      "sous_question": "h",
+      "consigne": { "fr": "Calcule : 17,072 ÷ 8", "en": "Calculate: 17.072 ÷ 8" },
+      "type": "select",
+      "options": [{ "fr": "2,134", "en": "2.134" }, { "fr": "2,124", "en": "2.124" }],
+      "reponse_attendue": { "fr": "2,134", "en": "2.134" }
+    },
+    {
+      "id": "p65-ex3",
+      "page": 65,
+      "exercice_num": 3,
+      "consigne": { "fr": "Renée a payé 12,96 $ pour 6 sacs de croustilles. Quel est le prix d'un sac ?", "en": "Renée paid $12.96 for 6 bags of chips. What is the price of one bag?" },
+      "type": "select",
+      "options": [{ "fr": "2,16 $", "en": "$2.16" }, { "fr": "2,06 $", "en": "$2.06" }],
+      "reponse_attendue": { "fr": "2,16 $", "en": "$2.16" }
+    },
+    {
+      "id": "p65-ex4",
+      "page": 65,
+      "exercice_num": 4,
+      "consigne": { "fr": "Asmaa a payé 9,96 $ pour 3 paires de chaussettes. Jagdeep a payé 14,75 $ pour 5 paires. Qui a fait le meilleur achat ?", "en": "Asmaa paid $9.96 for 3 pairs of socks. Jagdeep paid $14.75 for 5 pairs. Who made the best purchase?" },
+      "type": "select",
+      "options": [{ "fr": "Jagdeep (2,95 $/paire)", "en": "Jagdeep ($2.95/pair)" }, { "fr": "Asmaa (3,32 $/paire)", "en": "Asmaa ($3.32/pair)" }],
+      "reponse_attendue": { "fr": "Jagdeep (2,95 $/paire)", "en": "Jagdeep ($2.95/pair)" }
+    },
+    {
+      "id": "p65-vpl",
+      "page": 65,
+      "exercice_num": "Va plus loin",
+      "consigne": { "fr": "Par quel nombre naturel peux-tu diviser 2,049 pour obtenir un quotient de 0,683 ?", "en": "What whole number can you divide 2.049 by to get a quotient of 0.683?" },
+      "type": "select",
+      "options": [{ "fr": "3", "en": "3" }, { "fr": "4", "en": "4" }],
+      "reponse_attendue": { "fr": "3", "en": "3" }
+    }
+  ]
+}

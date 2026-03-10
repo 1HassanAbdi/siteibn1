@@ -195,5 +195,93 @@ export const allStories = {
       description: "Le vocabulaire de la classe.",
       instructions: ["Lis les actions", "Écris les mots", "Comprends l'histoire"]
     }
+  },  soupe: {
+    title: "La Soupe",
+    items: [
+      { 
+        id: 1, 
+        text: "Papa décide de faire sa fameuse soupe aux légumes.", 
+        word: "SOUPE", 
+        syllables: ["SOU", "PE"], 
+        emoji: "🥣", 
+        image: getMedia('soupe', '1', 'png'), 
+        audio: getMedia('soupe', '1', 'mp3'),
+        wordAudio: getMedia('soupe', 'soupe', 'mp3'),
+        distractors: [getMedia('repas', '4', 'png')]
+      },
+      { 
+        id: 2, 
+        text: "Mélanie lave les carottes et le céleri.", 
+        word: "CAROTTES", 
+        syllables: ["CA", "ROT", "TES"], 
+        emoji: "🥕", 
+        image: getMedia('soupe', '2', 'png'), 
+        audio: getMedia('soupe', '2', 'mp3'),
+        wordAudio: getMedia('soupe', 'CAROTTES', 'mp3'),
+        distractors: [getMedia('repas', '1', 'png')]
+      },
+      { 
+        id: 3, 
+        text: "Dans le bouillon de poulet,Rémi ajoute des morceaux de poireaux.", 
+        word: "POIREAUX", 
+        syllables: ["POI", "REAUX"], 
+        emoji: "🥬", 
+        image: getMedia('soupe', '3', 'png'), 
+        audio: getMedia('soupe', '3', 'mp3'),
+        wordAudio: getMedia('soupe', 'POIREAUX', 'mp3'),
+        distractors: [getMedia('repas', '2', 'png')]
+      },
+      { 
+        id: 4, 
+        text: "Papa ajoute une boîte de tomates coupées en dés.", 
+        word: "TOMATES", 
+        syllables: ["TO", "MA", "TES"], 
+        emoji: "🍅", 
+        image: getMedia('soupe', '4', 'png'), 
+        audio: getMedia('soupe', '4', 'mp3'),
+        wordAudio: getMedia('soupe', 'TOMATES', 'mp3'),
+        distractors: [getMedia('repas', '5', 'png')]
+      },
+      { 
+        id: 5, 
+        text: "Papa, Mélanie et Rémi regardent la soupe qui mijote.", 
+        word: "MIJOTE", 
+        syllables: ["MI", "JO", "TE"], 
+        emoji: "🔥", 
+        image: getMedia('soupe', '5', 'png'), 
+        audio: getMedia('soupe', '5', 'mp3'),
+        wordAudio: getMedia('soupe', 'MIJOTE', 'mp3'),
+        distractors: [getMedia('repas', '7', 'png')]
+      },
+      { 
+        id: 6, 
+        text: "Toute la famille se régale pour le dîner.", 
+        word: "FAMILLE", 
+        syllables: ["FA", "MI", "LLE"], 
+        emoji: "👨‍👩‍👧‍👦", 
+        image: getMedia('soupe', '6', 'png'), 
+        audio: getMedia('soupe', '6', 'mp3'),
+        wordAudio: getMedia('soupe', 'FAMILLE', 'mp3'),
+        distractors: [getMedia('repas', '10', 'png')]
+      }
+    ],
+    evaluation: [
+      { id: 1, type: "vraiFaux", question: "Papa prépare une soupe.", answer: true },
+      { id: 2, type: "vraiFaux", question: "Mélanie lave les pommes.", answer: false },
+      { id: 3, type: "vraiFaux", question: "Rémi ajoute des poireaux.", answer: true },
+      { id: 4, type: "vraiFaux", question: "Papa ajoute des tomates.", answer: true },
+      { id: 5, type: "vraiFaux", question: "La soupe est froide.", answer: false },
+
+      { id: 6, type: "qcm", question: "Qui lave les carottes ?", options: ["Mélanie", "Rémi", "Papa"], answer: "Mélanie" },
+      { id: 7, type: "qcm", question: "Que met Rémi dans la soupe ?", options: ["Du fromage", "Des poireaux", "Du pain"], answer: "Des poireaux" },
+      { id: 8, type: "qcm", question: "Que met Papa dans la soupe ?", options: ["Des tomates", "Du riz", "Du sucre"], answer: "Des tomates" },
+      { id: 9, type: "qcm", question: "Que fait la soupe ?", options: ["Elle dort", "Elle mijote", "Elle vole"], answer: "Elle mijote" },
+      { id: 10, type: "qcm", question: "Qui mange la soupe ?", options: ["La famille", "Les voisins", "Le chat"], answer: "La famille" }
+    ],
+    goal: {
+      title: "Module : La Soupe",
+      description: "Comprendre une courte histoire et le vocabulaire de la cuisine.",
+      instructions: ["Lis l'histoire", "Observe les images", "Réponds aux questions"]
+    }
   }
 };

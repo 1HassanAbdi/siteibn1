@@ -1,0 +1,427 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Les nombres décimaux",
+    "en": "Decimal Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p60-ex1a",
+      "page": 60,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Calcule mentalement : 2 × 0,1 ; 2 × 0,01 ; 2 × 0,001", "en": "Calculate mentally: 2 × 0.1; 2 × 0.01; 2 × 0.001" },
+      "type": "select",
+      "options": [
+        { "fr": "0,2 ; 0,02 ; 0,002", "en": "0.2; 0.02; 0.002" },
+        { "fr": "20 ; 200 ; 2000", "en": "20; 200; 2000" },
+        { "fr": "0,2 ; 0,22 ; 0,222", "en": "0.2; 0.22; 0.222" }
+      ],
+      "reponse_attendue": { "fr": "0,2 ; 0,02 ; 0,002", "en": "0.2; 0.02; 0.002" }
+    },
+    {
+      "id": "p60-ex1b",
+      "page": 60,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Calcule mentalement : 74 × 0,1 ; 74 × 0,01 ; 74 × 0,001", "en": "Calculate mentally: 74 × 0.1; 74 × 0.01; 74 × 0.001" },
+      "type": "select",
+      "options": [
+        { "fr": "7,4 ; 0,74 ; 0,074", "en": "7.4; 0.74; 0.074" },
+        { "fr": "74 ; 7,4 ; 0,74", "en": "74; 7.4; 0.74" }
+      ],
+      "reponse_attendue": { "fr": "7,4 ; 0,74 ; 0,074", "en": "7.4; 0.74; 0.074" }
+    },
+    {
+      "id": "p60-ex1c",
+      "page": 60,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Calcule mentalement : 235 × 0,1 ; 235 × 0,01 ; 235 × 0,001", "en": "Calculate mentally: 235 × 0.1; 235 × 0.01; 235 × 0.001" },
+      "type": "select",
+      "options": [
+        { "fr": "23,5 ; 2,35 ; 0,235", "en": "23.5; 2.35; 0.235" },
+        { "fr": "2,35 ; 0,235 ; 0,0235", "en": "2.35; 0.235; 0.0235" }
+      ],
+      "reponse_attendue": { "fr": "23,5 ; 2,35 ; 0,235", "en": "23.5; 2.35; 0.235" }
+    },
+    {
+      "id": "p60-ex1d",
+      "page": 60,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Calcule mentalement : 5 × 0,1 ; 5 × 0,01 ; 5 × 0,001", "en": "Calculate mentally: 5 × 0.1; 5 × 0.01; 5 × 0.001" },
+      "type": "select",
+      "options": [
+        { "fr": "0,5 ; 0,05 ; 0,005", "en": "0.5; 0.05; 0.005" },
+        { "fr": "50 ; 500 ; 5000", "en": "50; 500; 5000" }
+      ],
+      "reponse_attendue": { "fr": "0,5 ; 0,05 ; 0,005", "en": "0.5; 0.05; 0.005" }
+    },
+    {
+      "id": "p60-ex1e",
+      "page": 60,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": { "fr": "Calcule mentalement : 60 × 0,1 ; 60 × 0,01 ; 60 × 0,001", "en": "Calculate mentally: 60 × 0.1; 60 × 0.01; 60 × 0.001" },
+      "type": "select",
+      "options": [
+        { "fr": "6 ; 0,6 ; 0,06", "en": "6; 0.6; 0.06" },
+        { "fr": "0,6 ; 0,06 ; 0,006", "en": "0.6; 0.06; 0.006" }
+      ],
+      "reponse_attendue": { "fr": "6 ; 0,6 ; 0,06", "en": "6; 0.6; 0.06" }
+    },
+    {
+      "id": "p60-ex1f",
+      "page": 60,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": { "fr": "Calcule mentalement : 164 × 0,1 ; 164 × 0,01 ; 164 × 0,001", "en": "Calculate mentally: 164 × 0.1; 164 × 0.01; 164 × 0.001" },
+      "type": "select",
+      "options": [
+        { "fr": "16,4 ; 1,64 ; 0,164", "en": "16.4; 1.64; 0.164" },
+        { "fr": "1,64 ; 0,164 ; 0,0164", "en": "1.64; 0.164; 0.0164" }
+      ],
+      "reponse_attendue": { "fr": "16,4 ; 1,64 ; 0,164", "en": "16.4; 1.64; 0.164" }
+    },
+    {
+      "id": "p60-ex2a",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": { "fr": "Calcule : 13 × 0,1", "en": "Calculate: 13 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "1,3", "en": "1.3" }, { "fr": "0,13", "en": "0.13" }],
+      "reponse_attendue": { "fr": "1,3", "en": "1.3" }
+    },
+    {
+      "id": "p60-ex2b",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": { "fr": "Calcule : 52 × 0,001", "en": "Calculate: 52 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,052", "en": "0.052" }, { "fr": "0,52", "en": "0.52" }],
+      "reponse_attendue": { "fr": "0,052", "en": "0.052" }
+    },
+    {
+      "id": "p60-ex2c",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "c",
+      "consigne": { "fr": "Calcule : 8 × 0,01", "en": "Calculate: 8 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,08", "en": "0.08" }, { "fr": "0,8", "en": "0.8" }],
+      "reponse_attendue": { "fr": "0,08", "en": "0.08" }
+    },
+    {
+      "id": "p60-ex2d",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "d",
+      "consigne": { "fr": "Calcule : 59 × 0,01", "en": "Calculate: 59 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,59", "en": "0.59" }, { "fr": "5,9", "en": "5.9" }],
+      "reponse_attendue": { "fr": "0,59", "en": "0.59" }
+    },
+    {
+      "id": "p60-ex2e",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "e",
+      "consigne": { "fr": "Calcule : 3 × 0,01", "en": "Calculate: 3 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,03", "en": "0.03" }, { "fr": "0,3", "en": "0.3" }],
+      "reponse_attendue": { "fr": "0,03", "en": "0.03" }
+    },
+    {
+      "id": "p60-ex2f",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "f",
+      "consigne": { "fr": "Calcule : 231 × 0,001", "en": "Calculate: 231 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,231", "en": "0.231" }, { "fr": "2,31", "en": "2.31" }],
+      "reponse_attendue": { "fr": "0,231", "en": "0.231" }
+    },
+    {
+      "id": "p60-ex2g",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "g",
+      "consigne": { "fr": "Calcule : 519 × 0,001", "en": "Calculate: 519 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,519", "en": "0.519" }, { "fr": "5,19", "en": "5.19" }],
+      "reponse_attendue": { "fr": "0,519", "en": "0.519" }
+    },
+    {
+      "id": "p60-ex2h",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "h",
+      "consigne": { "fr": "Calcule : 152 × 0,1", "en": "Calculate: 152 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "15,2", "en": "15.2" }, { "fr": "1,52", "en": "1.52" }],
+      "reponse_attendue": { "fr": "15,2", "en": "15.2" }
+    },
+    {
+      "id": "p60-ex2i",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "i",
+      "consigne": { "fr": "Calcule : 6 × 0,001", "en": "Calculate: 6 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,006", "en": "0.006" }, { "fr": "0,06", "en": "0.06" }],
+      "reponse_attendue": { "fr": "0,006", "en": "0.006" }
+    },
+    {
+      "id": "p60-ex2j",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "j",
+      "consigne": { "fr": "Calcule : 7 × 0,1", "en": "Calculate: 7 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "0,7", "en": "0.7" }, { "fr": "70", "en": "70" }],
+      "reponse_attendue": { "fr": "0,7", "en": "0.7" }
+    },
+    {
+      "id": "p60-ex2k",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "k",
+      "consigne": { "fr": "Calcule : 6 × 0,001", "en": "Calculate: 6 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,006", "en": "0.006" }, { "fr": "0,06", "en": "0.06" }],
+      "reponse_attendue": { "fr": "0,006", "en": "0.006" }
+    },
+    {
+      "id": "p60-ex2l",
+      "page": 60,
+      "exercice_num": 2,
+      "sous_question": "l",
+      "consigne": { "fr": "Calcule : 73 × 0,01", "en": "Calculate: 73 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,73", "en": "0.73" }, { "fr": "7,3", "en": "7.3" }],
+      "reponse_attendue": { "fr": "0,73", "en": "0.73" }
+    },
+    {
+      "id": "p61-ex1a",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Calcule mentalement : 20 × 0,01", "en": "Calculate mentally: 20 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,2", "en": "0.2" }, { "fr": "0,02", "en": "0.02" }],
+      "reponse_attendue": { "fr": "0,2", "en": "0.2" }
+    },
+    {
+      "id": "p61-ex1b",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Calcule mentalement : 63 × 0,001", "en": "Calculate mentally: 63 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,063", "en": "0.063" }, { "fr": "0,63", "en": "0.63" }],
+      "reponse_attendue": { "fr": "0,063", "en": "0.063" }
+    },
+    {
+      "id": "p61-ex1c",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Calcule mentalement : 9 × 0,1", "en": "Calculate mentally: 9 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "0,9", "en": "0.9" }, { "fr": "0,09", "en": "0.09" }],
+      "reponse_attendue": { "fr": "0,9", "en": "0.9" }
+    },
+    {
+      "id": "p61-ex1d",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Calcule mentalement : 7 × 0,001", "en": "Calculate mentally: 7 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,007", "en": "0.007" }, { "fr": "0,07", "en": "0.07" }],
+      "reponse_attendue": { "fr": "0,007", "en": "0.007" }
+    },
+    {
+      "id": "p61-ex1e",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": { "fr": "Calcule mentalement : 3 × 0,01", "en": "Calculate mentally: 3 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,03", "en": "0.03" }, { "fr": "0,3", "en": "0.3" }],
+      "reponse_attendue": { "fr": "0,03", "en": "0.03" }
+    },
+    {
+      "id": "p61-ex1f",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": { "fr": "Calcule mentalement : 568 × 0,01", "en": "Calculate mentally: 568 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "5,68", "en": "5.68" }, { "fr": "56,8", "en": "56.8" }],
+      "reponse_attendue": { "fr": "5,68", "en": "5.68" }
+    },
+    {
+      "id": "p61-ex1g",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "g",
+      "consigne": { "fr": "Calcule mentalement : 354 × 0,1", "en": "Calculate mentally: 354 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "35,4", "en": "35.4" }, { "fr": "3,54", "en": "3.54" }],
+      "reponse_attendue": { "fr": "35,4", "en": "35.4" }
+    },
+    {
+      "id": "p61-ex1h",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "h",
+      "consigne": { "fr": "Calcule mentalement : 28 × 0,1", "en": "Calculate mentally: 28 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "2,8", "en": "2.8" }, { "fr": "0,28", "en": "0.28" }],
+      "reponse_attendue": { "fr": "2,8", "en": "2.8" }
+    },
+    {
+      "id": "p61-ex1i",
+      "page": 61,
+      "exercice_num": 1,
+      "sous_question": "i",
+      "consigne": { "fr": "Calcule mentalement : 158 × 0,001", "en": "Calculate mentally: 158 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,158", "en": "0.158" }, { "fr": "1,58", "en": "1.58" }],
+      "reponse_attendue": { "fr": "0,158", "en": "0.158" }
+    },
+    {
+      "id": "p61-ex2-39",
+      "page": 61,
+      "exercice_num": 2,
+      "sous_question": "Row 1",
+      "consigne": { "fr": "Multiplie 39 par 0,1 ; 0,01 ; 0,001.", "en": "Multiply 39 by 0.1; 0.01; 0.001." },
+      "type": "select",
+      "options": [{ "fr": "3,9 ; 0,39 ; 0,039", "en": "3.9; 0.39; 0.039" }, { "fr": "0,39 ; 0,039 ; 0,0039", "en": "0.39; 0.039; 0.0039" }],
+      "reponse_attendue": { "fr": "3,9 ; 0,39 ; 0,039", "en": "3.9; 0.39; 0.039" }
+    },
+    {
+      "id": "p61-ex2-47",
+      "page": 61,
+      "exercice_num": 2,
+      "sous_question": "Row 2",
+      "consigne": { "fr": "Multiplie 4,7 par 0,1 ; 0,01 ; 0,001.", "en": "Multiply 4.7 by 0.1; 0.01; 0.001." },
+      "type": "select",
+      "options": [{ "fr": "0,47 ; 0,047 ; 0,0047", "en": "0.47; 0.047; 0.0047" }, { "fr": "4,7 ; 0,47 ; 0,047", "en": "4.7; 0.47; 0.047" }],
+      "reponse_attendue": { "fr": "0,47 ; 0,047 ; 0,0047", "en": "0.47; 0.047; 0.0047" }
+    },
+    {
+      "id": "p61-ex3a",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "a",
+      "consigne": { "fr": "Effectue la multiplication : 75 × 0,1", "en": "Perform the multiplication: 75 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "7,5", "en": "7.5" }, { "fr": "0,75", "en": "0.75" }],
+      "reponse_attendue": { "fr": "7,5", "en": "7.5" }
+    },
+    {
+      "id": "p61-ex3b",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "b",
+      "consigne": { "fr": "Effectue la multiplication : 1 × 0,001", "en": "Perform the multiplication: 1 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,001", "en": "0.001" }, { "fr": "0,01", "en": "0.01" }],
+      "reponse_attendue": { "fr": "0,001", "en": "0.001" }
+    },
+    {
+      "id": "p61-ex3c",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "c",
+      "consigne": { "fr": "Effectue la multiplication : 71 × 0,01", "en": "Perform the multiplication: 71 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,71", "en": "0.71" }, { "fr": "7,1", "en": "7.1" }],
+      "reponse_attendue": { "fr": "0,71", "en": "0.71" }
+    },
+    {
+      "id": "p61-ex3d",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "d",
+      "consigne": { "fr": "Effectue la multiplication : 13 × 0,1", "en": "Perform the multiplication: 13 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "1,3", "en": "1.3" }, { "fr": "13", "en": "13" }],
+      "reponse_attendue": { "fr": "1,3", "en": "1.3" }
+    },
+    {
+      "id": "p61-ex3e",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "e",
+      "consigne": { "fr": "Effectue la multiplication : 9 × 0,01", "en": "Perform the multiplication: 9 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "0,09", "en": "0.09" }, { "fr": "0,9", "en": "0.9" }],
+      "reponse_attendue": { "fr": "0,09", "en": "0.09" }
+    },
+    {
+      "id": "p61-ex3f",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "f",
+      "consigne": { "fr": "Effectue la multiplication : 154 × 0,01", "en": "Perform the multiplication: 154 × 0.01" },
+      "type": "select",
+      "options": [{ "fr": "1,54", "en": "1.54" }, { "fr": "15,4", "en": "15.4" }],
+      "reponse_attendue": { "fr": "1,54", "en": "1.54" }
+    },
+    {
+      "id": "p61-ex3g",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "g",
+      "consigne": { "fr": "Effectue la multiplication : 62 × 0,001", "en": "Perform the multiplication: 62 × 0.001" },
+      "type": "select",
+      "options": [{ "fr": "0,062", "en": "0.062" }, { "fr": "0,62", "en": "0.62" }],
+      "reponse_attendue": { "fr": "0,062", "en": "0.062" }
+    },
+    {
+      "id": "p61-ex3h",
+      "page": 61,
+      "exercice_num": 3,
+      "sous_question": "h",
+      "consigne": { "fr": "Effectue la multiplication : 486 × 0,1", "en": "Perform the multiplication: 486 × 0.1" },
+      "type": "select",
+      "options": [{ "fr": "48,6", "en": "48.6" }, { "fr": "4,86", "en": "4.86" }],
+      "reponse_attendue": { "fr": "48,6", "en": "48.6" }
+    },
+    {
+      "id": "p61-ex4",
+      "page": 61,
+      "exercice_num": 4,
+      "consigne": { "fr": "Un bonbon haricot a une masse de 0,001 kg. Quelle est la masse de 98 bonbons haricots ?", "en": "A jelly bean has a mass of 0.001 kg. What is the mass of 98 jelly beans?" },
+      "type": "select",
+      "options": [{ "fr": "0,098 kg", "en": "0.098 kg" }, { "fr": "0,98 kg", "en": "0.98 kg" }],
+      "reponse_attendue": { "fr": "0,098 kg", "en": "0.098 kg" }
+    },
+    {
+      "id": "p61-vpl-1",
+      "page": 61,
+      "exercice_num": "Va plus loin",
+      "sous_question": "1",
+      "consigne": { "fr": "Une graine de fleur a une masse de 0,1 g. Quelle est la masse de 200 graines ?", "en": "A flower seed has a mass of 0.1 g. What is the mass of 200 seeds?" },
+      "type": "select",
+      "options": [{ "fr": "20 g", "en": "20 g" }, { "fr": "2 g", "en": "2 g" }],
+      "reponse_attendue": { "fr": "20 g", "en": "20 g" }
+    },
+    {
+      "id": "p61-vpl-2",
+      "page": 61,
+      "exercice_num": "Va plus loin",
+      "sous_question": "2",
+      "consigne": { "fr": "Combien de graines faut-il pour obtenir une masse de 0,5 kg ?", "en": "How many seeds are needed to get a mass of 0.5 kg?" },
+      "type": "select",
+      "options": [{ "fr": "5000", "en": "5000" }, { "fr": "500", "en": "500" }],
+      "reponse_attendue": { "fr": "5000", "en": "5000" }
+    }
+  ]
+}

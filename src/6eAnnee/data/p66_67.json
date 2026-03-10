@@ -1,0 +1,196 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Les nombres décimaux",
+    "en": "Decimal Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p66-ex1a",
+      "page": 66,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Divise jusqu'à un reste de zéro : 6,374 ÷ 4", "en": "Divide until the remainder is zero: 6.374 ÷ 4" },
+      "type": "select",
+      "options": [{ "fr": "1,5935", "en": "1.5935" }, { "fr": "1,593", "en": "1.593" }],
+      "reponse_attendue": { "fr": "1,5935", "en": "1.5935" }
+    },
+    {
+      "id": "p66-ex1b",
+      "page": 66,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Divise : 4,967 ÷ 2", "en": "Divide: 4.967 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "2,4835", "en": "2.4835" }, { "fr": "2,483", "en": "2.483" }],
+      "reponse_attendue": { "fr": "2,4835", "en": "2.4835" }
+    },
+    {
+      "id": "p66-ex1c",
+      "page": 66,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Divise : 0,473 ÷ 5", "en": "Divide: 0.473 ÷ 5" },
+      "type": "select",
+      "options": [{ "fr": "0,0946", "en": "0.0946" }, { "fr": "0,946", "en": "0.946" }],
+      "reponse_attendue": { "fr": "0,0946", "en": "0.0946" }
+    },
+    {
+      "id": "p66-ex1d",
+      "page": 66,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Divise : 2,977 ÷ 2", "en": "Divide: 2.977 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "1,4885", "en": "1.4885" }, { "fr": "1,488", "en": "1.488" }],
+      "reponse_attendue": { "fr": "1,4885", "en": "1.4885" }
+    },
+    {
+      "id": "p66-ex1e",
+      "page": 66,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": { "fr": "Divise : 4,573 ÷ 5", "en": "Divide: 4.573 ÷ 5" },
+      "type": "select",
+      "options": [{ "fr": "0,9146", "en": "0.9146" }, { "fr": "0,914", "en": "0.914" }],
+      "reponse_attendue": { "fr": "0,9146", "en": "0.9146" }
+    },
+    {
+      "id": "p66-ex1f",
+      "page": 66,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": { "fr": "Divise : 0,124 ÷ 8", "en": "Divide: 0.124 ÷ 8" },
+      "type": "select",
+      "options": [{ "fr": "0,0155", "en": "0.0155" }, { "fr": "0,155", "en": "0.155" }],
+      "reponse_attendue": { "fr": "0,0155", "en": "0.0155" }
+    },
+    {
+      "id": "p67-ex1a",
+      "page": 67,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Divise jusqu'à un reste de zéro : 4,275 ÷ 6", "en": "Divide until the remainder is zero: 4.275 ÷ 6" },
+      "type": "select",
+      "options": [{ "fr": "0,7125", "en": "0.7125" }, { "fr": "0,712", "en": "0.712" }],
+      "reponse_attendue": { "fr": "0,7125", "en": "0.7125" }
+    },
+    {
+      "id": "p67-ex1b",
+      "page": 67,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Divise : 45 ÷ 8", "en": "Divide: 45 ÷ 8" },
+      "type": "select",
+      "options": [{ "fr": "5,625", "en": "5.625" }, { "fr": "5,62", "en": "5.62" }],
+      "reponse_attendue": { "fr": "5,625", "en": "5.625" }
+    },
+    {
+      "id": "p67-ex1c",
+      "page": 67,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Divise : 234 ÷ 5", "en": "Divide: 234 ÷ 5" },
+      "type": "select",
+      "options": [{ "fr": "46,8", "en": "46.8" }, { "fr": "4,68", "en": "4.68" }],
+      "reponse_attendue": { "fr": "46,8", "en": "46.8" }
+    },
+    {
+      "id": "p67-ex1d",
+      "page": 67,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Divise : 0,007 ÷ 2", "en": "Divide: 0.007 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "0,0035", "en": "0.0035" }, { "fr": "0,035", "en": "0.035" }],
+      "reponse_attendue": { "fr": "0,0035", "en": "0.0035" }
+    },
+    {
+      "id": "p67-ex1e",
+      "page": 67,
+      "exercice_num": 1,
+      "sous_question": "e",
+      "consigne": { "fr": "Divise : 0,5 ÷ 2", "en": "Divide: 0.5 ÷ 2" },
+      "type": "select",
+      "options": [{ "fr": "0,25", "en": "0.25" }, { "fr": "0,5", "en": "0.5" }],
+      "reponse_attendue": { "fr": "0,25", "en": "0.25" }
+    },
+    {
+      "id": "p67-ex1f",
+      "page": 67,
+      "exercice_num": 1,
+      "sous_question": "f",
+      "consigne": { "fr": "Divise : 2,7 ÷ 4", "en": "Divide: 2.7 ÷ 4" },
+      "type": "select",
+      "options": [{ "fr": "0,675", "en": "0.675" }, { "fr": "0,67", "en": "0.67" }],
+      "reponse_attendue": { "fr": "0,675", "en": "0.675" }
+    },
+    {
+      "id": "p67-ex2a",
+      "page": 67,
+      "exercice_num": 2,
+      "sous_question": "a",
+      "consigne": { "fr": "Calcule à la calculatrice et arrondis au centième près : 4 ÷ 11", "en": "Calculate and round to the nearest hundredth: 4 ÷ 11" },
+      "type": "select",
+      "options": [{ "fr": "0,36", "en": "0.36" }, { "fr": "0,37", "en": "0.37" }],
+      "reponse_attendue": { "fr": "0,36", "en": "0.36" }
+    },
+    {
+      "id": "p67-ex2b",
+      "page": 67,
+      "exercice_num": 2,
+      "sous_question": "b",
+      "consigne": { "fr": "Calcule : 5 ÷ 8", "en": "Calculate: 5 ÷ 8" },
+      "type": "select",
+      "options": [{ "fr": "0,63", "en": "0.63" }, { "fr": "0,62", "en": "0.62" }],
+      "reponse_attendue": { "fr": "0,63", "en": "0.63" }
+    },
+    {
+      "id": "p67-ex2c",
+      "page": 67,
+      "exercice_num": 2,
+      "sous_question": "c",
+      "consigne": { "fr": "Calcule : 30 ÷ 11", "en": "Calculate: 30 ÷ 11" },
+      "type": "select",
+      "options": [{ "fr": "2,73", "en": "2.73" }, { "fr": "2,72", "en": "2.72" }],
+      "reponse_attendue": { "fr": "2,73", "en": "2.73" }
+    },
+    {
+      "id": "p67-ex2d",
+      "page": 67,
+      "exercice_num": 2,
+      "sous_question": "d",
+      "consigne": { "fr": "Calcule : 6 ÷ 7", "en": "Calculate: 6 ÷ 7" },
+      "type": "select",
+      "options": [{ "fr": "0,86", "en": "0.86" }, { "fr": "0,85", "en": "0.85" }],
+      "reponse_attendue": { "fr": "0,86", "en": "0.86" }
+    },
+    {
+      "id": "p67-ex3",
+      "page": 67,
+      "exercice_num": 3,
+      "consigne": { "fr": "Quatre amies achètent des sucettes (4,29 $) et des bretzels (3,97 $). Combien chaque amie doit-elle débourser ?", "en": "Four friends buy ice pops ($4.29) and pretzels ($3.97). How much does each friend pay?" },
+      "type": "select",
+      "options": [{ "fr": "2,065 $", "en": "$2.065" }, { "fr": "2,06 $", "en": "$2.06" }],
+      "reponse_attendue": { "fr": "2,065 $", "en": "$2.065" }
+    },
+    {
+      "id": "p67-ex4",
+      "page": 67,
+      "exercice_num": 4,
+      "consigne": { "fr": "Nathalia a couru 1,367 km en 6 minutes. Distance par minute ?", "en": "Nathalia ran 1.367 km in 6 minutes. Distance per minute?" },
+      "type": "select",
+      "options": [{ "fr": "0,2278 km/min", "en": "0.2278 km/min" }, { "fr": "0,22 km/min", "en": "0.22 km/min" }],
+      "reponse_attendue": { "fr": "0,2278 km/min", "en": "0.2278 km/min" }
+    },
+    {
+      "id": "p67-ex5",
+      "page": 67,
+      "exercice_num": 5,
+      "consigne": { "fr": "Douze amis se partagent 8 petites pizzas. Quelle est la part de chaque ami ?", "en": "Twelve friends share 8 small pizzas. What is each friend's share?" },
+      "type": "select",
+      "options": [{ "fr": "0,666...", "en": "0.666..." }, { "fr": "1,5", "en": "1.5" }],
+      "reponse_attendue": { "fr": "0,666...", "en": "0.666..." }
+    }
+  ]
+}

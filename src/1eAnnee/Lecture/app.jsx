@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { 
-  BookOpen, ImageIcon, Smile, Type, PenTool, 
+  BookOpen, ImageIcon, Smile, Type, PenTool,Soup, 
   ListOrdered, Home, GraduationCap, Utensils, CheckCircle, User
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -112,6 +112,13 @@ export default function ReadingApp() {
             <GraduationCap size={80} className="text-blue-500 group-hover:-rotate-12 transition-transform" />
             <span className="text-2xl font-black text-slate-700">L'École</span>
           </button>
+           <button
+      onClick={() => setSelectedStoryKey('soupe')}
+      className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-orange-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
+    >
+      <Soup size={80} className="text-orange-500 group-hover:rotate-12 transition-transform" />
+      <span className="text-2xl font-black text-slate-700">La Soupe</span>
+    </button>
         </div>
       </div>
     );

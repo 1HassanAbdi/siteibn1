@@ -1,0 +1,208 @@
+{
+  "module": 4,
+  "titre": {
+    "fr": "Les nombres décimaux",
+    "en": "Decimal Numbers"
+  },
+  "exercices": [
+    {
+      "id": "p62-ex1a",
+      "page": 62,
+      "exercice_num": 1,
+      "sous_question": "a",
+      "consigne": { "fr": "Calcule le produit : 5,18 × 5", "en": "Calculate the product: 5.18 × 5" },
+      "type": "select",
+      "options": [{ "fr": "25,9", "en": "25.9" }, { "fr": "25,4", "en": "25.4" }],
+      "reponse_attendue": { "fr": "25,9", "en": "25.9" }
+    },
+    {
+      "id": "p62-ex1b",
+      "page": 62,
+      "exercice_num": 1,
+      "sous_question": "b",
+      "consigne": { "fr": "Calcule le produit : 1,734 × 8", "en": "Calculate the product: 1.734 × 8" },
+      "type": "select",
+      "options": [{ "fr": "13,872", "en": "13.872" }, { "fr": "13,672", "en": "13.672" }],
+      "reponse_attendue": { "fr": "13,872", "en": "13.872" }
+    },
+    {
+      "id": "p62-ex1c",
+      "page": 62,
+      "exercice_num": 1,
+      "sous_question": "c",
+      "consigne": { "fr": "Calcule le produit : 0,143 × 4", "en": "Calculate the product: 0.143 × 4" },
+      "type": "select",
+      "options": [{ "fr": "0,572", "en": "0.572" }, { "fr": "0,472", "en": "0.472" }],
+      "reponse_attendue": { "fr": "0,572", "en": "0.572" }
+    },
+    {
+      "id": "p62-ex1d",
+      "page": 62,
+      "exercice_num": 1,
+      "sous_question": "d",
+      "consigne": { "fr": "Calcule le produit : 9,431 × 2", "en": "Calculate the product: 9.431 × 2" },
+      "type": "select",
+      "options": [{ "fr": "18,862", "en": "18.862" }, { "fr": "18,662", "en": "18.662" }],
+      "reponse_attendue": { "fr": "18,862", "en": "18.862" }
+    },
+    {
+      "id": "p63-ex1-P",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "P",
+      "consigne": { "fr": "0,396 × 5", "en": "0.396 × 5" },
+      "type": "select",
+      "options": [{ "fr": "1,98", "en": "1.98" }, { "fr": "1,88", "en": "1.88" }],
+      "reponse_attendue": { "fr": "1,98", "en": "1.98" }
+    },
+    {
+      "id": "p63-ex1-A",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "A",
+      "consigne": { "fr": "1,637 × 3", "en": "1.637 × 3" },
+      "type": "select",
+      "options": [{ "fr": "4,911", "en": "4.911" }, { "fr": "4,811", "en": "4.811" }],
+      "reponse_attendue": { "fr": "4,911", "en": "4.911" }
+    },
+    {
+      "id": "p63-ex1-V",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "V",
+      "consigne": { "fr": "1,842 × 2", "en": "1.842 × 2" },
+      "type": "select",
+      "options": [{ "fr": "3,684", "en": "3.684" }, { "fr": "3,584", "en": "3.584" }],
+      "reponse_attendue": { "fr": "3,684", "en": "3.684" }
+    },
+    {
+      "id": "p63-ex1-tick",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "'",
+      "consigne": { "fr": "1,004 × 7", "en": "1.004 × 7" },
+      "type": "select",
+      "options": [{ "fr": "7,028", "en": "7.028" }, { "fr": "7,28", "en": "7.28" }],
+      "reponse_attendue": { "fr": "7,028", "en": "7.028" }
+    },
+    {
+      "id": "p63-ex1-L",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "L",
+      "consigne": { "fr": "0,176 × 4", "en": "0.176 × 4" },
+      "type": "select",
+      "options": [{ "fr": "0,704", "en": "0.704" }, { "fr": "0,604", "en": "0.604" }],
+      "reponse_attendue": { "fr": "0,704", "en": "0.704" }
+    },
+    {
+      "id": "p63-ex1-C",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "C",
+      "consigne": { "fr": "8,145 × 6", "en": "8.145 × 6" },
+      "type": "select",
+      "options": [{ "fr": "48,87", "en": "48.87" }, { "fr": "48,67", "en": "48.67" }],
+      "reponse_attendue": { "fr": "48,87", "en": "48.87" }
+    },
+    {
+      "id": "p63-ex1-D",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "D",
+      "consigne": { "fr": "2,534 × 2", "en": "2.534 × 2" },
+      "type": "select",
+      "options": [{ "fr": "5,068", "en": "5.068" }, { "fr": "5,168", "en": "5.168" }],
+      "reponse_attendue": { "fr": "5,068", "en": "5.068" }
+    },
+    {
+      "id": "p63-ex1-S",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "S",
+      "consigne": { "fr": "0,941 × 9", "en": "0.941 × 9" },
+      "type": "select",
+      "options": [{ "fr": "8,469", "en": "8.469" }, { "fr": "8,369", "en": "8.369" }],
+      "reponse_attendue": { "fr": "8,469", "en": "8.469" }
+    },
+    {
+      "id": "p63-ex1-M",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "M",
+      "consigne": { "fr": "1,935 × 4", "en": "1.935 × 4" },
+      "type": "select",
+      "options": [{ "fr": "7,74", "en": "7.74" }, { "fr": "7,64", "en": "7.64" }],
+      "reponse_attendue": { "fr": "7,74", "en": "7.74" }
+    },
+    {
+      "id": "p63-ex1-N",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "N",
+      "consigne": { "fr": "2,123 × 4", "en": "2.123 × 4" },
+      "type": "select",
+      "options": [{ "fr": "8,492", "en": "8.492" }, { "fr": "8,392", "en": "8.392" }],
+      "reponse_attendue": { "fr": "8,492", "en": "8.492" }
+    },
+    {
+      "id": "p63-ex1-E",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "E",
+      "consigne": { "fr": "0,132 × 2", "en": "0.132 × 2" },
+      "type": "select",
+      "options": [{ "fr": "0,264", "en": "0.264" }, { "fr": "0,254", "en": "0.254" }],
+      "reponse_attendue": { "fr": "0,264", "en": "0.264" }
+    },
+    {
+      "id": "p63-ex1-R",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "R",
+      "consigne": { "fr": "4,113 × 2", "en": "4.113 × 2" },
+      "type": "select",
+      "options": [{ "fr": "8,226", "en": "8.226" }, { "fr": "8,126", "en": "8.126" }],
+      "reponse_attendue": { "fr": "8,226", "en": "8.226" }
+    },
+    {
+      "id": "p63-ex1-I",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "I",
+      "consigne": { "fr": "3,005 × 3", "en": "3.005 × 3" },
+      "type": "select",
+      "options": [{ "fr": "9,015", "en": "9.015" }, { "fr": "9,115", "en": "9.115" }],
+      "reponse_attendue": { "fr": "9,015", "en": "9.015" }
+    },
+    {
+      "id": "p63-ex1-U",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "U",
+      "consigne": { "fr": "1,254 × 3", "en": "1.254 × 3" },
+      "type": "select",
+      "options": [{ "fr": "3,762", "en": "3.762" }, { "fr": "3,662", "en": "3.662" }],
+      "reponse_attendue": { "fr": "3,762", "en": "3.762" }
+    },
+    {
+      "id": "p63-ex1-O",
+      "page": 63,
+      "exercice_num": 1,
+      "sous_question": "O",
+      "consigne": { "fr": "0,148 × 5", "en": "0.148 × 5" },
+      "type": "select",
+      "options": [{ "fr": "0,74", "en": "0.74" }, { "fr": "0,64", "en": "0.64" }],
+      "reponse_attendue": { "fr": "0,74", "en": "0.74" }
+    },
+    {
+      "id": "p63-vpl",
+      "page": 63,
+      "exercice_num": "Va plus loin",
+      "consigne": { "fr": "Par quel nombre naturel peux-tu multiplier 6,374 pour obtenir un produit de 25,496 ?", "en": "What whole number can you multiply 6.374 by to get 25.496?" },
+      "type": "select",
+      "options": [{ "fr": "4", "en": "4" }, { "fr": "3", "en": "3" }],
+      "reponse_attendue": { "fr": "4", "en": "4" }
+    }
+  ]
+}
