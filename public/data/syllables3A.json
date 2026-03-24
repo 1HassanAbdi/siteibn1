@@ -378,6 +378,38 @@
         { "word": "vite", "parts": ["vi", "te"] },
         { "word": "volume", "parts": ["vo", "lu", "me"] }
       ]
+    },{
+      "week_id": 11,
+      "words": [
+        { "word": "rendre", "parts": ["ren", "dre"] },
+        { "word": "rien", "parts": ["rien"] },
+        { "word": "risque", "parts": ["ris", "que"] },
+        { "word": "sabot", "parts": ["sa", "bot"] },
+        { "word": "sel", "parts": ["sel"] },
+        { "word": "signe", "parts": ["si", "gne"] },
+        { "word": "singulier", "parts": ["sin", "gu", "lier"] },
+        { "word": "soldat", "parts": ["sol", "dat"] },
+        { "word": "sueur", "parts": ["su", "eur"] },
+        { "word": "surprise", "parts": ["sur", "pri", "se"] },
+        { "word": "tenue", "parts": ["te", "nue"] },
+        { "word": "timide", "parts": ["ti", "mi", "de"] },
+        { "word": "toile", "parts": ["toi", "le"] },
+        { "word": "tombe", "parts": ["tom", "be"] },
+        { "word": "tourner", "parts": ["tour", "ner"] },
+        { "word": "trois", "parts": ["trois"] },
+        { "word": "valeur", "parts": ["va", "leur"] },
+        { "word": "vase", "parts": ["va", "se"] },
+        { "word": "vaste", "parts": ["vas", "te"] },
+        { "word": "vente", "parts": ["ven", "te"] },
+        { "word": "véritable", "parts": ["vé", "ri", "ta", "ble"] },
+        { "word": "victime", "parts": ["vic", "ti", "me"] },
+        { "word": "victoire", "parts": ["vic", "toi", "re"] },
+        { "word": "vide", "parts": ["vi", "de"] },
+        { "word": "vif", "parts": ["vif"] },
+        { "word": "visible", "parts": ["vi", "si", "ble"] },
+        { "word": "vite", "parts": ["vi", "te"] },
+        { "word": "volume", "parts": ["vo", "lu", "me"] }
+      ]
     },
     {
       "week_id": 12,

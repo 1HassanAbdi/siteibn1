@@ -1,0 +1,115 @@
+{
+  "texts": [
+    {
+      "title": "Fourmi Annie et Bourdon Bastien",
+      "texte": "Fourmi Annie se prélassait au soleil lorsqu'elle a aperçu Bourdon Bastien occupé à ramasser de la nourriture dans les champs. « Pourquoi ramasses-tu de la nourriture maintenant, Bourdon Bastien? » a demandé Annie.\n\nBourdon Bastien s'est arrêté en plein vol et a regardé Fourmi Annie. « L'hiver approche, Annie. Es-tu bien préparée ? » lui a-t-il demandé.\n\nAnnie a regardé Bastien d'un air incrédule. « Ramasser de la nourriture pour l'hiver maintenant? Tu veux rire? Arrête-toi un peu et viens à la fête d'Alice avec moi. » Bourdon Bastien a secoué la tête. « Non, merci. J'ai encore beaucoup de travail à faire. Au revoir, Annie. »\n\nLes jours sont devenus des semaines. Fourmi Annie s'est réveillée un matin et a vu le sol tout recouvert de neige. « Hourra, l'hiver est arrivé! Je vais aller jouer dans la neige après mon déjeuner. » Elle est sortie dehors à la recherche de nourriture et a été horrifiée de constater qu'il n'en restait plus.\n\n« Oh, non! J'ai oublié de ramasser de la nourriture. Qu'est-ce que je vais faire? » a dit Annie en pleurant. Tout à coup, la cloche d'entrée a sonné. Annie a été surprise de voir Bourdon Bastien à la porte.\n\n« Aimerais-tu venir chez moi et partager ma nourriture, Annie? Je sais que tu n'as rien ramassé. Comme j'ai commencé tôt, j'ai un tas de choses à partager », a dit Bastien gentiment. Honteuse, Fourmi Annie a baissé la tête et a répondu : « Merci, Bourdon Bastien. J'aurais dû t'écouter. Je suis désolée. Laisse-moi nettoyer ta maison cet hiver en échange de la nourriture. »\n\n« Ne t'en fais pas Annie. Viens », a dit Bastien. Ensemble, ils ont marché d'un pas pesant vers la maison de Bastien.",
+      "startDate": "2026-03-15",
+      "endDate": "2026-03-21",
+      
+      "questions": {
+    "vraiFaux": [
+      { "q": "Fourmi Annie travaillait dur pour préparer l'hiver.", "r": false },
+      { "q": "Bourdon Bastien a invité Annie à venir à une fête.", "r": false },
+      { "q": "Annie a oublié de ramasser de la nourriture pour l'hiver.", "r": true },
+      { "q": "Bastien a refusé d'aider Annie quand elle avait faim.", "r": false },
+      { "q": "À la fin, Annie propose de nettoyer la maison de Bastien.", "r": true }
+    ],
+    "qcm": [
+      { 
+        "q": "Que faisait Fourmi Annie au début de l'histoire?", 
+        "options": ["Elle dormait", "Elle se prélassait au soleil", "Elle ramassait de la nourriture", "Elle jouait dans la neige"],
+        "r": 1 
+      },
+      { 
+        "q": "Pourquoi Bourdon Bastien ramassait-il de la nourriture?", 
+        "options": ["Pour faire une fête", "Pour l'hiver qui approchait", "Pour vendre au marché", "Pour partager avec Annie"],
+        "r": 1 
+      },
+      { 
+        "q": "Qu'a proposé Annie à Bastien au début?", 
+        "options": ["De l'aider à travailler", "D'aller à une fête", "De dormir", "De jouer dans la neige"],
+        "r": 1 
+      },
+      { 
+        "q": "Que s'est-il passé quand Annie s'est réveillée un matin?", 
+        "options": ["Il pleuvait", "Le sol était couvert de neige", "Il faisait très chaud", "C'était le printemps"],
+        "r": 1 
+      },
+      { 
+        "q": "Comment Bastien a-t-il réagi face au problème d'Annie?", 
+        "options": ["Il l'a ignorée", "Il s'est moqué d'elle", "Il l'a aidée gentiment", "Il lui a demandé de payer"],
+        "r": 2 
+      }
+    ],
+    "reponseCourte": [
+      { "q": "Comment s'appelle la fourmi dans cette histoire?", "options": ["Annie", "Alice", "Amélie", "Anna"], "r": 0 },
+      { "q": "Quel insecte aide la fourmi à la fin?", "options": ["Une abeille", "Un papillon", "Un bourdon", "Une guêpe"], "r": 2 },
+      { "q": "Quelle saison arrive dans l'histoire?", "options": ["Le printemps", "L'été", "L'automne", "L'hiver"], "r": 3 },
+      { "q": "Qu'est-ce qu'Annie avait oublié de ramasser?", "options": ["Des fleurs", "De l'eau", "De la nourriture", "Des feuilles"], "r": 2 },
+      { "q": "Que propose Annie de faire pour Bastien en échange?", "options": ["Cuisiner", "Nettoyer sa maison", "Chanter", "Danser"], "r": 1 }
+    ],
+    "vocabulaire": [
+      { "q": "Que signifie 'se prélasser'?", "options": ["Se dépêcher", "Se reposer tranquillement", "Travailler dur", "Courir vite"], "r": 1 },
+      { "q": "Quel mot signifie 'très surprise et choquée'?", "options": ["Joyeuse", "Horrifiée", "Calme", "Endormie"], "r": 1 },
+      { "q": "Quel sentiment éprouve Annie à la fin (elle a baissé la tête)?", "options": ["Fière", "Honteuse", "Heureuse", "En colère"], "r": 1 },
+      { "q": "Que veut dire 'incrédule'?", "options": ["Qui croit tout", "Qui ne peut pas croire", "Qui est content", "Qui est fatigué"], "r": 1 },
+      { "q": "Comment marche-t-on 'd'un pas pesant'?", "options": ["Rapidement", "En dansant", "Lentement et difficilement", "En sautant"], "r": 2 }
+    ],
+    "conjugaison": [
+      { "q": "Conjugue 'ramasser' à la 3e personne du singulier au présent (il/elle...)", "options": ["ramasse", "ramasses", "ramassons", "ramassent"], "r": 0 },
+      { "q": "Conjugue 'regarder' à la 1re personne du singulier au présent (je...)", "options": ["regardes", "regarde", "regardons", "regardent"], "r": 1 },
+      { "q": "Conjugue 'partager' à la 2e personne du singulier au présent (tu...)", "options": ["partage", "partages", "partageons", "partagent"], "r": 1 },
+      { "q": "Conjugue 'écouter' à la 1re personne du pluriel au présent (nous...)", "options": ["écoute", "écoutes", "écoutons", "écoutent"], "r": 2 },
+      { "q": "Conjugue 'marcher' à la 3e personne du pluriel au présent (ils/elles...)", "options": ["marche", "marches", "marchons", "marchent"], "r": 3 }
+    ]
+  }
+      
+    },{
+          "title": "Lion et Rat",
+         "startDate": "2026-03-15",
+      "endDate": "2026-03-21",
+        "texte": "Un lion dormait tranquillement quand un petit rat commença à courir sur son corps. Le lion se réveilla et attrapa le rat avec sa grosse patte. Il allait le manger quand le rat supplia : « S'il vous plaît, majesté, laissez-moi partir. Un jour, je pourrai peut-être vous aider. » Le lion rit de l'idée qu'un petit rat puisse aider un roi des animaux, mais il fut amusé et le laissa partir.\n\nQuelques jours plus tard, le lion fut capturé par des chasseurs qui l'attachèrent à un arbre avec de grosses cordes. Le rat, passant par là, entendit les rugissements du lion. Il accourut et commença à ronger les cordes avec ses dents pointues. Bientôt, le lion fut libre.\n\n« Vous voyez, » dit le rat, « même un petit ami peut être d'un grand secours. »",
+      "questions": {
+        "vraiFaux": [
+          { "q": "Le lion a mangé le rat immédiatement.", "r": false },
+          { "q": "Le rat a promis d'aider le lion un jour.", "r": true },
+          { "q": "Le lion a été capturé par des chasseurs.", "r": true },
+          { "q": "Le rat a utilisé des ciseaux pour libérer le lion.", "r": false },
+          { "q": "Le lion a ri quand le rat a proposé son aide.", "r": true }
+        ],
+        "qcm": [
+          { "q": "Que faisait le lion au début?", "options": ["Il chassait", "Il dormait", "Il mangeait", "Il courait"], "r": 1 },
+          { "q": "Pourquoi le lion a-t-il laissé partir le rat?", "options": ["Il n'avait pas faim", "Il était amusé par le rat", "Il avait peur du rat", "Le rat était trop rapide"], "r": 1 },
+          { "q": "Comment le lion a-t-il été capturé?", "options": ["Dans un trou", "Avec un filet", "Attaché à un arbre par des cordes", "Dans une cage"], "r": 2 },
+          { "q": "Qu'a fait le rat pour libérer le lion?", "options": ["Il a appelé ses amis", "Il a rongé les cordes", "Il a attaqué les chasseurs", "Il a rugi très fort"], "r": 1 },
+          { "q": "Quelle est la morale de l'histoire?", "options": ["Il faut toujours dormir", "Les lions sont les plus forts", "On a souvent besoin d'un plus petit que soi", "Les rats sont dangereux"], "r": 2 }
+        ],
+        "reponseCourte": [
+          { "q": "Quel animal dormait au début de l'histoire?", "options": ["Lion", "Rat", "Chasseur", "Abeille"], "r": 0 },
+          { "q": "Quel animal aide le lion à la fin?", "options": ["Un rat", "Un lionceau", "Un chien", "Un oiseau"], "r": 0 },
+          { "q": "Comment le lion a été attaché?", "options": ["Avec des cordes", "Avec un filet", "Avec des chaînes", "Avec une laisse"], "r": 0 },
+          { "q": "Que faisait le rat quand il a rencontré le lion?", "options": ["Il courait sur son corps", "Il dormait", "Il mangeait", "Il jouait"], "r": 0 },
+          { "q": "Que dit le rat à la fin?", "options": ["Même un petit ami peut être d'un grand secours", "Les lions sont toujours forts", "Les rats sont dangereux", "Je suis désolé"], "r": 0 }
+        ],
+        "vocabulaire": [
+          { "q": "Que signifie 'supplia'?", "options": ["A crié", "A demandé avec insistance", "A ignoré", "A couru"], "r": 1 },
+          { "q": "Que veut dire 'capturé'?", "options": ["Libéré", "Attrapé", "Blessé", "Fâché"], "r": 1 },
+          { "q": "Quel sentiment éprouve le lion quand le rat propose son aide?", "options": ["En colère", "Amusé", "Triste", "Effrayé"], "r": 1 },
+          { "q": "Que signifie 'rugit'?", "options": ["Crie fort", "Chante doucement", "Court vite", "Dort"], "r": 0 },
+          { "q": "Que veut dire 'roi des animaux'?", "options": ["Le plus petit", "Le plus faible", "Le plus puissant", "Le plus rapide"], "r": 2 }
+        ],
+        "conjugaison": [
+          { "q": "Conjugue 'dormir' à la 3e personne du singulier au présent (il/elle...)", "options": ["dort", "dors", "dormons", "dorment"], "r": 0 },
+          { "q": "Conjugue 'attraper' à la 3e personne du singulier au passé composé (il/elle...)", "options": ["a attrapé", "a attrapes", "a attrapons", "a attrapent"], "r": 0 },
+          { "q": "Conjugue 'supplie' à la 1re personne du singulier au présent (je...)", "options": ["supplie", "supplies", "supplions", "supplient"], "r": 0 },
+          { "q": "Conjugue 'ronger' à la 3e personne du singulier au présent (il/elle...)", "options": ["ronge", "ronges", "rongeons", "rongent"], "r": 0 },
+          { "q": "Conjugue 'voir' à la 3e personne du singulier au passé composé (il/elle...)", "options": ["a vu", "as vu", "avons vu", "ont vu"], "r": 0 }
+        ]
+      }
+    }
+  
+
+    
+  ]
+}
+

@@ -24,8 +24,10 @@ const ALL_MISSIONS = [
    { id: "p60_61", module: 4, title: { fr: "Multiplier par 0,1, 0,01 et 0,001", en: "Multiplying by 0.1, 0.01, and 0.001" }, pages: "60-61" },
   { id: "p62_63", module: 4, title: { fr: "Multiplier des décimaux par un naturel à 1 chiffre", en: "Multiplying Decimals by a 1-digit Whole Number" }, pages: "62-63" },
   { id: "p64_65", module: 4, title: { fr: "Diviser des décimaux par un naturel à 1 chiffre", en: "Dividing Decimals by a 1-digit Whole Number" }, pages: "64-65" },
-  { id: "p66_67", module: 4, title: { fr: "Diviser des nombres décimaux", en: "Dividing Decimal Numbers" }, pages: "66-67" }
+  { id: "p66_67", module: 4, title: { fr: "Diviser des nombres décimaux", en: "Dividing Decimal Numbers" }, pages: "66-67" },
 
+  { id: "p110_115", module: 8, title: { fr: "Fractions, pourcentages, rapports et taux (partie 1)", en: "Fractions, Percentages, Ratios and Rates (Part 1)" }, pages: "110-115" },
+  { id: "p116_119", module: 8, title: { fr: "Addition et soustraction de fractions", en: "Adding and Subtracting Fractions" }, pages: "116-119" }
 ];
 
 // --- 2. TRADUCTIONS (DÉFINIES AVANT LE COMPOSANT) ---

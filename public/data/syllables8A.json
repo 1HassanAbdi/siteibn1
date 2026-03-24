@@ -427,7 +427,7 @@
       ]
     },
     {
-      "week_id": 10,
+      "week_id": 11,
       "words": [
         { "word": "là-bas", "parts": ["là", "bas"] },
         { "word": "lanterne", "parts": ["lan", "ter", "ne"] },
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "week_id": 11,
+      "week_id": 12,
       "words": [
         { "word": "priver", "parts": ["pri", "ver"] },
         { "word": "proie", "parts": ["proie"] },
@@ -514,7 +514,7 @@
       ]
     },
     {
-      "week_id": 12,
+      "week_id": 13,
       "words": [
         { "word": "abîme", "parts": ["a", "bî", "me"] },
         { "word": "abord", "parts": ["a", "bord"] },
@@ -558,7 +558,7 @@
       ]
     },
     {
-      "week_id": 13,
+      "week_id": 14,
       "words": [
         { "word": "chrétien", "parts": ["chré", "tien"] },
         { "word": "circonstance", "parts": ["cir", "cons", "tan", "ce"] },
@@ -600,7 +600,7 @@
       ]
     },
     {
-      "week_id": 14,
+      "week_id": 15,
       "words": [
         { "word": "évêque", "parts": ["é", "vê", "que"] },
         { "word": "examiner", "parts": ["ex", "a", "mi", "ner"] },
@@ -642,7 +642,7 @@
       ]
     },
     {
-      "week_id": 15,
+      "week_id": 16,
       "words": [
         { "word": "naufrage", "parts": ["nau", "fra", "ge"] },
         { "word": "nègre", "parts": ["nè", "gre"] },
@@ -681,7 +681,7 @@
       ]
     },
     {
-      "week_id": 16,
+      "week_id": 17,
       "words": [
         { "word": "quelqu'un", "parts": ["quel", "qu'un"] },
         { "word": "queue", "parts": ["queue"] },

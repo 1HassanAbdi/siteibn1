@@ -380,7 +380,7 @@
       ]
     },
     {
-      "week_id": 10,
+      "week_id": 11,
       "words_data": [
         {"word": "centimètre", "definition": "Unité de longueur (centième partie du mètre)."},
         {"word": "chair", "definition": "Partie molle du corps humain ou animal."},
@@ -421,7 +421,7 @@
       ]
     },
     {
-      "week_id": 11,
+      "week_id": 12,
       "words_data": [
         {"word": "descendre", "definition": "Aller du haut vers le bas."},
         {"word": "désir", "definition": "Envie forte de posséder ou réaliser quelque chose."},
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "week_id": 12,
+      "week_id": 13,
       "words_data": [
         {"word": "fillette", "definition": "Petite fille."},
         {"word": "flamme", "definition": "Partie brillante et chaude d'un feu."},
@@ -502,7 +502,7 @@
       ]
     },
     {
-      "week_id": 13,
+      "week_id": 14,
       "words_data": [
         {"word": "infiniment", "definition": "D'une manière sans limite."},
         {"word": "inquiétude", "definition": "État de crainte ou de trouble."},
@@ -543,7 +543,7 @@
       ]
     },
     {
-      "week_id": 14,
+      "week_id": 15,
       "words_data": [
         {"word": "pavé", "definition": "Bloc de pierre utilisé pour couvrir le sol des rues."},
         {"word": "péché", "definition": "Faute commise contre une loi religieuse."},
@@ -584,7 +584,7 @@
       ]
     },
     {
-      "week_id": 15,
+      "week_id": 16,
       "words_data": [
         {"word": "retard", "definition": "Le fait d'arriver après l'heure fixée."},
         {"word": "retomber", "definition": "Tomber de nouveau."},
@@ -624,7 +624,7 @@
       ]
     },
     {
-      "week_id": 16,
+      "week_id": 17,
       "words_data": [
         {"word": "très", "definition": "Sert à augmenter la force d'un adjectif (beaucoup)."},
         {"word": "troubler", "definition": "Rendre moins clair ou inquiéter quelqu'un."},

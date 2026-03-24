@@ -10,7 +10,7 @@ import {
 import configExercices from './data/config_exercices.json'; 
 const allModules = import.meta.glob('./data/**/*.json');
 const TEACHER_CODE = "2025"; 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxTBjRTgiO0JVqwjCfsnggzP5o1wN_lNMewT-H2ILejDNhKqUcDjz7cX2wfPIk0dX8/exec"; 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxezCmA61nrzezaJByFS344gGDKs2CboozObYMHMVe8qC5jn2XC7hI21VQllMKPxtAi/exec"; 
 
 export default function PortailOQRE({ exerciseSlug, level, onBack }) {
   // États de base
@@ -151,15 +151,18 @@ export default function PortailOQRE({ exerciseSlug, level, onBack }) {
     });
 
     const payload = { 
-      nom: studentInfo.nom, 
-      classe: studentInfo.classe, 
-      email: studentInfo.email, 
-      titre: `${selectedSession.test_info.session} - ${currentPart.id}`,
-      sheetTarget: studentInfo.classe === '3A' ? "OQRE_3A" : "OQRE_6A",
-      answers: answers,
-      correctAnswers: correctAnswersMap,
-      openAnswers: openAnswers
-    };
+  email: studentInfo.email,
+  classe: studentInfo.classe,
+  matiere: selectedSession.test_info.matiere,
+  sousPartie: selectedSession.test_info.titre,
+  titre: selectedSession.test_info.session,
+
+  sheetTarget: studentInfo.classe === '3A' ? "OQRE_3A" : "OQRE_6A",
+
+  answers: answers,
+  correctAnswers: correctAnswersMap,
+  openAnswers: openAnswers
+};
 
     try {
       await fetch(GOOGLE_SCRIPT_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(payload) });

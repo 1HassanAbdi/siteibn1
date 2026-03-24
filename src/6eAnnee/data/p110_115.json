@@ -1,0 +1,71 @@
+{
+  "module": 8,
+  "titre": {
+    "fr": "Les fractions, les pourcentages, les rapports et les taux",
+    "en": "Fractions, Percentages, Ratios, and Rates"
+  },
+  "exercices": [
+ 
+    { "id": "p110-ex1a", "page": 110, "exercice_num": 1, "sous_question": "a", "consigne": "Partie colorée (image a) :", "type": "select", "options": [{"fr": "2/6 et 1/3"}, {"fr": "2/6 et 4/6"}], "reponse_attendue": "2/6 et 1/3" },
+    { "id": "p110-ex1b", "page": 110, "exercice_num": 1, "sous_question": "b", "consigne": "Partie colorée (image b) :", "type": "select", "options": [{"fr": "4/16 et 1/4"}, {"fr": "1/2 et 2/4"}], "reponse_attendue": "4/16 et 1/4" },
+    { "id": "p110-ex1c", "page": 110, "exercice_num": 1, "sous_question": "c", "consigne": "Partie colorée (image c) :", "type": "select", "options": [{"fr": "2/5 et 4/10"}, {"fr": "2/5 et 1/5"}], "reponse_attendue": "2/5 et 4/10" },
+    { "id": "p110-ex1d", "page": 110, "exercice_num": 1, "sous_question": "d", "consigne": "Partie colorée (image d) :", "type": "select", "options": [{"fr": "25/100 et 1/4"}, {"fr": "25/100 et 50/100"}], "reponse_attendue": "25/100 et 1/4" },
+    { "id": "p110-ex2a", "page": 110, "exercice_num": 2, "sous_question": "a", "consigne": "Partie blanche (image a) :", "type": "select", "options": [{"fr": "4/6 et 2/3"}, {"fr": "1/3 et 2/6"}], "reponse_attendue": "4/6 et 2/3" },
+    { "id": "p110-ex2b", "page": 110, "exercice_num": 2, "sous_question": "b", "consigne": "Partie blanche (image b) :", "type": "select", "options": [{"fr": "12/16 et 3/4"}, {"fr": "4/16 et 1/4"}], "reponse_attendue": "12/16 et 3/4" },
+    { "id": "p110-ex2c", "page": 110, "exercice_num": 2, "sous_question": "c", "consigne": "Partie blanche (image c) :", "type": "select", "options": [{"fr": "3/5 et 6/10"}, {"fr": "2/5 et 4/10"}], "reponse_attendue": "3/5 et 6/10" },
+    { "id": "p110-ex2d", "page": 110, "exercice_num": 2, "sous_question": "d", "consigne": "Partie blanche (image d) :", "type": "select", "options": [{"fr": "75/100 et 3/4"}, {"fr": "25/100 et 1/4"}], "reponse_attendue": "75/100 et 3/4" },
+
+  
+    { "id": "p111-ex1a", "page": 111, "exercice_num": 1, "sous_question": "a", "consigne": "5/6 =", "type": "select", "options": [{"fr": "10/12"}, {"fr": "6/7"}], "reponse_attendue": "10/12" },
+    { "id": "p111-ex1b", "page": 111, "exercice_num": 1, "sous_question": "b", "consigne": "7/12 =", "type": "select", "options": [{"fr": "14/24"}, {"fr": "8/13"}], "reponse_attendue": "14/24" },
+    { "id": "p111-ex1c", "page": 111, "exercice_num": 1, "sous_question": "c", "consigne": "4/9 =", "type": "select", "options": [{"fr": "8/18"}, {"fr": "5/10"}], "reponse_attendue": "8/18" },
+    { "id": "p111-ex1d", "page": 111, "exercice_num": 1, "sous_question": "d", "consigne": "3/8 =", "type": "select", "options": [{"fr": "6/16"}, {"fr": "4/9"}], "reponse_attendue": "6/16" },
+    { "id": "p111-ex1e", "page": 111, "exercice_num": 1, "sous_question": "e", "consigne": "6/7 =", "type": "select", "options": [{"fr": "12/14"}, {"fr": "7/8"}], "reponse_attendue": "12/14" },
+    { "id": "p111-ex1f", "page": 111, "exercice_num": 1, "sous_question": "f", "consigne": "2/3 =", "type": "select", "options": [{"fr": "4/6"}, {"fr": "3/4"}], "reponse_attendue": "4/6" },
+    { "id": "p111-ex1g", "page": 111, "exercice_num": 1, "sous_question": "g", "consigne": "3/11 =", "type": "select", "options": [{"fr": "6/22"}, {"fr": "4/12"}], "reponse_attendue": "6/22" },
+    { "id": "p111-ex1h", "page": 111, "exercice_num": 1, "sous_question": "h", "consigne": "17/25 =", "type": "select", "options": [{"fr": "34/50"}, {"fr": "18/26"}], "reponse_attendue": "34/50" },
+  
+    { "id": "p111-ex2a", "page": 111, "exercice_num": 2, "sous_question": "a", "consigne": "18/24 =", "type": "select", "options": [{"fr": "3/4"}, {"fr": "9/12"}], "reponse_attendue": "3/4" },
+    { "id": "p111-ex2b", "page": 111, "exercice_num": 2, "sous_question": "b", "consigne": "30/36 =", "type": "select", "options": [{"fr": "5/6"}, {"fr": "15/18"}], "reponse_attendue": "5/6" },
+    { "id": "p111-ex2c", "page": 111, "exercice_num": 2, "sous_question": "c", "consigne": "125/175 =", "type": "select", "options": [{"fr": "5/7"}, {"fr": "25/35"}], "reponse_attendue": "5/7" },
+    { "id": "p111-ex2d", "page": 111, "exercice_num": 2, "sous_question": "d", "consigne": "18/81 =", "type": "select", "options": [{"fr": "2/9"}, {"fr": "6/27"}], "reponse_attendue": "2/9" },
+    { "id": "p111-ex2e", "page": 111, "exercice_num": 2, "sous_question": "e", "consigne": "21/49 =", "type": "select", "options": [{"fr": "3/7"}, {"fr": "7/14"}], "reponse_attendue": "3/7" },
+    { "id": "p111-ex2f", "page": 111, "exercice_num": 2, "sous_question": "f", "consigne": "80/100 =", "type": "select", "options": [{"fr": "4/5"}, {"fr": "8/10"}], "reponse_attendue": "4/5" },
+    { "id": "p111-ex2g", "page": 111, "exercice_num": 2, "sous_question": "g", "consigne": "500/900 =", "type": "select", "options": [{"fr": "5/9"}, {"fr": "50/90"}], "reponse_attendue": "5/9" },
+    { "id": "p111-ex2h", "page": 111, "exercice_num": 2, "sous_question": "h", "consigne": "30/54 =", "type": "select", "options": [{"fr": "5/9"}, {"fr": "15/27"}], "reponse_attendue": "5/9" },
+  
+    { "id": "p111-ex4a", "page": 111, "exercice_num": 4, "sous_question": "a", "consigne": "Irréductible de 9/12 :", "type": "select", "options": [{"fr": "3/4"}, {"fr": "1/4"}], "reponse_attendue": "3/4" },
+    { "id": "p111-ex5a", "page": 111, "exercice_num": 5, "sous_question": "a", "consigne": "Irréductible de 6/8 :", "type": "select", "options": [{"fr": "3/4"}, {"fr": "2/3"}], "reponse_attendue": "3/4" },
+    { "id": "p111-ex6", "page": 111, "exercice_num": 6, "consigne": "Laquelle est irréductible ?", "type": "select", "options": [{"fr": "21/43"}, {"fr": "30/60"}, {"fr": "13/52"}], "reponse_attendue": "21/43" },
+    { "id": "p111-vpl", "page": 111, "exercice_num": "Va plus loin", "consigne": "Forme 1/2 avec 1, 2, 3, 4, 6, 8 :", "type": "select", "options": [{"fr": "318/636"}, {"fr": "123/468"}], "reponse_attendue": "318/636" },
+
+  
+    { "id": "p112-ex1a", "page": 112, "exercice_num": 1, "sous_question": "a", "consigne": "3 7/9 en fraction impropre :", "type": "select", "options": [{"fr": "34/9"}, {"fr": "21/9"}], "reponse_attendue": "34/9" },
+    { "id": "p112-ex1b", "page": 112, "exercice_num": 1, "sous_question": "b", "consigne": "4 3/4 en fraction impropre :", "type": "select", "options": [{"fr": "19/4"}, {"fr": "12/4"}], "reponse_attendue": "19/4" },
+    { "id": "p112-ex1c", "page": 112, "exercice_num": 1, "sous_question": "c", "consigne": "7 6/11 en fraction impropre :", "type": "select", "options": [{"fr": "83/11"}, {"fr": "77/11"}], "reponse_attendue": "83/11" },
+    { "id": "p112-ex1d", "page": 112, "exercice_num": 1, "sous_question": "d", "consigne": "1 19/20 en fraction impropre :", "type": "select", "options": [{"fr": "39/20"}, {"fr": "20/20"}], "reponse_attendue": "39/20" },
+    { "id": "p112-ex2a", "page": 112, "exercice_num": 2, "sous_question": "a", "consigne": "8/5 en nombre fractionnaire :", "type": "select", "options": [{"fr": "1 3/5"}, {"fr": "1 5/8"}], "reponse_attendue": "1 3/5" },
+    { "id": "p112-ex2b", "page": 112, "exercice_num": 2, "sous_question": "b", "consigne": "39/7 en nombre fractionnaire :", "type": "select", "options": [{"fr": "5 4/7"}, {"fr": "6 1/7"}], "reponse_attendue": "5 4/7" },
+    { "id": "p112-ex2c", "page": 112, "exercice_num": 2, "sous_question": "c", "consigne": "48/9 en nombre fractionnaire :", "type": "select", "options": [{"fr": "5 3/9 (ou 5 1/3)"}, {"fr": "4 8/9"}], "reponse_attendue": "5 3/9 (ou 5 1/3)" },
+    { "id": "p112-ex2d", "page": 112, "exercice_num": 2, "sous_question": "d", "consigne": "16/3 en nombre fractionnaire :", "type": "select", "options": [{"fr": "5 1/3"}, {"fr": "4 2/3"}], "reponse_attendue": "5 1/3" },
+
+   
+    { "id": "p113-vpl", "page": 113, "exercice_num": "Va plus loin", "consigne": "Sadie a 7/4 de dollars. Combien d'argent a-t-elle ?", "type": "select", "options": [{"fr": "1,75 $"}, {"fr": "7,40 $"}], "reponse_attendue": "1,75 $" },
+
+    
+    { "id": "p114-ex1", "page": 114, "exercice_num": 1, "consigne": "Ordre croissant : 5/3, 1 1/6, 3/2", "type": "select", "options": [{"fr": "1 1/6, 3/2, 5/3"}, {"fr": "5/3, 3/2, 1 1/6"}], "reponse_attendue": "1 1/6, 3/2, 5/3" },
+    { "id": "p114-ex2a", "page": 114, "exercice_num": 2, "sous_question": "a", "consigne": "1 7/8 ___ 7/4", "type": "select", "options": [{"fr": ">"}, {"fr": "<"}, {"fr": "="}], "reponse_attendue": ">" },
+    { "id": "p114-ex2b", "page": 114, "exercice_num": 2, "sous_question": "b", "consigne": "21/5 ___ 4 1/5", "type": "select", "options": [{"fr": "="}, {"fr": ">"}], "reponse_attendue": "=" },
+    { "id": "p114-ex2c", "page": 114, "exercice_num": 2, "sous_question": "c", "consigne": "13/4 ___ 3 5/6", "type": "select", "options": [{"fr": "<"}, {"fr": ">"}], "reponse_attendue": "<" },
+
+    { "id": "p115-ex1a", "page": 115, "exercice_num": 1, "sous_question": "a", "consigne": "11/7 ___ 10/9", "type": "select", "options": [{"fr": ">"}, {"fr": "<"}], "reponse_attendue": ">" },
+    { "id": "p115-ex1b", "page": 115, "exercice_num": 1, "sous_question": "b", "consigne": "21/8 ___ 31/12", "type": "select", "options": [{"fr": ">"}, {"fr": "<"}], "reponse_attendue": ">" },
+    { "id": "p115-ex1c", "page": 115, "exercice_num": 1, "sous_question": "c", "consigne": "17/7 ___ 2 3/4", "type": "select", "options": [{"fr": "<"}, {"fr": ">"}], "reponse_attendue": "<" },
+    { "id": "p115-ex1d", "page": 115, "exercice_num": 1, "sous_question": "d", "consigne": "1 1/2 ___ 24/16", "type": "select", "options": [{"fr": "="}, {"fr": ">"}], "reponse_attendue": "=" },
+    { "id": "p115-ex1e", "page": 115, "exercice_num": 1, "sous_question": "e", "consigne": "24/5 ___ 48/10", "type": "select", "options": [{"fr": "="}, {"fr": "<"}], "reponse_attendue": "=" },
+    { "id": "p115-ex1f", "page": 115, "exercice_num": 1, "sous_question": "f", "consigne": "3 4/5 ___ 78/25", "type": "select", "options": [{"fr": ">"}, {"fr": "<"}], "reponse_attendue": ">" },
+    { "id": "p115-ex3a", "page": 115, "exercice_num": 3, "sous_question": "a", "consigne": "Ordre décroissant : 8/3, 1 1/2, 7/4", "type": "select", "options": [{"fr": "8/3, 7/4, 1 1/2"}, {"fr": "1 1/2, 7/4, 8/3"}], "reponse_attendue": "8/3, 7/4, 1 1/2" },
+    { "id": "p115-ex5a", "page": 115, "exercice_num": 5, "sous_question": "a", "consigne": "3 h 30 min en nombre fractionnaire :", "type": "select", "options": [{"fr": "3 1/2 h"}, {"fr": "3 3/10 h"}], "reponse_attendue": "3 1/2 h" },
+    { "id": "p115-vpl", "page": 115, "exercice_num": "Va plus loin", "consigne": "Jérémie pense que 27 3/8 = 251/8. A-t-il raison ?", "type": "select", "options": [{"fr": "Non (car 27 x 8 + 3 = 219)"}, {"fr": "Oui"}], "reponse_attendue": "Non (car 27 x 8 + 3 = 219)" }
+  ]
+}

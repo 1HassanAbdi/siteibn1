@@ -91,18 +91,17 @@
       "totalWords": 43,
       "words":["acheter","actif","adieu","agréablement","aide","ajouter","aller","approcher","après","aucun","auteur","averse","avis","bavarder","bête","beurre","bientôt","bonbon","bougie","brebis","bref","briser","bruit","brun","brutal","capital","carré","cartable","centime","cercle","chagrin","chaise","chanter","charmer","chaume","cher","chute","client","clocher","colorer","comprendre","consolation","construction"]
     }, 
-    {
+   {
       "id": 11,
       "week": "Semaine 11",
-      "evaluation": null,
-      "echelon": "-",
-      "totalWords": null,
-      "words": []
-    },
-    
+      "evaluation": "2026-03-12",
+      "echelon": "Échelon 16 (Partie 6/6)",
+      "totalWords": 43,
+      "words":["acheter","actif","adieu","agréablement","aide","ajouter","aller","approcher","après","aucun","auteur","averse","avis","bavarder","bête","beurre","bientôt","bonbon","bougie","brebis","bref","briser","bruit","brun","brutal","capital","carré","cartable","centime","cercle","chagrin","chaise","chanter","charmer","chaume","cher","chute","client","clocher","colorer","comprendre","consolation","construction"]
+    }, 
     {
       "id": 12,
-      "week": "Semaine 11",
+      "week": "Semaine 12",
       "evaluation": "2026-03-26",
       "echelon": "Échelon 17 (Partie 1/6)",
       "totalWords": 42,
@@ -110,7 +109,7 @@
     },
     {
       "id": 13,
-      "week": "Semaine 12",
+      "week": "Semaine 13",
       "evaluation": "2026-04-02",
       "echelon": "Échelon 17 (Partie 2/6)",
       "totalWords": 42,
@@ -118,7 +117,7 @@
     },
     {
       "id": 14,
-      "week": "Semaine 13",
+      "week": "Semaine 14",
       "evaluation": "2026-04-09",
       "echelon": "Échelon 17 (Partie 3/6)",
       "totalWords": 42,
@@ -126,7 +125,7 @@
     },
     {
       "id": 15,
-      "week": "Semaine 14",
+      "week": "Semaine 15",
       "evaluation": "2026-04-16",
       "echelon": "Échelon 17 (Partie 4/6)",
       "totalWords": 43,
@@ -134,7 +133,7 @@
     },
     {
       "id": 16,
-      "week": "Semaine 15",
+      "week": "Semaine 16",
       "evaluation": "2026-04-23",
       "echelon": "Échelon 17 (Partie 5/6)",
       "totalWords": 43,
@@ -142,7 +141,7 @@
     },
     {
       "id": 17,
-      "week": "Semaine 16",
+      "week": "Semaine 17",
       "evaluation": "2026-04-30",
       "echelon": "Échelon 17 (Partie 6/6)",
       "totalWords": 42,

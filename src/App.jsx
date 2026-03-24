@@ -26,6 +26,9 @@ import ReadingAppee from "./1eAnnee/Lecture/app";
 import SentenceBuilder from "./Cahier/SentenceBuilder";
 import TeacherDashboard from "./Dictee/TeacherDashboard";
 import Programme10 from "./10/maths";
+import QuizFourmiBourdon from "./TEXTE/quiz";
+import QuizSelector from "./TEXTE/quizselect";
+import QuizOQRE from "./TEXTE/quiz2";
 
 
 function App() {
@@ -49,6 +52,8 @@ function App() {
 
 
           <Route path="/activites/51e Année/Francais" element={<YearlyNavigator5e />} />
+          <Route path="/activites/4e Année/Francais" element={<QuizOQRE></QuizOQRE> } />
+          <Route path="/activites/5e Année/Francais" element={<QuizOQRE></QuizOQRE>} />
           <Route path="/activites/1re Année/Francais" element={<ReadingAppee></ReadingAppee>} />
           <Route path="/activites/1re Année/Mathematiques" element={<ReadingApp></ReadingApp>} />
           <Route path="/activites/1re Année/Mathematiques" element={<ReadingApp></ReadingApp>} />
@@ -62,7 +67,7 @@ function App() {
           <Route path="/activites/7e Année/Francais" element={<SentenceBuilder></SentenceBuilder>} />
 
           <Route path="/activites/3e Année/Mathematiques" element={<MathEvaluator></MathEvaluator> } />
-          <Route path="/activites/6e Année/Francais" element={<Exercice63></Exercice63>} />
+          <Route path="/activites/6e Année/Francais" element={<QuizOQRE></QuizOQRE>} />
           <Route path="/activites/6e Année/Mathematiques" element={<MainApp></MainApp>} />
             
            

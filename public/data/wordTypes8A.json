@@ -1,5 +1,5 @@
 {
-  "title": "Dictionnaire de Vocabulaire - 8e Année",
+  "title": "Dictionnaire de Vocabulaire - 7e Année",
   "weeks_definitions": [
     {
       "week_id": 1,
@@ -427,7 +427,7 @@
       ]
     },
     {
-      "week_id": 10,
+      "week_id": 11,
       "words_data": [
         {"word": "là-bas", "type": "autres"},
         {"word": "lanterne", "type": "nom"},
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "week_id": 11,
+      "week_id": 12,
       "words_data": [
         {"word": "priver", "type": "verbe"},
         {"word": "proie", "type": "nom"},
@@ -514,7 +514,7 @@
       ]
     },
     {
-      "week_id": 12,
+      "week_id": 13,
       "words_data": [
         {"word": "abîme", "type": "nom"},
         {"word": "abord", "type": "nom"},
@@ -558,7 +558,7 @@
       ]
     },
     {
-      "week_id": 13,
+      "week_id": 14,
       "words_data": [
         {"word": "chrétien", "type": "adjectif"},
         {"word": "circonstance", "type": "nom"},
@@ -600,7 +600,7 @@
       ]
     },
     {
-      "week_id": 14,
+      "week_id": 15,
       "words_data": [
         {"word": "évêque", "type": "nom"},
         {"word": "examiner", "type": "verbe"},
@@ -642,7 +642,7 @@
       ]
     },
     {
-      "week_id": 15,
+      "week_id": 16,
       "words_data": [
         {"word": "naufrage", "type": "nom"},
         {"word": "nègre", "type": "nom"},
@@ -681,7 +681,7 @@
       ]
     },
     {
-      "week_id": 16,
+      "week_id": 17,
       "words_data": [
         {"word": "quelqu'un", "type": "autres"},
         {"word": "queue", "type": "nom"},

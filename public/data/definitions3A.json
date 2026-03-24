@@ -360,7 +360,36 @@
     },
     {
       "week_id": 11,
-      "words_data": []
+     "words_data": [
+        {"word": "rendre", "definition": "Donner en retour."},
+        {"word": "rien", "definition": "Aucune chose."},
+        {"word": "risque", "definition": "Possibilité d'un danger."},
+        {"word": "sabot", "definition": "Chaussure en bois ou ongle du cheval."},
+        {"word": "sel", "definition": "Poudre blanche pour saler les plats."},
+        {"word": "signe", "definition": "Geste ou marque pour dire quelque chose."},
+        {"word": "singulier", "definition": "Étonnant ou mot qui désigne une seule chose."},
+        {"word": "soldat", "definition": "Personne qui fait partie de l'armée."},
+        {"word": "sueur", "definition": "Gouttes d'eau qui sortent de la peau quand on a chaud."},
+        {"word": "surprise", "definition": "Chose étonnante à laquelle on ne s'attend pas."},
+        {"word": "tenue", "definition": "Façon de s'habiller ou de se tenir."},
+        {"word": "timide", "definition": "Qui n'ose pas parler aux autres."},
+        {"word": "toile", "definition": "Tissu solide ou réseau de l'araignée."},
+        {"word": "tombe", "definition": "Lieu où l'on enterre les morts."},
+        {"word": "tourner", "definition": "Faire un mouvement en cercle."},
+        {"word": "trois", "definition": "Le chiffre après le deux."},
+        {"word": "valeur", "definition": "Ce que vaut une chose (prix ou importance)."},
+        {"word": "vase", "definition": "Objet pour mettre des fleurs."},
+        {"word": "vaste", "definition": "Très grand et spacieux."},
+        {"word": "vente", "definition": "Action de vendre quelque chose."},
+        {"word": "véritable", "definition": "Qui est vrai et réel."},
+        {"word": "victime", "definition": "Personne qui a subi un malheur."},
+        {"word": "victoire", "definition": "Fait de gagner un jeu ou une guerre."},
+        {"word": "vide", "definition": "Qui ne contient rien."},
+        {"word": "vif", "definition": "Qui est plein d'énergie ou rapide."},
+        {"word": "visible", "definition": "Que l'on peut voir."},
+        {"word": "vite", "definition": "Avec beaucoup de vitesse."},
+        {"word": "volume", "definition": "Place occupée par un objet ou niveau du son."}
+      ]
     },
     {
       "week_id": 12,

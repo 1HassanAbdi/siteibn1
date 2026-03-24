@@ -1,0 +1,74 @@
+{
+  "title": "Préparation à l’OQRE – Fourmi Annie et Bourdon Bastien",
+   "texte": "Fourmi Annie se prélassait au soleil lorsqu'elle a aperçu Bourdon Bastien occupé à ramasser de la nourriture dans les champs. « Pourquoi ramasses-tu de la nourriture maintenant, Bourdon Bastien? » a demandé Annie.\n\nBourdon Bastien s'est arrêté en plein vol et a regardé Fourmi Annie. « L'hiver approche, Annie. Es-tu bien préparée ? » lui a-t-il demandé.\n\nAnnie a regardé Bastien d'un air incrédule. « Ramasser de la nourriture pour l'hiver maintenant? Tu veux rire? Arrête-toi un peu et viens à la fête d'Alice avec moi. » Bourdon Bastien a secoué la tête. « Non, merci. J'ai encore beaucoup de travail à faire. Au revoir, Annie. »\n\nLes jours sont devenus des semaines. Fourmi Annie s'est réveillée un matin et a vu le sol tout recouvert de neige. « Hourra, l'hiver est arrivé! Je vais aller jouer dans la neige après mon déjeuner. » Elle est sortie dehors à la recherche de nourriture et a été horrifiée de constater qu'il n'en restait plus.\n\n« Oh, non! J'ai oublié de ramasser de la nourriture. Qu'est-ce que je vais faire? » a dit Annie en pleurant. Tout à coup, la cloche d'entrée a sonné. Annie a été surprise de voir Bourdon Bastien à la porte.\n\n« Aimerais-tu venir chez moi et partager ma nourriture, Annie? Je sais que tu n'as rien ramassé. Comme j'ai commencé tôt, j'ai un tas de choses à partager », a dit Bastien gentiment. Honteuse, Fourmi Annie a baissé la tête et a répondu : « Merci, Bourdon Bastien. J'aurais dû t'écouter. Je suis désolée. Laisse-moi nettoyer ta maison cet hiver en échange de la nourriture. »\n\n« Ne t'en fais pas Annie. Viens », a dit Bastien. Ensemble, ils ont marché d'un pas pesant vers la maison de Bastien.",
+      "startDate": "2026-03-15",
+      "endDate": "2026-03-21",
+
+  "partie1": {
+    "title": "Partie 1 : Compréhension",
+    "questions": [
+      { "q": "Qui sont les personnages principaux ?", "options": ["Annie et Alice", "Annie et Bastien", "Bastien et Alice", "Annie et le narrateur"], "r": 1 },
+      { "q": "Où Annie voit-elle Bastien ?", "options": ["Maison", "Champs", "Fête", "Neige"], "r": 1 },
+      { "q": "Que fait Bastien quand Annie lui parle ?", "options": ["Ignore", "Répond", "Part", "Offre nourriture"], "r": 1 },
+      { "q": "Pourquoi Annie rit-elle ?", "options": ["Elle n’y croit pas", "Elle a peur", "Elle est triste", "Elle comprend"], "r": 0 },
+      { "q": "Quel est le problème d’Annie ?", "options": ["Pas de nourriture", "Malade", "Perdue", "Fatiguée"], "r": 0 },
+      { "q": "Que propose Bastien ?", "options": ["Argent", "Nourriture", "Fête", "Maison"], "r": 1 },
+      { "q": "Réaction d’Annie ?", "options": ["Refuse", "Remercie", "Ignore", "Colère"], "r": 1 },
+      { "q": "Leçon de l’histoire ?", "options": ["S’amuser", "Se préparer", "Ignorer", "Mentir"], "r": 1 },
+      { "q": "Quand arrive l’hiver ?", "options": ["Début", "Milieu", "Fin", "Jamais"], "r": 0 },
+      { "q": "Pourquoi Annie est-elle triste ?", "options": ["Faim", "Peur", "Froid", "Seule"], "r": 0 }
+    ]
+  },
+
+  "partie2": {
+    "title": "Partie 2 : Vocabulaire",
+    "questions": [
+      { "q": "Se prélasser signifie :", "options": ["Se reposer", "Courir", "Manger", "Travailler"], "r": 0 },
+      { "q": "Horrifiée signifie :", "options": ["Choquée", "Heureuse", "Fatiguée", "Calme"], "r": 0 },
+      { "q": "Incrédule signifie :", "options": ["Ne pas croire", "Heureux", "Fâché", "Triste"], "r": 0 },
+      { "q": "Gentiment est :", "options": ["Nom", "Adverbe", "Verbe", "Adjectif"], "r": 1 },
+      { "q": "Synonyme de rapide :", "options": ["Lent", "Vite", "Fatigué", "Calme"], "r": 1 },
+      { "q": "Contraire de tôt :", "options": ["Tard", "Avant", "Hier", "Maintenant"], "r": 0 },
+      { "q": "Partage signifie :", "options": ["Donner", "Garder", "Vendre", "Jeter"], "r": 0 },
+      { "q": "Maison signifie :", "options": ["École", "Habitation", "Rue", "Ville"], "r": 1 },
+      { "q": "Neige signifie :", "options": ["Pluie", "Glace", "Neige", "Vent"], "r": 2 },
+      { "q": "Préparer signifie :", "options": ["Organiser", "Oublier", "Dormir", "Partir"], "r": 0 }
+    ]
+  },
+
+  "partie3": {
+    "title": "Partie 3 : Grammaire",
+    "questions": [
+      { "q": "Type de phrase : Es-tu prêt ?", "options": ["Déclarative", "Interrogative", "Exclamative", "Impérative"], "r": 1 },
+      { "q": "Adjectif : Annie est ___", "options": ["Annie", "est", "honteuse", "elle"], "r": 2 },
+      { "q": "Sujet : Bastien mange", "options": ["Bastien", "mange", "nourriture", "sa"], "r": 0 },
+      { "q": "Adverbe :", "options": ["vite", "chat", "bleu", "manger"], "r": 0 },
+      { "q": "Nom :", "options": ["courir", "chat", "vite", "bleu"], "r": 1 },
+      { "q": "Verbe :", "options": ["manger", "chat", "bleu", "vite"], "r": 0 },
+      { "q": "Phrase correcte :", "options": ["Annie mange.", "Mange Annie", "Annie manger", "Mange est Annie"], "r": 0 },
+      { "q": "Pluriel de maison :", "options": ["maisons", "maison", "maisones", "maisone"], "r": 0 },
+      { "q": "Féminin de gentil :", "options": ["gentille", "gentil", "gentils", "gentile"], "r": 0 },
+      { "q": "Phrase négative :", "options": ["Je mange", "Je ne mange pas", "Mange je", "Je mange pas"], "r": 1 }
+    ]
+  },
+
+  "partie4": {
+    "title": "Partie 4 : Conjugaison",
+    "questions": [
+      { "q": "Temps : Annie se prélassait", "options": ["Présent", "Imparfait", "Futur", "Passé composé"], "r": 1 },
+      { "q": "Futur de manger :", "options": ["mangera", "mange", "mangeait", "a mangé"], "r": 0 },
+      { "q": "Présent : je ___ manger", "options": ["mange", "manges", "mangeons", "mangent"], "r": 0 },
+      { "q": "Imparfait : il ___ jouer", "options": ["jouait", "joue", "jouera", "a joué"], "r": 0 },
+      { "q": "Passé composé : elle ___ mangé", "options": ["a", "est", "va", "fait"], "r": 0 },
+      { "q": "Futur : nous ___ partir", "options": ["partirons", "partons", "partions", "parti"], "r": 0 },
+      { "q": "Présent : ils ___ finir", "options": ["finissent", "finit", "finis", "finir"], "r": 0 },
+      { "q": "Imparfait : je ___ être", "options": ["étais", "suis", "serai", "été"], "r": 0 },
+      { "q": "Futur : tu ___ avoir", "options": ["auras", "as", "avais", "eu"], "r": 0 },
+      { "q": "Présent : nous ___ être", "options": ["sommes", "êtes", "sont", "suis"], "r": 0 }
+    ]
+  },
+
+  "redaction": {
+    "question": "Explique pourquoi il est important de se préparer à l’avance (15-20 lignes)."
+  }
+}

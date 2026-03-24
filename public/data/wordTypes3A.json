@@ -358,6 +358,38 @@
         {"word": "vite", "type": "autres"},
         {"word": "volume", "type": "nom"}
       ]
+    }, {
+      "week_id": 10,
+      "words_data": [
+        {"word": "rendre", "type": "verbe"},
+        {"word": "rien", "type": "autres"},
+        {"word": "risque", "type": "nom"},
+        {"word": "sabot", "type": "nom"},
+        {"word": "sel", "type": "nom"},
+        {"word": "signe", "type": "nom"},
+        {"word": "singulier", "type": "adjectif"},
+        {"word": "soldat", "type": "nom"},
+        {"word": "sueur", "type": "nom"},
+        {"word": "surprise", "type": "nom"},
+        {"word": "tenue", "type": "nom"},
+        {"word": "timide", "type": "adjectif"},
+        {"word": "toile", "type": "nom"},
+        {"word": "tombe", "type": "nom"},
+        {"word": "tourner", "type": "verbe"},
+        {"word": "trois", "type": "autres"},
+        {"word": "valeur", "type": "nom"},
+        {"word": "vase", "type": "nom"},
+        {"word": "vaste", "type": "adjectif"},
+        {"word": "vente", "type": "nom"},
+        {"word": "véritable", "type": "adjectif"},
+        {"word": "victime", "type": "nom"},
+        {"word": "victoire", "type": "nom"},
+        {"word": "vide", "type": "adjectif"},
+        {"word": "vif", "type": "adjectif"},
+        {"word": "visible", "type": "adjectif"},
+        {"word": "vite", "type": "autres"},
+        {"word": "volume", "type": "nom"}
+      ]
     },
     {
       "week_id": 12,
