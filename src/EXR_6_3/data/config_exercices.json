@@ -26,7 +26,14 @@
     "matiere": "FR", 
     "titre": "Le premier pas", 
     "chemin": "./data/FR/Lepremierpas.json" 
-  },
+  },{
+  "slug": "les-pionniers-du-ciel",
+  "niveau": 3,
+  "matiere": "FR",
+  "titre": "Les pionniers du ciel",
+  "chemin": "./data/FR/Lespionniersduciel.json"
+},
+  
   { 
     "slug": "pieuvre", 
     "niveau": 6, 
@@ -54,7 +61,13 @@
     "matiere": "FR", 
     "titre": "Une promenade inoubliable", 
     "chemin": "./data/FR/promenade.json" 
-  },
+  },{
+  "slug": "les-pionniers-du-ciel",
+  "niveau": 6,
+  "matiere": "FR",
+  "titre": "Les pionniers du ciel",
+  "chemin": "./data/FR/Lespionniersduciel.json"
+},
 
   { 
     "slug": "regularité", 

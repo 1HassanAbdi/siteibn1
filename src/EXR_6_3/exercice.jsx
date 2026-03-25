@@ -44,21 +44,41 @@ export default function PortailOQRE({ exerciseSlug, level, onBack }) {
   
 
   // --- 2. CHARGEMENT DYNAMIQUE DU JSON ---
-  useEffect(() => {
-    const loadData = async () => {
-      const info = configExercices.find(ex => ex.slug === exerciseSlug);
-      if (info) {
-        try {
-          const importFunc = allModules[info.chemin];
-          const module = await importFunc();
-          setSelectedSession(module.default);
-        } catch (e) {
-          alert("Erreur de chargement du fichier JSON.");
-        }
+  // --- 2. CHARGEMENT DYNAMIQUE DU JSON ---
+useEffect(() => {
+  const loadData = async () => {
+    console.log("Exercise slug reçu :", exerciseSlug); // Vérifie le slug
+    const info = configExercices.find(ex => ex.slug === exerciseSlug);
+    if (!info) {
+      console.error("Aucun exercice trouvé pour ce slug :", exerciseSlug);
+      return;
+    }
+    console.log("Info de config trouvée :", info);
+
+    try {
+      const importFunc = allModules[info.chemin];
+      if (!importFunc) {
+        console.error("Aucun import trouvé pour le chemin :", info.chemin);
+        return;
       }
-    };
-    loadData();
-  }, [exerciseSlug]);
+
+      console.log("Import dynamique prêt pour :", info.chemin);
+      const module = await importFunc();
+      console.log("Module chargé :", module);
+
+      if (!module.default) {
+        console.error("Module chargé mais pas d'export default :", module);
+        console.log("Clés disponibles pour import.meta.glob :", Object.keys(allModules));
+      } else {
+        setSelectedSession(module.default);
+        console.log("Session sélectionnée :", module.default);
+      }
+    } catch (e) {
+      console.error("Erreur de chargement du fichier JSON :", e);
+    }
+  };
+  loadData();
+}, [exerciseSlug]);
 
   // --- 3. MÉLANGE DES OPTIONS (SHUFFLE ARRAY) ---
   const shuffleArray = (array) => {

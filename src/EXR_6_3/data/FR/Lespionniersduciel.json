@@ -1,0 +1,170 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et grammaire - Les pionniers du ciel",
+    "niveau": "3e année",
+    "session": "Les pionniers du ciel",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Les pionniers du ciel",
+          "image": "/imageoqre/freres_wright.jpg",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "Quand ils étaient jeunes, Orville et Wilbur Wright aimaient les bicyclettes. Ils fabriquaient leurs propres bicyclettes. Ils réparaient aussi celles de leurs amis. Devenus adultes, ils ont ouvert leur propre atelier de vélos. C’est dans cet atelier qu’ils ont construit le premier avion."
+            },
+            {
+              "p": 2,
+              "contenu": "En 1896, Orville est tombé gravement malade. Son frère, Wilbur, est resté à la maison pour le soigner. Wilbur avait ainsi beaucoup de temps libre. Il a lu des histoires sur les planeurs. Les planeurs n’ont pas de moteur. Ils volent sur les courants venteux. Les gens voulaient des « planeurs à moteur » pour aller plus vite et plus loin. Mais personne ne savait comment les construire."
+            },
+            {
+              "p": 3,
+              "contenu": "L’histoire des planeurs a stimulé l’intérêt des frères pour l’aviation. Ils ont donc décidé de construire un planeur à moteur. Wilbur a obtenu d’un musée de l’information sur les machines volantes. Il a lu tout ce qui existait sur le sujet."
+            },
+            {
+              "p": 4,
+              "contenu": "Wilbur a travaillé dur. Il a résolu un problème important : les premières machines volantes s’écrasaient à cause des vents changeants. Wilbur a imaginé un planeur avec des ailes mobiles. Ce planeur pourrait incliner les ailes dans la bonne direction quand les vents changeraient. Il pourrait ainsi rester dans les airs."
+            },
+            {
+              "p": 5,
+              "contenu": "L’année suivante, les deux frères ont construit le planeur imaginé par Wilbur. Ensuite, ils ont bâti un tunnel aérodynamique. Cette installation leur a permis d’accélérer leurs travaux. Dans ce tunnel, ils ont testé leur planeur et l’ont amélioré."
+            },
+            {
+              "p": 6,
+              "contenu": "Par la suite, les frères Wright ont fabriqué deux autres planeurs. Ils les ont mis à l’essai dans leur tunnel aérodynamique. Ils les ont aussi mis à l’essai à l’extérieur. Ensuite, ils ont construit un « planeur à moteur ». Cet appareil a été le premier avion au monde. Le 17 décembre 1903, les deux frères ont tiré au sort. Le gagnant piloterait l’avion. Orville a gagné. Ce jour-là, il a effectué le premier vol à moteur. Le vol a duré 12 secondes. L’avion a parcouru 36,5 mètres. Ce vol court a changé le monde pour toujours."
+            }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Qui sont Orville et Wilbur Wright ?",
+              "options": ["Des astronautes", "Des inventeurs et pionniers de l’aviation", "Des pilotes de course", "Des médecins"],
+              "reponse_correcte": "Des inventeurs et pionniers de l’aviation"
+            },
+            {
+              "numero": 2,
+              "enonce": "Que fabriquaient les frères Wright quand ils étaient jeunes ?",
+              "options": ["Des voitures", "Des bicyclettes", "Des bateaux", "Des trains"],
+              "reponse_correcte": "Des bicyclettes"
+            },
+            {
+              "numero": 3,
+              "enonce": "Pourquoi Wilbur a-t-il eu beaucoup de temps libre en 1896 ?",
+              "options": ["Parce qu’il était en vacances", "Parce qu’il soignait son frère malade", "Parce qu’il voyageait", "Parce qu’il étudiait à l’étranger"],
+              "reponse_correcte": "Parce qu’il soignait son frère malade"
+            },
+            {
+              "numero": 4,
+              "enonce": "Qu’est-ce qu’un planeur ?",
+              "options": ["Une voiture sans moteur", "Un avion sans moteur qui vole sur les courants venteux", "Un bateau à voile", "Un train rapide"],
+              "reponse_correcte": "Un avion sans moteur qui vole sur les courants venteux"
+            },
+            {
+              "numero": 5,
+              "enonce": "Quel problème Wilbur a-t-il résolu pour les machines volantes ?",
+              "options": ["Le manque de carburant", "Les ailes mobiles pour résister aux vents changeants", "La couleur de l’avion", "Le bruit des moteurs"],
+              "reponse_correcte": "Les ailes mobiles pour résister aux vents changeants"
+            },
+            {
+              "numero": 6,
+              "enonce": "Qu’ont construit les frères Wright après leurs planeurs ?",
+              "options": ["Un sous-marin", "Un tunnel aérodynamique", "Une fusée", "Un hélicoptère"],
+              "reponse_correcte": "Un tunnel aérodynamique"
+            },
+            {
+              "numero": 7,
+              "enonce": "Qui a piloté le premier avion le 17 décembre 1903 ?",
+              "options": ["Wilbur", "Orville", "Un ami des frères Wright", "Un scientifique"],
+              "reponse_correcte": "Orville"
+            },
+            {
+              "numero": 8,
+              "enonce": "Combien de temps a duré le premier vol à moteur ?",
+              "options": ["1 minute", "12 secondes", "1 heure", "36 minutes"],
+              "reponse_correcte": "12 secondes"
+            },
+            {
+              "numero": 9,
+              "enonce": "Quelle distance l’avion a-t-il parcourue lors du premier vol ?",
+              "options": ["10 mètres", "36,5 mètres", "100 mètres", "1 kilomètre"],
+              "reponse_correcte": "36,5 mètres"
+            },
+            {
+              "numero": 10,
+              "enonce": "Pourquoi le premier vol des frères Wright est-il important ?",
+              "options": ["Parce qu’il a duré très longtemps", "Parce qu’il a changé le monde de l’aviation", "Parce qu’il a eu lieu sur la Lune", "Parce qu’il a utilisé un moteur à vapeur"],
+              "reponse_correcte": "Parce qu’il a changé le monde de l’aviation"
+            },
+            {
+              "numero": 11,
+              "enonce": "Où les frères Wright ont-ils construit leur premier avion ?",
+              "options": ["Dans un atelier de vélos", "Dans un musée", "Dans un hangar", "Dans une usine"],
+              "reponse_correcte": "Dans un atelier de vélos"
+            },
+            {
+              "numero": 12,
+              "enonce": "Qu’est-ce qu’un tunnel aérodynamique ?",
+              "options": ["Un tunnel pour les voitures", "Un tunnel pour tester les planeurs", "Un tunnel pour les trains", "Un tunnel pour les bateaux"],
+              "reponse_correcte": "Un tunnel pour tester les planeurs"
+            },
+            {
+              "numero": 13,
+              "enonce": "Que signifie le mot « aérodynamique » ?",
+              "options": ["Qui concerne l’eau", "Qui concerne l’air et le mouvement dans l’air", "Qui concerne les moteurs", "Qui concerne les routes"],
+              "reponse_correcte": "Qui concerne l’air et le mouvement dans l’air"
+            },
+            {
+              "numero": 14,
+              "enonce": "Que veut dire « imaginé » dans le texte ?",
+              "options": ["Conçu dans l’esprit", "Vu en rêve", "Dessiné sur papier", "Acheté en magasin"],
+              "reponse_correcte": "Conçu dans l’esprit"
+            },
+            {
+              "numero": 15,
+              "enonce": "Pourquoi les frères Wright ont-ils construit un planeur à moteur ?",
+              "options": ["Pour aller plus vite et plus loin", "Pour faire joli", "Pour gagner une course", "Pour voyager dans l’espace"],
+              "reponse_correcte": "Pour aller plus vite et plus loin"
+            },
+            {
+              "numero": 16,
+              "enonce": "Que signifie « revenir les mains vides » ?",
+              "options": ["Revenir sans rien apporter", "Revenir avec des cadeaux", "Revenir en courant", "Revenir en chantant"],
+              "reponse_correcte": "Revenir sans rien apporter"
+            },
+            {
+              "numero": 17,
+              "enonce": "Dans le texte, qui a lu des livres sur les planeurs ?",
+              "options": ["Orville", "Wilbur", "Un ami", "Un scientifique"],
+              "reponse_correcte": "Wilbur"
+            },
+            {
+              "numero": 18,
+              "enonce": "Que signifie « courant venteux » ?",
+              "options": ["Un courant d’eau", "Un vent fort", "Un courant électrique", "Un courant de voitures"],
+              "reponse_correcte": "Un vent fort"
+            },
+            {
+              "numero": 19,
+              "enonce": "Les frères Wright ont-ils voyagé dans l’espace ?",
+              "options": ["Oui", "Non"],
+              "reponse_correcte": "Non"
+            },
+            {
+              "numero": 20,
+              "enonce": "Pourquoi les frères Wright sont-ils célèbres ?",
+              "options": ["Ils ont inventé l’avion", "Ils ont voyagé sur la Lune", "Ils ont construit des voitures", "Ils ont découvert l’électricité"],
+              "reponse_correcte": "Ils ont inventé l’avion"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
