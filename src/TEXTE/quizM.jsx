@@ -5,7 +5,7 @@ import data from "./mathematique1.json";
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyoLtJ-7-t60l_WMJC7pzosnhezkfJRBfvECEIKQFmDHr0vwTtK3UGv11JAV6G8XIkM/exec";
 
-export default function QuizOQRE() {
+export default function QuizOQREM() {
   const [etape, setEtape] = useState("login");
   const [email, setEmail] = useState("");
   const [nom, setNom] = useState("");

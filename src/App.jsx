@@ -28,7 +28,9 @@ import TeacherDashboard from "./Dictee/TeacherDashboard";
 import Programme10 from "./10/maths";
 import QuizFourmiBourdon from "./TEXTE/quiz";
 import QuizSelector from "./TEXTE/quizselect";
-import QuizOQRE from "./TEXTE/quiz2";
+import QuizOQRE from "./TEXTE/quizM";
+import QuizOQREM from "./TEXTE/quizM";
+import QuizOQREF from "./TEXTE/quizF";
 
 
 function App() {
@@ -52,8 +54,15 @@ function App() {
 
 
           <Route path="/activites/51e Année/Francais" element={<YearlyNavigator5e />} />
-          <Route path="/activites/4e Année/Francais" element={<QuizOQRE></QuizOQRE> } />
-          <Route path="/activites/5e Année/Francais" element={<QuizOQRE></QuizOQRE>} />
+           <Route path="/activites/3e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
+          <Route path="/activites/3e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+          <Route path="/activites/4e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
+          <Route path="/activites/4e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+           <Route path="/activites/5e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
+          <Route path="/activites/5e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+           <Route path="/activites/6e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
+          <Route path="/activites/6e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+         
           <Route path="/activites/1re Année/Francais" element={<ReadingAppee></ReadingAppee>} />
           <Route path="/activites/1re Année/Mathematiques" element={<ReadingApp></ReadingApp>} />
           <Route path="/activites/1re Année/Mathematiques" element={<ReadingApp></ReadingApp>} />
