@@ -1,0 +1,74 @@
+{
+  "matiere": "FRANCAIS",
+  "titre": "Les pionniers du ciel",
+  "startDate": "2026-03-22",
+  "endDate": "2026-03-29",
+  "texte": "Quand ils étaient jeunes, Orville et Wilbur Wright aimaient les bicyclettes. Ils fabriquaient leurs propres bicyclettes. Ils réparaient aussi celles de leurs amis. Devenus adultes, ils ont ouvert leur propre atelier de vélos. C’est dans cet atelier qu’ils ont construit le premier avion.\n\nEn 1896, Orville est tombé gravement malade. Son frère, Wilbur, est resté à la maison pour le soigner. Wilbur avait ainsi beaucoup de temps libre. Il a lu des histoires sur les planeurs. Les planeurs n’ont pas de moteur. Ils volent sur les courants venteux. Les gens voulaient des « planeurs à moteur » pour aller plus vite et plus loin. Mais personne ne savait comment les construire.\n\nL’histoire des planeurs a stimulé l’intérêt des frères pour l’aviation. Ils ont donc décidé de construire un planeur à moteur. Wilbur a obtenu d’un musée de l’information sur les machines volantes. Il a lu tout ce qui existait sur le sujet.\n\nWilbur a travaillé dur. Il a résolu un problème important : les premières machines volantes s’écrasaient à cause des vents changeants. Wilbur a imaginé un planeur avec des ailes mobiles. Ce planeur pourrait incliner les ailes dans la bonne direction quand les vents changeraient. Il pourrait ainsi rester dans les airs.\n\nL’année suivante, les deux frères ont construit le planeur imaginé par Wilbur. Ensuite, ils ont bâti un tunnel aérodynamique. Cette installation leur a permis d’accélérer leurs travaux. Dans ce tunnel, ils ont testé leur planeur et l’ont amélioré.\n\nPar la suite, les frères Wright ont fabriqué deux autres planeurs. Ils les ont mis à l’essai dans leur tunnel aérodynamique. Ils les ont aussi mis à l’essai à l’extérieur. Ensuite, ils ont construit un « planeur à moteur ». Cet appareil a été le premier avion au monde. Le 17 décembre 1903, les deux frères ont tiré au sort. Le gagnant piloterait l’avion. Orville a gagné. Ce jour-là, il a effectué le premier vol à moteur. Le vol a duré 12 secondes. L’avion a parcouru 36,5 mètres. Ce vol court a changé le monde pour toujours.",
+  "themes": {
+    "COMPREHENSION": {
+      "domaine": "Les pionniers du ciel",
+      "questions": [
+        { "q": "Quel était le métier des frères Wright avant de construire des avions ?", "options": ["Des boulangers", "Des réparateurs et fabricants de bicyclettes", "Des pilotes", "Des enseignants"], "r": 1 },
+        { "q": "Pourquoi Wilbur a-t-il eu beaucoup de temps libre en 1896 ?", "options": ["Parce qu’il était en vacances", "Parce qu’il soignait son frère malade", "Parce qu’il voyageait", "Parce qu’il étudiait à l’étranger"], "r": 1 },
+        { "q": "Qu’est-ce qu’un planeur ?", "options": ["Une voiture sans moteur", "Un avion sans moteur qui vole sur les courants venteux", "Un bateau à voile", "Un train rapide"], "r": 1 },
+        { "q": "Quel problème Wilbur a-t-il résolu pour les machines volantes ?", "options": ["Le manque de carburant", "Les ailes mobiles pour résister aux vents changeants", "La couleur de l’avion", "Le bruit des moteurs"], "r": 1 },
+        { "q": "Qu’ont construit les frères Wright après leurs planeurs ?", "options": ["Un sous-marin", "Un tunnel aérodynamique", "Une fusée", "Un hélicoptère"], "r": 1 },
+        { "q": "Qui a piloté le premier avion le 17 décembre 1903 ?", "options": ["Wilbur", "Orville", "Un ami des frères Wright", "Un scientifique"], "r": 1 },
+        { "q": "Combien de temps a duré le premier vol à moteur ?", "options": ["1 minute", "12 secondes", "1 heure", "36 minutes"], "r": 1 },
+        { "q": "Quelle distance l’avion a-t-il parcourue lors du premier vol ?", "options": ["10 mètres", "36,5 mètres", "100 mètres", "1 kilomètre"], "r": 1 },
+        { "q": "Pourquoi le premier vol des frères Wright est-il important ?", "options": ["Parce qu’il a duré très longtemps", "Parce qu’il a changé le monde de l’aviation", "Parce qu’il a eu lieu sur la Lune", "Parce qu’il a utilisé un moteur à vapeur"], "r": 1 }
+      ]
+    },
+    "VOCABULAIRE": {
+      "domaine": "Lexique",
+      "questions": [
+        { "q": "Que signifie 'aérodynamique' ?", "options": ["Qui concerne l’eau", "Qui concerne l’air et le mouvement dans l’air", "Qui concerne les moteurs", "Qui concerne les routes"], "r": 1 },
+        { "q": "Quel est un synonyme de 'imaginé' ?", "options": ["Conçu dans l’esprit", "Vu en rêve", "Dessiné sur papier", "Acheté en magasin"], "r": 0 },
+        { "q": "Que signifie 'courant venteux' ?", "options": ["Un courant d’eau", "Un vent fort", "Un courant électrique", "Un courant de voitures"], "r": 1 },
+        { "q": "Quel est le contraire de 'rapidement' ?", "options": ["Vite", "Tard", "Lentement", "Longtemps"], "r": 2 },
+        { "q": "Que veut dire 'tunnel' dans le texte ?", "options": ["Un passage souterrain", "Un espace pour tester les planeurs", "Un chemin en montagne", "Un pont"], "r": 1 },
+        { "q": "Que signifie 'essai' dans le texte ?", "options": ["Un échec", "Un test", "Un succès", "Un vol"], "r": 1 },
+        { "q": "Quel mot appartient à la famille de 'voler' ?", "options": ["Volant", "Voiture", "Voyage", "Vent"], "r": 0 },
+        { "q": "Que signifie 'moteur' ?", "options": ["Un objet qui permet de bouger", "Un objet qui produit de l’électricité", "Un objet qui mesure le temps", "Un objet qui fait du bruit"], "r": 0 },
+        { "q": "Que signifie 'incliner' ?", "options": ["Pencher", "Monter", "Descendre", "Tourner"], "r": 0 }
+      ]
+    },
+    "CONJUGAISON": {
+      "domaine":  "Présent ET Imparfait",
+       "questions": [
+          { "q": "Les frères Wright (fabriquer) des bicyclettes.", "options": ["fabrique", "fabriques", "fabriquent", "fabriquons"], "r": 2 },
+          { "q": "Wilbur (lire) des histoires sur les planeurs.", "options": ["lis", "lit", "lisons", "lisent"], "r": 1 },
+          { "q": "Ils (construire) un planeur à moteur.", "options": ["construis", "construit", "construisent", "construisons"], "r": 2 },
+          { "q": "Orville (piloter) l’avion.", "options": ["pilote", "pilotes", "pilotent", "pilotons"], "r": 0 },
+          { "q": "Nous (résoudre) un problème.", "options": ["résous", "résout", "résolvons", "résolvent"], "r": 2 },
+          { "q": "Tu (imaginer) un planeur.", "options": ["imagine", "imagines", "imaginons", "imaginent"], "r": 1 },
+          { "q": "Ils (tester) leur planeur.", "options": ["teste", "testes", "testons", "testent"], "r": 3 },       
+          { "q": "Quand ils étaient jeunes, les frères Wright (aimer) les bicyclettes.", "options": ["aime", "aimais", "aimions", "aimaient"], "r": 3 },
+          { "q": "Wilbur (lire) des histoires sur les planeurs.", "options": ["lisait", "lisons", "lisaient", "lisez"], "r": 0 },
+          { "q": "Ils (fabriquer) leurs propres bicyclettes.", "options": ["fabrique", "fabriquais", "fabriquaient", "fabriquions"], "r": 2 },
+          { "q": "Les planeurs (voler) sur les courants venteux.", "options": ["vole", "volais", "volait", "volaient"], "r": 3 },
+          { "q": "Wilbur (avoir) beaucoup de temps libre.", "options": ["a", "avais", "avait", "avaient"], "r": 2 },
+          { "q": "Les gens (vouloir) des planeurs à moteur.", "options": ["veut", "veux", "voulons", "voulaient"], "r": 3 }
+        ]
+      
+    },
+    "GRAMMAIRE": {
+      "domaine": "Types et structures ET Compléments d'objet",
+      "questions":  [
+          { "q": "Quel est le sujet de : 'Wilbur lit des histoires sur les planeurs.' ?", "options": ["lit", "histoires", "Wilbur", "planeurs"], "r": 2 },
+          { "q": "Trouve l’adjectif dans : 'Un planeur rapide'.", "options": ["Un", "planeur", "rapide", "est"], "r": 2 },
+          { "q": "Quel est le genre du mot 'aile' ?", "options": ["Masculin", "Féminin", "Les deux", "Aucun"], "r": 1 },
+          { "q": "Trouve le verbe : 'Les frères Wright construisent un avion.'", "options": ["Les", "frères", "construisent", "avion"], "r": 2 },
+          { "q": "Mets au pluriel : 'Un planeur'.", "options": ["La planeur", "Le planeur", "Des planeurs", "Les planeurs"], "r": 2 },
+        
+          { "q": "Dans la phrase 'Wilbur lit des histoires sur les planeurs.', quel est le complément d'objet direct (COD) ?", "options": ["Wilbur", "lit", "des histoires", "sur les planeurs"], "r": 2 },
+          { "q": "Dans la phrase 'Ils réparaient celles de leurs amis.', quel est le complément d'objet direct (COD) ?", "options": ["Ils", "réparaient", "celles", "de leurs amis"], "r": 2 },
+          { "q": "Dans la phrase 'Wilbur a obtenu de l’information.', quel est le complément d'objet direct (COD) ?", "options": ["Wilbur", "a obtenu", "de l’information", "du musée"], "r": 2 },
+          { "q": "Dans la phrase 'Ils ont construit un planeur à moteur.', quel est le complément d'objet direct (COD) ?", "options": ["Ils", "ont construit", "un planeur à moteur", "à moteur"], "r": 2 },
+          { "q": "Dans la phrase 'Il a lu tout ce qui existait sur le sujet.', quel est le complément d'objet direct (COD) ?", "options": ["Il", "a lu", "tout", "ce qui existait sur le sujet"], "r": 3 },
+          { "q": "Dans la phrase 'Ils les ont mis à l’essai.', quel est le complément d'objet direct (COD) ?", "options": ["Ils", "ont mis", "les", "à l’essai"], "r": 2 }
+        ]
+      }
+    
+  }
+}

@@ -98,6 +98,13 @@
     "chemin": "./data/MATHS/Mathématiqueslongueursperimetres.json"
   },
   { 
+    "slug": "revision", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Mathématiques : revision", 
+    "chemin": "./data/MATHS/revision.json"
+  },
+  { 
     "slug": "Mathématiques_decimaux_entiers_recherche", 
     "niveau": 6, 
     "matiere": "MATHS", 

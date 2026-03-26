@@ -260,6 +260,3 @@ export default function Quiz({ data }) {
     </div>
   );
 }
-
-
-

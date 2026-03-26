@@ -1,0 +1,65 @@
+{
+  "matiere": "MATHEMATIQUES",
+  "titre": "Défi Mathématique - Niveau 3e année (OQRE)",
+  "startDate": "2026-03-22",
+  "endDate": "2026-03-29",
+  "texte": "Bienvenue au défi mathématique ! Pour réussir cet examen, tu dois bien lire chaque question. Nous allons explorer les nombres jusqu'à 1000, les formes géométriques, la mesure du temps et les diagrammes. Prends ton temps, utilise un brouillon si nécessaire, et vérifie tes calculs. Bonne chance !",
+  "themes": {
+    "NUMERATION": {
+      "domaine": "Nombres et Opérations",
+      "questions": [
+        { "q": "Quel nombre est représenté par : 4 centaines, 2 dizaines et 8 unités ?", "options": ["482", "428", "248", "824"], "r": 1 },
+        { "q": "Lequel de ces nombres est le plus grand ?", "options": ["709", "790", "789", "079"], "r": 1 },
+        { "q": "Calcule : 156 + 23 = ?", "options": ["176", "179", "189", "133"], "r": 1 },
+        { "q": "Si tu as 3 billets de 5$ et 2 pièces de 2$, combien d'argent as-tu en tout ?", "options": ["15$", "17$", "19$", "20$"], "r": 2 },
+        { "q": "Quel est le résultat de 5 x 4 ?", "options": ["9", "15", "20", "25"], "r": 2 },
+        { "q": "Continue la suite : 100, 125, 150, ...", "options": ["160", "175", "200", "225"], "r": 1 },
+        { "q": "Arrondis le nombre 87 à la dizaine la plus près.", "options": ["80", "85", "90", "100"], "r": 2 },
+        { "q": "Quelle fraction représente la moitié d'une pizza ?", "options": ["1/4", "1/2", "1/3", "2/2"], "r": 1 },
+        { "q": "Calcule : 450 - 150 = ?", "options": ["200", "300", "350", "400"], "r": 1 }
+      ]
+    },
+    "SENS_DE_LESPACE": {
+      "domaine": "Géométrie",
+      "questions": [
+        { "q": "Combien de sommets possède un cube ?", "options": ["4", "6", "8", "12"], "r": 2 },
+        { "q": "Laquelle de ces formes est un quadrilatère ?", "options": ["Triangle", "Cercle", "Rectangle", "Pentagone"], "r": 2 },
+        { "q": "Combien de côtés a un hexagone ?", "options": ["5", "6", "7", "8"], "r": 1 },
+        { "q": "Trouve l'intrus (solide qui peut rouler) :", "options": ["Cube", "Cône", "Sphère", "Cylindre"], "r": 0 },
+        { "q": "Comment appelle-t-on un angle qui forme un 'L' parfait ?", "options": ["Angle aigu", "Angle obtus", "Angle droit", "Angle plat"], "r": 2 },
+        { "q": "Quel solide a 6 faces carrées identiques ?", "options": ["Prisme", "Pyramide", "Cube", "Cylindre"], "r": 2 },
+        { "q": "Une ligne qui coupe une forme en deux parties égales est une ligne de...", "options": ["Mesure", "Symétrie", "Construction", "Division"], "r": 1 },
+        { "q": "Lequel est un polygone ?", "options": ["Cercle", "Triangle", "Ovale", "Cœur"], "r": 1 },
+        { "q": "Combien de faces possède une pyramide à base carrée ?", "options": ["4", "5", "6", "8"], "r": 1 }
+      ]
+    },
+    "MESURE": {
+      "domaine": "Temps, Longueur et Masse",
+      "questions": [
+        { "q": "Quelle unité utilise-t-on pour mesurer la distance entre deux villes ?", "options": ["Centimètres (cm)", "Mètres (m)", "Kilomètres (km)", "Grammes (g)"], "r": 2 },
+        { "q": "Combien y a-t-il de minutes dans une heure ?", "options": ["30", "50", "60", "100"], "r": 2 },
+        { "q": "Si le petit aiguille est sur le 3 et la grande sur le 12, quelle heure est-il ?", "options": ["3h00", "12h03", "3h12", "6h15"], "r": 0 },
+        { "q": "Lequel pèse environ 1 kilogramme ?", "options": ["Une plume", "Un sac de sucre", "Une voiture", "Un crayon"], "r": 1 },
+        { "q": "Combien de centimètres y a-t-il dans 1 mètre ?", "options": ["10", "100", "1000", "50"], "r": 1 },
+        { "q": "Le périmètre d'un carré de 3 cm de côté est de :", "options": ["6 cm", "9 cm", "12 cm", "15 cm"], "r": 2 },
+        { "q": "Quelle unité choisir pour mesurer la capacité d'une brique de jus ?", "options": ["Litres (L)", "Kilogrammes (kg)", "Mètres (m)", "Degrés (°C)"], "r": 0 },
+        { "q": "Si une activité commence à 14h00 et dure 45 minutes, à quelle heure finit-elle ?", "options": ["14h30", "14h45", "15h00", "15h45"], "r": 1 },
+        { "q": "Combien de jours y a-t-il dans une année commune ?", "options": ["30", "31", "365", "366"], "r": 2 }
+      ]
+    },
+    "DONNEES": {
+      "domaine": "Probabilité et Diagrammes",
+      "questions": [
+        { "q": "Dans un diagramme à bandes, que représente la hauteur de la bande ?", "options": ["La couleur", "La quantité (fréquence)", "Le titre", "La date"], "r": 1 },
+        { "q": "Si je lance un dé à 6 faces, quelle est la chance d'obtenir un 7 ?", "options": ["Certain", "Possible", "Impossible", "Probable"], "r": 2 },
+        { "q": "Quel mot décrit un événement qui arrive presque tout le temps ?", "options": ["Impossible", "Peu probable", "Très probable", "Incertain"], "r": 2 },
+        { "q": "Dans un sondage, 5 élèves aiment le bleu et 8 aiment le rouge. Combien d'élèves ont répondu ?", "options": ["3", "5", "8", "13"], "r": 3 },
+        { "q": "Comment appelle-t-on le tableau utilisé pour compter des votes avec des traits ?", "options": ["Tableau de numération", "Tableau de fréquence", "Diagramme circulaire", "Règle"], "r": 1 },
+        { "q": "Si un symbole représente 2 livres dans un pictogramme, que représentent 3 symboles ?", "options": ["3 livres", "5 livres", "6 livres", "2 livres"], "r": 2 },
+        { "q": "La météo dit qu'il fera soleil demain. C'est un événement...", "options": ["Impossible", "Certain", "Possible", "Inconnu"], "r": 2 },
+        { "q": "Lequel de ces outils sert à organiser des données ?", "options": ["Une calculatrice", "Un diagramme à bandes", "Un compas", "Un thermomètre"], "r": 1 },
+        { "q": "Si tu as 10 billes rouges dans un sac, quelle est la probabilité de piger une bille bleue ?", "options": ["Certain", "Possible", "Impossible", "Probable"], "r": 2 }
+      ]
+    }
+  }
+}
