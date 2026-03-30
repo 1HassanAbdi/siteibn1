@@ -1,0 +1,49 @@
+{
+  "matiere": "CONJUGAISON",
+  "titre": "Maîtrise des Verbes - OQRE 3e année",
+  "texte": "Bienvenue au défi de conjugaison ! Choisis la bonne terminaison ou le bon radical pour chaque verbe. Rappelle-toi des règles du présent, de l'imparfait et du futur simple. Bonne chance !",
+  "themes": {
+    "PRESENT": {
+      "domaine": "Indicatif Présent",
+      "questions": [
+        { "q": "Nous (chanter) une belle chanson.", "options": ["chantons", "chantez", "chantent", "chante"], "r": 0 },
+        { "q": "Tu (finir) tes devoirs rapidement.", "options": ["fini", "finis", "finit", "finissent"], "r": 1 },
+        { "q": "Ils (aller) à l'école Ibn Batouta.", "options": ["vons", "ont", "vont", "allent"], "r": 2 },
+        { "q": "Je (manger) une pomme rouge.", "options": ["mange", "manges", "mangeons", "mangent"], "r": 0 },
+        { "q": "Elle (faire) du sport le matin.", "options": ["fais", "fait", "faisons", "font"], "r": 1 },
+        { "q": "Vous (être) très attentifs en classe.", "options": ["es", "sommes", "êtes", "sont"], "r": 2 },
+        { "q": "Le chat (dormir) sur le canapé.", "options": ["dormes", "dormez", "dort", "dorment"], "r": 2 },
+        { "q": "Ils (avoir) de nouveaux crayons.", "options": ["ont", "avez", "as", "a"], "r": 0 },
+        { "q": "Tu (prendre) ton sac à dos.", "options": ["prend", "prends", "prenez", "prennent"], "r": 1 }
+      ]
+    },
+    "IMPARFAIT": {
+      "domaine": "Indicatif Imparfait",
+      "questions": [
+        { "q": "Quand j'étais petit, je (jouer) au parc.", "options": ["jouais", "jouait", "jouait", "jouions"], "r": 0 },
+        { "q": "Nous (finir) toujours nos repas.", "options": ["finissions", "finisait", "finissaient", "finissais"], "r": 0 },
+        { "q": "Vous (avoir) un grand jardin avant.", "options": ["aviez", "avais", "avait", "avaient"], "r": 0 },
+        { "q": "Elle (être) contente de nous voir.", "options": ["étais", "était", "étaient", "étions"], "r": 1 },
+        { "q": "Les oiseaux (chanter) le matin.", "options": ["chantais", "chantait", "chantaient", "chantions"], "r": 2 },
+        { "q": "Tu (faire) ton lit chaque jour.", "options": ["faisait", "faisais", "faisaient", "faisions"], "r": 1 },
+        { "q": "Le soleil (briller) très fort.", "options": ["brillait", "brillais", "brillaient", "brillions"], "r": 0 },
+        { "q": "On (aller) souvent à la plage.", "options": ["allait", "allais", "allaient", "allions"], "r": 0 },
+        { "q": "Vous (dire) toujours la vérité.", "options": ["disais", "disait", "disiez", "disaient"], "r": 2 }
+      ]
+    },
+    "FUTUR": {
+      "domaine": "Futur Simple",
+      "questions": [
+        { "q": "Demain, nous (manger) au restaurant.", "options": ["mangerons", "mangerez", "mangeront", "mangeras"], "r": 0 },
+        { "q": "Je (finir) ce livre ce soir.", "options": ["finira", "finirai", "finiras", "finirons"], "r": 1 },
+        { "q": "Tu (être) en 4e année l'an prochain.", "options": ["sera", "seras", "serai", "seront"], "r": 1 },
+        { "q": "Ils (avoir) une surprise demain.", "options": ["aurons", "aurez", "auront", "aura"], "r": 2 },
+        { "q": "Elle (partir) en vacances bientôt.", "options": ["partira", "partirai", "partiras", "partirons"], "r": 0 },
+        { "q": "Vous (jouer) au soccer samedi.", "options": ["jouerons", "jouerez", "joueront", "jouera"], "r": 1 },
+        { "q": "Le maître (dire) les consignes.", "options": ["dira", "dirai", "diras", "dirons"], "r": 0 },
+        { "q": "Je (faire) mes devoirs plus tard.", "options": ["faisait", "ferai", "feras", "fera"], "r": 1 },
+        { "q": "Ils (venir) nous rendre visite.", "options": ["viendront", "viendrai", "viendras", "viendra"], "r": 0 }
+      ]
+    }
+  }
+}

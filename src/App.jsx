@@ -31,6 +31,9 @@ import QuizSelector from "./TEXTE/quizselect";
 import QuizOQRE from "./TEXTE/quizM";
 import QuizOQREM from "./TEXTE/quizM";
 import QuizOQREF from "./TEXTE/quizF";
+import MenuTakaStyle from "./Conjuguaison/MenuTakaStyle";
+import App1 from "./Conjuguaison/Conj/App";
+import PlanCodage from "./Codage/PlanCodage";
 
 
 function App() {
@@ -42,6 +45,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Accueil></Accueil>} />
             <Route path="/test" element={<OQREHub></OQREHub>} />
+            <Route path="/code" element={<PlanCodage></PlanCodage>} />
             
           
             
@@ -58,6 +62,11 @@ function App() {
           <Route path="/activites/3e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
           <Route path="/activites/4e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
           <Route path="/activites/4e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+          <Route path="/activites/4e Année/Sciences" element={<App1></App1>  } />
+          
+
+          
+
            <Route path="/activites/5e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
           <Route path="/activites/5e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
            <Route path="/activites/6e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
@@ -74,6 +83,7 @@ function App() {
           <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
           <Route path="/activites/2e Année/Francais" element={<YearlyNavigator2e />} />
           <Route path="/activites/7e Année/Francais" element={<SentenceBuilder></SentenceBuilder>} />
+          
 
           <Route path="/activites/3e Année/Mathematiques" element={<MathEvaluator></MathEvaluator> } />
           <Route path="/activites/6e Année/Francais" element={<QuizOQRE></QuizOQRE>} />

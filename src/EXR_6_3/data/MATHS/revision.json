@@ -1,156 +1,156 @@
 {
   "test_info": {
-    "session": "Mathématiques_3A_OQRE",
-    "niveau": "3A",
-    "target": "maths_3a_oqre_blocs",
-    "subject": "maths"
+    "session": "Mathématiques_5A_Conversions",
+    "niveau": "5A",
+    "target": "maths_5a_conversions_blocs",
+    "matiere": "maths"
   },
   "parties": [
     {
-      "id": "Module_OQRE",
+      "id": "Module_Conversions",
       "sections": [
         {
-          "titre": "Bloc 1 – Numération et opérations : Multiplication, Division, Régularité, Addition",
+          "titre": "Bloc 1 – Conversions m, cm et mm",
           "questions": [
             {
               "numero": 1,
-              "enonce": "Calcule : 6 x 7 =",
-              "options": ["42", "36", "48", "40"],
-              "reponse_correcte": "42"
+              "enonce": "Combien de centimètres dans 2 m ?",
+              "options": ["20 cm", "200 cm", "2000 cm", "2 cm"],
+              "reponse_correcte": "200 cm"
             },
             {
               "numero": 2,
-              "enonce": "Si tu partages 24 bonbons entre 6 amis, combien chacun reçoit-il ?",
-              "options": ["4", "5", "6", "8"],
-              "reponse_correcte": "4"
+              "enonce": "Combien de millimètres dans 5 cm ?",
+              "options": ["50 mm", "5 mm", "500 mm", "0,5 mm"],
+              "reponse_correcte": "50 mm"
             },
             {
               "numero": 3,
-              "enonce": "Complète la suite : 2, 4, 8, ____, 32",
-              "options": ["12", "16", "20", "24"],
-              "reponse_correcte": "16"
+              "enonce": "Combien de millimètres dans 1 m ?",
+              "options": ["100 mm", "1000 mm", "10 mm", "10 000 mm"],
+              "reponse_correcte": "1000 mm"
             },
             {
               "numero": 4,
-              "enonce": "Luc a 12 billes et en reçoit 8 de plus. Combien de billes a-t-il maintenant ?",
-              "options": ["18", "20", "19", "21"],
-              "reponse_correcte": "20"
+              "enonce": "300 cm = ____ m",
+              "options": ["3 m", "30 m", "0,3 m", "3000 m"],
+              "reponse_correcte": "3 m"
             }
           ]
         },
         {
-          "titre": "Bloc 2 – Numération et opérations et Mesure : Soustraction, Longueur, Masse",
+          "titre": "Bloc 2 – Conversions dm et cm",
           "questions": [
             {
               "numero": 5,
-              "enonce": "Sofia a 15 $ et dépense 7 $. Combien lui reste-t-il ?",
-              "options": ["8 $", "7 $", "9 $", "6 $"],
-              "reponse_correcte": "8 $"
+              "enonce": "1 dm = ____ cm",
+              "options": ["10 cm", "100 cm", "1 cm", "0,1 cm"],
+              "reponse_correcte": "10 cm"
             },
             {
               "numero": 6,
-              "enonce": "Combien de centimètres dans 3 m ?",
-              "options": ["30 cm", "300 cm", "3000 cm", "3 cm"],
-              "reponse_correcte": "300 cm"
+              "enonce": "6 dm = ____ cm",
+              "options": ["60 cm", "600 cm", "6 cm", "0,6 cm"],
+              "reponse_correcte": "60 cm"
             },
             {
               "numero": 7,
-              "enonce": "Compare : 5 dm ____ 40 cm",
-              "options": [">", "<", "=", "aucune de ces réponses"],
-              "reponse_correcte": ">"
+              "enonce": "45 cm = ____ dm",
+              "options": ["4,5 dm", "45 dm", "0,45 dm", "450 dm"],
+              "reponse_correcte": "4,5 dm"
             },
             {
               "numero": 8,
-              "enonce": "Un sac pèse 3 kg et un autre 5 kg. Quel est le poids total ?",
-              "options": ["8 kg", "7 kg", "6 kg", "9 kg"],
-              "reponse_correcte": "8 kg"
+              "enonce": "80 cm = ____ dm",
+              "options": ["8 dm", "80 dm", "0,8 dm", "800 dm"],
+              "reponse_correcte": "8 dm"
             }
           ]
         },
         {
-          "titre": "Bloc 3 – Monnaie et Temps : Calcul total, Monnaie rendue, Conversion heures → minutes, Durée totale",
+          "titre": "Bloc 3 – Conversions mm vers m",
           "questions": [
             {
               "numero": 9,
-              "enonce": "Emma achète un cahier à 7 $ et un stylo à 3 $. Combien paie-t-elle ?",
-              "options": ["9 $", "10 $", "11 $", "12 $"],
-              "reponse_correcte": "10 $"
+              "enonce": "500 mm = ____ m",
+              "options": ["0,5 m", "5 m", "50 m", "0,05 m"],
+              "reponse_correcte": "0,5 m"
             },
             {
               "numero": 10,
-              "enonce": "Un jouet coûte 8 $. Tu paies avec 20 $. Combien reçois-tu ?",
-              "options": ["10 $", "12 $", "8 $", "7 $"],
-              "reponse_correcte": "12 $"
+              "enonce": "2000 mm = ____ m",
+              "options": ["2 m", "20 m", "0,2 m", "200 m"],
+              "reponse_correcte": "2 m"
             },
             {
               "numero": 11,
-              "enonce": "Combien de minutes y a-t-il dans 2 heures ?",
-              "options": ["60", "100", "120", "150"],
-              "reponse_correcte": "120"
+              "enonce": "750 mm = ____ m",
+              "options": ["0,75 m", "7,5 m", "75 m", "0,075 m"],
+              "reponse_correcte": "0,75 m"
             },
             {
               "numero": 12,
-              "enonce": "Un élève court 30 min le matin et 45 min l’après-midi. Combien de temps court-il en tout ?",
-              "options": ["65 min", "70 min", "75 min", "80 min"],
-              "reponse_correcte": "75 min"
+              "enonce": "1200 mm = ____ m",
+              "options": ["1,2 m", "12 m", "0,12 m", "120 m"],
+              "reponse_correcte": "1,2 m"
             }
           ]
         },
         {
-          "titre": "Bloc 4 – Température et Numération : Identifier le chaud, Comparer températures, Addition, Soustraction",
+          "titre": "Bloc 4 – Conversions avec virgules",
           "questions": [
             {
               "numero": 13,
-              "enonce": "Quelle température correspond à une journée chaude d'été ?",
-              "options": ["0 °C", "10 °C", "30 °C", "50 °C"],
-              "reponse_correcte": "30 °C"
+              "enonce": "1,5 m = ____ cm",
+              "options": ["150 cm", "15 cm", "1500 cm", "1,5 cm"],
+              "reponse_correcte": "150 cm"
             },
             {
               "numero": 14,
-              "enonce": "Quelle température est la plus froide ?",
-              "options": ["10 °C", "0 °C", "-5 °C", "5 °C"],
-              "reponse_correcte": "-5 °C"
+              "enonce": "0,8 m = ____ cm",
+              "options": ["8 cm", "80 cm", "800 cm", "0,8 cm"],
+              "reponse_correcte": "80 cm"
             },
             {
               "numero": 15,
-              "enonce": "Calcule : 25 + 17 =",
-              "options": ["40", "42", "43", "44"],
-              "reponse_correcte": "42"
+              "enonce": "2,5 m = ____ cm",
+              "options": ["25 cm", "250 cm", "2500 cm", "2,5 cm"],
+              "reponse_correcte": "250 cm"
             },
             {
               "numero": 16,
-              "enonce": "Calcule : 50 - 18 =",
-              "options": ["30", "32", "33", "34"],
-              "reponse_correcte": "32"
+              "enonce": "0,4 m = ____ cm",
+              "options": ["4 cm", "40 cm", "400 cm", "0,04 cm"],
+              "reponse_correcte": "40 cm"
             }
           ]
         },
         {
-          "titre": "Bloc 5 – Raisonnement, Numération et Mesure : Compléter suite, Addition, Volume, Ordre des nombres",
+          "titre": "Bloc 5 – Raisonnement et comparaison des mesures",
           "questions": [
             {
               "numero": 17,
-              "enonce": "Complète la suite : 5, 10, 15, ____, 25",
-              "options": ["18", "20", "21", "22"],
-              "reponse_correcte": "20"
+              "enonce": "Compare : 1 m ____ 90 cm",
+              "options": [">", "<", "=", "impossible"],
+              "reponse_correcte": ">"
             },
             {
               "numero": 18,
-              "enonce": "Marie a 14 pommes et en reçoit 9 de plus. Combien a-t-elle maintenant ?",
-              "options": ["22", "23", "24", "25"],
-              "reponse_correcte": "23"
+              "enonce": "Compare : 50 cm ____ 5 dm",
+              "options": [">", "<", "=", "impossible"],
+              "reponse_correcte": "="
             },
             {
               "numero": 19,
-              "enonce": "Tu as 2 L de jus et tu ajoutes 1,5 L. Combien de litres au total ?",
-              "options": ["2,5 L", "3 L", "3,5 L", "4 L"],
-              "reponse_correcte": "3,5 L"
+              "enonce": "Compare : 800 mm ____ 1 m",
+              "options": [">", "<", "=", "impossible"],
+              "reponse_correcte": "<"
             },
             {
               "numero": 20,
-              "enonce": "Range du plus petit au plus grand : 12, 5, 20, 8",
-              "options": ["5, 8, 12, 20", "5, 12, 8, 20", "12, 5, 8, 20", "8, 5, 12, 20"],
-              "reponse_correcte": "5, 8, 12, 20"
+              "enonce": "Compare : 3 dm ____ 25 cm",
+              "options": [">", "<", "=", "impossible"],
+              "reponse_correcte": ">"
             }
           ]
         }

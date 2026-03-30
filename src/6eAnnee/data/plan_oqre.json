@@ -107,93 +107,207 @@
       "parent_note": { "fr": "Visualisez avec des dessins de pizzas.", "en": "Visualize with pizza drawings." },
       "status": "next"
     },
-    {
-      "id": "sem_4_mars",
-      "dates": "20 Mar - 26 Mar",
-      "domaine": { "fr": "Calcul de Fractions", "en": "Fraction Operations" },
-      "attente_code": "B2.5",
-      "objectif": { "fr": "Addition et soustraction (dénominateurs différents).", "en": "Addition and subtraction (different denominators)." },
-      "livre": "116-119",
-      "ixl": "K.6, K.9, K.10",
-      "parent_note": { "fr": "Encouragez la persévérance.", "en": "Encourage perseverance." },
-      "status": "next"
+   
+  {
+    "id": "sem_4_mars",
+    "dates": "20 Mar - 26 Mar",
+    "domaine": { 
+      "fr": "Fractions et nombres mixtes", 
+      "en": "Fractions and Mixed Numbers" 
     },
-    {
-      "id": "sem_1_avr",
-      "dates": "27 Mar - 2 Apr",
-      "domaine": { "fr": "Algèbre : Codage", "en": "Algebra: Coding" },
-      "attente_code": "C3.1 & C3.2",
-      "objectif": { "fr": "Littératie informatique et logique algorithmique.", "en": "Computer literacy and algorithmic logic." },
-      "livre": "2-5",
-      "ixl": "M.7, V.8, Z.4",
-      "parent_note": { "fr": "Prédire le résultat d'un code.", "en": "Predict the result of a code." },
-      "status": "next"
+    "attente_code": "B2",
+    "objectif": { 
+      "fr": "Comprendre les fractions, les fractions équivalentes et convertir entre fractions impropres et nombres mixtes.",
+      "en": "Understand fractions, equivalent fractions, and convert between improper fractions and mixed numbers."
     },
-    {
-      "id": "sem_2_avr",
-      "dates": "3 Apr - 9 Apr",
-      "domaine": { "fr": "Rapports et %", "en": "Ratios and %" },
-      "attente_code": "B2.12",
-      "objectif": { "fr": "Comprendre les rapports, les taux et les pourcentages.", "en": "Understand ratios, rates, and percentages." },
-      "livre": "120-131",
-      "ixl": "P.1, P.9, Q.4, Q.11",
-      "parent_note": { "fr": "Cherchez des taux (km/h) dans la vie réelle.", "en": "Look for rates (km/h) in real life." },
-      "status": "next"
+    "livre": "110-119",
+    "ixl": "J.1, J.2, J.3, J.4, J.13",
+    "parent_note": { 
+      "fr": "Réviser les tables de multiplication pour faciliter le travail avec les fractions.",
+      "en": "Review multiplication facts to make working with fractions easier."
     },
-    {
-      "id": "sem_3_avr",
-      "dates": "10 Apr - 16 Apr",
-      "domaine": { "fr": "Espace et Transfo.", "en": "Space and Transfo." },
-      "attente_code": "E1.3 & E1.4",
-      "objectif": { "fr": "Plan cartésien et transformations (réflexion, rotation).", "en": "Cartesian plane and transformations (reflection, rotation)." },
-      "livre": "74-75, 96-107",
-      "ixl": "V.3, V.4, BB.1, BB.2",
-      "parent_note": { "fr": "Identifiez bien les axes X et Y.", "en": "Clearly identify the X and Y axes." },
-      "status": "next"
+    "status": "completed"
+  },
+  {
+    "id": "sem_1_avr",
+    "dates": "27 Mar - 2 Apr",
+    "domaine": { 
+      "fr": "Addition et soustraction de fractions",
+      "en": "Add and Subtract Fractions"
     },
-    {
-      "id": "sem_4_avr",
-      "dates": "17 Apr - 23 Apr",
-      "domaine": { "fr": "Données et Moyenne", "en": "Data and Mean" },
-      "attente_code": "D1.3 & D1.5",
-      "objectif": { "fr": "Interpréter des graphiques et calculer la moyenne.", "en": "Interpret graphs and calculate the mean." },
-      "livre": "68-73, 76-79",
-      "ixl": "EE.9, FF.1, FF.4",
-      "parent_note": { "fr": "Calculez la moyenne des points d'un jeu.", "en": "Calculate the average score of a game." },
-      "status": "next"
+    "attente_code": "B2",
+    "objectif": { 
+      "fr": "Additionner et soustraire des fractions avec dénominateurs semblables et différents.",
+      "en": "Add and subtract fractions with like and unlike denominators."
     },
-    {
-      "id": "sem_1_mai",
-      "dates": "24 Apr - 30 Apr",
-      "domaine": { "fr": "Probabilités", "en": "Probability" },
-      "attente_code": "D2.1",
-      "objectif": { "fr": "Probabilité théorique et expérimentale.", "en": "Theoretical and experimental probability." },
-      "livre": "156-163",
-      "ixl": "GG.2, GG.3, GG.6",
-      "parent_note": { "fr": "Utilisez une pièce de monnaie.", "en": "Use a coin." },
-      "status": "next"
+    "livre": "110-119",
+    "ixl": "K.2, K.5, K.8, K.10, K.15",
+    "parent_note": { 
+      "fr": "Encouragez votre enfant à simplifier les fractions après chaque opération.",
+      "en": "Encourage your child to simplify fractions after each operation."
     },
-    {
-      "id": "sem_2_mai",
-      "dates": "1 May - 7 May",
-      "domaine": { "fr": "Littératie Financière", "en": "Financial Literacy" },
-      "attente_code": "F1.2 & F1.4",
-      "objectif": { "fr": "Taxes (13%), rabais et gestion d'un budget.", "en": "Taxes (13%), discounts, and budgeting." },
-      "livre": "84-85",
-      "ixl": "T.1, T.5, HH.4",
-      "parent_note": { "fr": "Estimez le prix avec taxes lors d'achats.", "en": "Estimate the price with taxes while shopping." },
-      "status": "next"
+    "status": "current"
+  },
+  {
+    "id": "sem_2_avr",
+    "dates": "3 Apr - 9 Apr",
+    "domaine": { 
+      "fr": "Multiplication et division de fractions",
+      "en": "Multiply and Divide Fractions"
     },
-    {
-      "id": "revision_finale",
-      "dates": "8 May - Exam",
-      "domaine": { "fr": "Révision Finale", "en": "Final Review" },
-      "attente_code": "Toutes / All",
-      "objectif": { "fr": "Simulations intensives de formats d'examen OQRE.", "en": "Intensive simulations of EQAO exam formats." },
-      "livre": "Récapitulation",
-      "ixl": "Key sections",
-      "parent_note": { "fr": "Phase finale. Favorisez le sommeil.", "en": "Final phase. Prioritize sleep." },
-      "status": "next"
-    }
-  ]
+    "attente_code": "B2",
+    "objectif": { 
+      "fr": "Multiplier des fractions par des nombres entiers et diviser avec des fractions.",
+      "en": "Multiply fractions by whole numbers and divide whole numbers by fractions."
+    },
+    "livre": "110-119",
+    "ixl": "L.8, L.9, L.10, L.12, L.15",
+    "parent_note": { 
+      "fr": "Reliez la multiplication des fractions à des situations concrètes.",
+      "en": "Connect fraction multiplication to real-life situations."
+    },
+    "status": "next"
+  },
+  {
+    "id": "sem_3_avr",
+    "dates": "10 Apr - 16 Apr",
+    "domaine": { 
+      "fr": "Algèbre : Codage",
+      "en": "Algebra: Coding"
+    },
+    "attente_code": "C3.1 & C3.2",
+    "objectif": { 
+      "fr": "Comprendre la logique algorithmique et prédire le résultat d'un code.",
+      "en": "Understand algorithmic logic and predict the result of a code."
+    },
+    "livre": "2-5",
+    "ixl": "M.7, V.8, Z.4",
+    "parent_note": { 
+      "fr": "Demandez à votre enfant d'expliquer chaque étape du code.",
+      "en": "Ask your child to explain each step of the code."
+    },
+    "status": "next"
+  },
+  {
+    "id": "sem_4_avr",
+    "dates": "17 Apr - 23 Apr",
+    "domaine": { 
+      "fr": "Rapports et pourcentages",
+      "en": "Ratios and Percentages"
+    },
+    "attente_code": "B2.12",
+    "objectif": { 
+      "fr": "Comprendre les rapports, les taux et les pourcentages.",
+      "en": "Understand ratios, rates, and percentages."
+    },
+    "livre": "120-131",
+    "ixl": "P.1, P.9, Q.4, Q.11",
+    "parent_note": { 
+      "fr": "Cherchez des exemples de taux dans la vie quotidienne.",
+      "en": "Look for real-life examples of rates."
+    },
+    "status": "next"
+  },
+  {
+    "id": "sem_5_avr",
+    "dates": "24 Apr - 30 Apr",
+    "domaine": { 
+      "fr": "Espace et transformations",
+      "en": "Space and Transformations"
+    },
+    "attente_code": "E1.3 & E1.4",
+    "objectif": { 
+      "fr": "Utiliser le plan cartésien et comprendre les transformations.",
+      "en": "Use the Cartesian plane and understand transformations."
+    },
+    "livre": "74-75, 96-107",
+    "ixl": "V.3, V.4, BB.1, BB.2",
+    "parent_note": { 
+      "fr": "Identifier clairement les axes X et Y.",
+      "en": "Clearly identify the X and Y axes."
+    },
+    "status": "next"
+  },
+  {
+    "id": "sem_1_mai",
+    "dates": "1 May - 7 May",
+    "domaine": { 
+      "fr": "Données et moyenne",
+      "en": "Data and Mean"
+    },
+    "attente_code": "D1.3 & D1.5",
+    "objectif": { 
+      "fr": "Interpréter des graphiques et calculer la moyenne.",
+      "en": "Interpret graphs and calculate the mean."
+    },
+    "livre": "68-73, 76-79",
+    "ixl": "EE.9, FF.1, FF.4",
+    "parent_note": { 
+      "fr": "Calculez la moyenne des points d'un jeu.",
+      "en": "Calculate the average score of a game."
+    },
+    "status": "next"
+  },
+  {
+    "id": "sem_2_mai",
+    "dates": "8 May - 14 May",
+    "domaine": { 
+      "fr": "Probabilités",
+      "en": "Probability"
+    },
+    "attente_code": "D2.1",
+    "objectif": { 
+      "fr": "Comprendre la probabilité théorique et expérimentale.",
+      "en": "Understand theoretical and experimental probability."
+    },
+    "livre": "156-163",
+    "ixl": "GG.2, GG.3, GG.6",
+    "parent_note": { 
+      "fr": "Utilisez des expériences simples comme lancer une pièce.",
+      "en": "Use simple experiments like tossing a coin."
+    },
+    "status": "next"
+  },
+  {
+    "id": "sem_3_mai",
+    "dates": "15 May - 21 May",
+    "domaine": { 
+      "fr": "Littératie financière",
+      "en": "Financial Literacy"
+    },
+    "attente_code": "F1.2 & F1.4",
+    "objectif": { 
+      "fr": "Comprendre les taxes, les rabais et gérer un budget.",
+      "en": "Understand taxes, discounts, and budgeting."
+    },
+    "livre": "84-85",
+    "ixl": "T.1, T.5, HH.4",
+    "parent_note": { 
+      "fr": "Calculez le prix final avec taxes pendant les achats.",
+      "en": "Calculate final prices with taxes while shopping."
+    },
+    "status": "next"
+  },
+  {
+    "id": "revision_finale",
+    "dates": "22 May - Exam",
+    "domaine": { 
+      "fr": "Révision Finale",
+      "en": "Final Review"
+    },
+    "attente_code": "Toutes / All",
+    "objectif": { 
+      "fr": "Révision générale et simulations d'examen OQRE.",
+      "en": "General review and EQAO practice tests."
+    },
+    "livre": "Récapitulation",
+    "ixl": "Sections clés",
+    "parent_note": { 
+      "fr": "Favorisez le repos et la confiance avant l'examen.",
+      "en": "Prioritize rest and confidence before the exam."
+    },
+    "status": "next"
+  }
+]
+  
 }

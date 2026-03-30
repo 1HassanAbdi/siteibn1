@@ -1,0 +1,73 @@
+[
+  {
+    "semaine": 1,
+    "titre": "Découverte de Scratch",
+    "description": "Premiers pas dans l'univers de la programmation créative.",
+    "objectifs": [
+      "Installer Scratch ou ouvrir Scratch en ligne",
+      "Découvrir l’interface : scène, blocs, sprites (personnages)",
+      "Utiliser les tutoriels intégrés pour comprendre les blocs"
+    ],
+    "actions": [
+      "Faire bouger un personnage",
+      "Changer le décor",
+      "Faire parler le personnage"
+    ],
+    "ressources": [
+      { "nom": "Tutoriels Scratch", "url": "https://scratch.mit.edu/ideas" }
+    ],
+    "couleur": "bg-blue-500"
+  },
+  {
+    "semaine": 2,
+    "titre": "Animation avec un chat",
+    "description": "Apprendre à animer un personnage étape par étape.",
+    "objectifs": [
+      "Ajouter un personnage (chat)",
+      "Faire marcher ou bouger le chat",
+      "Ajouter un message ou un dialogue"
+    ],
+    "actions": [
+      "Ajouter un décor et tester l’animation"
+    ],
+    "ressources": [
+      { "nom": "Vidéo Tutoriel", "url": "#" }
+    ],
+    "couleur": "bg-orange-500"
+  },
+  {
+    "semaine": 3,
+    "titre": "Petite histoire animée",
+    "description": "Mise en scène et narration avec le code.",
+    "objectifs": [
+      "Lire un court texte ou inventer une petite histoire",
+      "Créer les personnages dans Scratch",
+      "Ajouter des dialogues entre les personnages"
+    ],
+    "actions": [
+      "Changer les décors selon les scènes",
+      "Tester et améliorer l’animation"
+    ],
+    "ressources": [
+      { "nom": "Inspiration : Histoires courtes", "url": "https://www.youtube.com/watch?v=fx6FmrPXKdc" }
+    ],
+    "couleur": "bg-purple-500"
+  },
+  {
+    "semaine": 4,
+    "titre": "Projet personnel Scratch",
+    "description": "L'heure de la création libre et de la présentation.",
+    "objectives": [
+      "Choisir son projet (histoire, jeu, animation drôle)",
+      "Créer les personnages et le décor",
+      "Ajouter mouvements, dialogues ou score"
+    ],
+    "actions": [
+      "Présenter le projet à la classe"
+    ],
+    "ressources": [
+      { "nom": "Espace de création", "url": "https://www.youtube.com/watch?v=fx6FmrPXKdc" }
+    ],
+    "couleur": "bg-green-500"
+  }
+]

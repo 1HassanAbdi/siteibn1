@@ -30,6 +30,7 @@ const Header = () => {
             <li><Link to="/Multiplication" onClick={closeMenu}>Multiplication</Link></li>
            
             <li><Link to="/test" onClick={closeMenu}>OQRE</Link></li>
+            <li><Link to="/code" onClick={closeMenu}>PlanCodage</Link></li>
             
             <li><Link to="/Concours3" className={styles.specialLink} onClick={closeMenu}>Concours 🏆</Link></li>
             <li><Link to="/Concours2" className={styles.specialLink} onClick={closeMenu}>Concourscka 🏆</Link></li>
