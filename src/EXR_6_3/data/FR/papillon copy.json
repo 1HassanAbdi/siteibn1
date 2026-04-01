@@ -1,0 +1,270 @@
+{
+  "test_info": {
+    "titre": "Test en lecture et compréhension - Le papillon lune",
+    "niveau": "3e année",
+    "session": "Le papillon lune",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Le papillon lune",
+          "image": "/imageoqre/papillon.jpg",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "Il existe toutes sortes d'espèces de papillons. Certaines espèces vivent la nuit, alors que d'autres vivent le jour. Une des belles espèces de papillons de nuit s'appelle le « papillon lune »."
+            },
+            {
+              "p": 2,
+              "contenu": "Le papillon lune est vert pâle. Au clair de lune, il prend parfois une couleur vert brillant. Le papillon lune a quatre ailes. Sur chacune de ses ailes, on trouve une tache qui ressemble à un œil."
+            },
+            {
+              "p": 3,
+              "contenu": "Cette tache est verte, brune et blanche. Les deux ailes inférieures du papillon lune se terminent en longues pointes. Ses antennes sont plumeuses. Tous les papillons de nuit ont des antennes plumeuses."
+            },
+            {
+              "p": 4,
+              "contenu": "Les antennes des papillons de jour ressemblent plutôt à un mince fil noir. Le papillon lune commence sa vie comme chenille. Cette chenille est rayée vert et jaune avec des épines sur le dos."
+            },
+            {
+              "p": 5,
+              "contenu": "La chenille mange des feuilles d'arbre. Elle mange entre autres des feuilles de noyer, de bouleau et d'érable. Quand c'est le moment, la chenille fait son cocon."
+            },
+            {
+              "p": 6,
+              "contenu": "Elle y vit jusqu'à sa transformation en papillon. Le papillon lune vit dans tout l'est du Canada. Tu peux l'observer surtout au début de l'été lorsqu'il vole entre les feuilles des arbres."
+            }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "De quoi parle principalement le texte ?",
+              "options": [
+                "D’un oiseau nocturne",
+                "D’un papillon appelé papillon lune",
+                "D’une fleur rare",
+                "D’un insecte qui vit dans l’eau"
+              ],
+              "reponse_correcte": "D’un papillon appelé papillon lune"
+            },
+            {
+              "numero": 2,
+              "enonce": "Quand le papillon lune prend-il parfois une couleur vert brillant ?",
+              "options": [
+                "Au soleil",
+                "Au clair de lune",
+                "Quand il vit dans l'est du pays",
+                "Quand il est très petit"
+              ],
+              "reponse_correcte": "Au clair de lune"
+            },
+            {
+              "numero": 3,
+              "enonce": "Combien d’ailes a le papillon lune ?",
+              "options": [
+                "Deux",
+                "Trois",
+                "Quatre",
+                "Six"
+              ],
+              "reponse_correcte": "Quatre"
+            },
+            {
+              "numero": 4,
+              "enonce": "À quoi ressemblent les taches sur les ailes du papillon lune ?",
+              "options": [
+                "À des poils",
+                "À des antennes",
+                "À des yeux",
+                "À des ailes"
+              ],
+              "reponse_correcte": "À des yeux"
+            },
+            {
+              "numero": 5,
+              "enonce": "Quelle affirmation est fausse ?",
+              "options": [
+                "Certaines chenilles mangent des feuilles de bouleau",
+                "Le papillon lune vole la nuit",
+                "Le papillon lune a quatre ailes",
+                "Les antennes du papillon lune ressemblent à un mince fil noir"
+              ],
+              "reponse_correcte": "Les antennes du papillon lune ressemblent à un mince fil noir"
+            },
+            {
+              "numero": 6,
+              "enonce": "Comment sont les antennes du papillon lune ?",
+              "options": [
+                "Plumeuses",
+                "Pointues",
+                "Courtes",
+                "Rouges"
+              ],
+              "reponse_correcte": "Plumeuses"
+            },
+            {
+              "numero": 7,
+              "enonce": "À quoi ressemblent les antennes des papillons de jour ?",
+              "options": [
+                "À une plume",
+                "À un mince fil noir",
+                "À une feuille",
+                "À une branche"
+              ],
+              "reponse_correcte": "À un mince fil noir"
+            },
+            {
+              "numero": 8,
+              "enonce": "Sous quelle forme commence la vie du papillon lune ?",
+              "options": [
+                "Comme une abeille",
+                "Comme une chenille",
+                "Comme un papillon",
+                "Comme un ver de terre"
+              ],
+              "reponse_correcte": "Comme une chenille"
+            },
+            {
+              "numero": 9,
+              "enonce": "Que mange la chenille du papillon lune ?",
+              "options": [
+                "Des fleurs",
+                "Des feuilles d'arbre",
+                "Du miel",
+                "Des insectes"
+              ],
+              "reponse_correcte": "Des feuilles d'arbre"
+            },
+            {
+              "numero": 10,
+              "enonce": "Quels arbres sont mentionnés dans le texte ?",
+              "options": [
+                "Pin et sapin",
+                "Noyer, bouleau et érable",
+                "Palmier et cocotier",
+                "Pommier et cerisier"
+              ],
+              "reponse_correcte": "Noyer, bouleau et érable"
+            },
+            {
+              "numero": 11,
+              "enonce": "Que fait la chenille avant de devenir papillon ?",
+              "options": [
+                "Elle construit un nid",
+                "Elle fait un cocon",
+                "Elle vole",
+                "Elle nage"
+              ],
+              "reponse_correcte": "Elle fait un cocon"
+            },
+            {
+              "numero": 12,
+              "enonce": "Où vit le papillon lune ?",
+              "options": [
+                "Dans l’ouest du Canada",
+                "Dans l’est du Canada",
+                "En Afrique",
+                "En Australie"
+              ],
+              "reponse_correcte": "Dans l’est du Canada"
+            },
+            {
+              "numero": 13,
+              "enonce": "Quand peut-on observer surtout le papillon lune ?",
+              "options": [
+                "En hiver",
+                "Au début de l’été",
+                "En automne",
+                "Au printemps"
+              ],
+              "reponse_correcte": "Au début de l’été"
+            },
+            {
+              "numero": 14,
+              "enonce": "Où le papillon lune vole-t-il ?",
+              "options": [
+                "Sous l’eau",
+                "Entre les feuilles des arbres",
+                "Dans les grottes",
+                "Dans le sable"
+              ],
+              "reponse_correcte": "Entre les feuilles des arbres"
+            },
+            {
+              "numero": 15,
+              "enonce": "Les papillons de nuit vivent-ils surtout le jour ?",
+              "options": [
+                "Oui",
+                "Non",
+                "Parfois",
+                "Seulement en hiver"
+              ],
+              "reponse_correcte": "Non"
+            },
+            {
+              "numero": 16,
+              "enonce": "Quelle est l'idée principale de ce texte ?",
+              "options": [
+                "« Lune » signifie « nuit »",
+                "Les chenilles du papillon lune mangent différentes sortes de feuilles",
+                "Le papillon lune vit dans tout l'est du Canada",
+                "Le papillon lune est un beau papillon de nuit"
+              ],
+              "reponse_correcte": "Le papillon lune est un beau papillon de nuit"
+            },
+            {
+              "numero": 17,
+              "enonce": "Comment peux-tu trouver l'idée principale d’un texte ?",
+              "options": [
+                "Penser aux papillons que tu connais",
+                "Chercher le mot dans une encyclopédie",
+                "Remarquer ce que décrit la plus grande partie du texte",
+                "Lire seulement le dernier paragraphe"
+              ],
+              "reponse_correcte": "Remarquer ce que décrit la plus grande partie du texte"
+            },
+            {
+              "numero": 18,
+              "enonce": "Quelle est la nature de ce texte ?",
+              "options": [
+                "Un texte informatif",
+                "Un conte",
+                "Une bande dessinée",
+                "Un poème"
+              ],
+              "reponse_correcte": "Un texte informatif"
+            },
+            {
+              "numero": 19,
+              "enonce": "Pourquoi la tache sur l’aile ressemble-t-elle à un œil ?",
+              "options": [
+                "Parce que sa forme ressemble à un œil",
+                "Parce qu’elle bouge",
+                "Parce qu’elle parle",
+                "Parce qu’elle brille toujours"
+              ],
+              "reponse_correcte": "Parce que sa forme ressemble à un œil"
+            },
+            {
+              "numero": 20,
+              "enonce": "Pourquoi le papillon lune est-il un insecte intéressant ?",
+              "options": [
+                "Parce qu’il nage",
+                "Parce qu’il est coloré et vit la nuit",
+                "Parce qu’il chante",
+                "Parce qu’il vit sous terre"
+              ],
+              "reponse_correcte": "Parce qu’il est coloré et vit la nuit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -47,7 +47,14 @@
     "matiere": "FR", 
     "titre": "Les inventions récentes", 
     "chemin": "./data/FR/inventions.json" 
+  }, { 
+    "slug": "Lepapillonlune", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "Le papillon lune", 
+    "chemin": "./data/FR/papillon.json" 
   },
+  
   { 
     "slug": "Protéger-les-rhinocéros", 
     "niveau": 6, 

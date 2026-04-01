@@ -70,7 +70,7 @@ function App() {
            <Route path="/activites/5e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
           <Route path="/activites/5e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
            <Route path="/activites/6e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
-          <Route path="/activites/6e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+          
          
           <Route path="/activites/1re Année/Francais" element={<ReadingAppee></ReadingAppee>} />
           <Route path="/activites/1re Année/Mathematiques" element={<ReadingApp></ReadingApp>} />
