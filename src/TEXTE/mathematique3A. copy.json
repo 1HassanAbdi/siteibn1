@@ -1,0 +1,106 @@
+{
+  "matiere": "MATHÉMATIQUES - 3E ANNÉE (OQRE FULL)",
+  "texte": "Prends ton temps, tu as 20 questions par domaine. Lis bien les énoncés et utilise ton brouillon pour les calculs difficiles !",
+  "themes": {
+    "GÉOMÉTRIE": {
+      "domaine": "Sens de l'espace",
+      "questions": [
+        { "q": "Un polygone à 3 côtés est un :", "options": ["Carré", "Triangle", "Rectangle", "Cercle"], "r": 1 },
+        { "q": "Combien de côtés possède un hexagone ?", "options": ["5", "6", "7", "8"], "r": 1 },
+        { "q": "Lequel est un angle droit ?", "options": ["Angle de 45°", "Angle de 90°", "Angle de 120°", "Angle de 180°"], "r": 1 },
+        { "q": "Un cube a combien de faces ?", "options": ["4", "6", "8", "12"], "r": 1 },
+        { "q": "Deux lignes qui ne se croisent jamais sont :", "options": ["Perpendiculaires", "Parallèles", "Sécantes", "Courbes"], "r": 1 },
+        { "q": "Le sommet est le point où :", "options": ["Deux côtés se rejoignent", "Le cercle s'arrête", "La face est plate", "Le solide roule"], "r": 0 },
+        { "q": "Une pyramide à base carrée a combien de sommets ?", "options": ["4", "5", "6", "8"], "r": 1 },
+        { "q": "Un rectangle a combien d'angles droits ?", "options": ["2", "3", "4", "0"], "r": 2 },
+        { "q": "Laquelle de ces formes n'est pas un polygone ?", "options": ["Triangle", "Cercle", "Losange", "Trapèze"], "r": 1 },
+        { "q": "Un cylindre possède combien de bases circulaires ?", "options": ["1", "2", "3", "0"], "r": 1 },
+        { "q": "Comment s'appelle un polygone à 5 côtés ?", "options": ["Hexagone", "Pentagone", "Octogone", "Quadrilatère"], "r": 1 },
+        { "q": "Une sphère ressemble à :", "options": ["Une boîte", "Un cornet", "Un ballon", "Un tuyau"], "r": 2 },
+        { "q": "Un triangle avec un angle droit s'appelle :", "options": ["Isocèle", "Équilatéral", "Rectangle", "Scalène"], "r": 2 },
+        { "q": "Le contour d'une figure s'appelle :", "options": ["L'aire", "Le périmètre", "Le volume", "La surface"], "r": 1 },
+        { "q": "Lequel n'est pas un quadrilatère ?", "options": ["Carré", "Losange", "Triangle", "Parallélogramme"], "r": 2 },
+        { "q": "Un angle 'ouvert' plus grand que 90° est :", "options": ["Aigu", "Droit", "Obtus", "Nul"], "r": 2 },
+        { "q": "Un carré est aussi un rectangle ?", "options": ["Vrai", "Faux", "Seulement le lundi", "Jamais"], "r": 0 },
+        { "q": "Une face d'un cube est un :", "options": ["Triangle", "Cercle", "Carré", "Rectangle"], "r": 2 },
+        { "q": "Un prisme triangulaire a combien de faces ?", "options": ["3", "4", "5", "6"], "r": 2 },
+        { "q": "L'instrument pour tracer un cercle est :", "options": ["La règle", "Le compas", "L'équerre", "Le rapporteur"], "r": 1 }
+      ]
+    },
+    "MESURES": {
+      "domaine": "Grandeurs et mesures",
+      "questions": [
+        { "q": "1 mètre égal combien de centimètres ?", "options": ["10 cm", "100 cm", "1000 cm", "50 cm"], "r": 1 },
+        { "q": "Quelle unité mesure la masse d'un éléphant ?", "options": ["Gramme", "Kilogramme", "Tonne", "Litre"], "r": 2 },
+        { "q": "Combien de jours y a-t-il dans une année normale ?", "options": ["300", "350", "365", "400"], "r": 2 },
+        { "q": "Une bouteille de lait contient environ :", "options": ["1 ml", "1 L", "1 kg", "1 m"], "r": 1 },
+        { "q": "Le périmètre d'un triangle de côtés 3cm, 4cm et 5cm est :", "options": ["7 cm", "9 cm", "12 cm", "15 cm"], "r": 2 },
+        { "q": "Combien de minutes dans 2 heures ?", "options": ["60", "100", "120", "180"], "r": 2 },
+        { "q": "L'unité pour mesurer la température est :", "options": ["Le mètre", "Le litre", "Le degré Celsius", "Le gramme"], "r": 2 },
+        { "q": "Quelle heure est-il si la petite aiguille est sur 3 et la grande sur 12 ?", "options": ["12h15", "3h00", "6h15", "12h03"], "r": 1 },
+        { "q": "1 kilogramme égal combien de grammes ?", "options": ["100 g", "500 g", "1000 g", "2000 g"], "r": 2 },
+        { "q": "Quelle longueur est la plus grande ?", "options": ["10 cm", "1 m", "10 mm", "50 cm"], "r": 1 },
+        { "q": "Combien de mois dans une année ?", "options": ["10", "12", "24", "30"], "r": 1 },
+        { "q": "Un quart d'heure égal :", "options": ["15 min", "25 min", "30 min", "45 min"], "r": 0 },
+        { "q": "Pour mesurer une piscine, on utilise :", "options": ["Des millimètres", "Des centimètres", "Des mètres", "Des kilomètres"], "r": 2 },
+        { "q": "Une canette de soda contient environ :", "options": ["33 L", "33 ml", "330 ml", "3 ml"], "r": 2 },
+        { "q": "Combien de secondes dans une minute ?", "options": ["30", "60", "100", "120"], "r": 1 },
+        { "q": "Le périmètre d'un carré de 5 cm est :", "options": ["10 cm", "15 cm", "20 cm", "25 cm"], "r": 2 },
+        { "q": "Quelle unité pour la distance entre deux villes ?", "options": ["Mètre", "Kilomètre", "Centimètre", "Décamètre"], "r": 1 },
+        { "q": "La moitié d'une heure est :", "options": ["15 min", "30 min", "45 min", "60 min"], "r": 1 },
+        { "q": "1000 millilitres égal :", "options": ["1 L", "10 L", "100 L", "0,1 L"], "r": 0 },
+        { "q": "Une règle d'écolier mesure souvent :", "options": ["30 mm", "30 cm", "30 m", "30 km"], "r": 1 }
+      ]
+    },
+    "MONNAIE": {
+      "domaine": "Numératie financière",
+      "questions": [
+        { "q": "Quelle pièce vaut 25 cents ?", "options": ["Le sou", "Le nickel", "Le quart", "Le huard"], "r": 2 },
+        { "q": "Combien de pièces de 10¢ font 1 dollar ?", "options": ["5", "10", "20", "100"], "r": 1 },
+        { "q": "Si j'ai deux billets de 5$, j'ai :", "options": ["7$", "10$", "15$", "20$"], "r": 1 },
+        { "q": "Un jouet coûte 8$. Je donne 10$. On me rend :", "options": ["1$", "2$", "3$", "4$"], "r": 1 },
+        { "q": "La pièce avec un ours polaire vaut :", "options": ["25¢", "1$", "2$", "5$"], "r": 2 },
+        { "q": "5 pièces de 5¢ égal :", "options": ["10¢", "25¢", "50¢", "75¢"], "r": 1 },
+        { "q": "Lequel est le plus cher ?", "options": ["9,50$", "10,25$", "8,99$", "10,10$"], "r": 1 },
+        { "q": "J'ai 3 pièces de 25¢. Combien me manque-t-il pour 1$ ?", "options": ["10¢", "25¢", "50¢", "5¢"], "r": 1 },
+        { "q": "Un billet de 20$ égal combien de billets de 5$ ?", "options": ["2", "3", "4", "5"], "r": 2 },
+        { "q": "Si j'achète un bonbon à 45¢ et un à 30¢, je paie :", "options": ["65¢", "75¢", "85¢", "1$"], "r": 1 },
+        { "q": "Le symbole du dollar est :", "options": ["€", "£", "$", "¥"], "r": 2 },
+        { "q": "4 pièces de 2$ égal :", "options": ["4$", "6$", "8$", "10$"], "r": 2 },
+        { "q": "Combien de sous (1¢) dans 1 dollar ?", "options": ["10", "50", "100", "1000"], "r": 2 },
+        { "q": "Un billet de 10$ et un billet de 5$ font :", "options": ["12$", "15$", "20$", "25$"], "r": 1 },
+        { "q": "Quel montant est égal à 1,50$ ?", "options": ["3 pièces de 25¢", "6 pièces de 25¢", "4 pièces de 25¢", "2 pièces de 25¢"], "r": 1 },
+        { "q": "Je paie 15$ avec un billet de 20$. On me rend :", "options": ["2$", "5$", "10$", "0$"], "r": 1 },
+        { "q": "100 pièces de 1 cent égal :", "options": ["10$", "1$", "0,10$", "5$"], "r": 1 },
+        { "q": "La monnaie canadienne utilise :", "options": ["Le Dollar", "L'Euro", "La Livre", "Le Yen"], "r": 0 },
+        { "q": "3 billets de 10$ font :", "options": ["13$", "20$", "30$", "40$"], "r": 2 },
+        { "q": "Pour payer 1,25$, je peux donner :", "options": ["5 pièces de 10¢", "1 dollar et 1 pièce de 25¢", "3 pièces de 25¢", "2 pièces de 50¢"], "r": 1 }
+      ]
+    },
+    "NUMÉRATION": {
+      "domaine": "Nombres",
+      "questions": [
+        { "q": "Dans 542, le chiffre des centaines est :", "options": ["2", "4", "5", "0"], "r": 2 },
+        { "q": "Quel nombre est pair ?", "options": ["13", "25", "38", "41"], "r": 2 },
+        { "q": "100 + 30 + 5 égal :", "options": ["135", "1035", "531", "153"], "r": 0 },
+        { "q": "Le double de 15 est :", "options": ["20", "30", "45", "60"], "r": 1 },
+        { "q": "La moitié de 20 est :", "options": ["5", "10", "15", "2"], "r": 1 },
+        { "q": "Quel nombre est le plus petit ?", "options": ["401", "399", "410", "390"], "r": 3 },
+        { "q": "10 de plus que 890 est :", "options": ["800", "900", "910", "891"], "r": 1 },
+        { "q": "Comment écrit-on 450 en lettres ?", "options": ["Quatre-cent", "Quatre-cent-cinquante", "Quatre-cinquante", "Quarante-cinq"], "r": 1 },
+        { "q": "Dans 1 234, le chiffre des milliers est :", "options": ["1", "2", "3", "4"], "r": 0 },
+        { "q": "2 x 5 égal :", "options": ["7", "10", "12", "15"], "r": 1 },
+        { "q": "Quel nombre suit 999 ?", "options": ["990", "1000", "1001", "1100"], "r": 1 },
+        { "q": "10 x 10 égal :", "options": ["20", "50", "100", "1000"], "r": 2 },
+        { "q": "Lequel est un nombre impair ?", "options": ["2", "10", "21", "30"], "r": 2 },
+        { "q": "Le résultat de 50 - 15 est :", "options": ["30", "35", "40", "45"], "r": 1 },
+        { "q": "Complète : 5, 10, 15, ...", "options": ["16", "20", "25", "30"], "r": 1 },
+        { "q": "Quelle est la valeur du 7 dans 741 ?", "options": ["7", "70", "700", "7000"], "r": 2 },
+        { "q": "3 x 4 égal :", "options": ["7", "10", "12", "14"], "r": 2 },
+        { "q": "Un nombre avec 3 dizaines et 0 unité est :", "options": ["3", "13", "30", "300"], "r": 2 },
+        { "q": "Ajouter 100 à 450 donne :", "options": ["460", "550", "650", "500"], "r": 1 },
+        { "q": "Le plus grand nombre de 3 chiffres est :", "options": ["100", "900", "990", "999"], "r": 3 }
+      ]
+    }
+  }
+}

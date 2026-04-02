@@ -1,0 +1,46 @@
+{
+  "matiere": "MATHÉMATIQUES - 3E ANNÉE (OQRE)",
+  "texte": "Concentrate-toi bien ! Lis chaque consigne deux fois avant de choisir ta réponse. Vérifie tes calculs au brouillon si nécessaire.",
+  "themes": {
+    "GÉOMÉTRIE": {
+      "domaine": "Sens de l'espace",
+      "questions": [
+  { "q": "Comment appelle-t-on un polygone qui possède exactement 4 côtés ?", "options": ["Un triangle", "Un quadrilatère", "Un pentagone", "Un hexagone"], "r": 1 },
+  { "q": "Lequel de ces solides peut rouler ?", "options": ["Un cube", "Un prisme", "Un cylindre", "Une pyramide"], "r": 2 },
+  { "q": "Combien de côtés possède un triangle ?", "options": ["2 côtés", "3 côtés", "4 côtés", "5 côtés"], "r": 1 },
+  { "q": "Combien de sommets possède un cube ?", "options": ["4 sommets", "6 sommets", "8 sommets", "12 sommets"], "r": 2 },
+  { "q": "Quelle figure a tous ses côtés de la même longueur ?", "options": ["Un rectangle", "Un carré", "Un triangle", "Un cercle"], "r": 1 }
+]
+    },
+    "MESURES": {
+      "domaine": "Grandeurs et mesures",
+      "questions": [
+        { "q": "Quelle unité utilise-t-i on pour mesurer la masse d'une pomme ?", "options": ["Le litre (L)", "Le mètre (m)", "Le gramme (g)", "Le kilogramme (kg)"], "r": 2 },
+        { "q": "Combien de centimètres y a-t-il dans 2 mètres ?", "options": ["20 cm", "200 cm", "2000 cm", "2 cm"], "r": 1 },
+        { "q": "Le périmètre d'un carré de 4 cm de côté est de :", "options": ["8 cm", "12 cm", "16 cm", "20 cm"], "r": 2 },
+        { "q": "Combien de minutes y a-t-il dans une heure et demie ?", "options": ["60 min", "90 min", "100 min", "120 min"], "r": 1 },
+        { "q": "Quelle unité mesure la capacité d'une bouteille d'eau ?", "options": ["Le gramme", "Le mètre", "Le litre", "Le degré"], "r": 2 }
+      ]
+    },
+    "MONNAIE": {
+      "domaine": "Numératie financière",
+      "questions": [
+        { "q": "Tu as 20 $. Tu achètes un livre à 12 $. Combien te reste-t-il ?", "options": ["6 $", "8 $", "10 $", "12 $"], "r": 1 },
+        { "q": "Lequel égale 1 dollar (1,00 $) ?", "options": ["3 pièces de 25¢", "5 pièces de 10¢", "4 pièces de 25¢", "10 pièces de 5¢"], "r": 2 },
+        { "q": "Si tu as 5 billets de 5 $, quelle est la somme totale ?", "options": ["10 $", "20 $", "25 $", "50 $"], "r": 2 },
+        { "q": "Tu achètes un bonbon à 0,75 $. Tu donnes 1 $. On te rend :", "options": ["0,15 $", "0,20 $", "0,25 $", "0,30 $"], "r": 2 },
+        { "q": "2 pièces de 2 $ et 3 pièces de 1 $ font :", "options": ["5 $", "7 $", "8 $", "10 $"], "r": 1 }
+      ]
+    },
+    "NUMÉRATION": {
+      "domaine": "Nombres",
+      "questions": [
+        { "q": "Dans le nombre 4 521, quel est le chiffre des dizaines ?", "options": ["4", "5", "2", "1"], "r": 2 },
+        { "q": "Comment écrit-on 'mille-deux-cent-huit' ?", "options": ["128", "1 028", "1 208", "1 280"], "r": 2 },
+        { "q": "Quel est le résultat de 150 + 250 ?", "options": ["300", "400", "450", "500"], "r": 1 },
+        { "q": "Quel nombre vient juste avant 3 000 ?", "options": ["2 900", "2 990", "2 999", "3 001"], "r": 2 },
+        { "q": "Complète la suite : 10, 20, 30, ...", "options": ["31", "35", "40", "50"], "r": 2 }
+      ]
+    }
+  }
+}

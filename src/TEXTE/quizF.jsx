@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BookOpen, Award, Loader2, CheckCircle, ChevronLeft } from "lucide-react";
 import data from "./francais1.json"; 
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyoLtJ-7-t60l_WMJC7pzosnhezkfJRBfvECEIKQFmDHr0vwTtK3UGv11JAV6G8XIkM/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwM8Sekow_oXbgbnV0_TCGLTFdjL2ukBQzdH5Wb4OJt2OcknkqA6FS2syLjv8BYZgAD/exec";
 
 // Fonction utilitaire pour mélanger un tableau
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);

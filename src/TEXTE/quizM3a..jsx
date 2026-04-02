@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { BookOpen, Award, Loader2, CheckCircle } from "lucide-react";
 // Ici, "data" sera soit votre JSON de math, soit de français
-import data from "./mathematique1.json"; 
+import data from "./mathematique3A..json"; 
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwM8Sekow_oXbgbnV0_TCGLTFdjL2ukBQzdH5Wb4OJt2OcknkqA6FS2syLjv8BYZgAD/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLZp0igZS7YoitOLP_HzojLbUOplOla2d_GoLny-EPAZKfa-5sbwi_7dOynkHNGw91vw/exec";
 
-export default function QuizOQREM() {
+export default function QuizOQREM3a() {
   const [etape, setEtape] = useState("login");
   const [email, setEmail] = useState("");
   const [nom, setNom] = useState("");

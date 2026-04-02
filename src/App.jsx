@@ -34,6 +34,7 @@ import QuizOQREF from "./TEXTE/quizF";
 import MenuTakaStyle from "./Conjuguaison/MenuTakaStyle";
 import App1 from "./Conjuguaison/Conj/App";
 import PlanCodage from "./Codage/PlanCodage";
+import QuizOQREM3a from "./TEXTE/quizM3a.";
 
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
 
           <Route path="/activites/51e Année/Francais" element={<YearlyNavigator5e />} />
            <Route path="/activites/3e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
-          <Route path="/activites/3e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+          <Route path="/activites/3e Année/Mathematiques" element={<QuizOQREM3a></QuizOQREM3a> } />
           <Route path="/activites/4e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
           <Route path="/activites/4e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
           <Route path="/activites/4e Année/Sciences" element={<App1></App1>  } />
