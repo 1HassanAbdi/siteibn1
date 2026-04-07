@@ -53,6 +53,12 @@
     "matiere": "FR", 
     "titre": "Le papillon lune", 
     "chemin": "./data/FR/papillon.json" 
+  },{ 
+    "slug": "bibliotheque", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "Emprunter des livres à la bibliothèque", 
+    "chemin": "./data/FR/bibliotheque.json" 
   },
   
   { 
@@ -117,5 +123,11 @@
     "matiere": "MATHS", 
     "titre": "Mathématiques : décimaux et entiers (recherche)", 
     "chemin": "./data/MATHS/dec_ent.json" 
+  }, { 
+    "slug": "revision2", 
+    "niveau": 3, 
+    "matiere": "MATHS", 
+    "titre": "Mathématiques : revision 2", 
+    "chemin": "./data/MATHS/maths_8_4.json"
   }
 ]

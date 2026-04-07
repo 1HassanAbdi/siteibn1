@@ -1,0 +1,165 @@
+{
+  "test_info": {
+    "session": "Mathématiques calculs et problèmes 🧮",
+    "niveau": "3A",
+    "target": "maths_3a_calculs",
+    "subject": "maths"
+  },
+  "parties": [
+    {
+      "id": "Module_1",
+      "sections": [
+        {
+          "titre": "Calculs de base ➕g➖✖️➗",
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Calcule : 45 + 27",
+              "options": ["70", "71", "72", "73"],
+              "reponse_correcte": "72"
+            },
+            {
+              "numero": 2,
+              "enonce": "Calcule : 72 − 38",
+              "options": ["32", "33", "34", "35"],
+              "reponse_correcte": "34"
+            },
+            {
+              "numero": 3,
+              "enonce": "Calcule : 6 × 7",
+              "options": ["36", "42", "48", "56"],
+              "reponse_correcte": "42"
+            },
+            {
+              "numero": 4,
+              "enonce": "Calcule : 54 ÷ 6",
+              "options": ["7", "8", "9", "10"],
+              "reponse_correcte": "9"
+            },
+            {
+              "numero": 5,
+              "enonce": "Complète la suite : 10, 20, 30, ___, 50, ___",
+              "options": ["40 et 60", "35 et 55", "45 et 65", "40 et 55"],
+              "reponse_correcte": "40 et 60"
+            }
+          ]
+        },
+        {
+          "titre": "Problèmes mathématiques 🧠",
+          "questions": [
+            {
+              "numero": 6,
+              "enonce": "Léa a 24 bonbons. Elle les partage également entre 6 amis. Combien chaque ami reçoit-il ?",
+              "options": ["3", "4", "5", "6"],
+              "reponse_correcte": "4"
+            },
+            {
+              "numero": 7,
+              "enonce": "Un livre coûte 15 $. Tu as 40 $. Combien peux-tu acheter de livres ?",
+              "options": ["1", "2", "3", "4"],
+              "reponse_correcte": "2"
+            },
+            {
+              "numero": 8,
+              "enonce": "Dans une boîte, il y a 36 crayons. On les range en 4 paquets égaux. Combien dans chaque paquet ?",
+              "options": ["7", "8", "9", "10"],
+              "reponse_correcte": "9"
+            }
+          ]
+        },
+        {
+          "titre": "Mesure et géométrie 📏🔺",
+          "questions": [
+            {
+              "numero": 9,
+              "enonce": "Quelle unité utiliserais-tu pour mesurer la longueur d'un crayon ✏️ ?",
+              "options": ["mètre", "centimètre", "kilogramme", "litre"],
+              "reponse_correcte": "centimètre"
+            },
+            {
+              "numero": 10,
+              "enonce": "Quel est le périmètre d’un rectangle de longueur 5 cm et largeur 3 cm ?",
+              "options": ["8 cm", "10 cm", "16 cm", "20 cm"],
+              "reponse_correcte": "16 cm"
+            },
+            {
+              "numero": 11,
+              "enonce": "Combien de côtés possède un hexagone ?",
+              "options": ["4", "5", "6", "8"],
+              "reponse_correcte": "6"
+            },
+            {
+              "numero": 12,
+              "enonce": "Quelle forme possède 3 côtés ?",
+              "options": ["carré", "triangle", "cercle", "rectangle"],
+              "reponse_correcte": "triangle"
+            },
+            {
+              "numero": 13,
+              "enonce": "Combien de côtés possède un carré ?",
+              "options": ["3", "4", "5", "6"],
+              "reponse_correcte": "4"
+            }
+          ]
+        },
+        {
+          "titre": "Suites logiques 🔢",
+          "questions": [
+            {
+              "numero": 14,
+              "enonce": "Complète la suite : 5, 10, 15, ___, 25",
+              "options": ["18", "19", "20", "21"],
+              "reponse_correcte": "20"
+            },
+            {
+              "numero": 15,
+              "enonce": "Complète la suite : 3, 6, 9, ___, 15",
+              "options": ["10", "11", "12", "13"],
+              "reponse_correcte": "12"
+            }
+          ]
+        },
+        {
+          "titre": "Problèmes de la vie quotidienne 🏠",
+          "questions": [
+            {
+              "numero": 16,
+              "enonce": "Tu as 3 paquets de 5 gommes chacun. Combien as-tu de gommes en tout ?",
+              "options": ["8", "10", "15", "20"],
+              "reponse_correcte": "15"
+            },
+            {
+              "numero": 17,
+              "enonce": "Un ruban mesure 20 cm. Tu en coupes 7 cm. Quelle longueur reste-t-il ?",
+              "options": ["10 cm", "13 cm", "17 cm", "27 cm"],
+              "reponse_correcte": "13 cm"
+            },
+            {
+              "numero": 18,
+              "enonce": "Un jardin rectangulaire a une longueur de 8 m et une largeur de 4 m. Quel est son périmètre ?",
+              "options": ["12 m", "24 m", "32 m", "48 m"],
+              "reponse_correcte": "24 m"
+            }
+          ]
+        },
+        {
+          "titre": "Calculs finaux 🧮",
+          "questions": [
+            {
+              "numero": 19,
+              "enonce": "Calcule : 3 × 9",
+              "options": ["21", "24", "27", "30"],
+              "reponse_correcte": "27"
+            },
+            {
+              "numero": 20,
+              "enonce": "Calcule : 28 ÷ 4",
+              "options": ["5", "6", "7", "8"],
+              "reponse_correcte": "7"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

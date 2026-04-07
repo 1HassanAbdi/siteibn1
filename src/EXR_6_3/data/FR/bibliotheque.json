@@ -1,0 +1,261 @@
+{
+  "test_info": {
+    "titre": "Test en lecture - Emprunter des livres à la bibliothèque",
+    "niveau": "3e année",
+    "session": "La navigation à voile",
+    "matiere": "Français",
+    "type_de_texte": "Informatif / Documentaire",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "Emprunter des livres à la bibliothèque",
+          "image": "/imageoqre/bibliotheque.jpg",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "Marc a emprunté un livre à la bibliothèque. Utilise la table des matières et l’index ci-dessous pour répondre aux questions."
+            },
+            {
+              "p": 2,
+              "titre": "Table des matières",
+              "contenu": "Introduction ................. 2 | Chapitre 1 : Apprendre à faire de la voile ................. 3 | Chapitre 2 : Les parties d’un voilier ................. 15 | Chapitre 3 : Règles de navigation ................. 23 | Chapitre 4 : Entretien d’un bateau ................. 35 | Chapitre 5 : Construire un bateau ................. 47 | Index ................. 61"
+            },
+            {
+              "p": 3,
+              "titre": "Index",
+              "contenu": "C : Classes, 27 ; Colomb, Christophe, 5 | E : Entreposage pour l’hiver, 37-39 | G : Garde côtière du Canada, 14 | L : Livres sur la navigation, 7-8 | M : Mâts, 18-21 | N : Nettoyer un bateau, 39-41 | P : Parties d’un bateau, 18-19 | T : Types de voiliers, 12 | V : Voiles, 21-23"
+            }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Quel type de texte est-ce ?",
+              "options": [
+                "Un poème",
+                "Un texte informatif",
+                "Une bande dessinée",
+                "Une histoire inventée"
+              ],
+              "reponse_correcte": "Un texte informatif"
+            },
+            {
+              "numero": 2,
+              "enonce": "À quoi sert la table des matières dans un livre ?",
+              "options": [
+                "À colorier les pages",
+                "À trouver les chapitres et leurs pages",
+                "À écrire des mots nouveaux",
+                "À dessiner des images"
+              ],
+              "reponse_correcte": "À trouver les chapitres et leurs pages"
+            },
+            {
+              "numero": 3,
+              "enonce": "À quoi sert l’index dans un livre ?",
+              "options": [
+                "À trouver des mots ou sujets précis",
+                "À compter les pages",
+                "À écrire des résumés",
+                "À dessiner des cartes"
+              ],
+              "reponse_correcte": "À trouver des mots ou sujets précis"
+            },
+            {
+              "numero": 4,
+              "enonce": "De quoi traite le chapitre 1 ?",
+              "options": [
+                "De la construction d’un bateau",
+                "De l’apprentissage de la voile",
+                "Des règles de navigation",
+                "De l’entretien d’un bateau"
+              ],
+              "reponse_correcte": "De l’apprentissage de la voile"
+            },
+            {
+              "numero": 5,
+              "enonce": "À quelle page commence le chapitre 2 ?",
+              "options": [
+                "Page 3",
+                "Page 15",
+                "Page 23",
+                "Page 35"
+              ],
+              "reponse_correcte": "Page 15"
+            },
+            {
+              "numero": 6,
+              "enonce": "Quel est le titre du chapitre 4 ?",
+              "options": [
+                "Apprendre à faire de la voile",
+                "Les parties d’un voilier",
+                "Règles de navigation",
+                "Entretien d’un bateau"
+              ],
+              "reponse_correcte": "Entretien d’un bateau"
+            },
+            {
+              "numero": 7,
+              "enonce": "Où trouve-t-on l’index dans ce livre ?",
+              "options": [
+                "À la page 2",
+                "À la page 15",
+                "À la page 47",
+                "À la page 61"
+              ],
+              "reponse_correcte": "À la page 61"
+            },
+            {
+              "numero": 8,
+              "enonce": "Que signifie le mot « index » ?",
+              "options": [
+                "Une liste de mots importants avec leurs pages",
+                "Une image dans le livre",
+                "Un chapitre sur les animaux",
+                "Une page pour écrire"
+              ],
+              "reponse_correcte": "Une liste de mots importants avec leurs pages"
+            },
+            {
+              "numero": 9,
+              "enonce": "Sur quelles pages peut-on trouver des informations sur les mâts ?",
+              "options": [
+                "Pages 7-8",
+                "Pages 18-21",
+                "Pages 21-23",
+                "Page 27"
+              ],
+              "reponse_correcte": "Pages 18-21"
+            },
+            {
+              "numero": 10,
+              "enonce": "Quel mot de l’index commence par la lettre « E » ?",
+              "options": [
+                "Entreposage pour l’hiver",
+                "Garde côtière",
+                "Mâts",
+                "Voiles"
+              ],
+              "reponse_correcte": "Entreposage pour l’hiver"
+            },
+            {
+              "numero": 11,
+              "enonce": "Combien y a-t-il de chapitres dans ce livre ?",
+              "options": [
+                "3 chapitres",
+                "5 chapitres",
+                "6 chapitres",
+                "10 chapitres"
+              ],
+              "reponse_correcte": "5 chapitres"
+            },
+            {
+              "numero": 12,
+              "enonce": "Quel est le mot qui signifie « liste des chapitres avec leurs pages » ?",
+              "options": [
+                "Index",
+                "Table des matières",
+                "Introduction",
+                "Résumé"
+              ],
+              "reponse_correcte": "Table des matières"
+            },
+            {
+              "numero": 13,
+              "enonce": "Où peut-on trouver des informations sur les « classes » ?",
+              "options": [
+                "Page 5",
+                "Page 14",
+                "Page 27",
+                "Page 35"
+              ],
+              "reponse_correcte": "Page 27"
+            },
+            {
+              "numero": 14,
+              "enonce": "Quel est le mot qui signifie « liste de mots avec leurs pages » ?",
+              "options": [
+                "Table des matières",
+                "Index",
+                "Chapitre",
+                "Résumé"
+              ],
+              "reponse_correcte": "Index"
+            },
+            {
+              "numero": 15,
+              "enonce": "À quelle page commence l’introduction ?",
+              "options": [
+                "Page 1",
+                "Page 2",
+                "Page 3",
+                "Page 15"
+              ],
+              "reponse_correcte": "Page 2"
+            },
+            {
+              "numero": 16,
+              "enonce": "Quel mot de l’index commence par la lettre « G » ?",
+              "options": [
+                "Garde côtière du Canada",
+                "Entreposage pour l’hiver",
+                "Mâts",
+                "Voiles"
+              ],
+              "reponse_correcte": "Garde côtière du Canada"
+            },
+            {
+              "numero": 17,
+              "enonce": "De quoi traite le chapitre 5 ?",
+              "options": [
+                "Apprendre à faire de la voile",
+                "Les parties d’un voilier",
+                "Règles de navigation",
+                "Construire un bateau"
+              ],
+              "reponse_correcte": "Construire un bateau"
+            },
+            {
+              "numero": 18,
+              "enonce": "Quel est le mot qui signifie « début du livre » ?",
+              "options": [
+                "Index",
+                "Table des matières",
+                "Introduction",
+                "Chapitre"
+              ],
+              "reponse_correcte": "Introduction"
+            },
+            {
+              "numero": 19,
+              "enonce": "Sur quelles pages peut-on trouver des informations sur les voiles ?",
+              "options": [
+                "Pages 7-8",
+                "Pages 18-21",
+                "Pages 21-23",
+                "Page 27"
+              ],
+              "reponse_correcte": "Pages 21-23"
+            },
+            {
+              "numero": 20,
+              "enonce": "Quel mot de l’index commence par la lettre « V » ?",
+              "options": [
+                "Voiles",
+                "Mâts",
+                "Classes",
+                "Entreposage pour l’hiver"
+              ],
+              "reponse_correcte": "Voiles"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
