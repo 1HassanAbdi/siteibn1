@@ -1,0 +1,256 @@
+{
+  "matiere": "FRANCAIS",
+  "titre": "Un sommeil réparateur",
+  "startDate": "2026-04-15",
+  "endDate": "2026-04-22",
+
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Es-tu une personne fraîche et dispose au réveil, ou plutôt quelqu'un qui a du mal à se tirer du lit la plupart du temps ? Si tu ne dors pas au moins huit heures chaque nuit, à la longue ta santé en souffrira."
+    },
+    {
+      "p": 2,
+      "contenu": "Être privé ou privée d'une heure ou deux de sommeil durant quelques jours aura un effet certain sur ta concentration et ta performance. D'un autre côté, dormir plus que le nombre d'heures recommandées ne signifie pas non plus que tu feras davantage de travail et que ça ira mieux. Au contraire, dormir trop est un peu comme manger trop. Cela rend léthargique et la capacité de concentration diminue aussi."
+    },
+    {
+      "p": 3,
+      "contenu": "Avoir au moins huit heures de sommeil par nuit augmente ta résistance. Les gens qui adoptent de bonnes habitudes de sommeil ont généralement un système immunitaire plus résistant. Pour plusieurs, faire un compromis sur leur sommeil réparateur en dormant moins est impossible. Lorsque tu dors, ton corps répare et régénère ta peau, ton sang et tes cellules nerveuses."
+    },
+    {
+      "p": 4,
+      "contenu": "Notre peau luit et nos cheveux brillent lorsque nous dormons suffisamment. Les personnes en manque de sommeil ont généralement des cernes foncés sous leurs yeux."
+    },
+    {
+      "p": 5,
+      "contenu": "Lorsque tu es en santé, tout semble aller pour le mieux. Tu te surpasses et tu réduis ton stress. Tu peux emmagasiner et retenir des informations plus précises. Accomplir des tâches est aussi plus facile et tu fais moins d'erreurs. Plus important encore, chez les conducteurs et les conductrices, les réactions sont meilleures face aux urgences, s'ils ont bien dormi. En conséquence, cela réduit le nombre d'accidents sur la route."
+    },
+    {
+      "p": 6,
+      "contenu": "Par-dessus tout, dormir suffisamment diminue notre impatience, notre agressivité et notre anxiété."
+    }
+  ],
+
+  "themes": {
+    "COMPREHENSION": {
+      "domaine": "Analyse du texte",
+      "questions": [
+        {
+          "q": "Combien d'heures de sommeil sont recommandées chaque nuit selon le texte ?",
+          "options": ["6 heures", "7 heures", "8 heures", "9 heures"],
+          "r": 2
+        },
+        {
+          "q": "Quel est l'effet d'un manque de sommeil sur la concentration ?",
+          "options": ["Elle s'améliore", "Elle reste stable", "Elle diminue", "Elle disparaît"],
+          "r": 2
+        },
+        {
+          "q": "Que se passe-t-il si on dort trop ?",
+          "options": ["On est plus productif", "On devient léthargique", "On a plus faim", "On est plus stressé"],
+          "r": 1
+        },
+        {
+          "q": "Quel est l'effet du sommeil sur le système immunitaire ?",
+          "options": ["Il l'affaiblit", "Il le rend plus résistant", "Il ne change rien", "Il le supprime"],
+          "r": 1
+        },
+        {
+          "q": "Que régénère le corps pendant le sommeil ?",
+          "options": ["Les os", "La peau, le sang et les cellules nerveuses", "Les muscles", "Les cheveux"],
+          "r": 1
+        },
+        {
+          "q": "Quel est l'effet du manque de sommeil sur l'apparence ?",
+          "options": ["La peau brille", "Les cheveux tombent", "Des cernes foncés apparaissent", "Les yeux changent de couleur"],
+          "r": 2
+        },
+        {
+          "q": "Quel est l'avantage du sommeil pour les conducteurs ?",
+          "options": ["Ils roulent plus vite", "Ils ont de meilleures réactions", "Ils consomment moins d'essence", "Ils écoutent plus de musique"],
+          "r": 1
+        },
+        {
+          "q": "Quel est l'effet du sommeil sur le stress ?",
+          "options": ["Il l'augmente", "Il le réduit", "Il le transforme", "Il le supprime"],
+          "r": 1
+        },
+        {
+          "q": "Quel est l'effet du sommeil sur l'humeur ?",
+          "options": ["On devient plus impatient", "On devient plus agressif", "On diminue impatience, agressivité et anxiété", "On devient plus triste"],
+          "r": 2
+        },
+        {
+          "q": "Que permet de mieux faire le sommeil selon le texte ?",
+          "options": ["Manger plus", "Retenir des informations", "Courir plus vite", "Parler plus fort"],
+          "r": 1
+        }
+      ]
+    },
+    "GRAMMAIRE_HOMOPHONES": {
+      "domaine": "Homophones (a/à, et/est, son/sont, mes/mai/met, peu/peut)",
+      "questions": [
+        {
+          "q": "Il ___ du mal à se lever le matin.",
+          "options": ["a", "à", "as", "ai"],
+          "r": 0
+        },
+        {
+          "q": "Le sommeil ___ important pour la santé.",
+          "options": ["est", "et", "es", "ai"],
+          "r": 0
+        },
+        {
+          "q": "Les gens qui dorment bien ___ en meilleure santé.",
+          "options": ["son", "sont", "sons", "sonts"],
+          "r": 1
+        },
+        {
+          "q": "Il ___ ses huit heures de sommeil chaque nuit.",
+          "options": ["met", "mes", "mai", "mets"],
+          "r": 0
+        },
+        {
+          "q": "Il reste un ___ de temps avant minuit.",
+          "options": ["peu", "peux", "peut", "peus"],
+          "r": 0
+        },
+        {
+          "q": "Le manque de sommeil ___ la concentration.",
+          "options": ["a", "à", "as", "ai"],
+          "r": 0
+        },
+        {
+          "q": "On ___ voir les effets du sommeil sur la peau.",
+          "options": ["peu", "peux", "peut", "peus"],
+          "r": 2
+        },
+        {
+          "q": "Il ___ toujours fatigué le matin.",
+          "options": ["est", "et", "es", "ai"],
+          "r": 0
+        },
+        {
+          "q": "Les nuits ___ trop courtes pour lui.",
+          "options": ["son", "sont", "sons", "sonts"],
+          "r": 1
+        },
+        {
+          "q": "Il ___ du mal à se concentrer.",
+          "options": ["a", "à", "as", "ai"],
+          "r": 0
+        }
+      ]
+    },
+    "GRAMMAIRE_CONJONCTIONS": {
+      "domaine": "Conjonctions de coordination (mais, ou, et, donc, or, ni, car)",
+      "questions": [
+        {
+          "q": "Il veut dormir ___ il est fatigué.",
+          "options": ["car", "mais", "ni", "ou"],
+          "r": 0
+        },
+        {
+          "q": "Il dort beaucoup, ___ il est toujours en forme.",
+          "options": ["donc", "mais", "ou", "car"],
+          "r": 0
+        },
+        {
+          "q": "Veux-tu dormir ___ travailler ?",
+          "options": ["ou", "ni", "car", "donc"],
+          "r": 0
+        },
+        {
+          "q": "Il est tard, ___ il faut se coucher.",
+          "options": ["donc", "mais", "ni", "car"],
+          "r": 0
+        },
+        {
+          "q": "Il ne dort ___ la journée ___ la nuit.",
+          "options": ["ni / ni", "ou / ou", "et / et", "car / car"],
+          "r": 0
+        },
+        {
+          "q": "Le sommeil répare le corps ___ l'esprit.",
+          "options": ["et", "mais", "ni", "car"],
+          "r": 0
+        },
+        {
+          "q": "Il est fatigué, ___ il va se coucher.",
+          "options": ["donc", "car", "mais", "ni"],
+          "r": 0
+        },
+        {
+          "q": "Il dort mal, ___ il est de mauvaise humeur.",
+          "options": ["donc", "mais", "ni", "ou"],
+          "r": 0
+        },
+        {
+          "q": "Il veut dormir ___ il a un examen demain.",
+          "options": ["car", "donc", "mais", "ni"],
+          "r": 0
+        },
+        {
+          "q": "Il dort peu, ___ il est toujours en retard.",
+          "options": ["donc", "mais", "ni", "ou"],
+          "r": 0
+        }
+      ]
+    },
+    "CONJUGAISON": {
+      "domaine": "Le présent de l'indicatif",
+      "questions": [
+        {
+          "q": "Chaque nuit, je (dormir) huit heures.",
+          "options": ["dors", "dort", "dorment", "dormons"],
+          "r": 0
+        },
+        {
+          "q": "Tu (se réveiller) en pleine forme.",
+          "options": ["te réveilles", "te réveille", "te réveillons", "te réveillent"],
+          "r": 0
+        },
+        {
+          "q": "Il (avoir) besoin de sommeil.",
+          "options": ["a", "as", "avons", "ont"],
+          "r": 0
+        },
+        {
+          "q": "Nous (réparer) notre corps en dormant.",
+          "options": ["réparons", "répare", "réparent", "répares"],
+          "r": 0
+        },
+        {
+          "q": "Vous (être) en meilleure santé grâce au sommeil.",
+          "options": ["êtes", "est", "sommes", "sont"],
+          "r": 0
+        },
+        {
+          "q": "Ils (diminuer) leur stress en dormant bien.",
+          "options": ["diminuent", "diminue", "diminuons", "diminues"],
+          "r": 0
+        },
+        {
+          "q": "Je (se sentir) mieux après une bonne nuit.",
+          "options": ["me sens", "te sens", "se sent", "nous sentons"],
+          "r": 0
+        },
+        {
+          "q": "Tu (retrouver) ta concentration grâce au sommeil.",
+          "options": ["retrouves", "retrouve", "retrouvons", "retrouvent"],
+          "r": 0
+        },
+        {
+          "q": "Il (réduire) son anxiété en dormant suffisamment.",
+          "options": ["réduit", "réduis", "réduisons", "réduisent"],
+          "r": 0
+        },
+        {
+          "q": "Nous (avoir) plus d'énergie après une bonne nuit.",
+          "options": ["avons", "a", "as", "ont"],
+          "r": 0
+        }
+      ]
+    }
+  }
+}
