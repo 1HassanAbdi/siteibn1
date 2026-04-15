@@ -1,69 +1,67 @@
 {
-  "matiere": "FRANCAIS",
-  "titre": "Fourmi Annie et Bourdon Bastien",
-  "startDate": "2026-03-22",
-  "endDate": "2026-03-29",
-  "texte": "Fourmi Annie se prélassait au soleil lorsqu'elle a aperçu Bourdon Bastien occupé à ramasser de la nourriture dans les champs. « Pourquoi ramasses-tu de la nourriture maintenant, Bourdon Bastien? » a demandé Annie.\n\nBourdon Bastien s'est arrêté en plein vol et a regardé Fourmi Annie. « L'hiver approche, Annie. Es-tu bien préparée ? » lui a-t-il demandé.\n\nAnnie a regardé Bastien d'un air incrédule. « Ramasser de la nourriture pour l'hiver maintenant? Tu veux rire? Arrête-toi un peu et viens à la fête d'Alice avec moi. » Bourdon Bastien a secoué la tête. « Non, merci. J'ai encore beaucoup de travail à faire. Au revoir, Annie. »\n\nLes jours sont devenus des semaines. Fourmi Annie s'est réveillée un matin et a vu le sol tout recouvert de neige. « Hourra, l'hiver est arrivé! Je vais aller jouer dans la neige après mon déjeuner. » Elle est sortie dehors à la recherche de nourriture et a été horrifiée de constater qu'il n'en restait plus.\n\n« Oh, non! J'ai oublié de ramasser de la nourriture. Qu'est-ce que je vais faire? » a dit Annie en pleurant. Tout à coup, la cloche d'entrée a sonné. Annie a été surprise de voir Bourdon Bastien à la porte.\n\n« Aimerais-tu venir chez moi et partager ma nourriture, Annie? Je sais que tu n'as rien ramassé. Comme j'ai commencé tôt, j'ai un tas de choses à partager », a dit Bastien gentiment. Honteuse, Fourmi Annie a baissé la tête et a répondu : « Merci, Bourdon Bastien. J'aurais dû t'écouter. Je suis désolée. Laisse-moi nettoyer ta maison cet hiver en échange de la nourriture. »\n\n« Ne t'en fais pas Annie. Viens », a dit Bastien. Ensemble, ils ont marché d'un pas pesant vers la maison de Bastien.",
-  "themes": {
-    "COMPREHENSION": {
-      "domaine": "Fourmi Annie et Bourdon Bastien",
-      "questions": [
-        { "q": "Où se trouvait Annie au début de l'histoire ?", "options": ["Dans la neige", "Au soleil", "Dans sa maison", "À une fête"], "r": 1 },
-        { "q": "Que faisait Bourdon Bastien au début ?", "options": ["Il dormait", "Il jouait", "Il ramassait de la nourriture", "Il nettoyait"], "r": 2 },
-        { "q": "Quelle fête Annie propose-t-elle à Bastien ?", "options": ["La fête de Bastien", "La fête d'Alice", "La fête de l'hiver", "La fête du soleil"], "r": 1 },
-        { "q": "Pourquoi Bastien refuse-t-il l'invitation ?", "options": ["Il est fatigué", "Il n'aime pas Alice", "Il a trop de travail", "Il est déjà invité"], "r": 2 },
-        { "q": "Quel signe montre que l'hiver est arrivé ?", "options": ["La pluie", "Le vent", "La neige", "Le tonnerre"], "r": 2 },
-        { "q": "Quelle est la première idée d'Annie en voyant la neige ?", "options": ["Aller travailler", "Aller jouer", "Aller dormir", "Aller manger"], "r": 1 },
-        { "q": "Pourquoi Annie pleure-t-elle ?", "options": ["Elle a froid", "Elle a perdu son chemin", "Elle n'a plus de nourriture", "Elle a cassé sa cloche"], "r": 2 },
-        { "q": "Qui arrive chez Annie quand elle pleure ?", "options": ["Alice", "La reine", "Bourdon Bastien", "Un autre ami"], "r": 2 },
-        { "q": "Quelle est la proposition de Bastien ?", "options": ["De lui prêter de l'argent", "De partager sa nourriture", "De l'aider à ramasser du bois", "De retourner au soleil"], "r": 1 },
-        { "q": "Que propose Annie en échange de l'aide de Bastien ?", "options": ["Lui donner de l'argent", "Lui raconter une histoire", "Nettoyer sa maison", "Lui donner ses vêtements"], "r": 2 }
+  "document_info": {
+    "titre": "Test en lecture, écriture et mathématiques, cycle moyen",
+    "niveau": "6e année",
+    "cahier": "Cahier de l'élève 2",
+    "session": "Printemps 2012",
+    "organisme": "Office de la qualité et de la responsabilité en éducation (OQRE)"
+  },
+  "sections": [
+    {
+      "partie": "Partie C : Lecture",
+      "titre_du_texte": "Projet lunaire",
+      "contenu_du_texte": "L'histoire suit Mathias, un élève qui doit réaliser un projet de sciences en équipe de trois juste avant les vacances de juin. Son enseignant, Monsieur Lavoie, forme des équipes imposées. Mathias se retrouve avec Alexia et Gina, deux filles qu'il connaît peu. Initialement agacé car il ne peut choisir son sujet préféré (le télescope Hubble) à cause du vote de ses coéquipières qui préfèrent les caractéristiques de la surface de la Lune, Mathias tente sans succès de changer d'équipe. Finalement, en mettant en commun leurs talents (sciences pour Gina, rédaction pour Alexia, et arts pour Mathias), ils réussissent une maquette en papier mâché et une fiche descriptive de grande qualité, ce qui fait réaliser à Mathias la force du travail d'équipe.",
+      "questions_lecture": [
+        { "id": 1, "question": "Quel sous-titre pourrait-on donner au 1er paragraphe ?", "options": ["La fin des classes", "L'annonce du projet", "Le cours de sciences", "La formation des équipes"], "reponse_correcte": "b" },
+        { "id": 2, "question": "Combien de temps les élèves ont-ils pour faire leur projet ?", "options": ["2 jours", "3 jours", "7 jours", "14 jours"], "reponse_correcte": "c" },
+        { "id": 3, "question": "Pourquoi le mot « quoi » est-il écrit en lettres majuscules ? (1er paragraphe)", "options": ["Il indique une parole", "Il indique un sous-titre", "Il annonce une question", "Il démontre l'étonnement"], "reponse_correcte": "d" },
+        { "id": 4, "question": "Pourquoi Mathias reste-t-il « bouche bée » ? (2e paragraphe)", "options": ["Il est étonné d'avoir un projet à faire", "Il est nerveux à l'idée de choisir son thème", "Il est surpris de la composition de son équipe", "Il est pressé de choisir un des sujets au tableau"], "reponse_correcte": "c" },
+        { "id": 5, "question": "Par quels mots peut-on remplacer « Évidemment » dans la phrase : « Évidemment, c'est deux contre un » ?", "options": ["En fait", "Bien sûr", "Par contre", "Malgré tout"], "reponse_correcte": "b" },
+        { "id": 6, "question": "Que signifie l'expression « je m'éclipse » ? (4e paragraphe)", "options": ["Je me retire", "Je me fâche", "Je me calme", "Je me décide"], "reponse_correcte": "a" },
+        { "id": 7, "question": "Pourquoi Mathias choisit-il de faire un projet à propos du télescope Hubble ?", "options": ["C'est son sujet préféré", "C'est le meilleur choix qui reste", "Il veut surprendre ses coéquipières", "Il veut se dépêcher de faire un choix"], "reponse_correcte": "b" },
+        { "id": 8, "question": "Au 5e paragraphe, pourquoi Mathias sort-il de sa coquille ?", "options": ["Il est à l'aise avec son groupe", "Il est prêt à travailler avec son groupe", "Il a confiance en ses habiletés artistiques", "Il a confiance en ses connaissances scientifiques"], "reponse_correcte": "c" },
+        { "id": 9, "question": "Quelle est l'idée principale du 7e paragraphe ?", "options": ["Le projet est enfin terminé", "Monsieur Lavoie est fier de sa classe", "Mathias se rend compte qu'il a une bonne équipe", "Mathias se rend compte qu'il aime les projets sur la Lune"], "reponse_correcte": "c" },
+        { "id": 10, "question": "Pourquoi Mathias et ses coéquipières ont-ils si bien réussi leur projet ?", "options": ["Ils ont choisi un bon sujet", "Ils ont exploité leurs talents", "Ils ont bien suivi les directives", "Ils ont fait plusieurs recherches"], "reponse_correcte": "b" }
+      ],
+      "questions_ouvertes": [
+        { "id": 11, "consigne": "Explique comment l'attitude de Mathias envers ses coéquipières a changé au fil de l'histoire." },
+        { "id": 12, "consigne": "Pourquoi était-ce une bonne idée que monsieur Lavoie forme les équipes pour le projet ? Utilisez les renseignements du texte et vos propres idées." }
       ]
     },
-    "VOCABULAIRE": {
-      "domaine": "Lexique",
-      "questions": [
-        { "q": "Que signifie 'se prélasser' ?", "options": ["Travailler dur", "Se reposer tranquillement", "Courir vite", "Avoir peur"], "r": 1 },
-        { "q": "Quel est un synonyme de 'aperçu' ?", "options": ["Entendu", "Touché", "Vu", "Gouté"], "r": 2 },
-        { "q": "Que signifie être 'incrédule' ?", "options": ["Être joyeux", "Ne pas vouloir croire", "Être très intelligent", "Être fatigué"], "r": 1 },
-        { "q": "Quel est le contraire de 'tôt' ?", "options": ["Vite", "Tard", "Rapidement", "Longtemps"], "r": 1 },
-        { "q": "Que veut dire 'horrifiée' ?", "options": ["Très contente", "Très surprise et choquée", "Très calme", "Très endormie"], "r": 1 },
-        { "q": "Pourquoi Annie est-elle 'honteuse' ?", "options": ["Elle est fière", "Elle se sent coupable", "Elle a chaud", "Elle est en colère"], "r": 1 },
-        { "q": "Que signifie 'partager' ?", "options": ["Tout garder pour soi", "Donner une partie aux autres", "Vendre aux autres", "Cacher aux autres"], "r": 1 },
-        { "q": "Quel mot appartient à la famille de 'nourriture' ?", "options": ["Nager", "Nourrir", "Nuage", "Noir"], "r": 1 },
-        { "q": "Que signifie marcher 'd'un pas pesant' ?", "options": ["Légèrement", "Rapidement", "Lourdement et lentement", "En courant"], "r": 2 },
-        { "q": "Où se trouve la 'cloche d'entrée' ?", "options": ["Dans la cuisine", "Sur la porte", "Dans le champ", "Dans le lit"], "r": 1 }
+    {
+      "partie": "Partie C : Écriture",
+      "tache_redaction": { "id": 13, "consigne": "Rédige un court texte dans lequel tu expliques pourquoi il est important pour les jeunes de faire de l'activité physique régulièrement." },
+      "questions_choix_multiple": [
+        { "id": 14, "question": "Choisis la meilleure phrase d'introduction pour ce paragraphe (sur Tatiana l'artiste).", "options": ["Tatiana rêve de devenir artiste", "Tatiana rêve de devenir écrivaine", "Tatiana rêve de devenir photographe", "Tatiana rêve de devenir collectionneuse"], "reponse_correcte": "a" },
+        { "id": 15, "question": "Choisis la bonne réponse pour lier les deux phrases : 'Lidija aimerait aller au cinéma avec ses amies, _______ ses parents s'y opposent.'", "options": ["ainsi", "aussi", "toutefois", "notamment"], "reponse_correcte": "c" },
+        { "id": 16, "question": "Choisis la meilleure phrase de conclusion pour ce paragraphe (sur les bandes dessinées).", "options": ["J'admire l'exposition des œuvres populaires", "J'aimerais un jour travailler à la bibliothèque", "J'aimerais un jour vendre des bandes dessinées", "J'admire le talent des auteurs de bandes dessinées"], "reponse_correcte": "d" },
+        { "id": 17, "question": "Accord du participe passé : 'Ma tante et mon cousin _______ nous chercher à l'aéroport.'", "options": ["était venu", "était venue", "étaient venus", "étaient venues"], "reponse_correcte": "c" }
       ]
     },
-    "CONJUGAISON": {
-      "domaine": "Présent de l'indicatif",
-      "questions": [
-        { "q": "Annie (regarder) le soleil.", "options": ["regardes", "regarde", "regardons", "regardent"], "r": 1 },
-        { "q": "Tu (ramasser) des graines.", "options": ["ramasse", "ramassons", "ramasses", "ramassent"], "r": 2 },
-        { "q": "Nous (préparer) l'hiver.", "options": ["prépares", "préparons", "préparez", "préparent"], "r": 1 },
-        { "q": "Bastien (s'arrêter) en plein vol.", "options": ["s'arrêtes", "s'arrêtent", "s'arrête", "s'arrêtons"], "r": 2 },
-        { "q": "Vous (écouter) les conseils.", "options": ["écoutes", "écoutent", "écoute", "écoutez"], "r": 3 },
-        { "q": "Les fourmis (jouer) dehors.", "options": ["joues", "joue", "jouent", "jouons"], "r": 2 },
-        { "q": "Je (nettoyer) la maison.", "options": ["nettoie", "nettoies", "nettoyons", "nettoient"], "r": 0 },
-        { "q": "Ils (marcher) lentement.", "options": ["marche", "marches", "marchons", "marchent"], "r": 3 },
-        { "q": "Nous (partager) le repas.", "options": ["partageons", "partage", "partagez", "partages"], "r": 0 },
-        { "q": "Annie (répondre) à Bastien.", "options": ["réponds", "répond", "répondez", "répondent"], "r": 1 }
+    {
+      "partie": "Partie D : Lecture",
+      "titre_du_texte": "Les dents",
+      "contenu": "Le texte explique que les dents sont des outils de digestion qui préparent les aliments. Il décrit la transition des 20 dents de lait vers les 32 dents d'adulte. La Fiche 1 détaille la structure (couronne recouverte d'émail, collet, racine). La Fiche 2 détaille les types de dents : incisives (couper), canines (déchirer), prémolaires (broyer) et molaires (mastiquer).",
+      "questions_lecture": [
+        { "id": 1, "question": "Que représente la fiche 1 ?", "options": ["les parties de la dent", "la propreté de la dent", "l’importance de la dent", "les fonctions de la dent"], "reponse_correcte": "a" },
+        { "id": 2, "question": "Quels mots « Elle » remplace-t-il dans la phrase : « Elle est recouverte d’émail... » ?", "options": ["la couronne", "la partie", "la dent", "la substance"], "reponse_correcte": "a" },
+        { "id": 3, "question": "Quel type de dents se compare à un couteau ?", "options": ["les canines", "les molaires", "les incisives", "les prémolaires"], "reponse_correcte": "c" },
+        { "id": 4, "question": "Quel titre peut-on donner à la fiche 2 ?", "options": ["Le rôle des dents", "Les parties des dents", "La séparation des dents", "La bonne santé des dents"], "reponse_correcte": "a" }
+      ],
+      "questions_ouvertes": [
+        { "id": 5, "consigne": "Explique comment les dents aident le système digestif en utilisant des renseignements du texte." },
+        { "id": 6, "consigne": "Explique pourquoi les fiches nous aident à bien comprendre le texte." }
       ]
     },
-    "GRAMMAIRE": {
-      "domaine": "Types et structures",
-      "questions": [
-        { "q": "Quel est le sujet de : 'Annie regarde Bastien' ?", "options": ["Bastien", "regarde", "Annie", "le"], "r": 2 },
-        { "q": "Trouve l'adjectif dans : 'Un ami gentil'.", "options": ["Un", "ami", "gentil", "est"], "r": 2 },
-        { "q": "Quel est le genre du mot 'neige' ?", "options": ["Masculin", "Féminin", "Les deux", "Aucun"], "r": 1 },
-        { "q": "Trouve le verbe : 'Le bourdon vole vite.'", "options": ["Le", "bourdon", "vole", "vite"], "r": 2 },
-        { "q": "Mets au pluriel : 'Une fourmi'.", "options": ["La fourmi", "Le fourmi", "Des fourmis", "Les fourmi"], "r": 2 },
-        { "q": "Type de phrase : 'Pourquoi travailles-tu ?'", "options": ["Déclarative", "Exclamative", "Interrogative", "Impérative"], "r": 2 },
-        { "q": "Type de phrase : 'Viens ici !'", "options": ["Déclarative", "Interrogative", "Impérative", "Négative"], "r": 2 },
-        { "q": "Trouve le nom propre.", "options": ["soleil", "champs", "Bastien", "nourriture"], "r": 2 },
-        { "q": "Trouve le déterminant possessif dans 'sa maison'.", "options": ["sa", "maison", "le", "un"], "r": 0 },
-        { "q": "Trouve le pronom personnel sujet dans 'Ils mangent'.", "options": ["mangent", "Ils", "le", "un"], "r": 1 }
+    {
+      "partie": "Partie D : Écriture",
+      "tache_redaction": { "id": 7, "consigne": "Durant un pique-nique avec ta famille, vous êtes surpris par des visiteurs étranges. Écris un récit pour raconter votre aventure." },
+      "questions_choix_multiple": [
+        { "id": 8, "question": "Choisis la bonne réponse : 'Toi et moi _______ des bandes dessinées depuis deux ans.'", "options": ["collectionnes", "collectionnez", "collectionnent", "collectionnons"], "reponse_correcte": "d" },
+        { "id": 9, "question": "Quelle phrase n’appartient pas à ce paragraphe (sur Kadhi et son projet) ?", "options": ["phrase 2", "phrase 3", "phrase 4", "phrase 5"], "reponse_correcte": "a" },
+        { "id": 10, "question": "Choisis le connecteur logique : 'Les athlètes ont fourni beaucoup d’efforts durant la course, _______'", "options": ["comme ils sont fiers...", "tandis qu’ils sont fiers...", "c’est pourquoi ils sont fiers...", "c’est-à-dire qu’ils sont fiers..."], "reponse_correcte": "c" },
+        { "id": 11, "question": "Homophones : 'Sue s’avance _______ la table avec son _______ de jus à la main.'", "options": ["ver, vert", "vers, vert", "ver, verre", "vers, verre"], "reponse_correcte": "d" }
       ]
     }
-  }
+  ]
 }

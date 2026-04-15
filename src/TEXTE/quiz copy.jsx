@@ -1,261 +1,298 @@
-import React, { useState, useMemo } from "react";
-import { BookOpen, Award, Loader2 } from "lucide-react";
 
-// URL DE VOTRE SCRIPT DEPLOYÉ
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzIM-3DctS6eHvL1Egz1WgiD8GPN8jo1w21ZOq0uGxjjyEsOQxuXTv3cF0qoG-Iy59c/exec";
+import React, { useState } from "react";
+import { BookOpen, Award, Loader2, CheckCircle, Calculator } from "lucide-react";
+import francaisData from "./francais1.json"; 
+import mathData from "./mathematique1.json";
 
-export default function Quiz({ data }) {
-  const [etape, setEtape] = useState("lecture");
-  const [section, setSection] = useState(1);
-  const [reponses, setReponses] = useState({});
-  const [score, setScore] = useState(0);
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyoLtJ-7-t60l_WMJC7pzosnhezkfJRBfvECEIKQFmDHr0vwTtK3UGv11JAV6G8XIkM/exec";
+
+// 1. Configuration des examens
+const EXAMENS_CONFIG = {
+  "francais": {
+    label: "Français",
+    data: francaisData,
+    color: "#2563eb",
+    bg: "bg-blue-50",
+    icon: <BookOpen />,
+    gradient: "from-blue-600 to-indigo-700"
+  },
+  "mathematique": {
+    label: "Mathématiques",
+    data: mathData,
+    color: "#059669",
+    bg: "bg-emerald-50",
+    icon: <Calculator />,
+    gradient: "from-emerald-600 to-teal-700"
+  }
+};
+
+export default function QuizOQRE() {
+  // États de l'examen
+  const [matiereActive, setMatiereActive] = useState("francais");
+  const [etape, setEtape] = useState("login");
+  const [nom, setNom] = useState("");
+  const [email, setEmail] = useState("");
+  
+  // Accès dynamique aux données selon la matière
+  const config = EXAMENS_CONFIG[matiereActive];
+  const data = config.data;
+
+  // États du Quiz
+  const [partieActive, setPartieActive] = useState(1);
   const [resultats, setResultats] = useState(false);
   const [texteOuvert, setTexteOuvert] = useState(true);
-  const [nom, setNom] = useState(""); 
   const [envoiEnCours, setEnvoiEnCours] = useState(false);
 
-  const today = new Date();
+  const themesKeys = ["COMPREHENSION", "VOCABULAIRE", "CONJUGAISON", "GRAMMAIRE"];
+  
+  const [reponses, setReponses] = useState({
+    COMPREHENSION: {}, VOCABULAIRE: {}, CONJUGAISON: {}, GRAMMAIRE: {}, redaction: ""
+  });
 
-  const texte = useMemo(() => {
-    if (!data?.texts) return null;
-    return data.texts.find((t) => {
-      const start = new Date(t.startDate);
-      const end = new Date(t.endDate);
-      return start <= today && today <= end;
-    });
-  }, [data]);
+  const [score, setScore] = useState({
+    COMPREHENSION: 0, VOCABULAIRE: 0, CONJUGAISON: 0, GRAMMAIRE: 0, total: 0
+  });
 
-  if (!texte) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <h2 className="text-2xl font-bold">Aucun texte cette semaine</h2>
-      </div>
+  // --- LOGIQUE ---
+  const getQuestions = (indexPartie) => {
+    const themeKey = themesKeys[indexPartie - 1];
+    return data.themes[themeKey]?.questions || [];
+  };
+
+  const partieComplete = (indexPartie) => {
+    const questions = getQuestions(indexPartie);
+    if (questions.length === 0) return false;
+    return questions.every((_, i) => 
+      reponses[themesKeys[indexPartie - 1]][i] !== undefined
     );
-  }
+  };
 
-  const questions = texte.questions || {};
-  const vraiFaux = questions.vraiFaux || [];
-  const qcm = questions.qcm || [];
-  const reponseCourte = questions.reponseCourte || [];
-  const vocabulaire = questions.vocabulaire || [];
-  const conjugaison = questions.conjugaison || [];
-
-  const totalQuestions =
-    vraiFaux.length + qcm.length + reponseCourte.length + vocabulaire.length + conjugaison.length;
-
-  const handle = (section, index, value) => {
-    setReponses((prev) => ({
+  const handleReponse = (indexPartie, indexQuestion, val) => {
+    const themeKey = themesKeys[indexPartie - 1];
+    setReponses(prev => ({
       ...prev,
-      [`${section}-${index}`]: value,
+      [themeKey]: { ...prev[themeKey], [indexQuestion]: val }
     }));
   };
 
-  const sectionComplete = (sect, qs) => {
-    return qs.every((q, i) => reponses[`${sect}-${i}`] !== undefined);
+  const calculerScoreTheme = (themeKey) => {
+    let pts = 0;
+    const qs = data.themes[themeKey].questions;
+    qs.forEach((q, i) => {
+      if (reponses[themeKey][i] === q.r) pts++;
+    });
+    return pts;
   };
 
-  const envoyerVersGoogleSheet = async (scoreFinal, total, details) => {
+  const envoyerEnArrierePlan = async (scoresFinaux, reponsesEleve) => {
     setEnvoiEnCours(true);
-    try {
-      await fetch(GOOGLE_SCRIPT_URL, {
+    const maintenant = new Date();
+    const dateStr = `${maintenant.getDate().toString().padStart(2, '0')}/${(maintenant.getMonth() + 1).toString().padStart(2, '0')}/${maintenant.getFullYear()}`;
+
+    const envois = themesKeys.map(key => {
+      const s = scoresFinaux[key];
+      const questions = data.themes[key].questions;
+      const detailsQuestions = questions.map((q, index) => {
+        return reponsesEleve[key][index] === q.r ? 1 : 0;
+      });
+
+      const payload = {
+        email: email,
+        eleve: nom,
+        date: dateStr,
+        matiere: config.label, // Dynamique !
+        domaine: key,
+        partie: data.themes[key].domaine,
+        note: Math.round((s / questions.length) * 20),
+        details: detailsQuestions
+      };
+
+      return fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          nom: nom,
-          quiz: texte.title,
-          score: scoreFinal,
-          total: total,
-          details: details 
-        }),
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload)
       });
-      console.log("Données envoyées");
-    } catch (error) {
-      console.error("Erreur d'envoi:", error);
-    } finally {
+    });
+
+    try {
+      await Promise.all(envois);
+      setEnvoiEnCours(false);
+    } catch (e) {
+      console.error("Erreur d'envoi:", e);
       setEnvoiEnCours(false);
     }
   };
 
-  const calculScore = () => {
-    let totalPoints = 0;
-    let analyseDetaillee = [];
-    let numQuestion = 1;
-
-    const traiterQuestions = (liste, type) => {
-      liste.forEach((q, i) => {
-        const reponseEleve = reponses[`${type}-${i}`];
-        const estJuste = reponseEleve === q.r;
-        if (estJuste) totalPoints++;
-        analyseDetaillee.push({
-          label: "Q" + numQuestion,
-          estCorrect: estJuste
-        });
-        numQuestion++;
-      });
+  const terminerQuiz = () => {
+    const nouveauxScores = {
+      COMPREHENSION: calculerScoreTheme("COMPREHENSION"),
+      VOCABULAIRE: calculerScoreTheme("VOCABULAIRE"),
+      CONJUGAISON: calculerScoreTheme("CONJUGAISON"),
+      GRAMMAIRE: calculerScoreTheme("GRAMMAIRE"),
     };
-
-    traiterQuestions(vraiFaux, "vraiFaux");
-    traiterQuestions(qcm, "qcm");
-    traiterQuestions(reponseCourte, "reponseCourte");
-    traiterQuestions(vocabulaire, "vocabulaire");
-    traiterQuestions(conjugaison, "conjugaison");
-
-    setScore(totalPoints);
+    const totalPoints = Object.values(nouveauxScores).reduce((a, b) => a + b, 0);
+    setScore({ ...nouveauxScores, total: totalPoints });
     setResultats(true);
-    envoyerVersGoogleSheet(totalPoints, totalQuestions, analyseDetaillee);
+    envoyerEnArrierePlan(nouveauxScores, reponses);
   };
 
-  const pourcentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
-
-  if (etape === "lecture") {
+  // --- RENDU : ECRAN CONNEXION ---
+  if (etape === "login") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-amber-100 to-orange-200 p-8">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-8">
-          <div className="flex items-center gap-3 mb-6">
-            <BookOpen className="w-10 h-10 text-amber-600" />
-            <h1 className="text-4xl font-bold">{texte.title}</h1>
-          </div>
-          <div className="mb-6">
-            <label className="block text-sm font-medium text-gray-700 mb-1">Ton Prénom et Nom :</label>
-            <input 
-              type="text" 
-              value={nom}
-              onChange={(e) => setNom(e.target.value)}
-              className="w-full p-3 border-2 border-amber-200 rounded-xl outline-none focus:border-amber-500"
-              placeholder="Ex: Jean Dupont"
-            />
-          </div>
-          <div className="bg-amber-50 p-6 rounded-xl mb-8 whitespace-pre-line border border-amber-100 italic">
-            {texte.texte}
-          </div>
-          <button
-            onClick={() => setEtape("quiz")}
-            disabled={!nom.trim()}
-            className={`w-full text-white font-bold py-4 rounded-xl shadow-lg transition ${
-              nom.trim() ? "bg-gradient-to-r from-amber-500 to-orange-500 hover:scale-[1.02]" : "bg-gray-400 cursor-not-allowed"
-            }`}
-          >
-            Commencer le quiz
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  if (resultats) {
-    return (
-      <div className="min-h-screen bg-green-100 p-8 flex items-center">
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl p-8 text-center w-full">
-          <Award className="w-20 h-20 text-yellow-500 mx-auto mb-4" />
-          <h1 className="text-4xl font-bold mb-4">Bravo {nom} !</h1>
-          <div className="text-6xl font-bold text-green-600 mb-2">{score}/{totalQuestions}</div>
-          <div className="text-2xl text-gray-600">{pourcentage}%</div>
-          {envoiEnCours && (
-            <div className="flex items-center justify-center gap-2 mt-4 text-blue-600 animate-pulse">
-              <Loader2 className="animate-spin" /> Enregistrement...
+      <div className={`min-h-screen ${config.bg} flex items-center justify-center p-6 transition-all duration-500`}>
+        <div className="max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden border-t-8" style={{ borderColor: config.color }}>
+          <div className={`p-8 bg-gradient-to-br ${config.gradient} text-white text-center`}>
+            <div className="bg-white/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
+              {React.cloneElement(config.icon, { size: 32 })}
             </div>
-          )}
-          <button
-            onClick={() => { setEtape("lecture"); setResultats(false); setSection(1); setReponses({}); }}
-            className="mt-8 bg-amber-500 text-white px-8 py-3 rounded-xl font-bold"
-          >
-            Recommencer
-          </button>
+            <h1 className="text-2xl font-black italic">EXAMEN OQRE 2026</h1>
+          </div>
+
+          <div className="p-8 space-y-6">
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-gray-400 uppercase tracking-widest">Choisir la matière</label>
+              <select 
+                value={matiereActive}
+                onChange={(e) => setMatiereActive(e.target.value)}
+                className="w-full p-4 bg-gray-50 border-2 border-gray-100 rounded-2xl font-bold text-gray-700 outline-none focus:border-indigo-500 transition-all cursor-pointer"
+              >
+                {Object.keys(EXAMENS_CONFIG).map((key) => (
+                  <option key={key} value={key}>{EXAMENS_CONFIG[key].label}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="space-y-4">
+              <input type="text" placeholder="Nom de l'élève" className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-indigo-400 outline-none transition-all" value={nom} onChange={(e) => setNom(e.target.value)} />
+              <input type="email" placeholder="Email institutionnel" className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-indigo-400 outline-none transition-all" value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+
+            <button 
+              onClick={() => setEtape("quiz")} 
+              disabled={!nom || !email}
+              className={`w-full py-5 rounded-2xl font-black text-white shadow-lg transform active:scale-95 transition-all ${!nom || !email ? "bg-gray-200" : `bg-gradient-to-r ${config.gradient} hover:shadow-xl`}`}
+            >
+              COMMENCER LE TEST
+            </button>
+          </div>
         </div>
       </div>
     );
   }
 
+  // --- RENDU : ECRAN RESULTATS ---
+  if (resultats) {
+    const totalQuestions = themesKeys.reduce((acc, key) => acc + data.themes[key].questions.length, 0);
+    return (
+      <div className={`min-h-screen ${config.bg} p-8 flex flex-col items-center justify-center`}>
+        <Award className="w-20 h-20 text-yellow-500 mb-4 animate-bounce" />
+        <h1 className="text-3xl font-bold mb-6 text-center">Bravo {nom} !</h1>
+        <div className="bg-white p-6 rounded-xl shadow-lg w-full max-w-md space-y-4">
+          {themesKeys.map(key => (
+            <div key={key} className="flex justify-between border-b py-2 italic">
+              <span>{key} :</span>
+              <span className="font-bold" style={{ color: config.color }}>{score[key]} / {data.themes[key].questions.length}</span>
+            </div>
+          ))}
+          <div className="text-center text-2xl font-bold pt-4 text-green-700">
+            Total : {score.total} / {totalQuestions}
+          </div>
+        </div>
+        {envoiEnCours && (
+          <div className="mt-6 flex items-center gap-2 text-blue-600 font-medium italic">
+            <Loader2 className="animate-spin" /> Enregistrement des notes...
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // --- RENDU : ECRAN QUIZ ---
   return (
-    <div className="min-h-screen bg-blue-100 p-4 md:p-8">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8">
-        <h1 className="text-2xl md:text-4xl font-bold text-center mb-6 text-blue-800">Quiz de compréhension</h1>
-        <button onClick={() => setTexteOuvert(!texteOuvert)} className="bg-amber-500 text-white px-4 py-2 rounded-lg mb-4 text-sm">
-          {texteOuvert ? "Fermer le texte" : "Ouvrir le texte"}
-        </button>
-        {texteOuvert && <div className="bg-amber-50 p-4 md:p-6 rounded-xl mb-6 whitespace-pre-line border border-amber-100">{texte.texte}</div>}
+    <div className={`min-h-screen ${config.bg} p-4 md:p-8`}>
+      <div className="max-w-4xl mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4" style={{ borderColor: config.color }}>
+        
+        <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
+          {themesKeys.map((key, i) => (
+            <button
+              key={key}
+              onClick={() => (i === 0 || partieComplete(i)) && setPartieActive(i + 1)}
+              className={`px-4 py-2 rounded-full whitespace-nowrap transition font-bold ${partieActive === i + 1 ? "text-white shadow-md" : "bg-gray-200 text-gray-500"}`}
+              style={{ backgroundColor: partieActive === i + 1 ? config.color : "" }}
+            >
+              {partieComplete(i+1) && "✓ "} {key}
+            </button>
+          ))}
+        </div>
 
-        {/* SECTION 1: VRAI FAUX */}
-        {section === 1 && vraiFaux.length > 0 && (
-          <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-            <h2 className="text-xl font-bold mb-4 text-blue-700">Vrai ou Faux</h2>
-            {vraiFaux.map((q, i) => (
-              <div key={i} className="mb-4 bg-white p-4 rounded-lg shadow-sm">
-                <p className="font-semibold mb-3">{i + 1}. {q.q}</p>
-                <div className="flex gap-4">
-                  <button onClick={() => handle("vraiFaux", i, true)} className={`flex-1 py-2 rounded-lg font-bold ${reponses[`vraiFaux-${i}`] === true ? "bg-green-500 text-white" : "bg-green-100"}`}>Vrai</button>
-                  <button onClick={() => handle("vraiFaux", i, false)} className={`flex-1 py-2 rounded-lg font-bold ${reponses[`vraiFaux-${i}`] === false ? "bg-red-500 text-white" : "bg-red-100"}`}>Faux</button>
-                </div>
+        {data.texte && (
+          <div className="mb-6">
+            <button onClick={() => setTexteOuvert(!texteOuvert)} className="flex items-center gap-2 font-bold hover:underline" style={{ color: config.color }}>
+              <BookOpen size={18} /> {texteOuvert ? "Cacher le texte" : "Afficher le texte de lecture"}
+            </button>
+            {texteOuvert && (
+              <div className="mt-4 p-5 bg-white rounded-xl text-sm md:text-base leading-relaxed border-l-4 shadow-sm italic text-gray-800" style={{ borderColor: config.color }}>
+                {data.texte}
               </div>
-            ))}
-            <button disabled={!sectionComplete("vraiFaux", vraiFaux)} onClick={() => setSection(2)} className={`mt-4 px-10 py-3 rounded-lg text-white font-bold ${sectionComplete("vraiFaux", vraiFaux) ? "bg-blue-600" : "bg-gray-400"}`}>Suivant</button>
+            )}
           </div>
         )}
 
-        {/* SECTION 2: QCM */}
-        {section === 2 && qcm.length > 0 && (
-          <div className="bg-purple-50 p-6 rounded-xl">
-            <h2 className="text-2xl font-bold mb-4 text-purple-700">QCM</h2>
-            {qcm.map((q, i) => (
-              <div key={i} className="mb-4 bg-white p-4 rounded-lg shadow-sm">
-                <p className="font-semibold mb-3">{i + 1}. {q.q}</p>
+        <div className="space-y-8">
+          <div className="flex justify-between items-center border-b pb-2">
+            <h2 className="text-2xl font-black tracking-tight" style={{ color: config.color }}>{themesKeys[partieActive - 1]}</h2>
+            <span className="text-sm font-bold px-3 py-1 rounded-full bg-gray-100 text-gray-600">Partie {partieActive} / 4</span>
+          </div>
+          
+          {getQuestions(partieActive).map((q, i) => (
+            <div key={i} className="p-5 bg-gray-50 rounded-2xl border border-gray-100">
+              <p className="font-bold text-lg mb-4 text-gray-800">{i + 1}. {q.q}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {q.options.map((opt, j) => (
-                  <button key={j} onClick={() => handle("qcm", i, j)} className={`block w-full text-left py-2 px-4 rounded-lg mb-2 ${reponses[`qcm-${i}`] === j ? "bg-purple-600 text-white" : "bg-gray-100"}`}>{opt}</button>
+                  <button
+                    key={j}
+                    onClick={() => handleReponse(partieActive, i, j)}
+                    className={`p-4 text-left rounded-xl border-2 transition-all duration-200 ${
+                      reponses[themesKeys[partieActive - 1]][i] === j 
+                      ? "text-white shadow-md transform scale-[1.02]" 
+                      : "bg-white border-gray-200 hover:border-blue-300"
+                    }`}
+                    style={{ 
+                      backgroundColor: reponses[themesKeys[partieActive - 1]][i] === j ? config.color : "",
+                      borderColor: reponses[themesKeys[partieActive - 1]][i] === j ? config.color : ""
+                    }}
+                  >
+                    <span className="font-medium">{opt}</span>
+                  </button>
                 ))}
               </div>
-            ))}
-            <button disabled={!sectionComplete("qcm", qcm)} onClick={() => setSection(3)} className={`mt-4 px-10 py-3 rounded-lg text-white font-bold ${sectionComplete("qcm", qcm) ? "bg-purple-600" : "bg-gray-400"}`}>Suivant</button>
-          </div>
-        )}
+            </div>
+          ))}
+        </div>
 
-        {/* SECTION 3: COMPRÉHENSION */}
-        {section === 3 && reponseCourte.length > 0 && (
-          <div className="bg-yellow-50 p-6 rounded-xl">
-            <h2 className="text-2xl font-bold mb-4 text-yellow-700">Compréhension</h2>
-            {reponseCourte.map((q, i) => (
-              <div key={i} className="mb-4 bg-white p-4 rounded-lg shadow-sm">
-                <p className="font-semibold mb-3">{i + 1}. {q.q}</p>
-                {q.options.map((opt, j) => (
-                  <button key={j} onClick={() => handle("reponseCourte", i, j)} className={`block w-full text-left py-2 px-4 rounded-lg mb-2 ${reponses[`reponseCourte-${i}`] === j ? "bg-yellow-600 text-white" : "bg-gray-100"}`}>{opt}</button>
-                ))}
-              </div>
-            ))}
-            <button disabled={!sectionComplete("reponseCourte", reponseCourte)} onClick={() => setSection(4)} className={`mt-4 px-10 py-3 rounded-lg text-white font-bold ${sectionComplete("reponseCourte", reponseCourte) ? "bg-yellow-600" : "bg-gray-400"}`}>Suivant</button>
-          </div>
-        )}
-
-        {/* SECTION 4: VOCABULAIRE */}
-        {section === 4 && vocabulaire.length > 0 && (
-          <div className="bg-green-50 p-6 rounded-xl">
-            <h2 className="text-2xl font-bold mb-4 text-green-700">Vocabulaire</h2>
-            {vocabulaire.map((q, i) => (
-              <div key={i} className="mb-4 bg-white p-4 rounded-lg shadow-sm">
-                <p className="font-semibold mb-3">{i + 1}. {q.q}</p>
-                {q.options.map((opt, j) => (
-                  <button key={j} onClick={() => handle("vocabulaire", i, j)} className={`block w-full text-left py-2 px-4 rounded-lg mb-2 ${reponses[`vocabulaire-${i}`] === j ? "bg-green-600 text-white" : "bg-gray-100"}`}>{opt}</button>
-                ))}
-              </div>
-            ))}
-            <button disabled={!sectionComplete("vocabulaire", vocabulaire)} onClick={() => setSection(5)} className={`mt-4 px-10 py-3 rounded-lg text-white font-bold ${sectionComplete("vocabulaire", vocabulaire) ? "bg-green-600" : "bg-gray-400"}`}>Suivant</button>
-          </div>
-        )}
-
-        {/* SECTION 5: CONJUGAISON */}
-        {section === 5 && conjugaison.length > 0 && (
-          <div className="bg-indigo-50 p-6 rounded-xl">
-            <h2 className="text-2xl font-bold mb-4 text-indigo-700">Conjugaison</h2>
-            {conjugaison.map((q, i) => (
-              <div key={i} className="mb-4 bg-white p-4 rounded-lg shadow-sm">
-                <p className="font-semibold mb-3">{i + 1}. {q.q}</p>
-                {q.options.map((opt, j) => (
-                  <button key={j} onClick={() => handle("conjugaison", i, j)} className={`block w-full text-left py-2 px-4 rounded-lg mb-2 ${reponses[`conjugaison-${i}`] === j ? "bg-indigo-600 text-white" : "bg-gray-100"}`}>{opt}</button>
-                ))}
-              </div>
-            ))}
-            <button disabled={!sectionComplete("conjugaison", conjugaison)} onClick={calculScore} className={`mt-4 w-full py-4 rounded-lg text-white font-bold text-xl shadow-lg ${sectionComplete("conjugaison", conjugaison) ? "bg-indigo-600" : "bg-gray-400"}`}>Terminer</button>
-          </div>
-        )}
+        <div className="mt-12 flex justify-between items-center border-t pt-6">
+          <button disabled={partieActive === 1} onClick={() => setPartieActive(partieActive - 1)} className="px-6 py-2 font-bold text-gray-400 disabled:opacity-0">Précédent</button>
+          {partieActive < 4 ? (
+            <button 
+              disabled={!partieComplete(partieActive)} 
+              onClick={() => setPartieActive(partieActive + 1)}
+              className={`px-10 py-4 rounded-2xl font-black text-white transition-all ${!partieComplete(partieActive) ? "bg-gray-300" : "hover:opacity-90 shadow-lg"}`}
+              style={{ backgroundColor: partieComplete(partieActive) ? config.color : "" }}
+            >
+              THÈME SUIVANT
+            </button>
+          ) : (
+            <button 
+              disabled={!partieComplete(4)} 
+              onClick={terminerQuiz}
+              className={`px-10 py-4 rounded-2xl font-black text-white transition-all ${!partieComplete(4) ? "bg-gray-300" : "hover:opacity-90 shadow-lg"}`}
+              style={{ backgroundColor: partieComplete(4) ? config.color : "" }}
+            >
+              TERMINER LE QUIZ
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,111 +1,251 @@
 {
   "matiere": "FRANCAIS",
-  "titre": "C'est l'aviron qui nous mène",
-  "startDate": "2026-04-07",
-  "endDate": "2026-04-14",
-  
-  "texte_integral": [
-    {
-      "p": 1,
-      "contenu": "- Aujourd’hui, je vais faire ma suggestion, décide Caleb Trudel, en bouclant les attaches de sa veste de sauvetage.Il prend place dans le grand canot. De l’autre côté du quai, une dizaine d’enfants s’installent dans une embarcation identique."
-    },
-    {
-      "p": 2,
-      "contenu": "Chaque après-midi, au Camp des Huards, les enfants effectuent une promenade en canot avec les moniteurs. Caleb et les autres enfants adorent ces petites expéditions.Ils s’amusent beaucoup à explorer les recoins du lac. Aujourd’hui, Caleb va proposer à Abigail, la monitrice, un changement au programme habituel."
-    },
-    {
-      "p": 3,
-      "contenu": "Installée sur le siège à la poupe du canot de Caleb, Abigail donne le signal de départ.|- Allons-y, les Voyageurs !|Devant elle, neuf pagaies se mettent à ramer. Le deuxième canot est dirigé par Moustafa, l’autre moniteur."
-    },
-    {
-      "p": 4,
-      "contenu": "Au bout de quelques minutes, les deux équipes atteignent le milieu du lac.Caleb arrête de ramer, se retourne et s’adresse à Abigail d’une voix forte :|- Est-ce qu’on pourrait faire une course aujourd’hui ?|La monitrice interroge le moniteur de l’autre canot.|- Qu’en penses-tu, Moustafa ? Nos canoteurs sont-ils assez vaillants pour ça ?|- Les miens, oui ! réplique-t-il sur un ton de défi.|- D’accord, répond Abigail, la première équipe à atteindre le grand rocher au bout du lac gagne la course."
-    },
-    {
-      "p": 5,
-      "contenu": "Ainsi, les avants des deux canots accélèrent le rythme de leurs coups de pagaie. Les autres rameurs, les milieux, suivent la cadence.Bientôt, les deux embarcations rivales glissent à une vitesse folle sur l’eau, plane comme un miroir."
-    },
-    {
-      "p": 6,
-      "contenu": "Caleb repère le grand rocher au bout du lac.Pour l’instant, il a l’air d’être très, très loin.Le garçon ajuste sa respiration au rythme des coups de pagaie.Son équipe prend un peu d’avance sur l’autre.Jamais Caleb n’est allé aussi vite en canot !"
-    },
-    {
-      "p": 7,
-      "contenu": "Pour les encourager, Abigail se met à chanter :|- C’est l’aviron qui nous mène, qui nous mène…|Caleb et ses coéquipiers entament la chanson à répondre.|- Ça devait être comme ça dans le temps des Voyageurs, pense le garçon.|Tout en chantant, les deux équipes rament avec vigueur pour faire avancer leurs canots.|- Au début de l’été, Abigail nous a raconté une histoire de course de Voyageurs, il me semble, se dit Caleb.|Alors qu’il tente de se souvenir des détails de cette histoire, Caleb se rend compte que le canot rival vient de les dépasser.|Lui et ses coéquipiers redoublent alors d’efforts.|Leur canot reprend la distance perdue."
-    },
-    {
-      "p": 8,
-      "contenu": "Le rocher, au bout du lac, paraît toujours loin. Caleb regarde l’autre canot, à sa droite. Tout le monde donne son maximum. Il regarde ses coéquipiers devant lui. Ils sont tous haletants et ne pourront pas maintenir ce rythme longtemps. Les deux canots, coude à coude, poursuivent leur course."
-    },
-    {
-      "p": 9,
-      "contenu": "Soudain, Caleb se rappelle l’histoire des Voyageurs :|- C’était deux canots qui avaient traversé un immense lac, le lac Winnipeg, sans s’arrêter pendant 18 heures. Caleb se creuse la tête pour se souvenir du résultat de la course.|Les deux moniteurs se consultent du regard.|- Arrêtez ! crient Abigail et Moustafa, en même temps.|Les jeunes rameurs, complètement épuisés, ne se font pas prier.|- Nous déclarons match nul, annonce Abigail.|- Vous vous débrouillez très bien, ajoute Moustafa.|Mais si on poursuit la course, vous manquerez d’énergie pour rentrer au camp.|- Une égalité ! se souvient alors Caleb.|C’est aussi comme ça que la course des Voyageurs du lac Winnipeg s’était terminée."
-    },
-    {
-      "p": 10,
-      "contenu": "Caleb et ses amis reprennent leur souffle et reposent leurs muscles endoloris. Les deux canots flottent paisiblement sur le lac des Huards.|- La prochaine fois que j’ai une idée, songe Caleb, exténué, je penserai aux conséquences avant de la suggérer."
-    }
-  ],
+  "titre": "Test de français (avril 2026)",
+  "startDate": "2026-04-06",
+  "endDate": "2026-04-08",
+  "image_illustration": "/imagFr/text2.png",
+"texte_integral": [
+  {
+    "p": 1,
+    "contenu": "Monsieur Vanderbeck et sa femme ont été cambriolés cette nuit, pendant leur sommeil. Les policiers et les enquêteurs sont sur les lieux afin de découvrir des indices susceptibles de les mener au voleur."
+  },
+  {
+    "p": 2,
+    "contenu": "Dans la maison du couple âgé, tout a disparu : le téléviseur, les tableaux de valeur, les bijoux, l’ordinateur, même les bibelots de collection. Les tiroirs de la commode sont sens dessus dessous. La garde-robe a également été fouillée. La scène donne froid dans le dos."
+  },
+  {
+    "p": 3,
+    "contenu": "Selon le couple Vanderbeck, il s’agit sans doute d’un voleur professionnel. Il pourrait être le voyou qui traîne dans le quartier depuis quelques mois. On le voit errer seul dans le voisinage, l’air louche. Les policiers prennent des notes."
+  },
+  {
+    "p": 4,
+    "contenu": "Madame Vanderbeck amène les policiers vers la cuisine. Elle affirme que le voleur a certainement dû s’introduire par une fenêtre, puisque la serrure de la porte d’entrée est intacte. Par contre, la vitre de la cuisine est complètement brisée. Madame Vanderbeck amène les policiers à l’extérieur."
+  },
+  {
+    "p": 5,
+    "contenu": "Elle leur montre le gazon sous la fenêtre, qui est recouvert de morceaux de verre. On peut aussi voir des traces de pas sur le gazon, là où l’herbe humide est foulée. Les enquêteurs observent la scène, perplexes. Ils prennent note de tous les indices utiles."
+  },
+  {
+    "p": 6,
+    "contenu": "Monsieur et madame Vanderbeck affirment tous les deux n’avoir rien entendu cette nuit, à part les miaulements irritants du chat du voisin. À deux jours de l’Halloween, le temps est encore très doux, et le couple laisse encore les fenêtres entrouvertes. Malheureusement, ils doivent endurer le concert de ce satané chat toutes les nuits !"
+  },
+  {
+    "p": 7,
+    "contenu": "D’ailleurs, l’animal est source de conflits entre les Vanderbeck et leur voisin depuis quelques semaines. Leurs relations sont assez tendues. Leur voisin aurait-il voulu se venger d’eux ? Aurait-il organisé ce cambriolage afin de les terroriser et de les faire déménager ? Selon eux, c’est bien possible."
+  },
+  {
+    "p": 8,
+    "contenu": "Lorsque les policiers se dirigent vers le salon, madame Vanderbeck leur demande timidement d’enlever leurs bottes, afin d’éviter de tacher le magnifique tapis blanc qui recouvre le plancher. Les policiers observent la pauvre dame en souriant et s’exécutent. À cet âge, les gens ont parfois des caprices incompréhensibles. Ils procèdent ensuite à la vérification du salon."
+  },
+  {
+    "p": 9,
+    "contenu": "Rien ne semble avoir été vandalisé. Il manque bien sûr tous les appareils électroniques, mais la pièce est étrangement bien rangée. Le couple Vanderbeck raconte aux policiers qu’ils avaient caché, entre les pages d’un vieux livre de la bibliothèque, un croquis authentique du peintre Picasso lui-même, mais que ce croquis n’y est plus."
+  },
+  {
+    "p": 10,
+    "contenu": "Cette simple feuille de papier vaut plusieurs milliers de dollars. Madame Vanderbeck se met à sangloter bruyamment. Cette image était tellement importante pour elle. Seul un fin connaisseur d’art pouvait savoir qu’elle avait une telle valeur. Le couple mentionne le frère de madame Vanderbeck. Il travaille dans un musée et connaît bien le peintre Picasso. Il connaît la valeur de ses œuvres et pourrait bien être le coupable."
+  },
+  {
+    "p": 11,
+    "contenu": "Madame Vanderbeck a soudain la présence d’esprit de téléphoner aux assureurs. La gorge serrée, elle déclare tout ce qui a été volé cette nuit. La compagnie d’assurance rassurerait la vieille dame. Elle remboursera la valeur totale des biens perdus. Cela fait une jolie somme, mais tout cet argent ne remplacera jamais les souvenirs perdus. En plus, ils devront désormais vivre dans la peur."
+  },
+  {
+    "p": 12,
+    "contenu": "Pendant ce temps, monsieur Vanderbeck demande aux policiers de poursuivre l’enquête au sous-sol. Ils risquent de trouver d’autres indices intéressants. Les policiers affirment que ce ne sera pas nécessaire, puisqu’ils ont déjà trouvé les coupables. Madame Vanderbeck regarde son mari, l’air déconfit. Quelques minutes plus tard, les policiers procèdent à l’arrestation des criminels et les amènent au poste de police, sous le regard étonné du voisinage."
+  }
+],
   "themes": {
     "COMPREHENSION": {
-      "domaine": "Analyse du texte (PDF)",
-      "questions": [
-        { "q": "Où se déroule la promenade en canot ?", "options": ["Au Camp des Huards", "Au Lac des Voyageurs", "À l'école de voile", "Au quai municipal"], "r": 0 },
-        { "q": "Comment s'appelle la monitrice installée dans le canot de Caleb ?", "options": ["Moustafa", "Abigail", "Caleb", "Trudel"], "r": 1 },
-        { "q": "Que signifie le mot « poupe » au paragraphe 3 ?", "options": ["Le milieu du canot", "L'avant du canot", "L'arrière du canot", "Le siège du rameur"], "r": 2 },
-        { "q": "Quelle est la suggestion faite par Caleb ?", "options": ["Chanter une chanson", "Faire une course", "Explorer une grotte", "Rentrer plus tôt"], "r": 1 },
-        { "q": "Quel est l'objectif fixé pour gagner la course ?", "options": ["Atteindre le quai", "Atteindre le grand rocher", "Traverser le lac Winnipeg", "Ramer pendant 18 heures"], "r": 1 },
-        { "q": "Comment est l'eau du lac pendant la course ?", "options": ["Agitée et sombre", "Plane comme un miroir", "Très froide", "Remplie de vagues"], "r": 1 },
-        { "q": "Dans la phrase 'il a l'air d'être très loin', que remplace 'il' ?", "options": ["Caleb", "Le canot", "Le grand rocher", "Le moniteur"], "r": 2 },
-        { "q": "Pourquoi les moniteurs décident-ils d'un match nul ?", "options": ["Il va pleuvoir", "Les enfants n'ont plus de pagaies", "Pour garder de l'énergie pour le retour", "Parce qu'ils sont arrivés"], "r": 2 },
-        { "q": "Quel mot décrit le mieux les enfants au paragraphe 9 ?", "options": ["En colère", "Exténués", "Indifférents", "Joyeux"], "r": 1 },
-        { "q": "Quelle leçon Caleb tire-t-il de cette expérience ?", "options": ["Il faut ramer plus vite", "Il faut savoir doser ses forces", "Il ne faut jamais faire de course", "Il faut toujours gagner"], "r": 1 }
-      ]
-    },
+  "domaine": "Analyse du texte",
+  "questions": [
+    { "q": "Que s’est-il passé chez les Vanderbeck ?", "options": ["Un incendie", "Un cambriolage", "Une dispute", "Une fête"], "r": 1 },
+    { "q": "Quand le cambriolage a-t-il eu lieu ?", "options": ["Le matin", "L’après-midi", "La nuit", "Le soir"], "r": 2 },
+    { "q": "Quel objet n’est pas mentionné comme volé ?", "options": ["Téléviseur", "Bijoux", "Voiture", "Ordinateur"], "r": 2 },
+    { "q": "Où la vitre est-elle brisée ?", "options": ["Salon", "Chambre", "Cuisine", "Sous-sol"], "r": 2 },
+    { "q": "Que trouve-t-on sur le gazon ?", "options": ["Du sang", "Des morceaux de verre", "Des outils", "Des vêtements"], "r": 1 },
+    { "q": "Que voit-on sur le gazon ?", "options": ["Des traces de pas", "Des pneus", "Des empreintes digitales", "Rien"], "r": 0 },
+    { "q": "Qu’ont entendu les Vanderbeck ?", "options": ["Des cris", "De la musique", "Le chat du voisin", "Une alarme"], "r": 2 },
+    { "q": "Pourquoi soupçonnent-ils le voisin ?", "options": ["Il est riche", "Il est gentil", "Ils ont des conflits avec lui", "Il est policier"], "r": 2 },
+    
+    { "q": "Quelle saison approche ?", "options": ["Noël", "L’Halloween", "L’été", "Pâques"], "r": 1 },
+    { "q": "Pourquoi les fenêtres étaient-elles ouvertes ?", "options": ["Il faisait chaud / Le temps était doux", "Elles étaient cassées", "Pour aérer après un feu", "Pour laisser entrer quelqu’un"], "r": 0 },
+   
+    { "q": "Que demande madame Vanderbeck aux policiers ?", "options": ["De partir", "D’appeler un médecin", "D’enlever leurs bottes", "De fermer la porte"], "r": 2 },
+    { "q": "Comment est le salon ?", "options": ["En désordre", "Vandalisé", "Bien rangé", "Sale"], "r": 2 },
+    { "q": "Quel objet précieux a disparu ?", "options": ["Une bague", "Un tableau de Monet", "Un croquis de Picasso", "Une statue"], "r": 2 },
+    { "q": "Où était caché le croquis ?", "options": ["Dans un tiroir", "Sous le lit", "Dans un livre", "Dans la cuisine"], "r": 2 },
+    { "q": "Qui pourrait être suspect selon eux (le frère de madame) ?", "options": ["Le facteur", "Le frère de madame", "Un ami", "Un enfant"], "r": 1 },
+    { "q": "Que fait madame Vanderbeck après le vol ?", "options": ["Elle dort", "Elle téléphone aux assureurs", "Elle nettoie", "Elle part"], "r": 1 },
+    { "q": "Que promet l’assurance ?", "options": ["Rien", "Une enquête", "Un remboursement", "Une punition"], "r": 2 },
+    { "q": "Où monsieur Vanderbeck veut-il poursuivre l'enquête ?", "options": ["Au grenier", "À la cuisine", "Au sous-sol", "Au jardin"], "r": 2 },
+    { "q": "Que disent les policiers à propos du sous-sol ?", "options": ["Qu’ils vont y aller", "Que c’est dangereux", "Que ce n’est pas nécessaire", "Qu’il est vide"], "r": 2 },
+    { "q": "Qui sont les coupables selon l'arrestation finale ?", "options": ["Le voisin", "Le frère", "Un inconnu", "Les Vanderbeck"], "r": 3 }
+  ]
+ },
     "GRAMMAIRE_HOMOPHONES": {
-      "domaine": "Homophones (a/à, et/est, son/sont, mes/mai/met, peu/peut)",
-      "questions": [
-        { "q": "Caleb ___ prêt pour le départ.", "options": ["est", "et", "es", "ai"], "r": 0 },
-        { "q": "Il parle ___ la monitrice d'une voix forte.", "options": ["a", "à", "as", "ai"], "r": 1 },
-        { "q": "Les canots ___ identiques de chaque côté.", "options": ["son", "sont", "sons", "sonts"], "r": 1 },
-        { "q": "Caleb ___ sa veste de sauvetage avant de monter.", "options": ["met", "mes", "mai", "mets"], "r": 0 },
-        { "q": "Il reste un ___ de chemin avant le rocher.", "options": ["peu", "peux", "peut", "peus"], "r": 0 },
-        { "q": "Abigail ___ Moustafa sont les moniteurs.", "options": ["est", "et", "es", "ai"], "r": 1 },
-        { "q": "Caleb ___ une idée originale aujourd'hui.", "options": ["a", "à", "as", "ai"], "r": 0 },
-        { "q": "On ___ voir le reflet du ciel sur l'eau.", "options": ["peu", "peux", "peut", "peus"], "r": 2 },
-        { "q": "Je range ___ pagaies après l'activité.", "options": ["met", "mes", "mai", "mets"], "r": 1 },
-        { "q": "Ses amis ___ aussi fatigués que lui.", "options": ["son", "sont", "sons", "sonts"], "r": 1 }
-      ]
+  "domaine": "Homophones et Orthographe",
+  "questions": [
+    { 
+      "q": "Choisis le bon mot : - Il …… acheté une voiture qui consomme beaucoup.", 
+      "options": ["a", "as", "à"], 
+      "r": 0 
     },
-    "GRAMMAIRE_CONJONCTIONS": {
-      "domaine": "Conjonctions de coordination (mais, ou, et, donc, or, ni, car)",
-      "questions": [
-        { "q": "Ils rament fort ___ ils veulent gagner la course.", "options": ["car", "mais", "ni", "ou"], "r": 0 },
-        { "q": "Le rocher semble proche, ___ il est encore loin.", "options": ["mais", "donc", "ou", "car"], "r": 0 },
-        { "q": "Veux-tu ramer ___ préfères-tu te reposer ?", "options": ["ou", "ni", "car", "donc"], "r": 0 },
-        { "q": "Les enfants sont fatigués, ___ ils ralentissent.", "options": ["donc", "mais", "ni", "car"], "r": 0 },
-        { "q": "Il n'y a ___ gagnant ___ perdant à la fin.", "options": ["ni / ni", "ou / ou", "et / et", "car / car"], "r": 0 },
-        { "q": "L'eau est calme ___ le ciel est bleu.", "options": ["et", "mais", "ni", "car"], "r": 0 },
-        { "q": "Caleb suggère une course, ___ Abigail accepte.", "options": ["et", "car", "donc", "ni"], "r": 0 },
-        { "q": "Ils chantent ___ cela leur donne du courage.", "options": ["car", "donc", "mais", "ni"], "r": 0 },
-        { "q": "La course est finie, ___ ils rentrent au quai.", "options": ["donc", "mais", "ni", "ou"], "r": 0 },
-        { "q": "Le défi était grand, ___ Caleb est fier de lui.", "options": ["et", "mais", "ni", "ou"], "r": 0 }
-      ]
+    { 
+      "q": "Choisis le bon mot : - Cette machine ….. laver utilise la nouvelle technologie.", 
+      "options": ["a", "as", "à"], 
+      "r": 2 
     },
-    "CONJUGAISON": {
-      "domaine": "L'imparfait de l'indicatif",
-      "questions": [
-        { "q": "Autrefois, le Camp des Huards (être) plus petit.", "options": ["était", "étaient", "étais", "étions"], "r": 0 },
-        { "q": "Les Voyageurs (ramer) pendant 18 heures.", "options": ["ramait", "ramaient", "ramais", "ramions"], "r": 1 },
-        { "q": "Nous (chanter) tous ensemble sur le lac.", "options": ["chantions", "chantait", "chantais", "chantaient"], "r": 0 },
-        { "q": "Tu (avoir) hâte de faire la course.", "options": ["avais", "avait", "avaient", "aviez"], "r": 0 },
-        { "q": "L'eau du lac (sembler) plane comme un miroir.", "options": ["semblait", "semblaient", "semblais", "sembliez"], "r": 0 },
-        { "q": "Vous (faire) souvent des suggestions.", "options": ["faisiez", "faisait", "faisais", "faisaient"], "r": 0 },
-        { "q": "Je (pouvoir) voir le grand rocher au loin.", "options": ["pouvais", "pouvait", "pouvaient", "pouvions"], "r": 0 },
-        { "q": "Les canots (glisser) à une vitesse folle.", "options": ["glissait", "glissaient", "glissais", "glissiez"], "r": 1 },
-        { "q": "La monitrice (donner) le signal du départ.", "options": ["donnait", "donnaient", "donnais", "donniez"], "r": 0 },
-        { "q": "Ils (vouloir) tous gagner la compétition.", "options": ["voulait", "voulaient", "voulais", "vouliez"], "r": 1 }
-      ]
+    { 
+      "q": "Choisis le bon mot : - Elle _______ en retard aujourd’hui.", 
+      "options": ["es", "est", "et"], 
+      "r": 1 
+    },
+    { 
+      "q": "Choisis le bon mot : - J’aime les fruits ______ les salades .", 
+      "options": ["et", "es", "est"], 
+      "r": 0 
+    },
+    { 
+      "q": "Choisis le bon mot : - Cet inspecteur ________ mener l’enquête.", 
+      "options": ["peu", "peux", "peut"], 
+      "r": 2 
+    },
+    { 
+      "q": "Choisis le bon mot : - Tu ___________trop de sel dans ton plat !", 
+      "options": ["met", "mets", "mes", "mais"], 
+      "r": 1 
+    },
+    { 
+      "q": "Choisis le bon mot : - _________ vas-tu comme ça ?", 
+      "options": ["où", "ou"], 
+      "r": 0 
+    },
+    { 
+      "q": "Choisis le bon mot : - Mon amie s’est fait voler toutes …… montres et …… bijoux.", 
+      "options": ["ses", "ces", "sais", "sait"], 
+      "r": 0 
+    },
+    { 
+      "q": "Choisis le bon mot : - Méfie-toi de …… hommes, ils m’inquiètent.", 
+      "options": ["ses", "ces", "sait", "sais"], 
+      "r": 1 
+    },
+    { 
+      "q": "Choisis le bon mot : - Tu connais _____ garçon qui ______ promène dans le parc ?", 
+      "options": ["ce / se", "se / ce", "se / se", "ce / ce"], 
+      "r": 0 
     }
+  ]
+},
+    "GRAMMAIRE_STRUCTURE": {
+  "domaine": "Phrases simples, complexes et liaisons",
+  "questions": [
+    { 
+      "q": "« Nous sortons quand il fait beau. » est :", 
+      "options": ["Simple", "Complexe"], 
+      "r": 1 
+    },
+    { 
+      "q": "Combien de verbes y a-t-il dans une phrase simple ?", 
+      "options": ["2", "3", "1", "0"], 
+      "r": 2 
+    },
+    { 
+      "q": "Une phrase complexe contient :", 
+      "options": ["Un seul mot", "Un seul verbe", "Plusieurs verbes conjugués", "Aucun sujet"], 
+      "r": 2 
+    },
+    { 
+      "q": "Indique la nature de liaison entre les propositions : « Il pleut, je reste à la maison. »", 
+      "options": ["Juxtaposition", "Coordination", "Subordination"], 
+      "r": 0 
+    },
+    { 
+      "q": "Indique la nature de liaison entre les propositions : « D’habitude Warsama court vite mais aujourd’hui il est fatigué. »", 
+      "options": ["Juxtaposition", "Coordination", "Subordination"], 
+      "r": 1 
+    },
+    { 
+      "q": "Indique la nature de liaison entre les propositions : « Je viendrai à la fête si tu m’invites. »", 
+      "options": ["Juxtaposition", "Coordination", "Subordination"], 
+      "r": 2 
+    },
+    { 
+      "q": "Kadar est fatigué ___ il continue à travailler.", 
+      "options": ["et", "donc", "mais", "car"], 
+      "r": 2 
+    },
+    { 
+      "q": "Elle aime lire ___ écrire.", 
+      "options": ["mais", "ou", "et", "donc"], 
+      "r": 2 
+    },
+    { 
+      "q": "Il a été puni ___ il a fait une énorme bêtise.", 
+      "options": ["car", "ou", "mais", "et"], 
+      "r": 0 
+    },
+    { 
+      "q": "À ton avis, je dois prendre le bus ___ le métro ?", 
+      "options": ["et", "ou", "mais", "car"], 
+      "r": 1 
+    }
+  ]
+},
+    "CONJUGAISON": {
+  "domaine": "Imparfait, Présent, Passé Simple et Futur",
+  "questions": [
+    {
+      "q": "Conjugue le verbe être à l’imparfait : - J’ _____________ vraiment surpris en voyant mon ancien camarade de classe.",
+      "options": ["étions", "était", "étais"],
+      "r": 2
+    },
+    {
+      "q": "Conjugue le verbe être à l’imparfait : - Nous _____________ partis tôt à la ferme.",
+      "options": ["sommes", "étions", "étiez"],
+      "r": 1
+    },
+    {
+      "q": "Conjugue le verbe être à l’imparfait : - Les employés __________________tous invités à la réunion.",
+      "options": ["étaient", "était", "étiez"],
+      "r": 0
+    },
+    {
+      "q": "Conjugue le verbe être à l’imparfait : - Tu _____________ très curieux ce jour-là.",
+      "options": ["est", "es", "étais"],
+      "r": 2
+    },
+    {
+      "q": "Conjugue le verbe tomber au présent : - La pluie __________ doucement.",
+      "options": ["tomba", "tombait", "tombe"],
+      "r": 2
+    },
+    {
+      "q": "Conjugue le verbe aller au présent : - La victime ________ porter plainte contre son agresseur.",
+      "options": ["vas", "va", "vais"],
+      "r": 1
+    },
+    {
+      "q": "Conjugue le verbe publier au passé simple : - Il devint écrivain et _____________ plusieurs livres.",
+      "options": ["publia", "publie", "publiait"],
+      "r": 0
+    },
+    {
+      "q": "Conjugue le verbe ALLER au FUTUR simple : - Nous ___________ au musée et nous apprendrons beaucoup de choses sur l’histoire.",
+      "options": ["allons", "irons", "allions"],
+      "r": 1
+    },
+    {
+      "q": "Conjugue le verbe partir au futur simple : - Je ___________ à la réunion demain.",
+      "options": ["pars", "partais", "partirai"],
+      "r": 2
+    },
+    {
+      "q": "Conjugue le verbe dire au futur proche : - Le témoin oculaire ____________ tout ce qu’il a vu ce matin sur le lieu du crime.",
+      "options": ["va dire", "dira", "dit"],
+      "r": 0
+    }
+  ]
+}
   }
 }

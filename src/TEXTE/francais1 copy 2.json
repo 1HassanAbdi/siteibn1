@@ -1,0 +1,111 @@
+{
+  "matiere": "FRANCAIS",
+  "titre": "C'est l'aviron qui nous mène",
+  "startDate": "2026-04-07",
+  "endDate": "2026-04-14",
+  
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "- Aujourd’hui, je vais faire ma suggestion, décide Caleb Trudel, en bouclant les attaches de sa veste de sauvetage.Il prend place dans le grand canot. De l’autre côté du quai, une dizaine d’enfants s’installent dans une embarcation identique."
+    },
+    {
+      "p": 2,
+      "contenu": "Chaque après-midi, au Camp des Huards, les enfants effectuent une promenade en canot avec les moniteurs. Caleb et les autres enfants adorent ces petites expéditions.Ils s’amusent beaucoup à explorer les recoins du lac. Aujourd’hui, Caleb va proposer à Abigail, la monitrice, un changement au programme habituel."
+    },
+    {
+      "p": 3,
+      "contenu": "Installée sur le siège à la poupe du canot de Caleb, Abigail donne le signal de départ.|- Allons-y, les Voyageurs !|Devant elle, neuf pagaies se mettent à ramer. Le deuxième canot est dirigé par Moustafa, l’autre moniteur."
+    },
+    {
+      "p": 4,
+      "contenu": "Au bout de quelques minutes, les deux équipes atteignent le milieu du lac.Caleb arrête de ramer, se retourne et s’adresse à Abigail d’une voix forte :|- Est-ce qu’on pourrait faire une course aujourd’hui ?|La monitrice interroge le moniteur de l’autre canot.|- Qu’en penses-tu, Moustafa ? Nos canoteurs sont-ils assez vaillants pour ça ?|- Les miens, oui ! réplique-t-il sur un ton de défi.|- D’accord, répond Abigail, la première équipe à atteindre le grand rocher au bout du lac gagne la course."
+    },
+    {
+      "p": 5,
+      "contenu": "Ainsi, les avants des deux canots accélèrent le rythme de leurs coups de pagaie. Les autres rameurs, les milieux, suivent la cadence.Bientôt, les deux embarcations rivales glissent à une vitesse folle sur l’eau, plane comme un miroir."
+    },
+    {
+      "p": 6,
+      "contenu": "Caleb repère le grand rocher au bout du lac.Pour l’instant, il a l’air d’être très, très loin.Le garçon ajuste sa respiration au rythme des coups de pagaie.Son équipe prend un peu d’avance sur l’autre.Jamais Caleb n’est allé aussi vite en canot !"
+    },
+    {
+      "p": 7,
+      "contenu": "Pour les encourager, Abigail se met à chanter :|- C’est l’aviron qui nous mène, qui nous mène…|Caleb et ses coéquipiers entament la chanson à répondre.|- Ça devait être comme ça dans le temps des Voyageurs, pense le garçon.|Tout en chantant, les deux équipes rament avec vigueur pour faire avancer leurs canots.|- Au début de l’été, Abigail nous a raconté une histoire de course de Voyageurs, il me semble, se dit Caleb.|Alors qu’il tente de se souvenir des détails de cette histoire, Caleb se rend compte que le canot rival vient de les dépasser.|Lui et ses coéquipiers redoublent alors d’efforts.|Leur canot reprend la distance perdue."
+    },
+    {
+      "p": 8,
+      "contenu": "Le rocher, au bout du lac, paraît toujours loin. Caleb regarde l’autre canot, à sa droite. Tout le monde donne son maximum. Il regarde ses coéquipiers devant lui. Ils sont tous haletants et ne pourront pas maintenir ce rythme longtemps. Les deux canots, coude à coude, poursuivent leur course."
+    },
+    {
+      "p": 9,
+      "contenu": "Soudain, Caleb se rappelle l’histoire des Voyageurs :|- C’était deux canots qui avaient traversé un immense lac, le lac Winnipeg, sans s’arrêter pendant 18 heures. Caleb se creuse la tête pour se souvenir du résultat de la course.|Les deux moniteurs se consultent du regard.|- Arrêtez ! crient Abigail et Moustafa, en même temps.|Les jeunes rameurs, complètement épuisés, ne se font pas prier.|- Nous déclarons match nul, annonce Abigail.|- Vous vous débrouillez très bien, ajoute Moustafa.|Mais si on poursuit la course, vous manquerez d’énergie pour rentrer au camp.|- Une égalité ! se souvient alors Caleb.|C’est aussi comme ça que la course des Voyageurs du lac Winnipeg s’était terminée."
+    },
+    {
+      "p": 10,
+      "contenu": "Caleb et ses amis reprennent leur souffle et reposent leurs muscles endoloris. Les deux canots flottent paisiblement sur le lac des Huards.|- La prochaine fois que j’ai une idée, songe Caleb, exténué, je penserai aux conséquences avant de la suggérer."
+    }
+  ],
+  "themes": {
+    "COMPREHENSION": {
+      "domaine": "Analyse du texte (PDF)",
+      "questions": [
+        { "q": "Où se déroule la promenade en canot ?", "options": ["Au Camp des Huards", "Au Lac des Voyageurs", "À l'école de voile", "Au quai municipal"], "r": 0 },
+        { "q": "Comment s'appelle la monitrice installée dans le canot de Caleb ?", "options": ["Moustafa", "Abigail", "Caleb", "Trudel"], "r": 1 },
+        { "q": "Que signifie le mot « poupe » au paragraphe 3 ?", "options": ["Le milieu du canot", "L'avant du canot", "L'arrière du canot", "Le siège du rameur"], "r": 2 },
+        { "q": "Quelle est la suggestion faite par Caleb ?", "options": ["Chanter une chanson", "Faire une course", "Explorer une grotte", "Rentrer plus tôt"], "r": 1 },
+        { "q": "Quel est l'objectif fixé pour gagner la course ?", "options": ["Atteindre le quai", "Atteindre le grand rocher", "Traverser le lac Winnipeg", "Ramer pendant 18 heures"], "r": 1 },
+        { "q": "Comment est l'eau du lac pendant la course ?", "options": ["Agitée et sombre", "Plane comme un miroir", "Très froide", "Remplie de vagues"], "r": 1 },
+        { "q": "Dans la phrase 'il a l'air d'être très loin', que remplace 'il' ?", "options": ["Caleb", "Le canot", "Le grand rocher", "Le moniteur"], "r": 2 },
+        { "q": "Pourquoi les moniteurs décident-ils d'un match nul ?", "options": ["Il va pleuvoir", "Les enfants n'ont plus de pagaies", "Pour garder de l'énergie pour le retour", "Parce qu'ils sont arrivés"], "r": 2 },
+        { "q": "Quel mot décrit le mieux les enfants au paragraphe 9 ?", "options": ["En colère", "Exténués", "Indifférents", "Joyeux"], "r": 1 },
+        { "q": "Quelle leçon Caleb tire-t-il de cette expérience ?", "options": ["Il faut ramer plus vite", "Il faut savoir doser ses forces", "Il ne faut jamais faire de course", "Il faut toujours gagner"], "r": 1 }
+      ]
+    },
+    "GRAMMAIRE_HOMOPHONES": {
+      "domaine": "Homophones (a/à, et/est, son/sont, mes/mai/met, peu/peut)",
+      "questions": [
+        { "q": "Caleb ___ prêt pour le départ.", "options": ["est", "et", "es", "ai"], "r": 0 },
+        { "q": "Il parle ___ la monitrice d'une voix forte.", "options": ["a", "à", "as", "ai"], "r": 1 },
+        { "q": "Les canots ___ identiques de chaque côté.", "options": ["son", "sont", "sons", "sonts"], "r": 1 },
+        { "q": "Caleb ___ sa veste de sauvetage avant de monter.", "options": ["met", "mes", "mai", "mets"], "r": 0 },
+        { "q": "Il reste un ___ de chemin avant le rocher.", "options": ["peu", "peux", "peut", "peus"], "r": 0 },
+        { "q": "Abigail ___ Moustafa sont les moniteurs.", "options": ["est", "et", "es", "ai"], "r": 1 },
+        { "q": "Caleb ___ une idée originale aujourd'hui.", "options": ["a", "à", "as", "ai"], "r": 0 },
+        { "q": "On ___ voir le reflet du ciel sur l'eau.", "options": ["peu", "peux", "peut", "peus"], "r": 2 },
+        { "q": "Je range ___ pagaies après l'activité.", "options": ["met", "mes", "mai", "mets"], "r": 1 },
+        { "q": "Ses amis ___ aussi fatigués que lui.", "options": ["son", "sont", "sons", "sonts"], "r": 1 }
+      ]
+    },
+    "GRAMMAIRE_CONJONCTIONS": {
+      "domaine": "Conjonctions de coordination (mais, ou, et, donc, or, ni, car)",
+      "questions": [
+        { "q": "Ils rament fort ___ ils veulent gagner la course.", "options": ["car", "mais", "ni", "ou"], "r": 0 },
+        { "q": "Le rocher semble proche, ___ il est encore loin.", "options": ["mais", "donc", "ou", "car"], "r": 0 },
+        { "q": "Veux-tu ramer ___ préfères-tu te reposer ?", "options": ["ou", "ni", "car", "donc"], "r": 0 },
+        { "q": "Les enfants sont fatigués, ___ ils ralentissent.", "options": ["donc", "mais", "ni", "car"], "r": 0 },
+        { "q": "Il n'y a ___ gagnant ___ perdant à la fin.", "options": ["ni / ni", "ou / ou", "et / et", "car / car"], "r": 0 },
+        { "q": "L'eau est calme ___ le ciel est bleu.", "options": ["et", "mais", "ni", "car"], "r": 0 },
+        { "q": "Caleb suggère une course, ___ Abigail accepte.", "options": ["et", "car", "donc", "ni"], "r": 0 },
+        { "q": "Ils chantent ___ cela leur donne du courage.", "options": ["car", "donc", "mais", "ni"], "r": 0 },
+        { "q": "La course est finie, ___ ils rentrent au quai.", "options": ["donc", "mais", "ni", "ou"], "r": 0 },
+        { "q": "Le défi était grand, ___ Caleb est fier de lui.", "options": ["et", "mais", "ni", "ou"], "r": 0 }
+      ]
+    },
+    "CONJUGAISON": {
+      "domaine": "L'imparfait de l'indicatif",
+      "questions": [
+        { "q": "Autrefois, le Camp des Huards (être) plus petit.", "options": ["était", "étaient", "étais", "étions"], "r": 0 },
+        { "q": "Les Voyageurs (ramer) pendant 18 heures.", "options": ["ramait", "ramaient", "ramais", "ramions"], "r": 1 },
+        { "q": "Nous (chanter) tous ensemble sur le lac.", "options": ["chantions", "chantait", "chantais", "chantaient"], "r": 0 },
+        { "q": "Tu (avoir) hâte de faire la course.", "options": ["avais", "avait", "avaient", "aviez"], "r": 0 },
+        { "q": "L'eau du lac (sembler) plane comme un miroir.", "options": ["semblait", "semblaient", "semblais", "sembliez"], "r": 0 },
+        { "q": "Vous (faire) souvent des suggestions.", "options": ["faisiez", "faisait", "faisais", "faisaient"], "r": 0 },
+        { "q": "Je (pouvoir) voir le grand rocher au loin.", "options": ["pouvais", "pouvait", "pouvaient", "pouvions"], "r": 0 },
+        { "q": "Les canots (glisser) à une vitesse folle.", "options": ["glissait", "glissaient", "glissais", "glissiez"], "r": 1 },
+        { "q": "La monitrice (donner) le signal du départ.", "options": ["donnait", "donnaient", "donnais", "donniez"], "r": 0 },
+        { "q": "Ils (vouloir) tous gagner la compétition.", "options": ["voulait", "voulaient", "voulais", "vouliez"], "r": 1 }
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BookOpen, Award, Loader2, ChevronLeft, X, ImageIcon, GraduationCap, AlertCircle } from "lucide-react";
 import data from "./francais1.json"; 
-import imageIllustration from "./averon.png"; 
+
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby7ozaPvt2WFlJdEff3TsjLp6csxdYdeRjL-XC7gU2J03KpEoaShue2dqy7Xokf9fHo/exec";
 const SECRET_HASH = "MjIyMg=="; 
@@ -147,7 +147,7 @@ export default function QuizOQREF() {
                 </div>
                 <div className="text-right">
                   <span className="text-xl font-black text-slate-900">{score[key] * 2}</span>
-                  <span className="text-xs font-bold text-slate-400 ml-1">/ 20</span>
+                  <span className="text-xs font-bold text-slate-400 ml-1">/ {data.themes[key].questions.length * 2}</span>
                 </div>
               </div>
             ))}
@@ -245,7 +245,15 @@ export default function QuizOQREF() {
       </div>
       
       <XModale show={showTexte} close={() => setShowTexte(false)} title="Texte" content={texteComplet} icon={BookOpen} />
-      <XModale show={showImage} close={() => setShowImage(false)} title="Image" content={<img src={imageIllustration} alt="Illustration" className="w-full rounded-2xl" />} icon={ImageIcon} />
+           
+{/* Modale pour l'image */}
+<XModale 
+  show={showImage} 
+  close={() => setShowImage(false)} 
+  title="Image" 
+  content={<img src={data.image_illustration} alt="Illustration" className="w-full rounded-2xl" />} 
+  icon={ImageIcon} 
+/>
     </div>
   );
 }

@@ -1,156 +1,136 @@
 {
   "test_info": {
-    "session": "Mathématiques_3A_OQRE",
+    "session": "Mathématiques_ regularité",
     "niveau": "3A",
-    "target": "maths_3a_oqre_blocs",
+    "target": "maths_3a_oqre",
     "subject": "maths"
   },
   "parties": [
     {
-      "id": "Module_OQRE",
+      "id": "Module_1",
       "sections": [
         {
-          "titre": "Bloc 1 – Numération et opérations : Multiplication, Division, Régularité, Addition",
+          "titre": "Régularité en Addition et Soustraction",
           "questions": [
             {
               "numero": 1,
-              "enonce": "Calcule : 6 x 7 =",
-              "options": ["42", "36", "48", "40"],
-              "reponse_correcte": "42"
+              "enonce": "Complète la suite : 10, 20, 30, ____, 50",
+              "options": ["35", "40", "45", "60"],
+              "reponse_correcte": "40"
             },
             {
               "numero": 2,
-              "enonce": "Si tu partages 24 bonbons entre 6 amis, combien chacun reçoit-il ?",
-              "options": ["4", "5", "6", "8"],
-              "reponse_correcte": "4"
+              "enonce": "Quelle est la règle de la suite : 5, 10, 15, 20 ?",
+              "options": ["Ajouter 2", "Ajouter 5", "Soustraire 5", "Ajouter 10"],
+              "reponse_correcte": "Ajouter 5"
             },
             {
               "numero": 3,
-              "enonce": "Complète la suite : 2, 4, 8, ____, 32",
-              "options": ["12", "16", "20", "24"],
-              "reponse_correcte": "16"
+              "enonce": "Trouve le nombre manquant : 50, 45, 40, ____, 30",
+              "options": ["38", "35", "25", "20"],
+              "reponse_correcte": "35"
             },
             {
               "numero": 4,
-              "enonce": "Luc a 12 billes et en reçoit 8 de plus. Combien de billes a-t-il maintenant ?",
-              "options": ["18", "20", "19", "21"],
-              "reponse_correcte": "20"
-            }
-          ]
-        },
-        {
-          "titre": "Bloc 2 – Numération et opérations et Mesure : Soustraction, Longueur, Masse",
-          "questions": [
+              "enonce": "Dans cette suite, que fait-on à chaque étape : 100, 90, 80, 70 ?",
+              "options": ["Ajouter 10", "Soustraire 5", "Soustraire 10", "Ajouter 20"],
+              "reponse_correcte": "Soustraire 10"
+            },
             {
               "numero": 5,
-              "enonce": "Sofia a 15 $ et dépense 7 $. Combien lui reste-t-il ?",
-              "options": ["8 $", "7 $", "9 $", "6 $"],
-              "reponse_correcte": "8 $"
+              "enonce": "Complète : 2, 4, 6, ____, 10",
+              "options": ["7", "8", "9", "12"],
+              "reponse_correcte": "8"
             },
             {
               "numero": 6,
-              "enonce": "Combien de centimètres dans 3 m ?",
-              "options": ["30 cm", "300 cm", "3000 cm", "3 cm"],
-              "reponse_correcte": "300 cm"
+              "enonce": "Quelle est la règle de la suite : 30, 25, 20, 15 ?",
+              "options": ["Ajouter 5", "Soustraire 5", "Ajouter 10", "Soustraire 10"],
+              "reponse_correcte": "Soustraire 5"
             },
             {
               "numero": 7,
-              "enonce": "Compare : 5 dm ____ 40 cm",
-              "options": [">", "<", "=", "aucune de ces réponses"],
-              "reponse_correcte": ">"
+              "enonce": "Trouve le nombre manquant : 1, 3, 5, ____, 9",
+              "options": ["6", "7", "8", "10"],
+              "reponse_correcte": "7"
             },
             {
               "numero": 8,
-              "enonce": "Un sac pèse 3 kg et un autre 5 kg. Quel est le poids total ?",
-              "options": ["8 kg", "7 kg", "6 kg", "9 kg"],
-              "reponse_correcte": "8 kg"
-            }
-          ]
-        },
-        {
-          "titre": "Bloc 3 – Monnaie et Temps : Calcul total, Monnaie rendue, Conversion heures → minutes, Durée totale",
-          "questions": [
+              "enonce": "Complète la suite : 40, 50, 60, ____, 80",
+              "options": ["65", "70", "75", "90"],
+              "reponse_correcte": "70"
+            },
             {
               "numero": 9,
-              "enonce": "Emma achète un cahier à 7 $ et un stylo à 3 $. Combien paie-t-elle ?",
-              "options": ["9 $", "10 $", "11 $", "12 $"],
-              "reponse_correcte": "10 $"
+              "enonce": "Quelle opération permet de passer de 12 à 15 ?",
+              "options": ["Soustraire 3", "Ajouter 3", "Ajouter 5", "Soustraire 5"],
+              "reponse_correcte": "Ajouter 3"
             },
             {
               "numero": 10,
-              "enonce": "Un jouet coûte 8 $. Tu paies avec 20 $. Combien reçois-tu ?",
-              "options": ["10 $", "12 $", "8 $", "7 $"],
-              "reponse_correcte": "12 $"
+              "enonce": "Trouve la règle : 90, 85, 80, 75",
+              "options": ["Ajouter 5", "Soustraire 5", "Soustraire 10", "Ajouter 10"],
+              "reponse_correcte": "Soustraire 5"
             },
             {
               "numero": 11,
-              "enonce": "Combien de minutes y a-t-il dans 2 heures ?",
-              "options": ["60", "100", "120", "150"],
-              "reponse_correcte": "120"
+              "enonce": "Complète : 0, 10, 20, ____, 40",
+              "options": ["25", "30", "35", "50"],
+              "reponse_correcte": "30"
             },
             {
               "numero": 12,
-              "enonce": "Un élève court 30 min le matin et 45 min l’après-midi. Combien de temps court-il en tout ?",
-              "options": ["65 min", "70 min", "75 min", "80 min"],
-              "reponse_correcte": "75 min"
-            }
-          ]
-        },
-        {
-          "titre": "Bloc 4 – Température et Numération : Identifier le chaud, Comparer températures, Addition, Soustraction",
-          "questions": [
+              "enonce": "Trouve le nombre manquant : 70, 60, ____, 40",
+              "options": ["55", "50", "45", "30"],
+              "reponse_correcte": "50"
+            },
             {
               "numero": 13,
-              "enonce": "Quelle température correspond à une journée chaude d'été ?",
-              "options": ["0 °C", "10 °C", "30 °C", "50 °C"],
-              "reponse_correcte": "30 °C"
+              "enonce": "Quelle est la règle de la suite : 4, 8, 12, 16 ?",
+              "options": ["Ajouter 2", "Ajouter 4", "Soustraire 4", "Ajouter 6"],
+              "reponse_correcte": "Ajouter 4"
             },
             {
               "numero": 14,
-              "enonce": "Quelle température est la plus froide ?",
-              "options": ["10 °C", "0 °C", "-5 °C", "5 °C"],
-              "reponse_correcte": "-5 °C"
+              "enonce": "Complète la suite : 100, 95, ____, 85",
+              "options": ["92", "90", "88", "80"],
+              "reponse_correcte": "90"
             },
             {
               "numero": 15,
-              "enonce": "Calcule : 25 + 17 =",
-              "options": ["40", "42", "43", "44"],
-              "reponse_correcte": "42"
+              "enonce": "Quel nombre vient après 27 si on ajoute toujours 3 ?",
+              "options": ["29", "30", "31", "33"],
+              "reponse_correcte": "30"
             },
             {
               "numero": 16,
-              "enonce": "Calcule : 50 - 18 =",
-              "options": ["30", "32", "33", "34"],
-              "reponse_correcte": "32"
-            }
-          ]
-        },
-        {
-          "titre": "Bloc 5 – Raisonnement, Numération et Mesure : Compléter suite, Addition, Volume, Ordre des nombres",
-          "questions": [
+              "enonce": "Trouve la règle : 60, 50, 40, 30",
+              "options": ["Soustraire 5", "Ajouter 10", "Soustraire 10", "Ajouter 5"],
+              "reponse_correcte": "Soustraire 10"
+            },
             {
               "numero": 17,
-              "enonce": "Complète la suite : 5, 10, 15, ____, 25",
-              "options": ["18", "20", "21", "22"],
-              "reponse_correcte": "20"
+              "enonce": "Complète : 5, 15, 25, ____, 45",
+              "options": ["30", "35", "40", "50"],
+              "reponse_correcte": "35"
             },
             {
               "numero": 18,
-              "enonce": "Marie a 14 pommes et en reçoit 9 de plus. Combien a-t-elle maintenant ?",
-              "options": ["22", "23", "24", "25"],
-              "reponse_correcte": "23"
+              "enonce": "Quelle est la règle de la suite : 2, 5, 8, 11 ?",
+              "options": ["Ajouter 2", "Ajouter 3", "Soustraire 3", "Ajouter 5"],
+              "reponse_correcte": "Ajouter 3"
             },
             {
               "numero": 19,
-              "enonce": "Tu as 2 L de jus et tu ajoutes 1,5 L. Combien de litres au total ?",
-              "options": ["2,5 L", "3 L", "3,5 L", "4 L"],
-              "reponse_correcte": "3,5 L"
+              "enonce": "Trouve le nombre manquant : 45, 40, 35, ____, 25",
+              "options": ["30", "28", "20", "15"],
+              "reponse_correcte": "30"
             },
             {
               "numero": 20,
-              "enonce": "Range du plus petit au plus grand : 12, 5, 20, 8",
-              "options": ["5, 8, 12, 20", "5, 12, 8, 20", "12, 5, 8, 20", "8, 5, 12, 20"],
-              "reponse_correcte": "5, 8, 12, 20"
+              "enonce": "Complète la suite : 10, 15, 20, 25, ____",
+              "options": ["28", "30", "35", "40"],
+              "reponse_correcte": "30"
             }
           ]
         }
