@@ -3,6 +3,7 @@
   "titre": "Un sommeil réparateur",
   "startDate": "2026-04-15",
   "endDate": "2026-04-22",
+   "image_illustration": "/imagFr/sommeil.png",
 
   "texte_integral": [
     {
@@ -35,6 +36,58 @@
     "COMPREHENSION": {
       "domaine": "Analyse du texte",
       "questions": [
+        {
+          "q": "Que veut dire l'expression « fraîche et dispose » au début du texte ?",
+          "options": ["Fatiguée et malade", "En pleine forme et prête", "En colère et fâchée", "Triste et déprimée"],
+          "r": 1
+        },
+        {
+          "q": "Quel est le contraire du mot « diminuer » ?",
+          "options": ["Réduire", "Baisser", "Augmenter", "Ralentir"],
+          "r": 2
+        },
+        {
+          "q": "Dans le texte, que veut dire le mot « léthargique » ?",
+          "options": ["Plein d'énergie", "Très fatigué et lent", "Très intelligent", "Nerveux et stressé"],
+          "r": 1
+        },
+        {
+          "q": "Quel mot veut dire la même chose que « davantage » ?",
+          "options": ["Moins", "Plus", "Pareil", "Presque"],
+          "r": 1
+        },
+        {
+          "q": "Que veut dire l'action d'« emmagasiner » des informations ?",
+          "options": ["Les oublier très vite", "Les acheter dans un magasin", "Les garder dans sa tête", "Les effacer complètement"],
+          "r": 2
+        },
+        {
+          "q": "Quel est le contraire du mot « agressivité » ?",
+          "options": ["Calme et douceur", "Colère", "Violence", "Impatience"],
+          "r": 0
+        },
+        {
+          "q": "Que veut dire l'expression « faire un compromis sur son sommeil » ?",
+          "options": ["Accepter de dormir moins", "Dormir beaucoup trop", "Acheter un nouveau lit", "Faire une promesse"],
+          "r": 0
+        },
+        {
+          "q": "Que fait le corps quand il « régénère » la peau pendant la nuit ?",
+          "options": ["Il l'abîme", "Il la détruit", "Il la répare et la renouvelle", "Il la salit"],
+          "r": 2
+        },
+        {
+          "q": "Quel est le contraire du mot « foncé » (comme dans l'expression des cernes foncés) ?",
+          "options": ["Sombre", "Noir", "Pâle ou clair", "Creux"],
+          "r": 2
+        },
+        {
+          "q": "Quel mot veut dire la même chose que « luit » dans la phrase « notre peau luit » ?",
+          "options": ["Devient blanche", "Sèche", "Brille", "Tombe"],
+          "r": 2
+        },
+      
+    
         {
           "q": "Combien d'heures de sommeil sont recommandées chaque nuit selon le texte ?",
           "options": ["6 heures", "7 heures", "8 heures", "9 heures"],
@@ -106,20 +159,20 @@
           "r": 1
         },
         {
-          "q": "Il ___ ses huit heures de sommeil chaque nuit.",
-          "options": ["met", "mes", "mai", "mets"],
-          "r": 0
-        },
+  "q": "Il ___ son manteau avant de sortir.",
+  "options": ["met", "mes", "mai", "mets"],
+  "r": 0
+},
         {
           "q": "Il reste un ___ de temps avant minuit.",
           "options": ["peu", "peux", "peut", "peus"],
           "r": 0
         },
         {
-          "q": "Le manque de sommeil ___ la concentration.",
-          "options": ["a", "à", "as", "ai"],
-          "r": 0
-        },
+  "q": "Le manque de sommeil ___ un effet négatif sur la concentration.",
+  "options": ["a", "à", "as", "ai"],
+  "r": 0
+},
         {
           "q": "On ___ voir les effets du sommeil sur la peau.",
           "options": ["peu", "peux", "peut", "peus"],

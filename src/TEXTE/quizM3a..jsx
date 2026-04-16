@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BookOpen, Award, Loader2, CheckCircle } from "lucide-react";
 // Ici, "data" sera soit votre JSON de math, soit de français
-import data from "./mathematique3A..json"; 
+import data from "./3E/Revision1.json"; 
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLZp0igZS7YoitOLP_HzojLbUOplOla2d_GoLny-EPAZKfa-5sbwi_7dOynkHNGw91vw/exec";
 

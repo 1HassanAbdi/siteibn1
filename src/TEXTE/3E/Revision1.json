@@ -1,0 +1,151 @@
+{
+  "matiere": "MATHÉMATIQUES - 3E ANNÉE (OQRE SÉRIE 2 - VERSION COURTE)",
+  "texte": "Lis bien chaque consigne et réponds aux questions.",
+  "themes": {
+    "GEOMETRIE": {
+      "domaine": "Sens de l'espace",
+      "questions": [
+        {
+          "q": "Lequel de ces objets a la forme d'un prisme à base rectangulaire ?",
+          "options": ["Une boîte de céréales", "Une canette de jus", "Un cornet de glace", "Un ballon"],
+          "r": 0
+        },
+        {
+          "q": "Quelle forme a 4 côtés égaux et 4 angles droits ?",
+          "options": ["Le rectangle", "Le losange", "Le carré", "Le trapèze"],
+          "r": 2
+        },
+        {
+          "q": "Combien d'arêtes possède un cube ?",
+          "options": ["6", "8", "10", "12"],
+          "r": 3
+        },
+        {
+          "q": "Deux lignes qui forment un signe '+' sont :",
+          "options": ["Parallèles", "Perpendiculaires", "Courbes", "Longues"],
+          "r": 1
+        },
+        { "q": "Une ligne qui ressemble à un rail de train est une ligne :", "options": ["Parallèle", "Perpendiculaire", "Courbe", "Sécante"], "r": 0 }
+      ]
+    },
+    "MESURES": {
+      "domaine": "Grandeurs et mesures",
+      "questions": [
+        {
+      "q": "Combien de cm dans 1 mètre ?",
+      "options": ["10 cm", "50 cm", "100 cm", "1000 cm"],
+      "r": 2
+    },
+    {
+      "q": "Quel outil utilise-t-on pour mesurer la masse ?",
+      "options": ["Une règle", "Une balance", "Une horloge", "Un thermomètre"],
+      "r": 1
+    },
+    {
+      "q": "Quel est le périmètre d'un rectangle de 4 cm sur 2 cm ?",
+      "options": ["6 cm", "8 cm", "12 cm", "16 cm"],
+      "r": 2
+    },
+    {
+      "q": "Combien de secondes dans 1 minute ?",
+      "options": ["30", "60", "100", "120"],
+      "r": 1
+    },
+    {
+      "q": "Quelle distance est la plus courte ?",
+      "options": ["1 m", "50 cm", "2 m", "5 m"],
+      "r": 1
+    }
+      ]
+    },
+    "MONNAIE": {
+      "domaine": "Numératie financière",
+      "questions": [
+        {
+          "q": "Combien de pièces de 25¢ pour faire 2 dollars ?",
+          "options": ["4", "6", "8", "10"],
+          "r": 2
+        },
+        {
+          "q": "Si tu as 50$ et tu achètes un jeu à 42$, il te reste :",
+          "options": ["2$", "5$", "8$", "12$"],
+          "r": 2
+        },
+        {
+          "q": "3 pièces de 2$ (toonies) font :",
+          "options": ["3$", "5$", "6$", "9$"],
+          "r": 2
+        },
+        {
+          "q": "Lequel est égal à 1,50$ ?",
+          "options": ["10 pièces de 10¢", "6 pièces de 25¢", "5 pièces de 25¢", "10 pièces de 5¢"],
+          "r": 1
+        },
+        {
+          "q": "Tu économises 2$ par semaine. Après 4 semaines, tu as :",
+          "options": ["4$", "6$", "8$", "10$"],
+          "r": 2
+        }
+      ]
+    },
+    "NUMERATION": {
+      "domaine": "Nombres",
+      "questions": [
+        {
+          "q": "Dans 8 765, le chiffre des dizaines est :",
+          "options": ["8", "7", "6", "5"],
+          "r": 2
+        },
+        {
+          "q": "Comment écrit-on 1 000 + 400 + 2 ?",
+          "options": ["142", "1042", "1402", "1420"],
+          "r": 2
+        },
+        {
+          "q": "La moitié de 100 est :",
+          "options": ["25", "40", "50", "60"],
+          "r": 2
+        },
+        {
+          "q": "Arrondis 48 à la dizaine la plus proche :",
+          "options": ["40", "45", "50", "100"],
+          "r": 2
+        },
+        {
+          "q": "Quel signe complète : 450 ___ 405 ?",
+          "options": ["<", ">", "=", "+"],
+          "r": 1
+        }
+      ]
+    },"RESOLUTION_DE_PROBLEMES": {
+      "domaine": "Application et résolution",
+      "questions": [
+        {
+          "q": "Léo a 45 billes. Il en donne 12 à son ami et en gagne 8 à la récréation. Combien de billes a-t-il maintenant ?",
+          "options": ["25", "33", "41", "65"],
+          "r": 2
+        },
+        {
+          "q": "Une boîte contient 6 œufs. Combien d'œufs y a-t-il dans 4 boîtes au total ?",
+          "options": ["10", "18", "20", "24"],
+          "r": 3
+        },
+        {
+          "q": "Sarah coupe une pizza en 4 morceaux égaux. Elle mange un quart (1/4) de la pizza. Combien de morceaux reste-t-il ?",
+          "options": ["1", "2", "3", "4"],
+          "r": 2
+        },
+        {
+          "q": "Le bus de l'école devait arriver à 8h00. Il a 30 minutes de retard. À quelle heure va-t-il arriver ?",
+          "options": ["8h30", "8h45", "9h00", "9h15"],
+          "r": 0
+        },
+        {
+          "q": "Observe la suite logique : 2, 4, 6, 8, ___ . Quel est le prochain nombre ?",
+          "options": ["9", "10", "12", "14"],
+          "r": 1
+        }
+      ]
+    }
+  }
+}

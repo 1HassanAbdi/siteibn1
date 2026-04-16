@@ -1,0 +1,839 @@
+{
+    "questions1": [
+      {
+        "id": 1,
+        "text": "Qui tient une carte avec un nombre pair dessus ?",
+        "options": [
+          "David",
+          "Greg",
+          "Keiko",
+          "Betsy"
+        ],
+        "correctOption": 2,
+        "type": "radio",
+        "image": "/oqreImag/q1.png",
+        "points": 1
+      },
+      {
+        "id": 2,
+        "text": "Lequel des éléments suivants montre 605,788 écrit en lettres ?",
+        "options": [
+          "Six cent soixante-dix-huit",
+          "Six cent cinq, sept cent quatre-vingt-huit",
+          "Six cent cinq mille, soixante-dix-huit",
+          "Six cent cinq mille, sept cent quatre-vingt-huit"
+        ],
+        "correctOption": 3,
+        "type": "radio",
+        "image": "/oqreImag/q2.png",
+        "points": 1
+      },
+      {
+        "id": 3,
+        "text": "Chacun de ces sacs contient exactement 5 boutons. Combien y a-t-il de boutons au total ?",
+        "options": [
+          "17",
+          "80",
+          "85",
+          "90"
+        ],
+        "correctOption": 2,
+        "type": "radio",
+        "image": "/oqreImag/q3.png",
+        "points": 1
+      },
+      {
+        "id": 4,
+        "text": "Sara peut utiliser le fait que 12 - 6 = 6 pour aider à résoudre un problème connexe. Lequel des suivants pourrait être le problème qu'elle essaie de résoudre ?",
+        "options": [
+          "... + 6 = 12",
+          "... × 6 = 6",
+          "...  - 6 = 0",
+          "... : 6 = 12"
+        ],
+        "correctOption": 0,
+        "type": "radio",
+        "image": "",
+        "points": 1
+      },
+      {
+        "id": 5,
+        "text": "Choisissez le motif correct :",
+        "options": [
+          {
+            "image": "/oqreImag/q31.png"
+          },
+          {
+            "image": "/oqreImag/q32.png"
+          },
+          {
+            "image": "/oqreImag/q33.png"
+          },
+          {
+            "image": "/oqreImag/q34.png"
+          }
+        ],
+        "correctOption": 1,
+        "type": "radio",
+        "image": "/q4.png",
+        "points": 1
+      },
+      {
+        "id": 6,
+        "text": "Quelle figure se trouve à la 15e place à partir du DÉBUT ?",
+        "options": [
+          {
+            "image": "/oqreImag/q61.png"
+          },
+          {
+            "image": "/oqreImag/q62.png"
+          },
+          {
+            "image": "/oqreImag/q63.png"
+          },
+          {
+            "image": "/oqreImag/q64.png"
+          }
+        ],
+        "correctOption": 1,
+        "type": "radio",
+        "image": "/oqreImag/q6.png",
+        "points": 1
+      },
+      {
+        "id": 7,
+        "text": "La Virginie couvre cent deux mille cinq cent cinquante-huit kilomètres carrés de terre. Quel nombre montre cela ?",
+        "options": [
+          "1,258",
+          "12,558",
+          "102,558",
+          "1,200,558"
+        ],
+        "correctOption": 2,
+        "type": "radio",
+        "image": "",
+        "points": 1
+      },
+      {
+        "id": 8,
+        "text": "À quel nombre 147 est-il arrondi au cent près ?",
+        "options": [
+          "250",
+          "200",
+          "150",
+          "100"
+        ],
+        "correctOption": 3,
+        "type": "radio",
+        "image": "/oqreImag/q9.png",
+        "points": 1
+      },
+      {
+        "id": 9,
+        "text": "Quelle figure montre 1/10 ombré ?",
+        "options": [
+          {
+            "image": "/oqreImag/q91.png"
+          },
+          {
+            "image": "/oqreImag/q92.png"
+          },
+          {
+            "image": "/oqreImag/q93.png"
+          },
+          {
+            "image": "/oqreImag/q94.png"
+          }
+        ],
+        "correctOption": 2,
+        "type": "radio",
+        "image": "",
+        "points": 1
+      },
+      {
+        "id": 10,
+        "text": "Quel nombre indique le nombre exact de pizzas montrées sur l'image ci-dessus ?",
+        "options": [
+          "5,4",
+          "4,5",
+          "0,5",
+          "0,45"
+        ],
+        "correctOption": 1,
+        "type": "radio",
+        "image": "/oqreImag/q10.png",
+        "points": 1
+      },
+      {
+        "id": 11,
+        "text": "Tracy a acheté ces crayons. Chaque crayon coûtait 2 cents. Combien ont coûté les crayons en tout ?",
+        "options": [
+          "5¢",
+          "15¢",
+          "30¢",
+          "45¢"
+        ],
+        "correctOption": 2,
+        "type": "radio",
+        "image": "/oqreImag/q10..png",
+        "points": 1
+      },
+      {
+        "id": 12,
+        "text": "Quelle fraction des bougies sur le gâteau est allumée ?",
+        "options": [
+          "4/7",
+          "4/3",
+          "3/7",
+          "1/4"
+        ],
+        "correctOption": 0,
+        "type": "radio",
+        "image": "/oqreImag/q11.png",
+        "points": 1
+      },
+      {
+        "id": 13,
+        "text": "Le fleuve Amazone mesure 4 000 miles de long. C'est MOINS que la longueur de quel fleuve ?",
+        "options": [
+          "Fleuve Mississippi",
+          "Fleuve Nil",
+          "Fleuve Yangtze",
+          "Fleuve Yenisei"
+        ],
+        "correctOption": 1,
+        "type": "radio",
+        "image": "/oqreImag/q12.png",
+        "points": 1
+      },
+      {
+        "id": 14,
+        "text": "Shelly a un groupe de pièces de monnaie d'une valeur totale égale à l'argent de Diane. Lequel pourrait être l'argent de Shelly ?",
+        "options": [
+          {
+            "image": "/oqreImag/131.png"
+          },
+          {
+            "image": "/oqreImag/132.png"
+          },
+          {
+            "image": "/oqreImag/133.png"
+          },
+          {
+            "image": "/oqreImag/134.png"
+          }
+        ],
+        "correctOption": 0,
+        "type": "radio",
+        "image": "/oqreImag/q13.png",
+        "points": 1
+      },
+      {
+        "id": 15,
+        "text": "Une bibliothèque scolaire avait 2 089 livres. Elle a reçu 853 livres de plus pendant l'année. Combien de livres la bibliothèque avait-elle alors ?",
+        "options": [
+          "1,236",
+          "2,832",
+          "2,836",
+          "2,942"
+        ],
+        "correctOption": 3,
+        "type": "radio",
+        "image": "",
+        "points": 1
+      },
+      {
+        "id": 16,
+        "text": " \n\n42 : 7 =",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "correctOption": 1,
+        "type": "radio",
+        "points": 1
+      },
+      {
+        "id": 17,
+        "text": "Le problème suivant fait partie des devoirs de Ben \n. Cathy a acheté 25 paquets de ballons. Chaque paquet contient 4 ballons. Combien de ballons a-t-elle achetés au total ?  \nQuelle phrase numérique suivante Ben peut-il utiliser pour résoudre ce problème ?",
+        "options": [
+          "25 × 4 =",
+          "25 : 4 =",
+          "25 - 4 =",
+          "25 + 4 ="
+        ],
+        "correctOption": 0,
+        "type": "radio",
+        "points": 1
+      }
+    ],
+    "questions2": [
+          {
+            "id": 18,
+            "text": "Quelle fraction du gâteau entier Mark avait-il encore ?",
+            "options": [
+              "2/4",
+              "2/6",
+              "2/7",
+              "2/8"
+            ],
+            "correctOption": 3,
+            "type": "radio",
+            "image": "/oqreImag/q17.png",
+            "points": 1
+          },
+          {
+            "id": 19,
+            "text": "Choisissez la bonne réponse : 56,4 - 32,7",
+            "options": [
+              "14,7",
+              "23,7",
+              "24,3",
+              "24,7"
+            ],
+            "correctOption": 1,
+            "type": "radio",
+            "image": "/oqreImag/19.png",
+            "points": 1
+          },
+          {
+            "id": 20,
+            "text": "Choisissez la bonne réponse ",
+            "options": [
+              "1/3",
+              "3/8",
+              "2/3",
+              "5/8"
+            ],
+            "correctOption": 3,
+            "type": "radio",
+            "image": "/oqreImag/q18.png",
+            "points": 1
+          },
+          {
+            "id": 21,
+            "text": "Il a vendu chaque train pour 28 $. Combien Tom a-t-il gagné en vendant 4 trains ?",
+            "options": [
+              "24 $",
+              "32 $",
+              "112 $",
+              "832 $"
+            ],
+            "correctOption": 2,
+            "type": "radio",
+            "image": "/oqreImag/q8.png",
+            "points": 1
+          },
+          {
+            "id": 22,
+            "text": "choisir la bonne réponse",
+            "options": [
+              "2,4",
+              "2,0",
+              "1,6",
+              "0,1"
+            ],
+            "correctOption": 0,
+            "type": "radio",
+            "image": "/oqreImag/22.png",
+            "points": 1
+          },
+          {
+            "id": 23,
+            "text": "Paul voulait acheter une chemise qui coûtait 15 $. Il avait 7 $. Combien Paul avait-il besoin de plus pour acheter la chemise ?",
+            "options": [
+              "22 $",
+              "12 $",
+              "8 $",
+              "3 $"
+            ],
+            "correctOption": 2,
+            "type": "radio",
+            "points": 1
+          },
+          {
+            "id": 24,
+            "text": "\n\n7 x 9 =",
+            "options": [
+              "16",
+              "32",
+              "56",
+              "63"
+            ],
+            "correctOption": 3,
+            "type": "radio",
+            "points": 1
+          },
+          {
+            "id": 25,
+            "text": "Greg a lu sur un vol spatial de 365,970 miles. Quelle est la valeur du 3 dans 365,970 ?",
+            "options": [
+              "300",
+              "3,000",
+              "30,000",
+              "300,000"
+            ],
+            "correctOption": 3,
+            "type": "radio",
+            "image": "",
+            "points": 1
+          },
+          {
+            "id": 26,
+            "text": "Quelle est la longueur la PLUS PROCHE de cette raquette de tennis ?",
+            "options": [
+              "9 centimètres",
+              "10 centimètres",
+              "11 centimètres",
+              "12 centimètres"
+            ],
+            "correctOption": 2,
+            "type": "radio",
+            "image": "/oqreImag/q26.png",
+            "points": 1
+          },
+          {
+            "id": 27,
+            "text": "choisir la bonne réponse",
+            "options": [
+              "5",
+              "7",
+              "10",
+              "14"
+            ],
+            "correctOption": 2,
+            "type": "radio",
+            "image": "/oqreImag/q20.png",
+            "points": 1
+          },
+          {
+            "id": 28,
+            "text": "Quel élément suivant N'EST PAS vrai à propos du garçon sur l'image ?",
+            "options": [
+              "Il est loin de l'arbre",
+              "Il est près de l'arbre",
+              "Il est à côté de l'arbre",
+              "Il est proche de l'arbre"
+            ],
+            "correctOption": 0,
+            "type": "radio",
+            "image": "/oqreImag/q21.png",
+            "points": 1
+          },
+          {
+            "id": 29,
+            "text": "Linda et Tom sont amis depuis 1 an. Combien de mois font 1 an ?",
+            "options": [
+              "6",
+              "12",
+              "18",
+              "24"
+            ],
+            "correctOption": 1,
+            "type": "radio",
+            "points": 1
+          },
+          {
+            "id": 30,
+            "text": "Quelle partie de la télévision est le MEILLEUR modèle d'un angle ?",
+            "options": [
+              {
+                "image": "/oqreImag/231.png"
+              },
+              {
+                "image": "/oqreImag/232.png"
+              },
+              {
+                "image": "/oqreImag/233.png"
+              },
+              {
+                "image": "/oqreImag/234.png"
+              }
+            ],
+            "correctOption": 0,
+            "type": "radio",
+            "image": "/oqreImag/q23.png",
+            "points": 1
+          },
+          {
+            "id": 31,
+            "text": "De quelles formes sont les faces d'un cube ?",
+            "options": [
+              "Cercle",
+              "Triangle",
+              "Carré",
+              "Pentagone"
+            ],
+            "correctOption": 2,
+            "type": "radio",
+            "points": 1
+          },
+          {
+            "id": 32,
+            "text": "Dans laquelle des figures ci-dessous est-il possible de dessiner une ligne de symétrie ?",
+            "options": [
+              {
+                "image": "/oqreImag/241.png"
+              },
+              {
+                "image": "/oqreImag/242.png"
+              },
+              {
+                "image": "/oqreImag/243.png"
+              },
+              {
+                "image": "/oqreImag/244.png"
+              }
+            ],
+            "correctOption": 2,
+            "type": "radio",
+            "points": 1
+          },
+          {
+            "id": 33,
+            "text": "Lequel des éléments suivants est le MEILLEUR exemple d'une sphère ?",
+            "options": [
+              {
+                "image": "/oqreImag/251.png"
+              },
+              {
+                "image": "/oqreImag/252.png"
+              },
+              {
+                "image": "/oqreImag/253.png"
+              },
+              {
+                "image": "/oqreImag/254.png"
+              }
+            ],
+            "correctOption": 0,
+            "type": "radio",
+            "points": 1
+          },
+          {
+            "id": 34,
+            "text": "Quelles 2 formes ci-dessous sont congruentes ?",
+            "options": [
+              "L et P",
+              "M et N",
+              "N et L",
+              "P ET N"
+            ],
+            "correctOption": 2,
+            "image": "/oqreImag/26.png",
+            "type": "radio",
+            "points": 1
+          }
+        ],
+            "questions3": [
+              {
+                "id": 35,
+                "text": "Quelle heure est la plus proche de celle affichée sur l'horloge ?",
+                "options": [
+                  "12:06",
+                  "12:29",
+                  "1:06",
+                  "1:29"
+                ],
+                "correctOption": 1,
+                "image": "/oqreImag/27.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 36,
+                "text": "Quel thermomètre affiche 78 °F ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/361.png"
+                  },
+                  {
+                    "image": "/oqreImag/362.png"
+                  },
+                  {
+                    "image": "/oqreImag/363.png"
+                  },
+                  {
+                    "image": "/oqreImag/364.png"
+                  }
+                ],
+                "correctOption": 2,
+                "image": "",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 37,
+                "text": "Regardez les paires de formes. Quelle paire est composée de rectangles ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/371.png"
+                  },
+                  {
+                    "image": "/oqreImag/372.png"
+                  },
+                  {
+                    "image": "/oqreImag/373.png"
+                  },
+                  {
+                    "image": "/oqreImag/374.png"
+                  }
+                ],
+                "correctOption": 2,
+                "image": "",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 38,
+                "text": "Quel graphique ci-dessous montre le nombre correct de ventes pour chaque type de snack ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/381.png"
+                  },
+                  {
+                    "image": "/oqreImag/382.png"
+                  },
+                  {
+                    "image": "/oqreImag/383.png"
+                  },
+                  {
+                    "image": "/oqreImag/384.png"
+                  }
+                ],
+                "correctOption": 0,
+                "image": "",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 39,
+                "text": "L'anniversaire de Diana est le 23 novembre. L'anniversaire d'Hilary est six jours avant cela. Quand est l'anniversaire d'Hilary ?",
+                "options": [
+                  "6 novembre",
+                  "17 novembre",
+                  "18 novembre",
+                  "24 novembre"
+                ],
+                "correctOption": 1,
+                "image": "/oqreImag/39.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 40,
+                "text": "Combien d'élèves de plus aiment les Nutty Pops par rapport aux Yummy O's ?",
+                "options": [
+                  "16",
+                  "6",
+                  "3",
+                  "1"
+                ],
+                "correctOption": 1,
+                "image": "/oqreImag/40.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 41,
+                "text": "Combien d'élèves de plus aiment les Nutty Pops par rapport aux Yummy O's ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/411.png"
+                  },
+                  {
+                    "image": "/oqreImag/412.png"
+                  },
+                  {
+                    "image": "/oqreImag/413.png"
+                  },
+                  {
+                    "image": "/oqreImag/414.png"
+                  }
+                ],
+                "correctOption": 2,
+                "image": "/oqreImag/41.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 42,
+                "text": "Parmi les options suivantes, laquelle montre toutes les différentes façons dont Adrian peut combiner 1 gomme et 1 crayon ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/421.png"
+                  },
+                  {
+                    "image": "/oqreImag/422.png"
+                  },
+                  {
+                    "image": "/oqreImag/423.png"
+                  },
+                  {
+                    "image": "/oqreImag/424.png"
+                  }
+                ],
+                "correctOption": 3,
+                "image": "/oqreImag/42.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 43,
+                "text": "Quelle taille de pull a exactement 15 pulls commandés ?",
+                "options": [
+                  "Petit",
+                  "Moyen",
+                  "Grand",
+                  "Très grand"
+                ],
+                "correctOption": 0,
+                "image": "/oqreImag/43.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 44,
+                "text": "Quel est le nombre le plus proche de la distance que Paula a parcourue à pied ?",
+                "options": [
+                  "5 miles",
+                  "14 miles",
+                  "20 miles",
+                  "24 miles"
+                ],
+                "correctOption": 3,
+                "image": "/oqreImag/44.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 45,
+                "text": "Si le motif continue de la même manière, quel sera le prochain nombre ?",
+                "options": [
+                  "46",
+                  "52",
+                  "53",
+                  "63"
+                ],
+                "correctOption": 2,
+                "image": "/oqreImag/45.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 46,
+                "text": "Si le motif continue de la même manière, à quoi ressemblera la prochaine forme ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/461.png"
+                  },
+                  {
+                    "image": "/oqreImag/462.png"
+                  },
+                  {
+                    "image": "/463.png"
+                  },
+                  {
+                    "image": "/464.png"
+                  }
+                ],
+                "correctOption": 3,
+                "image": "/46.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 47,
+                "text": "Si le motif dans le tableau continue, combien d'élèves peuvent monter dans 6 vans ?",
+                "options": [
+                  "31",
+                  "36",
+                  "40",
+                  "42"
+                ],
+                "correctOption": 1,
+                "type": "radio",
+                "image": "/oqreImag/47.png",
+                "points": 1
+              },
+              {
+                "id": 48,
+                "text": "Shauna avait quelques voitures-jouets dans un sac. Elle en a donné 8 à Lucas. Après cela, Shauna avait 10 voitures-jouets. Combien y avait-il de voitures-jouets dans le sac avant que Shauna n'en donne à Lucas ?",
+                "options": [
+                  "2",
+                  "9",
+                  "12",
+                  "18"
+                ],
+                "correctOption": 3,
+                "type": "radio",
+                "image": "",
+                "points": 1
+              },
+              {
+                "id": 49,
+                "text": "Laquelle des règles suivantes pourrait être celle utilisée par la machine ?",
+                "options": [
+                  "Ajouter 1",
+                  "Ajouter 3",
+                  "Ajouter 7",
+                  "Ajouter 10"
+                ],
+                "correctOption": 2,
+                "type": "radio",
+                "image": "/oqreImag/48.PNG",
+                "points": 1
+              },
+              {
+                "id": 50,
+                "text": "Si le motif continue de la même manière, quelle sera la prochaine forme ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/501.png"
+                  },
+                  {
+                    "image": "/oqreImag/502.png"
+                  },
+                  {
+                    "image": "/oqreImag/503.png"
+                  },
+                  {
+                    "image": "/oqreImag/504.png"
+                  }
+                ],
+                "correctOption": 0,
+                "image": "/oqreImag/50.png",
+                "type": "radio",
+                "points": 1
+              },
+              {
+                "id": 51,
+                "text": "Si le motif continue de la même manière, à quoi ressemblera la prochaine feuille dans le motif ?",
+                "options": [
+                  {
+                    "image": "/oqreImag/511.png"
+                  },
+                  {
+                    "image": "/oqreImag/512.png"
+                  },
+                  {
+                    "image": "/oqreImag/513.png"
+                  },
+                  {
+                    "image": "/oqreImag/514.png"
+                  }
+                ],
+                "correctOption": 3,
+                "image": "/oqreImag/51.png",
+                "type": "radio",
+                "points": 1
+              }
+            ]
+          }
+          
+      
+      
+  
+  
