@@ -1,251 +1,93 @@
 {
   "matiere": "FRANCAIS",
-  "titre": "Test de français (avril 2026)",
-  "startDate": "2026-04-06",
-  "endDate": "2026-04-08",
-  "image_illustration": "/imagFr/text2.png",
-"texte_integral": [
-  {
-    "p": 1,
-    "contenu": "Monsieur Vanderbeck et sa femme ont été cambriolés cette nuit, pendant leur sommeil. Les policiers et les enquêteurs sont sur les lieux afin de découvrir des indices susceptibles de les mener au voleur."
-  },
-  {
-    "p": 2,
-    "contenu": "Dans la maison du couple âgé, tout a disparu : le téléviseur, les tableaux de valeur, les bijoux, l’ordinateur, même les bibelots de collection. Les tiroirs de la commode sont sens dessus dessous. La garde-robe a également été fouillée. La scène donne froid dans le dos."
-  },
-  {
-    "p": 3,
-    "contenu": "Selon le couple Vanderbeck, il s’agit sans doute d’un voleur professionnel. Il pourrait être le voyou qui traîne dans le quartier depuis quelques mois. On le voit errer seul dans le voisinage, l’air louche. Les policiers prennent des notes."
-  },
-  {
-    "p": 4,
-    "contenu": "Madame Vanderbeck amène les policiers vers la cuisine. Elle affirme que le voleur a certainement dû s’introduire par une fenêtre, puisque la serrure de la porte d’entrée est intacte. Par contre, la vitre de la cuisine est complètement brisée. Madame Vanderbeck amène les policiers à l’extérieur."
-  },
-  {
-    "p": 5,
-    "contenu": "Elle leur montre le gazon sous la fenêtre, qui est recouvert de morceaux de verre. On peut aussi voir des traces de pas sur le gazon, là où l’herbe humide est foulée. Les enquêteurs observent la scène, perplexes. Ils prennent note de tous les indices utiles."
-  },
-  {
-    "p": 6,
-    "contenu": "Monsieur et madame Vanderbeck affirment tous les deux n’avoir rien entendu cette nuit, à part les miaulements irritants du chat du voisin. À deux jours de l’Halloween, le temps est encore très doux, et le couple laisse encore les fenêtres entrouvertes. Malheureusement, ils doivent endurer le concert de ce satané chat toutes les nuits !"
-  },
-  {
-    "p": 7,
-    "contenu": "D’ailleurs, l’animal est source de conflits entre les Vanderbeck et leur voisin depuis quelques semaines. Leurs relations sont assez tendues. Leur voisin aurait-il voulu se venger d’eux ? Aurait-il organisé ce cambriolage afin de les terroriser et de les faire déménager ? Selon eux, c’est bien possible."
-  },
-  {
-    "p": 8,
-    "contenu": "Lorsque les policiers se dirigent vers le salon, madame Vanderbeck leur demande timidement d’enlever leurs bottes, afin d’éviter de tacher le magnifique tapis blanc qui recouvre le plancher. Les policiers observent la pauvre dame en souriant et s’exécutent. À cet âge, les gens ont parfois des caprices incompréhensibles. Ils procèdent ensuite à la vérification du salon."
-  },
-  {
-    "p": 9,
-    "contenu": "Rien ne semble avoir été vandalisé. Il manque bien sûr tous les appareils électroniques, mais la pièce est étrangement bien rangée. Le couple Vanderbeck raconte aux policiers qu’ils avaient caché, entre les pages d’un vieux livre de la bibliothèque, un croquis authentique du peintre Picasso lui-même, mais que ce croquis n’y est plus."
-  },
-  {
-    "p": 10,
-    "contenu": "Cette simple feuille de papier vaut plusieurs milliers de dollars. Madame Vanderbeck se met à sangloter bruyamment. Cette image était tellement importante pour elle. Seul un fin connaisseur d’art pouvait savoir qu’elle avait une telle valeur. Le couple mentionne le frère de madame Vanderbeck. Il travaille dans un musée et connaît bien le peintre Picasso. Il connaît la valeur de ses œuvres et pourrait bien être le coupable."
-  },
-  {
-    "p": 11,
-    "contenu": "Madame Vanderbeck a soudain la présence d’esprit de téléphoner aux assureurs. La gorge serrée, elle déclare tout ce qui a été volé cette nuit. La compagnie d’assurance rassurerait la vieille dame. Elle remboursera la valeur totale des biens perdus. Cela fait une jolie somme, mais tout cet argent ne remplacera jamais les souvenirs perdus. En plus, ils devront désormais vivre dans la peur."
-  },
-  {
-    "p": 12,
-    "contenu": "Pendant ce temps, monsieur Vanderbeck demande aux policiers de poursuivre l’enquête au sous-sol. Ils risquent de trouver d’autres indices intéressants. Les policiers affirment que ce ne sera pas nécessaire, puisqu’ils ont déjà trouvé les coupables. Madame Vanderbeck regarde son mari, l’air déconfit. Quelques minutes plus tard, les policiers procèdent à l’arrestation des criminels et les amènent au poste de police, sous le regard étonné du voisinage."
-  }
-],
+  "titre": "La visite chez le dentiste",
+  "startDate": "2026-04-22",
+  "endDate": "2026-04-29",
+  "image_illustration": "/imagFr/dentiste.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Tyler avait un mal de dents épouvantable. Sa mère voulait l’amener chez le dentiste, mais il refusait. Il avait peur d’avoir mal lorsque le dentiste arrachait sa dent. Sa mère lui avait expliqué que s’il ne consultait pas le dentiste, sa douleur serait encore pire. Finalement, Tyler a accepté, mais à contrecœur."
+    },
+    {
+      "p": 2,
+      "contenu": "Il y avait plusieurs personnes chez le dentiste. C’était bien le tour de Tyler. Tyler s’est avancé nerveusement vers la salle de consultation et s’est assis. Le dentiste avait l’air sympathique. Il lui a demandé d’ouvrir la bouche. Ensuite, il a dit à Tyler qu’il devrait extraire la dent cariée. Le dentiste a donné une injection à Tyler et l’a rassuré en disant qu’il ne sentirait rien."
+    },
+    {
+      "p": 3,
+      "contenu": "À sa grande surprise, Tyler n’a ressenti aucune douleur. Le dentiste lui a conseillé de se brosser les dents deux fois par jour. Tyler a appris la bonne manière de se brosser les dents. Il a aussi appris qu’il était nécessaire de passer le fil de soie dentaire pour avoir des gencives saines. Le dentiste a également rappelé à Tyler de ne pas manger trop de sucreries afin de ne pas avoir de caries."
+    }
+  ],
   "themes": {
     "COMPREHENSION": {
-  "domaine": "Analyse du texte",
-  "questions": [
-    { "q": "Que s’est-il passé chez les Vanderbeck ?", "options": ["Un incendie", "Un cambriolage", "Une dispute", "Une fête"], "r": 1 },
-    { "q": "Quand le cambriolage a-t-il eu lieu ?", "options": ["Le matin", "L’après-midi", "La nuit", "Le soir"], "r": 2 },
-    { "q": "Quel objet n’est pas mentionné comme volé ?", "options": ["Téléviseur", "Bijoux", "Voiture", "Ordinateur"], "r": 2 },
-    { "q": "Où la vitre est-elle brisée ?", "options": ["Salon", "Chambre", "Cuisine", "Sous-sol"], "r": 2 },
-    { "q": "Que trouve-t-on sur le gazon ?", "options": ["Du sang", "Des morceaux de verre", "Des outils", "Des vêtements"], "r": 1 },
-    { "q": "Que voit-on sur le gazon ?", "options": ["Des traces de pas", "Des pneus", "Des empreintes digitales", "Rien"], "r": 0 },
-    { "q": "Qu’ont entendu les Vanderbeck ?", "options": ["Des cris", "De la musique", "Le chat du voisin", "Une alarme"], "r": 2 },
-    { "q": "Pourquoi soupçonnent-ils le voisin ?", "options": ["Il est riche", "Il est gentil", "Ils ont des conflits avec lui", "Il est policier"], "r": 2 },
-    
-    { "q": "Quelle saison approche ?", "options": ["Noël", "L’Halloween", "L’été", "Pâques"], "r": 1 },
-    { "q": "Pourquoi les fenêtres étaient-elles ouvertes ?", "options": ["Il faisait chaud / Le temps était doux", "Elles étaient cassées", "Pour aérer après un feu", "Pour laisser entrer quelqu’un"], "r": 0 },
-   
-    { "q": "Que demande madame Vanderbeck aux policiers ?", "options": ["De partir", "D’appeler un médecin", "D’enlever leurs bottes", "De fermer la porte"], "r": 2 },
-    { "q": "Comment est le salon ?", "options": ["En désordre", "Vandalisé", "Bien rangé", "Sale"], "r": 2 },
-    { "q": "Quel objet précieux a disparu ?", "options": ["Une bague", "Un tableau de Monet", "Un croquis de Picasso", "Une statue"], "r": 2 },
-    { "q": "Où était caché le croquis ?", "options": ["Dans un tiroir", "Sous le lit", "Dans un livre", "Dans la cuisine"], "r": 2 },
-    { "q": "Qui pourrait être suspect selon eux (le frère de madame) ?", "options": ["Le facteur", "Le frère de madame", "Un ami", "Un enfant"], "r": 1 },
-    { "q": "Que fait madame Vanderbeck après le vol ?", "options": ["Elle dort", "Elle téléphone aux assureurs", "Elle nettoie", "Elle part"], "r": 1 },
-    { "q": "Que promet l’assurance ?", "options": ["Rien", "Une enquête", "Un remboursement", "Une punition"], "r": 2 },
-    { "q": "Où monsieur Vanderbeck veut-il poursuivre l'enquête ?", "options": ["Au grenier", "À la cuisine", "Au sous-sol", "Au jardin"], "r": 2 },
-    { "q": "Que disent les policiers à propos du sous-sol ?", "options": ["Qu’ils vont y aller", "Que c’est dangereux", "Que ce n’est pas nécessaire", "Qu’il est vide"], "r": 2 },
-    { "q": "Qui sont les coupables selon l'arrestation finale ?", "options": ["Le voisin", "Le frère", "Un inconnu", "Les Vanderbeck"], "r": 3 }
-  ]
- },
+      "domaine": "Analyse du texte",
+      "questions": [
+        { "q": "Qui est le personnage principal du texte ?", "options": ["Le dentiste", "Tyler", "La mère", "Le voisin"], "r": 1 },
+        { "q": "Quel était le problème de Tyler ?", "options": ["Un mal de ventre", "Un mal de dents épouvantable", "Un mal de tête", "Une jambe cassée"], "r": 1 },
+        { "q": "Où sa mère voulait-elle l'amener ?", "options": ["À l'école", "Au parc", "Chez le médecin", "Chez le dentiste"], "r": 3 },
+        { "q": "Quelle était la première réaction de Tyler ?", "options": ["Il était joyeux", "Il a refusé", "Il a pleuré", "Il s'est enfui"], "r": 1 },
+        { "q": "Pourquoi Tyler refusait-il d'y aller ?", "options": ["Il était fatigué", "Il n'aimait pas sortir", "Il avait peur d'avoir mal", "Il voulait jouer"], "r": 2 },
+        { "q": "Que craignait-il que le dentiste fasse ?", "options": ["Nettoyer ses dents", "Arracher sa dent", "Lui donner des bonbons", "Lui faire une piqûre"], "r": 1 },
+        { "q": "Que lui a expliqué sa mère s'il ne consultait pas le dentiste ?", "options": ["Sa douleur serait pire", "Il n'irait pas à l'école", "Il serait puni", "Ses dents tomberaient toutes seules"], "r": 0 },
+        { "q": "Comment Tyler a-t-il finalement accepté d'y aller ?", "options": ["Avec enthousiasme", "À contrecœur", "En pleurant", "En riant"], "r": 1 },
+        { "q": "Y avait-il du monde chez le dentiste ?", "options": ["Personne", "Uniquement le dentiste", "Plusieurs personnes", "Juste Tyler et sa mère"], "r": 2 },
+        { "q": "Comment Tyler s'est-il avancé vers la salle de consultation ?", "options": ["Nerveusement", "Rapidement", "En courant", "Avec le sourire"], "r": 0 },
+        { "q": "De quoi avait l'air le dentiste ?", "options": ["Sévère", "Fâché", "Sympathique", "Triste"], "r": 2 },
+        { "q": "Quelle a été la première demande du dentiste ?", "options": ["De fermer les yeux", "D'ouvrir la bouche", "De se lever", "De cracher"], "r": 1 },
+        { "q": "Quel était le diagnostic du dentiste ?", "options": ["Il fallait brosser la dent", "Il n'y avait aucun problème", "Il devrait extraire la dent cariée", "Il fallait mettre une bague"], "r": 2 },
+        { "q": "Qu'a fait le dentiste avant d'extraire la dent ?", "options": ["Il a donné un verre d'eau", "Il a donné une injection", "Il a raconté une blague", "Il a mis de la musique"], "r": 1 },
+        { "q": "Qu'a promis le dentiste à Tyler pour le rassurer ?", "options": ["Qu'il lui donnerait un jouet", "Qu'il ne sentirait rien", "Que ce serait long", "Qu'il pourrait manger des bonbons"], "r": 1 },
+        { "q": "Pendant l'extraction, Tyler a-t-il eu mal ?", "options": ["Oui, beaucoup", "Un peu", "Il n'a ressenti aucune douleur", "Il a pleuré de douleur"], "r": 2 },
+        { "q": "Combien de fois par jour le dentiste a-t-il conseillé de se brosser les dents ?", "options": ["Une fois", "Deux fois", "Trois fois", "Jamais"], "r": 1 },
+        { "q": "Que faut-il utiliser pour avoir des gencives saines selon le dentiste ?", "options": ["Le fil de soie dentaire", "Du rince-bouche", "Une brosse électrique", "Du sel"], "r": 0 },
+        { "q": "Que doit éviter Tyler pour ne pas avoir de caries ?", "options": ["Manger des légumes", "Manger trop de sucreries", "Boire de l'eau", "Manger des fruits"], "r": 1 },
+        { "q": "Qu'a appris Tyler lors de cette visite ?", "options": ["À faire des injections", "À soigner les autres", "La bonne manière de se brosser les dents", "Rien du tout"], "r": 2 }
+      ]
+    },
     "GRAMMAIRE_HOMOPHONES": {
-  "domaine": "Homophones et Orthographe",
-  "questions": [
-    { 
-      "q": "Choisis le bon mot : - Il …… acheté une voiture qui consomme beaucoup.", 
-      "options": ["a", "as", "à"], 
-      "r": 0 
+      "domaine": "Homophones et Orthographe",
+      "questions": [
+        { "q": "Choisis le bon mot : Tyler ____ un mal de dents épouvantable.", "options": ["a", "à", "as"], "r": 0 },
+        { "q": "Choisis le bon mot : Il a accepté, mais ____ contrecœur.", "options": ["a", "à", "as"], "r": 1 },
+        { "q": "Choisis le bon mot : Le dentiste ____ l'air sympathique.", "options": ["a", "à", "as"], "r": 0 },
+        { "q": "Choisis le bon mot : Tyler ____ sa mère vont à la clinique.", "options": ["est", "et", "es"], "r": 1 },
+        { "q": "Choisis le bon mot : Il ____ très nerveux dans la salle d'attente.", "options": ["et", "est", "es"], "r": 1 },
+        { "q": "Choisis le bon mot : Tyler doit bien brosser ____ dents.", "options": ["ses", "ces", "c'est", "s'est"], "r": 0 },
+        { "q": "Choisis le bon mot : ____ dentiste est vraiment gentil.", "options": ["Se", "Ce", "Ceux"], "r": 1 },
+        { "q": "Choisis le bon mot : Ils ____ plusieurs dans la salle d'attente.", "options": ["son", "sont", "sons"], "r": 1 },
+        { "q": "Choisis le bon mot : Le garçon écoute attentivement ____ docteur.", "options": ["son", "sont", "sons"], "r": 0 },
+        { "q": "Choisis le bon mot : Sais-tu ____ se trouve la clinique dentaire ?", "options": ["ou", "où"], "r": 1 }
+      ]
     },
-    { 
-      "q": "Choisis le bon mot : - Cette machine ….. laver utilise la nouvelle technologie.", 
-      "options": ["a", "as", "à"], 
-      "r": 2 
-    },
-    { 
-      "q": "Choisis le bon mot : - Elle _______ en retard aujourd’hui.", 
-      "options": ["es", "est", "et"], 
-      "r": 1 
-    },
-    { 
-      "q": "Choisis le bon mot : - J’aime les fruits ______ les salades .", 
-      "options": ["et", "es", "est"], 
-      "r": 0 
-    },
-    { 
-      "q": "Choisis le bon mot : - Cet inspecteur ________ mener l’enquête.", 
-      "options": ["peu", "peux", "peut"], 
-      "r": 2 
-    },
-    { 
-      "q": "Choisis le bon mot : - Tu ___________trop de sel dans ton plat !", 
-      "options": ["met", "mets", "mes", "mais"], 
-      "r": 1 
-    },
-    { 
-      "q": "Choisis le bon mot : - _________ vas-tu comme ça ?", 
-      "options": ["où", "ou"], 
-      "r": 0 
-    },
-    { 
-      "q": "Choisis le bon mot : - Mon amie s’est fait voler toutes …… montres et …… bijoux.", 
-      "options": ["ses", "ces", "sais", "sait"], 
-      "r": 0 
-    },
-    { 
-      "q": "Choisis le bon mot : - Méfie-toi de …… hommes, ils m’inquiètent.", 
-      "options": ["ses", "ces", "sait", "sais"], 
-      "r": 1 
-    },
-    { 
-      "q": "Choisis le bon mot : - Tu connais _____ garçon qui ______ promène dans le parc ?", 
-      "options": ["ce / se", "se / ce", "se / se", "ce / ce"], 
-      "r": 0 
-    }
-  ]
-},
     "GRAMMAIRE_STRUCTURE": {
-  "domaine": "Phrases simples, complexes et liaisons",
-  "questions": [
-    { 
-      "q": "« Nous sortons quand il fait beau. » est :", 
-      "options": ["Simple", "Complexe"], 
-      "r": 1 
+      "domaine": "Phrases simples, complexes et liaisons",
+      "questions": [
+        { "q": "« Tyler avait un mal de dents épouvantable. » Cette phrase est :", "options": ["Simple", "Complexe"], "r": 0 },
+        { "q": "Combien de verbes conjugués trouve-t-on dans une phrase simple ?", "options": ["Aucun", "Un seul", "Deux ou plus", "Trois"], "r": 1 },
+        { "q": "« Sa mère voulait l’amener chez le dentiste, mais il refusait. » Cette phrase est :", "options": ["Simple", "Complexe"], "r": 1 },
+        { "q": "Quel mot relie les deux propositions : « Tyler a accepté, mais à contrecœur. »", "options": ["Tyler", "accepté", "mais", "à"], "r": 2 },
+        { "q": "Indique la nature de la liaison : « Le dentiste a donné une injection et l’a rassuré. »", "options": ["Juxtaposition", "Coordination", "Subordination"], "r": 1 },
+        { "q": "Indique la nature de la liaison : « Il avait peur d’avoir mal lorsque le dentiste arrachait sa dent. »", "options": ["Juxtaposition", "Coordination", "Subordination"], "r": 2 },
+        { "q": "Tyler ne veut pas y aller ___ il a très peur.", "options": ["car", "et", "ou", "mais"], "r": 0 },
+        { "q": "Le dentiste extrait la dent ___ conseille de bien la brosser.", "options": ["mais", "ou", "et", "donc"], "r": 2 },
+        { "q": "Préfères-tu utiliser une brosse manuelle ___ électrique ?", "options": ["et", "ou", "car", "donc"], "r": 1 },
+        { "q": "Une phrase complexe contient :", "options": ["Un seul mot", "Un seul verbe", "Plusieurs verbes conjugués", "Seulement des noms"], "r": 2 }
+      ]
     },
-    { 
-      "q": "Combien de verbes y a-t-il dans une phrase simple ?", 
-      "options": ["2", "3", "1", "0"], 
-      "r": 2 
-    },
-    { 
-      "q": "Une phrase complexe contient :", 
-      "options": ["Un seul mot", "Un seul verbe", "Plusieurs verbes conjugués", "Aucun sujet"], 
-      "r": 2 
-    },
-    { 
-      "q": "Indique la nature de liaison entre les propositions : « Il pleut, je reste à la maison. »", 
-      "options": ["Juxtaposition", "Coordination", "Subordination"], 
-      "r": 0 
-    },
-    { 
-      "q": "Indique la nature de liaison entre les propositions : « D’habitude Warsama court vite mais aujourd’hui il est fatigué. »", 
-      "options": ["Juxtaposition", "Coordination", "Subordination"], 
-      "r": 1 
-    },
-    { 
-      "q": "Indique la nature de liaison entre les propositions : « Je viendrai à la fête si tu m’invites. »", 
-      "options": ["Juxtaposition", "Coordination", "Subordination"], 
-      "r": 2 
-    },
-    { 
-      "q": "Kadar est fatigué ___ il continue à travailler.", 
-      "options": ["et", "donc", "mais", "car"], 
-      "r": 2 
-    },
-    { 
-      "q": "Elle aime lire ___ écrire.", 
-      "options": ["mais", "ou", "et", "donc"], 
-      "r": 2 
-    },
-    { 
-      "q": "Il a été puni ___ il a fait une énorme bêtise.", 
-      "options": ["car", "ou", "mais", "et"], 
-      "r": 0 
-    },
-    { 
-      "q": "À ton avis, je dois prendre le bus ___ le métro ?", 
-      "options": ["et", "ou", "mais", "car"], 
-      "r": 1 
-    }
-  ]
-},
     "CONJUGAISON": {
-  "domaine": "Imparfait, Présent, Passé Simple et Futur",
-  "questions": [
-    {
-      "q": "Conjugue le verbe être à l’imparfait : - J’ _____________ vraiment surpris en voyant mon ancien camarade de classe.",
-      "options": ["étions", "était", "étais"],
-      "r": 2
-    },
-    {
-      "q": "Conjugue le verbe être à l’imparfait : - Nous _____________ partis tôt à la ferme.",
-      "options": ["sommes", "étions", "étiez"],
-      "r": 1
-    },
-    {
-      "q": "Conjugue le verbe être à l’imparfait : - Les employés __________________tous invités à la réunion.",
-      "options": ["étaient", "était", "étiez"],
-      "r": 0
-    },
-    {
-      "q": "Conjugue le verbe être à l’imparfait : - Tu _____________ très curieux ce jour-là.",
-      "options": ["est", "es", "étais"],
-      "r": 2
-    },
-    {
-      "q": "Conjugue le verbe tomber au présent : - La pluie __________ doucement.",
-      "options": ["tomba", "tombait", "tombe"],
-      "r": 2
-    },
-    {
-      "q": "Conjugue le verbe aller au présent : - La victime ________ porter plainte contre son agresseur.",
-      "options": ["vas", "va", "vais"],
-      "r": 1
-    },
-    {
-      "q": "Conjugue le verbe publier au passé simple : - Il devint écrivain et _____________ plusieurs livres.",
-      "options": ["publia", "publie", "publiait"],
-      "r": 0
-    },
-    {
-      "q": "Conjugue le verbe ALLER au FUTUR simple : - Nous ___________ au musée et nous apprendrons beaucoup de choses sur l’histoire.",
-      "options": ["allons", "irons", "allions"],
-      "r": 1
-    },
-    {
-      "q": "Conjugue le verbe partir au futur simple : - Je ___________ à la réunion demain.",
-      "options": ["pars", "partais", "partirai"],
-      "r": 2
-    },
-    {
-      "q": "Conjugue le verbe dire au futur proche : - Le témoin oculaire ____________ tout ce qu’il a vu ce matin sur le lieu du crime.",
-      "options": ["va dire", "dira", "dit"],
-      "r": 0
+      "domaine": "Imparfait, Passé Composé et Présent",
+      "questions": [
+        { "q": "Conjugue le verbe avoir à l’imparfait : Tyler _____________ un mal de dents.", "options": ["a", "avait", "aura"], "r": 1 },
+        { "q": "Conjugue le verbe vouloir à l’imparfait : Sa mère _____________ l'amener chez le dentiste.", "options": ["voulait", "veut", "voudra"], "r": 0 },
+        { "q": "Conjugue le verbe refuser à l’imparfait : Il _____________ d'y aller.", "options": ["refuse", "refusait", "refusera"], "r": 1 },
+        { "q": "Conjugue le verbe accepter au passé composé : Finalement, Tyler _____________ .", "options": ["a accepté", "accepte", "acceptait"], "r": 0 },
+        { "q": "Conjugue le verbe s'avancer au passé composé : Tyler _____________ vers la salle.", "options": ["s'avance", "s'avançait", "s'est avancé"], "r": 2 },
+        { "q": "Conjugue le verbe demander au passé composé : Il lui _____________ d'ouvrir la bouche.", "options": ["demande", "a demandé", "demandait"], "r": 1 },
+        { "q": "Conjugue le verbe ressentir au passé composé : Tyler n' _____________ aucune douleur.", "options": ["a ressenti", "ressent", "ressentait"], "r": 0 },
+        { "q": "Conjugue le verbe se brosser au présent : Je _____________ les dents deux fois par jour.", "options": ["se brosse", "te brosses", "me brosse"], "r": 2 },
+        { "q": "Conjugue le verbe manger au présent : Tu ne _____________ pas trop de sucreries.", "options": ["manges", "mange", "mangeons"], "r": 0 },
+        { "q": "Conjugue le verbe apprendre au passé composé : Tyler _____________ la bonne manière de faire.", "options": ["apprend", "a appris", "apprenait"], "r": 1 }
+      ]
     }
-  ]
-}
   }
 }

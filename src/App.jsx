@@ -37,6 +37,7 @@ import PlanCodage from "./Codage/PlanCodage";
 import QuizOQREM3a from "./TEXTE/quizM3a.";
 import QuizOQREF5 from "./TEXTE/quizF5";
 import Oqre from "./OQRE/oqre";
+import HumanBodySensesMUI from "./1eAnnee/science/corps";
 
 
 function App() {
@@ -78,7 +79,7 @@ function App() {
          
           <Route path="/activites/1re Année/Francais" element={<ReadingAppee></ReadingAppee>} />
           <Route path="/activites/1re Année/Mathematiques" element={<ReadingApp></ReadingApp>} />
-          <Route path="/activites/1re Année/Mathematiques" element={<ReadingApp></ReadingApp>} />
+          <Route path="/activites/1re Année/Sciences" element={<HumanBodySensesMUI></HumanBodySensesMUI>} />
           <Route path="/activites/8e Année/Sciences" element={<Programme10></Programme10>} />
           
            

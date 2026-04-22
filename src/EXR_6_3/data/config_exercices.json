@@ -60,6 +60,13 @@
     "titre": "Emprunter des livres à la bibliothèque", 
     "chemin": "./data/FR/bibliotheque.json" 
   },
+  { 
+    "slug": "Lasantdentaire", 
+    "niveau": 3, 
+    "matiere": "FR", 
+    "titre": "La santé dentaire", 
+    "chemin": "./data/FR/dent.json" 
+  },
   
   { 
     "slug": "Protéger-les-rhinocéros", 

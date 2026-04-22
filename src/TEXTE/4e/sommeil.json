@@ -1,142 +1,150 @@
 {
-  "matiere": "FRANCAIS",
-  "titre": "Un sommeil réparateur",
-  "startDate": "2026-04-15",
-  "endDate": "2026-04-22",
-   "image_illustration": "/imagFr/sommeil.png",
-
+  "matiere": "FRANÇAIS",
+  "titre": "Jeux aux détectives",
+  "startDate": "2026-04-20",
+  "endDate": "2026-04-27",
+  "image_illustration": "/imagFr/detectives.png",
   "texte_integral": [
     {
       "p": 1,
-      "contenu": "Es-tu une personne fraîche et dispose au réveil, ou plutôt quelqu'un qui a du mal à se tirer du lit la plupart du temps ? Si tu ne dors pas au moins huit heures chaque nuit, à la longue ta santé en souffrira."
+      "contenu": "Mala et Yusef sont assis sur les marches devant la maison de Mala.\n— Vraiment ? Ton oncle Jake veut jouer une partie de baseball avec nous cet après-midi dans le parc ?\n— Invitons Tony, propose Mala. Il est habile pour lancer et attraper la balle."
     },
     {
       "p": 2,
-      "contenu": "Être privé ou privée d'une heure ou deux de sommeil durant quelques jours aura un effet certain sur ta concentration et ta performance. D'un autre côté, dormir plus que le nombre d'heures recommandées ne signifie pas non plus que tu feras davantage de travail et que ça ira mieux. Au contraire, dormir trop est un peu comme manger trop. Cela rend léthargique et la capacité de concentration diminue aussi."
+      "contenu": "Yusef accepte et ils se dirigent vers la maison de leur ami. Ils passent devant la fenêtre ouverte de la cuisine de Tony quand Mala attrape le bras de Yusef et le tire en arrière.\n— Qu’est-ce qu’il…\nMala met un doigt sur ses lèvres.\n— C’est quoi tout ça ? chuchote Yusef.\n— Je pense qu’il y a quelque chose qui ne va pas, dit Mala d’un air troublé. J’ai entrevu Tony par la fenêtre, en train de pleurer."
     },
     {
       "p": 3,
-      "contenu": "Avoir au moins huit heures de sommeil par nuit augmente ta résistance. Les gens qui adoptent de bonnes habitudes de sommeil ont généralement un système immunitaire plus résistant. Pour plusieurs, faire un compromis sur leur sommeil réparateur en dormant moins est impossible. Lorsque tu dors, ton corps répare et régénère ta peau, ton sang et tes cellules nerveuses."
+      "contenu": "— Est-ce qu’il t’a vue ?\n— Non. Je me demande ce qui se passe…\nMala et Yusef s’assoient et se posent des questions.\n— Il n’a pas voulu aller au cinéma hier soir parce que sa famille rendait visite à des amis.\n— Je sais que ça l’a contrarié, ou peut-être qu’il n’est toujours pas content de sa note, remarque Yusef."
     },
     {
       "p": 4,
-      "contenu": "Notre peau luit et nos cheveux brillent lorsque nous dormons suffisamment. Les personnes en manque de sommeil ont généralement des cernes foncés sous leurs yeux."
+      "contenu": "Mala est presque certaine que c’est autre chose.\n— Je crois qu’il étudiera un peu plus la prochaine fois.\n— Je me demande s’il est blessé, dit Yusef, plongé dans ses pensées.\n— Ce n’est probablement pas le cas, dit Mala. Sa mère s’essuyait aussi les yeux."
     },
     {
       "p": 5,
-      "contenu": "Lorsque tu es en santé, tout semble aller pour le mieux. Tu te surpasses et tu réduis ton stress. Tu peux emmagasiner et retenir des informations plus précises. Accomplir des tâches est aussi plus facile et tu fais moins d'erreurs. Plus important encore, chez les conducteurs et les conductrices, les réactions sont meilleures face aux urgences, s'ils ont bien dormi. En conséquence, cela réduit le nombre d'accidents sur la route."
+      "contenu": "Les deux amis restent assis tranquillement pendant un moment, réfléchissant et imaginant toutes sortes de problèmes. Ils décident de téléphoner à Tony plus tard.\n— Salut, Mala ! Salut, Yusef !\n— Comment se passe ta journée ? commence Yusef. Mala lui donne un coup de coude.\n— Ne l’interroge pas trop, chuchote-t-elle.\n— Bien, répond Tony."
     },
     {
       "p": 6,
-      "contenu": "Par-dessus tout, dormir suffisamment diminue notre impatience, notre agressivité et notre anxiété."
+      "contenu": "— On se demandait… Yusef s’arrête au milieu de sa phrase. Il ne sait pas quoi dire ensuite.\n— Hé, Tony, continue Mala. L’évaluation de jeudi était plutôt difficile, tu ne trouves pas ?\n— Je suppose que oui. Je n’ai pas très bien réussi. La prochaine fois, je réviserai davantage."
+    },
+    {
+      "p": 7,
+      "contenu": "Mala fait signe à Yusef de parler d’autre chose.\n— Le film n’était pas très bon. Tu n’as pas raté grand-chose.\n— Mon frère l’a vu la semaine dernière et a dit la même chose, répond Tony.\nMala abandonne et décide d’aller de l’avant et d’inviter Tony au parc.\n— Ouah ! Bien sûr, je serais ravi de venir, mais je vais demander à ma mère, dit Tony."
+    },
+    {
+      "p": 8,
+      "contenu": "Il ne tarde pas à reprendre le téléphone.\n— Maman a dit oui et vous invite tous les deux à dîner. Nous mangerons des tacos avec la sauce salsa que nous avons préparée. Vous auriez dû voir toutes les larmes quand on coupait les oignons. Je n’avais aucune idée que couper des oignons pouvait faire monter des larmes aux yeux, comme si je pleurais."
+    },
+    {
+      "p": 9,
+      "contenu": "Mala sourit lorsque l’appel prend fin. Après la partie, les trois amis demandent à Jake, l’oncle de Mala, comment ils ont joué.\n— Vous étiez fantastiques ! Vous avez attrapé presque toutes les balles, déclare l’oncle Jake en les félicitant.\nYusef sourit.\n— On dirait qu’on se débrouille mieux au baseball qu’à jouer aux détectives."
     }
   ],
-
   "themes": {
     "COMPREHENSION": {
       "domaine": "Analyse du texte",
       "questions": [
         {
-          "q": "Que veut dire l'expression « fraîche et dispose » au début du texte ?",
-          "options": ["Fatiguée et malade", "En pleine forme et prête", "En colère et fâchée", "Triste et déprimée"],
-          "r": 1
-        },
-        {
-          "q": "Quel est le contraire du mot « diminuer » ?",
-          "options": ["Réduire", "Baisser", "Augmenter", "Ralentir"],
-          "r": 2
-        },
-        {
-          "q": "Dans le texte, que veut dire le mot « léthargique » ?",
-          "options": ["Plein d'énergie", "Très fatigué et lent", "Très intelligent", "Nerveux et stressé"],
-          "r": 1
-        },
-        {
-          "q": "Quel mot veut dire la même chose que « davantage » ?",
-          "options": ["Moins", "Plus", "Pareil", "Presque"],
-          "r": 1
-        },
-        {
-          "q": "Que veut dire l'action d'« emmagasiner » des informations ?",
-          "options": ["Les oublier très vite", "Les acheter dans un magasin", "Les garder dans sa tête", "Les effacer complètement"],
-          "r": 2
-        },
-        {
-          "q": "Quel est le contraire du mot « agressivité » ?",
-          "options": ["Calme et douceur", "Colère", "Violence", "Impatience"],
+          "q": "Qui est Jake ?",
+          "options": ["L'oncle de Mala", "Un ami de Tony", "L'oncle de Yusef", "Le frère de Mala"],
           "r": 0
         },
         {
-          "q": "Que veut dire l'expression « faire un compromis sur son sommeil » ?",
-          "options": ["Accepter de dormir moins", "Dormir beaucoup trop", "Acheter un nouveau lit", "Faire une promesse"],
+          "q": "Quel sport les enfants veulent-ils pratiquer cet après-midi ?",
+          "options": ["Le football", "Le basketball", "Le baseball", "Le tennis"],
+          "r": 2
+        },
+        {
+          "q": "Pourquoi Mala veut-elle inviter Tony ?",
+          "options": ["Parce qu'il a un nouveau ballon", "Parce qu'il est habile pour lancer et attraper la balle", "Parce qu'il s'ennuie tout seul", "Parce que c'est son anniversaire"],
+          "r": 1
+        },
+        {
+          "q": "Par quelle pièce de la maison de Tony passent-ils ?",
+          "options": ["Le salon", "La cuisine", "La chambre", "Le garage"],
+          "r": 1
+        },
+        {
+          "q": "Que fait Tony quand Mala l'aperçoit par la fenêtre ?",
+          "options": ["Il rit", "Il mange", "Il pleure", "Il dort"],
+          "r": 2
+        },
+        {
+          "q": "Que fait Mala pour dire à Yusef de se taire ?",
+          "options": ["Elle lui crie dessus", "Elle met un doigt sur ses lèvres", "Elle s'enfuit", "Elle ferme la fenêtre"],
+          "r": 1
+        },
+        {
+          "q": "Pourquoi Tony n'a-t-il pas voulu aller au cinéma la veille ?",
+          "options": ["Il était malade", "Sa famille rendait visite à des amis", "Il n'aimait pas le film", "Il étudiait"],
+          "r": 1
+        },
+        {
+          "q": "Quelle autre raison Yusef imagine-t-il pour expliquer les larmes de Tony ?",
+          "options": ["Sa note à l'évaluation", "La perte de son chien", "Une dispute avec sa mère", "Un jouet cassé"],
           "r": 0
         },
         {
-          "q": "Que fait le corps quand il « régénère » la peau pendant la nuit ?",
-          "options": ["Il l'abîme", "Il la détruit", "Il la répare et la renouvelle", "Il la salit"],
-          "r": 2
-        },
-        {
-          "q": "Quel est le contraire du mot « foncé » (comme dans l'expression des cernes foncés) ?",
-          "options": ["Sombre", "Noir", "Pâle ou clair", "Creux"],
-          "r": 2
-        },
-        {
-          "q": "Quel mot veut dire la même chose que « luit » dans la phrase « notre peau luit » ?",
-          "options": ["Devient blanche", "Sèche", "Brille", "Tombe"],
-          "r": 2
-        },
-      
-    
-        {
-          "q": "Combien d'heures de sommeil sont recommandées chaque nuit selon le texte ?",
-          "options": ["6 heures", "7 heures", "8 heures", "9 heures"],
-          "r": 2
-        },
-        {
-          "q": "Quel est l'effet d'un manque de sommeil sur la concentration ?",
-          "options": ["Elle s'améliore", "Elle reste stable", "Elle diminue", "Elle disparaît"],
-          "r": 2
-        },
-        {
-          "q": "Que se passe-t-il si on dort trop ?",
-          "options": ["On est plus productif", "On devient léthargique", "On a plus faim", "On est plus stressé"],
+          "q": "Pourquoi Mala pense-t-elle que Tony n'est pas blessé ?",
+          "options": ["Il sourit", "Sa mère s'essuyait aussi les yeux", "Il court dans la maison", "Il ne saigne pas"],
           "r": 1
         },
         {
-          "q": "Quel est l'effet du sommeil sur le système immunitaire ?",
-          "options": ["Il l'affaiblit", "Il le rend plus résistant", "Il ne change rien", "Il le supprime"],
-          "r": 1
-        },
-        {
-          "q": "Que régénère le corps pendant le sommeil ?",
-          "options": ["Les os", "La peau, le sang et les cellules nerveuses", "Les muscles", "Les cheveux"],
-          "r": 1
-        },
-        {
-          "q": "Quel est l'effet du manque de sommeil sur l'apparence ?",
-          "options": ["La peau brille", "Les cheveux tombent", "Des cernes foncés apparaissent", "Les yeux changent de couleur"],
+          "q": "Comment Mala et Yusef décident-ils de contacter Tony ?",
+          "options": ["Ils frappent à la porte", "Ils lui envoient une lettre", "Ils lui téléphonent", "Ils lui crient par la fenêtre"],
           "r": 2
         },
         {
-          "q": "Quel est l'avantage du sommeil pour les conducteurs ?",
-          "options": ["Ils roulent plus vite", "Ils ont de meilleures réactions", "Ils consomment moins d'essence", "Ils écoutent plus de musique"],
+          "q": "Que fait Mala quand Yusef commence à poser trop de questions au téléphone ?",
+          "options": ["Elle raccroche", "Elle lui donne un coup de coude", "Elle se met à pleurer", "Elle se fâche contre lui"],
           "r": 1
         },
         {
-          "q": "Quel est l'effet du sommeil sur le stress ?",
-          "options": ["Il l'augmente", "Il le réduit", "Il le transforme", "Il le supprime"],
-          "r": 1
+          "q": "Quel jour de la semaine a eu lieu l'évaluation difficile ?",
+          "options": ["Lundi", "Mardi", "Mercredi", "Jeudi"],
+          "r": 3
         },
         {
-          "q": "Quel est l'effet du sommeil sur l'humeur ?",
-          "options": ["On devient plus impatient", "On devient plus agressif", "On diminue impatience, agressivité et anxiété", "On devient plus triste"],
+          "q": "Que compte faire Tony la prochaine fois qu'il aura une évaluation ?",
+          "options": ["Tricher", "Ne pas y aller", "Réviser davantage", "Pleurer"],
           "r": 2
         },
         {
-          "q": "Que permet de mieux faire le sommeil selon le texte ?",
-          "options": ["Manger plus", "Retenir des informations", "Courir plus vite", "Parler plus fort"],
+          "q": "Qui a dit que le film n'était pas très bon avant que Mala n'en parle ?",
+          "options": ["L'oncle Jake", "Le frère de Tony", "La mère de Yusef", "Personne"],
           "r": 1
+        },
+        {
+          "q": "Pourquoi Tony s'absente-t-il pendant l'appel téléphonique ?",
+          "options": ["Pour aller aux toilettes", "Pour demander la permission à sa mère de sortir", "Pour continuer de pleurer", "Pour chercher son gant"],
+          "r": 1
+        },
+        {
+          "q": "Que vont manger les enfants pour le dîner chez Tony ?",
+          "options": ["De la pizza", "Des hamburgers", "Des tacos", "Des pâtes"],
+          "r": 2
+        },
+        {
+          "q": "Quelle était la vraie raison des larmes de Tony et de sa mère ?",
+          "options": ["Ils étaient tristes", "Ils coupaient des oignons", "Ils se sont disputés", "Ils regardaient un film triste"],
+          "r": 1
+        },
+        {
+          "q": "Que fait Mala lorsque l'appel avec Tony se termine ?",
+          "options": ["Elle se met en colère", "Elle est triste", "Elle sourit", "Elle pleure"],
+          "r": 2
+        },
+        {
+          "q": "Comment l'oncle Jake trouve-t-il leur façon de jouer au baseball ?",
+          "options": ["Médiocre", "Bonne", "Fantastique", "Mauvaise"],
+          "r": 2
+        },
+        {
+          "q": "Que conclut Yusef à la fin de l'histoire ?",
+          "options": ["Qu'ils sont de mauvais joueurs de baseball", "Qu'ils sont de meilleurs détectives que joueurs", "Qu'ils se débrouillent mieux au baseball qu'à jouer aux détectives", "Qu'ils détestent le baseball"],
+          "r": 2
         }
       ]
     },
@@ -144,53 +152,53 @@
       "domaine": "Homophones (a/à, et/est, son/sont, mes/mai/met, peu/peut)",
       "questions": [
         {
-          "q": "Il ___ du mal à se lever le matin.",
-          "options": ["a", "à", "as", "ai"],
+          "q": "Mala ___ Yusef sont assis sur les marches.",
+          "options": ["et", "est", "es", "ai"],
           "r": 0
         },
         {
-          "q": "Le sommeil ___ important pour la santé.",
+          "q": "L'oncle Jake ___ entraîneur de baseball.",
+          "options": ["et", "est", "es", "ai"],
+          "r": 1
+        },
+        {
+          "q": "Tony ___ habile pour lancer la balle.",
           "options": ["est", "et", "es", "ai"],
           "r": 0
         },
         {
-          "q": "Les gens qui dorment bien ___ en meilleure santé.",
+          "q": "Ils ont passé la journée ___ jouer au parc.",
+          "options": ["a", "à", "as", "ah"],
+          "r": 1
+        },
+        {
+          "q": "Mala ___ vu Tony par la fenêtre.",
+          "options": ["a", "à", "as", "ah"],
+          "r": 0
+        },
+        {
+          "q": "Les amis de Tony ___ inquiets pour lui.",
           "options": ["son", "sont", "sons", "sonts"],
           "r": 1
         },
         {
-  "q": "Il ___ son manteau avant de sortir.",
-  "options": ["met", "mes", "mai", "mets"],
-  "r": 0
-},
+          "q": "Tony prend ___ gant de baseball pour jouer.",
+          "options": ["son", "sont", "sons", "sent"],
+          "r": 0
+        },
         {
-          "q": "Il reste un ___ de temps avant minuit.",
+          "q": "Il ajoutera un ___ de sauce salsa sur son taco.",
           "options": ["peu", "peux", "peut", "peus"],
           "r": 0
         },
         {
-  "q": "Le manque de sommeil ___ un effet négatif sur la concentration.",
-  "options": ["a", "à", "as", "ai"],
-  "r": 0
-},
-        {
-          "q": "On ___ voir les effets du sommeil sur la peau.",
+          "q": "On ___ se tromper facilement quand on joue aux détectives.",
           "options": ["peu", "peux", "peut", "peus"],
           "r": 2
         },
         {
-          "q": "Il ___ toujours fatigué le matin.",
-          "options": ["est", "et", "es", "ai"],
-          "r": 0
-        },
-        {
-          "q": "Les nuits ___ trop courtes pour lui.",
-          "options": ["son", "sont", "sons", "sonts"],
-          "r": 1
-        },
-        {
-          "q": "Il ___ du mal à se concentrer.",
-          "options": ["a", "à", "as", "ai"],
+          "q": "Mala ___ son doigt sur ses lèvres pour demander le silence.",
+          "options": ["met", "mes", "mai", "mets"],
           "r": 0
         }
       ]
@@ -199,53 +207,53 @@
       "domaine": "Conjonctions de coordination (mais, ou, et, donc, or, ni, car)",
       "questions": [
         {
-          "q": "Il veut dormir ___ il est fatigué.",
+          "q": "Mala ___ Yusef décident d'enquêter.",
+          "options": ["mais", "et", "ou", "donc"],
+          "r": 1
+        },
+        {
+          "q": "Tony pleure, ___ il n'est pas triste.",
+          "options": ["mais", "ou", "ni", "car"],
+          "r": 0
+        },
+        {
+          "q": "Ils pensent qu'il est contrarié ___ blessé.",
+          "options": ["ou", "mais", "car", "donc"],
+          "r": 0
+        },
+        {
+          "q": "Ils veulent savoir la vérité, ___ ils lui téléphonent.",
+          "options": ["donc", "ou", "ni", "car"],
+          "r": 0
+        },
+        {
+          "q": "Tony accepte l'invitation, ___ il doit demander à sa mère d'abord.",
+          "options": ["mais", "et", "ou", "ni"],
+          "r": 0
+        },
+        {
+          "q": "Il a eu une mauvaise note, ___ il révisera plus la prochaine fois.",
+          "options": ["donc", "mais", "ou", "ni"],
+          "r": 0
+        },
+        {
+          "q": "Il ne pleurait pas de tristesse ___ de douleur.",
+          "options": ["ni", "ou", "et", "donc"],
+          "r": 0
+        },
+        {
+          "q": "Ils mangent des tacos ___ de la salsa.",
+          "options": ["et", "mais", "ou", "car"],
+          "r": 0
+        },
+        {
+          "q": "Tony a les larmes aux yeux ___ il coupe des oignons.",
           "options": ["car", "mais", "ni", "ou"],
           "r": 0
         },
         {
-          "q": "Il dort beaucoup, ___ il est toujours en forme.",
-          "options": ["donc", "mais", "ou", "car"],
-          "r": 0
-        },
-        {
-          "q": "Veux-tu dormir ___ travailler ?",
-          "options": ["ou", "ni", "car", "donc"],
-          "r": 0
-        },
-        {
-          "q": "Il est tard, ___ il faut se coucher.",
-          "options": ["donc", "mais", "ni", "car"],
-          "r": 0
-        },
-        {
-          "q": "Il ne dort ___ la journée ___ la nuit.",
-          "options": ["ni / ni", "ou / ou", "et / et", "car / car"],
-          "r": 0
-        },
-        {
-          "q": "Le sommeil répare le corps ___ l'esprit.",
-          "options": ["et", "mais", "ni", "car"],
-          "r": 0
-        },
-        {
-          "q": "Il est fatigué, ___ il va se coucher.",
-          "options": ["donc", "car", "mais", "ni"],
-          "r": 0
-        },
-        {
-          "q": "Il dort mal, ___ il est de mauvaise humeur.",
-          "options": ["donc", "mais", "ni", "ou"],
-          "r": 0
-        },
-        {
-          "q": "Il veut dormir ___ il a un examen demain.",
-          "options": ["car", "donc", "mais", "ni"],
-          "r": 0
-        },
-        {
-          "q": "Il dort peu, ___ il est toujours en retard.",
-          "options": ["donc", "mais", "ni", "ou"],
+          "q": "Ils ne sont pas de bons détectives, ___ ils jouent très bien au baseball !",
+          "options": ["mais", "ou", "ni", "car"],
           "r": 0
         }
       ]
@@ -254,54 +262,54 @@
       "domaine": "Le présent de l'indicatif",
       "questions": [
         {
-          "q": "Chaque nuit, je (dormir) huit heures.",
-          "options": ["dors", "dort", "dorment", "dormons"],
+          "q": "Mala et Yusef (être) ___ assis sur les marches.",
+          "options": ["sont", "est", "sommes", "êtes"],
           "r": 0
         },
         {
-          "q": "Tu (se réveiller) en pleine forme.",
-          "options": ["te réveilles", "te réveille", "te réveillons", "te réveillent"],
+          "q": "Je (penser) ___ qu'il y a un problème.",
+          "options": ["penses", "pense", "pensons", "pensent"],
+          "r": 1
+        },
+        {
+          "q": "Tu (trouver) ___ que l'évaluation était difficile ?",
+          "options": ["trouves", "trouve", "trouvons", "trouvent"],
           "r": 0
         },
         {
-          "q": "Il (avoir) besoin de sommeil.",
-          "options": ["a", "as", "avons", "ont"],
+          "q": "Nous (manger) ___ des tacos ce soir.",
+          "options": ["mangons", "mangeons", "mangent", "mangez"],
+          "r": 1
+        },
+        {
+          "q": "Vous (attraper) ___ presque toutes les balles.",
+          "options": ["attrapes", "attrapent", "attrapez", "attrapons"],
+          "r": 2
+        },
+        {
+          "q": "Tony (répondre) ___ au téléphone rapidement.",
+          "options": ["réponds", "répond", "répondent", "répondez"],
+          "r": 1
+        },
+        {
+          "q": "Ils (se diriger) ___ vers la maison de leur ami.",
+          "options": ["se dirigent", "se dirige", "se dirigeons", "se dirigez"],
           "r": 0
         },
         {
-          "q": "Nous (réparer) notre corps en dormant.",
-          "options": ["réparons", "répare", "réparent", "répares"],
+          "q": "Je ne (savoir) ___ pas quoi dire au téléphone.",
+          "options": ["sais", "sait", "savons", "savent"],
           "r": 0
         },
         {
-          "q": "Vous (être) en meilleure santé grâce au sommeil.",
-          "options": ["êtes", "est", "sommes", "sont"],
+          "q": "L'oncle Jake (vouloir) ___ jouer avec eux cet après-midi.",
+          "options": ["veut", "veux", "voulons", "veulent"],
           "r": 0
         },
         {
-          "q": "Ils (diminuer) leur stress en dormant bien.",
-          "options": ["diminuent", "diminue", "diminuons", "diminues"],
-          "r": 0
-        },
-        {
-          "q": "Je (se sentir) mieux après une bonne nuit.",
-          "options": ["me sens", "te sens", "se sent", "nous sentons"],
-          "r": 0
-        },
-        {
-          "q": "Tu (retrouver) ta concentration grâce au sommeil.",
-          "options": ["retrouves", "retrouve", "retrouvons", "retrouvent"],
-          "r": 0
-        },
-        {
-          "q": "Il (réduire) son anxiété en dormant suffisamment.",
-          "options": ["réduit", "réduis", "réduisons", "réduisent"],
-          "r": 0
-        },
-        {
-          "q": "Nous (avoir) plus d'énergie après une bonne nuit.",
-          "options": ["avons", "a", "as", "ont"],
-          "r": 0
+          "q": "Les oignons (faire) ___ pleurer quand on les coupe.",
+          "options": ["faisons", "font", "fait", "faites"],
+          "r": 1
         }
       ]
     }

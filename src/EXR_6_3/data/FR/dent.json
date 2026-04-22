@@ -1,0 +1,258 @@
+{
+  "test_info": {
+    "titre": "Test de lecture et grammaire - La visite chez le dentiste",
+    "niveau": "3e année",
+    "session": "La santé dentaire",
+    "matiere": "Français",
+    "cahier": "1",
+    "organisme": "Adaptation Scolastique"
+  },
+  "parties": [
+    {
+      "id": "Partie A",
+      "sections": [
+        {
+          "type": "lecture",
+          "titre": "La visite chez le dentiste",
+          "image": "/imageoqre/dent.jpg",
+          "texte_integral": [
+            {
+              "p": 1,
+              "contenu": "Tyler avait un mal de dents épouvantable. Sa mère voulait l’amener chez le dentiste, mais il refusait. Il avait peur d’avoir mal lorsque le dentiste arrachait sa dent. Sa mère lui avait expliqué que s’il ne consultait pas le dentiste, sa douleur serait encore pire. Finalement, Tyler a accepté, mais à contrecœur."
+            },
+            {
+              "p": 2,
+              "contenu": "Il y avait plusieurs personnes chez le dentiste. C’était bien le tour de Tyler. Tyler s’est avancé nerveusement vers la salle de consultation et s’est assis. Le dentiste avait l’air sympathique. Il lui a demandé d’ouvrir la bouche. Ensuite, il a dit à Tyler qu’il devrait extraire la dent cariée. Le dentiste a donné une injection à Tyler et l’a rassuré en disant qu’il ne sentirait rien."
+            },
+            {
+              "p": 3,
+              "contenu": "À sa grande surprise, Tyler n’a ressenti aucune douleur. Le dentiste lui a conseillé de se brosser les dents deux fois par jour. Tyler a appris la bonne manière de se brosser les dents. Il a aussi appris qu’il était nécessaire de passer le fil de soie dentaire pour avoir des gencives saines. Le dentiste a également rappelé à Tyler de ne pas manger trop de sucreries afin de ne pas avoir de caries."
+            }
+          ],
+          "questions": [
+            {
+              "numero": 1,
+              "enonce": "Quel était le problème de Tyler ?",
+              "options": [
+                "Un mal de ventre",
+                "Un mal de tête",
+                "Un mal de dents épouvantable",
+                "Une jambe cassée"
+              ],
+              "reponse_correcte": "Un mal de dents épouvantable"
+            },
+            {
+              "numero": 2,
+              "enonce": "Où sa mère voulait-elle l'amener ?",
+              "options": [
+                "À l'école",
+                "Chez le médecin",
+                "Au parc",
+                "Chez le dentiste"
+              ],
+              "reponse_correcte": "Chez le dentiste"
+            },
+            {
+              "numero": 3,
+              "enonce": "Pourquoi Tyler refusait-il d'y aller au début ?",
+              "options": [
+                "Il voulait jouer",
+                "Il avait peur d'avoir mal",
+                "Il n'aimait pas sortir",
+                "Il était fatigué"
+              ],
+              "reponse_correcte": "Il avait peur d'avoir mal"
+            },
+            {
+              "numero": 4,
+              "enonce": "Comment Tyler a-t-il finalement accepté d'y aller ?",
+              "options": [
+                "Avec enthousiasme",
+                "En pleurant",
+                "À contrecœur",
+                "En riant"
+              ],
+              "reponse_correcte": "À contrecœur"
+            },
+            {
+              "numero": 5,
+              "enonce": "Comment Tyler s'est-il avancé vers la salle de consultation ?",
+              "options": [
+                "Rapidement",
+                "Nerveusement",
+                "En courant",
+                "Avec le sourire"
+              ],
+              "reponse_correcte": "Nerveusement"
+            },
+            {
+              "numero": 6,
+              "enonce": "Que devait faire le dentiste selon son diagnostic ?",
+              "options": [
+                "Nettoyer les dents",
+                "Mettre une bague",
+                "Rien du tout",
+                "Extraire la dent cariée"
+              ],
+              "reponse_correcte": "Extraire la dent cariée"
+            },
+            {
+              "numero": 7,
+              "enonce": "Qu'a fait le dentiste pour que Tyler ne ressente rien ?",
+              "options": [
+                "Il a donné un verre d'eau",
+                "Il a donné une injection",
+                "Il a raconté une blague",
+                "Il lui a donné un bonbon"
+              ],
+              "reponse_correcte": "Il a donné une injection"
+            },
+            {
+              "numero": 8,
+              "enonce": "Pendant l'extraction, comment Tyler s'est-il senti ?",
+              "options": [
+                "Il a pleuré de douleur",
+                "Il a eu très mal",
+                "Il a eu un peu mal",
+                "Il n'a ressenti aucune douleur"
+              ],
+              "reponse_correcte": "Il n'a ressenti aucune douleur"
+            },
+            {
+              "numero": 9,
+              "enonce": "Combien de fois par jour faut-il se brosser les dents selon le dentiste ?",
+              "options": [
+                "Une fois par jour",
+                "Deux fois par jour",
+                "Trois fois par jour",
+                "Jamais"
+              ],
+              "reponse_correcte": "Deux fois par jour"
+            },
+            {
+              "numero": 10,
+              "enonce": "Que faut-il utiliser pour avoir des gencives saines ?",
+              "options": [
+                "Le fil de soie dentaire",
+                "Du rince-bouche",
+                "Du sel",
+                "Une brosse électrique"
+              ],
+              "reponse_correcte": "Le fil de soie dentaire"
+            },
+            {
+              "numero": 11,
+              "enonce": "Que doit éviter Tyler pour ne pas avoir de nouvelles caries ?",
+              "options": [
+                "Manger des légumes",
+                "Boire de l'eau",
+                "Manger trop de sucreries",
+                "Manger des fruits"
+              ],
+              "reponse_correcte": "Manger trop de sucreries"
+            },
+            {
+              "numero": 12,
+              "enonce": "Que veut dire l'expression « à contrecœur » dans le texte ?",
+              "options": [
+                "Avec joie",
+                "Sans en avoir envie",
+                "En pleurant beaucoup",
+                "Très rapidement"
+              ],
+              "reponse_correcte": "Sans en avoir envie"
+            },
+            {
+              "numero": 13,
+              "enonce": "Dans la phrase « Tyler avait un mal de dents », quel est le verbe ?",
+              "options": [
+                "Tyler",
+                "avait",
+                "mal",
+                "dents"
+              ],
+              "reponse_correcte": "avait"
+            },
+            {
+              "numero": 14,
+              "enonce": "Dans la phrase « Le dentiste avait l'air sympathique », quel est l'adjectif ?",
+              "options": [
+                "dentiste",
+                "avait",
+                "air",
+                "sympathique"
+              ],
+              "reponse_correcte": "sympathique"
+            },
+            {
+              "numero": 15,
+              "enonce": "Quel est le sujet dans la phrase « Sa mère voulait l'amener » ?",
+              "options": [
+                "voulait",
+                "Sa mère",
+                "l'amener",
+                "Sa"
+              ],
+              "reponse_correcte": "Sa mère"
+            },
+            {
+              "numero": 16,
+              "enonce": "À quel temps est le verbe dans la phrase « Tyler n'a ressenti aucune douleur » ?",
+              "options": [
+                "Présent",
+                "Futur",
+                "Passé composé",
+                "Imparfait"
+              ],
+              "reponse_correcte": "Passé composé"
+            },
+            {
+              "numero": 17,
+              "enonce": "Quel est le contraire du mot « nerveusement » ?",
+              "options": [
+                "Rapidement",
+                "Calmement",
+                "Doucement",
+                "Tristement"
+              ],
+              "reponse_correcte": "Calmement"
+            },
+            {
+              "numero": 18,
+              "enonce": "Dans la phrase « Il a refusé », par qui peut-on remplacer le pronom « Il » ?",
+              "options": [
+                "Le dentiste",
+                "Tyler",
+                "Le voisin",
+                "Le médecin"
+              ],
+              "reponse_correcte": "Tyler"
+            },
+            {
+              "numero": 19,
+              "enonce": "À quel temps sont conjugués les verbes « avait, voulait, refusait » dans le premier paragraphe ?",
+              "options": [
+                "Présent",
+                "Passé composé",
+                "Futur",
+                "Imparfait"
+              ],
+              "reponse_correcte": "Imparfait"
+            },
+            {
+              "numero": 20,
+              "enonce": "Quel est le but principal de ce texte ?",
+              "options": [
+                "Expliquer comment on fabrique une brosse à dents",
+                "Raconter l'histoire d'un garçon qui va chez le dentiste",
+                "Faire peur aux enfants",
+                "Donner une recette pour faire des sucreries"
+              ],
+              "reponse_correcte": "Raconter l'histoire d'un garçon qui va chez le dentiste"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BookOpen, Award, Loader2, ChevronLeft, X, ImageIcon, GraduationCap, AlertCircle } from "lucide-react";
-import data from "./4e/sommeil.json"; 
+import data from "./4e/nouvel_eleve.json"; 
 
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby7ozaPvt2WFlJdEff3TsjLp6csxdYdeRjL-XC7gU2J03KpEoaShue2dqy7Xokf9fHo/exec";
