@@ -35,13 +35,13 @@
       "La bouche", "Le bras", "La jambe", "Les cheveux", "Le cou", "Les doigts"
     ],
     "zones": [
-      { "top": "4%", "left": "7%", "attendu": "Les cheveux" },
+      { "top": "4%", "left": "7%", "attendu": "La tête" },
       { "top": "30%", "left": "2%", "attendu": "L'oreille" },
       { "top": "47%", "left": "2%", "attendu": "La bouche" },
       { "top": "57%", "left": "2%", "attendu": "Le bras" },
       { "top": "73%", "left": "4%", "attendu": "La main" },
       { "top": "87%", "left": "11%", "attendu": "La jambe" },
-      { "top": "4%", "left": "59%", "attendu": "La tête" },
+      { "top": "4%", "left": "59%", "attendu": "Les cheveux" },
       { "top": "24%", "left": "74%", "attendu": "L'œil" },
       { "top": "45%", "left": "64%", "attendu": "Le nez" },
       { "top": "55%", "left": "60%", "attendu": "Le cou" },
