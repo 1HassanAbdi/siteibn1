@@ -1,0 +1,127 @@
+{
+     "theme": "Les Animeaux de la ferme", 
+  "exercice1_appariement": [
+    { "emoji": "🐔", "nom": "La poule" },
+    { "emoji": "🐄", "nom": "La vache" },
+    { "emoji": "🐖", "nom": "Le cochon" },
+    { "emoji": "🐑", "nom": "Le mouton" },
+    { "emoji": "🐴", "nom": "Le cheval" },
+    { "emoji": "🐶", "nom": "Le chien" },
+    { "emoji": "🐱", "nom": "Le chat" },
+    { "emoji": "🦆", "nom": "Le canard" },
+    { "emoji": "🐇", "nom": "Le lapin" },
+    { "emoji": "🐮", "nom": "Le veau" }
+  ],
+  "exercice2_glisser_deposer": [
+    { "emoji": "🐔", "nom": "La poule" },
+    { "emoji": "🐄", "nom": "La vache" },
+    { "emoji": "🐖", "nom": "Le cochon" },
+    { "emoji": "🐑", "nom": "Le mouton" },
+    { "emoji": "🐴", "nom": "Le cheval" },
+    { "emoji": "🐶", "nom": "Le chien" },
+    { "emoji": "🐱", "nom": "Le chat" },
+    { "emoji": "🦆", "nom": "Le canard" },
+    { "emoji": "🐇", "nom": "Le lapin" },
+    { "emoji": "🐮", "nom": "Le veau" }
+  ],
+  "exercice3_schema": {
+     "imageUrl": "/ferme1.png",  
+    "altText": "La ferme", 
+
+    "etiquettes_a_glisser": [
+      "La poule", "La vache", "Le cochon", "Le mouton", "Le cheval",
+      "veau", "Le chat", "Le canard", "Le lapin",  "La ferme"
+    ],
+    "zones": [
+      { "top": "27%", "left": "28%", "attendu": "La vache" },
+      { "top": "32%", "left": "0%", "attendu": "La poule" },
+       { "top": "58%", "left": "0%", "attendu": "Le cheval" },
+       { "top": "85%", "left": "0%", "attendu": "veau" },
+       { "top": "82%", "left": "45%", "attendu": "La ferme" },
+         { "top": "52%", "left": "26%", "attendu": "Le chat" },
+         { "top": "55%", "left": "52%", "attendu": "Le canard" },
+         { "top": "28%", "left": "52%", "attendu": "Le cochon" },
+         { "top": "30%", "left": "75%", "attendu": "Le mouton" },
+         { "top": "62%", "left": "75%", "attendu": "Le lapin" }        
+   
+    ]
+  },
+  "exercice4_qcm": [
+    {
+      "question": "Quel animal donne du lait ?",
+      "options": ["La poule", "La vache", "Le cochon"],
+      "reponse": "La vache",
+      "emoji": "🥛"
+    },
+    {
+      "question": "Quel animal pond des œufs ?",
+      "options": ["Le mouton", "La poule", "Le cheval"],
+      "reponse": "La poule",
+      "emoji": "🥚"
+    },
+    {
+      "question": "Quel animal dit 'coin coin' ?",
+      "options": ["Le canard", "Le chien", "Le chat"],
+      "reponse": "Le canard",
+      "emoji": "🦆"
+    },
+    {
+      "question": "Quel animal vit dans le poulailler ?",
+      "options": ["La vache", "La poule", "Le lapin"],
+      "reponse": "La poule",
+      "emoji": "🐔"
+    },
+    {
+      "question": "Quel animal a des cornes ?",
+      "options": ["Le mouton", "Le cochon", "La vache"],
+      "reponse": "La vache",
+      "emoji": "🐄"
+    },
+    {
+      "question": "Quel animal aime se rouler dans la boue ?",
+      "options": ["Le cheval", "Le cochon", "Le chien"],
+      "reponse": "Le cochon",
+      "emoji": "🐖"
+    },
+    {
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "options": ["Le chat", "Le chien", "Le lapin"],
+      "reponse": "Le chien",
+      "emoji": "🐶"
+    },
+    {
+      "question": "Quel animal a une crinière ?",
+      "options": ["Le cheval", "Le mouton", "Le chat"],
+      "reponse": "Le cheval",
+      "emoji": "🐴"
+    },
+    {
+      "question": "Quel animal a des plumes ?",
+      "options": ["Le lapin", "Le canard", "Le cochon"],
+      "reponse": "Le canard",
+      "emoji": "🦆"
+    },
+    {
+      "question": "Quel animal vit dans un clapier ?",
+      "options": ["Le lapin", "Le chat", "Le chien"],
+      "reponse": "Le lapin",
+      "emoji": "🐇"
+    }
+  ],
+  "dropZonesImage": [
+    { "id": "zone-poulailler", "top": "5%", "left": "10%", "expected": "poulailler" },
+    { "id": "zone-poule", "top": "15%", "left": "25%", "expected": "poule" },
+    { "id": "zone-canard", "top": "30%", "left": "10%", "expected": "canard" },
+    { "id": "zone-cochon", "top": "45%", "left": "20%", "expected": "cochon" },
+    { "id": "zone-mouton", "top": "60%", "left": "15%", "expected": "mouton" },
+    { "id": "zone-cheval", "top": "75%", "left": "10%", "expected": "cheval" },
+    { "id": "zone-etable", "top": "5%", "left": "60%", "expected": "etable" },
+    { "id": "zone-vache", "top": "20%", "left": "65%", "expected": "vache" },
+    { "id": "zone-veau", "top": "35%", "left": "70%", "expected": "veau" },
+    { "id": "zone-chien", "top": "50%", "left": "60%", "expected": "chien" },
+    { "id": "zone-chat", "top": "65%", "left": "75%", "expected": "chat" },
+    { "id": "zone-lapin", "top": "80%", "left": "60%", "expected": "lapin" },
+    { "id": "zone-pre", "top": "50%", "left": "40%", "expected": "pre" },
+    { "id": "zone-ferme", "top": "30%", "left": "40%", "expected": "ferme" }
+  ]
+}

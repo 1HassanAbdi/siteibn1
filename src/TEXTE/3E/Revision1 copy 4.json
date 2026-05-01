@@ -1,0 +1,141 @@
+{
+  "matiere": "Mathématiques 🧮 - 3e année (OQRE)",
+  "texte": "Lisez bien chaque question ! Les petits dessins (émojis) sont là pour vous aider à mieux comprendre. Bonne chance ! 🍀",
+  "themes": {
+    "Nombres_Operations": {
+      "domaine": "Nombres et Opérations 🔢",
+      "questions": [
+        {
+          "q": "Dans le nombre 345, que représente le chiffre 4 ?",
+          "options": ["4 unités", "40 (4 dizaines)", "400 (4 centaines)", "34"],
+          "r": 1
+        },
+        {
+          "q": "Sarah coupe une pizza 🍕 en 4 pointes égales. Elle en mange 3. Quelle fraction de la pizza reste-t-il ?",
+          "options": ["1/4 🍕", "2/4 🍕", "3/4 🍕", "4/4 🍕"],
+          "r": 0
+        },
+        {
+          "q": "Trouve le prochain nombre dans cette suite : 5, 10, 15, 20, ___ ?",
+          "options": ["21", "22", "25", "30"],
+          "r": 2
+        },
+        {
+          "q": "Trouve la différence : 50 🍎 - 25 🍎 = ?",
+          "options": ["15 🍎", "20 🍎", "25 🍎", "30 🍎"],
+          "r": 2
+        },
+        {
+          "q": "Comment arrondis-tu le nombre 82 à la dizaine la plus proche 🎯 ?",
+          "options": ["80", "85", "90", "100"],
+          "r": 0
+        }
+      ]
+    },
+    "Donnees_Probabilites": {
+      "domaine": "Données et Probabilités 📊",
+      "questions": [
+        {
+          "q": "Dans un pictogramme, 1 ⭐ = 2 élèves. Combien d'élèves représentent 4 étoiles (⭐⭐⭐⭐) ?",
+          "image": "/oqreImag/3E/pictojpg.jpg",
+          "options": ["4 élèves", "6 élèves", "8 élèves", "10 élèves"],
+          "r": 2
+        },
+        {
+          "q": "Dans un sac 🎒, il y a 5 billes 🔴 et aucune bille 🔵. Piger une bille 🔴 est :",
+          "image": "/oqreImag/3E/proba.jpg",
+          "options": ["Impossible ❌", "Peu probable 📉", "Probable 📈", "Certain ✅"],
+          "r": 3
+        },
+        {
+          "q": "Où placerais-tu une pomme 🍎 dans un diagramme de Venn avec un cercle 'Fruits Rouges' et un cercle 'Fruits Ronds' ?",
+          "image": "/oqreImag/3E/diagvann.png",
+          "options": [
+            "Seulement dans 'Rouges'",
+            "Seulement dans 'Ronds'",
+            "Au milieu, là où les cercles se croisent 🎯",
+            "À l'extérieur des cercles"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Pour écrire le nombre 7 avec des marques de pointage ✍️, on dessine :",
+          "image": "/oqreImag/3E/pointage.jpg",
+          "options": [
+            "7 traits simples |||||||",
+            "Un paquet barré de 5 et 2 traits simples 卌 ||",
+            "4 traits et 3 traits",
+            "Deux paquets de 3 traits"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Dans un diagramme à bandes 📈, la barre des 🐶 monte à 12 et celle des 🐱 monte à 8. Combien y a-t-il de 🐶 de plus que de 🐱 ?",
+          "image": "/oqreImag/3E/diagb.png",
+          "options": ["4", "8", "12", "20"],
+          "r": 0
+        }
+      ]
+    },
+    "Geometrie_Mesure": {
+      "domaine": "Géométrie et Mesure 📐",
+      "questions": [
+        {
+          "q": "Combien de côtés possède un rectangle ▭ ?",
+          "options": ["3 côtés", "4 côtés", "5 côtés", "6 côtés"],
+          "r": 1
+        },
+        {
+          "q": "Combien de faces plates possède un cube 🧊 ?",
+          "options": ["4 faces", "6 faces", "8 faces", "12 faces"],
+          "r": 1
+        },
+        {
+          "q": "Quelle unité est la meilleure pour mesurer la longueur d'un petit crayon ✏️ ?",
+          "options": ["Le kilomètre (km) 🛣️", "Le mètre (m) 📏", "Le centimètre (cm) 📐", "Le litre (L) 🥛"],
+          "r": 2
+        },
+        {
+          "q": "La récréation ⚽ commence à 10h15 🕙 et dure 15 minutes. À quelle heure se termine-t-elle ?",
+          "options": ["10h20", "10h30 🕥", "10h45", "11h00"],
+          "r": 1
+        },
+        {
+          "q": "Combien y a-t-il de minutes dans 1 heure complète ⏳ ?",
+          "options": ["30 minutes", "60 minutes", "100 minutes", "120 minutes"],
+          "r": 1
+        }
+      ]
+    },
+    "Litteratie_Financiere": {
+      "domaine": "Littératie Financière 💰",
+      "questions": [
+        {
+          "q": "Combien de pièces de 25¢ 🪙 faut-il pour faire exactement 1$ 💵 ?",
+          "options": ["2 pièces", "3 pièces", "4 pièces", "5 pièces"],
+          "r": 2
+        },
+        {
+          "q": "Tu as un billet de 10$ 💵. Tu achètes un jouet 🧸 à 6$. Combien d'argent doit-on te rendre ?",
+          "options": ["2 $", "3 $", "4 $", "16 $"],
+          "r": 2
+        },
+        {
+          "q": "Lequel de ces choix représente le plus grand montant d'argent 🏆 ?",
+          "options": ["Cinq pièces de 10¢ 🪙", "Trois pièces de 25¢ 🪙", "Une pièce de 1$ 🪙", "Dix pièces de 5¢ 🪙"],
+          "r": 2
+        },
+        {
+          "q": "Si tu mets 5$ dans ta tirelire 🐷 chaque semaine, combien auras-tu après 4 semaines ?",
+          "options": ["9 $", "15 $", "20 $", "25 $"],
+          "r": 2
+        },
+        {
+          "q": "Qu'est-ce qu'un budget 📝 ?",
+          "options": ["Une carte de crédit 💳", "Un plan pour savoir ce qu'on dépense et ce qu'on économise 📊", "Une grosse tirelire 🐷", "Le reçu qu'on reçoit au magasin 🧾"],
+          "r": 1
+        }
+      ]
+    }
+  }
+}

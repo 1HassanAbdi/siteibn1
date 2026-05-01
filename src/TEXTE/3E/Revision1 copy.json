@@ -1,0 +1,106 @@
+{
+  "matiere": "MATHÉMATIQUES - 3E ANNÉE (OQRE SÉRIE 2)",
+  "texte": "Ceci est ta deuxième série d'entraînement. Lis bien chaque consigne. Pour la géométrie, imagine les formes dans ta tête. Pour les calculs, utilise ton brouillon !",
+  "themes": {
+    "GÉOMÉTRIE": {
+      "domaine": "Sens de l'espace",
+      "questions": [
+        { "q": "Lequel de ces objets a la forme d'un prisme à base rectangulaire ?", "options": ["Une boîte de céréales", "Une canette de jus", "Un cornet de glace", "Un ballon"], "r": 0 },
+        { "q": "Si on coupe un carré en deux par sa diagonale, on obtient deux :", "options": ["Petits carrés", "Rectangles", "Triangles", "Cercles"], "r": 2 },
+        { "q": "Combien de paires de côtés parallèles possède un carré ?", "options": ["1 paire", "2 paires", "4 paires", "0 paire"], "r": 1 },
+        { "q": "Un angle droit ressemble à la lettre :", "options": ["V", "L", "O", "U"], "r": 1 },
+        { "q": "Quelle forme a 4 côtés égaux et 4 angles droits ?", "options": ["Le rectangle", "Le losange", "Le carré", "Le trapèze"], "r": 2 },
+        { "q": "Lequel de ces solides a une base circulaire et une pointe (sommet) ?", "options": ["Le cube", "Le cylindre", "Le cône", "La sphère"], "r": 2 },
+        { "q": "Une ligne qui ressemble à un rail de train est une ligne :", "options": ["Parallèle", "Perpendiculaire", "Courbe", "Sécante"], "r": 0 },
+        { "q": "Combien de sommets possède un triangle ?", "options": ["2", "3", "4", "5"], "r": 1 },
+        { "q": "Un polygone à 8 côtés s'appelle :", "options": ["Un hexagone", "Un pentagone", "Un octogone", "Un quadrilatère"], "r": 2 },
+        { "q": "Laquelle de ces figures possède un axe de symétrie vertical ?", "options": ["La lettre A", "La lettre F", "La lettre P", "La lettre L"], "r": 0 },
+        { "q": "Un solide qui n'a que des faces plates est :", "options": ["Une sphère", "Un cône", "Un prisme", "Un cylindre"], "r": 2 },
+        { "q": "Comment appelle-t-on un angle plus grand qu'un angle droit ?", "options": ["Angle aigu", "Angle plat", "Angle obtus", "Angle nul"], "r": 2 },
+        { "q": "Combien d'arêtes possède un cube ?", "options": ["6", "8", "10", "12"], "r": 3 },
+        { "q": "Un trapèze est un :", "options": ["Triangle", "Quadrilatère", "Pentagone", "Solide"], "r": 1 },
+        { "q": "Si je fais glisser une forme sans la tourner, c'est une :", "options": ["Réflexion", "Translation", "Rotation", "Symétrie"], "r": 1 },
+        { "q": "Lequel a 0 sommet et 0 arête ?", "options": ["Le cube", "La sphère", "La pyramide", "Le prisme"], "r": 1 },
+        { "q": "Deux lignes qui forment un signe '+' sont :", "options": ["Parallèles", "Perpendiculaires", "Courbes", "Longues"], "r": 1 },
+        { "q": "Un pentagone a combien de côtés ?", "options": ["4", "5", "6", "8"], "r": 1 },
+        { "q": "Un triangle isocèle a :", "options": ["3 côtés égaux", "2 côtés égaux", "0 côté égal", "4 côtés"], "r": 1 },
+        { "q": "La base d'une pyramide peut être :", "options": ["Un cercle", "Un carré", "Une ligne", "Un point"], "r": 1 }
+      ]
+    },
+    "MESURES": {
+      "domaine": "Grandeurs et mesures",
+      "questions": [
+        { "q": "Quelle est l'unité pour mesurer la longueur d'une fourmi ?", "options": ["Mètre", "Kilomètre", "Millimètre", "Litre"], "r": 2 },
+        { "q": "Si un film commence à 14h00 et finit à 15h30, il dure :", "options": ["30 min", "1h", "1h30", "2h"], "r": 2 },
+        { "q": "Combien de cm dans un demi-mètre ?", "options": ["10 cm", "25 cm", "50 cm", "100 cm"], "r": 2 },
+        { "q": "Quel instrument mesure la masse ?", "options": ["La règle", "Le thermomètre", "La balance", "L'horloge"], "r": 2 },
+        { "q": "L'aire d'une surface se mesure souvent en :", "options": ["cm", "cm²", "ml", "g"], "r": 1 },
+        { "q": "Combien y a-t-il de millilitres dans 2 litres ?", "options": ["20 ml", "200 ml", "2000 ml", "20 000 ml"], "r": 2 },
+        { "q": "La température de l'eau qui gèle est :", "options": ["0°C", "10°C", "37°C", "100°C"], "r": 0 },
+        { "q": "Quel est le périmètre d'un rectangle de 6cm sur 2cm ?", "options": ["8 cm", "12 cm", "16 cm", "24 cm"], "r": 2 },
+        { "q": "Combien de semaines complètes dans un mois de 28 jours ?", "options": ["2", "3", "4", "5"], "r": 2 },
+        { "q": "Quelle unité pour la capacité d'une piscine ?", "options": ["Millilitre", "Gramme", "Litre", "Centimètre"], "r": 2 },
+        { "q": "Une règle standard de classe mesure :", "options": ["30 mm", "30 cm", "30 m", "30 km"], "r": 1 },
+        { "q": "Combien de jours dans le mois de Janvier ?", "options": ["28", "29", "30", "31"], "r": 3 },
+        { "q": "1000 grammes, c'est la même chose que :", "options": ["1 kg", "10 kg", "100 kg", "1 tonne"], "r": 0 },
+        { "q": "Quelle heure est-il si la petite aiguille est entre 4 et 5 ?", "options": ["Il est 4h...", "Il est 5h...", "Il est 6h...", "Il est midi"], "r": 0 },
+        { "q": "Combien de secondes dans 2 minutes ?", "options": ["60", "100", "120", "200"], "r": 2 },
+        { "q": "La masse d'un chat est environ de :", "options": ["4 g", "40 g", "4 kg", "40 kg"], "r": 2 },
+        { "q": "Pour mesurer le tour de ta taille, tu utilises :", "options": ["Une règle rigide", "Un ruban à mesurer", "Une balance", "Un verre doseur"], "r": 1 },
+        { "q": "Un triangle équilatéral de 3cm de côté a un périmètre de :", "options": ["6 cm", "9 cm", "12 cm", "3 cm"], "r": 1 },
+        { "q": "Midi et demi s'écrit aussi :", "options": ["12h15", "12h30", "12h45", "13h30"], "r": 1 },
+        { "q": "Quelle distance est la plus courte ?", "options": ["1 km", "100 m", "500 cm", "2 m"], "r": 3 }
+      ]
+    },
+    "MONNAIE": {
+      "domaine": "Numératie financière",
+      "questions": [
+        { "q": "Combien de pièces de 25¢ pour faire 2 dollars ?", "options": ["4", "6", "8", "10"], "r": 2 },
+        { "q": "Si tu as 50$ et tu achètes un jeu à 42$, il te reste :", "options": ["2$", "5$", "8$", "12$"], "r": 2 },
+        { "q": "Quelle pièce canadienne n'existe plus en circulation ?", "options": ["5 cents", "10 cents", "1 cent", "25 cents"], "r": 2 },
+        { "q": "3 pièces de 2$ (toonies) font :", "options": ["3$", "5$", "6$", "9$"], "r": 2 },
+        { "q": "Pour payer 0,85$, tu peux donner :", "options": ["3 x 25¢ + 1 x 10¢", "4 x 25¢", "1 x 50¢ + 1 x 25¢", "2 x 25¢ + 2 x 10¢"], "r": 0 },
+        { "q": "Dix billets de 10$ égalent :", "options": ["20$", "50$", "100$", "1000$"], "r": 2 },
+        { "q": "Si un chocolat coûte 1,25$, deux chocolats coûtent :", "options": ["2,00$", "2,25$", "2,50$", "3,00$"], "r": 2 },
+        { "q": "Quelle est la valeur totale de : 1 billet de 20$ + 1 billet de 5$ ?", "options": ["15$", "25$", "30$", "20,05$"], "r": 1 },
+        { "q": "Tu as 1$. Tu achètes une gomme à 30¢. Rendu de monnaie :", "options": ["60¢", "70¢", "80¢", "50¢"], "r": 1 },
+        { "q": "Lequel est égal à 1,50$ ?", "options": ["10 pièces de 10¢", "6 pièces de 25¢", "5 pièces de 25¢", "10 pièces de 5¢"], "r": 1 },
+        { "q": "Si j'ai 4 pièces de 5¢, j'ai :", "options": ["10¢", "20¢", "25¢", "40¢"], "r": 1 },
+        { "q": "Un 'loonie' vaut :", "options": ["1$", "2$", "5$", "25¢"], "r": 0 },
+        { "q": "Deux billets de 20$ font :", "options": ["22$", "30$", "40$", "50$"], "r": 2 },
+        { "q": "Lequel est le plus petit montant ?", "options": ["0,99$", "1,01$", "0,89$", "1,10$"], "r": 2 },
+        { "q": "Pour faire 10$, il faut combien de billets de 5$ ?", "options": ["2", "3", "4", "5"], "r": 0 },
+        { "q": "4 pièces de 10¢ et 2 pièces de 5¢ font :", "options": ["45¢", "50¢", "60¢", "55¢"], "r": 1 },
+        { "q": "Le prix est 14,95$. Tu donnes 20$. Le rendu est proche de :", "options": ["1$", "5$", "10$", "15$"], "r": 1 },
+        { "q": "Combien de pièces de 5¢ dans 50¢ ?", "options": ["5", "10", "15", "20"], "r": 1 },
+        { "q": "Tu économises 2$ par semaine. Après 4 semaines, tu as :", "options": ["4$", "6$", "8$", "10$"], "r": 2 },
+        { "q": "Lequel représente 2,05$ ?", "options": ["Un toonie et un nickel", "Un toonie et un dime", "Deux loonies", "Un loonie et un toonie"], "r": 0 }
+      ]
+    },
+    "NUMÉRATION": {
+      "domaine": "Nombres",
+      "questions": [
+        { "q": "Dans 8 765, le chiffre des dizaines est :", "options": ["8", "7", "6", "5"], "r": 2 },
+        { "q": "Comment écrit-on 1 000 + 400 + 2 ?", "options": ["142", "1042", "1402", "1420"], "r": 2 },
+        { "q": "Quel est le prochain nombre : 2, 4, 6, 8, ... ?", "options": ["9", "10", "11", "12"], "r": 1 },
+        { "q": "Lequel est égal à une demi-douzaine ?", "options": ["6", "12", "10", "24"], "r": 0 },
+        { "q": "La moitié de 100 est :", "options": ["25", "40", "50", "60"], "r": 2 },
+        { "q": "Le triple de 10 est :", "options": ["13", "20", "30", "40"], "r": 2 },
+        { "q": "Quel nombre est entre 599 et 601 ?", "options": ["500", "590", "600", "610"], "r": 2 },
+        { "q": "Dans 432, quelle est la valeur du chiffre 4 ?", "options": ["4", "40", "400", "4000"], "r": 2 },
+        { "q": "Quel nombre est composé de 25 dizaines ?", "options": ["25", "205", "250", "2500"], "r": 2 },
+        { "q": "Arrondis 48 à la dizaine la plus proche :", "options": ["40", "45", "50", "100"], "r": 2 },
+        { "q": "Quel est le résultat de 9 x 2 ?", "options": ["11", "18", "20", "21"], "r": 1 },
+        { "q": "Lequel de ces nombres est le plus grand ?", "options": ["1 099", "1 101", "1 100", "1 011"], "r": 1 },
+        { "q": "10 de moins que 1 000 est :", "options": ["900", "990", "999", "1010"], "r": 1 },
+        { "q": "Comment écrit-on 'trois-mille-douze' ?", "options": ["312", "3012", "3120", "30012"], "r": 1 },
+        { "q": "4 x 100 égal :", "options": ["40", "400", "4000", "444"], "r": 1 },
+        { "q": "Quel nombre est pair et plus grand que 15 ?", "options": ["13", "14", "16", "17"], "r": 2 },
+        { "q": "0 x 50 égal :", "options": ["0", "1", "50", "500"], "r": 0 },
+        { "q": "25 + 25 + 25 + 25 égal :", "options": ["75", "100", "125", "150"], "r": 1 },
+        { "q": "Le nombre qui a 4 milliers, 0 centaine, 3 dizaines et 1 unité :", "options": ["431", "4031", "4301", "4310"], "r": 1 },
+        { "q": "Quel signe complète : 450 ___ 405 ?", "options": ["<", ">", "=", "+"], "r": 1 }
+      ]
+    }
+  }
+}

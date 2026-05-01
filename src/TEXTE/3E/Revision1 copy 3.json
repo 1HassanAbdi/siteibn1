@@ -10,11 +10,16 @@
           "options": ["Un thermomètre", "Du matériel de base 10 (cubes, tiges, planchettes)", "Une horloge", "Une calculatrice"],
           "r": 1
         },
-        {
-          "q": "Si tu trouves un problème de mathématiques très difficile, que devrais-tu faire ? (CC)",
-          "options": ["Abandonner et fermer ton cahier", "Essayer de faire un dessin ou demander de l'aide", "Effacer tout ton travail", "Attendre que le professeur donne la réponse"],
-          "r": 1
-        },
+       {
+        "q": "Que peux-tu faire pour t’aider à résoudre un problème de mathématiques difficile ? (CC)",
+        "options": [
+          "Abandonner immédiatement",
+          "Utiliser une stratégie comme faire un dessin ou demander de l’aide",
+          "Effacer tout ton travail",
+          "Attendre sans essayer"
+        ],
+        "r": 1
+      },
         {
           "q": "Pendant un travail d'équipe en mathématiques, quelle est la meilleure attitude ? (MA)",
           "options": ["Travailler seul dans ton coin", "Écouter les autres et partager tes idées calmement", "Parler plus fort que tes amis", "Laisser ton ami tout faire"],

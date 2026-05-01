@@ -784,7 +784,13 @@
         {"word": "ralentir", "type": "verbe"},
         {"word": "raser", "type": "verbe"},
         {"word": "recevoir", "type": "verbe"},
-        {"word": "reconduire", "type": "verbe"},
+        {"word": "reconduire", "type": "verbe"}
+    
+      ]
+    },{
+      "week_id": 17,
+      "words_data": [
+       
         {"word": "recouvrir", "type": "verbe"},
         {"word": "réellement", "type": "autres"},
         {"word": "règle", "type": "nom"},

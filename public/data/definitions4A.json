@@ -785,7 +785,12 @@
         {"word": "ralentir", "definition": "Aller moins vite."},
         {"word": "raser", "definition": "Couper les poils très court au ras de la peau."},
         {"word": "recevoir", "definition": "Prendre ce qui est donné."},
-        {"word": "reconduire", "definition": "Accompagner quelqu'un là d'où il vient."},
+        {"word": "reconduire", "definition": "Accompagner quelqu'un là d'où il vient."}
+        
+      ]
+    }, {
+      "week_id": 17,
+      "words_data": [
         {"word": "recouvrir", "definition": "Couvrir une chose complètement."},
         {"word": "réellement", "definition": "Vraiment, pour de bon."},
         {"word": "règle", "definition": "Outil pour tracer ou loi de conduite."},
@@ -829,7 +834,9 @@
         {"word": "verre", "definition": "Matière transparente ou récipient pour boire."},
         {"word": "veuf", "definition": "Homme dont la femme est morte."},
         {"word": "vingt", "definition": "Le nombre qui vaut deux dizaines."}
-      ]
+  ]
+        
+      
     }
   ]
 }

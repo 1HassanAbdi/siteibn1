@@ -1,0 +1,550 @@
+{
+  "themes": [
+    {
+   "theme": "Le corps humain", 
+   "emoji": "👦",
+  "exercice1_appariement": [
+    { "emoji": "👄", "nom": "La bouche" },
+    { "emoji": "🦶", "nom": "Le pied" },
+    { "emoji": "👦", "nom": "La tête" },
+    { "emoji": "👂", "nom": "L'oreille" },
+    { "emoji": "💪", "nom": "Le bras" },
+    { "emoji": "👃", "nom": "Le nez" },
+    { "emoji": "🦵", "nom": "La jambe" },
+    { "emoji": "👁️", "nom": "L'œil" },
+    { "emoji": "✋", "nom": "La main" },
+    { "emoji": "👆", "nom": "Les doigts" }
+  ],
+  "exercice2_glisser_deposer": [
+    { "emoji": "👄", "nom": "La bouche" },
+    { "emoji": "🦶", "nom": "Le pied" },
+    { "emoji": "👦", "nom": "La tête" },
+    { "emoji": "👂", "nom": "L'oreille" },
+    { "emoji": "💪", "nom": "Le bras" },
+    { "emoji": "👃", "nom": "Le nez" },
+    { "emoji": "🦵", "nom": "La jambe" },
+    { "emoji": "👁️", "nom": "L'œil" },
+    { "emoji": "✋", "nom": "La main" },
+    { "emoji": "👆", "nom": "Les doigts" }
+  ],
+  "exercice3_schema": {
+     "imageUrl": "/corps.png",  
+    "altText": "Le corps humain",  
+    "etiquettes_a_glisser": [
+      "La tête", "La main", "Le pied", "L'oreille", "L'œil", "Le nez", 
+      "La bouche", "Le bras", "La jambe", "Les cheveux", "Le cou", "Les doigts"
+    ],
+    "zones": [
+      { "top": "4%", "left": "7%", "attendu": "Les cheveux" },
+      { "top": "30%", "left": "2%", "attendu": "L'oreille" },
+      { "top": "47%", "left": "2%", "attendu": "La bouche" },
+      { "top": "57%", "left": "2%", "attendu": "Le bras" },
+      { "top": "73%", "left": "4%", "attendu": "La main" },
+      { "top": "87%", "left": "11%", "attendu": "La jambe" },
+      { "top": "4%", "left": "59%", "attendu": "La tête" },
+      { "top": "24%", "left": "74%", "attendu": "L'œil" },
+      { "top": "45%", "left": "64%", "attendu": "Le nez" },
+      { "top": "55%", "left": "60%", "attendu": "Le cou" },
+      { "top": "75%", "left": "70%", "attendu": "Les doigts" },
+      { "top": "87%", "left": "59%", "attendu": "Le pied" }
+    ]
+  },
+  "exercice4_qcm": [
+    
+    {
+      "question": "Où est-ce que je mets mon écharpe quand il fait très froid ?",
+      "options": ["Le cou", "La jambe", "Le bras"],
+      "reponse": "Le cou",
+      "emoji": "🧣"
+    },
+  
+{ 
+      
+      "emoji": "🎵",
+      "question": "Quelle partie de mon corps j'utilise pour écouter de la musique ?",
+      "options": ["L'oreille", "L'œil", "Le nez"],
+      "reponse": "L'oreille"
+    },
+    {
+      "id": "q2",
+      "emoji": "⚽",
+      "question": "Quelle partie de mon corps j'utilise pour courir et taper dans un ballon ?",
+      "options": ["La main", "Le pied", "Le cou"],
+      "reponse": "Le pied"
+    },
+    {
+      "id": "q3",
+      "emoji": "📖",
+      "question": "Quelle partie de mon corps j'utilise pour lire un livre et regarder les images ?",
+      "options": ["La bouche", "L'oreille", "L'œil"],
+      "reponse": "L'œil"
+    },
+    {
+      "id": "q4",
+      "emoji": "🌸",
+      "question": "Quelle partie de mon corps j'utilise pour sentir le parfum d'une fleur ?",
+      "options": ["Le nez", "La main", "Le bras"],
+      "reponse": "Le nez"
+    },
+    {
+      "id": "q5",
+      "emoji": "🍎",
+      "question": "Quelle partie de mon corps j'utilise pour manger une pomme et sourire ?",
+      "options": ["Les cheveux", "La bouche", "Le pied"],
+      "reponse": "La bouche"
+    },
+    {
+      "id": "q6",
+      "emoji": "🖍️",
+      "question": "Quelle partie de mon corps j'utilise pour tenir un crayon et dessiner ?",
+      "options": ["La jambe", "La main", "La tête"],
+      "reponse": "La main"
+    },
+    {
+      "id": "q7",
+      "emoji": "🤗",
+      "question": "Quelle partie de mon corps je plie pour faire un gros câlin ?",
+      "options": ["Le bras", "L'œil", "Le nez"],
+      "reponse": "Le bras"
+    },
+    {
+      "id": "q8",
+      "emoji": "🦘",
+      "question": "Quelle partie de mon corps me permet de sauter très haut ?",
+      "options": ["La jambe", "Le bras", "La tête"],
+      "reponse": "La jambe"
+    },
+    {
+      "id": "q9",
+      "emoji": "🤔",
+      "question": "Où se trouve mon cerveau pour réfléchir et apprendre à l'école ?",
+      "options": ["La tête", "Le pied", "Le cou"],
+      "reponse": "La tête"
+    },
+    {
+      "id": "q10",
+      "emoji": "🪮",
+      "question": "Qu'est-ce que je brosse le matin pour être bien coiffé ?",
+      "options": ["Les doigts", "Les cheveux", "Le cou"],
+      "reponse": "Les cheveux"
+    },
+    
+    {
+      "id": "q12",
+      "emoji": "🔟",
+      "question": "Qu'est-ce que j'utilise sur mes mains pour compter jusqu'à 10 ?",
+      "options": ["Les cheveux", "L'oreille", "Les doigts"],
+      "reponse": "Les doigts"
+    }
+  ],
+  "dropZonesImage": [
+    { "id": "zone-cheveux", "top": "4%", "left": "7%", "expected": "cheveux" },
+    { "id": "zone-oreille", "top": "30%", "left": "2%", "expected": "oreille" },
+    { "id": "zone-bouche", "top": "47%", "left": "2%", "expected": "bouche" },
+    { "id": "zone-bras", "top": "57%", "left": "2%", "expected": "bras" },
+    { "id": "zone-main", "top": "73%", "left": "4%", "expected": "main" },
+    { "id": "zone-jambe", "top": "87%", "left": "11%", "expected": "jambe" },
+    { "id": "zone-tete", "top": "4%", "left": "59%", "expected": "tete" },
+    { "id": "zone-oeil", "top": "24%", "left": "74%", "expected": "oeil" },
+    { "id": "zone-nez", "top": "45%", "left": "64%", "expected": "nez" },
+    { "id": "zone-cou", "top": "55%", "left": "60%", "expected": "cou" },
+    { "id": "zone-doigt", "top": "75%", "left": "70%", "expected": "doigt" },
+    { "id": "zone-pied", "top": "87%", "left": "59%", "expected": "pied" }
+  ]
+},{
+     "theme": "Les Animaux de la ferme", 
+     "emoji": "🐄",
+  "exercice1_appariement": [
+    { "emoji": "🐔", "nom": "La poule" },
+    { "emoji": "🐄", "nom": "La vache" },
+    { "emoji": "🐖", "nom": "Le cochon" },
+    { "emoji": "🐑", "nom": "Le mouton" },
+    { "emoji": "🐴", "nom": "Le cheval" },
+    { "emoji": "🐶", "nom": "Le chien" },
+    { "emoji": "🐱", "nom": "Le chat" },
+    { "emoji": "🦆", "nom": "Le canard" },
+    { "emoji": "🐇", "nom": "Le lapin" },
+    { "emoji": "🐮", "nom": "Le veau" }
+  ],
+  "exercice2_glisser_deposer": [
+    { "emoji": "🐔", "nom": "La poule" },
+    { "emoji": "🐄", "nom": "La vache" },
+    { "emoji": "🐖", "nom": "Le cochon" },
+    { "emoji": "🐑", "nom": "Le mouton" },
+    { "emoji": "🐴", "nom": "Le cheval" },
+    { "emoji": "🐶", "nom": "Le chien" },
+    { "emoji": "🐱", "nom": "Le chat" },
+    { "emoji": "🦆", "nom": "Le canard" },
+    { "emoji": "🐇", "nom": "Le lapin" },
+    { "emoji": "🐮", "nom": "Le veau" }
+  ],
+  "exercice3_schema": {
+     "imageUrl": "/ferme1.png",  
+    "altText": "La ferme", 
+
+    "etiquettes_a_glisser": [
+      "La poule", "La vache", "Le cochon", "Le mouton", "Le cheval",
+      "veau", "Le chat", "Le canard", "Le lapin",  "La ferme"
+    ],
+    "zones": [
+      { "top": "27%", "left": "28%", "attendu": "La vache" },
+      { "top": "32%", "left": "0%", "attendu": "La poule" },
+       { "top": "58%", "left": "0%", "attendu": "Le cheval" },
+       { "top": "85%", "left": "0%", "attendu": "veau" },
+       { "top": "82%", "left": "45%", "attendu": "La ferme" },
+         { "top": "52%", "left": "26%", "attendu": "Le chat" },
+         { "top": "55%", "left": "52%", "attendu": "Le canard" },
+         { "top": "28%", "left": "52%", "attendu": "Le cochon" },
+         { "top": "30%", "left": "75%", "attendu": "Le mouton" },
+         { "top": "62%", "left": "75%", "attendu": "Le lapin" }        
+   
+    ]
+  },
+  "exercice4_qcm": [
+    {
+      "question": "Quel animal donne du lait ?",
+      "options": ["La poule", "La vache", "Le cochon"],
+      "reponse": "La vache",
+      "emoji": "🥛"
+    },
+    {
+      "question": "Quel animal pond des œufs ?",
+      "options": ["Le mouton", "La poule", "Le cheval"],
+      "reponse": "La poule",
+      "emoji": "🥚"
+    },
+    {
+      "question": "Quel animal dit 'coin coin' ?",
+      "options": ["Le canard", "Le chien", "Le chat"],
+      "reponse": "Le canard",
+      "emoji": "🦆"
+    },
+    {
+      "question": "Quel animal vit dans le poulailler ?",
+      "options": ["La vache", "La poule", "Le lapin"],
+      "reponse": "La poule",
+      "emoji": "🐔"
+    },
+    {
+      "question": "Quel animal a des cornes ?",
+      "options": ["Le mouton", "Le cochon", "La vache"],
+      "reponse": "La vache",
+      "emoji": "🐄"
+    },
+    {
+      "question": "Quel animal aime se rouler dans la boue ?",
+      "options": ["Le cheval", "Le cochon", "Le chien"],
+      "reponse": "Le cochon",
+      "emoji": "🐖"
+    },
+    {
+      "question": "Quel animal est le meilleur ami de l'homme ?",
+      "options": ["Le chat", "Le chien", "Le lapin"],
+      "reponse": "Le chien",
+      "emoji": "🐶"
+    },
+    {
+      "question": "Quel animal a une crinière ?",
+      "options": ["Le cheval", "Le mouton", "Le chat"],
+      "reponse": "Le cheval",
+      "emoji": "🐴"
+    },
+    {
+      "question": "Quel animal a des plumes ?",
+      "options": ["Le lapin", "Le canard", "Le cochon"],
+      "reponse": "Le canard",
+      "emoji": "🦆"
+    },
+    {
+      "question": "Quel animal vit dans un clapier ?",
+      "options": ["Le lapin", "Le chat", "Le chien"],
+      "reponse": "Le lapin",
+      "emoji": "🐇"
+    }
+  ],
+  "dropZonesImage": [
+    { "id": "zone-poulailler", "top": "5%", "left": "10%", "expected": "poulailler" },
+    { "id": "zone-poule", "top": "15%", "left": "25%", "expected": "poule" },
+    { "id": "zone-canard", "top": "30%", "left": "10%", "expected": "canard" },
+    { "id": "zone-cochon", "top": "45%", "left": "20%", "expected": "cochon" },
+    { "id": "zone-mouton", "top": "60%", "left": "15%", "expected": "mouton" },
+    { "id": "zone-cheval", "top": "75%", "left": "10%", "expected": "cheval" },
+    { "id": "zone-etable", "top": "5%", "left": "60%", "expected": "etable" },
+    { "id": "zone-vache", "top": "20%", "left": "65%", "expected": "vache" },
+    { "id": "zone-veau", "top": "35%", "left": "70%", "expected": "veau" },
+    { "id": "zone-chien", "top": "50%", "left": "60%", "expected": "chien" },
+    { "id": "zone-chat", "top": "65%", "left": "75%", "expected": "chat" },
+    { "id": "zone-lapin", "top": "80%", "left": "60%", "expected": "lapin" },
+    { "id": "zone-pre", "top": "50%", "left": "40%", "expected": "pre" },
+    { "id": "zone-ferme", "top": "30%", "left": "40%", "expected": "ferme" }
+  ]
+},{
+
+      "theme": "Les animaux domestiques",
+      "emoji": "🐱",
+      "exercice1_appariement": [
+        { "emoji": "🐶", "nom": "Le chien" },
+        { "emoji": "🐱", "nom": "Le chat" },
+        { "emoji": "🐠", "nom": "Le poisson" },
+        { "emoji": "🐹", "nom": "Le hamster" },
+        { "emoji": "🐰", "nom": "Le lapin" },
+        { "emoji": "🦜", "nom": "Le perroquet" },
+        { "emoji": "🐢", "nom": "La tortue" },
+        { "emoji": "🐭", "nom": "La souris" },
+        { "emoji": "🦎", "nom": "Le lézard" },
+        { "emoji": "🐍", "nom": "Le serpent" }
+      ],
+      "exercice2_glisser_deposer": [
+        { "emoji": "🐶", "nom": "Le chien" },
+        { "emoji": "🐱", "nom": "Le chat" },
+        { "emoji": "🐠", "nom": "Le poisson" },
+        { "emoji": "🐹", "nom": "Le hamster" },
+        { "emoji": "🐰", "nom": "Le lapin" },
+        { "emoji": "🦜", "nom": "Le perroquet" },
+        { "emoji": "🐢", "nom": "La tortue" },
+        { "emoji": "🐭", "nom": "La souris" },
+        { "emoji": "🦎", "nom": "Le lézard" },
+        { "emoji": "🐍", "nom": "Le serpent" }
+      ],
+      "exercice3_schema": {
+        "imageUrl": "/domestiques.png",
+        "altText": "Les animaux domestiques",
+        "etiquettes_a_glisser": [
+          "Le chien", "Le chat", "Le poisson", "Le hamster", "Le lapin",
+          "Le perroquet", "La tortue", "La souris", "Le lézard", "Le serpent"
+        ],
+        "zones": [
+          { "top": "1%", "left": "0%", "attendu": "Le chien" },
+          { "top": "1%", "left": "30%", "attendu": "Le chat" },
+          { "top": "32%", "left": "27%", "attendu": "Le poisson" },
+          { "top": "30%", "left": "55%", "attendu": "Le hamster" },
+          { "top": "55%", "left": "80%", "attendu": "Le lapin" },
+          { "top": "1%", "left": "80%", "attendu": "Le perroquet" },
+          { "top": "85%", "left": "40%", "attendu": "La tortue" },
+          { "top": "45%", "left": "1%", "attendu": "La souris" },
+          { "top": "20%", "left": "80%", "attendu": "Le lézard" },
+          { "top": "84%", "left": "0%", "attendu": "Le serpent" }
+        ]
+      },
+      "exercice4_qcm": [
+        {
+          "id": "q1",
+          "question": "Quel animal ronronne et aime attraper des souris ?",
+          "options": ["Le chat", "Le chien", "La tortue"],
+          "reponse": "Le chat",
+          "emoji": "🐱"
+        },
+        {
+          "id": "q2",
+          "question": "Quel animal aboie et adore se promener en laisse ?",
+          "options": ["Le poisson", "Le chien", "Le lapin"],
+          "reponse": "Le chien",
+          "emoji": "🐶"
+        },
+        {
+          "id": "q3",
+          "question": "Quel animal vit dans l'eau à l'intérieur d'un aquarium ?",
+          "options": ["Le serpent", "Le poisson", "Le perroquet"],
+          "reponse": "Le poisson",
+          "emoji": "🐠"
+        },
+        {
+          "id": "q4",
+          "question": "Quel animal porte sa maison sur son dos et marche très doucement ?",
+          "options": ["La tortue", "La souris", "Le lézard"],
+          "reponse": "La tortue",
+          "emoji": "🐢"
+        },
+        {
+          "id": "q5",
+          "question": "Quel oiseau aux belles couleurs peut répéter des mots ?",
+          "options": ["Le perroquet", "Le hamster", "Le chat"],
+          "reponse": "Le perroquet",
+          "emoji": "🦜"
+        },
+        {
+          "id": "q6",
+          "question": "Quel petit animal a des poches dans ses joues pour cacher de la nourriture ?",
+          "options": ["Le hamster", "Le poisson", "Le chien"],
+          "reponse": "Le hamster",
+          "emoji": "🐹"
+        },
+        {
+          "id": "q7",
+          "question": "Quel animal a de longues oreilles et adore croquer des carottes ?",
+          "options": ["La souris", "Le lapin", "La tortue"],
+          "reponse": "Le lapin",
+          "emoji": "🐰"
+        },
+        {
+          "id": "q8",
+          "question": "Quel tout petit animal adore grignoter et se faufiler partout ?",
+          "options": ["Le serpent", "Le chat", "La souris"],
+          "reponse": "La souris",
+          "emoji": "🐭"
+        },
+        {
+          "id": "q9",
+          "question": "Quel reptile n'a ni bras ni jambes pour se déplacer ?",
+          "options": ["Le lézard", "Le serpent", "Le poisson"],
+          "reponse": "Le serpent",
+          "emoji": "🐍"
+        },
+        {
+          "id": "q10",
+          "question": "Quel petit reptile adore se réchauffer sous une lampe ?",
+          "options": ["Le lézard", "Le lapin", "Le chien"],
+          "reponse": "Le lézard",
+          "emoji": "🦎"
+        }
+      ],
+      "dropZonesImage": [
+        { "id": "zone-chien", "top": "15%", "left": "10%", "expected": "chien" },
+        { "id": "zone-chat", "top": "25%", "left": "30%", "expected": "chat" },
+        { "id": "zone-poisson", "top": "40%", "left": "50%", "expected": "poisson" },
+        { "id": "zone-hamster", "top": "55%", "left": "70%", "expected": "hamster" },
+        { "id": "zone-lapin", "top": "70%", "left": "90%", "expected": "lapin" },
+        { "id": "zone-perroquet", "top": "10%", "left": "80%", "expected": "perroquet" },
+        { "id": "zone-tortue", "top": "85%", "left": "40%", "expected": "tortue" },
+        { "id": "zone-souris", "top": "60%", "left": "15%", "expected": "souris" },
+        { "id": "zone-lezard", "top": "35%", "left": "85%", "expected": "lezard" },
+        { "id": "zone-serpent", "top": "80%", "left": "10%", "expected": "serpent" }
+      ]
+    },{
+  "theme": "Les animaux sauvages",
+   "emoji": "🦁",
+  "exercice1_appariement": [
+    { "emoji": "🦁", "nom": "Le lion" },
+    { "emoji": "🐘", "nom": "L'éléphant" },
+    { "emoji": "🦒", "nom": "La girafe" },
+    { "emoji": "🐯", "nom": "Le tigre" },
+    { "emoji": "🦓", "nom": "Le zèbre" },
+    { "emoji": "🐒", "nom": "Le singe" },
+    { "emoji": "🐊", "nom": "Le crocodile" },
+    { "emoji": "🦏", "nom": "Le rhinocéros" },
+    { "emoji": "🐆", "nom": "Le léopard" },
+    { "emoji": "🐍", "nom": "Le serpent" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "🦁", "nom": "Le lion" },
+    { "emoji": "🐘", "nom": "L'éléphant" },
+    { "emoji": "🦒", "nom": "La girafe" },
+    { "emoji": "🐯", "nom": "Le tigre" },
+    { "emoji": "🦓", "nom": "Le zèbre" },
+    { "emoji": "🐒", "nom": "Le singe" },
+    { "emoji": "🐊", "nom": "Le crocodile" },
+    { "emoji": "🦏", "nom": "Le rhinocéros" },
+    { "emoji": "🐆", "nom": "Le léopard" },
+    { "emoji": "🐍", "nom": "Le serpent" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/sauvage.png",
+    "altText": "Les animaux sauvages",
+    "etiquettes_a_glisser": [
+      "Le lion", "L'éléphant", "La girafe", "Le tigre", "Le zèbre",
+      "Le singe", "Le crocodile", "Le rhinocéros", "Le léopard", "Le serpent"
+    ],
+    "zones": [
+      { "top": "1%", "left": "10%", "attendu": "Le lion" },
+      { "top": "9%", "left": "40%", "attendu": "L'éléphant" },
+      { "top": "0%", "left": "80%", "attendu": "La girafe" },
+      { "top": "55%", "left": "75%", "attendu": "Le léopard" },
+      { "top": "40%", "left": "0%", "attendu": "Le zèbre" },
+      { "top": "39%", "left": "47%", "attendu": "Le singe" },
+      { "top": "69%", "left": "0%", "attendu": "Le crocodile" },
+      { "top": "60%", "left": "30%", "attendu": "Le rhinocéros" },
+      { "top": "30%", "left": "80%", "attendu": "Le tigre" },
+      { "top": "90%", "left": "80%", "attendu": "Le serpent" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "id": "q1",
+      "question": "Quel animal est appelé le roi de la jungle ?",
+      "options": ["Le lion", "Le zèbre", "Le singe"],
+      "reponse": "Le lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "q2",
+      "question": "Quel animal a une longue trompe ?",
+      "options": ["Le tigre", "L'éléphant", "Le léopard"],
+      "reponse": "L'éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "q3",
+      "question": "Quel animal est très grand avec un long cou ?",
+      "options": ["La girafe", "Le crocodile", "Le serpent"],
+      "reponse": "La girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "q4",
+      "question": "Quel animal a des rayures noires et blanches ?",
+      "options": ["Le zèbre", "Le lion", "Le rhinocéros"],
+      "reponse": "Le zèbre",
+      "emoji": "🦓"
+    },
+    {
+      "id": "q5",
+      "question": "Quel animal grimpe aux arbres et aime les bananes ?",
+      "options": ["Le singe", "Le tigre", "Le crocodile"],
+      "reponse": "Le singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "q6",
+      "question": "Quel animal vit dans l'eau et a une grande bouche avec des dents ?",
+      "options": ["Le crocodile", "Le léopard", "Le zèbre"],
+      "reponse": "Le crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "q7",
+      "question": "Quel animal a une peau très épaisse et une corne ?",
+      "options": ["Le rhinocéros", "Le lion", "Le serpent"],
+      "reponse": "Le rhinocéros",
+      "emoji": "🦏"
+    },
+    {
+      "id": "q8",
+      "question": "Quel animal ressemble au tigre mais avec des taches ?",
+      "options": ["Le léopard", "Le singe", "Le zèbre"],
+      "reponse": "Le léopard",
+      "emoji": "🐆"
+    },
+    {
+      "id": "q9",
+      "question": "Quel animal rampe sans pattes ?",
+      "options": ["Le serpent", "Le lion", "Le crocodile"],
+      "reponse": "Le serpent",
+      "emoji": "🐍"
+    },
+    {
+      "id": "q10",
+      "question": "Quel grand félin est orange avec des rayures noires ?",
+      "options": ["Le tigre", "Le léopard", "Le zèbre"],
+      "reponse": "Le tigre",
+      "emoji": "🐯"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-lion", "top": "15%", "left": "10%", "expected": "lion" },
+    { "id": "zone-elephant", "top": "25%", "left": "30%", "expected": "elephant" },
+    { "id": "zone-girafe", "top": "40%", "left": "50%", "expected": "girafe" },
+    { "id": "zone-tigre", "top": "55%", "left": "70%", "expected": "tigre" },
+    { "id": "zone-zebre", "top": "70%", "left": "90%", "expected": "zebre" },
+    { "id": "zone-singe", "top": "10%", "left": "80%", "expected": "singe" },
+    { "id": "zone-crocodile", "top": "85%", "left": "40%", "expected": "crocodile" },
+    { "id": "zone-rhinoceros", "top": "60%", "left": "15%", "expected": "rhinoceros" },
+    { "id": "zone-leopard", "top": "35%", "left": "85%", "expected": "leopard" },
+    { "id": "zone-serpent", "top": "80%", "left": "10%", "expected": "serpent" }
+  ]
+}
+     ]
+}

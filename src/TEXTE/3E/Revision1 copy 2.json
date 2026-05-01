@@ -1,184 +1,149 @@
 {
-  "matiere": "Mathématiques - 3e année (Aligné OQRE)",
-  "texte": "Lisez bien chaque consigne avant de répondre. Ce test contient 30 questions classées selon trois niveaux : Connaissance et compréhension (CC), Mise en application (MA) et Habiletés de la pensée (HP).",
+  "matiere": "MATHÉMATIQUES - 3E ANNÉE (OQRE SÉRIE 2 - VERSION COURTE)",
+  "texte": "Lis bien chaque consigne et réponds aux questions.",
   "themes": {
-    "A_Apprentissage_Socioemotionnel": {
-      "domaine": "Processus mathématiques et apprentissage socioémotionnel",
+    "GEOMETRIE": {
+      "domaine": "Sens de l'espace",
       "questions": [
         {
-          "q": "Quel matériel est le mieux adapté pour représenter le nombre 125 ? (CC)",
-          "options": ["Un thermomètre", "Du matériel de base 10 (cubes, tiges, planchettes)", "Une horloge", "Une calculatrice"],
-          "r": 1
-        },
-        {
-          "q": "Si tu trouves un problème de mathématiques très difficile, que devrais-tu faire ? (CC)",
-          "options": ["Abandonner et fermer ton cahier", "Essayer de faire un dessin ou demander de l'aide", "Effacer tout ton travail", "Attendre que le professeur donne la réponse"],
-          "r": 1
-        },
-        {
-          "q": "Pendant un travail d'équipe en mathématiques, quelle est la meilleure attitude ? (MA)",
-          "options": ["Travailler seul dans ton coin", "Écouter les autres et partager tes idées calmement", "Parler plus fort que tes amis", "Laisser ton ami tout faire"],
-          "r": 1
-        },
-        {
-          "q": "Ton amie pense que 15 + 16 = 21. Comment peux-tu l'aider le mieux ? (HP)",
-          "options": ["Lui donner la bonne réponse", "Lui demander de te montrer son calcul pour trouver l'erreur", "Lui dire qu'elle s'est trompée", "Ne rien dire"],
-          "r": 1
-        },
-        {
-          "q": "Pourquoi est-il utile d'estimer (deviner) une réponse avant de faire un long calcul ? (HP)",
-          "options": ["Pour finir plus vite", "Pour vérifier à la fin si notre vraie réponse a du sens", "Pour ne pas utiliser de crayon", "Parce que c'est plus amusant"],
-          "r": 1
-        }
-      ]
-    },
-    "B_Nombres": {
-      "domaine": "Sens du nombre et opérations",
-      "questions": [
-        {
-          "q": "Dans le nombre 852, que représente le chiffre 5 ? (CC)",
-          "options": ["5", "50", "500", "85"],
-          "r": 1
-        },
-        {
-          "q": "Comment arrondis-tu le nombre 76 à la dizaine la plus proche ? (CC)",
-          "options": ["70", "75", "80", "100"],
-          "r": 2
-        },
-        {
-          "q": "Tu as 4 paquets de 10 crayons, et 7 crayons tout seuls. Combien as-tu de crayons en tout ? (MA)",
-          "options": ["11", "47", "74", "407"],
-          "r": 1
-        },
-        {
-          "q": "Sarah coupe une pizza en 4 pointes égales. Elle en mange 3. Quelle fraction de la pizza reste-t-il ? (MA)",
-          "options": ["1/4", "3/4", "4/3", "1/2"],
+          "q": "Lequel de ces objets a la forme d'un prisme à base rectangulaire ?",
+          "options": ["Une boîte de céréales", "Une canette de jus", "Un cornet de glace", "Un ballon"],
           "r": 0
         },
         {
-          "q": "Je suis un nombre impair plus grand que 20 mais plus petit que 30. Si on additionne mes deux chiffres, ça donne 5. Qui suis-je ? (HP)",
-          "options": ["21", "23", "25", "27"],
-          "r": 1
-        }
-      ]
-    },
-    "C_Algebre": {
-      "domaine": "Algèbre et suites",
-      "questions": [
-        {
-          "q": "Trouve le nombre caché : 15 + ___ = 25 (CC)",
-          "options": ["5", "10", "15", "20"],
-          "r": 1
-        },
-        {
-          "q": "Quelle est la régularité (la règle) de cette suite : 2, 5, 8, 11, ... ? (CC)",
-          "options": ["Ajouter 2", "Ajouter 3", "Enlever 3", "Faire des bonds de 5"],
-          "r": 1
-        },
-        {
-          "q": "Quel nombre vient ensuite : 100, 90, 80, 70, ___ ? (MA)",
-          "options": ["60", "50", "75", "80"],
-          "r": 0
-        },
-        {
-          "q": "Lequel de ces choix est vrai ? (HP)",
-          "options": ["5 + 2 = 10", "4 + 4 = 10 - 2", "8 + 1 = 10", "3 + 3 = 5 + 2"],
-          "r": 1
-        },
-        {
-          "q": "Si un carré (■) vaut 5 et un triangle (▲) vaut 2. Combien vaut ■ + ▲ + ▲ ? (HP)",
-          "options": ["7", "9", "12", "14"],
-          "r": 1
-        }
-      ]
-    },
-    "D_Donnees": {
-      "domaine": "Gestion des données et probabilités",
-      "questions": [
-        {
-          "q": "Dans un sac, il y a 10 billes rouges et 1 bille bleue. Piger une bille rouge sans regarder est : (CC)",
-          "options": ["Impossible", "Certain", "Très probable", "Peu probable"],
+          "q": "Quelle forme a 4 côtés égaux et 4 angles droits ?",
+          "options": ["Le rectangle", "Le losange", "Le carré", "Le trapèze"],
           "r": 2
         },
         {
-          "q": "Quel est le meilleur outil pour montrer les fruits préférés des élèves de la classe ? (CC)",
-          "options": ["Une horloge", "Un diagramme à bandes", "Une règle", "Un thermomètre"],
-          "r": 1
-        },
-        {
-          "q": "Dans un diagramme à bandes, les nombres sur le côté font des bonds de 2 (0, 2, 4, 6...). Si une bande s'arrête pile entre le 4 et le 6, que représente-t-elle ? (MA)",
-          "options": ["4", "5", "6", "10"],
-          "r": 1
-        },
-        {
-          "q": "Dans un pictogramme, 1 dessin d'étoile vaut 5 points. Combien de points valent 4 étoiles ? (MA)",
-          "options": ["9", "15", "20", "25"],
-          "r": 2
-        },
-        {
-          "q": "Voici l'âge de cinq amis : 7, 8, 8, 8, 9. Que peux-tu dire en regardant ces nombres ? (HP)",
-          "options": ["La plupart des amis ont 8 ans", "La plupart des amis ont 7 ans", "Ils ont tous le même âge", "Le plus vieux a 8 ans"],
-          "r": 0
-        }
-      ]
-    },
-    "E_Sens_Espace": {
-      "domaine": "Sens de l'espace (Géométrie et mesure)",
-      "questions": [
-        {
-          "q": "Combien de faces plates possède un cube ? (CC)",
-          "options": ["4", "6", "8", "12"],
-          "r": 1
-        },
-        {
-          "q": "Quelle unité est la meilleure pour mesurer la longueur de ton crayon ? (CC)",
-          "options": ["Le kilomètre (km)", "Le centimètre (cm)", "Le mètre (m)", "Le kilogramme (kg)"],
-          "r": 1
-        },
-        {
-          "q": "Quel est le périmètre d'un carré si un seul de ses côtés mesure 4 cm ? (MA)",
-          "options": ["4 cm", "8 cm", "12 cm", "16 cm"],
+          "q": "Combien d'arêtes possède un cube ?",
+          "options": ["6", "8", "10", "12"],
           "r": 3
         },
         {
-          "q": "La récréation commence à 10h15 et dure 15 minutes. À quelle heure se termine-t-elle ? (MA)",
-          "options": ["10h20", "10h30", "10h45", "11h00"],
+          "q": "Deux lignes qui forment un signe '+' sont :",
+          "options": ["Parallèles", "Perpendiculaires", "Courbes", "Longues"],
+          "r": 1
+        },
+        { "q": "Une ligne qui ressemble à un rail de train est une ligne :", "options": ["Parallèle", "Perpendiculaire", "Courbe", "Sécante"], "r": 0 }
+      ]
+    },
+    "MESURES": {
+      "domaine": "Grandeurs et mesures",
+      "questions": [
+        {
+      "q": "Combien de cm dans 1 mètre ?",
+      "options": ["10 cm", "50 cm", "100 cm", "1000 cm"],
+      "r": 2
+    },
+    {
+      "q": "Quel outil utilise-t-on pour mesurer la masse ?",
+      "options": ["Une règle", "Une balance", "Une horloge", "Un thermomètre"],
+      "r": 1
+    },
+    {
+      "q": "Quel est le périmètre d'un rectangle de 4 cm sur 2 cm ?",
+      "options": ["6 cm", "8 cm", "12 cm", "16 cm"],
+      "r": 2
+    },
+    {
+      "q": "Combien de secondes dans 1 minute ?",
+      "options": ["30", "60", "100", "120"],
+      "r": 1
+    },
+    {
+      "q": "Quelle distance est la plus courte ?",
+      "options": ["1 m", "50 cm", "2 m", "5 m"],
+      "r": 1
+    }
+      ]
+    },
+    "MONNAIE": {
+      "domaine": "Numératie financière",
+      "questions": [
+        {
+          "q": "Combien de pièces de 25¢ pour faire 2 dollars ?",
+          "options": ["4", "6", "8", "10"],
+          "r": 2
+        },
+        {
+          "q": "Si tu as 50$ et tu achètes un jeu à 42$, il te reste :",
+          "options": ["2$", "5$", "8$", "12$"],
+          "r": 2
+        },
+        {
+          "q": "3 pièces de 2$ (toonies) font :",
+          "options": ["3$", "5$", "6$", "9$"],
+          "r": 2
+        },
+        {
+          "q": "Lequel est égal à 1,50$ ?",
+          "options": ["10 pièces de 10¢", "6 pièces de 25¢", "5 pièces de 25¢", "10 pièces de 5¢"],
           "r": 1
         },
         {
-          "q": "Comment peux-tu vérifier si un angle est un angle droit ? (HP)",
-          "options": ["En le mesurant avec une règle droite", "En utilisant le coin carré parfait d'une feuille de papier", "En regardant s'il est grand ouvert", "En vérifiant s'il est très pointu"],
-          "r": 1
+          "q": "Tu économises 2$ par semaine. Après 4 semaines, tu as :",
+          "options": ["4$", "6$", "8$", "10$"],
+          "r": 2
         }
       ]
     },
-    "F_Litteratie_Financiere": {
-      "domaine": "Littératie financière",
+    "NUMERATION": {
+      "domaine": "Nombres",
       "questions": [
         {
-          "q": "Combien de pièces de 25 ¢ (cents) faut-il pour faire exactement 1 $ ? (CC)",
-          "options": ["2", "4", "5", "10"],
-          "r": 1
-        },
-        {
-          "q": "Qu'est-ce qu'un budget ? (CC)",
-          "options": ["Une carte de crédit", "Un plan pour savoir combien d'argent on gagne, on dépense et on garde", "Le bout de papier qu'on reçoit au magasin", "Une tirelire"],
-          "r": 1
-        },
-        {
-          "q": "Tu achètes un livre à 12 $. Tu donnes un billet de 20 $. Combien d'argent doit-on te rendre ? (MA)",
-          "options": ["2 $", "8 $", "12 $", "32 $"],
-          "r": 1
-        },
-        {
-          "q": "Si tu mets 5 $ dans ta tirelire chaque semaine, combien auras-tu après 4 semaines ? (MA)",
-          "options": ["9 $", "15 $", "20 $", "25 $"],
+          "q": "Dans 8 765, le chiffre des dizaines est :",
+          "options": ["8", "7", "6", "5"],
           "r": 2
         },
         {
-          "q": "Lequel de ces choix représente le plus d'argent ? (HP)",
-          "options": ["Dix pièces de 10 ¢", "Quatre pièces de 25 ¢", "Une pièce de 2 $", "Cent pièces de 1 ¢"],
+          "q": "Comment écrit-on 1 000 + 400 + 2 ?",
+          "options": ["142", "1042", "1402", "1420"],
           "r": 2
+        },
+        {
+          "q": "La moitié de 100 est :",
+          "options": ["25", "40", "50", "60"],
+          "r": 2
+        },
+        {
+          "q": "Arrondis 48 à la dizaine la plus proche :",
+          "options": ["40", "45", "50", "100"],
+          "r": 2
+        },
+        {
+          "q": "Quel signe complète : 450 ___ 405 ?",
+          "options": ["<", ">", "=", "+"],
+          "r": 1
+        }
+      ]
+    },"RESOLUTION_DE_PROBLEMES": {
+      "domaine": "Application et résolution",
+      "questions": [
+        {
+          "q": "Léo a 45 billes. Il en donne 12 à son ami et en gagne 8 à la récréation. Combien de billes a-t-il maintenant ?",
+          "options": ["25", "33", "41", "65"],
+          "r": 2
+        },
+        {
+          "q": "Une boîte contient 6 œufs. Combien d'œufs y a-t-il dans 4 boîtes au total ?",
+          "options": ["10", "18", "20", "24"],
+          "r": 3
+        },
+        {
+          "q": "Sarah coupe une pizza en 4 morceaux égaux. Elle mange un quart (1/4) de la pizza. Combien de morceaux reste-t-il ?",
+          "options": ["1", "2", "3", "4"],
+          "r": 2
+        },
+        {
+          "q": "Le bus de l'école devait arriver à 8h00. Il a 30 minutes de retard. À quelle heure va-t-il arriver ?",
+          "options": ["8h30", "8h45", "9h00", "9h15"],
+          "r": 0
+        },
+        {
+          "q": "Observe la suite logique : 2, 4, 6, 8, ___ . Quel est le prochain nombre ?",
+          "options": ["9", "10", "12", "14"],
+          "r": 1
         }
       ]
     }

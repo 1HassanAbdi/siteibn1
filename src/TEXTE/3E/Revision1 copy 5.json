@@ -1,0 +1,131 @@
+{
+  "matiere": "Mathématiques 🧮 - 3e année (OQRE - Série C)",
+  "texte": "Prêt pour une nouvelle mission ? Regarde bien les images et les émojis pour trouver la bonne réponse. Bonne chance, champion ! 🌟",
+  "themes": {
+    "Nombres_Operations": {
+      "domaine": "Nombres et Opérations 🔢",
+      "questions": [
+        {
+          "q": "Lequel de ces nombres a un '5' à la position des CENTAINES ?",
+          "options": ["5", "52", "158", "524"],
+          "r": 3
+        },
+        {
+          "q": "Tu as 20 bonbons 🍬 et tu veux les partager également entre 4 amis. Combien de bonbons chaque ami recevra-t-il ?",
+          "options": ["2 bonbons", "4 bonbons", "5 bonbons", "10 bonbons"],
+          "r": 2
+        },
+        {
+          "q": "Quel signe manque-t-il ici : 15 + 10 ___ 30 ?",
+          "options": ["< (plus petit que)", "> (plus grand que)", "= (égal à)", "+ (plus)"],
+          "r": 0
+        },
+        {
+          "q": "Si tu comptes par bonds de 25, quel nombre vient après 75 ?",
+          "options": ["80", "90", "100", "125"],
+          "r": 2
+        },
+        {
+          "q": "Additionne ces nombres : 150 + 25 + 25 = ?",
+          "options": ["175", "200", "225", "250"],
+          "r": 1
+        }
+      ]
+    },
+    "Donnees_Probabilites": {
+      "domaine": "Données et Probabilités 📊",
+      "questions": [
+        {
+          "q": "Regarde ce diagramme à bandes. Quelle couleur a été choisie par EXACTEMENT 6 élèves ?",
+          "image": "/oqreImag/3E/couleurs.png",
+          "options": ["Bleu 🔵", "Vert 🟢", "Jaune 🟡", "Rouge 🔴"],
+          "r": 0
+        },
+        {
+          "q": "Tu fais tourner une girouette divisée en 4 sections : 3 sont bleues et 1 est rouge. Il est _______ que la flèche s'arrête sur le bleu.",
+          "image": "/oqreImag/3E/spinner.png",
+          "options": ["Impossible", "Peu probable", "Probable 📈", "Certain"],
+          "r": 2
+        },
+        {
+          "q": "Dans une classe, 12 élèves aiment le soccer ⚽ et 8 aiment le hockey 🏒. Combien d'élèves ont participé au sondage en tout ?",
+          "options": ["4", "8", "12", "20"],
+          "r": 3
+        },
+        {
+          "q": "Quel type de diagramme utilise des cercles qui se croisent pour comparer des choses ?",
+          "options": ["Diagramme à bandes", "Pictogramme", "Diagramme de Venn ⭕⭕", "Marques de pointage"],
+          "r": 2
+        },
+        {
+          "q": "Si tu lances une pièce de monnaie 🪙, quel résultat est possible ?",
+          "options": ["Pile ou Face", "1 ou 2", "Rouge ou Vert", "Gagner ou Perdre"],
+          "r": 0
+        }
+      ]
+    },
+    "Geometrie_Mesure": {
+      "domaine": "Géométrie et Mesure 📐",
+      "questions": [
+        {
+          "q": "Quel solide ressemble à une canette de jus ou à une pile ?",
+          "image": "/oqreImag/3E/solides_vie.jpg",
+          "options": ["Une sphère ⚽", "Un cylindre 🔋", "Un cône 🍦", "Un prisme"],
+          "r": 1
+        },
+        {
+          "q": "Quelle est l'aire de cette forme ? (Compte les petits carrés intérieurs)",
+          "image": "/oqreImag/3E/aire_grid.png",
+          "options": ["6 unités", "8 unités", "9 unités", "12 unités"],
+          "r": 2
+        },
+        {
+          "q": "Un triangle qui possède un angle droit (comme le coin d'une feuille) s'appelle :",
+          "options": ["Un triangle rectangle 📐", "Un carré", "Un triangle pointu", "Un cercle"],
+          "r": 0
+        },
+        {
+          "q": "Si tu veux mesurer la température de l'eau qui bout, tu utilises :",
+          "options": ["Une règle 📏", "Une balance ⚖️", "Un thermomètre 🌡️", "Une horloge ⏰"],
+          "r": 2
+        },
+        {
+          "q": "Quelle heure est-il sur cette horloge ?",
+          "image": "/oqreImag/3E/horloge_ex.png",
+          "options": ["2h00", "2h15", "2h30", "3h00"],
+          "r": 2
+        }
+      ]
+    },
+    "Litteratie_Financiere": {
+      "domaine": "Littératie Financière 💰",
+      "questions": [
+        {
+          "q": "Tu as une pièce de 2$ (Toonie) et une pièce de 25¢. Combien as-tu d'argent ?",
+          "options": ["2,00 $", "2,25 $", "2,50 $", "25,02 $"],
+          "r": 1
+        },
+        {
+          "q": "Lequel de ces montants est ÉGAL à 10 $ ?",
+          "options": ["2 billets de 5 $ 💵💵", "10 pièces de 25 ¢ 🪙", "1 billet de 20 $", "5 pièces de 1 $"],
+          "r": 0
+        },
+        {
+          "q": "Pourquoi est-il important d'ÉCONOMISER (sauver de l'argent) ?",
+          "options": ["Pour tout dépenser tout de suite", "Pour perdre son argent", "Pour acheter quelque chose de spécial plus tard 🚲", "Parce que c'est obligatoire"],
+          "r": 2
+        },
+        {
+          "q": "Si un paquet de gommes coûte 1,50 $ et que tu donnes 2,00 $, combien de monnaie recevras-tu ?",
+          "options": ["10 ¢", "25 ¢", "50 ¢", "75 ¢"],
+          "r": 2
+        },
+        {
+          "q": "Tu reçois 10$ pour ton anniversaire 🎂. C'est un exemple de :",
+          "options": ["Un revenu (argent qui entre) 📈", "Une dépense (argent qui sort) 📉", "Un prêt", "Une taxe"],
+          "r": 0
+        }
+      ]
+    }
+  }
+}

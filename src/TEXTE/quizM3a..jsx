@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { BookOpen, Award, Loader2, CheckCircle } from "lucide-react";
 
-
-import data from "./3E/Revision1.json"; 
+import data from "./3E/Revision1 copy 4.json"; 
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLZp0igZS7YoitOLP_HzojLbUOplOla2d_GoLny-EPAZKfa-5sbwi_7dOynkHNGw91vw/exec";
+
+// Petite fonction pour vérifier si une chaîne de caractères est un lien d'image
+const estUneImage = (texte) => {
+  return typeof texte === 'string' && /\.(png|jpe?g|gif|svg|webp)$/i.test(texte);
+};
 
 export default function QuizOQREM3a() {
   const [etape, setEtape] = useState("login");
@@ -190,16 +194,30 @@ export default function QuizOQREM3a() {
                   <button
                     key={j}
                     onClick={() => handleReponse(partieActive, i, j)}
-                    className={`p-4 text-left rounded-xl border-2 transition-all ${
+                    className={`p-4 text-left rounded-xl border-2 transition-all flex items-center ${
                       reponses[themesKeys[partieActive - 1]][i] === j 
                       ? "bg-blue-600 text-white border-blue-700 shadow-md transform scale-[1.01]" 
-                      : "bg-white border-gray-200 hover:border-blue-300 shadow-sm"
+                      : "bg-white text-gray-800 border-gray-200 hover:border-blue-300 shadow-sm"
                     }`}
                   >
-                    <span className="inline-block w-8 h-8 mr-2 text-center leading-7 rounded-full bg-opacity-20 bg-black text-sm">
+                    <span className="inline-block flex-shrink-0 w-8 h-8 mr-3 text-center leading-8 rounded-full bg-black bg-opacity-10 text-sm font-bold">
                       {String.fromCharCode(65 + j)}
                     </span>
-                    {opt}
+                    
+                    {/* VÉRIFICATION ICI : IMAGE OU TEXTE */}
+                    {estUneImage(opt) ? (
+                      <div className="flex-1 bg-white p-1 rounded-lg">
+                        <img 
+                          src={opt} 
+                          alt={`Option ${String.fromCharCode(65 + j)}`} 
+                          className="max-w-full h-auto max-h-32 object-contain rounded"
+                        style={{ maxHeight: "250px" }}
+                       />
+                      </div>
+                    ) : (
+                      <span>{opt}</span>
+                    )}
+
                   </button>
                 ))}
               </div>

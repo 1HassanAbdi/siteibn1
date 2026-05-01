@@ -1,0 +1,161 @@
+{
+  "matiere": "Mathématiques 🧮 - 1re année (Ontario)",
+  "texte": "Lis chaque question et choisis la bonne réponse. Bonne chance ! 🌟",
+
+  "themes": {
+    "Nombres": {
+      "domaine": "Sens du nombre 🔢",
+      "questions": [
+        {
+          "q": "Quel nombre vient après 9 ?",
+          "options": ["8", "10", "11", "7"],
+          "r": 1
+        },
+        {
+          "q": "Combien font 3 + 2 ?",
+          "options": ["4", "5", "6", "7"],
+          "r": 1
+        },
+        {
+          "q": "Combien font 6 - 3 ?",
+          "options": ["2", "3", "4", "5"],
+          "r": 1
+        },
+        {
+          "q": "Quel nombre est plus grand que 8 ?",
+          "options": ["6", "7", "9", "5"],
+          "r": 2
+        },
+        {
+          "q": "Combien y a-t-il de doigts sur 2 mains ?",
+          "options": ["8", "9", "10", "11"],
+          "r": 2
+        }
+      ]
+    },
+
+    "Algebre": {
+      "domaine": "Régularités 🧩",
+      "questions": [
+        {
+          "q": "Complète la suite : 1, 2, 3, __",
+          "options": ["2", "3", "4", "5"],
+          "r": 2
+        },
+        {
+          "q": "Complète : 🔴🔵🔴🔵 __",
+          "options": ["🔵", "🔴", "🟢", "🟡"],
+          "r": 1
+        },
+        {
+          "q": "Complète : 2, 4, 6, __",
+          "options": ["7", "8", "9", "10"],
+          "r": 1
+        },
+        {
+          "q": "Quelle suite est correcte ?",
+          "options": ["1,2,3", "2,2,2", "3,1,3", "5,4,3"],
+          "r": 0
+        },
+        {
+          "q": "Quelle règle suit 4, 5, 6 ?",
+          "options": ["+1", "+2", "-1", "x2"],
+          "r": 0
+        }
+      ]
+    },
+
+    "Donnees": {
+      "domaine": "Données 📊",
+      "questions": [
+        {
+          "q": "Quelle couleur est la plus fréquente ? 🔵🔵🔴",
+          "options": ["Bleu", "Rouge", "Vert", "Jaune"],
+          "r": 0
+        },
+        {
+          "q": "Quel fruit est le plus choisi ? 🍎🍎🍌",
+          "options": ["Banane", "Pomme", "Orange", "Raisin"],
+          "r": 1
+        },
+        {
+          "q": "Combien de rouges ? 🔴🔴🔴🔵",
+          "options": ["2", "3", "4", "1"],
+          "r": 1
+        },
+        {
+  "q": "Quel animal est le plus grand ?",
+  "options": ["🐭 Souris", "🐱 Chat", "🐶 Chien", "🐘 Éléphant"],
+  "r": 3
+},{
+  "q": "Quel animal est le plus petit ?",
+  "options": ["🐭 Souris", "🐱 Chat", "🐶 Chien", "🐘 Éléphant"],
+  "r": 0
+}
+       
+      ]
+    },
+
+    "Geometrie": {
+      "domaine": "Géométrie 📐",
+      "questions": [
+        {
+          "q": "Quelle forme est un cercle ?",
+          "options": ["⚪", "⬛", "🔺", "⬜"],
+          "r": 0
+        },
+        {
+          "q": "Combien de côtés a un carré ?",
+          "options": ["3", "4", "5", "6"],
+          "r": 1
+        },
+        {
+          "q": "Quelle forme est un triangle ?",
+          "options": ["🔺", "⚪", "⬛", "⬜"],
+          "r": 0
+        },
+        {
+          "q": "Quel objet est le plus long ?",
+          "options": ["Crayon", "Règle", "Gomme", "Bille"],
+          "r": 1
+        },
+        {
+          "q": "Quelle forme peut rouler ?",
+          "options": ["Cercle", "Carré", "Triangle", "Rectangle"],
+          "r": 0
+        }
+      ]
+    },
+
+    "Litteratie_Financiere": {
+      "domaine": "Argent 💰",
+      "questions": [
+        {
+          "q": "Quelle pièce vaut 1 $ ?",
+          "options": ["5¢", "10¢", "1$", "25¢"],
+          "r": 2
+        },
+        {
+          "q": "Tu achètes un objet à 1 $. Tu donnes 2 $. Combien reçois-tu ?",
+          "options": ["0 $", "1 $", "2 $", "3 $"],
+          "r": 1
+        },
+        {
+          "q": "Que fais-tu avec de l’argent ?",
+          "options": ["J’achète", "Je dors", "Je saute", "Je chante"],
+          "r": 0
+        },
+        {
+          "q": "Quel objet coûte le plus ?",
+          "options": ["1 $", "2 $", "3 $", "4 $"],
+          "r": 3
+        },
+        {
+          "q": "1 $ + 1 $ = ?",
+          "options": ["1 $", "2 $", "3 $", "4 $"],
+          "r": 1
+        }
+      ]
+    }
+  }
+}
