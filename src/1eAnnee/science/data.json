@@ -1,4 +1,5 @@
 {
+  
   "themes": [
     {
    "theme": "Le corps humain", 
@@ -35,18 +36,18 @@
       "La bouche", "Le bras", "La jambe", "Les cheveux", "Le cou", "Les doigts"
     ],
     "zones": [
-      { "top": "4%", "left": "7%", "attendu": "La tête" },
-      { "top": "30%", "left": "2%", "attendu": "L'oreille" },
-      { "top": "47%", "left": "2%", "attendu": "La bouche" },
-      { "top": "57%", "left": "2%", "attendu": "Le bras" },
-      { "top": "73%", "left": "4%", "attendu": "La main" },
-      { "top": "87%", "left": "11%", "attendu": "La jambe" },
-      { "top": "4%", "left": "59%", "attendu": "Les cheveux" },
-      { "top": "24%", "left": "74%", "attendu": "L'œil" },
-      { "top": "45%", "left": "64%", "attendu": "Le nez" },
-      { "top": "55%", "left": "60%", "attendu": "Le cou" },
-      { "top": "75%", "left": "70%", "attendu": "Les doigts" },
-      { "top": "87%", "left": "59%", "attendu": "Le pied" }
+      { "top": "7%", "left": "21%", "attendu": "La tête" },
+      { "top": "35%", "left": "15%", "attendu": "L'oreille" },
+      { "top": "50%", "left": "17%", "attendu": "La bouche" },
+      { "top": "60%", "left": "16%", "attendu": "Le bras" },
+      { "top": "76%", "left": "17%", "attendu": "La main" },
+      { "top": "91%", "left": "23%", "attendu": "La jambe" },
+      { "top": "5%", "left": "67%", "attendu": "Les cheveux" },
+      { "top": "27%", "left": "83%", "attendu": "L'œil" },
+      { "top": "50%", "left": "75%", "attendu": "Le nez" },
+      { "top": "60%", "left": "70%", "attendu": "Le cou" },
+      { "top": "78%", "left": "81%", "attendu": "Les doigts" },
+      { "top": "94%", "left": "68%", "attendu": "Le pied" }
     ]
   },
   "exercice4_qcm": [
@@ -187,16 +188,16 @@
       "veau", "Le chat", "Le canard", "Le lapin",  "La ferme"
     ],
     "zones": [
-      { "top": "27%", "left": "28%", "attendu": "La vache" },
-      { "top": "32%", "left": "0%", "attendu": "La poule" },
-       { "top": "58%", "left": "0%", "attendu": "Le cheval" },
-       { "top": "85%", "left": "0%", "attendu": "veau" },
-       { "top": "82%", "left": "45%", "attendu": "La ferme" },
-         { "top": "52%", "left": "26%", "attendu": "Le chat" },
-         { "top": "55%", "left": "52%", "attendu": "Le canard" },
-         { "top": "28%", "left": "52%", "attendu": "Le cochon" },
-         { "top": "30%", "left": "75%", "attendu": "Le mouton" },
-         { "top": "62%", "left": "75%", "attendu": "Le lapin" }        
+      { "top": "30%", "left": "38%", "attendu": "La vache" },
+      { "top": "32%", "left": "11%", "attendu": "La poule" },
+       { "top": "65%", "left": "10%", "attendu": "Le cheval" },
+       { "top": "89%", "left": "15%", "attendu": "veau" },
+       { "top": "88%", "left": "48%", "attendu": "La ferme" },
+         { "top": "56%", "left": "34%", "attendu": "Le chat" },
+         { "top": "59%", "left": "60%", "attendu": "Le canard" },
+         { "top": "35%", "left": "65%", "attendu": "Le cochon" },
+         { "top": "35%", "left": "88%", "attendu": "Le mouton" },
+         { "top": "64%", "left": "87%", "attendu": "Le lapin" }        
    
     ]
   },
@@ -264,7 +265,7 @@
   ],
   "dropZonesImage": [
     { "id": "zone-poulailler", "top": "5%", "left": "10%", "expected": "poulailler" },
-    { "id": "zone-poule", "top": "15%", "left": "25%", "expected": "poule" },
+    { "id": "zone-poule", "top": "30%", "left": "25%", "expected": "poule" },
     { "id": "zone-canard", "top": "30%", "left": "10%", "expected": "canard" },
     { "id": "zone-cochon", "top": "45%", "left": "20%", "expected": "cochon" },
     { "id": "zone-mouton", "top": "60%", "left": "15%", "expected": "mouton" },
@@ -274,7 +275,7 @@
     { "id": "zone-veau", "top": "35%", "left": "70%", "expected": "veau" },
     { "id": "zone-chien", "top": "50%", "left": "60%", "expected": "chien" },
     { "id": "zone-chat", "top": "65%", "left": "75%", "expected": "chat" },
-    { "id": "zone-lapin", "top": "80%", "left": "60%", "expected": "lapin" },
+    { "id": "zone-lapin", "top": "89%", "left": "60%", "expected": "lapin" },
     { "id": "zone-pre", "top": "50%", "left": "40%", "expected": "pre" },
     { "id": "zone-ferme", "top": "30%", "left": "40%", "expected": "ferme" }
   ]
@@ -314,16 +315,16 @@
           "Le perroquet", "La tortue", "La souris", "Le lézard", "Le serpent"
         ],
         "zones": [
-          { "top": "1%", "left": "0%", "attendu": "Le chien" },
-          { "top": "1%", "left": "30%", "attendu": "Le chat" },
-          { "top": "32%", "left": "27%", "attendu": "Le poisson" },
-          { "top": "30%", "left": "55%", "attendu": "Le hamster" },
-          { "top": "55%", "left": "80%", "attendu": "Le lapin" },
-          { "top": "1%", "left": "80%", "attendu": "Le perroquet" },
-          { "top": "85%", "left": "40%", "attendu": "La tortue" },
-          { "top": "45%", "left": "1%", "attendu": "La souris" },
-          { "top": "20%", "left": "80%", "attendu": "Le lézard" },
-          { "top": "84%", "left": "0%", "attendu": "Le serpent" }
+          { "top": "4%", "left": "17%", "attendu": "Le chien" },
+          { "top": "30%", "left": "40%", "attendu": "Le chat" },
+          { "top": "60%", "left": "40%", "attendu": "Le poisson" },
+          { "top": "60%", "left": "64%", "attendu": "Le hamster" },
+          { "top": "84%", "left": "80%", "attendu": "Le lapin" },
+          { "top": "26%", "left": "80%", "attendu": "Le perroquet" },
+          { "top": "89%", "left": "52%", "attendu": "La tortue" },
+          { "top": "45%", "left": "19%", "attendu": "La souris" },
+          { "top": "47%", "left": "90%", "attendu": "Le lézard" },
+          { "top": "90%", "left": "22%", "attendu": "Le serpent" }
         ]
       },
       "exercice4_qcm": [
@@ -447,16 +448,16 @@
       "Le singe", "Le crocodile", "Le rhinocéros", "Le léopard", "Le serpent"
     ],
     "zones": [
-      { "top": "1%", "left": "10%", "attendu": "Le lion" },
+      { "top": "35%", "left": "10%", "attendu": "Le lion" },
       { "top": "9%", "left": "40%", "attendu": "L'éléphant" },
-      { "top": "0%", "left": "80%", "attendu": "La girafe" },
-      { "top": "55%", "left": "75%", "attendu": "Le léopard" },
-      { "top": "40%", "left": "0%", "attendu": "Le zèbre" },
-      { "top": "39%", "left": "47%", "attendu": "Le singe" },
-      { "top": "69%", "left": "0%", "attendu": "Le crocodile" },
-      { "top": "60%", "left": "30%", "attendu": "Le rhinocéros" },
-      { "top": "30%", "left": "80%", "attendu": "Le tigre" },
-      { "top": "90%", "left": "80%", "attendu": "Le serpent" }
+      { "top": "30%", "left": "88%", "attendu": "La girafe" },
+      { "top": "79%", "left": "75%", "attendu": "Le léopard" },
+      { "top": "70%", "left": "22%", "attendu": "Le zèbre" },
+      { "top": "67%", "left": "57%", "attendu": "Le singe" },
+      { "top": "100%", "left": "20%", "attendu": "Le crocodile" },
+      { "top": "90%", "left": "46%", "attendu": "Le rhinocéros" },
+      { "top": "60%", "left": "96%", "attendu": "Le tigre" },
+      { "top": "102%", "left": "80%", "attendu": "Le serpent" }
     ]
   },
 
@@ -544,6 +545,114 @@
     { "id": "zone-rhinoceros", "top": "60%", "left": "15%", "expected": "rhinoceros" },
     { "id": "zone-leopard", "top": "35%", "left": "85%", "expected": "leopard" },
     { "id": "zone-serpent", "top": "80%", "left": "10%", "expected": "serpent" }
+  ]
+},{
+  "theme": "Les Mathématiques",
+  "emoji": "🧮",
+  "exercice1_appariement": [
+    { "emoji": "1️⃣", "nom": "Un" },
+    { "emoji": "2️⃣", "nom": "Deux" },
+    { "emoji": "3️⃣", "nom": "Trois" },
+    { "emoji": "4️⃣", "nom": "Quatre" },
+    { "emoji": "5️⃣", "nom": "Cinq" },
+    { "emoji": "🔺", "nom": "Le triangle" },
+    { "emoji": "⭕", "nom": "Le cercle" },
+    { "emoji": "⬜", "nom": "Le carré" },
+    { "emoji": "➕", "nom": "Plus" },
+    { "emoji": "➖", "nom": "Moins" }
+  ],
+  "exercice2_glisser_deposer": [
+    { "emoji": "🍎", "nom": "1" },
+    { "emoji": "🍎🍎", "nom": "2" },
+    { "emoji": "🍎🍎🍎", "nom": "3" },
+    { "emoji": "🍎🍎🍎🍎", "nom": "4" },
+    { "emoji": "🖐️", "nom": "5" },
+    { "emoji": "🎲", "nom": "6" },
+    { "emoji": "🌈", "nom": "7" },
+    { "emoji": "🕷️", "nom": "8" },
+    { "emoji": "🐱", "nom": "9" },
+    { "emoji": "🔟", "nom": "10" }
+  ],
+  "exercice3_schema": {
+    "imageUrl": "/nombre.png",
+    "altText": "Le train des nombres",
+    "etiquettes_a_glisser": [
+      "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
+    ],
+    "zones": [
+      { "top": "14%", "left": "5%", "attendu": "1" },
+      { "top": "25%", "left": "15%", "attendu": "2" },
+      { "top": "35%", "left": "25%", "attendu": "3" },
+      { "top": "50%", "left": "35%", "attendu": "4" },
+      { "top": "60%", "left": "45%", "attendu": "5" },
+      { "top": "70%", "left": "55%", "attendu": "6" },
+      { "top": "60%", "left": "65%", "attendu": "7" },
+      { "top": "50%", "left": "75%", "attendu": "8" },
+      { "top": "35%", "left": "85%", "attendu": "9" },
+      { "top": "25%", "left": "95%", "attendu": "10" }
+    ]
+  },
+  "exercice4_qcm": [
+    {
+      "question": "Combien font 2 + 1 ?",
+      "options": ["2", "3", "4"],
+      "reponse": "3",
+      "emoji": "🔢"
+    },
+    {
+      "question": "Quel nombre vient juste après 4 ?",
+      "options": ["3", "5", "6"],
+      "reponse": "5",
+      "emoji": "🏃"
+    },
+    {
+      "question": "Quelle forme a 3 côtés ?",
+      "options": ["Le carré", "Le cercle", "Le triangle"],
+      "reponse": "Le triangle",
+      "emoji": "📐"
+    },
+    {
+      "question": "Si j'ai 5 bonbons et j'en mange 1, combien en reste-t-il ?",
+      "options": ["4", "5", "6"],
+      "reponse": "4",
+      "emoji": "🍬"
+    },
+    {
+      "question": "Lequel est le plus grand nombre ?",
+      "options": ["2", "8", "5"],
+      "reponse": "8",
+      "emoji": "🐘"
+    },
+    {
+      "question": "Combien de doigts as-tu sur une main ?",
+      "options": ["5", "10", "3"],
+      "reponse": "5",
+      "emoji": "🖐️"
+    },
+    {
+      "question": "Quel nombre est entre 7 et 9 ?",
+      "options": ["6", "8", "10"],
+      "reponse": "8",
+      "emoji": "🎯"
+    },
+    {
+      "question": "Combien font 0 + 5 ?",
+      "options": ["0", "5", "10"],
+      "reponse": "5",
+      "emoji": "🥚"
+    },
+    {
+      "question": "Quelle forme ressemble à un ballon ?",
+      "options": ["Le carré", "Le cercle", "Le triangle"],
+      "reponse": "Le cercle",
+      "emoji": "⚽"
+    },
+    {
+      "question": "Combien font 2 + 2 ?",
+      "options": ["3", "4", "5"],
+      "reponse": "4",
+      "emoji": "👯"
+    }
   ]
 }
      ]

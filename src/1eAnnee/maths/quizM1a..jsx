@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { BookOpen, Award, Loader2, CheckCircle } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { BookOpen, Award, Loader2, Star, Rocket, PartyPopper, ChevronRight, ChevronLeft } from "lucide-react";
+import confetti from 'canvas-confetti';
 
 import data from "./data.json"; 
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwargP49tJyzbPaLaRSX5KT8Fb4v6C3gUnsLO8GKtzA7oS0IFMFSPJ1QGvVHdETP1RSMQ/exec";
 
-// Petite fonction pour vérifier si une chaîne de caractères est un lien d'image
 const estUneImage = (texte) => {
   return typeof texte === 'string' && /\.(png|jpe?g|gif|svg|webp)$/i.test(texte);
 };
 
-export default function Mathematique1a() {
+export default function MathematiqueJunior() {
   const [etape, setEtape] = useState("login");
   const [email, setEmail] = useState("");
   const [nom, setNom] = useState("");
@@ -22,7 +22,6 @@ export default function Mathematique1a() {
   const themesKeys = Object.keys(data.themes); 
   const totalThemes = themesKeys.length;
 
-  // Initialisation dynamique des réponses
   const [reponses, setReponses] = useState(() => {
     const init = {};
     themesKeys.forEach(key => init[key] = {});
@@ -31,7 +30,9 @@ export default function Mathematique1a() {
 
   const [score, setScore] = useState({});
 
-  // 🔧 UTILS
+  // --- FONCTIONS UTILITAIRES ---
+  
+  // Cette fonction manquait dans le code précédent
   const getQuestions = (indexPartie) => {
     const themeKey = themesKeys[indexPartie - 1];
     return data.themes[themeKey]?.questions || [];
@@ -52,7 +53,18 @@ export default function Mathematique1a() {
     }));
   };
 
-  // 📡 ENVOI VERS GOOGLE SHEET
+  // Effet de confettis pour la victoire
+  useEffect(() => {
+    if (resultats) {
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#FFD700', '#FF69B4', '#00CED1', '#ADFF2F']
+      });
+    }
+  }, [resultats]);
+
   const envoyerEnArrierePlan = async (scoresFinaux, reponsesEleve) => {
     setEnvoiEnCours(true);
     const maintenant = new Date();
@@ -67,11 +79,8 @@ export default function Mathematique1a() {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify({
-          email: email,
-          eleve: nom,
-          date: dateStr,
-          matiere: data.matiere,
-          domaine: key,
+          email, eleve: nom, date: dateStr,
+          matiere: data.matiere, domaine: key,
           partie: data.themes[key].domaine,
           note: Math.round((s / questions.length) * 20),
           details: detailsQuestions
@@ -102,14 +111,18 @@ export default function Mathematique1a() {
   // --- ÉCRAN LOGIN ---
   if (etape === "login") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-amber-100 to-orange-200 p-8 flex items-center justify-center">
-        <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl p-8 border-t-8 border-amber-500">
-          <h1 className="text-2xl font-bold text-center mb-6">{data.matiere}</h1>
+      <div className="min-h-screen bg-sky-100 flex items-center justify-center p-4">
+        <div className="max-w-md w-full bg-white rounded-[2rem] shadow-2xl p-8 border-b-8 border-sky-400 text-center">
+          <div className="bg-sky-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto -mt-16 border-4 border-white shadow-lg">
+            <Rocket className="text-white w-10 h-10" />
+          </div>
+          <h1 className="text-3xl font-black text-sky-600 mt-6 mb-2">{data.matiere}</h1>
+          <p className="text-gray-500 font-medium mb-8">Prêt pour l'aventure ?</p>
           <div className="space-y-4">
-            <input type="text" value={nom} onChange={e => setNom(e.target.value)} placeholder="Nom de l'élève" className="w-full p-3 border-2 rounded-xl" />
-            <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email institutionnel" className="w-full p-3 border-2 rounded-xl" />
-            <button onClick={() => setEtape("quiz")} disabled={!nom || !email} className="w-full py-4 rounded-xl font-bold text-white bg-amber-500 hover:bg-amber-600 transition disabled:bg-gray-300">
-              Commencer le quiz
+            <input type="text" value={nom} onChange={e => setNom(e.target.value)} placeholder="Ton Prénom" className="w-full p-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:border-sky-400 outline-none transition-all text-lg font-bold" />
+            <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Ton Email" className="w-full p-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:border-sky-400 outline-none transition-all font-bold" />
+            <button onClick={() => setEtape("quiz")} disabled={!nom || !email} className="w-full py-5 rounded-2xl font-black text-xl text-white bg-orange-400 hover:bg-orange-500 transform transition active:scale-95 disabled:bg-gray-300 shadow-[0_6px_0_rgb(234,145,51)] active:shadow-none">
+              C'EST PARTI !
             </button>
           </div>
         </div>
@@ -121,137 +134,138 @@ export default function Mathematique1a() {
   if (resultats) {
     const totalQuestions = themesKeys.reduce((acc, key) => acc + data.themes[key].questions.length, 0);
     return (
-      <div className="min-h-screen bg-green-50 p-8 flex flex-col items-center justify-center">
-        <Award className="w-20 h-20 text-yellow-500 mb-4 animate-bounce" />
-        <h1 className="text-3xl font-bold mb-6 text-center">Félicitations, {nom} !</h1>
-        <div className="bg-white p-6 rounded-xl shadow-lg w-full max-w-md space-y-4">
-          {themesKeys.map(key => (
-            <div key={key} className="flex justify-between border-b py-2">
-              <span className="font-medium text-gray-600">{data.themes[key].domaine} :</span>
-              <span className="font-bold text-indigo-600">{score[key]} / {data.themes[key].questions.length}</span>
-            </div>
-          ))}
-          <div className="text-center text-2xl font-bold pt-4 text-green-700 border-t">
-            Score Total : {score.total} / {totalQuestions}
+      <div className="min-h-screen bg-yellow-50 p-8 flex flex-col items-center justify-center">
+        <div className="bg-white p-10 rounded-[3rem] shadow-2xl border-t-8 border-yellow-400 text-center max-w-lg w-full relative overflow-hidden">
+          <PartyPopper className="w-16 h-16 text-orange-500 mx-auto mb-4 animate-bounce" />
+          <h1 className="text-4xl font-black text-gray-800 mb-2">BRAVO {nom} !</h1>
+          <p className="text-xl text-gray-500 mb-8">Tu as terminé tes exercices !</p>
+          <div className="grid grid-cols-1 gap-3 mb-8">
+            {themesKeys.map(key => (
+              <div key={key} className="flex items-center bg-gray-50 p-4 rounded-2xl border-2 border-gray-100">
+                <Star className="text-yellow-400 mr-3 fill-yellow-400" />
+                <span className="flex-1 text-left font-bold text-gray-600">{data.themes[key].domaine}</span>
+                <span className="bg-sky-100 text-sky-600 px-4 py-1 rounded-full font-black">{score[key]} / {data.themes[key].questions.length}</span>
+              </div>
+            ))}
+          </div>
+          <div className="bg-green-100 p-6 rounded-3xl border-b-8 border-green-200">
+            <p className="text-green-600 font-bold uppercase text-sm">Score Total</p>
+            <div className="text-5xl font-black text-green-700">{score.total} <span className="text-2xl text-green-500">/ {totalQuestions}</span></div>
           </div>
         </div>
-        {envoiEnCours && <div className="mt-4 flex items-center gap-2 text-blue-500"><Loader2 className="animate-spin" /> Enregistrement des résultats...</div>}
+        {envoiEnCours && <div className="mt-8 flex items-center gap-3 text-sky-500 font-bold"><Loader2 className="animate-spin" /> Enregistrement...</div>}
       </div>
     );
   }
 
-  // --- ÉCRAN QUIZ (PRINCIPAL) ---
+  // --- ÉCRAN QUIZ ---
   return (
-    <div className="min-h-screen bg-slate-50 p-4 md:p-8">
-      <div className="max-w-4xl mx-auto bg-white p-6 rounded-2xl shadow-xl border-t-8 border-blue-600">
+    <div className="min-h-screen bg-indigo-50 p-4 md:p-8">
+      <div className="max-w-4xl mx-auto">
         
-        {/* NAVIGATION DES THÈMES */}
-        <div className="flex gap-2 mb-8 overflow-x-auto pb-2 no-scrollbar">
-          {themesKeys.map((key, i) => (
-            <button
-              key={key}
-              onClick={() => (i === 0 || partieComplete(i)) && setPartieActive(i + 1)}
-              className={`px-4 py-2 rounded-full whitespace-nowrap transition font-bold ${partieActive === i + 1 ? "bg-blue-600 text-white shadow-md" : "bg-gray-100 text-gray-500"}`}
-            >
-              {partieComplete(i+1) && "✓ "} {key.replace('_', ' ')}
-            </button>
-          ))}
-        </div>
-
-        {/* BLOC INSTRUCTIONS */}
-        <div className="mb-8 p-5 bg-amber-50 rounded-xl border-l-4 border-amber-400 italic text-gray-800">
-          <h3 className="font-bold not-italic mb-2 flex items-center gap-2"><BookOpen size={20}/> Instructions</h3>
-          {data.texte}
-        </div>
-
-        {/* QUESTIONS DU THÈME ACTIF */}
-        <div className="space-y-8">
-          <div className="flex justify-between items-center border-b pb-2">
-            <h2 className="text-2xl font-black text-indigo-900">{data.themes[themesKeys[partieActive - 1]].domaine}</h2>
-            <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full font-bold">
-              {partieActive} / {totalThemes}
-            </span>
+        {/* PROGRESS BAR */}
+        <div className="bg-white p-4 rounded-3xl shadow-sm mb-6 flex items-center gap-4">
+          <div className="flex-1 bg-gray-100 h-4 rounded-full overflow-hidden">
+            <div className="bg-indigo-500 h-full transition-all duration-500" style={{ width: `${(partieActive / totalThemes) * 100}%` }}></div>
           </div>
-          
-          {getQuestions(partieActive).map((q, i) => (
-            <div key={i} className="p-5 bg-gray-50 rounded-2xl border border-gray-100">
-              <p className="font-bold text-lg mb-4 text-gray-800">{i + 1}. {q.q}</p>
-              
-              {/* AFFICHAGE DE L'IMAGE (Si elle existe dans le JSON) */}
-              {q.image && (
-                <div className="mb-6 flex justify-center">
-                  <img 
-                    src={q.image} 
-                    alt={`Illustration question ${i+1}`}
-                    className="max-w-full h-auto rounded-lg shadow-sm border border-gray-200"
-                    style={{ maxHeight: "250px" }}
-                  />
-                </div>
-              )}
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {q.options.map((opt, j) => (
-                  <button
-                    key={j}
-                    onClick={() => handleReponse(partieActive, i, j)}
-                    className={`p-4 text-left rounded-xl border-2 transition-all flex items-center ${
-                      reponses[themesKeys[partieActive - 1]][i] === j 
-                      ? "bg-blue-600 text-white border-blue-700 shadow-md transform scale-[1.01]" 
-                      : "bg-white text-gray-800 border-gray-200 hover:border-blue-300 shadow-sm"
-                    }`}
-                  >
-                    <span className="inline-block flex-shrink-0 w-8 h-8 mr-3 text-center leading-8 rounded-full bg-black bg-opacity-10 text-sm font-bold">
-                      {String.fromCharCode(65 + j)}
-                    </span>
-                    
-                    {/* VÉRIFICATION ICI : IMAGE OU TEXTE */}
-                    {estUneImage(opt) ? (
-                      <div className="flex-1 bg-white p-1 rounded-lg">
-                        <img 
-                          src={opt} 
-                          alt={`Option ${String.fromCharCode(65 + j)}`} 
-                          className="max-w-full h-auto max-h-32 object-contain rounded"
-                        style={{ maxHeight: "250px" }}
-                       />
-                      </div>
-                    ) : (
-                      <span>{opt}</span>
-                    )}
-
-                  </button>
-                ))}
-              </div>
-            </div>
-          ))}
+          <span className="font-black text-indigo-600">{partieActive} / {totalThemes}</span>
         </div>
 
-        {/* NAVIGATION BAS DE PAGE */}
-        <div className="mt-12 flex justify-between border-t pt-6">
-          <button 
-            disabled={partieActive === 1} 
-            onClick={() => setPartieActive(partieActive - 1)} 
-            className="px-6 py-2 font-bold text-gray-400 hover:text-gray-600 disabled:opacity-0 transition"
-          >
-            ← Précédent
-          </button>
-          
-          {partieActive < totalThemes ? (
-            <button 
-              disabled={!partieComplete(partieActive)} 
-              onClick={() => setPartieActive(partieActive + 1)}
-              className={`px-10 py-4 rounded-xl font-black text-white transition ${partieComplete(partieActive) ? "bg-blue-600 hover:bg-blue-700 shadow-lg" : "bg-gray-300 cursor-not-allowed"}`}
-            >
-              THÈME SUIVANT →
-            </button>
-          ) : (
-            <button 
-              disabled={!partieComplete(totalThemes)} 
-              onClick={terminerQuiz}
-              className={`px-10 py-4 rounded-xl font-black text-white transition ${partieComplete(totalThemes) ? "bg-indigo-600 hover:bg-indigo-700 shadow-lg" : "bg-gray-300 cursor-not-allowed"}`}
-            >
-              TERMINER LE QUIZ
-            </button>
-          )}
+        <div className="bg-white rounded-[2.5rem] shadow-xl overflow-hidden">
+          <div className="bg-indigo-600 p-8 text-white flex justify-between items-center">
+            <div>
+              <p className="text-indigo-200 font-bold uppercase text-xs mb-1">Activité</p>
+              <h2 className="text-3xl font-black">{data.themes[themesKeys[partieActive - 1]].domaine}</h2>
+            </div>
+            <BookOpen className="w-10 h-10 opacity-50" />
+          </div>
+
+          <div className="p-6 md:p-10">
+            <div className="space-y-12">
+              {getQuestions(partieActive).map((q, i) => (
+                <div key={i} className="relative">
+                  <div className="flex items-start gap-4 mb-6">
+                    <span className="bg-orange-100 text-orange-500 w-10 h-10 rounded-xl flex items-center justify-center font-black text-xl flex-shrink-0">
+                      {i + 1}
+                    </span>
+                    <p className="font-bold text-2xl text-gray-800 pt-1">{q.q}</p>
+                  </div>
+                  
+                  {q.image && (
+                    <div className="mb-6 flex justify-center p-4 bg-gray-50 rounded-3xl border-4 border-dashed border-gray-100">
+                      <img src={q.image} alt="Exercice" className="max-w-full h-auto rounded-2xl" style={{ maxHeight: "300px" }} />
+                    </div>
+                  )}
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {q.options.map((opt, j) => {
+                      const estSelectionne = reponses[themesKeys[partieActive - 1]][i] === j;
+                      return (
+                        <button
+                          key={j}
+                          onClick={() => handleReponse(partieActive, i, j)}
+                          className={`p-6 text-left rounded-3xl border-4 transition-all ${
+                            estSelectionne 
+                            ? "bg-indigo-600 border-indigo-700 text-white shadow-[0_8px_0_0_rgba(67,56,202,1)] -translate-y-1" 
+                            : "bg-white border-gray-100 text-gray-700 hover:border-indigo-200 hover:bg-indigo-50"
+                          }`}
+                        >
+                          <div className="flex items-center gap-4">
+                            <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${estSelectionne ? "bg-indigo-400 text-white" : "bg-gray-100 text-gray-400"}`}>
+                              {String.fromCharCode(65 + j)}
+                            </div>
+                            <div className="flex-1">
+                              {estUneImage(opt) ? (
+                                <img src={opt} alt="Option" className="max-w-full h-auto max-h-24 mx-auto rounded-lg" />
+                              ) : (
+                                <span className="text-xl font-bold">{opt}</span>
+                              )}
+                            </div>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-16 flex items-center justify-between">
+              <button 
+                disabled={partieActive === 1} 
+                onClick={() => setPartieActive(partieActive - 1)} 
+                className="flex items-center gap-2 px-6 py-4 font-bold text-gray-400 hover:text-indigo-600 disabled:opacity-0"
+              >
+                <ChevronLeft /> Retour
+              </button>
+              
+              {partieActive < totalThemes ? (
+                <button 
+                  disabled={!partieComplete(partieActive)} 
+                  onClick={() => setPartieActive(partieActive + 1)}
+                  className={`px-12 py-5 rounded-2xl font-black text-xl text-white transition-all ${
+                    partieComplete(partieActive) 
+                    ? "bg-green-500 shadow-[0_8px_0_0_rgb(34,197,94)] active:shadow-none active:translate-y-1" 
+                    : "bg-gray-200 cursor-not-allowed"
+                  }`}
+                >
+                  SUIVANT <ChevronRight className="inline" />
+                </button>
+              ) : (
+                <button 
+                  disabled={!partieComplete(totalThemes)} 
+                  onClick={terminerQuiz}
+                  className={`px-12 py-5 rounded-2xl font-black text-xl text-white transition-all ${
+                    partieComplete(totalThemes) 
+                    ? "bg-orange-500 shadow-[0_8px_0_0_rgb(249,115,22)] active:shadow-none active:translate-y-1" 
+                    : "bg-gray-200 cursor-not-allowed"
+                  }`}
+                >
+                  VOIR MES ÉTOILES !
+                </button>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

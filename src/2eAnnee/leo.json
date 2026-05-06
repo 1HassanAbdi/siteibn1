@@ -1,0 +1,289 @@
+{
+  "matiere": "FRANÇAIS - LECTURE",
+  "titre": "Léo le petit lion",
+  "startDate": "2024-03-01",
+  "endDate": "2024-03-08",
+  "image_illustration": "/imagFr/leo_lion.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Léo est un petit lion très gentil. Il a une belle crinière jaune."
+    },
+    {
+      "p": 2,
+      "contenu": "Il habite dans la savane avec sa maman et son papa."
+    },
+    {
+      "p": 3,
+      "contenu": "Aujourd'hui, Léo a envie de jouer. Il marche sous le grand soleil."
+    },
+    {
+      "p": 4,
+      "contenu": "Il voit une girafe qui mange des feuilles. Elle s'appelle Gigi."
+    },
+    {
+      "p": 5,
+      "contenu": "— Bonjour Gigi ! Est-ce que tu veux courir avec moi ?"
+    },
+    {
+      "p": 6,
+      "contenu": "Gigi la girafe accepte. Les deux amis courent vite dans l'herbe."
+    },
+    {
+      "p": 7,
+      "contenu": "Léo est très content. Il s'amuse beaucoup avec sa nouvelle amie."
+    }
+  ],
+  "themes": {
+    "COMPREHENSION": {
+      "domaine": "Compréhension de l'histoire",
+      "questions": [
+        {
+          "q": "Qui est le personnage principal de cette histoire ?",
+          "options": [
+            "Un petit tigre",
+            "Léo le lion",
+            "Un gros éléphant",
+            "Un singe"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Où habite Léo le lion ?",
+          "options": [
+            "Dans une maison",
+            "Dans la forêt",
+            "Dans la savane",
+            "À la mer"
+          ],
+          "r": 2
+        },
+        {
+          "q": "De quelle couleur est sa crinière ?",
+          "options": [
+            "Rouge",
+            "Bleue",
+            "Jaune",
+            "Verte"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Avec qui Léo habite-t-il ?",
+          "options": [
+            "Seul",
+            "Avec ses amis",
+            "Avec sa maman et son papa",
+            "Avec un chien"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Que fait la girafe quand Léo la voit ?",
+          "options": [
+            "Elle dort",
+            "Elle mange des feuilles",
+            "Elle boit de l'eau",
+            "Elle chante"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Comment s'appelle la girafe ?",
+          "options": [
+            "Mimi",
+            "Lulu",
+            "Gigi",
+            "Nana"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Quel jeu Léo propose-t-il à la girafe ?",
+          "options": [
+            "Jouer au ballon",
+            "Courir",
+            "Cacher les yeux",
+            "Danser"
+          ],
+          "r": 1
+        },
+        {
+          "q": "À la fin, comment se sent Léo ?",
+          "options": [
+            "Il est triste",
+            "Il est fatigué",
+            "Il est en colère",
+            "Il est très content"
+          ],
+          "r": 3
+        }
+      ]
+    },
+    "GRAMMAIRE": {
+      "domaine": "Le nom, l'article et la phrase",
+      "questions": [
+        {
+          "q": "Dans la phrase « Il voit une girafe », le mot Girafe est :",
+          "options": [
+            "Un nom masculin (un)",
+            "Un nom féminin (une)",
+            "Une action",
+            "Un petit mot"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Quel article manque ? « ____ petit lion court vite. »",
+          "options": [
+            "La",
+            "Le",
+            "Les",
+            "Des"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Quel est le pluriel de « Un ami » ?",
+          "options": [
+            "Une amie",
+            "Des amis",
+            "Le ami",
+            "L'ami"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Quel signe de ponctuation manque à la fin : « Veux-tu jouer avec moi ___ »",
+          "options": [
+            "Un point (.)",
+            "Une virgule (,)",
+            "Un point d'interrogation (?)",
+            "Un point d'exclamation (!)"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Trouve le nom de l'animal dans cette liste :",
+          "options": [
+            "Courir",
+            "Jaune",
+            "Lion",
+            "Sous"
+          ],
+          "r": 2
+        }
+      ]
+    },
+    "ORTHOGRAPHE": {
+      "domaine": "Les sons et les petits mots",
+      "questions": [
+        {
+          "q": "Complète le mot avec le bon son : « Léo est un li____. »",
+          "options": [
+            "ou",
+            "on",
+            "an",
+            "in"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Léo habite ____ la savane.",
+          "options": [
+            "dans",
+            "dent",
+            "d'en",
+            "don"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Léo ___ une belle crinière.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Gigi ____ Léo sont des amis.",
+          "options": [
+            "est",
+            "et",
+            "es",
+            "ai"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Trouve le mot qui est bien écrit :",
+          "options": [
+            "Maman",
+            "Manman",
+            "Mamant",
+            "Mamen"
+          ],
+          "r": 0
+        }
+      ]
+    },
+    "CONJUGAISON": {
+      "domaine": "Le présent (être, avoir, aimer)",
+      "questions": [
+        {
+          "q": "Léo (être) ___ petit.",
+          "options": [
+            "suis",
+            "est",
+            "es",
+            "sommes"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Tu (avoir) ___ une amie.",
+          "options": [
+            "ai",
+            "as",
+            "a",
+            "avez"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Léo et Gigi (aimer) ____ jouer.",
+          "options": [
+            "aime",
+            "aimes",
+            "aiment",
+            "aimez"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Je (être) ____ content.",
+          "options": [
+            "suis",
+            "es",
+            "est",
+            "êtes"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Elle (manger) ____ des feuilles.",
+          "options": [
+            "mange",
+            "manges",
+            "mangent",
+            "mangez"
+          ],
+          "r": 0
+        }
+      ]
+    }
+  }
+}
