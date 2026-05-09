@@ -212,6 +212,25 @@
         "valise","vendeur","venir","vent","verdure","verger","vin","vitre","vitrine",
         "vivre","voisin","voisinage"
       ]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "evaluation": "2026-05-09",
+  "echelon": "6 et 7",
+  "totalWords": 100,
+  "words":  [
+    "directeur","jardinier","joueur","ministre","oncle","reine","saint","serviteur","sœur","spectateur",
+    "vendeur","voisin","chien","merle","mouton","rat","renard","tigre","tortue","légume",
+    "tulipe","verger","laver","marcher","sortir","soutenir","suivre","venir","vivre","agréable",
+    "belge","grand","joli","magnifique","mauve","rare","sombre","superbe","sauvage","double",
+    "armoire","balle","bordure","bouton","cahier","calcul","chanson","charbon","charge","cloche",
+    "coin","couleur","coupe","cuivre","dictée","expression","figure","fromage","grammaire","jouet",
+    "lait","lampe","lunette","machine","mélange","mémoire","menu","miel","mot","moteur",
+    "navire","nez","nid","odeur","oreille","ouverture","sabre","sac","sacoche","siège",
+    "tableau","tablier","tarte","terme","timbre","tour","tranche","usage","usine","valise",
+    "ardeur","atmosphère","bonjour","ferme","janvier","joie","jour","juin","lieu","lune"
+  ]
+}
+
   ]
 }

@@ -152,22 +152,28 @@
         "machine", "magazine", "magic", "magnet", "magnificent", "maid", "mail", "main", "maintain", "major", "make", "male", "mammal", "man", "manage", "manner", "manufacture", "many", "map", "marble", "march", "margin", "marine", "mark", "market", "marriage", "marry", "mask", "mass", "master", "match", "material", "mathematics", "matter", "maximum", "meal", "mean", "meant", "measure", "meat"
       ]
     },{
-      "id": 18,
-      "week": "Semaine 18",
-      "evaluation": "2026-05-14",
-      "echelon": "-",
-      "totalWords": 40,
-      "words":[
-    "quiet", "library", "bicycle", "favorite", "height", "island", "knowledge", "league", "mountain", "nation",
-    "ocean", "probably", "quarter", "reason", "science", "sincerely", "tomorrow", "treasure", "village", "weather",
-    "against", "believe", "caught", "describe", "especially", "famous", "heard", "interest", "junior", "length",
-    "medicine", "notice", "ordinary", "practice", "question", "separate", "though", "various", "weight", "young",
-    "agency", "breeze", "celebrate", "decide", "enormous", "factory", "gentle", "horizon", "imagine", "justice",
-    "kingdom", "loyal", "manager", "nervous", "observe", "purchase", "relative", "shelter", "typical", "vacant",
-    "awkward", "brilliant", "chimney", "disappoint", "energy", "fragile", "governor", "hibernate", "intelligent",
-    "jigsaw", "knuckle", "locomotive", "museum", "nectar", "opinion", "persuade", "reservoir", "signature", "voyage", 
-    "adapt", "bluff", "canyon", "decade", "eclipse", "frontier", "glacier", "humble", "inspire", "jeopardy",
-    "lantern", "migrate", "neutral", "orbit", "pioneer", "quarry", "reassure", "surrender", "translate", "urgent"
-]}
+  "id": 18,
+  "week": "Semaine 18",
+  "echelon": "Grade 4 English",
+  "totalWords": 100,
+  "words": [
+    "camel","tunnel","snack","queen","shell","knife","knee","knight","wrist",
+    "aisle","library","hospital","example","animal","family","America","bicycle","telephone","photograph",
+    "bargain","latitude","longitude","cottage","movement","attraction",
+
+    "handle","wiggle","travel","chose","check","dwell","smash","crash","trash","splash",
+    "throw","known","knock","write","wrap","wrestle","answer","remember","weigh","deceive",
+    "energize","recognize","apologize",
+
+    "gentle","simple","middle","liquid","quite","calm","honest","different","important","several",
+    "enough","rough","tough","thorough","dangerous","generous","famous","various","nervous","gigantic",
+    "permanent","temporary","pleasing",
+
+    "another","however","together","though","thought","through","although","bought","brought","fought",
+    "ought","sought","enough","eighty","neither","either","honor","hour","doubt","cough",
+    "daughter","laughter","neighbor","freight","sleigh","weight","height","exercise","suddenly"
+  ]
+}
+
   ]
 }

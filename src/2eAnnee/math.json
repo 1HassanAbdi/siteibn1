@@ -1,0 +1,259 @@
+{
+  "matiere": "MATHÉMATIQUES",
+  "titre": "Le safari des nombres",
+  "startDate": "2024-03-01",
+  "endDate": "2024-03-08",
+  "image_illustration": "🦁➕🦒",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Léo le lion 🦁 marche dans la savane avec 3 pommes 🍎."
+    },
+    {
+      "p": 2,
+      "contenu": "Son amie Gigi la girafe 🦒 apporte 2 autres pommes 🍎."
+    },
+    {
+      "p": 3,
+      "contenu": "Les deux amis comptent ensemble leurs pommes."
+    },
+    {
+      "p": 4,
+      "contenu": "Plus loin, ils voient 10 oiseaux 🐦 dans le ciel."
+    },
+    {
+      "p": 5,
+      "contenu": "4 oiseaux s’envolent. Il en reste moins."
+    },
+    {
+      "p": 6,
+      "contenu": "Léo saute sur 6 pierres 🪨 pour traverser la rivière."
+    },
+    {
+      "p": 7,
+      "contenu": "À la fin, les amis sont très heureux 😀."
+    }
+  ],
+  "themes": {
+    "NUMERATION": {
+      "domaine": "Les nombres et le comptage",
+      "questions": [
+        {
+          "q": "Combien de pommes Léo a-t-il au début ? 🍎",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Combien de pommes Gigi apporte-t-elle ? 🦒",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "5"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Quel nombre vient après 9 ?",
+          "options": [
+            "8",
+            "10",
+            "11",
+            "12"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Quel nombre est le plus grand ?",
+          "options": [
+            "4",
+            "7",
+            "2",
+            "5"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Combien y a-t-il d’oiseaux au début ? 🐦",
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          "r": 2
+        }
+      ]
+    },
+    "ADDITION": {
+      "domaine": "Les additions",
+      "questions": [
+        {
+          "q": "3 🍎 + 2 🍎 = ?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "r": 1
+        },
+        {
+          "q": "6 + 1 = ?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "r": 2
+        },
+        {
+          "q": "4 + 4 = ?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "r": 2
+        },
+        {
+          "q": "2 + 5 = ?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "r": 1
+        },
+        {
+          "q": "7 + 3 = ?",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "r": 2
+        }
+      ]
+    },
+    "SOUSTRACTION": {
+      "domaine": "Les soustractions",
+      "questions": [
+        {
+          "q": "10 🐦 - 4 🐦 = ?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "r": 2
+        },
+        {
+          "q": "8 - 2 = ?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "r": 1
+        },
+        {
+          "q": "9 - 3 = ?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "r": 1
+        },
+        {
+          "q": "5 - 1 = ?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "r": 1
+        },
+        {
+          "q": "7 - 5 = ?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "r": 1
+        }
+      ]
+    },
+    "GEOMETRIE": {
+      "domaine": "Les formes et les figures",
+      "questions": [
+        {
+          "q": "Quelle forme a 3 côtés ? 🔺",
+          "options": [
+            "Carré",
+            "Triangle",
+            "Cercle",
+            "Rectangle"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Quelle forme est ronde ? ⚪",
+          "options": [
+            "Triangle",
+            "Carré",
+            "Cercle",
+            "Rectangle"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Combien de côtés a un carré ? ⬜",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Quelle forme ressemble à une porte ? 🚪",
+          "options": [
+            "Rectangle",
+            "Triangle",
+            "Cercle",
+            "Étoile"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Quelle forme n’a aucun côté ?",
+          "options": [
+            "Carré",
+            "Triangle",
+            "Rectangle",
+            "Cercle"
+          ],
+          "r": 3
+        }
+      ]
+    }
+  }
+}

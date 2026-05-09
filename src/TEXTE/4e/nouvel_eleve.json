@@ -1,570 +1,92 @@
 {
-  "matiere": "FRANÇAIS",
-  "titre": "Le nouvel élève (Madame Bovary)",
-  "startDate": "2026-04-20",
-  "endDate": "2026-04-27",
-  "image_illustration": "/imagFr/bovary.png",
+  "matiere": "FRANCAIS",
+  "titre": "OQRE - Cycle moyen 2015",
+  "startDate": "2015-05-25",
+  "endDate": "2015-06-05",
+  "image_illustration": "/images/oqre2015.png",
   "texte_integral": [
     {
       "p": 1,
-      "contenu": "Nous étions en classe, quand le proviseur entra, suivi d’un nouvel élève, et chacun se leva comme surpris dans son travail."
+      "contenu": "Pour savourer pleinement la matinée ensoleillée, Nathan, Kyle et Mélodie décident de se rendre à l'école à pied plutôt qu'en autobus scolaire, même si le trajet prend une trentaine de minutes. Chacun des trois amis porte fièrement la casquette représentant son équipe préférée de la Ligue nationale de hockey. On distingue ainsi une casquette des Sénateurs d'Ottawa, une autre des Maple Leafs de Toronto et une troisième des Canadiens de Montréal. Le trio marche d'un pas rapide, chacun discutant de ses projets d'été."
     },
     {
       "p": 2,
-      "contenu": "Le proviseur nous fit signe de nous rasseoir ; puis, se tournant vers le professeur :"
+      "contenu": "Tout à coup, un vent très fort se lève et les surprend. Un coup de vent violent emporte la précieuse casquette des Maple Leafs de Nathan qui tourbillonne dans les airs, comme une feuille d'érable en automne. Une branche touffue arrête la casquette en plein vol et la garde prisonnière. Nathan, malgré le danger et les doutes de ses amis, décide de grimper dans l'érable gigantesque. Il monte sur les épaules de Kyle pour atteindre la première branche et entame sa périlleuse escalade."
     },
     {
       "p": 3,
-      "contenu": "— Monsieur Roger, lui dit-il à mi-voix, voici un élève que je vous recommande, il entre en cinquième. Si son travail et sa conduite sont méritoires, il passera dans les grands, où l’appelle son âge."
-    },
-    {
-      "p": 4,
-      "contenu": "Resté dans l’angle, derrière la porte, si bien qu’on l’apercevait à peine, le nouveau était un gars de la campagne, d’une quinzaine d’années environ, et plus haut de taille qu’aucun de nous tous. Il avait les cheveux coupés droit sur le front. Il a l’air raisonnable et fort embarrassé. Il a de larges épaules, son habit-veste de drap vert à boutons noirs devait le gêner aux entournures et laissait voir des poignets rouges. Ses jambes, en bas bleues, sortaient d’un pantalon jaunâtre très tiré par les bretelles. Il était chaussé de souliers forts, mal cirés, garnis de clous."
-    },
-    {
-      "p": 5,
-      "contenu": "— Levez-vous, dit le professeur, et dites-moi votre nom."
-    },
-    {
-      "p": 6,
-      "contenu": "Le nouveau articula, d’une voix bredouillante, un nom inintelligible."
-    },
-    {
-      "p": 7,
-      "contenu": "— Répétez !"
-    },
-    {
-      "p": 8,
-      "contenu": "Le même bredouillement de syllabes se fit entendre, couvert par les huées de la classe."
-    },
-    {
-      "p": 9,
-      "contenu": "— Plus haut ! cria le professeur, plus haut !"
-    },
-    {
-      "p": 10,
-      "contenu": "Le nouveau, prenant alors une résolution extrême, ouvrit une bouche démesurée et lança à pleins poumons, comme pour appeler quelqu’un, ce mot : Charbovari."
+      "contenu": "Prudemment, Nathan réussit finalement à atteindre son but. Mais la descente s'annonce impossible car plusieurs branches ont cassé. Nathan aperçoit alors une échelle abandonnée au bord du chemin. Kyle et Mélodie courent la chercher et la posent contre l'arbre. Nathan descend sain et sauf. Le trio reprend son chemin en riant, car le directeur de l'école, qui préfère les Sénateurs, ne pardonnerait pas un retard causé par une casquette des Maple Leafs !"
     }
   ],
   "themes": {
     "COMPREHENSION": {
-      "domaine": "Compréhension, Type de texte et Vocabulaire",
+      "domaine": "Analyse du texte (La précieuse casquette)",
       "questions": [
-        {
-          "q": "Quel est le type principal de ce texte ?",
-          "options": [
-            "Argumentatif (il défend une idée)",
-            "Narratif et descriptif (il raconte une histoire et décrit un personnage)",
-            "Théâtral (il est écrit pour être joué)",
-            "Poétique (il est écrit en vers)"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Qui raconte l'histoire (le narrateur) ?",
-          "options": [
-            "Le professeur, Monsieur Roger",
-            "Le proviseur",
-            "Un élève de la classe (\"Nous étions...\")",
-            "Le nouvel élève lui-même"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Qui accompagne le nouvel élève lors de son entrée dans la classe ?",
-          "options": [
-            "Ses parents",
-            "L'inspecteur",
-            "Le proviseur",
-            "Le surveillant"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Quelle est la première réaction des élèves face à cette entrée ?",
-          "options": [
-            "Ils applaudissent",
-            "Ils se mettent à rire",
-            "Ils se cachent sous les tables",
-            "Ils se lèvent, surpris dans leur travail"
-          ],
-          "r": 3
-        },
-        {
-          "q": "Comment s'appelle le professeur qui fait cours à ce moment-là ?",
-          "options": [
-            "Monsieur Charles",
-            "Monsieur Bovary",
-            "Monsieur Flaubert",
-            "Monsieur Roger"
-          ],
-          "r": 3
-        },
-        {
-          "q": "Dans quelle classe le nouvel élève entre-t-il ?",
-          "options": [
-            "En sixième",
-            "En cinquième",
-            "En quatrième",
-            "En terminale"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Selon le proviseur, à quelle condition le nouveau passera-t-il \"dans les grands\" ?",
-          "options": [
-            "S'il réussit son examen de fin d'année",
-            "S'il grandit encore un peu",
-            "Si son travail et sa conduite sont méritoires",
-            "S'il se fait des amis dans la classe"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Que signifie le mot « méritoires » dans le texte ?",
-          "options": [
-            "Dignes de récompense et d'estime",
-            "Médiocres et insuffisants",
-            "Très rapides",
-            "Difficiles à comprendre"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Où le nouveau se place-t-il en arrivant dans la classe ?",
-          "options": [
-            "Au premier rang, juste devant le professeur",
-            "Dans l'angle, derrière la porte",
-            "Au fond de la classe, près de la fenêtre",
-            "Au tableau noir"
-          ],
-          "r": 1
-        },
-        {
-          "q": "D'après le narrateur, de quel milieu vient ce nouveau garçon ?",
-          "options": [
-            "De la grande bourgeoisie",
-            "De la ville voisine",
-            "De la campagne",
-            "D'un pays étranger"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Quel âge a environ ce nouvel élève ?",
-          "options": [
-            "Une dizaine d'années",
-            "Une douzaine d'années",
-            "Une quinzaine d'années",
-            "Dix-huit ans"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Comment ses cheveux sont-ils coupés ?",
-          "options": [
-            "Entièrement rasés",
-            "Droit sur le front",
-            "Longs et bouclés",
-            "En brosse"
-          ],
-          "r": 1
-        },
-        {
-          "q": "De quelle couleur est l'habit-veste du nouveau ?",
-          "options": [
-            "Noir",
-            "Bleu",
-            "Jaunâtre",
-            "Vert"
-          ],
-          "r": 3
-        },
-        {
-          "q": "Que veut dire l'expression « le gêner aux entournures » ?",
-          "options": [
-            "Le serrer au niveau de la taille et du ventre",
-            "Le gratter au niveau du cou",
-            "Le serrer au niveau de la jonction entre les bras et les épaules (aisselles)",
-            "Être beaucoup trop long pour lui"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Pourquoi aperçoit-on les \"poignets rouges\" du garçon ?",
-          "options": [
-            "Parce qu'il a mis de la peinture sur ses mains",
-            "Parce que sa veste est trop petite et les manches trop courtes",
-            "Parce qu'il s'est blessé en venant à l'école",
-            "Parce qu'il a très chaud dans la classe"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Comment est son pantalon ?",
-          "options": [
-            "Noir et très large",
-            "Jaunâtre et très tiré par les bretelles",
-            "Bleu et troué aux genoux",
-            "Vert et serré à la taille"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Comment le professeur s'adresse-t-il à lui pour la première fois ?",
-          "options": [
-            "Il lui dit : \"Bienvenue parmi nous.\"",
-            "Il lui dit : \"Asseyez-vous au fond.\"",
-            "Il lui dit : \"Levez-vous et dites-moi votre nom.\"",
-            "Il lui dit : \"Sortez votre cahier.\""
-          ],
-          "r": 2
-        },
-        {
-          "q": "Que signifie le mot « inintelligible » pour décrire le nom qu'il prononce ?",
-          "options": [
-            "Très intelligent et savant",
-            "Que l'on ne peut absolument pas comprendre",
-            "Qui fait beaucoup rire",
-            "Qui est prononcé dans une langue étrangère"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Comment la classe réagit-elle au deuxième bredouillement du garçon ?",
-          "options": [
-            "Les élèves l'aident à parler",
-            "Les élèves se taisent par respect",
-            "Les élèves le couvrent de huées (ils se moquent de lui)",
-            "Les élèves applaudissent pour l'encourager"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Quel mot le garçon finit-il par hurler \"à pleins poumons\" à la fin du texte ?",
-          "options": [
-            "Charles",
-            "Bovary",
-            "Charbovari",
-            "Présent"
-          ],
-          "r": 2
-        }
+        { "q": "Pourquoi les trois amis marchent-ils « d'un pas rapide » ?", "options": ["Ils veulent faire de l'exercice", "Ils veulent discuter de hockey", "Ils veulent éviter d'être en retard", "Ils veulent profiter du beau temps"], "r": 2 },
+        { "q": "À quoi servent les points de suspension à la fin du 2e paragraphe ?", "options": ["À suggérer une idée", "À terminer une phrase", "À indiquer une interruption", "À terminer une énumération"], "r": 2 },
+        { "q": "Que compare-t-on à une feuille d'érable en automne ?", "options": ["La casquette de Nathan", "Une branche d'arbre", "Le sommet d'un érable", "Un coup de vent"], "r": 0 },
+        { "q": "Où la casquette de Nathan a-t-elle été achetée ?", "options": ["À l'école", "Au camp de hockey", "Dans l'autobus", "Au Temple de la renommée"], "r": 3 },
+        { "q": "À quoi sert le 3e paragraphe du texte ?", "options": ["À décrire le lieu", "À présenter le problème", "À décrire le temps", "À présenter les personnages"], "r": 1 },
+        { "q": "Que signifie le mot « périlleuse » dans le texte ?", "options": ["Haute", "Risquée", "Captivante", "Essoufflante"], "r": 1 },
+        { "q": "Où se trouve l'échelle lorsque Nathan l'aperçoit ?", "options": ["Contre l'érable", "Au pied de l'arbre", "Dans les branches", "Au bord du chemin"], "r": 3 },
+        { "q": "Quelle est l'idée principale du 5e paragraphe ?", "options": ["Nathan a de bons amis", "Nathan évalue la situation", "Nathan casse des branches", "Nathan récupère sa casquette"], "r": 1 },
+        { "q": "Pourquoi Nathan dit-il : « Ouf ! Merci beaucoup ! » ?", "options": ["Il est surpris", "Il est soulagé", "Il est moqueur", "Il est généreux"], "r": 1 },
+        { "q": "Quel personnage préfère les Canadiens de Montréal ?", "options": ["Kyle", "Nathan", "Mélodie", "Le directeur"], "r": 2 },
+        { "q": "Nathan décide de grimper car sa casquette est :", "options": ["Neuve", "Chère", "Précieuse", "Rouge"], "r": 2 },
+        { "q": "Qui aide Nathan à atteindre la première branche ?", "options": ["Mélodie", "Kyle", "Le directeur", "Un passant"], "r": 1 },
+        { "q": "Comment est le vent qui surprend les amis ?", "options": ["Léger", "Frais", "Très fort", "Inexistant"], "r": 2 },
+        { "q": "Quelle équipe de hockey Kyle préfère-t-il ?", "options": ["Maple Leafs", "Canadiens", "Sénateurs", "Bruins"], "r": 2 },
+        { "q": "Qu'est-ce qui arrive aux branches sous le poids de Nathan ?", "options": ["Elles plient", "Elles fleurissent", "Certaines cassent", "Elles bougent"], "r": 2 },
+        { "q": "Comment Nathan se sent-il une fois juché dans l'arbre ?", "options": ["Heureux", "Piégé", "Fatigué", "Indifférent"], "r": 1 },
+        { "q": "Quel objet permet à Nathan de descendre en sécurité ?", "options": ["Une corde", "Un filet", "Une échelle", "Un saut"], "r": 2 },
+        { "q": "Quelle est la couleur de la casquette de Nathan ?", "options": ["Rouge et blanche", "Bleue et blanche", "Noire et jaune", "Verte"], "r": 1 },
+        { "q": "Combien de temps dure le trajet vers l'école ?", "options": ["10 minutes", "20 minutes", "30 minutes", "60 minutes"], "r": 2 },
+        { "q": "À la fin, le trio est fier d'avoir récupéré la casquette :", "options": ["Vénérable", "Nouvelle", "Sale", "Perdue"], "r": 0 }
       ]
     },
-    "GRAMMAIRE": {
-      "domaine": "Conjonctions de coordination, L'interrogation et les types de phrases",
+    "GRAMMAIRE_HOMOPHONES": {
+      "domaine": "Homophones et Orthographe",
       "questions": [
-        {
-          "q": "Le proviseur entra ______ le silence se fit instantanément.",
-          "options": [
-            "mais",
-            "et",
-            "ou",
-            "donc"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Le nouveau est très grand, ______ il a l'air fort embarrassé.",
-          "options": [
-            "mais",
-            "ou",
-            "ni",
-            "car"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Il bredouille, ______ le professeur lui demande de répéter.",
-          "options": [
-            "donc",
-            "ou",
-            "ni",
-            "car"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Les élèves le huent ______ ils n'ont pas compris ce qu'il a dit.",
-          "options": [
-            "donc",
-            "mais",
-            "car",
-            "ou"
-          ],
-          "r": 2
-        },
-        {
-          "q": "Il n'était ______ à l'aise, ni rassuré par les moqueries.",
-          "options": [
-            "ni",
-            "ou",
-            "et",
-            "donc"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Quelle est la bonne façon de poser la question « Il est très embarrassé. » avec la locution « Est-ce que » ?",
-          "options": [
-            "Est-ce que il est très embarrassé ?",
-            "Est-ce qu'il est très embarrassé ?",
-            "Il est très embarrassé est-ce que ?",
-            "Est-il très embarrassé ?"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Quelle est la question correcte avec INVERSION du sujet pour remplacer : « Est-ce que le garçon bredouille ? »",
-          "options": [
-            "Bredouille le garçon ?",
-            "Le garçon bredouille-t-il ?",
-            "Le garçon il bredouille ?",
-            "Le garçon bredouille ?"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Parmi ces propositions décrivant ce que font les élèves, laquelle est une phrase SIMPLE ? (Rappel : une phrase simple = 1 seul verbe conjugué)",
-          "options": [
-            "Les élèves regardent le nouveau garçon.",
-            "Les élèves se lèvent quand le proviseur entre.",
-            "Le professeur parle et les élèves écoutent.",
-            "Les élèves rient parce qu'il bredouille."
-          ],
-          "r": 0
-        },
-        {
-          "q": "Laquelle de ces phrases est une phrase COMPLEXE expliquant pourquoi le nouveau est gêné ? (Rappel : une phrase complexe = 2 verbes conjugués ou plus)",
-          "options": [
-            "Le nouveau garçon est rouge de honte.",
-            "Il baisse les yeux devant ses camarades.",
-            "Il est embarrassé car sa veste est trop petite.",
-            "Ses poignets rouges dépassent de ses manches."
-          ],
-          "r": 2
-        },
-        {
-          "q": "La phrase : « Il ouvrit une bouche démesurée et lança ce mot. » est : (Rappel : un seul sujet mais deux verbes)",
-          "options": [
-            "Une phrase simple",
-            "Une phrase complexe",
-            "Une phrase injonctive",
-            "Une phrase non verbale"
-          ],
-          "r": 1
-        }
+        { "q": "Choisis le bon mot : Nathan ____ une casquette bleue.", "options": ["a", "à", "as"], "r": 0 },
+        { "q": "Choisis le bon mot : Il grimpe ____ l'arbre.", "options": ["a", "à", "as"], "r": 1 },
+        { "q": "Choisis le bon mot : Kyle ____ Mélodie l'aident.", "options": ["est", "et", "es"], "r": 1 },
+        { "q": "Choisis le bon mot : La casquette ____ prisonnière.", "options": ["est", "et", "es"], "r": 0 },
+        { "q": "Choisis le bon mot : ____ amis sont courageux.", "options": ["Ses", "Ces", "C'est"], "r": 0 },
+        { "q": "Choisis le bon mot : ____ une belle journée pour marcher.", "options": ["Ses", "Ces", "C'est"], "r": 2 },
+        { "q": "Choisis le bon mot : ____ érables sont géants.", "options": ["Ses", "Ces", "C'est"], "r": 1 },
+        { "q": "Choisis le bon mot : Ils ____ contents de l'aider.", "options": ["son", "sont", "sons"], "r": 1 },
+        { "q": "Choisis le bon mot : Kyle porte ____ chapeau.", "options": ["son", "sont", "sons"], "r": 0 },
+        { "q": "Choisis le bon mot : ____ vont-ils après l'école ?", "options": ["Ou", "Où"], "r": 1 }
       ]
     },
-    "ORTHOGRAPHE": {
-      "domaine": "Orthographe et Homophones grammaticaux",
+    "GRAMMAIRE_STRUCTURE": {
+      "domaine": "Liaisons et organisation",
       "questions": [
-        {
-          "q": "Chacun se leva comme surpris dans ___ travail.",
-          "options": [
-            "son",
-            "sont",
-            "s'ont",
-            "sons"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Si son travail ___ sa conduite sont méritoires...",
-          "options": [
-            "est",
-            "et",
-            "es",
-            "ai"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Il passera dans les grands, où l’appelle ___ âge.",
-          "options": [
-            "son",
-            "sont",
-            "sons",
-            "s'ont"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Le nouveau ___ un gars de la campagne.",
-          "options": [
-            "et",
-            "est",
-            "a",
-            "à"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Il ___ l’air raisonnable et fort embarrassé.",
-          "options": [
-            "a",
-            "à",
-            "as",
-            "ah"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Il lança ___ pleins poumons ce mot : Charbovari.",
-          "options": [
-            "a",
-            "à",
-            "as",
-            "ah"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Les élèves ___ surpris par cette nouvelle entrée.",
-          "options": [
-            "son",
-            "sont",
-            "s'ont",
-            "sons"
-          ],
-          "r": 1
-        },
-        {
-          "q": "Le professeur lui demande ___ répéter.",
-          "options": [
-            "de",
-            "d'eux",
-            "deux",
-            "des"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Il avait les cheveux coupés ___ sur le front.",
-          "options": [
-            "droit",
-            "droits",
-            "drois",
-            "droi"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Il ___ de larges épaules.",
-          "options": [
-            "a",
-            "à",
-            "as",
-            "ah"
-          ],
-          "r": 0
-        }
+        { "q": "Arjan s'est couché tard, ____ sa fatigue après l'école.", "options": ["alors", "malgré", "par conséquent", "pendant ce temps"], "r": 1 },
+        { "q": "Quel mot relie : « L'hélicoptère est petit, MAIS il est utile » ?", "options": ["Petit", "Mais", "Utile", "Est"], "r": 1 },
+        { "q": "Dans la phrase précédente, « mais » sert à introduire :", "options": ["Une opposition", "Une conséquence", "Une description", "Une ressemblance"], "r": 0 },
+        { "q": "De quelle autre façon écrire : Laura dit : « J'aime m'amuser avec toi » ?", "options": ["Elle dit que j'aime m'amuser", "Elle dit qu'elle aime m'amuser avec elle", "Elle dit qu'elle aime m'amuser avec toi", "Elle dit que tu aimes t'amuser"], "r": 1 },
+        { "q": "Quelle est la meilleure phrase pour débuter un paragraphe sur un parc ?", "options": ["Les visiteurs sont nombreux", "Nous visitons un parc provincial", "Le guide donne des ordres", "On peut nourrir les animaux"], "r": 1 },
+        { "q": "Complète : Nathan veut sa casquette ____ elle est précieuse.", "options": ["car", "donc", "mais", "ou"], "r": 0 },
+        { "q": "Complète : Il monte ____ il redescend.", "options": ["car", "puis", "si", "mais"], "r": 1 },
+        { "q": "Une phrase avec deux verbes conjugués est une phrase :", "options": ["Simple", "Complexe", "Incomplète", "Courte"], "r": 1 },
+        { "q": "La ponctuation « ! » à la fin de « Ma casquette ! » exprime :", "options": ["La peur", "L'exclamation/émotion", "L'interrogation", "Le doute"], "r": 1 },
+        { "q": "Le mot « toutefois » exprime :", "options": ["L'addition", "L'opposition", "La cause", "Le temps"], "r": 1 }
       ]
     },
     "CONJUGAISON": {
-      "domaine": "Le présent de l'indicatif et l'impératif",
+      "domaine": "Temps du récit (OQRE)",
       "questions": [
-        {
-          "q": "Nous (être) ______ en classe quand la porte s'ouvre.",
-          "options": [
-            "sommes",
-            "êtes",
-            "sont",
-            "est"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Le proviseur (entrer) ______ avec un nouvel élève.",
-          "options": [
-            "entre",
-            "entres",
-            "entrons",
-            "entrent"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Le garçon (avoir) ______ l'air raisonnable et fort embarrassé.",
-          "options": [
-            "a",
-            "as",
-            "ont",
-            "avez"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Les élèves (se lever) ______ surpris dans leur travail.",
-          "options": [
-            "se lèvent",
-            "se lève",
-            "nous levons",
-            "vous levez"
-          ],
-          "r": 0
-        },
-        {
-          "q": "Le professeur (dire) ______ à l'élève de répéter son nom.",
-          "options": [
-            "dit",
-            "dis",
-            "disons",
-            "disent"
-          ],
-          "r": 0
-        },
-        {
-          "q": "(Répéter - impératif, 2ème personne du pluriel) : ______ !",
-          "options": [
-            "Répétons",
-            "Répète",
-            "Répétez",
-            "Répètent"
-          ],
-          "r": 2
-        },
-        {
-          "q": "(Parler - impératif, 2ème personne du singulier) plus fort ! : ______ plus fort !",
-          "options": [
-            "Parle",
-            "Parles",
-            "Parlez",
-            "Parlons"
-          ],
-          "r": 0
-        },
-        {
-          "q": "(Entrer - impératif, 1ère personne du pluriel) dans la classe. : ______ dans la classe.",
-          "options": [
-            "Entre",
-            "Entrez",
-            "Entrons",
-            "Entrent"
-          ],
-          "r": 2
-        },
-        {
-          "q": "(Écouter - impératif, 2ème personne du pluriel) le professeur. : ______ le professeur.",
-          "options": [
-            "Écoute",
-            "Écoutes",
-            "Écoutons",
-            "Écoutez"
-          ],
-          "r": 3
-        },
-        {
-          "q": "(Articuler - impératif, 2ème personne du singulier) ton nom. : ______ ton nom.",
-          "options": [
-            "Articule",
-            "Articules",
-            "Articulez",
-            "Articulons"
-          ],
-          "r": 0
-        }
+        { "q": "Imparfait : Les amis ___________ de leurs projets.", "options": ["discutaient", "discutent", "discuteront"], "r": 0 },
+        { "q": "Passé composé : Un vent fort se ___________ .", "options": ["levait", "est levé", "lèvera"], "r": 1 },
+        { "q": "Imparfait : Nathan ___________ beaucoup à sa casquette.", "options": ["tenait", "tient", "tiendra"], "r": 0 },
+        { "q": "Passé composé : Mélodie ___________ de rire.", "options": ["a ri", "riait", "rit"], "r": 0 },
+        { "q": "Présent : Le directeur ___________ les Sénateurs.", "options": ["préférait", "préfère", "préférera"], "r": 1 },
+        { "q": "Passé composé : Ils ___________ l'échelle contre l'arbre.", "options": ["posent", "ont posé", "posaient"], "r": 1 },
+        { "q": "Imparfait : L'échelle ___________ dans l'herbe.", "options": ["était", "est", "sera"], "r": 0 },
+        { "q": "Passé composé : Nathan ___________ sain et sauf.", "options": ["descendait", "est descendu", "descend"], "r": 1 },
+        { "q": "Présent : Nous ___________ la casquette.", "options": ["récupérons", "récupérions", "avons récupéré"], "r": 0 },
+        { "q": "Passé composé : Nathan ___________ son but.", "options": ["atteint", "atteignait", "a atteint"], "r": 2 }
       ]
     }
   }

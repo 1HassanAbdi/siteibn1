@@ -151,6 +151,28 @@
       "words": [
         "achieve", "beneath", "comfortable", "discover", "experiment", "freedom", "governor", "history", "important", "journey", "kindness", "laughter", "million", "notice", "purpose", "question", "remember", "special", "tomorrow", "understand", "victory", "weather", "x-ray", "yesterday", "zero", "announce", "become", "continue", "different", "example", "friendly", "group", "happen", "interest", "jump", "learn", "minute", "number", "people", "right"
       ]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "echelon": "Grade 4 English",
+  "totalWords": 100,
+  "words": [
+    "library","bicycle","height","island","knowledge","league","mountain","nation","ocean","quarter",
+    "reason","science","treasure","village","weather","interest","length","medicine","agency","breeze",
+    "factory","horizon","justice","kingdom","manager","chimney","energy","governor","jigsaw","knuckle",
+    "locomotive","museum","nectar","opinion","reservoir","signature","voyage","bluff","canyon","decade",
+    "eclipse","frontier","glacier","jeopardy","lantern","orbit","pioneer","quarry","expectation",
+
+    "believe","caught","describe","celebrate","decide","imagine","observe","purchase","disappoint","hibernate",
+    "persuade","adapt","inspire","migrate","reassure","surrender","translate",
+
+    "quiet","favorite","probably","sincerely","especially","famous","junior","ordinary","separate","various",
+    "young","enormous","gentle","loyal","nervous","typical","vacant","awkward","brilliant","fragile",
+    "intelligent","humble","neutral","urgent","dissatisfied","approximate",
+
+    "against","heard","notice","practice","question","though","tomorrow","relative"
+  ]
+}
+
   ]
 }

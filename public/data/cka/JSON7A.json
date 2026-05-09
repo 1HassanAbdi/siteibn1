@@ -151,6 +151,27 @@
       "words": [
         "elusive", "emancipate", "embarrass", "embassy", "embody", "embrace", "emerge", "emergency", "eminent", "emit", "emotion", "emphasis", "emphasize", "empire", "employ", "empower", "enable", "enact", "enclose", "encompass", "encounter", "encourage", "encroach", "encyclopedia", "endeavor", "endorse", "endure", "energetic", "enforce", "engage", "engrave", "enhance", "enigma", "enormous", "enrich", "enroll", "ensue", "ensure", "entail", "entertain"
       ]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "echelon": "Advanced English",
+  "totalWords": 100,
+  "words": [
+    "absence","adaptation","administration","adolescent","advantage","advice","aerial","affection","ailment","alcohol",
+    "algebra","allergy","alliance","alternative","amateur","ambition","analogy","ancestor","anecdote","anniversary",
+    "anthem","antidote","anxiety","apparatus","appeal","appetite","appliance","applicant","approach","aquarium",
+    "architect","argument","arithmetic","assembly","asset","attendance","attorney","audience","bacteria","barometer",
+    "barrier","basis","behavior","benefit","beverage","bias","bibliography","bicycle","biography","biology",
+    "blizzard","boundary","brochure","descendant","laboratory","graffiti",
+
+    "accommodate","accompany","achieve","acquire","adjust","advise","allege","analyze","anticipate","appreciate",
+    "assess","assign","assist","associate","assume","attach","attain","attempt","attract","attribute",
+    "assemble","betray","boycott","allocate",
+
+    "abundant","accessible","adequate","adjacent","aggressive","ambiguous","apparent","appropriate","approximate","arbitrary",
+    "architectural","arrogant","artificial","athletic","attentive","audible","authentic","beneficial","extraordinary","distinguished"
+  ]
+}
+
   ]
 }

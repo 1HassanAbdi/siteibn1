@@ -146,6 +146,30 @@
       "echelon": "Échelon 17 (Partie 6/6)",
       "totalWords": 42,
       "words": ["recouvrir","réellement","règle","régulier","rejoindre","religieux","remercier","résolution","retourner","reverdir","rider","rond","rouleau","royal","ruisseau","salaire","satisfaire","saule","savourer","scolaire","sentier","sept","souffrir","souriant","sublime","surgir","surveiller","suspendre","tâche","tarder","température","terminer","terrestre","toilette","traitement","tranquille","transport","végétal","vénérer","vérifier","verre","veuf","vingt"]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "evaluation": "2026-05-09",
+  "echelon": "6 et 7",
+  "totalWords": 100,
+  "words": [
+    "besogne","brochure","charité","compagnie","coutume","destination","échelle","écluse","encrier","esprit",
+    "fauvette","fontaine","grenouille","instrument","liberté","locomotive","merveille","métier","moineau","mouchoir",
+    "ombrage","pupitre","religion","réunion","tramway",
+
+    "affaiblir","comparer","confondre","contribuer","croire","dépenser","échapper","entreprendre","entrevoir","fournir",
+    "inscrire","obliger","parcourir","pourvoir","répondre","revivre","traverser","avouer","découvrir","émouvoir",
+    "réfléchir","secourir","déplaire","dépendre","désigner",
+
+    "brusque","douloureux","éternel","étrange","sacré","unique","admirable","dangereux","électrique","inférieur",
+    "minuscule","mortel","modeste","farouche","fragile","humide","important","inutile","joyeux","luisant",
+    "nombreux","rustique","sublime","terrestre","tranquille",
+
+    "directement","justement","proprement","rarement","tristement","vivement","parfaitement","péniblement","rapidement","gravement",
+    "heureusement","malheureusement","courageusement","continuellement","doucement","lentement","franchement","réellement","principalement","facilement",
+    "agréablement","tendrement","sagement","relativement","largement"
+  ]
+}
+
   ]
 }

@@ -1,0 +1,101 @@
+{
+  "examen": "OQRE 2015 - Français, 6e année",
+  "cycle": "Cycle moyen",
+  "sections": [
+    {
+      "id": "C1",
+      "titre": "La précieuse casquette",
+      "type": "Lecture - Texte narratif court",
+      "contenu": [
+        "Pour savourer pleinement la matinée ensoleillée, Nathan, Kyle et Mélodie décident de se rendre à l'école à pied plutôt qu'en autobus scolaire, même si le trajet prend une trentaine de minutes. Chacun des trois amis porte fièrement la casquette représentant son équipe préférée de la Ligue nationale de hockey. On distingue ainsi une casquette des Sénateurs d'Ottawa, une autre des Maple Leafs de Toronto et une troisième des Canadiens de Montréal.",
+        "Le trio marche d'un pas rapide, chacun discutant de ses projets d'été.",
+        "— J'espère que vous pourrez participer au camp de hockey avec moi comme l'été passé. On a eu tellement de plaisir! s'exclame Kyle.",
+        "— J'aimerais bien ça moi aussi, mais mes parents veulent qu'on passe du temps au chalet de mon oncle en juillet, déclare Mélodie.",
+        "— Et les miens prévoient rénover la maison, alors je devrai leur donner un coup de main, annonce Nathan. Ils trouvent que j'ai du talent en menuiserie et…",
+        "Tout à coup, un vent très fort se lève et les surprend. Kyle et Mélodie s'empressent d'enfoncer solidement leur casquette sur leur tête, mais Nathan, surpris, n'est pas aussi rapide : un coup de vent violent emporte sa précieuse casquette des Maple Leafs qui tourbillonne dans les airs, comme une feuille d'érable en automne. Ébahis, les amis regardent la casquette bleue et blanche s'envoler vers le sommet des érables gigantesques qui longent le chemin. Finalement, une branche touffue arrête la casquette en plein vol et la garde prisonnière.",
+        "— Ma casquette! s'écrie Nathan. Je dois grimper pour aller la chercher!",
+        "— Voyons donc, Nathan! Tu vas risquer ta vie pour cette casquette? demande Mélodie en riant.",
+        "— Mélodie a raison, Nathan. Ça ne vaut pas la peine, la branche est bien trop haute. Et puis, on n'a pas le temps, précise Kyle.",
+        "Mais Nathan ne se laisse pas dissuader si facilement. Il tient beaucoup à cette casquette achetée lors d'une visite au Temple de la renommée du hockey à Toronto. En voyant sa détermination pour récupérer sa casquette, les deux autres amis décident de l'aider. Nathan monte sur les épaules de Kyle afin d'atteindre la première branche de l'érable. Il se hisse ensuite pour continuer sa périlleuse, mais nécessaire, escalade. Certaines branches cassent sous son poids, mais intrépide, il continue son ascension. Au sol, ses deux amis l'encouragent tout en retenant leur souffle: une chute pourrait survenir à tout moment.",
+        "Prudemment, Nathan réussit finalement à atteindre son but. — Ça y est! Je l'ai! Youpi! s'écrie-t-il. — Bravo Nathan! hurle Kyle.",
+        "— Mais comment vas-tu redescendre? demande Mélodie, inquiète. En effet, la descente présente encore plus de risques que la montée et ressemble à une véritable mission impossible. Plusieurs des branches qui ont aidé Nathan à grimper se trouvent maintenant au pied de l'arbre, brisées. Juché sur l'érable majestueux, Nathan se sent piégé et commence à regretter sa décision impulsive.",
+        "C'est alors qu'il aperçoit au bord du chemin une longue échelle abandonnée. — Vous voyez l'échelle dans l'herbe, près du chemin? Elle pourrait peut-être m'aider à redescendre, suggère Nathan à ses amis. — Oui! C'est génial, Nathan! s'exclame Mélodie en courant chercher l'échelle avec Kyle. Ils la posent ensuite fermement contre l'arbre.",
+        "Lentement, Nathan descend un à un les barreaux de l'échelle que ses amis tiennent solidement. Il se trouve enfin sain et sauf sur la terre ferme, avec seulement quelques éraflures aux genoux et aux mains. — Ouf! Merci beaucoup! Sans vous, je n'aurais jamais pu récupérer ma casquette des Leafs! déclare Nathan d'une voix émue."
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "type": "choix_multiple",
+          "enonce": "Pourquoi les trois amis marchent-ils « d'un pas rapide » ?",
+          "options": ["Ils veulent faire de l'exercice.", "Ils veulent discuter de hockey.", "Ils veulent éviter d'être en retard.", "Ils veulent profiter du beau temps."],
+          "reponse": "Ils veulent éviter d'être en retard."
+        },
+        {
+          "id": 2,
+          "type": "choix_multiple",
+          "enonce": "À quoi servent les points de suspension à la fin du 2e paragraphe ?",
+          "options": ["à suggérer une idée", "à terminer une phrase", "à indiquer une interruption", "à terminer une énumération"],
+          "reponse": "à indiquer une interruption"
+        },
+        {
+          "id": 11,
+          "type": "reponse_construite",
+          "enonce": "Comment sait-on que Nathan tient à sa casquette ?",
+          "directives": "Justifie ta réponse à l'aide des renseignements du texte et de tes propres idées.",
+          "espace_lignes": 6
+        }
+      ]
+    },
+    {
+      "id": "D1",
+      "titre": "Une machine volante surprenante",
+      "type": "Lecture - Texte informatif",
+      "contenu": [
+        "Léonard de Vinci, artiste et inventeur italien de la fin du quinzième siècle, est le premier à avoir dessiné une machine capable de s'élever verticalement. L'idée est reprise quelques siècles plus tard par Gustave de Ponton d'Amécourt qui invente le mot hélicoptère (du grec helix, hélice, et pteron, aile).",
+        "L'hélicoptère se distingue de l'avion car il peut décoller et atterrir sans piste. Il peut se poser à flanc de montagne, dans une clairière, au milieu d'une forêt ou même sur le toit d'un grand édifice."
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "type": "choix_multiple",
+          "enonce": "À quel insecte peut-on comparer l'hélicoptère ?",
+          "options": ["à une fourmi", "à une abeille", "à une libellule", "à une sauterelle"],
+          "reponse": "à une libellule"
+        },
+        {
+          "id": 5,
+          "type": "reponse_construite",
+          "enonce": "À l'aide des renseignements du texte, explique pourquoi l'hélicoptère est utile.",
+          "directives": "Justifie ta réponse à l'aide des renseignements du texte.",
+          "espace_lignes": 6
+        }
+      ]
+    },
+    {
+      "id": "Ecriture",
+      "titre": "Composante Écriture",
+      "questions": [
+        {
+          "id": "Tache_Courte",
+          "type": "ecriture_courte",
+          "enonce": "D'après toi, est-il important que les gens apprennent à cuisiner ?",
+          "directives": "Dans un court texte, justifie ton opinion.",
+          "espace_lignes": 18
+        },
+        {
+          "id": "MCQ_1",
+          "type": "choix_multiple_ecriture",
+          "contexte": "Max et Jordan sont de très bons amis. Ils font souvent du vélo dans le parc près de chez eux. Toutefois, ils préfèrent le vélo de montagne, car ils aiment dévaler les sentiers à toute vitesse. Chaque semaine, ils découvrent de nouveaux endroits. Le duo s'entraîne régulièrement pour participer au championnat régional.",
+          "enonce": "Choisis la meilleure phrase pour compléter ce paragraphe.",
+          "options": [
+            "Max et Jordan sont passionnés de cyclisme.",
+            "Max et Jordan collectionnent des affiches de vélo.",
+            "Max et Jordan regardent souvent des courses de vélo.",
+            "Max et Jordan rencontrent des cyclistes professionnels."
+          ],
+          "reponse": "Max et Jordan sont passionnés de cyclisme."
+        }
+      ]
+    }
+  ]
+}

@@ -129,6 +129,38 @@
       "echelon": "Échelon 17 (Partie 6/6)",
       "totalWords": 12,
       "words":["très","troubler","tuile","vacances","vélo","velouté","verser","vice","vilain","violence","violent","voyager"]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "evaluation": "2026-05-09",
+  "echelon": "6 et 7",
+  "totalWords": 100,
+  "words": [
+    "consolation","construction","conversation","crépuscule","cristal",
+    "destination","distribution","domicile","énergie","équipement",
+    "géographie","habitation","ingratitude","instruction","introduction",
+    "mélancolie","mission","propriétaire","printemps","privation",
+    "résolution","sentiment","stupéfaction","souffrance","température",
+
+    "comprendre","contrarier","démolir","déplacer","désobéir",
+    "distribuer","encourir","enseigner","éprouver","fatiguer",
+    "fournir","grossir","introduire","libérer","ralentir",
+    "recevoir","rejoindre","représenter","respirer","retomber",
+    "reverdir","satisfaire","surveiller","suspendre","vénérer",
+
+    "abondant","brumeux","collectif","courageux","dangereux",
+    "délicieux","différent","énergique","fragile","humide",
+    "important","indispensable","mélodieux","monotone","prodigeux",
+    "prudent","régulier","robuste","sérieux","sublime",
+    "superbe","tranquille","végétal","lamentable","poli",
+
+    "continuellement","courageusement","franchement","gravement","heureusement",
+    "lentement","légèrement","malheureusement","merveilleusement","naturellement",
+    "nullement","particulièrement","progressivement","régulièrement","sérieusement",
+    "soigneusement","subitement","totalement","tranquillement","uniformément",
+    "violemment","volontairement","attentivement","brusquement","calmement"
+  ]
+}
+
   ]
 }

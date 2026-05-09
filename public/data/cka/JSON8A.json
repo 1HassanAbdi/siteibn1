@@ -151,6 +151,27 @@
       "words": [
         "antidote", "antiquity", "antonym", "apathy", "aperture", "apex", "appall", "apparel", "append", "apprehension", "appropriate", "approximate", "arbiter", "arbitrary", "archaic", "articulate", "ascertain", "aspersion", "aspire", "assault", "assemble", "assert", "assess", "asset", "assimilate", "assuage", "astute", "asylum", "atone", "atrophy", "attain", "attribute", "audacious", "augment", "auspicious", "authentic", "authority", "automate", "autonomous", "aversion"
       ]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "echelon": "Advanced English",
+  "totalWords": 100,
+  "words": [
+    "argument","bilingual","committee","conscience","descendant","identity","laboratory","license","literature","mortgage",
+    "questionnaire","restaurant","secretary","sophomore","temperature","vehicle","villain","catastrophe","chromosome",
+    "competition","development","discipline","eclipse","environment","equivalent","government","immigrant","kindergarten","orchestra",
+    "privilege","satellite","technique","veteran","acquaintance","affidavit","architecture","bankruptcy","bureaucracy","carnivore",
+    "collateral","compassion","concentration","condominium","constitution","corporation","deficiency","demolition","disposition","efficiency",
+    "entrepreneur","evacuation","galaxy","gladiator","grievance","hypothesis","illumination","indictment","infantry","inheritance",
+    "insurance","integrity","intuition","justification","melancholy","merchandise","metabolism","monarchy","nostalgia",
+
+    "accommodate","analyze","exaggerate","guarantee","persuade","deteriorate","interrogate","jeopardize","encompass","corroborate",
+
+    "courageous","fascinating","humorous","noticeable","permanent","unanimous","hazardous","magnificent","physical","exceptional",
+    "extravagant","homogeneous","influential","intermediate","legitimate","inevitable","impartial","persuasive","despicable","simultaneous",
+    "chronological","consecutive"
+  ]
+}
+
   ]
 }

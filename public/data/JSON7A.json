@@ -130,6 +130,38 @@
       "echelon": "Échelon 17 (Partie 16/16)",
       "totalWords": 44,
       "words": ["quelqu'un","queue","rapprocher","rassembler","réciter","recommencer","reconnaître","réel","regretter","renfermer","renvoyer","repousser","résigner","réussir","rêver","ronronner","rôti","ruisselet","s'absenter","sauf","sécher","s'écrouler","s'éloigner","sévère","sifflement","siffler","sifflet","simplicité","sincérité","soigneux","sommeil","souci","spécial"]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "evaluation": "2026-05-09",
+  "echelon": "6 et 7",
+  "totalWords": 100,
+  "words":  [
+    "abstraction","accident","adolescence","admiration","agitation",
+    "alliance","ambition","atmosphère","audience","autonomie",
+    "biodiversité","civilisation","collaboration","communication","compétition",
+    "conscience","contradiction","culture","déduction","démocratie",
+    "détermination","discussion","efficacité","émotion","expérience",
+
+    "analyser","anticiper","argumenter","assimiler","atténuer",
+    "comparer","conclure","confirmer","contredire","convaincre",
+    "coordonner","critiquer","débattre","démontrer","dériver",
+    "diagnostiquer","équilibrer","évaluer","expliquer","généraliser",
+    "illustrer","interpréter","justifier","manipuler","modéliser",
+
+    "abstrait","alarmant","ambitieux","ancestral","artificiel",
+    "automatique","bénéfique","biologique","complexe","conscient",
+    "constant","critique","durable","dynamique","éducatif",
+    "efficace","émotionnel","essentiel","évolutif","expérimental",
+    "global","hypothétique","innovant","logique","majeur",
+
+    "absolument","activement","analytiquement","approximativement","automatiquement",
+    "consciemment","continuellement","correctement","démocratiquement","directement",
+    "efficacement","émotionnellement","essentiellement","fréquemment","généralement",
+    "globalement","hypothétiquement","immédiatement","inconsciemment","logiquement",
+    "majoritairement","mentalement","naturellement","objectivement","progressivement"
+  ]
+}
+
   ]
 }

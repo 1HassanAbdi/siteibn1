@@ -41,6 +41,10 @@ import HumanBodySensesMUI from "./1eAnnee/science/corps";
 import Mathematique1a from "./1eAnnee/maths/quizM1a.";
 import SciencePrincipa from "./1eAnnee/science/principal/componentPrincipal";
 import QuizOQREF2 from "./2eAnnee/quizF2A";
+import OQREApp from "./6eAnnee/OQRE/oqre";
+import QuizMaths2A from "./2eAnnee/quizmths2a";
+
+
 
 
 function App() {
@@ -77,7 +81,7 @@ function App() {
 
            <Route path="/activites/5e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
           <Route path="/activites/5e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
-           <Route path="/activites/6e Année/Francais" element={<QuizOQREF5></QuizOQREF5> } />
+           <Route path="/activites/6e Année/Francais" element={<OQREApp></OQREApp> } />
           
          
           <Route path="/activites/1re Année/Francais" element={<ReadingAppee></ReadingAppee>} />
@@ -91,6 +95,7 @@ function App() {
           <Route path="/activites/31e Année/Francais" element={<YearlyNavigator />} />
           <Route path="/activites/3e Année/Francais" element={<EvaluationGame />} />
           <Route path="/activites/2e Année/Francais" element={<QuizOQREF2></QuizOQREF2>} />
+          <Route path="/activites/2e Année/Mathematiques" element={<QuizMaths2A></QuizMaths2A>} />
           <Route path="/activites/7e Année/Francais" element={<SentenceBuilder></SentenceBuilder>} />
           
 

@@ -151,6 +151,28 @@
       "words": [
         "humidity", "insulate", "molecule", "oxidize", "pHscale", "precipitate", "radiation", "saturation", "soluble", "temperature", "vaporize", "audition", "backstage", "caricature", "choreography", "conservatory", "curtain", "dialogue", "improvisation", "libretto", "matinee", "melody", "orchestra", "pantomime", "repertoire", "script", "soliloquy", "symphony", "vignette"
       ]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "echelon": "Grade 4 English",
+  "totalWords": 100,
+  "words": [
+    "bargain","evidence","harvest","influence","journal","knowledge","quotation","sculpture","triumph","universe",
+    "witness","youth","comfort","detail","equipment","glimpse","horizon","instant","journey","landscape",
+    "message","outcome","portrait","bracelet","captive","dilemma","kilometer","loyalty","mischief","remnant",
+    "stability","telescope","utensil","exterior","zone","ambition","blizzard","hazard","luxury","meadow",
+    "obstacle","precaution","reservoir","satellite","consequence","foundation","gratitude","jubilee","librarian",
+    "marvel","nuisance","opportunity",
+
+    "achieve","celebrate","guarantee","observe","pause","inherit","nominate","quarrel","wrestle",
+    "yield","congratulate","declare","flourish","nourish","dwell","penetrate","erupt","investigate",
+
+    "familiar","liquid","major","negative","rapid","various","ancient","brief","frequent","noticeable",
+    "remarkable","fragile","genuine","horizontal","jagged","outrageous","precise","vibrant","edible","graceful",
+    "identical","thorough","urban","vacant","widespread","adequate","brilliant","elementary","heroic","immense"
+    
+  ]
+}
+
   ]
 }

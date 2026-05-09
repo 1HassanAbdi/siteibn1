@@ -122,6 +122,25 @@
         "hello", "goodbye", "help", "stop", "go",
         "come", "look", "see", "listen", "wait"
       ]
-    }
+    },{
+  "id": 18,
+  "week": "Semaine 18",
+  "evaluation": "2026-02-06",
+  "echelon": "Anglais - 2e année",
+  "totalWords": 100,
+  "words": [
+    "cat","dog","sun","moon","book","pen","hat","red","blue","big",
+    "small","run","jump","happy","sad","house","car","tree","flower","bird",
+    "fish","green","yellow","fast","slow","walk","play","laugh","cry","friend",
+    "school","teacher","student","desk","chair","paper","pencil","read","write","listen",
+    "talk","quiet","line","bag","class","mom","dad","brother","sister","baby",
+    "family","home","eat","drink","sleep","love","help","clean","cook","hug",
+    "apple","banana","bread","milk","water","cake","rice","cheese","sweet","good",
+    "hungry","full","like","want","share","head","hand","foot","leg","arm",
+    "eye","ear","nose","mouth","hair","face","body","hurt","wash","healthy",
+    "rain","snow","wind","cloud","sky","cold","hot","warm","day","night"
+  ]
+}
+
   ]
 }
