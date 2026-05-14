@@ -561,18 +561,23 @@
     { "emoji": "➕", "nom": "Plus" },
     { "emoji": "➖", "nom": "Moins" }
   ],
+  
+
   "exercice2_glisser_deposer": [
-    { "emoji": "🍎", "nom": "1" },
-    { "emoji": "🍎🍎", "nom": "2" },
-    { "emoji": "🍎🍎🍎", "nom": "3" },
-    { "emoji": "🍎🍎🍎🍎", "nom": "4" },
-    { "emoji": "🖐️", "nom": "5" },
-    { "emoji": "🎲", "nom": "6" },
-    { "emoji": "🌈", "nom": "7" },
-    { "emoji": "🕷️", "nom": "8" },
-    { "emoji": "🐱", "nom": "9" },
-    { "emoji": "🔟", "nom": "10" }
-  ],
+  { "emoji": "☀️", "nom": "1" },
+  { "emoji": "🧦🧦", "nom": "2" },
+  { "emoji": "🍎🍎🍎", "nom": "3" },
+  { "emoji": "🚗🚗🚗🚗", "nom": "4" },
+  { "emoji": "🖐️", "nom": "5" },
+  { "emoji": "🖐️ ☝️", "nom": "6" },
+  { "emoji": "🖐️ ☝️☝️", "nom": "7" },
+  { "emoji": "🖐️ ☝️☝️☝️", "nom": "8" },
+  { "emoji": "🖐️ ☝️☝️☝️☝️", "nom": "9" },
+  { "emoji": "🖐️ 🖐️", "nom": "10" }
+ 
+],
+
+
   "exercice3_schema": {
     "imageUrl": "/nombre.png",
     "altText": "Le train des nombres",

@@ -31,34 +31,27 @@ export default function QuizOQRE() {
   const themeActuel = themesKeys[partieActive - 1];
   const questionsActuelles = data.themes[themeActuel]?.questions || [];
 
-  // --- LOGIQUE DE VALIDATION CORRIGÉE (1 POINT PAR QUESTION) ---
+  // --- LOGIQUE DE VALIDATION (1 POINT PAR QUESTION) ---
 
   const verifierExactitude = (q, rep) => {
-    // FIX : On vérifie si la réponse existe vraiment (ne pas utiliser !rep car 0 est valide)
-    if (rep === undefined || rep === null || rep === "") return false;
+    if (!rep) return false;
 
-    // 1. Cas Association (Objet) - ex: Q23
+    // Association (Objet) - ex: Question 10, 23
     if (typeof q.r === 'object' && !Array.isArray(q.r)) {
       const keys = Object.keys(q.r);
       return keys.every(key => q.r[key] === rep[key]);
     }
 
-    // 2. Cas Séquence ou Multi-sélection (Tableau) - ex: Q11, Q16, Q22
+    // Séquence ou Multi-sélection (Tableau)
     if (Array.isArray(q.r)) {
-      // On convertit les index choisis par l'élève en valeurs réelles (A, B, C...) si le JSON utilise des valeurs
-      const repValues = rep.map(val => (typeof val === 'number' ? q.options[val] : val));
-      
-      // On trie les deux tableaux pour comparer le contenu sans se soucier de l'ordre du clic
-      const rTrié = [...q.r].sort();
-      const repTriée = repValues.map(v => (typeof v === 'object' ? JSON.stringify(v) : v)).sort();
-      
-      return JSON.stringify(rTrié) === JSON.stringify(repTriée);
+      if (typeof q.r[0] === 'number') {
+        return JSON.stringify([...q.r].sort()) === JSON.stringify([...rep].sort());
+      }
+      return JSON.stringify(q.r) === JSON.stringify(rep);
     }
 
-    // 3. Cas QCM Classique
-    // On compare la valeur (ex: "A") ou l'index
-    const finalRep = (typeof q.r === 'string' && typeof rep === 'number') ? q.options[rep] : rep;
-    return finalRep === q.r;
+    // QCM Classique
+    return rep === q.r;
   };
 
   const questionEstRepondue = (q, rep) => {
@@ -67,7 +60,7 @@ export default function QuizOQRE() {
       return Object.keys(rep).length === Object.keys(q.r).length;
     }
     if (Array.isArray(q.r)) {
-      return Array.isArray(rep) && rep.length === q.r.length;
+      return Array.isArray(rep) && rep.length === q.r.length && rep.every(v => v !== "" && v !== undefined);
     }
     return rep !== "";
   };
@@ -177,6 +170,7 @@ export default function QuizOQRE() {
   return (
     <div className="min-h-screen bg-slate-100 p-4">
       <div className="max-w-4xl mx-auto bg-white rounded-[32px] shadow-2xl overflow-hidden">
+        {/* DESIGN : ONGLES NAVIGATION SOMBRES */}
         <div className="bg-slate-800 p-4 flex gap-2 overflow-x-auto no-scrollbar">
           {themesKeys.map((key, i) => (
             <button key={key} disabled={i > 0 && !themeEstComplet(i)} onClick={() => setPartieActive(i + 1)}
@@ -202,32 +196,57 @@ export default function QuizOQRE() {
                   
                   {q.image && <img src={q.image} className="mb-8 max-h-64 mx-auto rounded-xl shadow-sm border" alt="illustration" />}
 
-                  {/* RENDU DES RÉPONSES ASSOCIATION (EXERCICE 23) */}
-                  {q.type === "glisser_deposer" && typeof q.r === 'object' && !Array.isArray(q.r) ? (
-                    <div className="space-y-8">
-                      <div className="flex flex-wrap gap-4 justify-center bg-gray-50 p-6 rounded-2xl border-2 border-dashed">
-                        {[...new Set(Object.values(q.r))].map((label, dIdx) => (
-                          <div key={dIdx} draggable onDragStart={(e) => e.dataTransfer.setData("text", label)}
-                            className="bg-white border-2 border-blue-200 px-6 py-3 rounded-xl shadow-md cursor-grab font-bold hover:bg-blue-50 text-blue-700">
-                            {label}
-                          </div>
-                        ))}
-                      </div>
-                      <div className="space-y-4">
-                        {Object.keys(q.r).map((expression, tIdx) => (
-                          <div key={tIdx} className="flex flex-row items-center gap-6 bg-white p-4 rounded-[24px] border-2 border-slate-100 shadow-sm">
-                            <div className="font-black text-xl text-slate-800 w-1/3 break-words">{expression}</div>
-                            <div onDragOver={(e) => e.preventDefault()} onDrop={(e) => {
-                                const val = e.dataTransfer.getData("text");
-                                handleChangementReponse(idx, { ...(userRep || {}), [expression]: val });
-                              }} className={`flex-1 min-h-[120px] border-4 border-dashed rounded-2xl flex items-center justify-center p-6 transition-all ${userRep?.[expression] ? 'border-blue-500 bg-blue-50 text-blue-800 font-bold' : 'border-gray-300 bg-gray-50 text-gray-400 italic'}`}>
-                              {userRep?.[expression] ? <span className="text-center text-lg">{userRep[expression]}</span> : "Dépose ici"}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                  {/* RENDU DES RÉPONSES */}
+                  {/* RENDU DES RÉPONSES : ASSOCIATION AGRANDIE ET ALIGNÉE (EXERCICE 23) */}
+{q.type === "glisser_deposer" && typeof q.r === 'object' && !Array.isArray(q.r) ? (
+  <div className="space-y-8">
+    {/* Étiquettes à glisser */}
+    <div className="flex flex-wrap gap-4 justify-center bg-gray-50 p-6 rounded-2xl border-2 border-dashed">
+      {[...new Set(Object.values(q.r))].map((label, dIdx) => (
+        <div key={dIdx} draggable onDragStart={(e) => e.dataTransfer.setData("text", label)}
+          className="bg-white border-2 border-blue-200 px-6 py-3 rounded-xl shadow-md cursor-grab font-bold hover:bg-blue-50 text-blue-700">
+          {label}
+        </div>
+      ))}
+    </div>
+
+    {/* Zones cibles : Terme à gauche, Zone LARGE à droite sur la même ligne */}
+    <div className="space-y-4">
+      {Object.keys(q.r).map((expression, tIdx) => (
+        <div key={tIdx} className="flex flex-row items-center gap-6 bg-white p-4 rounded-[24px] border-2 border-slate-100 shadow-sm">
+          
+          {/* Le Terme (ex: Emprunter) - Prend 30% de la largeur */}
+          <div className="font-black text-xl text-slate-800 w-1/3 break-words">
+            {expression}
+          </div>
+          
+          {/* Zone de dépôt GÉANTE (prend tout le reste de la ligne) */}
+          <div 
+            onDragOver={(e) => e.preventDefault()} 
+            onDrop={(e) => {
+              const val = e.dataTransfer.getData("text");
+              handleChangementReponse(idx, { ...(userRep || {}), [expression]: val });
+            }} 
+            className={`flex-1 min-h-[70px] border-4 border-dashed rounded-2xl flex items-center justify-center p-6 transition-all ${
+              userRep?.[expression] 
+                ? 'border-blue-500 bg-blue-50 text-blue-800 font-bold' 
+                : 'border-slate-200 bg-slate-50 text-slate-400 italic'
+            }`}
+          >
+            {userRep?.[expression] ? (
+              <span className="text-center text-lg">{userRep[expression]}</span>
+            ) : (
+              "Dépose ici"
+            )}
+          </div>
+          
+        </div>
+      ))}
+    </div>
+  </div>
+
                   ) : q.type === "glisser_deposer" && Array.isArray(q.r) ? (
+                    /* SÉQUENCE Q11 */
                     <div className="space-y-6">
                       <div className="flex flex-wrap gap-3 p-4 bg-amber-50 rounded-xl border border-amber-200">
                         {q.options.map((opt, oIdx) => (
@@ -254,7 +273,7 @@ export default function QuizOQRE() {
                       </div>
                     </div>
                   ) : (
-                    /* QCM ET MULTI-SÉLECTION (RÉPARE LE BUG DU POINT 0) */
+                    /* QCM ET MULTI-SÉLECTION */
                     <div className="grid md:grid-cols-2 gap-4">
                       {q.options.map((opt, oIdx) => {
                         const isSelected = Array.isArray(q.r) ? userRep?.includes(oIdx) : userRep === oIdx;
@@ -275,6 +294,7 @@ export default function QuizOQRE() {
             })}
           </div>
 
+          {/* NAVIGATION FOOTER */}
           <div className="flex justify-between mt-16 pt-8 border-t-4 border-gray-50">
             <button disabled={partieActive === 1} onClick={() => setPartieActive(p => p - 1)} 
               className="flex items-center gap-2 font-black text-gray-400 hover:text-gray-600 transition-all disabled:opacity-0">

@@ -1,0 +1,273 @@
+{
+  "matiere": "FRANÇAIS - LECTURE",
+  "titre": "La mer",
+  "startDate": "2024-03-01",
+  "endDate": "2024-03-08",
+  "image_illustration": "/imagFr/la_mer.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Durant nos vacances, toute la famille est allée à la mer."
+    },
+    {
+      "p": 2,
+      "contenu": "Nous avons fait de belles découvertes."
+    },
+    {
+      "p": 3,
+      "contenu": "Maxime a trouvé beaucoup de coquillages sur le bord de l'eau."
+    },
+    {
+      "p": 4,
+      "contenu": "Mélissa a vu des algues sur la plage."
+    },
+    {
+      "p": 5,
+      "contenu": "Camille a aimé nager dans les grosses vagues."
+    },
+    {
+      "p": 6,
+      "contenu": "Papa a fait du pédalo avec maman."
+    },
+    {
+      "p": 7,
+      "contenu": "Nous avons adoré demeurer dans le joli petit chalet."
+    },
+    {
+      "p": 8,
+      "contenu": "Vive les vacances !"
+    }
+  ],
+  "themes": {
+    "COMPREHENSION": {
+      "domaine": "Compréhension de l'histoire",
+      "questions": [
+        {
+          "q": "Où la famille est-elle allée durant les vacances ?",
+          "options": [
+            "À la montagne",
+            "À la mer",
+            "À la ferme",
+            "En ville"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Qu'est-ce que Maxime a trouvé ?",
+          "options": [
+            "Des poissons",
+            "Des algues",
+            "Des coquillages",
+            "Des pierres"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Qui a vu des algues sur la plage ?",
+          "options": [
+            "Camille",
+            "Maxime",
+            "Mélissa",
+            "Papa"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Qu'est-ce que Camille a aimé faire ?",
+          "options": [
+            "Construire un château de sable",
+            "Nager dans les grosses vagues",
+            "Chercher des poissons",
+            "Faire du pédalo"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Avec qui papa a-t-il fait du pédalo ?",
+          "options": [
+            "Avec Maxime",
+            "Avec Camille",
+            "Avec maman",
+            "Avec un ami"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Où la famille a-t-elle demeuré ?",
+          "options": [
+            "Dans une tente",
+            "Dans un hôtel",
+            "Dans un chalet",
+            "Dans une cabane"
+          ],
+          "r": 2
+        }
+      ]
+    },
+    "GRAMMAIRE": {
+      "domaine": "Le nom, l'article et la phrase",
+      "questions": [
+        {
+          "q": "Dans la phrase « Maxime a trouvé des coquillages », le mot coquillages est :",
+          "options": [
+            "Un nom masculin singulier",
+            "Un nom féminin singulier",
+            "Un nom masculin pluriel",
+            "Un verbe"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Quel article convient ? « ____ mer est belle. »",
+          "options": [
+            "La",
+            "Le",
+            "Les",
+            "Un"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Quel est le pluriel de « une algue » ?",
+          "options": [
+            "Des algues",
+            "Des algs",
+            "Les algue",
+            "Algues"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Quel signe de ponctuation manque : « Vive les vacances ___ »",
+          "options": [
+            "Un point (.)",
+            "Un point d'interrogation (?)",
+            "Un point d'exclamation (!)",
+            "Une virgule (,)"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Trouve le nom dans cette liste :",
+          "options": [
+            "Nager",
+            "Algues",
+            "Vite",
+            "Sur"
+          ],
+          "r": 1
+        }
+      ]
+    },
+    "ORTHOGRAPHE": {
+      "domaine": "Les sons et les petits mots",
+      "questions": [
+        {
+          "q": "Complète : « La fam____ est allée à la mer. »",
+          "options": [
+            "ille",
+            "i",
+            "y",
+            "il"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Maxime a trouvé des coquillages ____ le bord de l'eau.",
+          "options": [
+            "dans",
+            "sur",
+            "sous",
+            "par"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Camille ___ aimé nager.",
+          "options": [
+            "a",
+            "à",
+            "as",
+            "ah"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Papa a fait du pédalo ____ maman.",
+          "options": [
+            "et",
+            "est",
+            "ai",
+            "es"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Trouve le mot bien écrit :",
+          "options": [
+            "Vacanse",
+            "Vacances",
+            "Vacanses",
+            "Vacence"
+          ],
+          "r": 1
+        }
+      ]
+    },
+    "CONJUGAISON": {
+      "domaine": "Le présent (être, avoir, aimer)",
+      "questions": [
+        {
+          "q": "La famille (être) ___ à la mer.",
+          "options": [
+            "suis",
+            "es",
+            "est",
+            "sommes"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Maxime (avoir) ___ trouvé des coquillages.",
+          "options": [
+            "ai",
+            "as",
+            "a",
+            "avez"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Camille (aimer) ___ nager.",
+          "options": [
+            "aime",
+            "aimes",
+            "aiment",
+            "aimez"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Nous (être) ___ en vacances.",
+          "options": [
+            "suis",
+            "sommes",
+            "êtes",
+            "est"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Papa et maman (faire) ___ du pédalo.",
+          "options": [
+            "fait",
+            "fais",
+            "font",
+            "faisons"
+          ],
+          "r": 2
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "matiere": "Mathématiques - OQRE 6e année",
+  "annee": "2025",
+  "themes": {
+    "Nombres_Operations": {
+      "domaine": "Nombres et opérations",
+      "questions": [
+        
+        {
+          "id": 1,
+          "q": "Quel nombre représente quatre-vingt-douze mille cinq cent quatre ?",
+          "options": ["92 054", "92 504", "920 504", "920 054"],
+          "r": 1
+        },
+        {
+          "id": 2,
+          "q": "Quelle fraction est équivalente à 6/5 ?",
+         "options": [
+    "<sup>5</sup>&frasl;<sub>4</sub>",
+    "<sup>5</sup>&frasl;<sub>6</sub>",
+    "1 <sup>1</sup>&frasl;<sub>5</sub>",
+    "1 <sup>5</sup>&frasl;<sub>6</sub>"
+  ],
+          "r": 2
+        },
+        {
+          "id": 3,
+          "q": "Que font 5,2 ÷ 4 ?",
+          "options": ["0,77", "1,3", "9,2", "13"],
+          "r": 1
+        },
+        {
+          "id": 4,
+          "q": "Le coût d'un sachet de graines est de 0,50 $. Quel est le coût de 100 sachets ?",
+          "options": ["5 $", "50 $", "500 $", "5 000 $"],
+          "r": 1
+        },
+        {
+          "id": 5,
+          "q": "Dans un champ, le blé représente 5/9 du champ et l’avoine 7/36. Quelle fraction représente le maïs ?",
+          "options": ["27/36", "12/45", "2/27", "1/4"],
+          "r": 3
+        }
+      ]
+    },
+
+    "Algebre": {
+      "domaine": "Algèbre",
+      "questions": [
+        {
+          "id": 6,
+          "q": "Une suite est construite à l'aide de carreaux. Quel graphique représente les données de la table ?",
+          "image": "/oqreImag/6E/graphique_suite.png",
+          "options": [
+            {"image": "/oqreImag/6E/q6_A.png"},
+            {"image": "/oqreImag/6E/q6_B.png"},
+            {"image": "/oqreImag/6E/q6_C.png"},
+            {"image": "/oqreImag/6E/q6_D.png"}
+          ],
+          "r": 1
+        },
+        
+        {
+          "id": 7,
+          "q": "Cette table représente une suite croissante. Quel sera le rang du terme 23 ?",
+            "image": "/oqreImag/6E/suite_croissante1.png",
+         
+          "options": ["7", "6", "5", "4"],
+          "r": 1
+        },
+        {
+          "id": 8,
+          "q": "Des cure-dents sont utilisés pour faire une suite croissante. Combien faut-il de cure-dents pour la figure au rang 25 ?",
+          "image": "/oqreImag/6E/curedents_suite.png",
+          "options": ["13", "50", "51", "75"],
+          "r": 2
+        },
+        {
+          "id": 9,
+          "q": "Quelle valeur de k rend l’équation vraie : k - 9 = 4 ?",
+          "options": ["2", "5", "13", "36"],
+          "r": 2
+        },
+        {
+          "id": 10,
+          "q": "Quel énoncé est vrai lorsque x = 4 ?",
+          "options": [
+            "5x - 8 = 24",
+            "5x - 8 > 24",
+            "5x - 8 < 24"
+          ],
+          "r": 2
+        },
+        {
+  "id": 11,
+  "q": "Complète le code pour appliquer un rabais de 15 % sur les articles de plus de 20 $.",
+  "type": "glisser_deposer",
+  "image": "/oqreImag/6E/code_rabais.png",
+  "options": [
+    "entrer prix",
+    "si prix > 20,00 $",
+    "alors, multiplier prix par 0,85",
+    "si prix < 20,00 $",
+    "sinon, pas de changement de prix",
+    "prix = 20"
+  ],
+  "r": [
+    
+    "si prix > 20,00 $",
+    "alors, multiplier prix par 0,85",
+    "sinon, pas de changement de prix"
+  ]
+}
+      ]
+    },
+
+    "Donnees_Probabilites": {
+      "domaine": "Données et probabilités",
+      "questions": [
+        {
+          "id": 12,
+          "q": "Un enseignant commande de nouveaux magazines chaque année. Il sonde un échantillon d'élèves dans l'école pour trouver leurs préférences.Quel échantillon représente le mieux tous les élèves de l’école ?",
+          "options": [
+           
+            "10 élèves d'une même classe",
+            "10 élèves de 5e année",
+             "10 élèves de chaque classe",
+            "10 élèves de l'équipe de soccer"
+          ],
+          "r": 2
+        },
+        {
+          "id": 13,
+          "q": "Quelle est la médiane du nombre de pages lues ?",
+          "image": "/oqreImag/6E/pages_lues.png",
+          "options": ["90", "82", "81", "80"],
+          "r": 2
+        },
+        {
+          "id": 14,
+          "q": "Quel énoncé à propos du diagramme est vrai ?",
+          "image": "/oqreImag/6E/couleurs_diagramme.png",
+          "options": [
+            "16 élèves de 6e année ont répondu",
+            "Le bleu est la couleur la plus choisie",
+            "Le jaune est la couleur la moins choisie",
+            "Il y a plus d’élèves de 5e que de 6e"
+          ],
+          "r": 2
+        },
+        {
+          "id": 15,
+          "q": "Lors d'une expérience, Roger lance une pièce de monnaie dix fois et note dans un tableau le résultat, pile ou face. Il détermine que la probabilité expérimentale correspond à la probabilité théorique. Sélectionne le tableau qui représente les résultats de l'expérience de Roger.",
+         
+         
+          "options": [
+            {"image": "/oqreImag/6E/pile_faceA.png"},
+            {"image": "/oqreImag/6E/pile_faceB.png"},
+            {"image": "/oqreImag/6E/pile_faceC.png"},
+            {"image": "/oqreImag/6E/pile_faceD.png"}
+          
+          ],
+          "r": 1
+           },
+         
+        {
+          "id": 16,
+          "q": "Remi a 8 jetons rouges et 2 mauves. Quelle est la probabilité de piger un jeton rouge ?",
+          "options": ["0,02", "0,08", "0,2", "0,8"],
+          "r": 3
+        }
+      ]
+    },
+
+    "Geometrie_Mesure": {
+      "domaine": "Géométrie et mesure",
+      "questions": [
+        {
+          "id": 17,
+          "q": "Quelles sont les coordonnées des sommets E et F ?",
+          "image": "/oqreImag/6E/coordonnees_EF.png",
+          "options": [
+    
+            "E (4,8) et F (12,8)",
+            "E (8,4) et F (8,12)",
+            "E (8,4) et F (12,8)",
+             "E (4,8) et F (8,12)"
+          ],
+          "r": 3
+        },
+        {
+          "id": 18,
+          "q": "Quel quadrilatère a une symétrie de rotation d’ordre 2 ?",
+          "options": ["Cerf-volant", "Carré", "Deltoïde", "Rectangle"],
+          "r": 3
+        },
+        {
+          "id": 19,
+          "q": "Combien de grammes sont égaux à 7,2 kg ?",
+          "options": ["72 000 g", "7 200 g", "720 g", "72 g"],
+          "r": 1
+        },
+        {
+          "id": 20,
+          "q": "Quelle est la valeur de k ?",
+          "image": "/oqreImag/6E/angle_k.png",
+          "options": ["50°", "65°", "80°", "130°"],
+          "r": 2
+        },
+        {
+          "id": 21,
+          "q": "Quelle est l’aire totale de ce prisme à base triangulaire ?",
+          "image": "/oqreImag/6E/prisme_aire.png",
+          "options": ["10,5 m²", "21 m²", "30 m²", "36 m²"],
+          "r": 2
+        }
+      ]
+    },
+
+    "Litteratie_Financiere": {
+      "domaine": "Littératie financière",
+      "questions": [
+        {
+          "id": 22,
+          "q": "Sélectionne les DEUX facteurs qui pourraient empêcher une personne d’atteindre ses objectifs financiers.",
+          "options": [
+            "Augmentation du revenu",
+            "Diminution du revenu",
+            "Augmentation des dépenses",
+            "Diminution des dépenses"
+          ],
+          "r": [1, 2]
+        },
+        {
+          "id": 23,
+          "q": "Associe chaque description au bon terme.",
+          "type": "glisser_deposer",
+       
+          "r": {
+            "Emprunter": "Recevoir de l'argent avec un accord de remboursement, souvent avec intérêt.",
+            "Prêter": "Fournir des biens ou des services dans l’espoir qu’ils seront remboursés.",
+            "Faire un don": "Donner de l’argent, des services ou des marchandises en cadeau."
+          }
+        }
+      ]
+    }
+  }
+}

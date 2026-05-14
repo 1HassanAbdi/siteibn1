@@ -43,6 +43,7 @@ import SciencePrincipa from "./1eAnnee/science/principal/componentPrincipal";
 import QuizOQREF2 from "./2eAnnee/quizF2A";
 import OQREApp from "./6eAnnee/OQRE/oqre";
 import QuizMaths2A from "./2eAnnee/quizmths2a";
+import QuizOQREM6a from "./TEXTE/quizM6a";
 
 
 
@@ -72,6 +73,7 @@ function App() {
            <Route path="/activites/3e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
            
           <Route path="/activites/3e Année/Mathematiques" element={<QuizOQREM3a></QuizOQREM3a> } />
+          <Route path="/activites/6e Année/Mathematiques" element={<QuizOQREM6a></QuizOQREM6a> } />
           <Route path="/activites/4e Année/Francais" element={<QuizOQREF5></QuizOQREF5> } />
           <Route path="/activites/4e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
           <Route path="/activites/4e Année/Sciences" element={<App1></App1>  } />
@@ -99,7 +101,7 @@ function App() {
           <Route path="/activites/7e Année/Francais" element={<SentenceBuilder></SentenceBuilder>} />
           
 
-          <Route path="/activites/3e Année/Mathematiques" element={<MathEvaluator></MathEvaluator> } />
+         >
           <Route path="/activites/6e Année/Francais" element={<QuizOQRE></QuizOQRE>} />
           <Route path="/activites/6e Année/Mathematiques" element={<MainApp></MainApp>} />
             
