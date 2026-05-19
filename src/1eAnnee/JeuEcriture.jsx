@@ -1,30 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
-const JeuEcriture = ({ item, onNiveauSuivant }) => {
+const JeuEcriture = ({ item, onWordComplete }) => {
   const [syllabesChoisies, setSyllabesChoisies] = useState([]);
   const [options, setOptions] = useState([]);
   const [gagne, setGagne] = useState(false);
 
-  // Initialisation : Mélange des syllabes au chargement d'un nouveau mot
+  // Initialisation à chaque nouveau mot
   useEffect(() => {
-    const melangees = [...item.syllabes].sort(() => Math.random() - 0.5);
-    setOptions(melangees);
-    setSyllabesChoisies([]);
-    setGagne(false);
+    if (item) {
+      const melangees = [...item.syllables].sort(() => Math.random() - 0.5);
+      setOptions(melangees);
+      setSyllabesChoisies([]);
+      setGagne(false);
+    }
   }, [item]);
 
-  // Fonction pour faire parler l'homme (synthèse vocale)
-  const faireParlerHomme = (texte, vitesse = 0.8) => {
+  const faireParler = (texte) => {
     window.speechSynthesis.cancel();
     const msg = new SpeechSynthesisUtterance(texte);
     msg.lang = 'fr-FR';
-    msg.rate = vitesse;
-    
-    // Essayer de trouver une voix d'homme
-    const voices = window.speechSynthesis.getVoices();
-    const voiceHomme = voices.find(v => v.name.toLowerCase().includes('male') || v.name.includes('Daniel') || v.name.includes('Paul'));
-    if (voiceHomme) msg.voice = voiceHomme;
-    
     window.speechSynthesis.speak(msg);
   };
 
@@ -34,100 +28,68 @@ const JeuEcriture = ({ item, onNiveauSuivant }) => {
     const nouvellesChoisies = [...syllabesChoisies, syllabe];
     setSyllabesChoisies(nouvellesChoisies);
     
-    // Enlever la syllabe des options
-    const nouvellesOptions = [...options];
-    nouvellesOptions.splice(index, 1);
+    const nouvellesOptions = options.filter((_, i) => i !== index);
     setOptions(nouvellesOptions);
 
-    // Faire entendre la syllabe cliquée
-    faireParlerHomme(syllabe, 1);
+    faireParler(syllabe);
 
-    // Vérifier si le mot est complet
+    // Vérifier si le mot est complet (on compare sans espaces)
     if (nouvellesChoisies.join('') === item.word.replace(/\s/g, '')) {
       setGagne(true);
-      setTimeout(() => {
-        faireParlerHomme("Bravo ! Tu as écrit " + item.word);
-      }, 500);
+      faireParler("Bravo ! " + item.word);
     }
   };
 
   const reinitialiser = () => {
-    setOptions([...item.syllabes].sort(() => Math.random() - 0.5));
+    setOptions([...item.syllables].sort(() => Math.random() - 0.5));
     setSyllabesChoisies([]);
     setGagne(false);
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.card}>
-        <div style={styles.emojiPrincipal}>{item.emoji}</div>
-        <h2 style={styles.consigne}>Reconstruis le mot :</h2>
+    <div className="bg-white p-8 rounded-[3rem] shadow-2xl border-8 border-yellow-200 text-center max-w-lg w-full">
+      <div className="text-8xl mb-6">{item.emoji}</div>
+      
+      {/* Zone où le mot se construit */}
+      <div className="flex justify-center gap-3 min-h-[80px] items-center bg-slate-50 rounded-2xl border-4 border-dashed border-slate-200 mb-8 p-4">
+        {syllabesChoisies.map((s, i) => (
+          <span key={i} className="bg-green-500 text-white px-5 py-2 rounded-xl text-2xl font-black shadow-lg animate-bounce">
+            {s}
+          </span>
+        ))}
+        {syllabesChoisies.length === 0 && <span className="text-slate-300 text-xl font-bold italic">Choisis les morceaux...</span>}
+      </div>
 
-        {/* Zone de construction du mot */}
-        <div style={styles.zoneConstruction}>
-          {syllabesChoisies.map((s, i) => (
-            <div key={i} style={styles.blocSyllabeActive}>{s}</div>
-          ))}
-          {syllabesChoisies.length === 0 && <span style={styles.placeholder}>? ? ?</span>}
-        </div>
+      {/* Syllabes à cliquer */}
+      <div className="flex flex-wrap justify-center gap-4 mb-8">
+        {options.map((s, i) => (
+          <button
+            key={i}
+            onClick={() => gererClicSyllabe(s, i)}
+            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded-2xl text-2xl font-black shadow-[0_6px_0_rgb(29,78,216)] active:shadow-none active:translate-y-1 transition-all"
+          >
+            {s}
+          </button>
+        ))}
+      </div>
 
-        {/* Zone des choix (Syllabes mélangées) */}
-        <div style={styles.zoneChoix}>
-          {options.map((s, i) => (
-            <button key={i} onClick={() => gererClicSyllabe(s, i)} style={styles.btnSyllabe}>
-              {s}
-            </button>
-          ))}
-        </div>
-
-        {/* Boutons d'action */}
-        <div style={styles.actions}>
-          <button onClick={reinitialiser} style={styles.btnReset}>🔄 Recommencer</button>
-          {gagne && (
-            <button onClick={onNiveauSuivant} style={styles.btnNext}>
-              Mot Suivant 🚀
-            </button>
-          )}
-        </div>
+      {/* Boutons d'action */}
+      <div className="flex flex-col gap-4">
+        {gagne ? (
+          <button 
+            onClick={onWordComplete}
+            className="bg-orange-500 text-white py-4 px-8 rounded-full text-2xl font-black shadow-[0_6px_0_rgb(194,65,12)] hover:scale-105 transition-transform"
+          >
+            CONTINUER 🚀
+          </button>
+        ) : (
+          <button onClick={reinitialiser} className="text-slate-400 font-bold hover:text-red-500 transition-colors">
+            🔄 Recommencer
+          </button>
+        )}
       </div>
     </div>
   );
-};
-
-// --- STYLES ATTRACTIFS ---
-const styles = {
-  container: { display: 'flex', justifyContent: 'center', padding: '20px' },
-  card: { 
-    background: '#fff', padding: '40px', borderRadius: '30px', 
-    boxShadow: '0 10px 25px rgba(0,0,0,0.1)', width: '100%', maxWidth: '500px',
-    textAlign: 'center', border: '5px solid #FFD700'
-  },
-  emojiPrincipal: { fontSize: '100px', marginBottom: '10px' },
-  consigne: { color: '#555', fontSize: '20px' },
-  zoneConstruction: { 
-    display: 'flex', justifyContent: 'center', gap: '10px', 
-    minHeight: '80px', alignItems: 'center', backgroundColor: '#f9f9f9',
-    borderRadius: '15px', border: '3px dashed #ccc', margin: '20px 0'
-  },
-  blocSyllabeActive: { 
-    background: '#4CAF50', color: 'white', padding: '10px 20px', 
-    borderRadius: '10px', fontSize: '24px', fontWeight: 'bold',
-    animation: 'bounce 0.3s'
-  },
-  placeholder: { color: '#ccc', fontSize: '30px', fontWeight: 'bold' },
-  zoneChoix: { display: 'flex', justifyContent: 'center', gap: '15px', flexWrap: 'wrap' },
-  btnSyllabe: { 
-    padding: '15px 25px', fontSize: '22px', borderRadius: '15px',
-    border: 'none', background: '#3b82f6', color: 'white', 
-    cursor: 'pointer', boxShadow: '0 5px #2563eb', fontWeight: 'bold'
-  },
-  actions: { marginTop: '30px', display: 'flex', justifyContent: 'center', gap: '20px' },
-  btnReset: { background: '#94a3b8', color: 'white', border: 'none', padding: '10px', borderRadius: '10px', cursor: 'pointer' },
-  btnNext: { 
-    background: '#f59e0b', color: 'white', border: 'none', 
-    padding: '15px 30px', borderRadius: '50px', fontSize: '18px', 
-    fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 5px #d97706'
-  }
 };
 
 export default JeuEcriture;

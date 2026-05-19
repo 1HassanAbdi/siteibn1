@@ -101,8 +101,8 @@ function App() {
           <Route path="/activites/7e Année/Francais" element={<SentenceBuilder></SentenceBuilder>} />
           
 
-         >
-          <Route path="/activites/6e Année/Francais" element={<QuizOQRE></QuizOQRE>} />
+         
+          <Route path="/activites/6e Année/Francais" element={<OQREHub></OQREHub>} />
           <Route path="/activites/6e Année/Mathematiques" element={<MainApp></MainApp>} />
             
            

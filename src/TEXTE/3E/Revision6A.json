@@ -5,7 +5,6 @@
     "Nombres_Operations": {
       "domaine": "Nombres et opérations",
       "questions": [
-        
         {
           "id": 1,
           "q": "Quel nombre représente quatre-vingt-douze mille cinq cent quatre ?",
@@ -15,12 +14,12 @@
         {
           "id": 2,
           "q": "Quelle fraction est équivalente à 6/5 ?",
-         "options": [
-    "<sup>5</sup>&frasl;<sub>4</sub>",
-    "<sup>5</sup>&frasl;<sub>6</sub>",
-    "1 <sup>1</sup>&frasl;<sub>5</sub>",
-    "1 <sup>5</sup>&frasl;<sub>6</sub>"
-  ],
+          "options": [
+            "<sup>5</sup>&frasl;<sub>4</sub>",
+            "<sup>5</sup>&frasl;<sub>6</sub>",
+            "1 <sup>1</sup>&frasl;<sub>5</sub>",
+            "1 <sup>5</sup>&frasl;<sub>6</sub>"
+          ],
           "r": 2
         },
         {
@@ -43,7 +42,6 @@
         }
       ]
     },
-
     "Algebre": {
       "domaine": "Algèbre",
       "questions": [
@@ -52,19 +50,17 @@
           "q": "Une suite est construite à l'aide de carreaux. Quel graphique représente les données de la table ?",
           "image": "/oqreImag/6E/graphique_suite.png",
           "options": [
-            {"image": "/oqreImag/6E/q6_A.png"},
-            {"image": "/oqreImag/6E/q6_B.png"},
-            {"image": "/oqreImag/6E/q6_C.png"},
-            {"image": "/oqreImag/6E/q6_D.png"}
+            { "image": "/oqreImag/6E/q6_A.png" },
+            { "image": "/oqreImag/6E/q6_B.png" },
+            { "image": "/oqreImag/6E/q6_C.png" },
+            { "image": "/oqreImag/6E/q6_D.png" }
           ],
           "r": 1
         },
-        
         {
           "id": 7,
           "q": "Cette table représente une suite croissante. Quel sera le rang du terme 23 ?",
-            "image": "/oqreImag/6E/suite_croissante1.png",
-         
+          "image": "/oqreImag/6E/suite_croissante1.png",
           "options": ["7", "6", "5", "4"],
           "r": 1
         },
@@ -84,36 +80,30 @@
         {
           "id": 10,
           "q": "Quel énoncé est vrai lorsque x = 4 ?",
-          "options": [
-            "5x - 8 = 24",
-            "5x - 8 > 24",
-            "5x - 8 < 24"
-          ],
+          "options": ["5x - 8 = 24", "5x - 8 > 24", "5x - 8 < 24"],
           "r": 2
         },
         {
-  "id": 11,
-  "q": "Complète le code pour appliquer un rabais de 15 % sur les articles de plus de 20 $.",
-  "type": "glisser_deposer",
-  "image": "/oqreImag/6E/code_rabais.png",
-  "options": [
-    "entrer prix",
-    "si prix > 20,00 $",
-    "alors, multiplier prix par 0,85",
-    "si prix < 20,00 $",
-    "sinon, pas de changement de prix",
-    "prix = 20"
-  ],
-  "r": [
-    
-    "si prix > 20,00 $",
-    "alors, multiplier prix par 0,85",
-    "sinon, pas de changement de prix"
-  ]
-}
+          "id": 11,
+          "q": "Complète le code pour appliquer un rabais de 15 % sur les articles de plus de 20 $.",
+          "type": "glisser_deposer",
+          "image": "/oqreImag/6E/code_rabais.png",
+          "options": [
+            "entrer prix",
+            "si prix > 20,00 $",
+            "alors, multiplier prix par 0,85",
+            "si prix < 20,00 $",
+            "sinon, pas de changement de prix",
+            "prix = 20"
+          ],
+          "r": [
+            "si prix > 20,00 $",
+            "alors, multiplier prix par 0,85",
+            "sinon, pas de changement de prix"
+          ]
+        }
       ]
     },
-
     "Donnees_Probabilites": {
       "domaine": "Données et probabilités",
       "questions": [
@@ -121,10 +111,9 @@
           "id": 12,
           "q": "Un enseignant commande de nouveaux magazines chaque année. Il sonde un échantillon d'élèves dans l'école pour trouver leurs préférences.Quel échantillon représente le mieux tous les élèves de l’école ?",
           "options": [
-           
             "10 élèves d'une même classe",
             "10 élèves de 5e année",
-             "10 élèves de chaque classe",
+            "10 élèves de chaque classe",
             "10 élèves de l'équipe de soccer"
           ],
           "r": 2
@@ -151,18 +140,14 @@
         {
           "id": 15,
           "q": "Lors d'une expérience, Roger lance une pièce de monnaie dix fois et note dans un tableau le résultat, pile ou face. Il détermine que la probabilité expérimentale correspond à la probabilité théorique. Sélectionne le tableau qui représente les résultats de l'expérience de Roger.",
-         
-         
           "options": [
-            {"image": "/oqreImag/6E/pile_faceA.png"},
-            {"image": "/oqreImag/6E/pile_faceB.png"},
-            {"image": "/oqreImag/6E/pile_faceC.png"},
-            {"image": "/oqreImag/6E/pile_faceD.png"}
-          
+            { "image": "/oqreImag/6E/pile_faceA.png" },
+            { "image": "/oqreImag/6E/pile_faceB.png" },
+            { "image": "/oqreImag/6E/pile_faceC.png" },
+            { "image": "/oqreImag/6E/pile_faceD.png" }
           ],
           "r": 1
-           },
-         
+        },
         {
           "id": 16,
           "q": "Remi a 8 jetons rouges et 2 mauves. Quelle est la probabilité de piger un jeton rouge ?",
@@ -171,7 +156,6 @@
         }
       ]
     },
-
     "Geometrie_Mesure": {
       "domaine": "Géométrie et mesure",
       "questions": [
@@ -180,11 +164,10 @@
           "q": "Quelles sont les coordonnées des sommets E et F ?",
           "image": "/oqreImag/6E/coordonnees_EF.png",
           "options": [
-    
             "E (4,8) et F (12,8)",
             "E (8,4) et F (8,12)",
             "E (8,4) et F (12,8)",
-             "E (4,8) et F (8,12)"
+            "E (4,8) et F (8,12)"
           ],
           "r": 3
         },
@@ -216,7 +199,6 @@
         }
       ]
     },
-
     "Litteratie_Financiere": {
       "domaine": "Littératie financière",
       "questions": [
@@ -235,7 +217,6 @@
           "id": 23,
           "q": "Associe chaque description au bon terme.",
           "type": "glisser_deposer",
-       
           "r": {
             "Emprunter": "Recevoir de l'argent avec un accord de remboursement, souvent avec intérêt.",
             "Prêter": "Fournir des biens ou des services dans l’espoir qu’ils seront remboursés.",

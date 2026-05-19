@@ -1,8 +1,24 @@
 import React, { useState, useMemo } from 'react';
 import { 
-  BookOpen, ImageIcon, Smile, Type, PenTool,Soup, 
-  ListOrdered, Home, GraduationCap, Utensils, CheckCircle, User
-} from 'lucide-react';
+  BookOpen,
+  ImageIcon,
+  Smile,
+  Type,
+  PenTool,
+  ListOrdered,
+  Home,
+  GraduationCap,
+  Utensils,
+  CheckCircle,
+  User,
+  Egg,
+  BedDouble,
+  Sandwich,
+  CookingPot
+} from "lucide-react";
+
+
+
 import confetti from 'canvas-confetti';
 
 import { allStories } from './storyData';
@@ -98,31 +114,78 @@ export default function ReadingApp() {
   }
 
   // --- 2. SÉLECTION DE L'HISTOIRE ---
-  if (!selectedStoryKey || !currentStory) {
-    return (
-      <div className="min-h-screen bg-green-50 flex flex-col items-center justify-center p-6">
-        <h2 className="text-2xl font-bold text-green-700 mb-2">Bonjour {studentName} !</h2>
-        <h1 className="text-4xl font-black text-green-900 mb-12 animate-bounce text-center">Choisis ton histoire</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl">
-          <button onClick={() => setSelectedStoryKey('repas')} className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-green-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4">
-            <Utensils size={80} className="text-green-500 group-hover:rotate-12 transition-transform" />
-            <span className="text-2xl font-black text-slate-700">Le Repas</span>
-          </button>
-          <button onClick={() => setSelectedStoryKey('ecole')} className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-blue-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4">
-            <GraduationCap size={80} className="text-blue-500 group-hover:-rotate-12 transition-transform" />
-            <span className="text-2xl font-black text-slate-700">L'École</span>
-          </button>
-           <button
-      onClick={() => setSelectedStoryKey('soupe')}
-      className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-orange-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
-    >
-      <Soup size={80} className="text-orange-500 group-hover:rotate-12 transition-transform" />
-      <span className="text-2xl font-black text-slate-700">La Soupe</span>
-    </button>
-        </div>
+if (!selectedStoryKey || !currentStory) {
+  return (
+    <div className="min-h-screen bg-green-50 flex flex-col items-center justify-center p-6">
+      <h2 className="text-2xl font-bold text-green-700 mb-2">Bonjour {studentName} !</h2>
+      <h1 className="text-4xl font-black text-green-900 mb-12 animate-bounce text-center">
+        Choisis ton histoire
+      </h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl">
+
+        {/* Le Repas */}
+        <button
+          onClick={() => setSelectedStoryKey('repas')}
+          className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-green-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
+        >
+          <Utensils size={80} className="text-green-500 group-hover:rotate-12 transition-transform" />
+          <span className="text-2xl font-black text-slate-700">Le Repas</span>
+        </button>
+
+        {/* L'École */}
+        <button
+          onClick={() => setSelectedStoryKey('ecole')}
+          className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-blue-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
+        >
+          <GraduationCap size={80} className="text-blue-500 group-hover:-rotate-12 transition-transform" />
+          <span className="text-2xl font-black text-slate-700">L'École</span>
+        </button>
+
+        {/* La Soupe */}
+        <button
+  onClick={() => setSelectedStoryKey('soupe')}
+  className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-orange-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
+>
+  <CookingPot size={80} className="text-orange-500 group-hover:rotate-12 transition-transform" />
+  <span className="text-2xl font-black text-slate-700">La Soupe</span>
+</button>
+
+
+        {/* Manon dans sa chambre */}
+        <button
+          onClick={() => setSelectedStoryKey('manonChambre')}
+          className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-purple-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
+        >
+          <BedDouble size={80} className="text-purple-500 group-hover:rotate-12 transition-transform" />
+
+          <span className="text-2xl font-black text-slate-700">Manon dans sa chambre</span>
+        </button>
+
+        {/* Le pique-nique */}
+        <button
+          onClick={() => setSelectedStoryKey('piqueNique')}
+          className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-green-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
+        >
+          <Sandwich size={80} className="text-green-500 group-hover:rotate-12 transition-transform" />
+
+          <span className="text-2xl font-black text-slate-700">Le pique‑nique</span>
+        </button>
+
+        {/* La poule blanche */}
+        <button
+          onClick={() => setSelectedStoryKey('blanchePoule')}
+          className="group bg-white p-10 rounded-[3rem] shadow-xl border-b-8 border-red-500 hover:scale-105 active:scale-95 transition-all flex flex-col items-center gap-4"
+        >
+          <Egg size={80} className="text-red-500 group-hover:rotate-12 transition-transform" />
+          <span className="text-2xl font-black text-slate-700">La poule blanche</span>
+        </button>
+
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
   return (
     <div className="min-h-screen bg-[#f0fdf4] font-sans pb-10">

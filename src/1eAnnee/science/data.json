@@ -547,6 +547,133 @@
     { "id": "zone-serpent", "top": "80%", "left": "10%", "expected": "serpent" }
   ]
 },{
+  "theme": "Les objets de la classe",
+  "emoji": "✏️",
+
+  "exercice1_appariement": [
+    { "emoji": "✏️", "nom": "Le crayon" },
+    { "emoji": "📘", "nom": "Le livre" },
+    { "emoji": "✂️", "nom": "Les ciseaux" },
+    { "emoji": "📏", "nom": "La règle" },
+    { "emoji": "🖍️", "nom": "Le feutre" },
+    { "emoji": "🪑", "nom": "La chaise" },
+    { "emoji": "🧽", "nom": "L'éponge" },
+    { "emoji": "🖊️", "nom": "Le stylo" },
+    { "emoji": "📚", "nom": "Les cahiers" },
+    { "emoji": "🖥️", "nom": "L'ordinateur" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "✏️", "nom": "Le crayon" },
+    { "emoji": "📘", "nom": "Le livre" },
+    { "emoji": "✂️", "nom": "Les ciseaux" },
+    { "emoji": "📏", "nom": "La règle" },
+    { "emoji": "🖍️", "nom": "Le feutre" },
+    { "emoji": "🪑", "nom": "La chaise" },
+    { "emoji": "🧽", "nom": "L'éponge" },
+    { "emoji": "🖊️", "nom": "Le stylo" },
+    { "emoji": "📚", "nom": "Les cahiers" },
+    { "emoji": "🖥️", "nom": "L'ordinateur" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/classe.png",
+    "altText": "La salle de classe",
+    "etiquettes_a_glisser": [
+      "Le crayon", "Le livre", "Les ciseaux", "La règle", "Le feutre",
+      "La chaise", "L'éponge", "Le stylo", "Les cahiers", "L'ordinateur"
+    ],
+    "zones": [
+      { "top": "15%", "left": "31%", "attendu": "Le crayon" },
+      { "top": "30%", "left": "33%", "attendu": "Le livre" },
+      { "top": "45%", "left": "32%", "attendu": "Les ciseaux" },
+      { "top": "60%", "left": "33%", "attendu": "La règle" },
+      { "top": "71%", "left": "32%", "attendu": "Le feutre" },
+      { "top": "15%", "left": "89%", "attendu": "La chaise" },
+      { "top": "32%", "left": "89%", "attendu": "L'éponge" },
+      { "top": "48%", "left": "89%", "attendu": "Le stylo" },
+      { "top": "63%", "left": "90%", "attendu": "Les cahiers" },
+      { "top": "86%", "left": "74%", "attendu": "L'ordinateur" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "question": "Avec quoi j'écris sur mon cahier ?",
+      "options": ["Le crayon", "La chaise", "L'éponge"],
+      "reponse": "Le crayon",
+      "emoji": "✏️"
+    },
+    {
+      "question": "Quel objet j'utilise pour lire une histoire ?",
+      "options": ["Le livre", "La règle", "Le feutre"],
+      "reponse": "Le livre",
+      "emoji": "📘"
+    },
+    {
+      "question": "Quel objet coupe le papier ?",
+      "options": ["Les ciseaux", "Le stylo", "La chaise"],
+      "reponse": "Les ciseaux",
+      "emoji": "✂️"
+    },
+    {
+      "question": "Quel objet sert à mesurer ?",
+      "options": ["La règle", "Le crayon", "L'éponge"],
+      "reponse": "La règle",
+      "emoji": "📏"
+    },
+    {
+      "question": "Quel objet efface le tableau ?",
+      "options": ["L'éponge", "Le livre", "Le feutre"],
+      "reponse": "L'éponge",
+      "emoji": "🧽"
+    },
+    {
+      "question": "Sur quoi je m'assois en classe ?",
+      "options": ["La chaise", "Le cahier", "Le stylo"],
+      "reponse": "La chaise",
+      "emoji": "🪑"
+    },
+    {
+      "question": "Quel objet j'utilise pour colorier ?",
+      "options": ["Le feutre", "L'ordinateur", "La règle"],
+      "reponse": "Le feutre",
+      "emoji": "🖍️"
+    },
+    {
+      "question": "Quel objet contient mes leçons ?",
+      "options": ["Les cahiers", "Les ciseaux", "La chaise"],
+      "reponse": "Les cahiers",
+      "emoji": "📚"
+    },
+    {
+      "question": "Quel objet sert à écrire sans tailler ?",
+      "options": ["Le stylo", "Le crayon", "Le feutre"],
+      "reponse": "Le stylo",
+      "emoji": "🖊️"
+    },
+    {
+      "question": "Quel objet est utilisé pour travailler sur écran ?",
+      "options": ["L'ordinateur", "La règle", "Le cahier"],
+      "reponse": "L'ordinateur",
+      "emoji": "🖥️"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-crayon", "top": "5%", "left": "10%", "expected": "crayon" },
+    { "id": "zone-livre", "top": "20%", "left": "15%", "expected": "livre" },
+    { "id": "zone-ciseaux", "top": "35%", "left": "10%", "expected": "ciseaux" },
+    { "id": "zone-regle", "top": "50%", "left": "12%", "expected": "regle" },
+    { "id": "zone-feutre", "top": "65%", "left": "15%", "expected": "feutre" },
+    { "id": "zone-chaise", "top": "10%", "left": "70%", "expected": "chaise" },
+    { "id": "zone-eponge", "top": "30%", "left": "75%", "expected": "eponge" },
+    { "id": "zone-stylo", "top": "50%", "left": "70%", "expected": "stylo" },
+    { "id": "zone-cahiers", "top": "70%", "left": "75%", "expected": "cahiers" },
+    { "id": "zone-ordinateur", "top": "85%", "left": "50%", "expected": "ordinateur" }
+  ]
+},
+{
   "theme": "Les Mathématiques",
   "emoji": "🧮",
   "exercice1_appariement": [
@@ -659,6 +786,743 @@
       "emoji": "👯"
     }
   ]
+},{
+  "theme": "Les transports",
+  "emoji": "🚗",
+
+  "exercice1_appariement": [
+    { "emoji": "🚗", "nom": "La voiture" },
+    { "emoji": "🚌", "nom": "Le bus" },
+    { "emoji": "🚲", "nom": "Le vélo" },
+    { "emoji": "🚂", "nom": "Le train" },
+    { "emoji": "✈️", "nom": "L'avion" },
+    { "emoji": "🚁", "nom": "L'hélicoptère" },
+    { "emoji": "🚢", "nom": "Le bateau" },
+    { "emoji": "🛵", "nom": "Le scooter" },
+    { "emoji": "🚒", "nom": "Le camion de pompiers" },
+    { "emoji": "🚜", "nom": "Le tracteur" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "🚗", "nom": "La voiture" },
+    { "emoji": "🚌", "nom": "Le bus" },
+    { "emoji": "🚲", "nom": "Le vélo" },
+    { "emoji": "🚂", "nom": "Le train" },
+    { "emoji": "✈️", "nom": "L'avion" },
+    { "emoji": "🚁", "nom": "L'hélicoptère" },
+    { "emoji": "🚢", "nom": "Le bateau" },
+    { "emoji": "🛵", "nom": "Le scooter" },
+    { "emoji": "🚒", "nom": "Le camion de pompiers" },
+    { "emoji": "🚜", "nom": "Le tracteur" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/transports.png",
+    "altText": "Les moyens de transport",
+    "etiquettes_a_glisser": [
+      "La voiture", "Le bus", "Le vélo", "Le train", "L'avion",
+      "L'hélicoptère", "Le bateau", "Le scooter", "Le camion de pompiers", "Le tracteur"
+    ],
+    "zones": [
+      { "top": "13%", "left": "40%", "attendu": "La voiture" },
+      { "top": "31%", "left": "40%", "attendu": "Le bus" },
+      { "top": "48%", "left": "40%", "attendu": "Le vélo" },
+      { "top": "68%", "left": "40%", "attendu": "Le train" },
+      { "top": "88%", "left": "40%", "attendu": "L'avion" },
+      { "top": "13%", "left": "88%", "attendu": "L'hélicoptère" },
+      { "top": "31%", "left": "88%", "attendu": "Le bateau" },
+      { "top": "48%", "left": "88%", "attendu": "Le scooter" },
+      { "top": "68%", "left": "88%", "attendu": "Le camion de pompiers" },
+      { "top": "88%", "left": "88%", "attendu": "Le tracteur" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "question": "Quel transport roule sur la route ?",
+      "options": ["La voiture", "Le bateau", "L'avion"],
+      "reponse": "La voiture",
+      "emoji": "🚗"
+    },
+    {
+      "question": "Quel transport vole dans le ciel ?",
+      "options": ["Le train", "L'avion", "Le vélo"],
+      "reponse": "L'avion",
+      "emoji": "✈️"
+    },
+    {
+      "question": "Quel transport flotte sur l'eau ?",
+      "options": ["Le bateau", "Le bus", "Le scooter"],
+      "reponse": "Le bateau",
+      "emoji": "🚢"
+    },
+    {
+      "question": "Quel transport a deux roues et avance en pédalant ?",
+      "options": ["Le vélo", "Le train", "Le camion de pompiers"],
+      "reponse": "Le vélo",
+      "emoji": "🚲"
+    },
+    {
+      "question": "Quel transport transporte beaucoup de personnes ?",
+      "options": ["Le bus", "Le scooter", "Le tracteur"],
+      "reponse": "Le bus",
+      "emoji": "🚌"
+    },
+    {
+      "question": "Quel transport roule sur des rails ?",
+      "options": ["Le train", "La voiture", "Le vélo"],
+      "reponse": "Le train",
+      "emoji": "🚂"
+    },
+    {
+      "question": "Quel transport sert à éteindre les incendies ?",
+      "options": ["Le camion de pompiers", "Le bateau", "L'hélicoptère"],
+      "reponse": "Le camion de pompiers",
+      "emoji": "🚒"
+    },
+    {
+      "question": "Quel transport peut décoller verticalement ?",
+      "options": ["L'hélicoptère", "Le bus", "Le scooter"],
+      "reponse": "L'hélicoptère",
+      "emoji": "🚁"
+    },
+    {
+      "question": "Quel transport est utilisé dans les champs ?",
+      "options": ["Le tracteur", "Le train", "L'avion"],
+      "reponse": "Le tracteur",
+      "emoji": "🚜"
+    },
+    {
+      "question": "Quel petit transport roule avec un casque ?",
+      "options": ["Le scooter", "Le bateau", "Le bus"],
+      "reponse": "Le scooter",
+      "emoji": "🛵"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-voiture", "top": "5%", "left": "10%", "expected": "voiture" },
+    { "id": "zone-bus", "top": "20%", "left": "15%", "expected": "bus" },
+    { "id": "zone-velo", "top": "35%", "left": "10%", "expected": "velo" },
+    { "id": "zone-train", "top": "50%", "left": "12%", "expected": "train" },
+    { "id": "zone-avion", "top": "65%", "left": "15%", "expected": "avion" },
+    { "id": "zone-helico", "top": "10%", "left": "70%", "expected": "helicoptere" },
+    { "id": "zone-bateau", "top": "30%", "left": "75%", "expected": "bateau" },
+    { "id": "zone-scooter", "top": "50%", "left": "70%", "expected": "scooter" },
+    { "id": "zone-pompiers", "top": "70%", "left": "75%", "expected": "camion de pompiers" },
+    { "id": "zone-tracteur", "top": "85%", "left": "50%", "expected": "tracteur" }
+  ]
+},{
+  "theme": "Les fruits",
+  "emoji": "🍎",
+
+  "exercice1_appariement": [
+    { "emoji": "🍎", "nom": "La pomme" },
+    { "emoji": "🍌", "nom": "La banane" },
+    { "emoji": "🍇", "nom": "Le raisin" },
+    { "emoji": "🍓", "nom": "La fraise" },
+    { "emoji": "🍊", "nom": "L'orange" },
+    { "emoji": "🍉", "nom": "La pastèque" },
+    { "emoji": "🍍", "nom": "L'ananas" },
+    { "emoji": "🍒", "nom": "Les cerises" },
+    { "emoji": "🥭", "nom": "La mangue" },
+    { "emoji": "🍋", "nom": "Le citron" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "🍎", "nom": "La pomme" },
+    { "emoji": "🍌", "nom": "La banane" },
+    { "emoji": "🍇", "nom": "Le raisin" },
+    { "emoji": "🍓", "nom": "La fraise" },
+    { "emoji": "🍊", "nom": "L'orange" },
+    { "emoji": "🍉", "nom": "La pastèque" },
+    { "emoji": "🍍", "nom": "L'ananas" },
+    { "emoji": "🍒", "nom": "Les cerises" },
+    { "emoji": "🥭", "nom": "La mangue" },
+    { "emoji": "🍋", "nom": "Le citron" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/fruits.png",
+    "altText": "Les fruits colorés",
+    "etiquettes_a_glisser": [
+      "La pomme", "La banane", "Le raisin", "La fraise", "L'orange",
+      "La pastèque", "L'ananas", "Les cerises", "La mangue", "Le citron"
+    ],
+    "zones": [
+      { "top": "15%", "left": "42%", "attendu": "La pomme" },
+      { "top": "33%", "left": "42%", "attendu": "La banane" },
+      { "top": "50%", "left": "42%", "attendu": "Le raisin" },
+      { "top": "67%", "left": "42%", "attendu": "La fraise" },
+      { "top": "85%", "left": "42%", "attendu": "L'orange" },
+      { "top": "15%", "left": "88%", "attendu": "La pastèque" },
+      { "top": "33%", "left": "88%", "attendu": "L'ananas" },
+      { "top": "50%", "left": "88%", "attendu": "Les cerises" },
+      { "top": "67%", "left": "88%", "attendu": "La mangue" },
+      { "top": "93%", "left": "86%", "attendu": "Le citron" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "question": "Quel fruit est rouge et croquant ?",
+      "options": ["La pomme", "La banane", "Le raisin"],
+      "reponse": "La pomme",
+      "emoji": "🍎"
+    },
+    {
+      "question": "Quel fruit est jaune et courbé ?",
+      "options": ["La banane", "La fraise", "L'orange"],
+      "reponse": "La banane",
+      "emoji": "🍌"
+    },
+    {
+      "question": "Quel fruit est petit et violet ?",
+      "options": ["Le raisin", "La pastèque", "Le citron"],
+      "reponse": "Le raisin",
+      "emoji": "🍇"
+    },
+    {
+      "question": "Quel fruit est rouge avec des petits points ?",
+      "options": ["La fraise", "La pomme", "La mangue"],
+      "reponse": "La fraise",
+      "emoji": "🍓"
+    },
+    {
+      "question": "Quel fruit est orange et rond ?",
+      "options": ["L'orange", "Le citron", "La pastèque"],
+      "reponse": "L'orange",
+      "emoji": "🍊"
+    },
+    {
+      "question": "Quel fruit est vert à l'extérieur et rouge à l'intérieur ?",
+      "options": ["La pastèque", "La pomme", "Le raisin"],
+      "reponse": "La pastèque",
+      "emoji": "🍉"
+    },
+    {
+      "question": "Quel fruit a une couronne sur la tête ?",
+      "options": ["L'ananas", "La mangue", "Le citron"],
+      "reponse": "L'ananas",
+      "emoji": "🍍"
+    },
+    {
+      "question": "Quel fruit est petit et souvent par deux ?",
+      "options": ["Les cerises", "La fraise", "Le raisin"],
+      "reponse": "Les cerises",
+      "emoji": "🍒"
+    },
+    {
+      "question": "Quel fruit est jaune à l'intérieur et sucré ?",
+      "options": ["La mangue", "La pomme", "Le citron"],
+      "reponse": "La mangue",
+      "emoji": "🥭"
+    },
+    {
+      "question": "Quel fruit est acide et jaune ?",
+      "options": ["Le citron", "L'orange", "La banane"],
+      "reponse": "Le citron",
+      "emoji": "🍋"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-pomme", "top": "5%", "left": "10%", "expected": "pomme" },
+    { "id": "zone-banane", "top": "20%", "left": "15%", "expected": "banane" },
+    { "id": "zone-raisin", "top": "35%", "left": "10%", "expected": "raisin" },
+    { "id": "zone-fraise", "top": "50%", "left": "12%", "expected": "fraise" },
+    { "id": "zone-orange", "top": "65%", "left": "15%", "expected": "orange" },
+    { "id": "zone-pasteque", "top": "10%", "left": "70%", "expected": "pasteque" },
+    { "id": "zone-ananas", "top": "30%", "left": "75%", "expected": "ananas" },
+    { "id": "zone-cerises", "top": "50%", "left": "70%", "expected": "cerises" },
+    { "id": "zone-mangue", "top": "70%", "left": "75%", "expected": "mangue" },
+    { "id": "zone-citron", "top": "85%", "left": "50%", "expected": "citron" }
+  ]
+},{
+  "theme": "La maison",
+  "emoji": "🏡",
+
+  "exercice1_appariement": [
+    { "emoji": "🛏️", "nom": "Le lit" },
+    { "emoji": "🚪", "nom": "La porte" },
+    { "emoji": "🪑", "nom": "La chaise" },
+    { "emoji": "🛁", "nom": "La baignoire" },
+    { "emoji": "🚿", "nom": "La douche" },
+    { "emoji": "🪟", "nom": "La fenêtre" },
+    { "emoji": "🛋️", "nom": "Le canapé" },
+    { "emoji": "🍱", "nom": "La table" },
+    { "emoji": "🧸", "nom": "Le jouet" },
+    { "emoji": "🧹", "nom": "Le balai" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "🛏️", "nom": "Le lit" },
+    { "emoji": "🚪", "nom": "La porte" },
+    { "emoji": "🪑", "nom": "La chaise" },
+    { "emoji": "🛁", "nom": "La baignoire" },
+    { "emoji": "🚿", "nom": "La douche" },
+    { "emoji": "🪟", "nom": "La fenêtre" },
+    { "emoji": "🛋️", "nom": "Le canapé" },
+    { "emoji": "🍽️table", "nom": "La table" },
+    { "emoji": "🧸", "nom": "Le jouet" },
+    { "emoji": "🧹", "nom": "Le balai" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/maison.png",
+    "altText": "Les pièces de la maison",
+    "etiquettes_a_glisser": [
+      "Le lit", "La porte", "La chaise", "La baignoire", "La douche",
+      "La fenêtre", "Le canapé", "La table", "Le jouet", "Le balai"
+    ],
+    "zones": [
+      { "top": "20%", "left": "30%", "attendu": "Le lit" },
+      { "top": "43%", "left": "10%", "attendu": "La porte" },
+      { "top": "52%", "left": "40%", "attendu": "La chaise" },
+      { "top": "68%", "left": "10%", "attendu": "La baignoire" },
+      { "top": "72%", "left": "47%", "attendu": "La douche" },
+      { "top": "17%", "left": "65%", "attendu": "La fenêtre" },
+      { "top": "35%", "left": "87%", "attendu": "Le canapé" },
+      { "top": "62%", "left": "86%", "attendu": "La table" },
+      { "top": "88%", "left": "70%", "attendu": "Le jouet" },
+      { "top": "95%", "left": "45%", "attendu": "Le balai" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "question": "Dans quel meuble je dors la nuit",
+      "options": ["Le lit", "La table", "Le canapé"],
+      "reponse": "Le lit",
+      "emoji": "🛏️"
+    },
+    {
+      "question": "Par où j'entre dans la maison",
+      "options": ["La fenêtre", "La porte", "La douche"],
+      "reponse": "La porte",
+      "emoji": "🚪"
+    },
+    {
+      "question": "Sur quoi je m'assois pour manger",
+      "options": ["La chaise", "Le lit", "Le jouet"],
+      "reponse": "La chaise",
+      "emoji": "🪑"
+    },
+    {
+      "question": "Où je prends un bain",
+      "options": ["La baignoire", "Le canapé", "La table"],
+      "reponse": "La baignoire",
+      "emoji": "🛁"
+    },
+    {
+      "question": "Où je prends une douche rapide",
+      "options": ["La douche", "La fenêtre", "Le lit"],
+      "reponse": "La douche",
+      "emoji": "🚿"
+    },
+    {
+      "question": "Quel objet s'ouvre pour laisser entrer la lumière",
+      "options": ["La fenêtre", "Le balai", "Le jouet"],
+      "reponse": "La fenêtre",
+      "emoji": "🪟"
+    },
+    {
+      "question": "Sur quoi je m'assois pour regarder la télé",
+      "options": ["Le canapé", "La baignoire", "La table"],
+      "reponse": "Le canapé",
+      "emoji": "🛋️"
+    },
+    {
+      "question": "Sur quoi je mange mes repas",
+      "options": ["La table", "Le lit", "Le jouet"],
+      "reponse": "La table",
+      "emoji": "🍽️"
+    },
+    {
+      "question": "Avec quoi je joue dans ma chambre",
+      "options": ["Le jouet", "Le balai", "La chaise"],
+      "reponse": "Le jouet",
+      "emoji": "🧸"
+    },
+    {
+      "question": "Quel objet sert à nettoyer le sol",
+      "options": ["Le balai", "La fenêtre", "Le lit"],
+      "reponse": "Le balai",
+      "emoji": "🧹"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-lit", "top": "5%", "left": "10%", "expected": "lit" },
+    { "id": "zone-porte", "top": "20%", "left": "15%", "expected": "porte" },
+    { "id": "zone-chaise", "top": "35%", "left": "10%", "expected": "chaise" },
+    { "id": "zone-baignoire", "top": "50%", "left": "12%", "expected": "baignoire" },
+    { "id": "zone-douche", "top": "65%", "left": "15%", "expected": "douche" },
+    { "id": "zone-fenetre", "top": "10%", "left": "70%", "expected": "fenetre" },
+    { "id": "zone-canape", "top": "30%", "left": "75%", "expected": "canape" },
+    { "id": "zone-table", "top": "50%", "left": "70%", "expected": "table" },
+    { "id": "zone-jouet", "top": "70%", "left": "75%", "expected": "jouet" },
+    { "id": "zone-balai", "top": "85%", "left": "50%", "expected": "balai" }
+  ]
+},{
+  "theme": "La mer",
+  "emoji": "🌊",
+  "exercice1_appariement": [
+    { "emoji": "🐚", "nom": "Le coquillage" },
+    { "emoji": "🌿", "nom": "L'algue" },
+    { "emoji": "🌊", "nom": "La vague" },
+    { "emoji": "🛶", "nom": "Le pédalo" },
+    { "emoji": "🏡", "nom": "Le chalet" },
+    { "emoji": "🏖️", "nom": "La plage" },
+    { "emoji": "👨‍👩‍👧‍👦", "nom": "La famille" },
+    { "emoji": "☀️", "nom": "Les vacances" },
+    { "emoji": "💧", "nom": "L'eau" },
+    { "emoji": "🏊", "nom": "La nage" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "🐚", "nom": "Le coquillage" },
+    { "emoji": "🌿", "nom": "L'algue" },
+    { "emoji": "🌊", "nom": "La vague" },
+    { "emoji": "🛶", "nom": "Le pédalo" },
+    { "emoji": "🏡", "nom": "Le chalet" },
+    { "emoji": "🏖️", "nom": "La plage" },
+    { "emoji": "👨‍👩‍👧‍👦", "nom": "La famille" },
+    { "emoji": "☀️", "nom": "Les vacances" },
+    { "emoji": "💧", "nom": "L'eau" },
+    { "emoji": "🏊", "nom": "La nage" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/mer.png",
+    "altText": "Les éléments de la plage",
+
+    "etiquettes_a_glisser": [
+      "Le coquillage",
+      "L'algue",
+      "La vague",
+      "Le pédalo",
+      "Le chalet",
+      "La plage",
+      "La famille",
+      "Les vacances",
+      "L'eau",
+      "La nage"
+    ],
+
+    "zones": [
+      { "top": "91%", "left": "20%", "attendu": "Le coquillage" },
+      { "top": "89%", "left": "64%", "attendu": "L'algue" },
+      { "top": "21%", "left": "6%", "attendu": "La vague" },
+      { "top": "8%", "left": "47%", "attendu": "Le pédalo" },
+      { "top": "26%", "left": "88%", "attendu": "Le chalet" },
+      { "top": "76%", "left": "78%", "attendu": "La plage" },
+      { "top": "44%", "left": "88%", "attendu": "La famille" },
+      { "top": "8%", "left": "85%", "attendu": "Les vacances" },
+      { "top": "62%", "left": "6%", "attendu": "L'eau" },
+      { "top": "10%", "left": "20%", "attendu": "La nage" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "question": "Qu'est-ce que Maxime a trouvé au bord de l'eau ?",
+      "options": ["Des coquillages", "Des algues", "Un pédalo"],
+      "reponse": "Des coquillages",
+      "emoji": "🐚"
+    },
+
+    {
+      "question": "Où Mélissa a-t-elle vu des algues ?",
+      "options": ["Dans le chalet", "Sur la plage", "Dans l'eau"],
+      "reponse": "Sur la plage",
+      "emoji": "🌿"
+    },
+
+    {
+      "question": "Où Camille a-t-elle aimé nager ?",
+      "options": ["Dans la piscine", "Dans les vagues", "Sous le pédalo"],
+      "reponse": "Dans les vagues",
+      "emoji": "🌊"
+    },
+
+    {
+      "question": "Avec quoi papa a-t-il fait une promenade ?",
+      "options": ["Un bateau", "Un pédalo", "Une planche"],
+      "reponse": "Un pédalo",
+      "emoji": "🛶"
+    },
+
+    {
+      "question": "Dans quoi la famille a-t-elle dormi ?",
+      "options": ["Une tente", "Un hôtel", "Un chalet"],
+      "reponse": "Un chalet",
+      "emoji": "🏡"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-coquillage", "top": "5%", "left": "10%", "expected": "coquillage" },
+    { "id": "zone-algue", "top": "20%", "left": "15%", "expected": "algue" },
+    { "id": "zone-vague", "top": "35%", "left": "10%", "expected": "vague" },
+    { "id": "zone-pedalo", "top": "50%", "left": "12%", "expected": "pedalo" },
+    { "id": "zone-chalet", "top": "65%", "left": "15%", "expected": "chalet" },
+    { "id": "zone-plage", "top": "10%", "left": "70%", "expected": "plage" },
+    { "id": "zone-famille", "top": "30%", "left": "75%", "expected": "famille" },
+    { "id": "zone-vacances", "top": "50%", "left": "70%", "expected": "vacances" },
+    { "id": "zone-eau", "top": "70%", "left": "75%", "expected": "eau" },
+    { "id": "zone-nage", "top": "85%", "left": "50%", "expected": "nage" }
+  ]
+},{
+  "theme": "La météo",
+  "emoji": "🌦️",
+
+  "exercice1_appariement": [
+    { "emoji": "☀️", "nom": "Le soleil" },
+    { "emoji": "🌧️", "nom": "La pluie" },
+    { "emoji": "⛅", "nom": "Le nuage" },
+    { "emoji": "❄️", "nom": "La neige" },
+    { "emoji": "🌪️", "nom": "Le vent" },
+    { "emoji": "🌈", "nom": "L'arc-en-ciel" },
+    { "emoji": "⚡", "nom": "L'orage" },
+    { "emoji": "🌫️", "nom": "Le brouillard" },
+    { "emoji": "🔥", "nom": "La chaleur" },
+    { "emoji": "🧊", "nom": "Le froid" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "☀️", "nom": "Le soleil" },
+    { "emoji": "🌧️", "nom": "La pluie" },
+    { "emoji": "⛅", "nom": "Le nuage" },
+    { "emoji": "❄️", "nom": "La neige" },
+    { "emoji": "🌪️", "nom": "Le vent" },
+    { "emoji": "🌈", "nom": "L'arc-en-ciel" },
+    { "emoji": "⚡", "nom": "L'orage" },
+    { "emoji": "🌫️", "nom": "Le brouillard" },
+    { "emoji": "🔥", "nom": "La chaleur" },
+    { "emoji": "🧊", "nom": "Le froid" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/meteo.png",
+    "altText": "Les types de météo",
+    "etiquettes_a_glisser": [
+      "Le soleil", "La pluie", "Le nuage", "La neige", "Le vent",
+      "L'arc-en-ciel", "L'orage", "Le brouillard", "La chaleur", "Le froid"
+    ],
+    "zones": [
+      { "top": "9%", "left": "13%", "attendu": "Le soleil" },
+      { "top": "27%", "left": "8%", "attendu": "La pluie" },
+      { "top": "43%", "left": "8%", "attendu": "Le nuage" },
+      { "top": "61%", "left": "8%", "attendu": "La neige" },
+      { "top": "81%", "left": "8%", "attendu": "Le vent" },
+      { "top": "8%", "left": "92%", "attendu": "L'arc-en-ciel" },
+      { "top": "28%", "left": "92%", "attendu": "L'orage" },
+      { "top": "45%", "left": "92%", "attendu": "Le brouillard" },
+      { "top": "68%", "left": "92%", "attendu": "La chaleur" },
+      { "top": "97%", "left": "50%", "attendu": "Le froid" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "question": "Quel temps fait-il quand il y a un grand rond jaune dans le ciel",
+      "options": ["Le soleil", "La pluie", "La neige"],
+      "reponse": "Le soleil",
+      "emoji": "☀️"
+    },
+    {
+      "question": "Quel temps fait-il quand il tombe de l'eau du ciel",
+      "options": ["La pluie", "Le vent", "Le froid"],
+      "reponse": "La pluie",
+      "emoji": "🌧️"
+    },
+    {
+      "question": "Quel temps fait-il quand tout devient blanc et froid",
+      "options": ["La neige", "La chaleur", "L'orage"],
+      "reponse": "La neige",
+      "emoji": "❄️"
+    },
+    {
+      "question": "Quel temps fait-il quand ça souffle très fort",
+      "options": ["Le vent", "Le soleil", "Le brouillard"],
+      "reponse": "Le vent",
+      "emoji": "🌪️"
+    },
+    {
+      "question": "Quel temps fait-il quand on voit beaucoup de couleurs dans le ciel",
+      "options": ["L'arc-en-ciel", "La pluie", "Le froid"],
+      "reponse": "L'arc-en-ciel",
+      "emoji": "🌈"
+    },
+    {
+      "question": "Quel temps fait-il quand on ne voit presque rien",
+      "options": ["Le brouillard", "Le soleil", "La chaleur"],
+      "reponse": "Le brouillard",
+      "emoji": "🌫️"
+    },
+    {
+      "question": "Quel temps fait-il quand il y a des éclairs",
+      "options": ["L'orage", "Le vent", "La neige"],
+      "reponse": "L'orage",
+      "emoji": "⚡"
+    },
+    {
+      "question": "Quel temps fait-il quand il fait très chaud",
+      "options": ["La chaleur", "Le froid", "La pluie"],
+      "reponse": "La chaleur",
+      "emoji": "🔥"
+    },
+    {
+      "question": "Quel temps fait-il quand il fait très froid",
+      "options": ["Le froid", "La chaleur", "Le vent"],
+      "reponse": "Le froid",
+      "emoji": "🧊"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-soleil", "top": "5%", "left": "10%", "expected": "soleil" },
+    { "id": "zone-pluie", "top": "20%", "left": "15%", "expected": "pluie" },
+    { "id": "zone-nuage", "top": "35%", "left": "10%", "expected": "nuage" },
+    { "id": "zone-neige", "top": "50%", "left": "12%", "expected": "neige" },
+    { "id": "zone-vent", "top": "65%", "left": "15%", "expected": "vent" },
+    { "id": "zone-arcenciel", "top": "10%", "left": "70%", "expected": "arc-en-ciel" },
+    { "id": "zone-orage", "top": "30%", "left": "75%", "expected": "orage" },
+    { "id": "zone-brouillard", "top": "50%", "left": "70%", "expected": "brouillard" },
+    { "id": "zone-chaleur", "top": "70%", "left": "75%", "expected": "chaleur" },
+    { "id": "zone-froid", "top": "85%", "left": "50%", "expected": "froid" }
+  ]
+},
+
+
+{
+  "theme": "La nature",
+  "emoji": "🌳",
+
+  "exercice1_appariement": [
+    { "emoji": "🌳", "nom": "L'arbre" },
+    { "emoji": "🌸", "nom": "La fleur" },
+    { "emoji": "🍃", "nom": "La feuille" },
+    { "emoji": "🌞", "nom": "Le soleil" },
+    { "emoji": "🌧️", "nom": "La pluie" },
+    { "emoji": "🌱", "nom": "La plante" },
+    { "emoji": "🪨", "nom": "La pierre" },
+    { "emoji": "🌊", "nom": "L'eau" },
+    { "emoji": "🪵", "nom": "Le bois" },
+    { "emoji": "🌈", "nom": "L'arc-en-ciel" }
+  ],
+
+  "exercice2_glisser_deposer": [
+    { "emoji": "🌳", "nom": "L'arbre" },
+    { "emoji": "🌸", "nom": "La fleur" },
+    { "emoji": "🍃", "nom": "La feuille" },
+    { "emoji": "🌞", "nom": "Le soleil" },
+    { "emoji": "🌧️", "nom": "La pluie" },
+    { "emoji": "🌱", "nom": "La plante" },
+    { "emoji": "🪨", "nom": "La pierre" },
+    { "emoji": "🌊", "nom": "L'eau" },
+    { "emoji": "🪵", "nom": "Le bois" },
+    { "emoji": "🌈", "nom": "L'arc-en-ciel" }
+  ],
+
+  "exercice3_schema": {
+    "imageUrl": "/nature.png",
+    "altText": "Les éléments de la nature",
+    "etiquettes_a_glisser": [
+      "L'arbre", "La fleur", "La feuille", "Le soleil", "La pluie",
+      "La plante", "La pierre", "L'eau", "Le bois", "L'arc-en-ciel"
+    ],
+    "zones": [
+      { "top": "27%", "left": "50%", "attendu": "Le soleil" },
+      { "top": "27%", "left": "16%", "attendu": "La pluie" },
+      { "top": "27%", "left": "82%", "attendu": "L'arc-en-ciel" },
+      { "top": "70%", "left": "16%", "attendu": "L'arbre" },
+      { "top": "65%", "left": "50%", "attendu": "La fleur" },
+      { "top": "53%", "left": "82%", "attendu": "La feuille" },
+      { "top": "94%", "left": "13%", "attendu": "La plante" },
+      { "top": "90%", "left": "67%", "attendu": "La pierre" },
+      { "top": "84%", "left": "98%", "attendu": "L'eau" },
+      { "top": "87%", "left": "39%", "attendu": "Le bois" }
+    ]
+  },
+
+  "exercice4_qcm": [
+    {
+      "question": "Quel élément pousse dans la terre",
+      "options": ["L'arbre", "La pierre", "Le soleil"],
+      "reponse": "L'arbre",
+      "emoji": "🌳"
+    },
+    {
+      "question": "Quel élément est coloré et sent bon",
+      "options": ["La fleur", "La pluie", "Le bois"],
+      "reponse": "La fleur",
+      "emoji": "🌸"
+    },
+    {
+      "question": "Quel élément tombe des arbres",
+      "options": ["La feuille", "Le soleil", "L'eau"],
+      "reponse": "La feuille",
+      "emoji": "🍃"
+    },
+    {
+      "question": "Quel élément brille dans le ciel",
+      "options": ["Le soleil", "La pierre", "La plante"],
+      "reponse": "Le soleil",
+      "emoji": "🌞"
+    },
+    {
+      "question": "Quel élément tombe du ciel quand il fait gris",
+      "options": ["La pluie", "Le bois", "La fleur"],
+      "reponse": "La pluie",
+      "emoji": "🌧️"
+    },
+    {
+      "question": "Quel élément est petit et pousse dans un pot",
+      "options": ["La plante", "La pierre", "L'arc-en-ciel"],
+      "reponse": "La plante",
+      "emoji": "🌱"
+    },
+    {
+      "question": "Quel élément est dur et ne bouge pas",
+      "options": ["La pierre", "La pluie", "La feuille"],
+      "reponse": "La pierre",
+      "emoji": "🪨"
+    },
+    {
+      "question": "Quel élément est indispensable pour boire",
+      "options": ["L'eau", "Le soleil", "Le bois"],
+      "reponse": "L'eau",
+      "emoji": "🌊"
+    },
+    {
+      "question": "Quel élément vient des arbres et sert à construire",
+      "options": ["Le bois", "La fleur", "La pluie"],
+      "reponse": "Le bois",
+      "emoji": "🪵"
+    },
+    {
+      "question": "Quel élément apparaît après la pluie",
+      "options": ["L'arc-en-ciel", "La pierre", "Le soleil"],
+      "reponse": "L'arc-en-ciel",
+      "emoji": "🌈"
+    }
+  ],
+
+  "dropZonesImage": [
+    { "id": "zone-soleil", "top": "5%", "left": "50%", "expected": "soleil" },
+    { "id": "zone-pluie", "top": "15%", "left": "20%", "expected": "pluie" },
+    { "id": "zone-arcenciel", "top": "15%", "left": "75%", "expected": "arc-en-ciel" },
+    { "id": "zone-arbre", "top": "35%", "left": "20%", "expected": "arbre" },
+    { "id": "zone-fleur", "top": "40%", "left": "50%", "expected": "fleur" },
+    { "id": "zone-feuille", "top": "35%", "left": "75%", "expected": "feuille" },
+    { "id": "zone-plante", "top": "65%", "left": "20%", "expected": "plante" },
+    { "id": "zone-pierre", "top": "70%", "left": "50%", "expected": "pierre" },
+    { "id": "zone-eau", "top": "65%", "left": "75%", "expected": "eau" },
+    { "id": "zone-bois", "top": "85%", "left": "50%", "expected": "bois" }
+  ]
 }
+
      ]
 }
