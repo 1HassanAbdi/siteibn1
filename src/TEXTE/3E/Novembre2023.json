@@ -1,0 +1,186 @@
+{
+  "matiere": "MATHÉMATIQUES",
+  "titre": "OQRE - Questions diffusées (3e année) - Novembre 2023",
+  "startDate": "2023-11-01",
+  "endDate": "2023-12-31",
+  "image_illustration": "/imagMath/oqre_3_2023.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Cette ressource aide le personnel enseignant avec la composante Mathématiques du Test de l’OQRE. Chaque question est liée à une compétence et à une attente du curriculum de l’Ontario (2020) [1]."
+    }
+  ],
+  "themes": {
+    "Nombres": {
+      "domaine": "B1. Sens du nombre et B2. Sens des opérations",
+      "questions": [
+        { "id": 1, "q": "Quelle est la valeur du chiffre 8 dans le nombre 826 ?", "options": ["8", "80", "800"], "r": 2 },
+        { 
+          "id": 2, 
+          "q": "Choisis les DEUX fractions qui sont équivalentes à deux quarts.", 
+          "type": "choix_multiple_multiple",
+          "options": ["un demi", "deux demis", "deux huitièmes", "quatre huitièmes"], 
+          "r": [0,3] 
+        },
+        { 
+          "id": 3, 
+          "q": "Quels nombres sont représentés par la lettre A et la lettre B sur cette droite numérique ?", 
+          "image": "/oqreImag/3E/droite_numerique_AB.png",
+          "options": ["60 et 90", "65 et 90", "65 et 95", "70 et 95"], 
+          "r": 2 
+        },
+        { "id": 4, "q": "Quels deux nombres multipliés ensemble donnent 30 ?", "options": ["3 et 0", "5 et 3", "10 et 2", "10 et 3"], "r": 3 },
+        { "id": 5, "q": "Kai a 138 blocs et Luka a 184 blocs. Combien de blocs ont-ils en tout ?", "options": ["46 blocs", "222 blocs", "312 blocs", "322 blocs"], "r": 3 },
+        { 
+          "id": 6, 
+          "q": "Quels deux chiffres complètent correctement cette soustraction  ?", 
+          "image": "/oqreImag/3E/soustraction_visuelle.png",
+          "options": ["2 et 2", "2 et 0", "3 et 0", "4 et 2"], 
+          "r": 2 
+        }
+      ]
+    },
+    "Algebre": {
+      "domaine": "C1. Suites et relations, C2. Équations et C3. Codage",
+      "questions": [
+        { 
+          "id": 7, 
+          "q": "Quels deux attributs changent dans cette suite à motif répété ?", 
+          "image": "/oqreImag/3E/motif_repete.png",
+          "options": ["forme et taille", "couleur et taille", "taille et orientation", "forme et orientation"], 
+          "r": 2 
+        },
+        { "id": 8, "q": "Quels sont les nombres manquants dans la suite : 55, 52, ___, 46, ___, ... ?", "options": ["49, 43", "49, 44", "50, 44", "51, 45"], "r": 0 },
+        { "id": 9, "q": "Amit crée une suite numérique. Il commence à 2 et compte par bonds de 3. Mia crée une suite numérique. Elle commence à 5 et compte par bonds de 4.Quels deux nombres font partie des suites numériques de Amit et de Mia ?", "options": ["9 et 17", "13 et 21", "17 et 29", "20 et 29"], "r": 2 },
+        { "id": 10, "q": "Quelle expression est égale à 250 ?", "options": ["100 + 50", "150 + 150", "300 – 50", "500 – 150"], "r": 2 },
+        { 
+          "id": 11, 
+          "q": "Choisis les DEUX expressions équivalentes à 8 + 2.", 
+          "type": "choix_multiple_multiple",
+          "options": ["4 x 2", "5 + 4", "20 ÷ 2", "23 – 13"], 
+          "r": [2,3] 
+        },
+        { "id": 12, "q": "Quel nombre va dans la boîte pour l'équivalence : 50 + 30 + 10 = 45 + 15 + ?", "options": ["30", "45", "60", "90"], "r": 0 },
+        { "id": 13, "q": "Ce code a cinq étapes. Deux étapes du code sont manquantes.Quelles sont les étapes manquantes du code : début, ________, calculer, ________, fin ?", "options": ["entrer valeurs, afficher réponse", "afficher réponse, calculer", "calculer, entrer valeurs", "début, calculer"], "r": 0 },
+        { "id": 14, "q": "Quel est le nombre affiché si le nombre entré est 3 (additionner 15, soustraire 6) ?",
+         "image": "/oqreImag/3E/code.png",
+         "options": ["9", "12", "18", "21"], "r": 1 },
+        { 
+          "id": 15, 
+          "q": "Un robot est sur la case de début face à la direction dans laquelle il va se déplacer. Ce code déplace le robot de la case de début à la case de fin. Utilise les blocs de codage pour compléter ce code..", 
+          "type": "glisser_deposer",
+          "image": "/oqreImag/3E/code_robot.png",
+          "options": ["avancer de 3 cases", "faire un quart de tour à gauche", "avancer de 4 cases"], 
+          "r": ["avancer de 3 cases", "faire un quart de tour à gauche", "avancer de 4 cases"] 
+        }
+      ]
+    },
+    "Donnees": {
+      "domaine": "D1. Littératie statistique et D2. Probabilité",
+      "questions": [
+        { 
+          "id": 16, 
+          "q": "Combien d'articles de papier ont été recyclés (Légende : 1 symbole = 4 articles) ?", 
+          "image": "/oqreImag/3E/pictogramme_recyclage.png",
+          "options": ["5", "14", "20", "24"], 
+          "r": 2 
+        },
+        { "id": 17, "q": "Quelle est la moyenne du nombre de marqueurs (6, 2, 4) ?",
+         "image": "/oqreImag/3E/marqueurs.png",
+        "options": ["2", "4", "6", "12"], "r": 1 },
+        { 
+          "id": 18, 
+          "q": "Combien y a-t-il de jours ensoleillés de plus en juillet et août qu'en octobre ?", 
+          "image": "/oqreImag/3E/diagramme_bandes_soleil.png",
+          "options": ["18", "26", "28", "46"], 
+          "r": 2 
+        },
+        { "id": 19, "q": "Quelle est la probabilité que la pièce tombe sur pile 5 fois de suite ?", "options": ["certain", "impossible", "très probable", "peu probable"], "r": 3 },
+        { 
+          "id": 20, 
+          "q": "Quel énoncé est vrai pour le pigeage d'une tuile dans le sac ?", 
+          "image": "/oqreImag/3E/sac_tuiles.png",
+          "options": ["très probable de piger J", "très probable de piger B", "certain de piger J", "impossible de piger V"], 
+          "r": 0 
+        }
+      ]
+    },
+    "Sens_Espace": {
+      "domaine": "E1. Raisonnement géométrique et E2. Sens de la mesure",
+      "questions": [
+        { 
+          "id": 21, 
+          "q": "Choisis les DEUX paires de solides qui sont congruentes.", 
+          "type": "choix_multiple_multiple",
+          "image": "/oqreImag/3E/solides_congruents.png",
+          
+           "options": [
+            {"image": "/oqreImag/3E/PaireA.png"},
+            {"image": "/oqreImag/3E/PaireB.png"},
+            {"image": "/oqreImag/3E/PaireC.png"},
+            {"image": "/oqreImag/3E/PaireD.png"},
+            {"image": "/oqreImag/3E/PaireE.png"},
+            {"image": "/oqreImag/3E/PaireF.png"}
+           
+          ],
+          "r": [2, 5] 
+        },
+        { 
+          "id": 22, 
+          "q": "Déplacement de la flèche de début à fin ?", 
+          "image": "/oqreImag/3E/deplacement_fleche.png",
+          "options": ["Avancer 4, tour horaire, avancer 4", "Avancer 4, tour antihoraire, avancer 5", "Avancer 5, tour horaire, avancer 5", "Avancer 5, tour antihoraire, avancer 6"], 
+          "r": 1
+        },
+        { "id": 23, "q": "Faces, arêtes et sommets d'un prisme à base trapézoïdale ?", "options": ["5 faces, 9 arêtes, 6 sommets", "6 faces, 10 arêtes, 6 sommets", "6 faces, 12 arêtes, 8 sommets", "7 faces, 12 arêtes, 7 sommets"], "r": 2 },
+        { 
+          "id": 24, 
+          "q": "Quelle horloge numérique indique la même heure que l'horloge analogique ?", 
+          "image": "/oqreImag/3E/horloges.png",
+          "options": ["10:10", "10:45", "9:10", "9:45"], 
+          "r": 1 
+        },
+        { 
+          "id": 25, 
+          "q": "Combien de tuiles carrées de plus pour recouvrir le livre ?", 
+          "image": "/oqreImag/3E/couverture_livre.png",
+          "options": ["12", "16", "18", "30"], 
+          "r": 2 
+        },
+        { 
+          "id": 26, 
+          "q": "Quel est le périmètre de cette figure plane ?", 
+          "image": "/oqreImag/3E/figure_plane.png",
+          "options": ["75 cm", "80 cm", "85 cm", "90 cm"], 
+          "r": 3 
+        }
+      ]
+    },
+    "Littératie_Financière": {
+      "domaine": "F1. Argent et finances",
+      "questions": [
+        { "id": 27, "q": "Un enseignant achète de la peinture à 11 $. Il paye avec un billet de 20 $. Choisis le billet qui represente la meilleure estimation de l'argent qu'il va recevoir en retour.?",
+         "options": [
+            {"image": "/oqreImag/3E/1$.png"},
+            {"image": "/oqreImag/3E/5$.png"},
+            {"image": "/oqreImag/3E/10$.png"},
+            {"image": "/oqreImag/3E/20$.png"}
+           
+           
+          ],
+         "r": 2 },
+        { "id": 28, "q": "Hana achète un article qui coute 55 cents. Elle paie avec 75 cents.Quelle option montre la monnaie qu'elle peut recevoir?", 
+        "options": [
+            {"image": "/oqreImag/3E/A.png"},
+            {"image": "/oqreImag/3E/B.png"},
+            {"image": "/oqreImag/3E/C.png"},
+            {"image": "/oqreImag/3E/D.png"}
+           
+           
+          ],
+        
+        "r": 3 }
+      ]
+    }
+  }
+}

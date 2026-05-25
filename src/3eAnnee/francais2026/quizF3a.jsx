@@ -8,11 +8,11 @@ import data from "./prmiereNation.json";
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyks0iY9k2hNeuR1Lxyzn_MzBNNcYjPMv3Rxx2Ccj-vyr7wQAEGWT7FvYZRA_PUWFUxXQ/exec";
 
-const SECRET_HASH = "MjIyMg=="; // Code: 2222
+const SECRET_HASH = "MjIyMg=="; // Code:
 
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
-export default function QuizOQREFinal() {
+export default function QuizOQREFinal3a() {
   const [etape, setEtape] = useState("login");
   const [email, setEmail] = useState("");
   const [nom, setNom] = useState("");
@@ -122,7 +122,7 @@ export default function QuizOQREFinal() {
             <select value={niveau} onChange={e => setNiveau(e.target.value)} className="w-full px-6 py-4 bg-[#1f263d] border border-white/5 rounded-2xl outline-none focus:border-indigo-500 text-white appearance-none">
               <option value="">Choisis ta classe</option>
               <option value="3E">3e année</option>
-              <option value="4E">4e année</option>
+              
             </select>
             <div className="relative">
               <Lock size={18} className="absolute left-4 top-4 text-indigo-400"/>

@@ -1,0 +1,180 @@
+{
+  "matiere": "FRANCAIS",
+  "titre": "La vie des Premières Nations",
+  "niveau": "3e année",
+  "type": "OQRE",
+  "image_illustration": "/imagFr/premieres_nations.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Depuis très longtemps, bien avant l’arrivée des Européens, les Premières Nations vivaient sur les terres que nous appelons aujourd’hui le Canada. Elles connaissaient très bien les forêts, les rivières et les animaux, car elles vivaient près de la nature et en prenaient soin."
+    },
+    {
+      "p": 2,
+      "contenu": "Chaque nation avait sa propre langue et ses propres traditions. Par exemple, les Anishinaabe racontaient des histoires pour apprendre aux enfants le respect et le courage. Les Haudenosaunee prenaient souvent des décisions en groupe pour que chacun puisse donner son opinion."
+    },
+    {
+      "p": 3,
+      "contenu": "La nature était très importante pour les Premières Nations. Elles utilisaient seulement ce dont elles avaient besoin et remerciaient la terre pour ce qu’elle leur offrait. Elles fabriquaient leurs vêtements, leurs outils et leurs objets d’art avec des matériaux trouvés dans leur environnement."
+    },
+    {
+      "p": 4,
+      "contenu": "Les Premières Nations construisaient aussi des canots avec de l’écorce de bouleau. Ces canots leur permettaient de voyager sur les rivières et les lacs pour transporter des personnes et des objets. En hiver, certaines nations utilisaient des raquettes pour marcher plus facilement dans la neige."
+    },
+    {
+      "p": 5,
+      "contenu": "Aujourd’hui, les Premières Nations continuent de partager leur culture. Elles organisent des pow-wows, où les gens dansent, chantent et jouent du tambour pour célébrer leurs traditions. Elles enseignent aussi aux jeunes l’importance de respecter la terre et de prendre soin de leur communauté."
+    },
+    {
+      "p": 6,
+      "contenu": "Les Premières Nations jouent un rôle important dans l’histoire du Canada et dans sa culture d’aujourd’hui."
+    }
+  ],
+  "themes": {
+    "COMPREHENSION": {
+      "domaine": "Compréhension de lecture",
+      "questions": [
+        {
+          "q": "Qui vivait sur les terres du Canada avant l’arrivée des Européens ?",
+          "options": ["Les explorateurs", "Les Premières Nations", "Les colons", "Les commerçants"],
+          "r": 1
+        },
+        {
+          "q": "Que connaissaient très bien les Premières Nations ?",
+          "options": ["Les villes", "Les routes", "Les forêts, les rivières et les animaux", "Les magasins"],
+          "r": 2
+        },
+        {
+          "q": "Pourquoi les Anishinaabe racontaient-ils des histoires ?",
+          "options": ["Pour jouer", "Pour apprendre le respect et le courage", "Pour vendre des livres", "Pour voyager"],
+          "r": 1
+        },
+        {
+          "q": "Comment les Haudenosaunee prenaient-ils leurs décisions ?",
+          "options": ["Seuls", "En groupe", "En silence", "Par hasard"],
+          "r": 1
+        },
+        {
+          "q": "Pourquoi la nature était-elle importante pour les Premières Nations ?",
+          "options": ["Parce qu’elle leur offrait des ressources", "Parce qu’elle était loin", "Parce qu’elle était dangereuse", "Parce qu’elle était vide"],
+          "r": 0
+        },
+        {
+          "q": "Avec quoi fabriquaient-elles leurs vêtements et leurs outils ?",
+          "options": ["Avec du plastique", "Avec des matériaux trouvés dans leur environnement", "Avec des machines", "Avec du métal"],
+          "r": 1
+        },
+        {
+          "q": "Avec quoi les Premières Nations construisaient-elles leurs canots ?",
+          "options": ["Avec du métal", "Avec de la pierre", "Avec de l’écorce de bouleau", "Avec du verre"],
+          "r": 2
+        },
+        {
+          "q": "À quoi servaient les canots ?",
+          "options": ["À faire de la musique", "À transporter des personnes et des objets", "À cuisiner", "À jouer"],
+          "r": 1
+        },
+        {
+          "q": "Que faisaient les gens pendant les pow-wows ?",
+          "options": ["Ils dormaient", "Ils étudiaient", "Ils dansaient, chantaient et jouaient du tambour", "Ils construisaient des maisons"],
+          "r": 2
+        },
+        {
+          "q": "Que veulent enseigner les Premières Nations aux jeunes ?",
+          "options": ["Comment conduire", "Comment construire des routes", "L’importance de respecter la terre et la communauté", "Comment voyager"],
+          "r": 2
+        }
+      ]
+    },
+    "VOCABULAIRE": {
+      "domaine": "Sens des mots",
+      "questions": [
+        {
+          "q": "Le mot « traditions » veut dire :",
+          "options": ["Des habitudes importantes", "Des voitures", "Des animaux", "Des vêtements"],
+          "r": 0
+        },
+        {
+          "q": "Le mot « environnement » veut dire :",
+          "options": ["Le monde autour de nous", "Une école", "Une ville", "Un jouet"],
+          "r": 0
+        },
+        {
+          "q": "Le mot « ressources » signifie :",
+          "options": ["Des cadeaux", "Ce que la nature offre", "Des bâtiments", "Des routes"],
+          "r": 1
+        },
+        {
+          "q": "Le mot « courage » veut dire :",
+          "options": ["Avoir peur", "Être brave", "Dormir", "Pleurer"],
+          "r": 1
+        },
+        {
+          "q": "Un pow-wow est :",
+          "options": ["Une fête culturelle", "Une voiture", "Un animal", "Une montagne"],
+          "r": 0
+        }
+      ]
+    },
+    "GRAMMAIRE": {
+      "domaine": "Orthographe et structure de phrase",
+      "questions": [
+        {
+          "q": "Choisis le bon mot : Les Premières Nations vivaient ____ harmonie avec la nature.",
+          "options": ["an", "en", "on"],
+          "r": 1
+        },
+        {
+          "q": "Choisis le bon mot : Les gens chantent ____ dansent.",
+          "options": ["et", "est", "es"],
+          "r": 0
+        },
+        {
+          "q": "Choisis le bon mot : ____ traditions sont importantes.",
+          "options": ["Ces", "Ses", "C’est"],
+          "r": 0
+        },
+        {
+          "q": "La phrase « Les gens dansent et chantent. » est une phrase :",
+          "options": ["Simple", "Complexe"],
+          "r": 1
+        },
+        {
+          "q": "Combien de verbes y a-t-il dans une phrase simple ?",
+          "options": ["Un", "Deux", "Trois", "Quatre"],
+          "r": 0
+        }
+      ]
+    },
+    "CONJUGAISON": {
+      "domaine": "Présent et imparfait",
+      "questions": [
+        {
+          "q": "Conjugue le verbe vivre à l’imparfait : Elles _____________ près de la nature.",
+          "options": ["vivent", "vivaient", "vivront"],
+          "r": 1
+        },
+        {
+          "q": "Conjugue le verbe raconter à l’imparfait : Les Anishinaabe _____________ des histoires.",
+          "options": ["racontaient", "racontent", "raconteront"],
+          "r": 0
+        },
+        {
+          "q": "Conjugue le verbe construire à l’imparfait : Elles _____________ des canots.",
+          "options": ["construisaient", "construisent", "construiront"],
+          "r": 0
+        },
+        {
+          "q": "Conjugue le verbe chanter au présent : Les gens _____________ pendant les pow-wows.",
+          "options": ["chantaient", "chantent", "chanteront"],
+          "r": 1
+        },
+        {
+          "q": "Conjugue le verbe respecter au présent : Nous _____________ la terre.",
+          "options": ["respectons", "respectaient", "respecterons"],
+          "r": 0
+        }
+      ]
+    }
+  }
+}

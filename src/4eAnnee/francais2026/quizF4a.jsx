@@ -12,7 +12,7 @@ const SECRET_HASH = "MjIyMg=="; // Code: 2222
 
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
-export default function QuizOQREFinal() {
+export default function QuizOQREFinal4a() {
   const [etape, setEtape] = useState("login");
   const [email, setEmail] = useState("");
   const [nom, setNom] = useState("");

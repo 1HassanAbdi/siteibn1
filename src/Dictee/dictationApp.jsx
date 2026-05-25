@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
   Play, Volume2, ArrowLeft, Trophy, BookOpen, GraduationCap, 
   CheckCircle, XCircle, Sparkles, Timer, RefreshCw, Clock, Brain, Search, Pencil, 
-  AlertCircle, Lightbulb, Target, Flame, ChevronRight, Scissors, TrendingUp 
+  AlertCircle, Lightbulb, Target, Flame, ChevronRight, Scissors, TrendingUp, UserCheck
 } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -15,7 +15,7 @@ import WorkHistory from './WorkHistory';
 import ConcoursEvaluator from './ConcoursEvaluator';
 import EvaluationGame from './EvaluationGameSem'; 
 import Evolution from "./TeacherDashboard";
-
+import DicteeTeacherMode from "./DicteeTeacherMode";
 
 const formatTime = (s) => {
   const mins = Math.floor(s / 60);
@@ -27,7 +27,7 @@ const DictationApp1 = () => {
   // --- LOGIQUE DE DATE ---
   const getCurrentWeekId = () => {
     const today = new Date();
-    const startDate = new Date(2026, 0, 17); 
+    const startDate = new Date(2026, 0, 24); 
     const diff = today - startDate;
     const week = Math.ceil((Math.floor(diff / (1000 * 60 * 60 * 24)) + 1) / 7);
     return week > 0 ? week : 1;
@@ -74,8 +74,6 @@ const DictationApp1 = () => {
 
   const insertAccent = (accent) => {
     setUserInput(prev => prev + accent);
-    const inputElement = document.querySelector('input[type="text"]');
-    if (inputElement) inputElement.focus();
   };
 
   // --- INITIALISATION ---
@@ -109,7 +107,7 @@ const DictationApp1 = () => {
       setLevelData(d);
       setSelectedLevel(id);
     } catch (e) {
-      alert("Erreur de chargement du fichier.");
+      alert("Erreur de chargement des données.");
     } finally {
       setIsLoading(false);
     }
@@ -127,12 +125,11 @@ const DictationApp1 = () => {
   };
 
   const startSession = (weekId, chosenMode) => {
-    const weekObj = levelData.weeks?.find(w => Number(w.id) === Number(weekId));
-    const words = weekObj?.words || [];
+    const words = getActiveWords();
     resetStats();
     setActiveWeek(Number(weekId));
     setMode(chosenMode);
-    setSessionTotal(words.length);
+    setSessionTotal(words.length || 10); // Défaut à 10 si vide
     setIsTimerRunning(true);
   };
 
@@ -157,16 +154,19 @@ const DictationApp1 = () => {
     localStorage.setItem('eleve_history', JSON.stringify([newEntry, ...history].slice(0, 50)));
   };
 
-  const handleSpeak = (word) => {
-    const text = word || getActiveWords()[currentWordIndex];
+  const handleSpeak = (textToSpeak) => {
+    const words = getActiveWords();
+    const text = textToSpeak || words[currentWordIndex];
     if (!text) return;
+
     const cleanWord = text.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, "").replace(/\s+/g, "_");
     const audioPath = `/audio/${selectedLevel}A/semaine${activeWeek}/${cleanWord}.mp3`;
-    console.log("le chemin",audioPath )
+    
     const audio = new Audio(audioPath);
     audio.play().catch(() => {
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'fr-FR'; utterance.rate = 0.8;
+      utterance.lang = 'fr-FR'; 
+      utterance.rate = 0.8;
       window.speechSynthesis.speak(utterance);
     });
   };
@@ -188,7 +188,7 @@ const DictationApp1 = () => {
           setUserInput('');
           setFeedback(null);
         } else {
-          saveExerciseResult(newScore, sessionTotal);
+          saveExerciseResult(newScore, words.length);
         }
       }, 800);
     } else {
@@ -201,7 +201,7 @@ const DictationApp1 = () => {
           setUserInput('');
           setFeedback(null);
         } else {
-          saveExerciseResult(correctCount, sessionTotal);
+          saveExerciseResult(correctCount, words.length);
         }
       }, 800);
     }
@@ -218,10 +218,10 @@ const DictationApp1 = () => {
       <header className="bg-gradient-to-br from-[#0d6e52] to-[#15a278] pt-12 pb-24 text-center text-white rounded-b-[60px] shadow-2xl relative">
         <div className="absolute top-4 right-4 flex gap-2">
            <button onClick={() => setShowHistory(true)} className="bg-white/20 p-3 rounded-full hover:bg-white/30 font-black text-xs flex items-center gap-2">
-             <Clock size={18}/> <span className="hidden md:inline">MON HISTORIQUE</span>
+             <Clock size={18}/> <span className="hidden md:inline">HISTORIQUE</span>
            </button>
            <button onClick={() => setShowEvolution(true)} className="bg-amber-500 p-3 rounded-full hover:bg-amber-600 font-black text-xs flex items-center gap-2 text-white shadow-lg">
-             <TrendingUp size={18}/> <span className="hidden md:inline">EVOLUTION</span>
+             <TrendingUp size={18}/> <span className="hidden md:inline">ÉVOLUTION</span>
            </button>
         </div>
 
@@ -246,7 +246,7 @@ const DictationApp1 = () => {
           ) : showHistory ? (
             <motion.div key="history" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="bg-white rounded-[40px] p-8 shadow-2xl min-h-[500px]">
                <button onClick={() => setShowHistory(false)} className="mb-6 flex items-center gap-2 text-[#0d6e52] font-black uppercase text-sm hover:translate-x-[-4px] transition-all">
-                 <ArrowLeft size={20}/> Retour à la mission
+                 <ArrowLeft size={20}/> Retour
                </button>
                <h2 className="text-2xl font-black mb-6 text-slate-800 uppercase tracking-tighter">Mes derniers exploits</h2>
                <WorkHistory />
@@ -291,7 +291,8 @@ const DictationApp1 = () => {
                     { id: 'nature', title: "4. Grammaire", desc: "Trouve la classe des mots.", icon: <Brain className="text-pink-500"/> },
                     { id: 'mystere', title: "5. Jeu Mystère", desc: "Devine le mot caché.", icon: <Sparkles className="text-amber-500"/> },
                     { id: 'test', title: "6. La Dictée", desc: "Test final sans faute !", icon: <Pencil className="text-red-500"/> },
-                    { id: 'evaluation', title: "7. ÉVALUATION", desc: "Test final noté par le prof.", icon: <Trophy className="text-white"/> },
+                    { id: 'teacher', title: "7. Mode Maître", desc: "L'enseignant valide tes mots.", icon: <UserCheck className="text-orange-500"/> },
+                    { id: 'evaluation', title: "8. ÉVALUATION", desc: "Test final noté.", icon: <Trophy className="text-white"/> },
                   ].map((step) => {
                     const isEval = step.id === 'evaluation';
                     return (
@@ -333,7 +334,7 @@ const DictationApp1 = () => {
                   <Flame size={60} className="text-orange-400 mx-auto mb-4 animate-pulse" />
                   <h3 className="text-xl font-black uppercase mb-4 tracking-tighter">Zone Concours</h3>
                   <p className="text-sm text-slate-400 font-medium leading-relaxed mb-8 italic">
-                    Prêt pour l'évaluation officielle des 3 semaines ?
+                    Prêt pour l'évaluation officielle ?
                   </p>
                   
                   <button 
@@ -360,7 +361,7 @@ const DictationApp1 = () => {
                   <div className="w-12 h-12 bg-white border-[4px] border-[#0d6e52] rounded-full flex items-center justify-center shadow-sm">
                     <ArrowLeft size={28} className="text-[#0d6e52]" strokeWidth={4} />
                   </div>
-                  <span className="text-[#0d6e52] font-black text-xl uppercase tracking-tighter">Retour</span>
+                  <span className="text-[#0d6e52] font-black text-xl uppercase tracking-tighter">Quitter</span>
                 </button>
                 <div className="font-black text-[#0d6e52] text-[11px] uppercase tracking-widest bg-emerald-50 px-6 py-2 rounded-full border border-emerald-100">
                    {mode} — SEMAINE {activeWeek}
@@ -370,11 +371,11 @@ const DictationApp1 = () => {
 
               <div className="bg-[#fdfcf0] rounded-[40px] shadow-2xl min-h-[550px] flex flex-col relative overflow-hidden border-4 border-white">
                 
-                {mode !== 'etude' && !isFinished && (
+                {!isFinished && mode !== 'etude' && (
                   <div className="bg-[#0d6e52] p-4 flex justify-between items-center text-white px-10">
                     <div className="flex gap-8 font-black text-xs uppercase">
                       <div className="flex items-center gap-2 text-green-300">
-                        <CheckCircle size={18}/> <span>Note : {correctCount} / {sessionTotal}</span>
+                        <CheckCircle size={18}/> <span>Score : {correctCount}</span>
                       </div>
                       <div className="flex items-center gap-2 text-red-300">
                         <XCircle size={18}/> <span>Erreurs : {wrongCount}</span>
@@ -392,7 +393,7 @@ const DictationApp1 = () => {
                     {isFinished ? (
                       <motion.div key="finished" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="p-10 text-center max-h-[550px] overflow-y-auto">
                         <Trophy size={80} className="text-yellow-500 mx-auto mb-4 drop-shadow-lg" />
-                        <h2 className="text-4xl font-black text-slate-800 mb-2 uppercase italic">Mission Accomplie !</h2>
+                        <h2 className="text-4xl font-black text-slate-800 mb-2 uppercase italic">Bien joué !</h2>
                         <div className="text-7xl font-black text-[#0d6e52] mb-10 bg-emerald-50 inline-block px-12 py-6 rounded-[40px] shadow-inner border-2 border-emerald-100">
                           {correctCount} <span className="text-slate-300 text-3xl">/ {sessionTotal}</span>
                         </div>
@@ -400,7 +401,7 @@ const DictationApp1 = () => {
                         <div className="max-w-xl mx-auto space-y-6">
                           {errors.length > 0 && (
                             <div className="bg-red-50 p-6 rounded-3xl border-2 border-red-100 text-left">
-                              <h4 className="text-red-600 font-black uppercase text-xs mb-4 flex items-center gap-2"><AlertCircle size={16}/> Analyse :</h4>
+                              <h4 className="text-red-600 font-black uppercase text-xs mb-4 flex items-center gap-2"><AlertCircle size={16}/> Analyse des erreurs :</h4>
                               {errors.map((err, i) => (
                                 <div key={i} className="flex justify-between items-center bg-white p-3 rounded-xl mb-2 shadow-sm">
                                   <span className="text-red-400 line-through font-bold">{err.typed || "(vide)"}</span>
@@ -451,11 +452,11 @@ const DictationApp1 = () => {
                           <div className="mt-10 p-4 bg-[#f8fafc] rounded-[30px] border-2 border-slate-200 shadow-sm max-w-xl mx-auto">
                             <div className="flex flex-wrap justify-center gap-2">
                               {accents.map(acc => (
-                                <motion.button key={acc} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} type="button" onClick={() => insertAccent(acc)}
-                                  className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center font-bold text-blue-600 shadow-sm"
+                                <button key={acc} type="button" onClick={() => insertAccent(acc)}
+                                  className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center font-bold text-blue-600 shadow-sm hover:bg-blue-50"
                                 >
                                   {acc}
-                                </motion.button>
+                                </button>
                               ))}
                             </div>
                           </div>
@@ -472,6 +473,20 @@ const DictationApp1 = () => {
                         {mode === 'nature' && <WordTypeGame selectedLevel={selectedLevel} activeWeek={activeWeek} onCorrect={() => setCorrectCount(c => c + 1)} onWrong={() => setWrongCount(w => w + 1)} onSetTotal={setSessionTotal} onFinish={saveExerciseResult} />}
                         {mode === 'mystere' && <WordMystery words={getActiveWords()} activeWeek={activeWeek} onCorrect={() => setCorrectCount(c => c + 1)} onWrong={() => setWrongCount(w => w + 1)} onSetTotal={setSessionTotal} onFinish={saveExerciseResult} />}
                         {(mode === 'evaluation' || mode === 'concours') && <EvaluationGame words={getActiveWords()} selectedLevel={selectedLevel} activeWeek={activeWeek} onBack={() => { setActiveWeek(null); setMode('etude'); }} onFinish={saveExerciseResult} />}
+                        {mode === 'teacher' && (
+                          <DicteeTeacherMode 
+                            words={getActiveWords()}
+                            currentWordIndex={currentWordIndex}
+                            correctCount={correctCount}
+                            wrongCount={wrongCount}
+                            sessionTotal={getActiveWords().length}
+                            handleSpeak={handleSpeak}
+                            setCorrectCount={setCorrectCount}
+                            setWrongCount={setWrongCount}
+                            setCurrentWordIndex={setCurrentWordIndex}
+                            saveExerciseResult={saveExerciseResult}
+                          />
+                        )}
                       </div>
                     )}
                   </AnimatePresence>

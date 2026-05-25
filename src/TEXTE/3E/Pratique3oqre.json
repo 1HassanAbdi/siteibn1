@@ -1,0 +1,103 @@
+{
+  "matiere": "MATHÉMATIQUES",
+  "titre": "Pratique OQRE - 3e année (Complet)",
+  "themes": {
+    "Nombres": {
+      "domaine": "B1. Sens du nombre et B2. Sens des opérations",
+      "questions": [
+        { "id": 1, "q": "Quelle est la valeur du chiffre 7 dans le nombre 734 ?", "options": ["7", "70", "700", "734"], "r": 2 },
+        { 
+          "id": 2, 
+          "q": "Choisis les DEUX représentations qui montrent la fraction deux tiers (2/3).", 
+          "type": "choix_multiple_multiple",
+          "options": [
+            {"image": "/oqreImag/3E/2_3_cercle.png"},
+            {"image": "/oqreImag/3E/1_carre.png"},
+            {"image": "/oqreImag/3E/2_3_ensemble.png"},
+            {"image": "/oqreImag/3E/3_4_rectangle.png"}
+          ], 
+          "r": [0, 2] 
+        },
+        { "id": 3, "q": "Un fermier a 256 pommes. Il en vend 132. Combien de pommes lui reste-t-il ?", "options": ["124", "134", "388", "122"], "r": 0 },
+        { "id": 4, "q": "Quel nombre est 100 de plus que 892 ?", "options": ["902", "992", "792", "802"], "r": 1 },
+        { "id": 5, "q": "Quel est le résultat de 5 x 6 ?", "options": ["11", "25", "30", "35"], "r": 2 }
+      ]
+    },
+    "Algebre": {
+      "domaine": "C1. Suites et C3. Codage",
+      "questions": [
+        { "id": 6, "q": "Quel est le nombre manquant dans cette suite : 100, 90, 80, __, 60 ?", "options": ["75", "70", "85", "65"], "r": 1 },
+        { "id": 7, "q": "Quelle est la règle de cette suite : 4, 8, 12, 16 ?", "options": ["Ajouter 2", "Soustraire 4", "Ajouter 4", "Multiplier par 2"], "r": 2 },
+        { 
+          "id": 8, 
+          "q": "Choisis les DEUX expressions qui sont égales à 20.", 
+          "type": "choix_multiple_multiple",
+          "options": ["10 + 10", "25 - 5", "15 + 10", "30 - 20"], 
+          "r": [0, 1] 
+        },
+        { "id": 9, "q": "Trouve la valeur de l'étoile : 12 + ⭐ = 20", "options": ["6", "7", "8", "10"], "r": 2 },
+        { 
+          "id": 10, 
+          "q": "Mets les étapes du code dans l'ordre pour faire avancer le robot :", 
+          "type": "glisser_deposer",
+          "options": ["Avancer de 2 pas", "Tourner à droite", "S'arrêter"], 
+          "r": ["Avancer de 2 pas", "Tourner à droite", "S'arrêter"] 
+        }
+      ]
+    },
+    "Donnees": {
+      "domaine": "D1. Littératie statistique et D2. Probabilité",
+      "questions": [
+        { 
+          "id": 11, 
+          "q": "Dans un diagramme à pictogrammes, si 1 🍎 = 5 élèves, combien d'élèves représentent 4 🍎 ?", 
+          "options": ["9", "15", "20", "25"], 
+          "r": 2 
+        },
+        { "id": 12, "q": "Quel mot décrit le mieux un événement qui va arriver à chaque fois ?", "options": ["Possible", "Impossible", "Certain", "Peu probable"], "r": 2 },
+        { 
+          "id": 13, 
+          "q": "Choisis les DEUX fruits les plus populaires selon le diagramme.", 
+          "type": "choix_multiple_multiple",
+          "image": "/oqreImag/3E/graphique_fruits.png",
+          "options": ["Pomme (8)", "Banane (12)", "Fraise (12)", "Poire (2)"], 
+          "r": [1, 2] 
+        },
+        { "id": 14, "q": "Quelle est la moyenne des nombres 2, 4 et 6 ?", "options": ["3", "4", "5", "12"], "r": 1 },
+        { "id": 15, "q": "Si tu lances un dé, quelle est la probabilité d'obtenir le chiffre 7 ?", "options": ["Certain", "Possible", "Impossible", "Probable"], "r": 2 }
+      ]
+    },
+    "Sens_Espace": {
+      "domaine": "E1. Raisonnement géométrique et E2. Sens de la mesure",
+      "questions": [
+        { "id": 16, "q": "Combien de sommets possède un cube ?", "options": ["4", "6", "8", "12"], "r": 2 },
+        { "id": 17, "q": "Quel est le périmètre d'un carré dont chaque côté mesure 5 cm ?", "options": ["10 cm", "15 cm", "20 cm", "25 cm"], "r": 2 },
+        { 
+          "id": 18, 
+          "q": "Choisis les DEUX solides qui peuvent rouler.", 
+          "type": "choix_multiple_multiple",
+          "options": ["Cube", "Sphère", "Cylindre", "Prisme"], 
+          "r": [1, 2] 
+        },
+        { "id": 19, "q": "Quelle unité est la plus appropriée pour mesurer la longueur d'un crayon ?", "options": ["Mètres (m)", "Centimètres (cm)", "Kilomètres (km)", "Litres (L)"], "r": 1 },
+        { "id": 20, "q": "Quelle heure indique une horloge dont la grande aiguille est sur le 6 et la petite entre le 4 et le 5 ?", "options": ["4:00", "4:30", "5:30", "6:20"], "r": 1 }
+      ]
+    },
+    "Litteratie_Financiere": {
+      "domaine": "F1. Argent et finances",
+      "questions": [
+        { "id": 21, "q": "Tu as 1 billet de 5 $, 1 pièce de 2 $ et 2 pièces de 25 ¢. Combien as-tu au total ?", "options": ["7,25 $", "7,50 $", "8,00 $", "5,50 $"], "r": 1 },
+        { "id": 22, "q": "Un jouet coûte 8 $. Tu paies avec un billet de 10 $. Quelle est ta monnaie ?", "options": ["1 $", "2 $", "3 $", "18 $"], "r": 1 },
+        { 
+          "id": 23, 
+          "q": "Choisis les DEUX façons de faire 1,00 $.", 
+          "type": "choix_multiple_multiple",
+          "options": ["4 pièces de 25 ¢", "10 pièces de 10 ¢", "3 pièces de 25 ¢", "5 pièces de 5 ¢"], 
+          "r": [0, 1] 
+        },
+        { "id": 24, "q": "Quel est le coût total : un livre à 4,50 $ et un crayon à 1,50 $ ?", "options": ["5,00 $", "5,50 $", "6,00 $", "6,50 $"], "r": 2 },
+        { "id": 25, "q": "Si tu économises 2 $ par semaine, combien auras-tu après 4 semaines ?", "options": ["4 $", "6 $", "8 $", "10 $"], "r": 2 }
+      ]
+    }
+  }
+}

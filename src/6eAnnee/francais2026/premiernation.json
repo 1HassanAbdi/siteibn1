@@ -1,0 +1,273 @@
+{
+  "matiere": "FRANCAIS",
+  "titre": "Les Premières Nations",
+  "niveau": "6e année",
+  "type": "OQRE",
+  "image_illustration": "/imagFr/premieres_nations.png",
+
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Les Premières Nations sont les premiers peuples à avoir vécu sur le territoire que nous appelons aujourd’hui le Canada. Leur présence remonte à plusieurs milliers d’années, bien avant l’arrivée des Européens. Chaque nation possède sa propre langue, ses traditions, ses croyances et sa façon de vivre. Aujourd’hui, il existe plus de 600 communautés de Premières Nations réparties dans différentes régions du Canada."
+    },
+    {
+      "p": 2,
+      "contenu": "Pour les Premières Nations, la nature est très importante. Elles considèrent la terre, l’eau, les plantes et les animaux comme des éléments vivants qui doivent être respectés et protégés. Cette relation avec la nature influence leur mode de vie. Certaines nations chassaient et pêchaient pour se nourrir, tandis que d’autres cultivaient des plantes comme le maïs, les haricots et les courges."
+    },
+    {
+      "p": 3,
+      "contenu": "Les peuples adaptaient leurs habitations à leur environnement. Certaines nations des plaines vivaient dans des tipis faciles à transporter, alors que les Haudenosaunee construisaient de longues maisons pouvant accueillir plusieurs familles. Les connaissances et les traditions étaient souvent transmises oralement par les Aînés."
+    },
+    {
+      "p": 4,
+      "contenu": "Les Aînés racontaient des légendes et des récits traditionnels afin d’enseigner des valeurs importantes comme le respect, le courage, le partage et la responsabilité. Ces histoires permettaient aussi d’expliquer certains phénomènes naturels ou l’origine des animaux et des saisons."
+    },
+    {
+      "p": 5,
+      "contenu": "Les Premières Nations utilisaient également différents outils adaptés à leur environnement. Plusieurs nations fabriquaient des canots en écorce de bouleau pour voyager sur les rivières et transporter des marchandises. En hiver, elles utilisaient des raquettes pour marcher plus facilement dans la neige profonde."
+    },
+    {
+      "p": 6,
+      "contenu": "Aujourd’hui, les Premières Nations continuent de protéger leurs langues, leurs traditions et leurs droits. Elles jouent un rôle important dans la société canadienne et contribuent à sensibiliser les gens à l’importance du respect de la diversité culturelle et de la protection de l’environnement."
+    }
+  ],
+
+  "themes": {
+
+    "COMPREHENSION": {
+      "domaine": "Compréhension de lecture",
+      "questions": [
+        {
+          "q": "Qui sont les Premières Nations ?",
+          "options": [
+            "Les premiers peuples du Canada",
+            "Des explorateurs européens",
+            "Des commerçants français",
+            "Des immigrants récents"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Depuis combien de temps les Premières Nations vivent-elles au Canada ?",
+          "options": [
+            "Depuis quelques années",
+            "Depuis des centaines d’années",
+            "Depuis plusieurs milliers d’années",
+            "Depuis le 20e siècle"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Que possède chaque nation ?",
+          "options": [
+            "Une seule langue commune",
+            "Ses propres traditions et sa langue",
+            "Les mêmes croyances",
+            "Les mêmes coutumes"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Pourquoi la nature est-elle importante pour les Premières Nations ?",
+          "options": [
+            "Parce qu’elle doit être respectée et protégée",
+            "Parce qu’elle est dangereuse",
+            "Parce qu’elle appartient aux villes",
+            "Parce qu’elle est inutile"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Quelles plantes certaines nations cultivaient-elles ?",
+          "options": [
+            "Le riz et les pommes",
+            "Le maïs, les haricots et les courges",
+            "Le blé et les raisins",
+            "Les tomates et les carottes"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Pourquoi les tipis étaient-ils utiles ?",
+          "options": [
+            "Ils étaient très lourds",
+            "Ils étaient faciles à transporter",
+            "Ils étaient faits de pierre",
+            "Ils étaient construits sous terre"
+          ],
+          "r": 1
+        },
+        {
+          "q": "Quel rôle jouaient les Aînés ?",
+          "options": [
+            "Ils dirigeaient les armées",
+            "Ils construisaient les maisons",
+            "Ils transmettaient les connaissances et les traditions",
+            "Ils vendaient des marchandises"
+          ],
+          "r": 2
+        },
+        {
+          "q": "Qu’enseignaient les légendes racontées par les Aînés ?",
+          "options": [
+            "Des recettes",
+            "Des règles de commerce",
+            "Des valeurs importantes",
+            "Des chansons modernes"
+          ],
+          "r": 2
+        },
+        {
+          "q": "À quoi servaient les canots en écorce de bouleau ?",
+          "options": [
+            "À transporter des marchandises",
+            "À construire des maisons",
+            "À garder les animaux",
+            "À cuisiner"
+          ],
+          "r": 0
+        },
+        {
+          "q": "Que continuent de faire les Premières Nations aujourd’hui ?",
+          "options": [
+            "Abandonner leurs traditions",
+            "Protéger leurs langues et leurs droits",
+            "Quitter le Canada",
+            "Vivre uniquement dans les forêts"
+          ],
+          "r": 1
+        }
+      ]
+    },
+
+    "GRAMMAIRE_HOMOPHONES": {
+      "domaine": "Homophones (a/à, et/est, son/sont, mes/mai/met, peu/peut)",
+      "questions": [
+        {
+          "q": "Choisis le bon mot : La nature ____ très importante.",
+          "options": ["et", "est", "es"],
+          "r": 1
+        },
+        {
+          "q": "Choisis le bon mot : Les Premières Nations vivent ____ proximité de la nature.",
+          "options": ["a", "à", "as"],
+          "r": 1
+        },
+        {
+          "q": "Choisis le bon mot : Les canots ____ fabriqués en écorce de bouleau.",
+          "options": ["son", "sont", "sons"],
+          "r": 1
+        },
+        {
+          "q": "Choisis le bon mot : Il ____ respecter les traditions.",
+          "options": ["peu", "peut", "peux"],
+          "r": 1
+        },
+        {
+          "q": "Choisis le bon mot : Le chef ____ son manteau avant de sortir.",
+          "options": ["met", "mai", "mes"],
+          "r": 0
+        }
+      ]
+    },
+
+    "GRAMMAIRE_CONJONCTIONS": {
+      "domaine": "Conjonctions de coordination (mais, ou, et, donc, or, ni, car)",
+      "questions": [
+        {
+          "q": "Les Aînés racontent des histoires ____ enseignent des valeurs.",
+          "options": ["mais", "et", "ou", "car"],
+          "r": 1
+        },
+        {
+          "q": "Les Premières Nations respectent la nature ____ elle est essentielle à leur vie.",
+          "options": ["or", "car", "ni", "ou"],
+          "r": 1
+        },
+        {
+          "q": "Certaines nations vivaient dans des tipis ____ d’autres habitaient dans des maisons longues.",
+          "options": ["mais", "donc", "et", "ni"],
+          "r": 0
+        },
+        {
+          "q": "Veux-tu lire une légende ____ écouter un récit oral ?",
+          "options": ["ou", "car", "mais", "donc"],
+          "r": 0
+        },
+        {
+          "q": "Les Premières Nations protègent leurs traditions, ____ elles les transmettent aux jeunes.",
+          "options": ["donc", "mais", "ni", "ou"],
+          "r": 0
+        }
+      ]
+    },
+
+    "GRAMMAIRE_STRUCTURE": {
+      "domaine": "Phrases simples, complexes et liaisons",
+      "questions": [
+        {
+          "q": "« Les Aînés racontent des légendes. » Cette phrase est :",
+          "options": ["Simple", "Complexe"],
+          "r": 0
+        },
+        {
+          "q": "« Les Premières Nations respectent la nature parce qu’elle est essentielle. » Cette phrase est :",
+          "options": ["Simple", "Complexe"],
+          "r": 1
+        },
+        {
+          "q": "Combien de verbes conjugués trouve-t-on dans une phrase simple ?",
+          "options": ["Aucun", "Un seul", "Deux", "Trois"],
+          "r": 1
+        },
+        {
+          "q": "Quel mot relie les deux idées dans cette phrase : « Elles protègent leurs langues et leurs traditions. »",
+          "options": ["protègent", "leurs", "et", "traditions"],
+          "r": 2
+        },
+        {
+          "q": "Une phrase complexe contient :",
+          "options": [
+            "Un seul nom",
+            "Un seul verbe",
+            "Plusieurs verbes conjugués",
+            "Aucune ponctuation"
+          ],
+          "r": 2
+        }
+      ]
+    },
+
+    "CONJUGAISON": {
+      "domaine": "Imparfait, Présent, Passé Simple et Futur",
+      "questions": [
+        {
+          "q": "Conjugue le verbe vivre à l’imparfait : Les Premières Nations __________ près de la nature.",
+          "options": ["vivent", "vivaient", "vivront"],
+          "r": 1
+        },
+        {
+          "q": "Conjugue le verbe raconter au présent : Les Aînés __________ des légendes.",
+          "options": ["racontaient", "racontent", "raconteront"],
+          "r": 1
+        },
+        {
+          "q": "Conjugue le verbe construire au passé simple : Les Haudenosaunee __________ de longues maisons.",
+          "options": ["construisirent", "construisent", "construisaient"],
+          "r": 0
+        },
+        {
+          "q": "Conjugue le verbe protéger au futur : Elles __________ leurs traditions.",
+          "options": ["protègent", "protégeaient", "protégeront"],
+          "r": 2
+        },
+        {
+          "q": "Conjugue le verbe utiliser à l’imparfait : Elles __________ des raquettes en hiver.",
+          "options": ["utilisent", "utilisaient", "utiliseront"],
+          "r": 1
+        }
+      ]
+    }
+
+  }
+}

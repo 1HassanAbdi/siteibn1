@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Award, Loader2, CheckCircle, ChevronRight, ChevronLeft } from "lucide-react";
-import data from "./3E/oqre.json";
+import data from "./3E/Novembre2023.json";
 
 // --- CONFIGURATION ---
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbytYvoJ4Rg7RP9UqhgWChoa0S1A-jr0GvmiIAY7XmnHmayLZ7ymAQJRsK5ARYLt3oWJqQ/exec";
@@ -34,33 +34,68 @@ export default function QuizOQRE() {
   // --- LOGIQUE DE VALIDATION CORRIGÉE (1 POINT PAR QUESTION) ---
 
   const verifierExactitude = (q, rep) => {
-    // FIX : On vérifie si la réponse existe vraiment (ne pas utiliser !rep car 0 est valide)
-    if (rep === undefined || rep === null || rep === "") return false;
+  // 1. Sécurité : Si aucune réponse n'est fournie
+  if (rep === undefined || rep === null || rep === "") return false;
 
-    // 1. Cas Association (Objet) - ex: Q23
-    if (typeof q.r === 'object' && !Array.isArray(q.r)) {
-      const keys = Object.keys(q.r);
-      return keys.every(key => q.r[key] === rep[key]);
-    }
+  // 2. CAS : ASSOCIATION (Objet) -> ex: Q23 {"Expression": "Label"}
+  if (typeof q.r === 'object' && !Array.isArray(q.r)) {
+    const keys = Object.keys(q.r);
+    // On vérifie que toutes les clés du corrigé correspondent à la réponse de l'élève
+    return keys.every(key => q.r[key] === rep[key]);
+  }
 
-    // 2. Cas Séquence ou Multi-sélection (Tableau) - ex: Q11, Q16, Q22
-    if (Array.isArray(q.r)) {
-      // On convertit les index choisis par l'élève en valeurs réelles (A, B, C...) si le JSON utilise des valeurs
-      const repValues = rep.map(val => (typeof val === 'number' ? q.options[val] : val));
-      
-      // On trie les deux tableaux pour comparer le contenu sans se soucier de l'ordre du clic
-      const rTrié = [...q.r].sort();
-      const repTriée = repValues.map(v => (typeof v === 'object' ? JSON.stringify(v) : v)).sort();
-      
-      return JSON.stringify(rTrié) === JSON.stringify(repTriée);
-    }
+  // 3. CAS : TABLEAUX (Multi-sélection ou Séquence) -> ex: Q21 [2, 5]
+  if (Array.isArray(q.r)) {
+    if (!Array.isArray(rep)) return false;
 
-    // 3. Cas QCM Classique
-    // On compare la valeur (ex: "A") ou l'index
-    const finalRep = (typeof q.r === 'string' && typeof rep === 'number') ? q.options[rep] : rep;
-    return finalRep === q.r;
-  };
+    // Fonction interne pour transformer n'importe quelle valeur (index, texte, objet) 
+    // en une chaîne simple (string) pour faciliter la comparaison
+    const normaliser = (val, indexDansTableau) => {
+      // Si la valeur est un index (nombre), on regarde ce que le corrigé attend
+      if (typeof val === 'number') {
+        // Si le corrigé attend des nombres à cet endroit précis, on garde le nombre
+        if (typeof q.r[indexDansTableau] === 'number') return val;
+        
+        // Sinon, on récupère le texte ou l'image de l'option correspondante
+        const opt = q.options[val];
+        return (typeof opt === 'object' && opt !== null) ? (opt.image || JSON.stringify(opt)) : opt;
+      }
+      // Si c'est déjà un objet (image), on prend son URL
+      if (typeof val === 'object' && val !== null) return val.image || JSON.stringify(val);
+      return val;
+    };
 
+    let userValues = rep.map((v, i) => normaliser(v, i));
+    let solutionValues = q.r.map((v, i) => normaliser(v, i));
+
+    // Gestion de l'ordre
+    if (q.type === "choix_multiple_multiple") {
+      // Pour le multi-choix, l'ordre du clic n'importe pas -> on trie
+      userValues.sort();
+      solutionValues.sort();
+    } 
+    // Note: Pour les séquences (glisser_deposer array), on ne trie pas car l'ordre compte.
+
+    return JSON.stringify(userValues) === JSON.stringify(solutionValues);
+  }
+
+  // 4. CAS : QCM CLASSIQUE (Valeur unique)
+  
+  // A) Comparaison directe si le corrigé est un index (ex: r: 2)
+  if (typeof q.r === 'number' && rep === q.r) return true;
+
+  // B) Comparaison si le corrigé est une lettre (ex: r: "A")
+  const lettreEleve = String.fromCharCode(65 + rep); // 0 -> "A", 1 -> "B"...
+  if (typeof q.r === 'string' && q.r.length === 1 && q.r.toUpperCase() === lettreEleve) return true;
+
+  // C) Comparaison avec le contenu de l'option (Texte ou Image)
+  const optionChoisie = q.options[rep];
+  const valeurChoisie = (typeof optionChoisie === 'object' && optionChoisie !== null) 
+    ? optionChoisie.image 
+    : optionChoisie;
+
+  return valeurChoisie === q.r;
+};
   const questionEstRepondue = (q, rep) => {
     if (rep === undefined || rep === null) return false;
     if (q.type === "glisser_deposer" && typeof q.r === 'object' && !Array.isArray(q.r)) {
