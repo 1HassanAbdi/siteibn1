@@ -1,6 +1,9 @@
 {
   "matiere": "Mathématiques_3e Janvier 2025",
   "annee": "2025",
+   "texte_integral": [
+  "📝 Conseil : Lis attentivement chaque question et toutes les réponses proposées avant de choisir. Vérifie ton choix avant de passer à la question suivante."
+],
   "themes": {
     "Nombres_Operations": {
       "domaine": "Nombres et opérations",

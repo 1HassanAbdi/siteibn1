@@ -4,12 +4,12 @@
   "startDate": "2025-11-01",
   "endDate": "2025-12-31",
   "image_illustration": "/imagMath/oqre_3_2025.png",
-  "texte_integral": [
-    {
-      "p": 1,
-      "contenu": "Cette ressource est fournie pour aider le personnel enseignant avec la composante Mathématiques du Test en lecture, écriture et mathématiques, cycle primaire, de l’OQRE. Chaque question est liée à une compétence et à une attente du curriculum de l’Ontario (2020) [1, 39]."
-    }
-  ],
+   "texte_integral": [
+  "📝 Conseil : Lis attentivement chaque question et toutes les réponses proposées avant de choisir. Vérifie ton choix avant de passer à la question suivante."
+],
+  
+ 
+  
   "themes": {
     "Nombres": {
       "domaine": "B1. Sens du nombre et B2. Sens des opérations",
