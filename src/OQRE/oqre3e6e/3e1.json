@@ -4,12 +4,9 @@
   "startDate": "2023-11-01",
   "endDate": "2023-12-31",
   "image_illustration": "/imagMath/oqre_3_2023.png",
-  "texte_integral": [
-    {
-      "p": 1,
-      "contenu": "Cette ressource aide le personnel enseignant avec la composante Mathématiques du Test de l’OQRE. Chaque question est liée à une compétence et à une attente du curriculum de l’Ontario (2020) [1]."
-    }
-  ],
+ "texte_integral": [
+  "📝 Conseil : Lis attentivement chaque question et toutes les réponses proposées avant de choisir. Vérifie ton choix avant de passer à la question suivante."
+],
   "themes": {
     "Nombres": {
       "domaine": "B1. Sens du nombre et B2. Sens des opérations",
@@ -137,7 +134,7 @@
           "id": 24, 
           "q": "Quelle horloge numérique indique la même heure que l'horloge analogique ?", 
           "image": "/oqreImag/3E/horloges.png",
-          "options": ["10:10", "10:45", "9:10", "9:45"], 
+          "options": ["10:10", "10:50", "9:10", "9:45"], 
           "r": 1 
         },
         { 

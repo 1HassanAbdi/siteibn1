@@ -1,0 +1,183 @@
+{
+  "matiere": "MATHÉMATIQUES 6e année -Novembre 2025",
+  "titre": "OQRE - Questions diffusées (6e année) - Novembre 2025",
+  "startDate": "2025-11-01",
+  "endDate": "2025-11-30",
+  "image_illustration": "/imagMath/oqre_6_2025.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Cette ressource est fournie pour aider le personnel enseignant avec la composante Mathématiques du Test en lecture, écriture et mathématiques, cycle moyen, de l’OQRE. Chaque question est liée à une compétence et à une attente du curriculum de l’Ontario (2020) [1]."
+    }
+  ],
+  "themes": {
+    "Nombres": {
+      "domaine": "B1. Sens du nombre et B2. Sens des opérations",
+      "questions": [
+        { 
+          "id": 1, 
+          "q": "Quel nombre se situe entre 2,354 et 2,456 ?", 
+          "options": ["2,345", "2,402", "2,457", "2,520"], 
+          "r": 1 
+        },
+        { 
+          "id": 2, 
+          "q": "Sélectionne l’option qui n’est pas égale à 6 dixièmes.", 
+         "options": [
+            { "image": "/oqreImag/3E/q1_A.png" },
+            { "image": "/oqreImag/3E/q2_A.png" },
+            { "image": "/oqreImag/3E/q3_A.png" },
+            { "image": "/oqreImag/3E/q4_A.png" }
+          ],
+          "r": 2 
+        },
+        { 
+          "id": 3, 
+          "q": "Sélectionne les DEUX nombres premiers.", 
+          "type": "choix_multiple_multiple",
+          "options": ["11", "21", "24", "42", "43"], 
+          "r": [0,4] 
+        },
+        { 
+          "id": 4, 
+          "q": "Un bocal contient 200 billes, et 5 % des billes sont bleues. Combien de billes sont bleues ?", 
+          "options": ["5 billes", "10 billes", "20 billes", "25 billes"], 
+          "r": 1 
+        },
+        { 
+          "id": 5, 
+          "q": "Lucas tape 360 mots en 12 minutes. Greg tape deux fois plus vite que Lucas. Combien de mots Greg tape-t-il par minute ?", 
+          "options": ["15 mots par minute", "30 mots par minute", "60 mots par minute", "180 mots par minute"], 
+          "r": 2 
+        }
+      ]
+    },
+    "Algebre": {
+      "domaine": "C1. Suites et relations, C2. Équations et C3. Codage",
+      "questions": [
+        { 
+          "id": 6, 
+          "q": "Voici quatre termes d’une suite numérique croissante (rang 5: 11, rang 7: 15, rang 9: 19). Quel est le rang du terme 27 ?", 
+          "image": "/oqreImag/3E/suiterang.png",
+          "options": ["11", "13", "15", "23"], 
+          "r": 1 
+        },
+        { 
+          "id": 7, 
+          "q": "Quel nombre est présent dans les trois suites numériques présentées ?", 
+          "image": "/oqreImag/3E/suites_ABC.png",
+          "options": ["8", "16", "26", "36"], 
+          "r": 1 
+        },
+        { 
+          "id": 8, 
+          "q": "Quelle valeur de x rend cette équation vraie ? 7x = 28", 
+          "options": ["3", "4", "21", "35"], 
+          "r": 1 
+        },
+        { 
+          "id": 9, 
+          "q": "Dans quelle équation la valeur de p est-elle la plus grande ?", 
+          "options": ["85 + p = 125", "70 − p = 35", "5p = 215", "3p = 132"], 
+          "r": 3 
+        },
+        { 
+          "id": 10, 
+          "q": "Fais glisser les blocs de code qui complètent le code pour déterminer si un nombre est divisible par 6.", 
+          "type": "glisser_deposer",
+          "image": "/oqreImag/3E/code_divisible_6.png",
+          "options": [
+            "est divisible par 2 et 3", 
+            "a un dernier chiffre de 0 ou 5", 
+            "a un dernier chiffre pair", 
+            "afficher « Incorrect »", 
+            "afficher « Correct »"
+          ], 
+          "r": {  "si le nombre:":"est divisible par 2 et 3", "alors ":"afficher « Correct »"}
+        }
+      ]
+    },
+    "Donnees": {
+      "domaine": "D1. Littératie statistique et D2. Probabilité",
+      "questions": [
+        { 
+          "id": 11, 
+          "q": "Quelle option pourrait le mieux représenter les données du tableau des ventes de maïs soufflé ?", 
+          "image": "/oqreImag/3E/maïs_6.png",
+
+          "options": ["histogramme", "ligne de dénombrement", "diagramme à pictogrammes", "diagramme à bandes multiples"], 
+          "r": 0 
+        },
+        { 
+          "id": 12, 
+          "q": "Complète les énoncés pour l'ensemble de nombres (hauteur des plantes).", 
+          "type": "glisser_deposer",
+          "image": "/oqreImag/3E/hauteur_plantes.png",
+          "options": ["16 cm", "21 cm", "25 cm", "28 cm", "31 cm", "41 cm"], 
+          "r": {"Étendue": "25 cm" , "Médiane": "31 cm", "Moyenne": "28 cm"}
+        },
+        { 
+          "id": 13, 
+          "q": "Quelle est la probabilité que la flèche s’arrête sur la couleur jaune ?", 
+          "image": "/oqreImag/3E/roulette_10_sections.png",
+          "options": ["10 %", "20 %", "40 %", "80 %"], 
+          "r": 1 
+        }
+      ]
+    },
+    "Sens_Espace": {
+      "domaine": "E1. Raisonnement géométrique et spatial et E2. Sens de la mesure",
+      "questions": [
+        { 
+          "id": 14, 
+          "q": "Quelle figure plane a exactement deux axes de symétrie ?", 
+          "options": [
+            { "image": "/oqreImag/3E/carre.png" },
+            { "image": "/oqreImag/3E/losange.png" },
+            { "image": "/oqreImag/3E/trapèze.png" },
+            { "image": "/oqreImag/3E/parallélogramme.png" }
+          ],
+        
+          "r": 1 
+        },
+        { 
+          "id": 15, 
+          "q": "Quelle rotation autour du point C peut déplacer ΔABC sur ΔCIJ ?", 
+          "image": "/oqreImag/3E/rotation_triangle.png",
+          "options": [
+            "90° dans le sens horaire", 
+            "90° dans le sens antihoraire", 
+            "180° dans le sens horaire", 
+            "180° dans le sens antihoraire"
+          ], 
+          "r": 1 
+        },
+        { 
+          "id": 16, 
+          "q": "Quel est l’angle lorsqu’on mesure dans le sens antihoraire de la ligne A à la ligne B (angle aigu = 48°) ?", 
+           "image": "/oqreImag/3E/angle.png",
+          "options": ["42°", "132°", "222°", "312°"], 
+          "r": 3 
+        },
+        { 
+          "id": 17, 
+          "q": "Quelle est l’aire totale de ce polygone ?", 
+          "image": "/oqreImag/3E/aire_polygone.png",
+          "options": ["180 cm2", "212 cm2", "220 cm2", "228 cm2"], 
+          "r": 2 
+        }
+      ]
+    },
+    "Litteratie_Financiere": {
+      "domaine": "F1. Argent et finances",
+      "questions": [
+        { 
+          "id": 18, 
+          "q": "Quel mode de paiement a un taux d’intérêt élevé sur les montants non payés ?", 
+          "options": ["argent comptant", "transfert électronique", "carte de débit", "carte de crédit"], 
+          "r": 3 
+        }
+      ]
+    }
+  }
+}

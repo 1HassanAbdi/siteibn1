@@ -1,0 +1,100 @@
+{
+  "matiere": "MATHÉMATIQUES_6e  Novembre 2023",
+  "titre": "OQRE - Questions diffusées (6e année) - Novembre 2023",
+  "startDate": "2023-11-01",
+  "endDate": "2023-12-31",
+  "image_illustration": "/imagMath/oqre_6_2023.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Cette ressource est fournie pour aider le personnel enseignant avec la composante Mathématiques du Test en lecture, écriture et mathématiques, cycle moyen, de l’OQRE [1]. Chaque question est liée à une compétence et à une attente du curriculum de l’Ontario (2020) [1, 3]."
+    }
+  ],
+  "themes": {
+    "Nombres": {
+      "domaine": "B1. Sens du nombre et B2. Sens des opérations",
+      "questions": [
+        { "id": 1, "q": "Quel nombre a le chiffre 4 à la position des dixièmes ?", "options": ["92,174", "85,043", "79,451", "43,256"], "r": 2 },
+        { 
+          "id": 2, 
+          "q": "Classe les températures de la plus chaude à la plus froide.", 
+          "type": "glisser_deposer",
+          "options": ["0 °C", "–6 °C", "6 °C", "–2 °C", "3 °C"], 
+         "r": {
+    "1_PLUS CHAUDE": "6 °C",
+    "2_": "3 °C",
+    "3_": "0 °C",
+    "4_": "–2 °C",
+    "5_PLUS FROIDE": "–6 °C"
+  } 
+        },
+      { 
+          "id": 3, 
+          "q": "Sélectionne DEUX nombres qui sont plus grands que 5/2.", 
+          "type": "choix_multiple_multiple",
+          "options": [
+            "2<sup>1</sup>&frasl;<sub>3</sub>", 
+            "2<sup>3</sup>&frasl;<sub>5</sub>", 
+            "2,399", 
+            "<sup>8</sup>&frasl;<sub>4</sub>", 
+            "2,65"
+          ], 
+          "r": [1, 4] 
+        },
+        { "id": 4, "q": "Sélectionne le nombre qui est un facteur premier de 20.", "options": ["4", "5", "10", "20"], "r": 1 },
+        { "id": 5, "q": "Une recette de muffins nécessite 2/3 de tasse de lait. Combien de tasses de lait sont nécessaires pour doubler la recette ?", "options": ["2/6", "3/4", "4/3", "4/6"], "r": 2 },
+        { "id": 6, "q": "Un magasin reçoit 12 caisses de tomates. Chaque caisse contient 14 tomates. Toutes les tomates sont mises dans des sacs. Chaque sac peut contenir 6 tomates. Combien de sacs de tomates le magasin aura-t-il ?", "options": ["2 sacs", "7 sacs", "25 sacs", "28 sacs"], "r": 3 }
+      ]
+    },
+    "Algebre": {
+      "domaine": "C1. Suites et relations, C2. Équations et C3. Codage",
+      "questions": [
+        { 
+          "id": 7, 
+          "q": "Une suite est créée à l'aide de carreaux. Les informations sur la suite sont présentées sur ce graphique.Quelle table de valeurs représente les données sur ce graphique ?", 
+           "image": "/oqreImag/3E/graphique_carreaux.png",
+          "options": ["/oqreImag/3E/Table_A.png", "/oqreImag/3E/Table_B.png", "/oqreImag/3E/Table_C.png", "/oqreImag/3E/Table_A.png"], 
+          "r": 0 
+        },
+        { "id": 8, "q": "Une suite linéaire est créée à l’aide de l’équation y = 2x + 3. Quelle option représente les trois premiers rangs de la suite ?", 
+   
+         "options": ["/oqreImag/3E/Rang123.png", "/oqreImag/3E/Rang246.png", "/oqreImag/3E/Rang357.png", "/oqreImag/3E/Rang579.png"], "r": 3 },
+        { "id": 9, "q": "De combien la valeur du terme au 6e rang de la suite numérique A (4, 12, 36...) est-elle plus grande que la valeur du terme au 6e rang de la suite numérique B (21, 49, 77, 105...) ?", "options": ["191", "648", "811", "972"], "r": 2 },
+        { "id": 10, "q": "Que font 7p + 4p ?", "options": ["11p", "11", "28p", "28"], "r": 0 },
+        { "id": 11, "q": "Sélectionne la valeur de x qui rend cette inégalité vraie : 3x – 6 > 30.", "options": ["x = 6", "x = 10", "x = 12", "x = 13"], "r": 3 },
+        { "id": 12, "q": "Quelle valeur de n rend cette égalité vraie ? 7n – 3n = 20 + 12", "options": ["5", "8", "28", "32"], "r": 1 },
+        { "id": 13, "q": "Quelle est la partie manquante du code pour calculer l'aire d'un trapèze ?", "image": "/oqreImag/3E/code_trapeze.png", "options": ["A = b * h", "A = a * b * h", "A = (a + b) * h", "A = (a + b) * h / 2"], "r": 3 },
+        { "id": 14, "q": "Quel choix de réponse doit être placé dans la case pour compléter le code d'arrondissement ?","image": "/oqreImag/3E/code1.png", "options": ["si nombre < 0,5 alors réponse = 0 sinon réponse = 1", "si nombre < 0,05 alors réponse = 0 sinon réponse = 1", "si nombre > 0,5 alors réponse = 0 sinon réponse = 1", "si nombre > 0,05 alors réponse = 0 sinon réponse = 1"], "r": 0 }
+      ]
+    },
+    "Donnees": {
+      "domaine": "D1. Littératie statistique et D2. Probabilité",
+      "questions": [
+        { "id": 15, "q": "Quel est le meilleur moyen de représenter le changement des précipitations mensuelles sur une période de 6 mois ?", "options": ["histogramme", "ligne de dénombrement", "diagramme à ligne brisée", "diagramme à pictogrammes"], "r": 2 },
+        { "id": 16, "q": "Ce diagramme représente le nombre de buts marqués par l'équipe A et l'équipe B pendant 3 mois.Combien de buts l’équipe A a-t-elle marqués de plus que l’équipe B en octobre et novembre ?", "image": "/oqreImag/3E/buts_equipes.png", "options": ["5 buts", "10 buts", "15 buts", "20 buts"], "r": 1 },
+        { "id": 17, "q": "Sélectionne l’ensemble de nombres qui a une moyenne et une étendue de 11.", "options": ["3, 18, 21, 5, 14, 11, 5", "9, 8, 16, 11, 8, 18, 7", "11, 14, 11, 8, 19, 17, 11", "12, 9, 15, 10, 12, 20, 13"], "r": 1 },
+        { "id": 18, "q": "Quelle est la probabilité de choisir un carreau avec un X ?", "image": "/oqreImag/3E/carreaux_X.png", "options": ["2/8", "6/8", "8/2", "8/6"], "r": 0 },
+        { "id": 19, "q": "Quelle est la probabilité que la flèche s’arrête sur un nombre pair sur la roulette ?", "image": "/oqreImag/3E/roulette_nombres.png", "options": ["1/5", "2/5", "3/5", "4/5"], "r": 1 },
+        { "id": 20, "q": "Quelle est la probabilité que l’enseignant choisisse un pot de peinture vert ?", "image": "/oqreImag/3E/pots.png", "options": ["18 %", "40 %", "55 %", "60 %"], "r": 1 }
+      ]
+    },
+    "Sens_Espace": {
+      "domaine": "E1. Raisonnement géométrique et spatial et E2. Sens de la mesure",
+      "questions": [
+        { "id": 21, "q": "Quelles sont les coordonnées du point A ?", "image": "/oqreImag/3E/plan_A.png", "options": ["(2, –6)", "(–2, 6)", "(–6, 2)", "(6, –2)"], "r": 0 },
+        { "id": 22, "q": "Quel quadrilatère possède deux diagonales qui se coupent en leur milieu et possède une symétrie de rotation de l’ordre de 4 ?", "options": ["rectangle", "carré", "parallélogramme", "trapèze"], "r": 1 },
+        { "id": 23, "q": "Quelle option décrit les deux transformations qui déplacent la figure initiale vers son image ?", "image": "/oqreImag/3E/transformations.png", "options": ["réflexion puis translation de 3 vers le bas", "rotation de 180° puis translation de 4 vers la gauche", "réflexion puis translation de 3 vers la droite", "rotation de 180° puis translation de 4 vers la droite"], "r": 0 },
+        { "id": 24, "q": "Quelle est la somme des angles intérieurs d’un rectangle ?", "options": ["90°", "180°", "270°", "360°"], "r": 3 },
+        { "id": 25, "q": "Quelle est l’aire de ce trapèze ?", "image": "/oqreImag/3E/figure_trapeze.png", "options": ["15 cm2", "30 cm2", "45 cm2", "60 cm2"], "r": 1 },
+        { "id": 26, "q": "Un groupe de 6 élèves se partage 3 L d’eau également. Combien de millilitres d’eau chaque élève reçoit-il ?", "options": ["50 ml", "500 ml", "2 000 ml", "3 000 ml"], "r": 1 }
+      ]
+    },
+    "Litteratie_Financiere": {
+      "domaine": "F1. Argent et finances",
+      "questions": [
+        { "id": 27, "q": "Diego veut placer 10 $ chaque mois dans un compte bancaire qui ne rapporte aucun intérêt. Sélectionne l’option qui décrit ce type d’objectif financier.", "options": ["faire un don", "épargner", "obtenir des revenus", "investir"], "r": 1 },
+        { "id": 28, "q": "Quelle option n’est pas un type de prêt ?", "options": ["frais d’utilisation des guichets", "ligne de crédit", "avance de fonds", "prêt hypothécaire"], "r": 0 }
+      ]
+    }
+  }
+}

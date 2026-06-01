@@ -1,0 +1,146 @@
+{
+  "matiere": "MATHÉMATIQUES_3e Novembre 2025 ",
+  "titre": "OQRE - Questions diffusées (3e année) - Novembre 2025",
+  "startDate": "2025-11-01",
+  "endDate": "2025-12-31",
+  "image_illustration": "/imagMath/oqre_3_2025.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Cette ressource est fournie pour aider le personnel enseignant avec la composante Mathématiques du Test en lecture, écriture et mathématiques, cycle primaire, de l’OQRE. Chaque question est liée à une compétence et à une attente du curriculum de l’Ontario (2020) [1, 39]."
+    }
+  ],
+  "themes": {
+    "Nombres": {
+      "domaine": "B1. Sens du nombre et B2. Sens des opérations",
+      "questions": [
+        { 
+          "id": 1, 
+          "q": "Quelle option représente la bonne façon d’écrire ce nombre en mots ?", 
+          "image": "/oqreImag/3E/vitesse_maximale_35.png",
+          "options": ["trois-cinq", "trente-cinq", "cinq-trois", "cinquante-trois"], 
+          "r": 1 
+        },
+        { 
+  "id": 2, 
+  "q": "Fais glisser deux nombres dans les cases pour les placer dans l’ordre, du plus petit au plus grand.", 
+  "type": "glisser_deposer",
+  "image": "/oqreImag/3E/ordre_nombres.png",
+  "options": ["299", "330", "305", "311"], 
+  "r": { 
+    "309 < ": "311", 
+    "328 < ": "330" 
+  }
+},
+        { "id": 3, "q": "Que font 95 + 19 ?", "options": ["104", "114", "115", "120"], "r": 1 },
+        { "id": 4, "q": "Dans un gymnase, il y a 15 élèves. L’enseignant met les élèves en groupes de 3. Combien de groupes y a-t-il ?", "options": ["4 groupes", "5 groupes", "6 groupes", "12 groupes"], "r": 1 },
+        { "id": 5, "q": "Raven a 5 groupes de 6 carreaux. Mario a 2 groupes de 8 carreaux. Combien de carreaux Raven a-t-il de plus que Mario ?", "options": ["10 carreaux", "14 carreaux", "16 carreaux", "30 carreaux"], "r": 1 }
+      ]
+    },
+    "Algebre": {
+      "domaine": "C1. Suites et relations, C2. Équations et C3. Codage",
+      "questions": [
+        { 
+          "id": 6, 
+          "q": "Combien de carreaux au total y a-t-il au 6e rang de cette suite croissante ?", 
+          "image": "/oqreImag/3E/suite_carreaux_6.png",
+          "options": ["10 carreaux", "13 carreaux", "16 carreaux", "19 carreaux"], 
+          "r": 2 
+        },
+        { "id": 7, "q": "Quelle est la règle de cette suite numérique : 17, __, __, 29, __, __, __, 45, ... ?", "options": ["+4", "+6", "+12", "+16"], "r": 0 },
+        { "id": 8, "q": "Quelle expression est égale à 2 × 8 ?", "options": ["8 + 2", "2 + 8", "2 + 2 + 2 + 2", "8 + 8"], "r": 3 },
+        { 
+          "id": 9, 
+          "q": "Fais glisser la bonne opération dans chaque espace vide pour créer des expressions équivalentes.", 
+          "type": "glisser_deposer",
+          "image": "/oqreImag/3E/expressions_equivalentes_op.png",
+          "options": ["+", "-", "x", "÷"], 
+          "r": { "partie 1 ":"x", "partie 2":"+", "partie 3":"÷"}
+        },
+        { "id": 10, "q": "Des lignes de code permettent d'ajouter 5 à un nombre 3 fois.Quelles lignes de code créent une boucle pour « additionner 5 à nombre » 3 fois ?", "options": ["répéter 5 fois additionner 3 à nombre", "à l’infini additionner 5 à nombre", "répéter 5 fois additionner 2 à nombre", "répéter 3 fois additionner 5 à nombre"], "r": 3 }
+      ]
+    },
+    "Donnees": {
+      "domaine": "D1. Littératie statistique et D2. Probabilité",
+      "questions": [
+        { "id": 11, "q": "Ce tableau représente le nombre total d'élèves dans quatre écoles différentes. Quel énoncé est vrai ?", 
+        "image": "/oqreImag/3E/Tableau.png",
+        "options": ["L'école les Cascades a le plus d'élèves", "L'école la phare a le moins d'élèves", "L'école les Cascades  a moins d'élèves que l'école la Rivière", "L'école l'Horizon a plus d'élèves que l'école la Rivière"], "r": 3 },
+        { 
+          "id": 12, 
+          "q": "Choisis la figure plane qui est classée dans la région 2 de ce diagramme de Venn.", 
+          "image": "/oqreImag/3E/venn_noir_quatre_cotes.png",
+          "options": [
+            {"image": "/oqreImag/3E/FigureA.png"},
+            {"image": "/oqreImag/3E/FigureB.png"},
+            {"image": "/oqreImag/3E/FigureC.png"},
+            {"image": "/oqreImag/3E/FigureD.png"}            
+          ],          
+          "r": 2 
+        },
+        { 
+          "id": 13, 
+          "q": "Fais glisser le mot décrivant la probabilité pour chaque couleur sur la roulette.", 
+          "type": "glisser_deposer",
+          "image": "/oqreImag/3E/roulette_Ahmed.png",
+          "options": ["peu probable", "certain", "impossible", "très probable"], 
+          "r": { "jaune": "impossible", "rouge": "peu probable", "bleu": "très probable"}
+        }
+      ]
+    },
+    "Sens_Espace": {
+      "domaine": "E1. Raisonnement géométrique et E2. Sens de la mesure",
+      "questions": [
+        { 
+          "id": 14, 
+          "q": "Quels solides sont les mêmes que cette canne de soupe et cette boîte de mouchoirs ?", 
+          "image": "/oqreImag/3E/soupe_mouchoirs.png",
+          "options": ["cylindre et prisme", "cône et prisme", "pyramide et cylindre", "cube et pyramide"], 
+          "r": 0 
+        },
+        { "id": 15, "q": "Une pyramide a 5 faces qui sont des triangles. Quelle est la forme de sa base ?", "options": ["carrée", "triangle", "hexagone", "pentagone"], "r": 3 },
+        { "id": 16, "q": "Combien de petits seaux de sable sont nécessaires pour remplir 8 grands seaux ?", 
+         "image": "/oqreImag/3E/seaux.png",
+        "options": ["2 petits seaux", "8 petits seaux", "10 petits seaux", "16 petits seaux"], "r": 3 },
+        { 
+          "id": 17, 
+          "q": "De combien l’aire de la figure A est-elle plus grande que celle de la figure B ?", 
+          "image": "/oqreImag/3E/aires_A_B.png",
+          "options": ["2 cm2", "4 cm2", "5 cm2", "6 cm2"], 
+          "r": 1 
+        }
+      ]
+    },
+    "Litteratie_Financiere": {
+      "domaine": "F1. Argent et finances",
+      "questions": [
+        { 
+          "id": 18, 
+          "q": "Fais glisser la monnaie à rendre pour chacun des trois scénarios d'achat.", 
+          "type": "glisser_deposer",
+        
+          "options": ["6 $", "7 $", "8 $", "9 $", "10 $"], 
+         
+           "r": {
+            "Coût : 41 $ Paiement : 50 $ Monnaie à rendre :": "9 $",
+            "Coût : 13 $ Paiement : 20 $ Monnaie à rendre :": "7 $",
+            "Coût : 2 $ Paiement : 10 $ Monnaie à rendre :": "8 $"
+          }
+        },
+        { 
+          "id": 19, 
+          "q": "Un enseignant achète pour 23 $ et paie avec 40 $. Quelle option montre la monnaie remise ?", 
+         
+           "options": [
+            {"image": "/oqreImag/3E/monnaieA.png"},
+            {"image": "/oqreImag/3E/monnaieB.png"},
+            {"image": "/oqreImag/3E/monnaieC.png"},
+            {"image": "/oqreImag/3E/monnaieD.png"}            
+          ],  
+        
+          "r": 3 
+        }
+      ]
+    }
+  }
+}

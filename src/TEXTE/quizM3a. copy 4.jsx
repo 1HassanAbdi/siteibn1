@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Award, Loader2, CheckCircle, ChevronRight, ChevronLeft, X } from "lucide-react";
-import data from "./3E/oqre_6_nov2025.json";
+import data from "./3E/nov_6_2023.json";
 
 // --- CONFIGURATION ---
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbytYvoJ4Rg7RP9UqhgWChoa0S1A-jr0GvmiIAY7XmnHmayLZ7ymAQJRsK5ARYLt3oWJqQ/exec";
@@ -215,7 +215,7 @@ export default function QuizOQRE() {
                       </div>
 
                       {/* ZONE CASES DE DEPOT */}
-                      <div className="grid md:grid-cols-2 gap-4">
+                      <div className="space-y-4 max-w-2xl mx-auto">
                         {(Array.isArray(q.r) ? q.r : Object.keys(q.r)).map((keyLabel, tIdx) => {
                           const targetKey = Array.isArray(q.r) ? tIdx : keyLabel;
                           const currentVal = userRep?.[targetKey];

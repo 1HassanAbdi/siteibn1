@@ -1,0 +1,200 @@
+
+{
+  "matiere": "MATHÉMATIQUES",
+  "titre": "Module 5 - La moyenne et le mode",
+  "startDate": "2026-05-28",
+  "endDate": "2026-06-11",
+  "image_illustration": "/imagMath/statistiques.png",
+  "texte_integral": [
+    {
+      "p": 1,
+      "contenu": "Cette leçon porte sur deux concepts clés du traitement des données. La moyenne est un nombre qui représente la valeur centrale d'un ensemble de données, obtenue en divisant la somme des données par leur quantité. Le mode est la valeur qui revient le plus souvent dans un ensemble."
+    }
+  ],
+  "themes": {
+    "Page_66_Moyenne": {
+      "domaine": "Le traitement des données",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Calcule la moyenne de : 2, 6, 5, 7",
+          "options": ["4", "5", "6", "20"],
+          "r": 1
+        },
+        {
+          "id": 2,
+          "q": "Calcule la moyenne de : 1, 4, 9, 2, 9",
+          "options": ["4", "5", "9", "25"],
+          "r": 1
+        },
+        {
+          "id": 3,
+          "q": "Calcule la moyenne de : 2 $, 5 $, 3 $, 8 $, 2 $",
+          "options": ["2 $", "3 $", "4 $", "5 $"],
+          "r": 2
+        },
+        {
+          "id": 4,
+          "q": "Calcule la moyenne de : 25, 10, 40",
+          "options": ["10", "20", "25", "75"],
+          "r": 2
+        },
+        {
+          "id": 5,
+          "q": "Calcule la moyenne de : 5, 8, 12, 7, 3, 1",
+          "options": ["6", "7", "8", "36"],
+          "r": 0
+        },
+        {
+          "id": 6,
+          "q": "Calcule la moyenne de : 15, 15, 30",
+          "options": ["15", "20", "30", "60"],
+          "r": 1
+        }
+      ]
+    },
+
+    "Page_66_Mode": {
+      "domaine": "Le traitement des données",
+      "questions": [
+        {
+          "id": 7,
+          "q": "Trouve le mode de : 3, 7, 6, 7, 6, 4, 6",
+          "options": ["3", "4", "6", "7"],
+          "r": 2
+        },
+        {
+          "id": 8,
+          "q": "Trouve le mode de : 8, 4, 8, 2, 4, 8, 7, 8",
+          "options": ["2", "4", "7", "8"],
+          "r": 3
+        },
+        {
+          "id": 9,
+          "q": "Trouve le mode de : 1, 4, 1, 7, 1, 3, 1",
+          "options": ["1", "3", "4", "7"],
+          "r": 0
+        },
+        {
+          "id": 10,
+          "q": "Trouve le mode de : 3, 6, 3, 6, 8, 3, 3",
+          "options": ["3", "6", "8", "aucun"],
+          "r": 0
+        },
+        {
+          "id": 11,
+          "q": "Trouve le mode de : 19, 15, 14, 15, 15",
+          "options": ["14", "15", "19", "44"],
+          "r": 1
+        },
+        {
+          "id": 12,
+          "q": "Trouve le mode de : 94, 16, 94, 83, 83, 94",
+          "options": ["16", "83", "94", "464"],
+          "r": 2
+        }
+      ]
+    },
+
+    "Page_67_Moyenne": {
+      "domaine": "Le traitement des données",
+      "questions": [
+        {
+          "id": 13,
+          "q": "Moyenne de l'ensemble : 24, 16, 35, 52, 18",
+          "options": ["29", "30", "35", "145"],
+          "r": 0
+        },
+        {
+          "id": 14,
+          "q": "Moyenne de l'ensemble : 150, 64, 73, 125",
+          "options": ["95", "103", "110", "412"],
+          "r": 1
+        },
+        {
+          "id": 15,
+          "q": "Moyenne de l'ensemble : 20, 35, 14",
+          "options": ["18", "21", "23", "69"],
+          "r": 2
+        },
+        {
+          "id": 16,
+          "q": "Moyenne de l'ensemble : 75, 70, 36, 51, 18",
+          "options": ["40", "45", "50", "250"],
+          "r": 2
+        },
+        {
+          "id": 17,
+          "q": "Masse moyenne de 6 chiens : 25, 30, 25, 20, 25, 25 kg",
+          "options": ["20 kg", "25 kg", "30 kg", "150 kg"],
+          "r": 1
+        },
+        {
+          "id": 19,
+          "q": "Note moyenne de Géraldo : 100, 98, 97, 100, 100",
+          "options": ["97", "98", "99", "100"],
+          "r": 2
+        },
+        {
+          "id": 21,
+          "q": "Hauteur moyenne des 5 arbres : 20, 16, 20, 15, 9 m",
+          "options": ["14 m", "15 m", "16 m", "20 m"],
+          "r": 2
+        },
+        {
+          "id": 22,
+          "q": "Circonférence moyenne des 5 arbres : 65, 82, 60, 82, 21 cm",
+          "options": ["60 cm", "62 cm", "65 cm", "82 cm"],
+          "r": 1
+        }
+      ]
+    },
+
+    "Page_67_Mode": {
+      "domaine": "Le traitement des données",
+      "questions": [
+        {
+          "id": 18,
+          "q": "Le mode des masses de ces 6 chiens",
+          "options": ["20 kg", "25 kg", "30 kg", "25 et 30 kg"],
+          "r": 1
+        },
+        {
+          "id": 20,
+          "q": "Mode des notes de Géraldo",
+          "options": ["97", "98", "99", "100"],
+          "r": 3
+        },
+        {
+          "id": 23,
+          "q": "Mode des hauteurs d'arbres",
+          "options": ["9 m", "15 m", "16 m", "20 m"],
+          "r": 3
+        },
+        {
+          "id": 24,
+          "q": "Mode des circonférences d'arbres",
+          "options": ["21 cm", "60 cm", "82 cm", "aucun"],
+          "r": 2
+        }
+      ]
+    },
+
+    "Page_67_Va_Plus_Loin": {
+      "domaine": "Résolution de problèmes",
+      "questions": [
+        {
+          "id": 25,
+          "q": "Si la moyenne d'âge est de 10 ans et le mode est de 8 ans pour 6 oiseaux, quelle série est possible ?",
+          "options": [
+            "8, 8, 8, 10, 12, 14",
+            "10, 10, 10, 10, 10, 10",
+            "8, 9, 10, 11, 12, 13",
+            "8, 8, 9, 9, 10, 10"
+          ],
+          "r": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Award, Loader2, CheckCircle, ChevronRight, ChevronLeft, X } from "lucide-react";
-import data from "./3E/oqre_6_nov2025.json";
+import data from "./livre.json";
 
 // --- CONFIGURATION ---
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbytYvoJ4Rg7RP9UqhgWChoa0S1A-jr0GvmiIAY7XmnHmayLZ7ymAQJRsK5ARYLt3oWJqQ/exec";
@@ -26,7 +26,7 @@ const RenderOptionContent = ({ opt }) => {
   return <span className={`${isSymbol ? 'text-3xl' : 'text-lg'} font-bold text-center w-full block px-2`} dangerouslySetInnerHTML={{ __html: opt }} />;
 };
 
-export default function QuizOQRE() {
+export default function QuizOQRE5a() {
   const [etape, setEtape] = useState("login"); 
   const [email, setEmail] = useState("");
   const [nom, setNom] = useState("");

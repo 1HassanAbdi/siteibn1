@@ -1,6 +1,6 @@
 {
-  "matiere": "Mathématiques_3e Janvier 2025",
-  "annee": "2025",
+  "matiere": "Mathématiques - OQRE 3e année",
+  "annee": "2024-2025",
   "themes": {
     "Nombres_Operations": {
       "domaine": "Nombres et opérations",
@@ -38,85 +38,55 @@
           "id": 5,
           "q": "Quelle fraction représente l’aire du cercle qui devrait être rouge ?",
           "image": "/oqreImag/3E/fraction_cercle.png",
-          "options": [
-            "<sup>1</sup>&frasl;<sub>4</sub>",
-            "<sup>1</sup>&frasl;<sub>3</sub>",
-            "<sup>3</sup>&frasl;<sub>3</sub>",
-            "<sup>3</sup>&frasl;<sub>4</sub>"
-          ],
-          "r": 3
+          "options": ["1/4", "1/3", "3/3", "3/4"],
+          "r": 0
         },
         {
           "id": 6,
           "q": "Il y a 3 bicyclettes et 4 tricycles. Combien de pneus y a-t-il en tout ?",
           "image": "/oqreImag/3E/velos_tricycles.png",
           "options": ["7 pneus", "12 pneus", "14 pneus", "18 pneus"],
-          "r": 3
+          "r": 2
         }
       ]
     },
-
     "Algebre": {
       "domaine": "Algèbre",
       "questions": [
         {
           "id": 7,
           "q": "Les jours encerclés sur ce calendrier représentent les jours où Kelly nage. À quelle fréquence nage-t-elle ?",
-          "image": "/oqreImag/3E/calendrier_kelly.png",
-          "options": [
-            "Tous les 2 jours",
-            "Tous les 3 jours",
-            "Tous les 4 jours",
-            "Tous les 6 jours"
-          ],
+          "image": "/oqreImag/3E/calendrier.png",
+          "options": ["Tous les 2 jours", "Tous les 3 jours", "Tous les 4 jours", "Tous les 6 jours"],
           "r": 1
         },
         {
           "id": 8,
           "q": "Tal commence à 7 et compte par bonds de 2. Vijay commence à 6 et compte par bonds de 5. Quels deux nombres font partie des deux suites ?",
-          "options": [
-            "11 et 16",
-            "11 et 21",
-            "21 et 25",
-            "21 et 26"
-          ],
-          "r": 1
+          "options": ["11 et 16", "11 et 21", "21 et 25", "21 et 26"],
+          "r": 3
         },
         {
           "id": 9,
           "q": "Quelle expression est égale à 400 ?",
-          "options": [
-            "600 - 300",
-            "300 + 100",
-            "200 + 300",
-            "500 - 200"
-          ],
+          "options": ["600 - 300", "300 + 100", "200 + 300", "500 - 200"],
           "r": 1
         },
         {
           "id": 10,
-          "q": "Classe les expressions en « équivalent » ou « non équivalent ».",
+          "q": "Classe les expressions en 'équivalent' ou 'non équivalent'.",
           "type": "glisser_deposer",
-          "options": [
-            "non équivalent",
-            "équivalent"
-            
-          ],
-          "r": {
-            "6 + 9 = 21 - 5": "non équivalent",
-            "36 ÷ 4 = 3 × 3": "équivalent",
-            "8 + 4 = 6 × 2": "équivalent"
-          }
+         
+          "paires": [
+            {"exp1": "6 + 9", "exp2": "21 - 5", "equivalent": true},
+            {"exp1": "36 ÷ 4", "exp2": "3 × 3", "equivalent": true},
+            {"exp1": "8 + 4", "exp2": "6 × 2", "equivalent": true}
+          ]
         },
         {
           "id": 11,
           "q": "Quelle ligne de code crée une boucle dans un programme ?",
-          "options": [
-            "attendre 5 secondes",
-            "entrer nombre",
-            "répéter 3 fois",
-            "avancer de 1 case"
-          ],
+          "options": ["attendre 5 secondes", "entrer nombre", "répéter 3 fois", "avancer de 1 case"],
           "r": 2
         }
       ]
@@ -128,35 +98,28 @@
         {
           "id": 12,
           "q": "Ce diagramme représente la taille des souliers des élèves. Combien d’élèves portent des souliers de taille 12 ?",
-          "image": "/oqreImag/3E/diagramme_souliers.png",
+          "image": "/oqreImag/3E/tailles_souliers.png",
           "options": ["4 élèves", "6 élèves", "7 élèves", "8 élèves"],
-          "r": 2
+          "r": 1
         },
         {
           "id": 13,
           "q": "Ce pictogramme représente les activités préférées de 21 élèves. Quelle est la bonne légende ?",
-          "image": "/oqreImag/3E/pictogramme_activites.png",
+          "image": "/oqreImag/3E/q13_pictogramme.png",
           "options": [
             "Chaque symbole représente 1 élève",
             "Chaque symbole représente 2 élèves",
             "Chaque symbole représente 3 élèves",
             "Chaque symbole représente 4 élèves"
           ],
-          "r": 1
+          "r": 2
         },
         {
           "id": 14,
           "q": "Quel sac représente une probabilité équiprobable de piger un nombre pair et un nombre impair ?",
-          
-           "options": [
-            {"image": "/oqreImag/3E/sacs_probabiliteA.png"},
-            {"image": "/oqreImag/3E/sacs_probabiliteB.png"},
-            {"image": "/oqreImag/3E/sacs_probabiliteC.png"},
-            {"image": "/oqreImag/3E/sacs_probabiliteD.png"}
-           
-          ],
-          "r": 0
-         
+          "image": "/oqreImag/3E/q14_probabilite.png",
+          "options": ["Sac A", "Sac B", "Sac C", "Sac D"],
+          "r": 2
         }
       ]
     },
@@ -167,7 +130,7 @@
         {
           "id": 15,
           "q": "Quelle option nomme toutes les faces de ce solide ?",
-          "image": "/oqreImag/3E/prisme_triangulaire.png",
+          "image": "/oqreImag/3E/q15_faces_solide.png",
           "options": [
             "2 triangles et 2 rectangles",
             "2 triangles et 3 rectangles",
@@ -179,22 +142,14 @@
         {
           "id": 16,
           "q": "Choisis les DEUX solides qui ont chacun 6 faces, 12 arêtes et 8 sommets.",
-         
-          
-           "options": [
-            {"image": "/oqreImag/3E/solides_choixA.png"},
-            {"image": "/oqreImag/3E/solides_choixB.png"},
-            {"image": "/oqreImag/3E/solides_choixC.png"},
-            {"image": "/oqreImag/3E/solides_choixD.png"}
-           
-           
-          ],
-        
-          "r": [0, 2]
+          "image": "/oqreImag/3E/q16_solides.png",
+          "options": ["A", "B", "C", "D", "E"],
+          "r": ["A", "D"]
         },
         {
           "id": 17,
           "q": "Quel solide a un total de 8 sommets et une base rectangulaire ?",
+          "image": "/oqreImag/3E/q17_prisme.png",
           "options": [
             "Une pyramide à base carrée",
             "Une pyramide à base octogonale",
@@ -205,22 +160,22 @@
         },
         {
           "id": 18,
-          "q": "Cette balance n'est pas en équilibre. Observe attentivement les masses représentées. Quel énoncé est vrai ?",
-          "image": "/oqreImag/3E/balance_ananas_banane.png",
+          "q": "Cette balance n'est pas en équilibre. Quel énoncé est vrai ?",
+          "image": "/oqreImag/3E/q18_balance.png",
           "options": [
-            "La masse de l’ananas est égale à la masse de la banane",
-            "La masse de l’ananas est plus petite que la masse de la banane",
-            "La masse de la banane est plus grande que la masse de l’ananas",
-            "La masse de la banane est plus petite que la masse de l’ananas"
+            "La masse de l’ananas = la masse de la banane",
+            "La masse de l’ananas est plus petite",
+            "La masse de la banane est plus grande",
+            "La masse de la banane est plus petite"
           ],
-          "r": 3
+          "r": 2
         },
         {
           "id": 19,
           "q": "Quelle est l’aire de cette figure ?",
-          "image": "/oqreImag/3E/aire_figure.png",
+          "image": "/oqreImag/3E/q19_aire.png",
           "options": ["14 cm²", "16 cm²", "17 cm²", "20 cm²"],
-          "r": 2
+          "r": 0
         }
       ]
     },
@@ -231,15 +186,16 @@
         {
           "id": 20,
           "q": "Un élève achète un livre à 14 $. Il paie avec un billet de 20 $. Quelle est la meilleure estimation de la monnaie rendue ?",
-          "image": "/oqreImag/3E/billets_monnaie.png",
-          "options": ["20 $","10 $","5 $"],
-          "r": 2
+          "image": "/oqreImag/3E/q20_livre.png",
+          "options": ["5 $", "10 $", "20 $"],
+          "r": 0
         },
         {
           "id": 21,
           "q": "Un article coûte 75 cents et un élève paie 80 cents. Quelle est la monnaie rendue ?",
-          "options": [ "25 cents","15 cents","10 cents","5 cents"  ],
-          "r": 3
+          "image": "/oqreImag/3E/q21_monnaie.png",
+          "options": ["5 cents", "10 cents", "15 cents", "25 cents"],
+          "r": 0
         }
       ]
     }

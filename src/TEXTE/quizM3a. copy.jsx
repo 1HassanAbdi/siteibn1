@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Award, Loader2, CheckCircle, ChevronRight, ChevronLeft, X } from "lucide-react";
-import data from "./3E/oqre_6_nov2025.json";
+import data from "./3E/oqre.json";
 
 // --- CONFIGURATION ---
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbytYvoJ4Rg7RP9UqhgWChoa0S1A-jr0GvmiIAY7XmnHmayLZ7ymAQJRsK5ARYLt3oWJqQ/exec";
@@ -13,12 +13,8 @@ const RenderOptionContent = ({ opt }) => {
 
   if (isImage) {
     return (
-      <div className="w-full flex items-center justify-center overflow-hidden">
-        <img 
-          src={imgSrc} 
-          alt="Option" 
-          className="w-full h-auto max-h-48 object-contain rounded-md block" 
-        />
+      <div className="w-full h-full flex items-center justify-center overflow-hidden p-1">
+        <img src={imgSrc} alt="Option" className="max-w-full max-h-24 object-contain rounded-md block mx-auto" />
       </div>
     );
   }
@@ -44,11 +40,12 @@ export default function QuizOQRE() {
   const verifierExactitude = (q, rep) => {
     if (rep === undefined || rep === null) return false;
 
+    // Glisser-Déposer Objet (Association)
     if (q.type === "glisser_deposer" && typeof q.r === 'object' && !Array.isArray(q.r)) {
-      const keys = Object.keys(q.r);
-      return keys.every(key => rep[key] === q.r[key]);
+      return Object.keys(q.r).every(key => rep[key] === q.r[key]);
     }
 
+    // Choix Multiple Multiple OU Séquence (Tableau)
     if (Array.isArray(q.r)) {
       if (!Array.isArray(rep)) return false;
       if (q.type === "choix_multiple_multiple") {
@@ -57,6 +54,7 @@ export default function QuizOQRE() {
       return JSON.stringify(rep) === JSON.stringify(q.r);
     }
 
+    // QCM Classique
     if (typeof q.r === 'number') return rep === q.r;
     const optionChoisie = q.options[rep];
     const valeurChoisie = (typeof optionChoisie === 'object') ? optionChoisie.image : optionChoisie;
@@ -89,9 +87,12 @@ export default function QuizOQRE() {
     setReponses(prev => ({ ...prev, [themeActuel]: { ...prev[themeActuel], [indexQ]: val } }));
   };
 
+  // Logique spécifique pour le choix multiple (cocher/décocher)
   const toggleMultiSelect = (indexQ, optionIdx) => {
     const currentRep = reponses[themeActuel]?.[indexQ] || [];
-    const newRep = currentRep.includes(optionIdx) ? currentRep.filter(i => i !== optionIdx) : [...currentRep, optionIdx];
+    const newRep = currentRep.includes(optionIdx)
+      ? currentRep.filter(i => i !== optionIdx)
+      : [...currentRep, optionIdx];
     handleChangementReponse(indexQ, newRep);
   };
 
@@ -184,7 +185,7 @@ export default function QuizOQRE() {
         </div>
 
         <div className="p-8">
-          <h2 className="text-2xl font-black text-slate-800 mb-8 border-l-8 border-blue-500 pl-4 leading-tight">{data.themes[themeActuel].domaine}</h2>
+          <h2 className="text-2xl font-black text-slate-800 mb-8 border-l-8 border-blue-500 pl-4">{data.themes[themeActuel].domaine}</h2>
           
           <div className="space-y-16">
             {questionsActuelles.map((q, idx) => {
@@ -201,21 +202,19 @@ export default function QuizOQRE() {
 
                   {q.type === "glisser_deposer" ? (
                     <div className="space-y-8">
-                      {/* ZONE ETIQUETTES : Toujours actives pour permettre la réutilisation */}
-                      <div className="flex flex-wrap gap-3 justify-center bg-blue-50 p-6 rounded-2xl border-2 border-dashed border-blue-200">
+                      <div className="flex flex-wrap gap-3 justify-center bg-gray-50 p-6 rounded-2xl border-2 border-dashed border-gray-200">
                         {q.options.map((opt, oIdx) => {
                           const val = typeof opt === 'object' ? opt.image : opt;
+                          const estUtilise = userRep && Object.values(userRep).includes(val);
                           return (
-                            <div key={oIdx} draggable={true} onDragStart={(e) => e.dataTransfer.setData("text", val)}
-                              className="bg-white border-2 border-blue-400 text-blue-700 px-6 py-3 rounded-xl shadow-md font-bold cursor-grab hover:scale-105 active:scale-95 transition-all min-w-[100px] flex items-center justify-center">
+                            <div key={oIdx} draggable={!estUtilise} onDragStart={(e) => e.dataTransfer.setData("text", val)}
+                              className={`min-w-[80px] h-[60px] flex items-center justify-center px-4 rounded-xl shadow-sm font-bold border-2 transition-all ${estUtilise ? "opacity-20 grayscale cursor-not-allowed" : "bg-white border-blue-400 text-blue-700 cursor-grab hover:scale-105"}`}>
                               <RenderOptionContent opt={opt} />
                             </div>
                           );
                         })}
                       </div>
-
-                      {/* ZONE CASES DE DEPOT */}
-                      <div className="grid md:grid-cols-2 gap-4">
+                      <div className="space-y-4 max-w-2xl mx-auto">
                         {(Array.isArray(q.r) ? q.r : Object.keys(q.r)).map((keyLabel, tIdx) => {
                           const targetKey = Array.isArray(q.r) ? tIdx : keyLabel;
                           const currentVal = userRep?.[targetKey];
@@ -230,16 +229,11 @@ export default function QuizOQRE() {
                                   handleChangementReponse(idx, newRep);
                                 }}
                                 className={`min-h-[70px] border-4 border-dashed rounded-xl flex items-center justify-between px-6 transition-all ${currentVal ? 'border-blue-500 bg-blue-50' : 'border-gray-200 bg-gray-50'}`}>
-                                {currentVal ? (
-                                  <>
-                                    <div className="flex-1"><RenderOptionContent opt={currentVal} /></div>
-                                    <button onClick={() => {
-                                      const newRep = Array.isArray(userRep) ? [...userRep] : {...userRep};
-                                      Array.isArray(userRep) ? (newRep[tIdx] = "") : delete newRep[targetKey];
-                                      handleChangementReponse(idx, newRep);
-                                    }} className="ml-2 text-red-500 hover:bg-red-50 p-2 rounded-full"><X size={20}/></button>
-                                  </>
-                                ) : <span className="text-gray-300 italic text-sm">Glisse la réponse ici</span>}
+                                {currentVal ? <><RenderOptionContent opt={currentVal} /><button onClick={() => {
+                                  const newRep = Array.isArray(userRep) ? [...userRep] : {...userRep};
+                                  Array.isArray(userRep) ? (newRep[tIdx] = "") : delete newRep[targetKey];
+                                  handleChangementReponse(idx, newRep);
+                                }} className="ml-2 text-red-500"><X size={20}/></button></> : <span className="text-gray-300 italic text-sm">Déposer ici</span>}
                               </div>
                             </div>
                           );
@@ -247,6 +241,7 @@ export default function QuizOQRE() {
                       </div>
                     </div>
                   ) : (
+                    /* RENDU QCM SIMPLE ET MULTIPLE */
                     <div className="grid md:grid-cols-2 gap-4">
                       {q.options.map((opt, oIdx) => {
                         const isSelected = q.type === "choix_multiple_multiple" ? userRep?.includes(oIdx) : userRep === oIdx;
@@ -268,7 +263,7 @@ export default function QuizOQRE() {
           </div>
 
           <div className="flex justify-between mt-16 pt-8 border-t-4 border-gray-50">
-            <button disabled={partieActive === 1} onClick={() => setPartieActive(p => p - 1)} className="flex items-center gap-2 font-black text-gray-400 hover:text-gray-600 transition-all disabled:opacity-0"><ChevronLeft size={30} /> PRÉCÉDENT</button>
+            <button disabled={partieActive === 1} onClick={() => setPartieActive(p => p - 1)} className="flex items-center gap-2 font-black text-gray-400 hover:text-gray-600 disabled:opacity-0"><ChevronLeft size={30} /> PRÉCÉDENT</button>
             {partieActive < themesKeys.length ? (
               <button disabled={!themeEstComplet(partieActive)} onClick={() => setPartieActive(p => p + 1)} className="bg-blue-600 text-white px-10 py-4 rounded-2xl font-black text-xl shadow-xl hover:bg-blue-700 disabled:bg-gray-200 transition-all">SUIVANT</button>
             ) : (

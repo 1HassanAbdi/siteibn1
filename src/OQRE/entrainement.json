@@ -1,0 +1,59 @@
+{
+  "3": {
+    "title": "🎯 Entraînement OQRE – 3e année",
+    "frenchQuestions": "10-11",
+    "mathQuestions": "22",
+    "tests": [
+      {
+        "title": "Exemple de test régulier",
+        "icon": "BookOpen",
+        "description": "Permet aux élèves de découvrir la plateforme en ligne, les outils d’accessibilité et les différents types de questions.",
+        "note": "Révisé le 29 janvier 2026",
+        "link": "https://d3d9vqrpii4nuo.cloudfront.net/#/fr/student/primary-assessment"
+      },
+      {
+        "title": "Version audio complète",
+        "icon": "Headphones",
+        "description": "Destinée aux élèves ayant une cécité ou une basse vision. Comprend des descriptions complètes des graphiques mathématiques.",
+        "note": "Révisé le 29 janvier 2025",
+        "link": "https://d3d9vqrpii4nuo.cloudfront.net/#/fr/student/primary-assessment-alternative"
+      },
+      {
+        "title": "Version audio simplifiée",
+        "icon": "Volume2",
+        "description": "Pour les élèves ayant besoin uniquement des questions à choix unique et des réponses construites.",
+        "note": "Version alternative",
+        "link": "https://d3d9vqrpii4nuo.cloudfront.net/#/fr/student/primary-assessment-alternative-v2"
+      }
+    ]
+  },
+
+  "6": {
+    "title": "🚀 Entraînement OQRE – 6e année",
+    "frenchQuestions": "10-11",
+    "mathQuestions": "24",
+    "tests": [
+      {
+        "title": "Exemple de test régulier",
+        "icon": "BookOpen",
+        "description": "Les élèves de 6e année peuvent se familiariser avec le test en ligne et sa plateforme.",
+        "note": "Révisé le 29 janvier 2026",
+        "link": "https://d3d9vqrpii4nuo.cloudfront.net/#/fr/student/junior-assessment"
+      },
+      {
+        "title": "Version audio complète",
+        "icon": "Headphones",
+        "description": "Version avec descriptions complètes des graphiques mathématiques pour les élèves ayant une déficience visuelle.",
+        "note": "Révisé le 29 janvier 2025",
+        "link": "https://d3d9vqrpii4nuo.cloudfront.net/#/fr/student/junior-assessment-alternative"
+      },
+      {
+        "title": "Version audio simplifiée",
+        "icon": "Volume2",
+        "description": "Version sans descriptions complètes des graphiques mathématiques.",
+        "note": "Révisé le 29 janvier 2025",
+        "link": "https://d3d9vqrpii4nuo.cloudfront.net/#/fr/student/junior-assessment-alternative-v2"
+      }
+    ]
+  }
+}

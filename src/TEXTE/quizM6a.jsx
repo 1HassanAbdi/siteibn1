@@ -1,20 +1,29 @@
 import React, { useState } from "react";
-import { Award, Loader2, CheckCircle, ChevronRight, ChevronLeft } from "lucide-react";
-import data from "./3E/Revision6A.json";
+import { Award, Loader2, CheckCircle, ChevronRight, ChevronLeft, X } from "lucide-react";
+import data from "./3E/oqre_6_nov2025.json";
 
 // --- CONFIGURATION ---
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbytYvoJ4Rg7RP9UqhgWChoa0S1A-jr0GvmiIAY7XmnHmayLZ7ymAQJRsK5ARYLt3oWJqQ/exec";
 
+// --- COMPOSANT DE RENDU DES OPTIONS (IMAGES OU TEXTE) ---
 const RenderOptionContent = ({ opt }) => {
-  if (opt && typeof opt === 'object' && opt.image) {
-    return <img src={opt.image} alt="Option" className="max-h-60 w-auto object-contain mx-auto rounded-lg" />;
+  if (!opt) return null;
+  const isImage = (typeof opt === 'object' && opt.image) || (typeof opt === 'string' && /\.(png|jpe?g|gif|svg|webp)$/i.test(opt));
+  const imgSrc = typeof opt === 'object' ? opt.image : opt;
+
+  if (isImage) {
+    return (
+      <div className="w-full flex items-center justify-center overflow-hidden">
+        <img 
+          src={imgSrc} 
+          alt="Option" 
+          className="w-full h-auto max-h-48 object-contain rounded-md block" 
+        />
+      </div>
+    );
   }
-  if (typeof opt === 'string' && /\.(png|jpe?g|gif|svg|webp)$/i.test(opt)) {
-    return <img src={opt} alt="Option" className="max-h-32 w-auto object-contain mx-auto rounded-lg" />;
-  }
-  return (
-    <span className="text-xl font-bold text-center w-full block" dangerouslySetInnerHTML={{ __html: opt }} />
-  );
+  const isSymbol = typeof opt === 'string' && opt.length <= 2 && ["+", "-", "x", "÷", "×", "−", "=", "<", ">"].includes(opt);
+  return <span className={`${isSymbol ? 'text-3xl' : 'text-lg'} font-bold text-center w-full block px-2`} dangerouslySetInnerHTML={{ __html: opt }} />;
 };
 
 export default function QuizOQRE() {
@@ -31,49 +40,48 @@ export default function QuizOQRE() {
   const themeActuel = themesKeys[partieActive - 1];
   const questionsActuelles = data.themes[themeActuel]?.questions || [];
 
-  // --- LOGIQUE DE VALIDATION CORRIGÉE (1 POINT PAR QUESTION) ---
-
+  // --- LOGIQUE DE VALIDATION ---
   const verifierExactitude = (q, rep) => {
-    // FIX : On vérifie si la réponse existe vraiment (ne pas utiliser !rep car 0 est valide)
-    if (rep === undefined || rep === null || rep === "") return false;
+    if (rep === undefined || rep === null) return false;
 
-    // 1. Cas Association (Objet) - ex: Q23
-    if (typeof q.r === 'object' && !Array.isArray(q.r)) {
+    if (q.type === "glisser_deposer" && typeof q.r === 'object' && !Array.isArray(q.r)) {
       const keys = Object.keys(q.r);
-      return keys.every(key => q.r[key] === rep[key]);
+      return keys.every(key => rep[key] === q.r[key]);
     }
 
-    // 2. Cas Séquence ou Multi-sélection (Tableau) - ex: Q11, Q16, Q22
     if (Array.isArray(q.r)) {
-      // On convertit les index choisis par l'élève en valeurs réelles (A, B, C...) si le JSON utilise des valeurs
-      const repValues = rep.map(val => (typeof val === 'number' ? q.options[val] : val));
-      
-      // On trie les deux tableaux pour comparer le contenu sans se soucier de l'ordre du clic
-      const rTrié = [...q.r].sort();
-      const repTriée = repValues.map(v => (typeof v === 'object' ? JSON.stringify(v) : v)).sort();
-      
-      return JSON.stringify(rTrié) === JSON.stringify(repTriée);
+      if (!Array.isArray(rep)) return false;
+      if (q.type === "choix_multiple_multiple") {
+        return rep.length === q.r.length && rep.every(val => q.r.includes(val));
+      }
+      return JSON.stringify(rep) === JSON.stringify(q.r);
     }
 
-    // 3. Cas QCM Classique
-    // On compare la valeur (ex: "A") ou l'index
-    const finalRep = (typeof q.r === 'string' && typeof rep === 'number') ? q.options[rep] : rep;
-    return finalRep === q.r;
+    if (typeof q.r === 'number') return rep === q.r;
+    const optionChoisie = q.options[rep];
+    const valeurChoisie = (typeof optionChoisie === 'object') ? optionChoisie.image : optionChoisie;
+    return valeurChoisie === q.r;
   };
 
   const questionEstRepondue = (q, rep) => {
-    if (rep === undefined || rep === null) return false;
+    if (rep === 0) return true; 
+    if (!rep) return false;
+
+    if (q.type === "choix_multiple_multiple") {
+      return Array.isArray(rep) && rep.length === q.r.length;
+    }
     if (q.type === "glisser_deposer" && typeof q.r === 'object' && !Array.isArray(q.r)) {
-      return Object.keys(rep).length === Object.keys(q.r).length;
+      return Object.keys(q.r).every(key => rep[key] && rep[key] !== "");
     }
     if (Array.isArray(q.r)) {
-      return Array.isArray(rep) && rep.length === q.r.length;
+      return Array.isArray(rep) && rep.length === q.r.length && rep.every(v => v !== "" && v !== undefined);
     }
     return rep !== "";
   };
 
   const themeEstComplet = (indexPartie) => {
     const key = themesKeys[indexPartie - 1];
+    if (!data.themes[key]) return false;
     return data.themes[key].questions.every((q, i) => questionEstRepondue(q, reponses[key]?.[i]));
   };
 
@@ -90,8 +98,7 @@ export default function QuizOQRE() {
   const terminerQuiz = async () => {
     setEnvoiEnCours(true);
     let nouveauxScores = { total: 0 };
-    let globalPoints = 0;
-    let globalTotalQs = 0;
+    let globalPoints = 0, globalTotalQs = 0;
     const dateStr = new Date().toLocaleString("fr-FR");
 
     themesKeys.forEach(key => {
@@ -110,30 +117,19 @@ export default function QuizOQRE() {
       const envois = themesKeys.map(key => {
         const questions = data.themes[key].questions;
         const detailsQuestions = questions.map((q, index) => verifierExactitude(q, reponses[key]?.[index]) ? 1 : 0);
-
         return fetch(GOOGLE_SCRIPT_URL, {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
+          method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            email: email,
-            eleve: nom,
-            date: dateStr,
-            matiere: data.matiere,
-            domaine: key, 
-            partie: data.themes[key].domaine,
-            note: nouveauxScores[key],
-            totalGlobal: `${globalPoints} / ${globalTotalQs}`,
-            details: detailsQuestions
+            email, eleve: nom, date: dateStr, matiere: data.matiere, domaine: key, 
+            partie: data.themes[key].domaine, note: nouveauxScores[key],
+            totalGlobal: `${globalPoints} / ${globalTotalQs}`, details: detailsQuestions
           })
         });
       });
-
       await Promise.all(envois);
       setResultats(true);
     } catch (error) {
-      console.error("Erreur:", error);
-      alert("Erreur lors de l'enregistrement.");
+      alert("Erreur d'envoi.");
     } finally {
       setEnvoiEnCours(false);
     }
@@ -160,15 +156,16 @@ export default function QuizOQRE() {
         <Award size={100} className="text-yellow-500 mb-4 animate-bounce" />
         <h2 className="text-4xl font-black mb-6">Bravo, {nom} !</h2>
         <div className="bg-white p-8 rounded-3xl shadow-xl w-full max-w-lg border-t-8 border-green-500">
-          <p className="text-3xl font-bold text-indigo-600 mb-6">Score Total : {score.total} / {score.max}</p>
-          <div className="space-y-4">
+          <p className="text-3xl font-bold text-indigo-600 mb-6 font-black">{score.total} / {score.max}</p>
+          <div className="space-y-4 text-left">
             {themesKeys.map(key => (
               <div key={key} className="flex justify-between items-center py-2 border-b">
-                <span className="font-medium text-gray-700">{data.themes[key].domaine}</span>
+                <span className="font-medium text-gray-700">{data.themes[key].domaine.split('.')[0]}</span>
                 <span className="font-black text-green-600 px-3 py-1 bg-green-50 rounded-full">{score[key]} / {data.themes[key].questions.length}</span>
               </div>
             ))}
           </div>
+          <button onClick={() => window.location.reload()} className="mt-8 text-blue-500 font-bold underline">Recommencer</button>
         </div>
       </div>
     );
@@ -181,13 +178,13 @@ export default function QuizOQRE() {
           {themesKeys.map((key, i) => (
             <button key={key} disabled={i > 0 && !themeEstComplet(i)} onClick={() => setPartieActive(i + 1)}
               className={`px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${partieActive === i + 1 ? 'bg-blue-500 text-white' : 'bg-slate-700 text-slate-300 disabled:opacity-30'}`}>
-              {themeEstComplet(i+1) ? "✓ " : ""}{data.themes[key].domaine}
+              {themeEstComplet(i+1) ? "✓ " : ""}{data.themes[key].domaine.split('.')[0]}
             </button>
           ))}
         </div>
 
         <div className="p-8">
-          <h2 className="text-3xl font-black text-slate-800 mb-8 border-l-8 border-blue-500 pl-4">{data.themes[themeActuel].domaine}</h2>
+          <h2 className="text-2xl font-black text-slate-800 mb-8 border-l-8 border-blue-500 pl-4 leading-tight">{data.themes[themeActuel].domaine}</h2>
           
           <div className="space-y-16">
             {questionsActuelles.map((q, idx) => {
@@ -200,70 +197,65 @@ export default function QuizOQRE() {
                     <h3 className="text-xl font-bold text-gray-800 leading-tight">{q.q}</h3>
                   </div>
                   
-                  {q.image && <img src={q.image} className="mb-8 max-h-64 mx-auto rounded-xl shadow-sm border" alt="illustration" />}
+                  {q.image && <div className="mb-8 w-full flex justify-center"><img src={q.image} className="max-h-72 max-w-full object-contain rounded-xl shadow-sm border" alt="exercice" /></div>}
 
-                  {/* RENDU DES RÉPONSES ASSOCIATION (EXERCICE 23) */}
-                  {q.type === "glisser_deposer" && typeof q.r === 'object' && !Array.isArray(q.r) ? (
+                  {q.type === "glisser_deposer" ? (
                     <div className="space-y-8">
-                      <div className="flex flex-wrap gap-4 justify-center bg-gray-50 p-6 rounded-2xl border-2 border-dashed">
-                        {[...new Set(Object.values(q.r))].map((label, dIdx) => (
-                          <div key={dIdx} draggable onDragStart={(e) => e.dataTransfer.setData("text", label)}
-                            className="bg-white border-2 border-blue-200 px-6 py-3 rounded-xl shadow-md cursor-grab font-bold hover:bg-blue-50 text-blue-700">
-                            {label}
-                          </div>
-                        ))}
-                      </div>
-                      <div className="space-y-4">
-                        {Object.keys(q.r).map((expression, tIdx) => (
-                          <div key={tIdx} className="flex flex-row items-center gap-6 bg-white p-4 rounded-[24px] border-2 border-slate-100 shadow-sm">
-                            <div className="font-black text-xl text-slate-800 w-1/3 break-words">{expression}</div>
-                            <div onDragOver={(e) => e.preventDefault()} onDrop={(e) => {
-                                const val = e.dataTransfer.getData("text");
-                                handleChangementReponse(idx, { ...(userRep || {}), [expression]: val });
-                              }} className={`flex-1 min-h-[120px] border-4 border-dashed rounded-2xl flex items-center justify-center p-6 transition-all ${userRep?.[expression] ? 'border-blue-500 bg-blue-50 text-blue-800 font-bold' : 'border-gray-300 bg-gray-50 text-gray-400 italic'}`}>
-                              {userRep?.[expression] ? <span className="text-center text-lg">{userRep[expression]}</span> : "Dépose ici"}
+                      {/* ZONE ETIQUETTES : Toujours actives pour permettre la réutilisation */}
+                      <div className="flex flex-wrap gap-3 justify-center bg-blue-50 p-6 rounded-2xl border-2 border-dashed border-blue-200">
+                        {q.options.map((opt, oIdx) => {
+                          const val = typeof opt === 'object' ? opt.image : opt;
+                          return (
+                            <div key={oIdx} draggable={true} onDragStart={(e) => e.dataTransfer.setData("text", val)}
+                              className="bg-white border-2 border-blue-400 text-blue-700 px-6 py-3 rounded-xl shadow-md font-bold cursor-grab hover:scale-105 active:scale-95 transition-all min-w-[100px] flex items-center justify-center">
+                              <RenderOptionContent opt={opt} />
                             </div>
-                          </div>
-                        ))}
+                          );
+                        })}
                       </div>
-                    </div>
-                  ) : q.type === "glisser_deposer" && Array.isArray(q.r) ? (
-                    <div className="space-y-6">
-                      <div className="flex flex-wrap gap-3 p-4 bg-amber-50 rounded-xl border border-amber-200">
-                        {q.options.map((opt, oIdx) => (
-                          <div key={oIdx} draggable onDragStart={(e) => e.dataTransfer.setData("text", opt)}
-                            className="bg-white border-2 border-amber-300 px-4 py-2 rounded-lg cursor-grab font-bold shadow-sm">
-                            {opt}
-                          </div>
-                        ))}
-                      </div>
-                      <div className="space-y-3">
-                        {q.r.map((_, sIdx) => (
-                          <div key={sIdx} onDragOver={(e) => e.preventDefault()} onDrop={(e) => {
-                              const val = e.dataTransfer.getData("text");
-                              const newSeq = [...(userRep || Array(q.r.length).fill(""))];
-                              newSeq[sIdx] = val;
-                              handleChangementReponse(idx, newSeq);
-                            }} className="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border-2 border-dashed">
-                            <span className="w-8 h-8 bg-slate-800 text-white rounded-full flex items-center justify-center font-bold">{sIdx + 1}</span>
-                            <div className="flex-1 h-12 bg-white rounded-lg border flex items-center px-4 font-bold text-blue-600">
-                              {userRep?.[sIdx] || <span className="text-gray-300 italic">Dépose ici...</span>}
+
+                      {/* ZONE CASES DE DEPOT */}
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {(Array.isArray(q.r) ? q.r : Object.keys(q.r)).map((keyLabel, tIdx) => {
+                          const targetKey = Array.isArray(q.r) ? tIdx : keyLabel;
+                          const currentVal = userRep?.[targetKey];
+                          return (
+                            <div key={tIdx} className="flex flex-col gap-2 bg-white p-4 rounded-2xl border-2 border-slate-100 shadow-sm">
+                              <div className="font-bold text-slate-700 text-base">{Array.isArray(q.r) ? `Choix ${tIdx + 1} :` : keyLabel}</div>
+                              <div onDragOver={(e) => e.preventDefault()}
+                                onDrop={(e) => {
+                                  const val = e.dataTransfer.getData("text");
+                                  const newRep = Array.isArray(q.r) ? [...(userRep || [])] : { ...(userRep || {}) };
+                                  Array.isArray(q.r) ? (newRep[tIdx] = val) : (newRep[keyLabel] = val);
+                                  handleChangementReponse(idx, newRep);
+                                }}
+                                className={`min-h-[70px] border-4 border-dashed rounded-xl flex items-center justify-between px-6 transition-all ${currentVal ? 'border-blue-500 bg-blue-50' : 'border-gray-200 bg-gray-50'}`}>
+                                {currentVal ? (
+                                  <>
+                                    <div className="flex-1"><RenderOptionContent opt={currentVal} /></div>
+                                    <button onClick={() => {
+                                      const newRep = Array.isArray(userRep) ? [...userRep] : {...userRep};
+                                      Array.isArray(userRep) ? (newRep[tIdx] = "") : delete newRep[targetKey];
+                                      handleChangementReponse(idx, newRep);
+                                    }} className="ml-2 text-red-500 hover:bg-red-50 p-2 rounded-full"><X size={20}/></button>
+                                  </>
+                                ) : <span className="text-gray-300 italic text-sm">Glisse la réponse ici</span>}
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     </div>
                   ) : (
-                    /* QCM ET MULTI-SÉLECTION (RÉPARE LE BUG DU POINT 0) */
                     <div className="grid md:grid-cols-2 gap-4">
                       {q.options.map((opt, oIdx) => {
-                        const isSelected = Array.isArray(q.r) ? userRep?.includes(oIdx) : userRep === oIdx;
+                        const isSelected = q.type === "choix_multiple_multiple" ? userRep?.includes(oIdx) : userRep === oIdx;
                         return (
-                          <button key={oIdx} onClick={() => Array.isArray(q.r) ? toggleMultiSelect(idx, oIdx) : handleChangementReponse(idx, oIdx)}
-                            className={`p-6 border-4 rounded-2xl text-left transition-all flex items-center gap-4 ${isSelected ? 'border-blue-500 bg-blue-50 shadow-md scale-[1.02]' : 'border-gray-100 bg-white hover:border-blue-200'}`}>
-                            <span className={`w-10 h-10 shrink-0 rounded-lg flex items-center justify-center font-black ${isSelected ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-400'}`}>
-                              {String.fromCharCode(65 + oIdx)}
-                            </span>
+                          <button key={oIdx} onClick={() => q.type === "choix_multiple_multiple" ? toggleMultiSelect(idx, oIdx) : handleChangementReponse(idx, oIdx)}
+                            className={`p-4 min-h-[100px] border-4 rounded-2xl text-left transition-all flex items-center gap-4 ${isSelected ? 'border-blue-500 bg-blue-50 shadow-md scale-[1.02]' : 'border-gray-100 bg-white hover:border-blue-200'}`}>
+                            <div className={`w-10 h-10 shrink-0 rounded-lg flex items-center justify-center font-black ${isSelected ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-400'}`}>
+                              {q.type === "choix_multiple_multiple" ? (isSelected ? "✓" : "") : String.fromCharCode(65 + oIdx)}
+                            </div>
                             <RenderOptionContent opt={opt} />
                           </button>
                         );
@@ -276,18 +268,11 @@ export default function QuizOQRE() {
           </div>
 
           <div className="flex justify-between mt-16 pt-8 border-t-4 border-gray-50">
-            <button disabled={partieActive === 1} onClick={() => setPartieActive(p => p - 1)} 
-              className="flex items-center gap-2 font-black text-gray-400 hover:text-gray-600 transition-all disabled:opacity-0">
-              <ChevronLeft size={30} /> PRÉCÉDENT
-            </button>
+            <button disabled={partieActive === 1} onClick={() => setPartieActive(p => p - 1)} className="flex items-center gap-2 font-black text-gray-400 hover:text-gray-600 transition-all disabled:opacity-0"><ChevronLeft size={30} /> PRÉCÉDENT</button>
             {partieActive < themesKeys.length ? (
-              <button disabled={!themeEstComplet(partieActive)} onClick={() => setPartieActive(p => p + 1)} 
-                className="bg-blue-600 text-white px-10 py-4 rounded-2xl font-black text-xl shadow-xl hover:bg-blue-700 disabled:bg-gray-200 flex items-center gap-2 transition-all">
-                SUIVANT <ChevronRight size={30} />
-              </button>
+              <button disabled={!themeEstComplet(partieActive)} onClick={() => setPartieActive(p => p + 1)} className="bg-blue-600 text-white px-10 py-4 rounded-2xl font-black text-xl shadow-xl hover:bg-blue-700 disabled:bg-gray-200 transition-all">SUIVANT</button>
             ) : (
-              <button disabled={!themeEstComplet(partieActive) || envoiEnCours} onClick={terminerQuiz} 
-                className="bg-green-600 text-white px-10 py-4 rounded-2xl font-black text-xl shadow-xl hover:bg-green-700 disabled:bg-gray-200 flex items-center gap-2 transition-all">
+              <button disabled={!themeEstComplet(partieActive) || envoiEnCours} onClick={terminerQuiz} className="bg-green-600 text-white px-10 py-4 rounded-2xl font-black text-xl shadow-xl hover:bg-green-700 disabled:bg-gray-200 flex items-center gap-2">
                 {envoiEnCours ? <Loader2 className="animate-spin" /> : <CheckCircle size={30} />} TERMINER
               </button>
             )}

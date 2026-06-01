@@ -179,6 +179,7 @@
         {
           "id": 16,
           "q": "Choisis les DEUX solides qui ont chacun 6 faces, 12 arêtes et 8 sommets.",
+           "type": "choix_multiple_multiple",
          
           
            "options": [

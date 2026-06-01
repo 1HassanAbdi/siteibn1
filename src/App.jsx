@@ -46,6 +46,11 @@ import QuizMaths2A from "./2eAnnee/quizmths2a";
 import QuizOQREM6a from "./TEXTE/quizM6a";
 import QuizOQREFinal3a from "./3eAnnee/francais2026/quizF3a";
 import QuizOQREFinal6a from "./6eAnnee/francais2026/quizF6";
+import VideoPlayer from "./TEXTE/3E/video";
+import QuizOQRE5a from "./5eAnnee/maths/quizM5a.";
+import OQREPractice from "./OQRE/Entrainement";
+import QuizOQRE3e6e from "./OQRE/oqre3e6e/Quiz3e6e";
+
 
 
 
@@ -58,12 +63,12 @@ function App() {
         <Header />      
           <Routes>
             <Route path="/" element={<Accueil></Accueil>} />
-            <Route path="/test" element={<OQREHub></OQREHub>} />
+            <Route path="/test" element={<OQREPractice></OQREPractice>} />
             <Route path="/code" element={<PlanCodage></PlanCodage>} />
             
           
             
-            <Route path="/Multiplication" element={<MultiplicationChallengeOK></MultiplicationChallengeOK>} />
+            <Route path="/Multiplication" element={<VideoPlayer></VideoPlayer>} />
                     {/* Page des activités pour chaque année */}
 
          <Route path="/Concours3" element={<DictationApp1></DictationApp1>} />
@@ -74,7 +79,7 @@ function App() {
           <Route path="/activites/51e Année/Francais" element={<YearlyNavigator5e />} />
            <Route path="/activites/3e Année/Francais" element={<QuizOQREFinal3a></QuizOQREFinal3a> } />
            
-          <Route path="/activites/3e Année/Mathematiques" element={<QuizOQREM3a></QuizOQREM3a> } />
+          <Route path="/activites/3e Année/Mathematiques" element={<QuizOQRE3e6e></QuizOQRE3e6e> } />
           <Route path="/activites/6e Année/Mathematiques" element={<QuizOQREM6a></QuizOQREM6a> } />
           <Route path="/activites/4e Année/Francais" element={<QuizOQREF5></QuizOQREF5> } />
           <Route path="/activites/4e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
@@ -84,7 +89,7 @@ function App() {
           
 
            <Route path="/activites/5e Année/Francais" element={<QuizOQREF></QuizOQREF> } />
-          <Route path="/activites/5e Année/Mathematiques" element={<QuizOQREM></QuizOQREM> } />
+          <Route path="/activites/5e Année/Mathematiques" element={<QuizOQRE5a></QuizOQRE5a>} />
            <Route path="/activites/6e Année/Francais" element={<QuizOQREFinal6a></QuizOQREFinal6a> } />
           
          
